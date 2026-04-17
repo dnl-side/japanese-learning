@@ -1,26 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;700&family=DM+Mono:wght@300;400;500&display=swap');
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core palette */
+  --sakura:        #F2A7BB;
+  --sakura-light:  #FDEEF3;
+  --sakura-dark:   #C0566E;
+  --red-japan:     #BC002D;
+  --ink:           #1A1A2E;
+  --ink-soft:      #2D2D44;
+  --paper:         #FAF8F5;
+  --paper-warm:    #F5F0E8;
+  --gold:          #C9A84C;
+  --gold-light:    #F0DFA0;
+  --mist:          #E8E4F0;
+
+  /* Typography */
+  --font-jp:       'Noto Sans JP', sans-serif;
+  --font-serif-jp: 'Shippori Mincho', serif;
+  --font-mono:     'DM Mono', monospace;
+
+  /* Surfaces */
+  --bg:            var(--paper);
+  --bg-card:       #FFFFFF;
+  --border:        rgba(26,26,46,0.10);
+  --shadow-soft:   0 2px 20px rgba(26,26,46,0.07);
+  --shadow-card:   0 4px 32px rgba(26,26,46,0.10);
+  --shadow-float:  0 12px 48px rgba(26,26,46,0.16);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.dark {
+  --bg:       var(--ink);
+  --bg-card:  var(--ink-soft);
+  --border:   rgba(255,255,255,0.08);
+  --paper:    var(--ink);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-jp);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Japanese decorative vertical text utility */
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Sakura petal animation */
+@keyframes sakura-fall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg) scale(0.92);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.85;
+  }
+  50% {
+    transform: translateY(45vh) translateX(18px) rotate(180deg) scale(1);
+  }
+  100% {
+    transform: translateY(110vh) translateX(55px) rotate(360deg) scale(0.96);
+    opacity: 0;
+  }
+}
+
+@keyframes sakura-sway {
+  0%, 100% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: 14px;
+  }
+  75% {
+    margin-left: -12px;
+  }
+}
+
+.petal {
+  position: fixed;
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform, opacity;
+  animation: sakura-fall linear infinite, sakura-sway ease-in-out infinite;
+}
+
+/* Subtle grain texture overlay */
+.grain::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0.4;
+}
+
+/* Japanese character display style */
+.char-display {
+  font-family: var(--font-serif-jp);
+  font-feature-settings: "palt" 1;
+  letter-spacing: 0.05em;
+}
+
+/* Smooth page transitions */
+.page-enter {
+  animation: fadeSlideUp 0.4s ease forwards;
+}
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Card hover lift */
+.card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-float);
+}
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid var(--sakura-dark);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--sakura); border-radius: 99px; }
+
+:root {
+  --bottom-nav-height: 92px;
 }
