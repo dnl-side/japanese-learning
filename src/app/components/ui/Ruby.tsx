@@ -12,7 +12,7 @@ export interface RubySegment {
 // ─── Components ───────────────────────────────────────────────────────────────
 
 interface RubyTextProps {
-  segments: RubySegment[];
+  segments: readonly RubySegment[];
   className?: string;
   style?: CSSProperties;
   rtStyle?: CSSProperties;

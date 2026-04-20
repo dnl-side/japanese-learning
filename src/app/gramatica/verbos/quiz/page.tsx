@@ -90,6 +90,146 @@ function generateQuestions(
 
 // ─── Setup Screen ─────────────────────────────────────────────────────────────
 
+function withAlpha(hex: string, alpha: number) {
+  const clean = hex.replace("#", "");
+  const normalized =
+    clean.length === 3
+      ? clean
+          .split("")
+          .map((char) => char + char)
+          .join("")
+      : clean;
+
+  const r = parseInt(normalized.slice(0, 2), 16);
+  const g = parseInt(normalized.slice(2, 4), 16);
+  const b = parseInt(normalized.slice(4, 6), 16);
+
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+function ShellCard({
+  children,
+  className = "",
+  color = "#D7CCC8",
+}: {
+  children: React.ReactNode;
+  className?: string;
+  color?: string;
+}) {
+  return (
+    <div
+      className={`rounded-[30px] border backdrop-blur-md ${className}`}
+      style={{
+        background: "rgba(255,255,255,0.82)",
+        border: `1px solid ${withAlpha(color, 0.18)}`,
+        boxShadow: `0 18px 44px ${withAlpha(color, 0.08)}`,
+      }}
+    >
+      {children}
+    </div>
+  );
+}
+
+function SectionCard({
+  eyebrow,
+  title,
+  description,
+  children,
+  color = "#D7CCC8",
+  accent = ACCENT,
+  className = "",
+}: {
+  eyebrow?: string;
+  title: string;
+  description?: string;
+  children: React.ReactNode;
+  color?: string;
+  accent?: string;
+  className?: string;
+}) {
+  return (
+    <ShellCard color={color} className={className}>
+      <div className="border-b px-5 py-4 sm:px-6">
+        {eyebrow ? (
+          <div
+            className="mb-2 inline-flex items-center rounded-full px-3 py-1 text-[0.72rem] font-bold uppercase tracking-[0.16em]"
+            style={{
+              color: accent,
+              background: withAlpha(color, 0.12),
+              border: `1px solid ${withAlpha(color, 0.22)}`,
+            }}
+          >
+            {eyebrow}
+          </div>
+        ) : null}
+
+        <h2 className="text-xl font-bold leading-tight" style={{ color: "var(--ink)" }}>
+          {title}
+        </h2>
+
+        {description ? (
+          <p className="mt-2 text-sm leading-relaxed" style={{ color: "var(--ink-soft)", opacity: 0.78 }}>
+            {description}
+          </p>
+        ) : null}
+      </div>
+
+      <div className="px-5 py-5 sm:px-6">{children}</div>
+    </ShellCard>
+  );
+}
+
+function StatPill({
+  label,
+  value,
+  color,
+  accent,
+}: {
+  label: string;
+  value: string;
+  color: string;
+  accent: string;
+}) {
+  return (
+    <div
+      className="rounded-2xl border px-4 py-3"
+      style={{
+        background: withAlpha(color, 0.09),
+        border: `1px solid ${withAlpha(color, 0.18)}`,
+      }}
+    >
+      <p className="text-[0.72rem] font-bold uppercase tracking-[0.14em]" style={{ color: accent }}>
+        {label}
+      </p>
+      <p className="mt-1 text-lg font-semibold leading-tight" style={{ color: "var(--ink)" }}>
+        {value}
+      </p>
+    </div>
+  );
+}
+
+function StepPill({
+  active,
+  label,
+}: {
+  active: boolean;
+  label: string;
+}) {
+  return (
+    <div
+      className="rounded-full px-4 py-2 text-sm font-bold"
+      style={{
+        color: active ? "#fff" : ACCENT,
+        background: active ? GRADIENT : "rgba(255,255,255,0.76)",
+        border: active ? "none" : `1px solid ${withAlpha(ACCENT, 0.14)}`,
+        boxShadow: active ? `0 10px 22px ${withAlpha("#8D6E63", 0.22)}` : "none",
+      }}
+    >
+      {label}
+    </div>
+  );
+}
+
 function SetupScreen({ onStart, initialForm }: {
   onStart: (groups: VerbGroup[], forms: FormKey[], count: number) => void;
   initialForm?: FormKey;
@@ -110,103 +250,187 @@ function SetupScreen({ onStart, initialForm }: {
     : [selectedGroup];
 
   return (
-    <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} className="space-y-5">
+    <motion.div
+      initial={{ opacity: 0, y: 16 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="mt-8 grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1fr)_340px]"
+    >
+      <div className="space-y-6">
+        <SectionCard
+          eyebrow="Configuración"
+          title="Prepara tu práctica"
+          description="Define qué quieres practicar antes de empezar."
+          color="#D7CCC8"
+          accent={ACCENT}
+        >
+          <div className="space-y-6">
+            <div>
+              <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.18em]" style={{ color: ACCENT }}>
+                Grupo de verbos
+              </h3>
 
-      {/* Group filter */}
-      <div className="rounded-[24px] border p-5"
-        style={{ background: "rgba(255,255,255,0.85)", border: `1px solid ${ACCENT_SOFT}0.12)`, boxShadow: `0 12px 32px ${ACCENT_SOFT}0.06)` }}>
-        <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.18em]" style={{ color: ACCENT }}>
-          Grupo de verbos
-        </h3>
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
-          {GROUP_OPTIONS.map(g => (
-            <button
-              key={g.key}
-              onClick={() => setSelectedGroup(g.key)}
-              className="rounded-2xl border p-3 text-sm font-semibold transition-all"
-              style={{
-                background: selectedGroup === g.key ? `${g.color}33` : "rgba(255,255,255,0.6)",
-                border: `1px solid ${selectedGroup === g.key ? g.color : "var(--border)"}`,
-                color: selectedGroup === g.key ? ACCENT : "var(--ink)",
-              }}
-            >
-              {g.label}
-            </button>
-          ))}
-        </div>
-      </div>
+              <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+                {GROUP_OPTIONS.map((g) => (
+                  <button
+                    key={g.key}
+                    type="button"
+                    onClick={() => setSelectedGroup(g.key)}
+                    className="rounded-[20px] border px-4 py-4 text-sm font-semibold transition-all duration-200 hover:-translate-y-0.5"
+                    style={{
+                      background: selectedGroup === g.key ? `${g.color}30` : "rgba(255,255,255,0.74)",
+                      border: `1px solid ${selectedGroup === g.key ? g.color : "rgba(26,26,46,0.10)"}`,
+                      color: selectedGroup === g.key ? ACCENT : "var(--ink)",
+                      boxShadow: selectedGroup === g.key ? `0 10px 22px ${withAlpha(g.color, 0.14)}` : "none",
+                    }}
+                  >
+                    {g.label}
+                  </button>
+                ))}
+              </div>
+            </div>
 
-      {/* Form selector */}
-      <div className="rounded-[24px] border p-5"
-        style={{ background: "rgba(255,255,255,0.85)", border: `1px solid ${ACCENT_SOFT}0.12)`, boxShadow: `0 12px 32px ${ACCENT_SOFT}0.06)` }}>
-        <h3 className="mb-1 text-sm font-bold uppercase tracking-[0.18em]" style={{ color: ACCENT }}>
-          Formas a practicar
-        </h3>
-        <p className="mb-3 text-xs" style={{ color: "var(--ink-soft)", opacity: 0.6 }}>
-          Los tiempos disponibles dependen de la forma seleccionada
-        </p>
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-          {FORM_OPTIONS.map(f => {
-            const active = selectedForms.includes(f.key);
-            const tenses = FORM_TENSES[f.key];
-            return (
-              <button
-                key={f.key}
-                onClick={() => toggleForm(f.key)}
-                className="rounded-xl border p-2.5 text-left transition-all"
+            <div>
+              <h3 className="mb-1 text-sm font-bold uppercase tracking-[0.18em]" style={{ color: ACCENT }}>
+                Formas a practicar
+              </h3>
+              <p className="mb-4 text-sm" style={{ color: "var(--ink-soft)", opacity: 0.7 }}>
+                Los tiempos disponibles dependen de la forma seleccionada.
+              </p>
+
+              <div className="grid grid-cols-1 gap-3 md:grid-cols-2 xl:grid-cols-3">
+                {FORM_OPTIONS.map((f) => {
+                  const active = selectedForms.includes(f.key);
+                  const tenses = FORM_TENSES[f.key];
+
+                  return (
+                    <button
+                      key={f.key}
+                      type="button"
+                      onClick={() => toggleForm(f.key)}
+                      className="rounded-[22px] border p-4 text-left transition-all duration-200 hover:-translate-y-0.5"
+                      style={{
+                        background: active ? `${f.color}30` : "rgba(255,255,255,0.72)",
+                        border: `1px solid ${active ? f.color : "rgba(26,26,46,0.10)"}`,
+                        boxShadow: active ? `0 10px 22px ${withAlpha(f.color, 0.12)}` : "none",
+                      }}
+                    >
+                      <div className="flex items-center justify-between gap-3">
+                        <span
+                          className="char-display text-lg font-bold"
+                          style={{ color: active ? ACCENT : "var(--ink-soft)" }}
+                        >
+                          {active ? "✓ " : ""}{FORM_LABELS[f.key]}
+                        </span>
+
+                        <span
+                          className="rounded-full px-2 py-1 text-[0.66rem] font-bold"
+                          style={{ background: `${f.color}55`, color: ACCENT }}
+                        >
+                          {f.level}
+                        </span>
+                      </div>
+
+                      <p className="mt-2 text-sm leading-relaxed" style={{ color: "var(--ink-soft)", opacity: 0.72 }}>
+                        {tenses.length === 1
+                          ? `Solo ${TENSE_LABELS[tenses[0]].toLowerCase()}`
+                          : `${tenses.length} tiempos`}
+                      </p>
+                    </button>
+                  );
+                })}
+              </div>
+
+              {selectedForms.length === 0 && (
+                <p className="mt-3 text-sm font-semibold" style={{ color: "#DC2626" }}>
+                  Selecciona al menos una forma.
+                </p>
+              )}
+            </div>
+
+            <div>
+              <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.18em]" style={{ color: ACCENT }}>
+                Número de preguntas
+              </h3>
+
+              <div
+                className="rounded-[24px] border p-5"
                 style={{
-                  background: active ? `${f.color}33` : "rgba(255,255,255,0.6)",
-                  border: `1px solid ${active ? f.color : "var(--border)"}`,
+                  background: "rgba(255,255,255,0.72)",
+                  border: `1px solid ${withAlpha("#8D6E63", 0.12)}`,
                 }}
               >
-                <div className="flex items-center justify-between">
-                  <span className="char-display text-base font-bold" style={{ color: active ? ACCENT : "var(--ink-soft)" }}>
-                    {active ? "✓ " : ""}{FORM_LABELS[f.key]}
+                <div className="mb-3 flex items-center justify-between">
+                  <span className="text-sm font-semibold" style={{ color: "var(--ink-soft)" }}>
+                    Cantidad
                   </span>
-                  <span className="text-[0.6rem] font-bold px-1.5 py-0.5 rounded-full"
-                    style={{ background: `${f.color}44`, color: ACCENT }}>
-                    {f.level}
+                  <span className="text-lg font-bold" style={{ color: ACCENT }}>
+                    {count}
                   </span>
                 </div>
-                <p className="mt-1 text-[0.65rem] opacity-60" style={{ color: "var(--ink-soft)" }}>
-                  {tenses.length === 1
-                    ? `Solo ${TENSE_LABELS[tenses[0]].toLowerCase()}`
-                    : `${tenses.length} tiempos`}
-                </p>
-              </button>
-            );
-          })}
-        </div>
-        {selectedForms.length === 0 && (
-          <p className="mt-2 text-xs" style={{ color: "#DC2626" }}>Selecciona al menos una forma</p>
-        )}
+
+                <input
+                  type="range"
+                  min={5}
+                  max={20}
+                  step={5}
+                  value={count}
+                  onChange={(e) => setCount(Number(e.target.value))}
+                  className="w-full"
+                  style={{ accentColor: ACCENT }}
+                />
+
+                <div className="mt-2 flex justify-between text-xs" style={{ color: "var(--ink-soft)", opacity: 0.6 }}>
+                  <span>5</span>
+                  <span>10</span>
+                  <span>15</span>
+                  <span>20</span>
+                </div>
+              </div>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => selectedForms.length > 0 && onStart(groups, selectedForms, count)}
+              disabled={selectedForms.length === 0}
+              className="w-full rounded-[22px] py-4 text-base font-bold text-white transition-all duration-200 hover:brightness-110 active:scale-[0.99] disabled:opacity-40"
+              style={{
+                background: GRADIENT,
+                boxShadow: `0 14px 30px ${withAlpha("#8D6E63", 0.24)}`,
+              }}
+            >
+              Empezar Quiz →
+            </button>
+          </div>
+        </SectionCard>
       </div>
 
-      {/* Count */}
-      <div className="rounded-[24px] border p-5"
-        style={{ background: "rgba(255,255,255,0.85)", border: `1px solid ${ACCENT_SOFT}0.12)`, boxShadow: `0 12px 32px ${ACCENT_SOFT}0.06)` }}>
-        <h3 className="mb-3 text-sm font-bold uppercase tracking-[0.18em]" style={{ color: ACCENT }}>
-          Preguntas: {count}
-        </h3>
-        <input
-          type="range" min={5} max={20} step={5} value={count}
-          onChange={e => setCount(Number(e.target.value))}
-          className="w-full" style={{ accentColor: ACCENT }}
-        />
-        <div className="mt-1 flex justify-between text-xs" style={{ color: "var(--ink-soft)", opacity: 0.5 }}>
-          <span>5</span><span>10</span><span>15</span><span>20</span>
-        </div>
-      </div>
+      <div className="space-y-6 xl:sticky xl:top-[170px] xl:self-start">
+        <SectionCard
+          eyebrow="Resumen"
+          title="Configuración actual"
+          color="#D7CCC8"
+          accent={ACCENT}
+        >
+          <div className="space-y-3 text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
+            <p><strong style={{ color: "var(--ink)" }}>Grupo:</strong> {selectedGroup === "all" ? "Todos" : selectedGroup}</p>
+            <p><strong style={{ color: "var(--ink)" }}>Formas:</strong> {selectedForms.length}</p>
+            <p><strong style={{ color: "var(--ink)" }}>Preguntas:</strong> {count}</p>
+          </div>
+        </SectionCard>
 
-      {/* Start */}
-      <button
-        onClick={() => selectedForms.length > 0 && onStart(groups, selectedForms, count)}
-        disabled={selectedForms.length === 0}
-        className="w-full rounded-2xl py-4 text-base font-bold text-white transition-all hover:brightness-110 active:scale-95 disabled:opacity-40"
-        style={{ background: GRADIENT, boxShadow: `0 12px 28px ${ACCENT_SOFT}0.25)` }}
-      >
-        Empezar Quiz →
-      </button>
+        <SectionCard
+          eyebrow="Sugerencia"
+          title="Para una práctica más estable"
+          color="#FFAB40"
+          accent="#E65100"
+        >
+          <div className="space-y-3 text-sm leading-relaxed" style={{ color: "var(--ink-soft)" }}>
+            <p>Empieza con una sola familia de verbos.</p>
+            <p>Luego combina ます, て, た y ない.</p>
+            <p>Después sube a potencial, pasiva y causativa.</p>
+          </div>
+        </SectionCard>
+      </div>
     </motion.div>
   );
 }
@@ -499,67 +723,251 @@ function VerbQuizInner() {
 
   const handleAnswer = useCallback((answer: string, correct: boolean) => {
     if (correct) {
-      setScore(s => s + 1);
+      setScore((s) => s + 1);
     } else {
-      setMistakes(m => [...m, { question: questions[currentIdx], userAnswer: answer }]);
+      setMistakes((m) => [...m, { question: questions[currentIdx], userAnswer: answer }]);
     }
-    if (currentIdx < questions.length - 1) setCurrentIdx(i => i + 1);
-    else setScreen("results");
+
+    if (currentIdx < questions.length - 1) {
+      setCurrentIdx((i) => i + 1);
+    } else {
+      setScreen("results");
+    }
   }, [questions, currentIdx]);
 
   return (
-    <main className="relative min-h-screen" style={{ background: "var(--paper)" }}>
+    <main
+      className="relative min-h-screen overflow-x-hidden"
+      style={{ background: "var(--paper)" }}
+    >
       <SakuraAnimation />
 
-      <div className="relative z-10 mx-auto max-w-xl px-4 pb-24 pt-8 sm:px-6">
-        <div className="mb-6 flex items-center justify-between">
-          <Link href="/gramatica/verbos" className="text-sm font-medium transition-opacity hover:opacity-70" style={{ color: ACCENT }}>
-            ← Verbos
-          </Link>
-          {screen !== "setup" && (
-            <button onClick={() => setScreen("setup")} className="text-xs font-medium hover:opacity-70" style={{ color: "var(--ink-soft)" }}>
-              Cambiar configuración
-            </button>
-          )}
-        </div>
+      <div className="relative z-10 w-full">
+        <div className="mx-auto flex w-full justify-center px-4 pb-24 pt-8 sm:px-6 lg:px-8">
+          <div className="w-full max-w-[1240px]">
+            <Link
+              href="/gramatica/verbos"
+              className="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold shadow-sm backdrop-blur transition-all hover:-translate-y-0.5"
+              style={{
+                color: ACCENT,
+                background: "rgba(255,255,255,0.82)",
+                borderColor: withAlpha("#8D6E63", 0.16),
+                boxShadow: `0 10px 24px ${withAlpha("#8D6E63", 0.08)}`,
+              }}
+            >
+              <span aria-hidden="true">←</span>
+              <span>Verbos</span>
+            </Link>
 
-        <div className="mb-6">
-          <div className="mb-2 inline-flex items-center gap-2 rounded-full px-3 py-1 text-[0.72rem] font-bold uppercase tracking-[0.16em]"
-            style={{ color: ACCENT, background: `${ACCENT_SOFT}0.08)`, border: `1px solid ${ACCENT_SOFT}0.15)` }}>
-            動詞クイズ · Quiz de Verbos
+            <section className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12 lg:gap-8">
+              <motion.div
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.42 }}
+                className="relative overflow-hidden lg:col-span-7"
+              >
+                <ShellCard color="#D7CCC8" className="h-full p-6 sm:p-7 lg:p-8">
+                  <div
+                    aria-hidden="true"
+                    className="pointer-events-none absolute right-4 top-2 select-none char-display"
+                    style={{
+                      fontSize: "clamp(4.4rem, 10vw, 8rem)",
+                      color: withAlpha("#8D6E63", 0.08),
+                      lineHeight: 1,
+                    }}
+                  >
+                    動詞
+                  </div>
+
+                  <div
+                    className="mb-4 inline-flex items-center rounded-full px-3 py-1 text-[0.72rem] font-bold uppercase tracking-[0.18em]"
+                    style={{
+                      color: ACCENT,
+                      background: withAlpha("#D7CCC8", 0.16),
+                      border: `1px solid ${withAlpha("#D7CCC8", 0.26)}`,
+                    }}
+                  >
+                    動詞クイズ · Quiz de verbos
+                  </div>
+
+                  <h1
+                    className="char-display max-w-[12ch] text-4xl font-bold leading-tight sm:text-5xl"
+                    style={{ color: "var(--ink)" }}
+                  >
+                    Practica conjugaciones
+                  </h1>
+
+                  <p
+                    className="mt-4 max-w-[64ch] text-base leading-relaxed sm:text-lg"
+                    style={{ color: "var(--ink-soft)", opacity: 0.8 }}
+                  >
+                    Configura grupo, formas y cantidad de preguntas. Luego practica
+                    un verbo a la vez con una interfaz más clara, centrada y fácil de leer.
+                  </p>
+
+                  <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-3">
+                    <StatPill
+                      label="grupos"
+                      value="1–3"
+                      color="#D7CCC8"
+                      accent={ACCENT}
+                    />
+                    <StatPill
+                      label="formas"
+                      value={`${FORM_OPTIONS.length}`}
+                      color="#FFAB40"
+                      accent="#E65100"
+                    />
+                    <StatPill
+                      label="modo"
+                      value="quiz guiado"
+                      color="#90CAF9"
+                      accent="#1565C0"
+                    />
+                  </div>
+                </ShellCard>
+              </motion.div>
+
+              <motion.aside
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.42, delay: 0.05 }}
+                className="lg:col-span-5"
+              >
+                <ShellCard color="#D7CCC8" className="h-full p-5 sm:p-6">
+                  <p
+                    className="text-[0.72rem] font-bold uppercase tracking-[0.18em]"
+                    style={{ color: ACCENT }}
+                  >
+                    Vista general
+                  </p>
+
+                  <h2 className="mt-1 text-2xl font-bold" style={{ color: "var(--ink)" }}>
+                    Cómo funciona
+                  </h2>
+
+                  <div className="mt-4 space-y-4">
+                    <div
+                      className="rounded-[24px] border p-4"
+                      style={{
+                        background: withAlpha("#FFAB40", 0.1),
+                        border: `1px solid ${withAlpha("#FFAB40", 0.22)}`,
+                      }}
+                    >
+                      <p
+                        className="text-sm font-bold uppercase tracking-[0.12em]"
+                        style={{ color: "#E65100" }}
+                      >
+                        1. Configura
+                      </p>
+                      <p
+                        className="mt-1 text-sm leading-relaxed"
+                        style={{ color: "var(--ink-soft)", opacity: 0.82 }}
+                      >
+                        Elige grupo, formas y número de preguntas.
+                      </p>
+                    </div>
+
+                    <div
+                      className="rounded-[24px] border p-4"
+                      style={{
+                        background: withAlpha("#81C784", 0.1),
+                        border: `1px solid ${withAlpha("#81C784", 0.22)}`,
+                      }}
+                    >
+                      <p
+                        className="text-sm font-bold uppercase tracking-[0.12em]"
+                        style={{ color: "#2E7D32" }}
+                      >
+                        2. Responde
+                      </p>
+                      <p
+                        className="mt-1 text-sm leading-relaxed"
+                        style={{ color: "var(--ink-soft)", opacity: 0.82 }}
+                      >
+                        Escribe la forma correcta en hiragana o kanji.
+                      </p>
+                    </div>
+
+                    <div
+                      className="rounded-[24px] border p-4"
+                      style={{
+                        background: withAlpha("#90CAF9", 0.1),
+                        border: `1px solid ${withAlpha("#90CAF9", 0.22)}`,
+                      }}
+                    >
+                      <p
+                        className="text-sm font-bold uppercase tracking-[0.12em]"
+                        style={{ color: "#1565C0" }}
+                      >
+                        3. Revisa
+                      </p>
+                      <p
+                        className="mt-1 text-sm leading-relaxed"
+                        style={{ color: "var(--ink-soft)", opacity: 0.82 }}
+                      >
+                        Al final revisas aciertos, errores y qué forma te costó más.
+                      </p>
+                    </div>
+                  </div>
+                </ShellCard>
+              </motion.aside>
+            </section>
+
+            <div className="mt-8 sticky top-[86px] z-30">
+              <ShellCard color="#D7CCC8" className="p-3">
+                <div className="flex flex-wrap gap-2">
+                  <StepPill active={screen === "setup"} label="Configuración" />
+                  <StepPill active={screen === "quiz"} label="Pregunta" />
+                  <StepPill active={screen === "results"} label="Resultado" />
+                </div>
+              </ShellCard>
+            </div>
+
+            <AnimatePresence mode="wait">
+              {screen === "setup" && (
+                <motion.div
+                  key="setup"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                >
+                  <SetupScreen onStart={handleStart} initialForm={initialForm} />
+                </motion.div>
+              )}
+
+              {screen === "quiz" && questions[currentIdx] && (
+                <QuestionScreen
+                  key={`q-${currentIdx}`}
+                  question={questions[currentIdx]}
+                  current={currentIdx + 1}
+                  total={questions.length}
+                  onAnswer={handleAnswer}
+                />
+              )}
+
+              {screen === "results" && (
+                <motion.div
+                  key="results"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  className="mt-8"
+                >
+                  <ResultsScreen
+                    score={score}
+                    total={questions.length}
+                    mistakes={mistakes}
+                    onRestart={() =>
+                      lastConfig && handleStart(lastConfig.groups, lastConfig.forms, lastConfig.count)
+                    }
+                    onNewQuiz={() => setScreen("setup")}
+                  />
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
-          <h1 className="text-2xl font-bold" style={{ color: "var(--ink)" }}>Practica conjugaciones</h1>
-          <p className="mt-1 text-sm" style={{ color: "var(--ink-soft)", opacity: 0.7 }}>
-            Se te mostrará un verbo en forma diccionario y tendrás que conjugarlo.
-          </p>
         </div>
-
-        <AnimatePresence mode="wait">
-          {screen === "setup" && (
-            <motion.div key="setup" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-              <SetupScreen onStart={handleStart} initialForm={initialForm} />
-            </motion.div>
-          )}
-          {screen === "quiz" && questions[currentIdx] && (
-            <QuestionScreen
-              key={`q-${currentIdx}`}
-              question={questions[currentIdx]}
-              current={currentIdx + 1}
-              total={questions.length}
-              onAnswer={handleAnswer}
-            />
-          )}
-          {screen === "results" && (
-            <ResultsScreen
-              key="results"
-              score={score}
-              total={questions.length}
-              mistakes={mistakes}
-              onRestart={() => lastConfig && handleStart(lastConfig.groups, lastConfig.forms, lastConfig.count)}
-              onNewQuiz={() => setScreen("setup")}
-            />
-          )}
-        </AnimatePresence>
       </div>
     </main>
   );
