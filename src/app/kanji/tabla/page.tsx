@@ -1,17 +1,23 @@
 // src/app/kanji/tabla/page.tsx
+
 "use client";
 
 import { useState, Suspense } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { KANJI_LIST, LEVEL_META, getKanjiByLevel, type KanjiEntry } from "@/data/kanji";
+import { KANJI_LIST, LEVEL_META, getKanjiByLevel, type KanjiEntry, getPrimaryKanjiExample  } from "@/data/kanji";
+import { RubyText } from "@/app/components/ui/Ruby";
 import SakuraAnimation from "@/app/components/layout/SakuraAnimation";
 
 const ACCENT = "#2E7D32";
 const ACCENT_SOFT = "rgba(46,125,50,";
 const GRADIENT_L1 = "linear-gradient(135deg, #A5D6A7 0%, #2E7D32 100%)";
 const GRADIENT_L2 = "linear-gradient(135deg, #C8E6C9 0%, #388E3C 100%)";
+
+const MOBILE_BOTTOM_NAV_OFFSET = "calc(5.5rem + env(safe-area-inset-bottom, 0px))";
+const DESKTOP_STICKY_TOP = "7rem";
+const MOBILE_SELECTED_SPACER = "8rem";
 
 function getLevelGradient(level: number) {
   if (level === 1) return GRADIENT_L1;
@@ -143,7 +149,7 @@ function LevelSection({
 function DetailPanel({ selected, onClose }: { selected: KanjiEntry | null; onClose: () => void }) {
   if (!selected) {
     return (
-      <div className="sticky top-6 rounded-[28px] border p-6"
+      <div className="rounded-[28px] border p-6"
         style={{ background: "rgba(255,255,255,0.82)", borderColor: `${ACCENT_SOFT}0.10)`, boxShadow: "0 20px 40px rgba(46,125,50,0.08)", backdropFilter: "blur(10px)" }}>
         <div className="mb-4 rounded-2xl p-4"
           style={{ background: "rgba(165,214,167,0.12)", border: `1px solid ${ACCENT_SOFT}0.10)` }}>
@@ -239,13 +245,37 @@ function DetailPanel({ selected, onClose }: { selected: KanjiEntry | null; onClo
         )}
 
         {/* Example */}
-        {selected.example && (
-          <div className="mb-4 rounded-2xl p-3"
-            style={{ background: "rgba(255,255,255,0.72)", border: `1px solid ${ACCENT_SOFT}0.08)` }}>
-            <p className="text-xs font-bold uppercase tracking-[0.16em] mb-1" style={{ color: ACCENT }}>Ejemplo</p>
-            <p className="char-display text-base" style={{ color: "var(--ink)" }}>{selected.example}</p>
-          </div>
-        )}
+        {(() => {
+          const primaryExample = getPrimaryKanjiExample(selected);
+
+          if (!primaryExample) return null;
+
+          return (
+            <div
+              className="mb-4 rounded-2xl p-3"
+              style={{ background: "rgba(255,255,255,0.72)", border: `1px solid ${ACCENT_SOFT}0.08)` }}
+            >
+              <p
+                className="mb-1 text-xs font-bold uppercase tracking-[0.16em]"
+                style={{ color: ACCENT }}
+              >
+                Ejemplo
+              </p>
+
+              <RubyText
+                segments={primaryExample.segments}
+                className="char-display text-base"
+                style={{ color: "var(--ink)" }}
+              />
+
+              {primaryExample.translation && (
+                <p className="mt-2 text-sm" style={{ color: "var(--ink-soft)", opacity: 0.78 }}>
+                  {primaryExample.translation}
+                </p>
+              )}
+            </div>
+          );
+        })()}
 
         {/* Actions */}
         <div className="flex flex-col gap-2">
@@ -278,7 +308,7 @@ function KanjiTablaInner() {
     <main className="relative min-h-screen" style={{ background: "var(--paper)" }}>
       <SakuraAnimation />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 sm:pt-10">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-36 pt-8 sm:px-6 sm:pb-24 sm:pt-10">
         <Link href="/kanji" className="inline-flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-70" style={{ color: ACCENT }}>
           ← Kanji
         </Link>
@@ -314,10 +344,20 @@ function KanjiTablaInner() {
             ))}
           </div>
 
-          <div className="hidden lg:block">
-            <DetailPanel selected={selected} onClose={() => setSelected(null)} />
+          <div className="hidden lg:block lg:self-start lg:sticky" style={{ top: DESKTOP_STICKY_TOP }}>
+            <div className="max-h-[calc(100vh-8rem)] overflow-y-auto pr-1">
+              <DetailPanel selected={selected} onClose={() => setSelected(null)} />
+            </div>
           </div>
         </div>
+
+        {selected && (
+          <div
+            className="lg:hidden"
+            aria-hidden="true"
+            style={{ height: MOBILE_SELECTED_SPACER }}
+          />
+        )}
 
         {/* Mobile bottom sheet */}
         <AnimatePresence>
@@ -325,8 +365,17 @@ function KanjiTablaInner() {
             <motion.div
               initial={{ y: "100%" }} animate={{ y: 0 }} exit={{ y: "100%" }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] as const }}
-              className="fixed bottom-0 left-0 right-0 z-50 rounded-t-[28px] border p-5 lg:hidden"
-              style={{ background: "rgba(255,255,255,0.96)", boxShadow: "0 -12px 44px rgba(0,0,0,0.14)", borderColor: `${ACCENT_SOFT}0.10)`, backdropFilter: "blur(10px)" }}>
+              className="fixed left-0 right-0 z-[60] rounded-t-[28px] border p-5 lg:hidden"
+              style={{
+                bottom: MOBILE_BOTTOM_NAV_OFFSET,
+                background: "rgba(255,255,255,0.96)",
+                boxShadow: "0 -12px 44px rgba(0,0,0,0.14)",
+                borderColor: `${ACCENT_SOFT}0.10)`,
+                backdropFilter: "blur(10px)",
+                maxHeight: "min(68vh, calc(100dvh - 8rem))",
+                overflowY: "auto",
+                paddingBottom: "calc(1.25rem + env(safe-area-inset-bottom, 0px))",
+              }}>
               <div className="mx-auto mb-4 h-1.5 w-14 rounded-full bg-gray-200" />
               <div className="flex items-center gap-4">
                 <div className="char-display text-5xl font-bold"

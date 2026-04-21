@@ -1,4 +1,5 @@
 // src/app/gramatica/oraciones/page.tsx
+
 "use client";
 
 import { useMemo, useState, type ReactNode } from "react";

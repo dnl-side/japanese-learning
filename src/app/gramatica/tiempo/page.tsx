@@ -1,4 +1,5 @@
 // src/app/gramatica/tiempo/page.tsx
+
 "use client";
 
 import { useMemo, useState, type ReactNode } from "react";

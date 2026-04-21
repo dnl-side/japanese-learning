@@ -1,3 +1,5 @@
+// src/data/grammar/verbs.ts
+
 import { RubySegment } from "@/app/components/ui/Ruby";
 
 // ─── Types ────────────────────────────────────────────────────────────────────

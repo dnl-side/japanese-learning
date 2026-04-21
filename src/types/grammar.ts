@@ -1,3 +1,5 @@
+//src/types/grammar.ts
+
 import { RubySegment } from "@/app/components/ui/Ruby";
 
 // ─── Shared ───────────────────────────────────────────────────────────────────

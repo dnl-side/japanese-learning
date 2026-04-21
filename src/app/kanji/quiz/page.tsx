@@ -1,10 +1,11 @@
 // src/app/kanji/quiz/page.tsx
+
 "use client";
 
 import { useState, useCallback, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { KANJI_LIST, getKanjiByLevel, type KanjiEntry } from "@/data/kanji";
+import { KANJI_LIST, getKanjiByLevel, type KanjiEntry, getPrimaryKanjiExample, kanjiExampleToText } from "@/data/kanji";
 import SakuraAnimation from "@/app/components/layout/SakuraAnimation";
 
 const ACCENT = "#2E7D32";
@@ -279,11 +280,19 @@ function QuestionScreen({ question, current, total, onAnswer }: {
                 <p className="text-sm font-semibold" style={{ color: "var(--ink)" }}>{question.entry.meaning}</p>
               </div>
             </div>
-            {question.entry.example && (
-              <p className="char-display mt-2 text-sm" style={{ color: "var(--ink-soft)", opacity: 0.75 }}>
-                {question.entry.example}
-              </p>
-            )}
+            {(() => {
+              const primaryExample = getPrimaryKanjiExample(question.entry);
+              if (!primaryExample) return null;
+
+              return (
+                <p
+                  className="char-display mt-2 text-sm"
+                  style={{ color: "var(--ink-soft)", opacity: 0.75 }}
+                >
+                  {kanjiExampleToText(primaryExample)}
+                </p>
+              );
+            })()}
           </motion.div>
         )}
       </AnimatePresence>

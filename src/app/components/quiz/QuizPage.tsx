@@ -1,3 +1,5 @@
+//src/app/components/quiz/QuizPage.tsx
+
 "use client";
 
 import { useState, useEffect, useCallback } from "react";

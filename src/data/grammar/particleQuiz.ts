@@ -1,3 +1,5 @@
+// src/data/grammar/particleeQuiz.ts
+
 import type { RubySegment } from "@/app/components/ui/Ruby";
 
 // ─── 型定義 ───────────────────────────────────────────────────────────────────

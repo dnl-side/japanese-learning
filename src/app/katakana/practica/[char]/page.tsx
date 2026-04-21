@@ -1,4 +1,6 @@
 
+//src/app/katakana/practica/[char]/page.tsx
+
 import DrawingCanvas from "@/app/components/drawing/DrawingCanvas";
 import {
   KATAKANA_ROMAJI,

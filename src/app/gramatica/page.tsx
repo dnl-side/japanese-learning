@@ -1,6 +1,6 @@
-"use client";
-
 //src\app\gramatica/page.tsx
+
+"use client";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -68,7 +68,7 @@ const SECTIONS = [
     desc: "Conectores, conjunciones y frases hechas",
     color: "#FFCC80",
     accent: "#BF360C",
-    status: "soon",
+    status: "ready",
   },
   {
     href: "/gramatica/condicionales",

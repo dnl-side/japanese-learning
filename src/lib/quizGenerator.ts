@@ -1,3 +1,5 @@
+// src/lib/quizGenerator.ts
+
 import type { Lesson, ScriptType } from "@/types/japanese";
 import { HIRAGANA_ALL_CHARS, HIRAGANA_DAKUTEN_CHARS, HIRAGANA_HANDAKUTEN_CHARS } from "@/data/hiragana";
 import { KATAKANA_ALL_CHARS, KATAKANA_DAKUTEN_CHARS, KATAKANA_HANDAKUTEN_CHARS } from "@/data/katakana";

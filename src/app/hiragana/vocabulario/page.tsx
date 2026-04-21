@@ -1,3 +1,5 @@
+//src/app/hiragana/vocabulario/page.tsx
+
 import { Suspense } from "react";
 import { HIRAGANA_LESSONS } from "@/data/hiragana";
 import VocabularyPage from "@/app/components/vocabulary/VocabularyPage";

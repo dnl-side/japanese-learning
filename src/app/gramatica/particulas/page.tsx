@@ -1,6 +1,6 @@
-"use client";
-
 //src/app/gramatica/particulas/page.tsx
+
+"use client";
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";

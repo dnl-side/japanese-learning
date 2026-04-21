@@ -1,6 +1,6 @@
-"use client";
-
 //src/app/gramatica/particulas/quiz/page.tsx
+
+"use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";

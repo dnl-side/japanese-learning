@@ -1,3 +1,5 @@
+// src/data/katakana.ts
+
 import type { JapaneseCharacter, Lesson, TableRow } from "@/types/japanese";
 
 // ─── Basic characters (gojuuon) ──────────────────────────────────────────────

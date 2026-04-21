@@ -1,3 +1,5 @@
+//src/types/japanese.ts
+
 // ─── Script types ────────────────────────────────────────────────────────────
 
 export type ScriptType = "hiragana" | "katakana" | "kanji";

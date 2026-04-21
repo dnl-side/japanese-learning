@@ -1,6 +1,6 @@
-import type { CSSProperties } from "react";
-
 // src\app\components\ui/Ruby.tsx
+
+import type { CSSProperties } from "react";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 

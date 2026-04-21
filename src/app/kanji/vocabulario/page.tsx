@@ -1,6 +1,7 @@
 // src/app/kanji/vocabulario/page.tsx
+
 import { Suspense } from "react";
-import { getKanjiByLevel } from "@/data/kanji";
+import { getKanjiByLevel, getKanjiExamples, kanjiExampleToText } from "@/data/kanji";
 import type { Lesson } from "@/types/japanese";
 import VocabularyPage from "@/app/components/vocabulary/VocabularyPage";
 
@@ -17,12 +18,17 @@ function buildKanjiLessons(): Lesson[] {
       id: `kanji-${lessonNum}`,
       lesson: `Lección ${lessonNum} — ${chunk.map(k => k.char).join("・")}`,
       characters: chunk.map(k => k.char),
-      vocabulary: chunk.map(k => ({
-        word: k.char,
-        romaji: k.on.length > 0 ? k.on[0] : k.kun[0] ?? "",
-        meaning: k.meaning,
-        example: k.example || `${k.char}。`,
-      })),
+      vocabulary: chunk.map((k) => {
+        const examples = getKanjiExamples(k);
+
+        return {
+          word: k.char,
+          romaji: k.on.length > 0 ? k.on[0] : k.kun[0] ?? "",
+          meaning: k.meaning,
+          example: examples[0] ? kanjiExampleToText(examples[0]) : `${k.char}。`,
+          examples,
+        };
+      })
     });
   }
 

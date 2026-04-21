@@ -1,3 +1,5 @@
+//src/app/hiragana/practica/[char]/page.tsx
+
 import DrawingCanvas from "@/app/components/drawing/DrawingCanvas";
 
 import {

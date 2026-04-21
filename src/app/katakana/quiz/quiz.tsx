@@ -1,3 +1,5 @@
+//src/app/katakana/quiz/page.tsx
+
 "use client";
 
 import QuizPage from "@/app/components/quiz/QuizPage";

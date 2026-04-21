@@ -1,3 +1,5 @@
+//src/app/katakana/vocabulario/page.tsx
+
 import { Suspense } from "react";
 import { KATAKANA_LESSONS } from "@/data/katakana";
 import VocabularyPage from "@/app/components/vocabulary/VocabularyPage";

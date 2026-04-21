@@ -1,3 +1,6 @@
+//src/app/katakana/tabla/page.tsx
+
+
 "use client";
 
 import { useState } from "react";
@@ -40,6 +43,9 @@ const GRADIENT_BASIC   = "linear-gradient(135deg, #64B5F6 0%, #1A4BC0 100%)";
 const GRADIENT_DAKUTEN = "linear-gradient(135deg, #FFAB40 0%, #EF5350 100%)";
 const GRADIENT_HANDAKU = "linear-gradient(135deg, #4FC3F7 0%, #7C4DFF 100%)";
 const TABLE_GRID_TEMPLATE = "2.25rem repeat(5, minmax(4.8rem, 1fr))";
+const MOBILE_BOTTOM_NAV_OFFSET = "calc(5.5rem + env(safe-area-inset-bottom, 0px))";
+const DESKTOP_STICKY_TOP = "7rem";
+const MOBILE_SELECTED_SPACER = "8rem";
 
 const ACCENT = "#1A4BC0";
 const ACCENT_SOFT = "rgba(167,196,242,";
@@ -221,7 +227,7 @@ function DetailPanel({ selected, onClose }: { selected: SelectedChar | null; onC
   if (!selected) {
     return (
       <div
-        className="sticky top-6 rounded-[28px] border p-6"
+        className="rounded-[28px] border p-6"
         style={{
           background: "rgba(255,255,255,0.82)",
           borderColor: `${ACCENT_SOFT}0.12)`,
@@ -383,7 +389,7 @@ export default function KatakanaTablaPage() {
     <main className="relative min-h-screen" style={{ background: "var(--paper)" }}>
       <SakuraAnimation />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-24 pt-8 sm:px-6 sm:pt-10">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pb-36 pt-8 sm:px-6 sm:pb-24 sm:pt-10">
         <Link
           href="/katakana"
           className="inline-flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-70"
@@ -468,10 +474,20 @@ export default function KatakanaTablaPage() {
             />
           </div>
 
-          <div className="hidden lg:block">
-            <DetailPanel selected={selected} onClose={() => setSelected(null)} />
+          <div className="hidden lg:block lg:self-start lg:sticky" style={{ top: DESKTOP_STICKY_TOP }}>
+            <div className="max-h-[calc(100vh-8rem)] overflow-y-auto pr-1">
+              <DetailPanel selected={selected} onClose={() => setSelected(null)} />
+            </div>
           </div>
         </div>
+
+        {selected && (
+          <div
+            className="lg:hidden"
+            aria-hidden="true"
+            style={{ height: MOBILE_SELECTED_SPACER }}
+          />
+        )}
 
         {/* Mobile bottom sheet */}
         <AnimatePresence>
@@ -481,12 +497,16 @@ export default function KatakanaTablaPage() {
               animate={{ y: 0 }}
               exit={{ y: "100%" }}
               transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] as const }}
-              className="fixed bottom-0 left-0 right-0 z-50 rounded-t-[28px] border p-5 lg:hidden"
+              className="fixed left-0 right-0 z-[60] rounded-t-[28px] border p-5 lg:hidden"
               style={{
+                bottom: MOBILE_BOTTOM_NAV_OFFSET,
                 background: "rgba(255,255,255,0.96)",
                 boxShadow: "0 -12px 44px rgba(0,0,0,0.14)",
-                borderColor: `${ACCENT_SOFT}0.12)`,
+                borderColor: "rgba(188,0,45,0.08)",
                 backdropFilter: "blur(10px)",
+                maxHeight: "min(68vh, calc(100dvh - 8rem))",
+                overflowY: "auto",
+                paddingBottom: "calc(1.25rem + env(safe-area-inset-bottom, 0px))",
               }}
             >
               <div className="mx-auto mb-4 h-1.5 w-14 rounded-full bg-gray-200" />

@@ -684,6 +684,66 @@ export default function AdjetivosPage() {
               </ShellCard>
             </div>
 
+            <div className="mt-6">
+              <ShellCard color={ACCENT} className="p-5 sm:p-6">
+                <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+                  <div className="min-w-0">
+                    <div
+                      className="inline-flex items-center rounded-full px-3 py-1 text-[0.72rem] font-bold uppercase tracking-[0.16em]"
+                      style={{
+                        color: ACCENT,
+                        background: withAlpha(I_COLOR, 0.12),
+                        border: `1px solid ${withAlpha(I_COLOR, 0.22)}`,
+                      }}
+                    >
+                      Practice
+                    </div>
+
+                    <h2 className="mt-3 text-xl font-bold" style={{ color: "var(--ink)" }}>
+                      Pon a prueba los adjetivos
+                    </h2>
+
+                    <p
+                      className="mt-2 max-w-[60ch] text-sm leading-relaxed sm:text-[0.95rem]"
+                      style={{ color: "var(--ink-soft)", opacity: 0.78 }}
+                    >
+                      Practica tipo de adjetivo, conjugaciones, uso en frases, comparación y producción.
+                      Ideal para repasar después de estudiar la teoría.
+                    </p>
+
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {["い / な", "conjugación", "frases", "comparación", "producción"].map((item) => (
+                        <span
+                          key={item}
+                          className="rounded-full px-3 py-1 text-xs font-semibold"
+                          style={{
+                            color: ACCENT,
+                            background: withAlpha(I_COLOR, 0.1),
+                            border: `1px solid ${withAlpha(I_COLOR, 0.18)}`,
+                          }}
+                        >
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="shrink-0">
+                    <Link
+                      href="/gramatica/adjetivos/quiz"
+                      className="inline-flex items-center justify-center rounded-[22px] px-5 py-3 text-sm font-bold text-white transition-all duration-200 hover:-translate-y-0.5 hover:brightness-110"
+                      style={{
+                        background: `linear-gradient(135deg, ${I_COLOR}, ${ACCENT})`,
+                        boxShadow: `0 14px 28px ${withAlpha(ACCENT, 0.18)}`,
+                      }}
+                    >
+                      Ir a practicar →
+                    </Link>
+                  </div>
+                </div>
+              </ShellCard>
+            </div>
+
             <AnimatePresence mode="wait">
               {tab === "i" ? (
                 <motion.section

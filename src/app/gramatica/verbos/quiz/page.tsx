@@ -1,4 +1,5 @@
 // src/app/gramatica/verbos/quiz/page.tsx
+
 "use client";
 
 import { useState, useCallback, useEffect, useRef, Suspense } from "react";

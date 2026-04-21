@@ -1,3 +1,5 @@
+//src/app/components/layout/BottomNav.tsx
+
 "use client";
 
 import Link from "next/link";

@@ -1,6 +1,7 @@
+//src/app/gramatica/verbos/grupos/ichidan/page.tsx
+
 "use client";
 
-//src/app/gramatica/verbos/grupos/ichidan/page.tsx
 import { useEffect, useMemo, useState } from "react";
 
 import { motion } from "framer-motion";

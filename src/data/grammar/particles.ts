@@ -1,3 +1,5 @@
+// src/data/grammar/particles.ts
+
 import type { ParticleEntry } from "@/types/grammar";
 
 export const PARTICLES: ParticleEntry[] = [

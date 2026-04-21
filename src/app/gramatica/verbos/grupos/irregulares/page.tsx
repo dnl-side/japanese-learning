@@ -1,3 +1,5 @@
+//src/app/gramatica/verbos/grupos/irregulares/page.tsx
+
 "use client";
 
 import SakuraAnimation from "@/app/components/layout/SakuraAnimation";

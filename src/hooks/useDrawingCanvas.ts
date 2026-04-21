@@ -1,3 +1,5 @@
+// src/hooks/useDrawingCanvas.ts
+
 "use client";
 
 import { useRef, useState, useCallback, useEffect } from "react";
@@ -368,8 +370,29 @@ function getStrokeBounds(strokes: Stroke[]) {
   };
 }
 
+function getKanjiFolder(level?: number) {
+  if (level === 1) return "nivel_uno";
+  if (level === 2) return "nivel_dos";
+  return "";
+}
 
-export function useDrawingCanvas(svgFilename: string, scriptType: ScriptType, requiredStrokes: number) {
+function buildSvgPath(svgFilename: string, scriptType: ScriptType, kanjiLevel?: number) {
+  if (scriptType === "kanji") {
+    const folder = getKanjiFolder(kanjiLevel);
+    if (!folder) return `/svg/${scriptType}/${svgFilename}.svg`;
+    return `/svg/kanji/${folder}/${svgFilename}.svg`;
+  }
+
+  return `/svg/${scriptType}/${svgFilename}.svg`;
+}
+
+
+export function useDrawingCanvas(
+  svgFilename: string,
+  scriptType: ScriptType,
+  requiredStrokes: number,
+  kanjiLevel?: number
+) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const overlayRef = useRef<HTMLCanvasElement>(null);
 
@@ -396,20 +419,22 @@ export function useDrawingCanvas(svgFilename: string, scriptType: ScriptType, re
   }, [attempts]);
 
   useEffect(() => {
-    setGuideLoading(true);
-    setGuideError(false);
-    setGuide(null);
+  setGuideLoading(true);
+  setGuideError(false);
+  setGuide(null);
 
-    loadSvgGuide(`/svg/${scriptType}/${svgFilename}.svg`, CANVAS_SIZE, CANVAS_SIZE)
-      .then((g) => {
-        setGuide(g);
-        setGuideLoading(false);
-      })
-      .catch(() => {
-        setGuideError(true);
-        setGuideLoading(false);
-      });
-  }, [svgFilename, scriptType]);
+  const svgPath = buildSvgPath(svgFilename, scriptType, kanjiLevel);
+
+  loadSvgGuide(svgPath, CANVAS_SIZE, CANVAS_SIZE)
+    .then((g) => {
+      setGuide(g);
+      setGuideLoading(false);
+    })
+    .catch(() => {
+      setGuideError(true);
+      setGuideLoading(false);
+    });
+}, [svgFilename, scriptType, kanjiLevel]);
 
   useEffect(() => {
     const overlay = overlayRef.current;

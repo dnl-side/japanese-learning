@@ -1,3 +1,5 @@
+//src/app/components/drawing/DrawingCanvas.tsx
+
 "use client";
 
 import { useState } from "react";
@@ -11,8 +13,10 @@ import type { ScriptType } from "@/types/japanese";
 interface DrawingCanvasProps {
   char: string;           // Japanese character displayed as label e.g. "あ"
   romaji: string;         // Romaji filename e.g. "a" (used for SVG path)
+  displayLabel?: string;
   scriptType: ScriptType;
   strokeCount: number;    // Required stroke count
+  kanjiLevel?: number;
   backHref: string;       // e.g. "/hiragana/tabla"
   nextHref?: string;      // Optional next character
   prevHref?: string;      // Optional previous character
@@ -93,8 +97,10 @@ function StrokeWidthPanel({
 export default function DrawingCanvas({
   char,
   romaji,
+  displayLabel,
   scriptType,
   strokeCount: requiredStrokes,
+  kanjiLevel,
   backHref,
   nextHref,
   prevHref,
@@ -102,22 +108,22 @@ export default function DrawingCanvas({
   const [showWidthPanel, setShowWidthPanel] = useState(false);
 
   const {
-  canvasRef,
-  overlayRef,
-  guideLoading,
-  guideError,
-  strokeCount,
-  strokeWidth,
-  setStrokeWidth,
-  validation,
-  attempts,
-  hintOpacity,
-  onPointerDown,
-  onPointerMove,
-  onPointerUp,
-  validate,
-  clear,
-} = useDrawingCanvas(romaji, scriptType, requiredStrokes);
+    canvasRef,
+    overlayRef,
+    guideLoading,
+    guideError,
+    strokeCount,
+    strokeWidth,
+    setStrokeWidth,
+    validation,
+    attempts,
+    hintOpacity,
+    onPointerDown,
+    onPointerMove,
+    onPointerUp,
+    validate,
+    clear,
+  } = useDrawingCanvas(romaji, scriptType, requiredStrokes, kanjiLevel);
 
   // Dynamic feedback message for stroke count
   const getFeedback = () => {
@@ -172,7 +178,7 @@ export default function DrawingCanvas({
               {char}
             </div>
             <div className="font-mono text-xs mt-0.5" style={{ color: "var(--ink-soft)" }}>
-              {romaji}
+              {displayLabel ?? romaji}
             </div>
           </div>
           {nextHref && (
