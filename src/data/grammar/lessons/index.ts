@@ -1,0 +1,307 @@
+import type { RubySegment } from "@/app/components/ui/Ruby";
+import lesson001 from "./lesson-001";
+import lesson002 from "./lesson-002";
+import lesson003 from "./lesson-003";
+
+
+export type JLPTLevel = "N5" | "N4" | "N3" | "N2" | "N1";
+export type LessonStatus = "draft" | "ready";
+export type LessonRubyMode = "always" | "smart" | "tap" | "off";
+export type LessonTextSize = "base" | "lg" | "xl" | "2xl" | "3xl";
+export type LessonSpacing = "normal" | "relaxed" | "loose";
+
+export type LessonSectionKind =
+  | "intro"
+  | "concept"
+  | "structure"
+  | "vocabulary"
+  | "examples"
+  | "contrast"
+  | "warning"
+  | "practice"
+  | "summary";
+
+export type LessonCalloutTone = "info" | "success" | "warning" | "danger";
+
+export interface LessonDisplayConfig {
+  rubyMode: LessonRubyMode;
+  bodyTextSize: LessonTextSize;
+  japaneseTextSize: LessonTextSize;
+  exampleTextSize: LessonTextSize;
+  spacing: LessonSpacing;
+  preferWideLayout: boolean;
+}
+
+export interface LessonPrompt {
+  jp?: RubySegment[];
+  es?: string;
+  note?: string;
+}
+
+export interface LessonBreakdownItem {
+  label: string;
+  jp?: RubySegment[];
+  es?: string;
+}
+
+export interface LessonStructureSlot {
+  slot: string;
+  value: string;
+  note?: string | LessonPrompt;
+}
+
+export interface LessonPatternCard {
+  id: string;
+  label: string;
+  pattern: RubySegment[];
+  meaning: string;
+  translation?: string;
+  structure?: LessonStructureSlot[];
+  notes?: string[];
+}
+
+export interface LessonVocabularyItem {
+  id: string;
+  jp: RubySegment[];
+  meaning: string;
+  reading?: string;
+  notes?: string[];
+  tags?: string[];
+}
+
+export interface LessonExample {
+  id: string;
+  jp: RubySegment[];
+  es: string;
+  literal?: string;
+  breakdown?: LessonBreakdownItem[];
+  notes?: string[];
+}
+
+export interface LessonContrastItem {
+  id: string;
+  label: string;
+  correct: LessonPrompt;
+  incorrect?: LessonPrompt;
+  explanation: string;
+}
+
+export type LessonBulletItem = string | LessonPrompt;
+
+export type LessonContentBlock =
+  | {
+      type: "paragraph";
+      content: string;
+    }
+  | {
+      type: "bullet-list";
+      items: LessonBulletItem[];
+    }
+  | {
+      type: "pattern-cards";
+      items: LessonPatternCard[];
+    }
+  | {
+      type: "vocabulary-grid";
+      items: LessonVocabularyItem[];
+      columns?: 2 | 3 | 4;
+    }
+  | {
+      type: "example-group";
+      items: LessonExample[];
+    }
+  | {
+      type: "contrast-list";
+      items: LessonContrastItem[];
+    }
+  | {
+      type: "callout";
+      tone: LessonCalloutTone;
+      title: string;
+      content: string;
+      bullets?: LessonBulletItem[];
+    }
+  | {
+      type: "checklist";
+      items: LessonBulletItem[];
+    };
+
+
+export interface LessonSection {
+  id: string;
+  kind: LessonSectionKind;
+  title: string;
+  description?: string;
+  blocks: LessonContentBlock[];
+}
+
+export interface QuizChoice {
+  id: string;
+  label: LessonPrompt;
+}
+
+interface QuizQuestionBase {
+  id: string;
+  prompt: LessonPrompt;
+  explanation: string;
+  relatedSectionIds?: string[];
+}
+
+export interface SingleChoiceQuizQuestion extends QuizQuestionBase {
+  type: "single-choice";
+  choices: QuizChoice[];
+  correctChoiceId: string;
+}
+
+export interface OrderSentenceQuizQuestion extends QuizQuestionBase {
+  type: "order-sentence";
+  tokens: LessonOrderToken[];
+  correctOrder: string[];
+  answerLabel?: LessonPrompt;
+}
+
+export interface FillBlankQuizQuestion extends QuizQuestionBase {
+  type: "fill-blank";
+  acceptedAnswers: string[];
+  placeholder?: string;
+}
+
+export type LessonQuizQuestion =
+  | SingleChoiceQuizQuestion
+  | OrderSentenceQuizQuestion
+  | FillBlankQuizQuestion;
+
+export interface LessonQuiz {
+  id: string;
+  title: string;
+  description?: string;
+  passScore: number;
+  shuffleQuestions: boolean;
+  showImmediateFeedback: boolean;
+  questions: LessonQuizQuestion[];
+}
+
+export interface GrammarLesson {
+  id: string;
+  slug: string;
+  order: number;
+  level: JLPTLevel;
+  status: LessonStatus;
+  title: string;
+  jpTitle?: string;
+  shortTitle?: string;
+  description: string;
+  estimatedMinutes: number;
+  categoryTags: string[];
+  grammarTags: string[];
+  searchTerms: string[];
+  relatedLessonSlugs: string[];
+  relatedVocabularyTags: string[];
+  objectives: string[];
+  display: LessonDisplayConfig;
+  sections: LessonSection[];
+  quiz: LessonQuiz;
+}
+
+export interface LessonOrderToken {
+  id: string;
+  label: LessonPrompt;
+  value: string;
+}
+
+const RAW_GRAMMAR_LESSONS: GrammarLesson[] = [lesson001, lesson002, lesson003];
+
+function compareLessons(a: GrammarLesson, b: GrammarLesson) {
+  if (a.order !== b.order) return a.order - b.order;
+  return a.title.localeCompare(b.title, "es");
+}
+
+function assertUniqueLessons(lessons: GrammarLesson[]) {
+  const ids = new Set<string>();
+  const slugs = new Set<string>();
+  const orders = new Set<number>();
+
+  for (const lesson of lessons) {
+    if (ids.has(lesson.id)) {
+      throw new Error(`Grammar lesson id duplicado: ${lesson.id}`);
+    }
+
+    if (slugs.has(lesson.slug)) {
+      throw new Error(`Grammar lesson slug duplicado: ${lesson.slug}`);
+    }
+
+    if (orders.has(lesson.order)) {
+      throw new Error(`Grammar lesson order duplicado: ${lesson.order}`);
+    }
+
+    ids.add(lesson.id);
+    slugs.add(lesson.slug);
+    orders.add(lesson.order);
+  }
+}
+
+export const GRAMMAR_LESSONS = [...RAW_GRAMMAR_LESSONS].sort(compareLessons);
+
+assertUniqueLessons(GRAMMAR_LESSONS);
+
+const LESSONS_BY_ID = new Map(GRAMMAR_LESSONS.map((lesson) => [lesson.id, lesson]));
+const LESSONS_BY_SLUG = new Map(GRAMMAR_LESSONS.map((lesson) => [lesson.slug, lesson]));
+
+export function getAllGrammarLessons() {
+  return GRAMMAR_LESSONS;
+}
+
+export function getGrammarLessonById(id: string) {
+  return LESSONS_BY_ID.get(id);
+}
+
+export function getGrammarLessonBySlug(slug: string) {
+  return LESSONS_BY_SLUG.get(slug);
+}
+
+export function getGrammarLessonsByLevel(level: JLPTLevel) {
+  return GRAMMAR_LESSONS.filter((lesson) => lesson.level === level);
+}
+
+export function getGrammarLessonsByTag(tag: string) {
+  const normalized = tag.trim().toLowerCase();
+
+  return GRAMMAR_LESSONS.filter((lesson) =>
+    [...lesson.categoryTags, ...lesson.grammarTags, ...lesson.searchTerms].some(
+      (value) => value.toLowerCase() === normalized,
+    ),
+  );
+}
+
+export function getAdjacentGrammarLessons(slug: string) {
+  const index = GRAMMAR_LESSONS.findIndex((lesson) => lesson.slug === slug);
+
+  if (index === -1) {
+    return {
+      previous: undefined,
+      current: undefined,
+      next: undefined,
+    };
+  }
+
+  return {
+    previous: index > 0 ? GRAMMAR_LESSONS[index - 1] : undefined,
+    current: GRAMMAR_LESSONS[index],
+    next: index < GRAMMAR_LESSONS.length - 1 ? GRAMMAR_LESSONS[index + 1] : undefined,
+  };
+}
+
+export function getGrammarLessonSummaries() {
+  return GRAMMAR_LESSONS.map((lesson) => ({
+    id: lesson.id,
+    slug: lesson.slug,
+    order: lesson.order,
+    level: lesson.level,
+    status: lesson.status,
+    title: lesson.title,
+    jpTitle: lesson.jpTitle,
+    description: lesson.description,
+    estimatedMinutes: lesson.estimatedMinutes,
+    objectives: lesson.objectives,
+  }));
+}

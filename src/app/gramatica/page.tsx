@@ -29,10 +29,10 @@ const SECTIONS = [
     href: "/gramatica/lecciones",
     jp: "文法",
     label: "Lecciones",
-    desc: "Patrones gramaticales por nivel N5→N3",
+    desc: "Patrones gramaticales por nivel N5→N1",
     color: "#90CAF9",
     accent: "#1565C0",
-    status: "soon",
+    status: "ready",
   },
   {
     href: "/gramatica/oraciones",
@@ -86,7 +86,7 @@ const SECTIONS = [
     desc: "Keigo — lenguaje formal, neutro e informal",
     color: "#B0BEC5",
     accent: "#263238",
-    status: "soon",
+    status: "ready",
   },
   {
     href: "/gramatica/tiempo",

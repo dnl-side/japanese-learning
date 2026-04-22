@@ -72,3 +72,25 @@ export function rb(...pairs: string[]): RubySegment[] {
   }
   return segments;
 }
+
+export function ruby(input: string): RubySegment[] {
+  const regex = /\[([^\]|]+)\|([^\]]+)\]/g;
+  const segments: RubySegment[] = [];
+  let lastIndex = 0;
+  let match: RegExpExecArray | null;
+
+  while ((match = regex.exec(input)) !== null) {
+    if (match.index > lastIndex) {
+      segments.push({ text: input.slice(lastIndex, match.index) });
+    }
+
+    segments.push({ text: match[1], ruby: match[2] });
+    lastIndex = regex.lastIndex;
+  }
+
+  if (lastIndex < input.length) {
+    segments.push({ text: input.slice(lastIndex) });
+  }
+
+  return segments;
+}

@@ -12,6 +12,7 @@ export type ValidationState = "idle" | "valid" | "invalid-count" | "invalid-alig
 export interface SvgGuide {
   path2D: Path2D;
   box: { x: number; y: number; w: number; h: number };
+  strokePaths: Path2D[];
 }
 
 const STROKE_COLORS = ["#3B82F6", "#EF4444", "#14B8A6", "#F59E0B", "#8B5CF6", "#22C55E", "#F97316", "#EC4899"];
@@ -38,7 +39,17 @@ function fitGuide(canvasW: number, canvasH: number, vbW: number, vbH: number, pa
   return { scale, offsetX, offsetY, drawW, drawH };
 }
 
-async function loadSvgGuide(svgUrl: string, canvasW: number, canvasH: number): Promise<SvgGuide> {
+function splitPathDataIntoSubpaths(d: string): string[] {
+  const parts = d.match(/[Mm][^Mm]*/g);
+  return parts?.map((p) => p.trim()).filter(Boolean) ?? [];
+}
+
+async function loadSvgGuide(
+  svgUrl: string,
+  canvasW: number,
+  canvasH: number,
+  splitSubpaths = false
+): Promise<SvgGuide> {
   const res = await fetch(svgUrl);
   if (!res.ok) throw new Error(`SVG not found: ${svgUrl}`);
 
@@ -63,44 +74,31 @@ async function loadSvgGuide(svgUrl: string, canvasW: number, canvasH: number): P
   ]);
 
   const combinedPath = new Path2D();
+  const strokePaths: Path2D[] = [];
 
   for (const el of pathElements) {
     const d = el.getAttribute("d");
     if (!d) continue;
 
-    const transformed = new Path2D();
-    transformed.addPath(new Path2D(d), matrix);
-    combinedPath.addPath(transformed);
+    const pieces = splitSubpaths ? splitPathDataIntoSubpaths(d) : [d];
+
+    for (const piece of pieces) {
+      const transformed = new Path2D();
+      transformed.addPath(new Path2D(piece), matrix);
+      combinedPath.addPath(transformed);
+      strokePaths.push(transformed);
+    }
+  }
+
+  if (strokePaths.length === 0) {
+    throw new Error("No se pudieron transformar los trazos del SVG");
   }
 
   return {
     path2D: combinedPath,
     box: { x: offsetX, y: offsetY, w: drawW, h: drawH },
+    strokePaths,
   };
-}
-
-function buildAcceptanceMask(guide: SvgGuide, tolerance: number) {
-  const canvas = document.createElement("canvas");
-  canvas.width = CANVAS_SIZE;
-  canvas.height = CANVAS_SIZE;
-
-  const ctx = canvas.getContext("2d");
-  if (!ctx) return null;
-
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  // relleno del carácter
-  ctx.fillStyle = "#000";
-  ctx.fill(guide.path2D, "nonzero");
-
-  // expandir zona válida alrededor del borde
-  ctx.strokeStyle = "#000";
-  ctx.lineCap = "round";
-  ctx.lineJoin = "round";
-  ctx.lineWidth = tolerance * 2;
-  ctx.stroke(guide.path2D);
-
-  return ctx.getImageData(0, 0, canvas.width, canvas.height).data;
 }
 
 function buildAcceptanceMaskForPath(path: Path2D, tolerance: number) {
@@ -112,10 +110,8 @@ function buildAcceptanceMaskForPath(path: Path2D, tolerance: number) {
   if (!ctx) return null;
 
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
   ctx.fillStyle = "#000";
   ctx.fill(path, "nonzero");
-
   ctx.strokeStyle = "#000";
   ctx.lineCap = "round";
   ctx.lineJoin = "round";
@@ -124,7 +120,6 @@ function buildAcceptanceMaskForPath(path: Path2D, tolerance: number) {
 
   return ctx.getImageData(0, 0, canvas.width, canvas.height).data;
 }
-
 
 function pointHitsMask(
   data: Uint8ClampedArray,
@@ -305,21 +300,18 @@ function distance(a: Point, b: Point) {
   return Math.hypot(a.x - b.x, a.y - b.y);
 }
 
-function samplePathPoints(path: Path2D, step = 6): Point[] {
+function samplePathPoints(path: Path2D, step = 8): Point[] {
   const canvas = document.createElement("canvas");
   canvas.width = CANVAS_SIZE;
   canvas.height = CANVAS_SIZE;
+
   const ctx = canvas.getContext("2d");
   if (!ctx) return [];
 
-  // truco: Path2D no expone metrics en web como Flutter,
-  // así que rasterizamos el stroke y leemos puntos ocupados
   ctx.clearRect(0, 0, CANVAS_SIZE, CANVAS_SIZE);
-  ctx.strokeStyle = "#000";
-  ctx.lineCap = "round";
-  ctx.lineJoin = "round";
-  ctx.lineWidth = 2;
-  ctx.stroke(path);
+
+  ctx.fillStyle = "#000";
+  ctx.fill(path, "nonzero");
 
   const image = ctx.getImageData(0, 0, CANVAS_SIZE, CANVAS_SIZE).data;
   const points: Point[] = [];
@@ -334,40 +326,6 @@ function samplePathPoints(path: Path2D, step = 6): Point[] {
   }
 
   return points;
-}
-
-function nearestDistanceToGuide(point: Point, guidePoints: Point[]) {
-  let min = Infinity;
-  for (const g of guidePoints) {
-    const d = distance(point, g);
-    if (d < min) min = d;
-  }
-  return min;
-}
-
-function getStrokeBounds(strokes: Stroke[]) {
-  let minX = Infinity;
-  let minY = Infinity;
-  let maxX = -Infinity;
-  let maxY = -Infinity;
-
-  for (const stroke of strokes) {
-    for (const p of stroke.points) {
-      minX = Math.min(minX, p.x);
-      minY = Math.min(minY, p.y);
-      maxX = Math.max(maxX, p.x);
-      maxY = Math.max(maxY, p.y);
-    }
-  }
-
-  if (!Number.isFinite(minX)) return null;
-
-  return {
-    x: minX,
-    y: minY,
-    w: Math.max(1, maxX - minX),
-    h: Math.max(1, maxY - minY),
-  };
 }
 
 function getKanjiFolder(level?: number) {
@@ -386,6 +344,128 @@ function buildSvgPath(svgFilename: string, scriptType: ScriptType, kanjiLevel?: 
   return `/svg/${scriptType}/${svgFilename}.svg`;
 }
 
+function validateStrokeShape(
+  points: Point[],
+  options?: {
+    minStrokeLength?: number;
+    maxDetourRatio?: number;
+    maxBacktrackRatio?: number;
+    maxTotalTurn?: number;
+  }
+) {
+  const usablePoints = resampleStrokePoints(trimStrokePoints(points), 8);
+
+  const minStrokeLength = options?.minStrokeLength ?? 24;
+  const maxDetourRatio = options?.maxDetourRatio ?? 2.05;
+  const maxBacktrackRatio = options?.maxBacktrackRatio ?? 0.16;
+  const maxTotalTurn = options?.maxTotalTurn ?? Math.PI * 2.25;
+
+  if (usablePoints.length < 2) {
+    return { ok: false, usablePoints };
+  }
+
+  if (strokeLength(usablePoints) < minStrokeLength) {
+    return { ok: false, usablePoints };
+  }
+
+  const detourRatio = getDetourRatio(usablePoints);
+  const backtrackRatio = getBacktrackRatio(usablePoints);
+  const totalTurn = getTotalTurn(usablePoints);
+
+  if (detourRatio > maxDetourRatio) {
+    return { ok: false, usablePoints };
+  }
+
+  if (backtrackRatio > maxBacktrackRatio) {
+    return { ok: false, usablePoints };
+  }
+
+  if (totalTurn > maxTotalTurn) {
+    return { ok: false, usablePoints };
+  }
+
+  return { ok: true, usablePoints };
+}
+
+
+function getBoundsFromPoints(points: Point[]) {
+  if (points.length === 0) return null;
+
+  let minX = Infinity;
+  let minY = Infinity;
+  let maxX = -Infinity;
+  let maxY = -Infinity;
+
+  for (const p of points) {
+    minX = Math.min(minX, p.x);
+    minY = Math.min(minY, p.y);
+    maxX = Math.max(maxX, p.x);
+    maxY = Math.max(maxY, p.y);
+  }
+
+  return {
+    x: minX,
+    y: minY,
+    w: Math.max(1, maxX - minX),
+    h: Math.max(1, maxY - minY),
+  };
+}
+
+function isHorizontalStroke(bounds: { w: number; h: number }) {
+  return bounds.w >= bounds.h * 1.7;
+}
+
+function isVerticalStroke(bounds: { w: number; h: number }) {
+  return bounds.h >= bounds.w * 1.7;
+}
+
+function getAxisCoverage(expectedBounds: { w: number; h: number }, userBounds: { w: number; h: number }) {
+  if (isHorizontalStroke(expectedBounds)) {
+    return userBounds.w / Math.max(expectedBounds.w, 1);
+  }
+
+  if (isVerticalStroke(expectedBounds)) {
+    return userBounds.h / Math.max(expectedBounds.h, 1);
+  }
+
+  const expectedDiag = Math.hypot(expectedBounds.w, expectedBounds.h);
+  const userDiag = Math.hypot(userBounds.w, userBounds.h);
+  return userDiag / Math.max(expectedDiag, 1);
+}
+
+function getGuideCoverageRatio(guidePoints: Point[], userPoints: Point[], radius: number) {
+  if (guidePoints.length === 0 || userPoints.length === 0) return 0;
+
+  let covered = 0;
+
+  for (const gp of guidePoints) {
+    let hit = false;
+
+    for (const up of userPoints) {
+      if (distance(gp, up) <= radius) {
+        hit = true;
+        break;
+      }
+    }
+
+    if (hit) covered++;
+  }
+
+  return covered / guidePoints.length;
+}
+
+function getBoundsCenter(bounds: { x: number; y: number; w: number; h: number }) {
+  return {
+    x: bounds.x + bounds.w / 2,
+    y: bounds.y + bounds.h / 2,
+  };
+}
+
+function getLengthRatio(expectedBounds: { w: number; h: number }, userPoints: Point[]) {
+  const expectedMainAxis = Math.max(expectedBounds.w, expectedBounds.h, 1);
+  const userLen = strokeLength(userPoints);
+  return userLen / expectedMainAxis;
+}
 
 export function useDrawingCanvas(
   svgFilename: string,
@@ -419,22 +499,22 @@ export function useDrawingCanvas(
   }, [attempts]);
 
   useEffect(() => {
-  setGuideLoading(true);
-  setGuideError(false);
-  setGuide(null);
+    setGuideLoading(true);
+    setGuideError(false);
+    setGuide(null);
 
-  const svgPath = buildSvgPath(svgFilename, scriptType, kanjiLevel);
+    const svgPath = buildSvgPath(svgFilename, scriptType, kanjiLevel);
 
-  loadSvgGuide(svgPath, CANVAS_SIZE, CANVAS_SIZE)
-    .then((g) => {
-      setGuide(g);
-      setGuideLoading(false);
-    })
-    .catch(() => {
-      setGuideError(true);
-      setGuideLoading(false);
-    });
-}, [svgFilename, scriptType, kanjiLevel]);
+    loadSvgGuide(svgPath, CANVAS_SIZE, CANVAS_SIZE, scriptType === "kanji")
+      .then((g) => {
+        setGuide(g);
+        setGuideLoading(false);
+      })
+      .catch(() => {
+        setGuideError(true);
+        setGuideLoading(false);
+      });
+  }, [svgFilename, scriptType, kanjiLevel]);
 
   useEffect(() => {
     const overlay = overlayRef.current;
@@ -566,77 +646,167 @@ export function useDrawingCanvas(
   }, [isDrawing, currentStroke, colorIndex, strokeWidth]);
 
   const validate = useCallback((): ValidationState => {
-  if (strokes.length === 0) return "idle";
+    if (strokes.length === 0) return "idle";
 
-  if (strokeCount !== requiredStrokes) {
-    setValidation("invalid-count");
-    return "invalid-count";
-  }
+    if (strokeCount !== requiredStrokes) {
+      setValidation("invalid-count");
+      return "invalid-count";
+    }
 
-  if (!guide) {
-    setValidation("valid");
-    return "valid";
-  }
-
-  const tolerance = 25;
-  const minStrokeLength = 24;
-  const minHitRatio = 0.72;
-
-  const outlineMask = buildOutlineMask(guide.path2D, tolerance);
-  if (!outlineMask) return "idle";
-
-  let totalPoints = 0;
-  let validPoints = 0;
-
-  for (const stroke of strokes) {
-    const usablePoints = resampleStrokePoints(trimStrokePoints(stroke.points), 8);
-
-    const detourRatio = getDetourRatio(usablePoints);
-    const backtrackRatio = getBacktrackRatio(usablePoints);
-    const totalTurn = getTotalTurn(usablePoints);
-
-    console.log("shape debug", {
-    detourRatio,
-    backtrackRatio,
-    totalTurn,
-    });
-
-    if (usablePoints.length < 2) {
+    if (!guide) {
       return registerFail();
     }
 
-    if (strokeLength(usablePoints) < minStrokeLength) {
-      return registerFail();
+    const isKanji = scriptType === "kanji";
+
+    if (isKanji) {
+      if (!guide.strokePaths.length) {
+        return registerFail();
+      }
+
+      if (guide.strokePaths.length !== requiredStrokes) {
+        return registerFail();
+      }
+
+      const tolerance = 28;
+      const coverageRadius = 28;
+      const minLocalRatio = 0.5;
+      const minGuideCoverage = 0.22;
+      const minAxisCoverage = 0.32;
+      const minLengthRatio = 0.26;
+      const maxCenterDistanceRatio = 0.58;
+
+      const globalOutlineMask = buildOutlineMask(guide.path2D, 30);
+      if (!globalOutlineMask) return "idle";
+
+      let globalTotal = 0;
+      let globalHits = 0;
+
+      for (let index = 0; index < requiredStrokes; index++) {
+        const userStroke = strokes[index];
+        const expectedPath = guide.strokePaths[index];
+
+        if (!userStroke || !expectedPath) {
+          return registerFail();
+        }
+
+        const guidePoints = samplePathPoints(expectedPath, 8);
+        const expectedBounds = getBoundsFromPoints(guidePoints);
+
+        if (!expectedBounds || guidePoints.length === 0) {
+          return registerFail();
+        }
+
+        const dynamicMinStrokeLength = Math.max(
+          12,
+          Math.min(28, Math.max(expectedBounds.w, expectedBounds.h) * 0.18)
+        );
+
+        const shapeCheck = validateStrokeShape(userStroke.points, {
+          minStrokeLength: dynamicMinStrokeLength,
+          maxDetourRatio: 2.55,
+          maxBacktrackRatio: 0.3,
+          maxTotalTurn: Math.PI * 3.1,
+        });
+
+        if (!shapeCheck.ok) {
+          return registerFail();
+        }
+
+        const userBounds = getBoundsFromPoints(shapeCheck.usablePoints);
+        if (!userBounds) {
+          return registerFail();
+        }
+
+        const mask = buildAcceptanceMaskForPath(expectedPath, tolerance);
+        if (!mask) return "idle";
+
+        let localTotal = 0;
+        let localHits = 0;
+
+        for (let i = 0; i < shapeCheck.usablePoints.length; i += 2) {
+          const p = shapeCheck.usablePoints[i];
+          localTotal++;
+          globalTotal++;
+
+          if (pointHitsMask(mask, CANVAS_SIZE, CANVAS_SIZE, p.x, p.y)) {
+            localHits++;
+          }
+
+          if (pointHitsMask(globalOutlineMask, CANVAS_SIZE, CANVAS_SIZE, p.x, p.y)) {
+            globalHits++;
+          }
+        }
+
+        const localRatio = localTotal === 0 ? 0 : localHits / localTotal;
+        if (localRatio < minLocalRatio) {
+          return registerFail();
+        }
+
+        const axisCoverage = getAxisCoverage(expectedBounds, userBounds);
+        if (axisCoverage < minAxisCoverage) {
+          return registerFail();
+        }
+
+        const guideCoverage = getGuideCoverageRatio(guidePoints, shapeCheck.usablePoints, coverageRadius);
+        if (guideCoverage < minGuideCoverage) {
+          return registerFail();
+        }
+
+        const lengthRatio = getLengthRatio(expectedBounds, shapeCheck.usablePoints);
+        if (lengthRatio < minLengthRatio) {
+          return registerFail();
+        }
+
+        const expectedCenter = getBoundsCenter(expectedBounds);
+        const userCenter = getBoundsCenter(userBounds);
+        const centerDistance = distance(expectedCenter, userCenter);
+        const expectedSize = Math.max(expectedBounds.w, expectedBounds.h, 1);
+        const centerDistanceRatio = centerDistance / expectedSize;
+
+        if (centerDistanceRatio > maxCenterDistanceRatio) {
+          return registerFail();
+        }
+      }
+
+      const globalHitRatio = globalTotal === 0 ? 0 : globalHits / globalTotal;
+      const isValid = globalHitRatio >= 0.62;
+
+      setValidation(isValid ? "valid" : "invalid-alignment");
+      return isValid ? "valid" : registerFail();
     }
 
-    if (detourRatio > 2.05) {
-    return registerFail();
-    }
+    const tolerance = 25;
+    const minHitRatio = 0.72;
 
-    if (backtrackRatio > 0.16) {
-    return registerFail();
-    }
+    const outlineMask = buildOutlineMask(guide.path2D, tolerance);
+    if (!outlineMask) return "idle";
 
-    if (totalTurn > Math.PI * 2.25) {
-    return registerFail();
-    }
+    let totalPoints = 0;
+    let validPoints = 0;
 
-    for (let i = 0; i < usablePoints.length; i += 2) {
-      const p = usablePoints[i];
-      totalPoints++;
+    for (const stroke of strokes) {
+      const shapeCheck = validateStrokeShape(stroke.points);
+      if (!shapeCheck.ok) {
+        return registerFail();
+      }
 
-      if (pointHitsMask(outlineMask, CANVAS_SIZE, CANVAS_SIZE, p.x, p.y)) {
-        validPoints++;
+      for (let i = 0; i < shapeCheck.usablePoints.length; i += 2) {
+        const p = shapeCheck.usablePoints[i];
+        totalPoints++;
+
+        if (pointHitsMask(outlineMask, CANVAS_SIZE, CANVAS_SIZE, p.x, p.y)) {
+          validPoints++;
+        }
       }
     }
-  }
 
-  const hitRatio = totalPoints === 0 ? 0 : validPoints / totalPoints;
-  const isValid = hitRatio >= minHitRatio;
+    const hitRatio = totalPoints === 0 ? 0 : validPoints / totalPoints;
+    const isValid = hitRatio >= minHitRatio;
 
-  setValidation(isValid ? "valid" : "invalid-alignment");
-  return isValid ? "valid" : registerFail();
-}, [strokes, strokeCount, requiredStrokes, guide, registerFail]);
+    setValidation(isValid ? "valid" : "invalid-alignment");
+    return isValid ? "valid" : registerFail();
+    }, [strokes, strokeCount, requiredStrokes, guide, scriptType, registerFail]);
 
   const clear = useCallback(() => {
     setStrokes([]);

@@ -2591,7 +2591,7 @@ const LEVEL1: KanjiEntry[] = [
 
 // ─── Level 2 Kanji — 160 chars, stroke counts only ───────────────────────────
 
-export const LEVEL2_BLOCK_01_08 = [
+export const LEVEL2: KanjiEntry[]  = [
   {
     char: "引",
     level: 2,
@@ -3232,7 +3232,26306 @@ export const LEVEL2_BLOCK_01_08 = [
     ],
     hasSvg: true,
   },
+  {
+    char: "古",
+    level: 2,
+    strokeCount: 5,
+    on: ["コ"],
+    kun: ["ふる.い"],
+    meaning: "Antiguo / viejo",
+    examples: [
+      { segments: ruby("[古|ふる]い[本|ほん]を[読|よ]みます。"), translation: "Leo un libro viejo." },
+      { segments: ruby("[古|ふる]い[家|いえ]があそこにあります。"), translation: "Allí hay una casa antigua." },
+      { segments: ruby("この[町|まち]には[古|ふる]いお[寺|てら]があります。"), translation: "En este pueblo hay un templo antiguo." },
+      { segments: ruby("[古|ふる]い[時計|とけい]を[持|も]っています。"), translation: "Tengo un reloj viejo." },
+      { segments: ruby("[古|ふる]いしゃしんを[見|み]ました。"), translation: "Vi una foto antigua." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "午",
+    level: 2,
+    strokeCount: 4,
+    on: ["ゴ"],
+    kun: [],
+    meaning: "Mediodía",
+    examples: [
+      { segments: ruby("[正午|しょうご]に[昼|ひる]ごはんを[食|た]べます。"), translation: "Al mediodía almuerzo." },
+      { segments: ruby("[午前|ごぜん]の[授業|じゅぎょう]は九[時|じ]に[始|はじ]まります。"), translation: "La clase de la mañana empieza a las nueve." },
+      { segments: ruby("[午前|ごぜん]は[家|いえ]で[勉強|べんきょう]します。"), translation: "Por la mañana estudio en casa." },
+      { segments: ruby("[午後|ごご]に[先生|せんせい]と[会|あ]います。"), translation: "Por la tarde me encuentro con el profesor." },
+      { segments: ruby("[午前中|ごぜんちゅう]にしゅくだいをします。"), translation: "Hago la tarea durante la mañana." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "後",
+    level: 2,
+    strokeCount: 9,
+    on: ["ゴ", "コウ"],
+    kun: ["あと", "のち", "うし.ろ"],
+    meaning: "Después / detrás",
+    examples: [
+      { segments: ruby("[後|あと]で[電話|でんわ]します。"), translation: "Te llamaré después." },
+      { segments: ruby("[学校|がっこう]の[後|うし]ろに[公園|こうえん]があります。"), translation: "Detrás de la escuela hay un parque." },
+      { segments: ruby("[食事|しょくじ]の[後|あと]で[勉強|べんきょう]します。"), translation: "Después de comer estudio." },
+      { segments: ruby("[後|のち]ほど[先生|せんせい]に[聞|き]きます。"), translation: "Más tarde le preguntaré al profesor." },
+      { segments: ruby("[一週間|いっしゅうかん][後|ご]にテストがあります。"), translation: "Habrá una prueba en una semana." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "語",
+    level: 2,
+    strokeCount: 14,
+    on: ["ゴ"],
+    kun: ["かた.る"],
+    meaning: "Idioma / palabra / hablar",
+    examples: [
+      { segments: ruby("[日本語|にほんご]を[勉強|べんきょう]しています。"), translation: "Estoy estudiando japonés." },
+      { segments: ruby("[英語|えいご]の[本|ほん]を[読|よ]みます。"), translation: "Leo un libro en inglés." },
+      { segments: ruby("[中国語|ちゅうごくご]はまだむずかしいです。"), translation: "El chino todavía es difícil." },
+      { segments: ruby("[言語|げんご]を[学|まな]ぶのが[好|す]きです。"), translation: "Me gusta aprender idiomas." },
+      { segments: ruby("[日本語|にほんご]で[話|はな]してください。"), translation: "Por favor, hable en japonés." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "工",
+    level: 2,
+    strokeCount: 3,
+    on: ["コウ"],
+    kun: [],
+    meaning: "Construcción / oficio / industria",
+    examples: [
+      { segments: ruby("[工場|こうじょう]で[父|ちち]が[働|はたら]いています。"), translation: "Mi padre trabaja en una fábrica." },
+      { segments: ruby("[工事|こうじ]のため、この[道|みち]は[通|とお]れません。"), translation: "Por obras, este camino no se puede pasar." },
+      { segments: ruby("[大工|だいく]さんが[家|いえ]を[作|つく]っています。"), translation: "El carpintero está construyendo una casa." },
+      { segments: ruby("[工業|こうぎょう]の[町|まち]です。"), translation: "Es una ciudad industrial." },
+      { segments: ruby("[工作|こうさく]の[時間|じかん]に[紙|かみ]で[作|つく]ります。"), translation: "En la hora de manualidades hacemos algo con papel." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "公",
+    level: 2,
+    strokeCount: 4,
+    on: ["コウ"],
+    kun: ["おおやけ"],
+    meaning: "Público / oficial",
+    examples: [
+      { segments: ruby("[公園|こうえん]で[友達|ともだち]と[遊|あそ]びます。"), translation: "Juego con mis amigos en el parque." },
+      { segments: ruby("[公立|こうりつ]の[学校|がっこう]です。"), translation: "Es una escuela pública." },
+      { segments: ruby("[公会堂|こうかいどう]でイベントがあります。"), translation: "Hay un evento en el salón público." },
+      { segments: ruby("[公平|こうへい]に[決|き]めましょう。"), translation: "Decidámoslo de manera justa." },
+      { segments: ruby("[公園|こうえん]の[前|まえ]で[待|ま]ちます。"), translation: "Esperaré frente al parque." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "広",
+    level: 2,
+    strokeCount: 5,
+    on: ["コウ"],
+    kun: ["ひろ.い", "ひろ.がる"],
+    meaning: "Amplio / ancho",
+    examples: [
+      { segments: ruby("この[部屋|へや]はとても[広|ひろ]いです。"), translation: "Esta habitación es muy amplia." },
+      { segments: ruby("[広|ひろ]い[道|みち]をまっすぐ[行|い]きます。"), translation: "Voy recto por un camino ancho." },
+      { segments: ruby("[校庭|こうてい]が[広|ひろ]いです。"), translation: "El patio de la escuela es amplio." },
+      { segments: ruby("[広場|ひろば]で[子|こ]どもたちが[遊|あそ]んでいます。"), translation: "Los niños juegan en la plaza abierta." },
+      { segments: ruby("[青|あお]い[空|そら]が[広|ひろ]がっています。"), translation: "Se extiende un cielo azul." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "交",
+    level: 2,
+    strokeCount: 6,
+    on: ["コウ"],
+    kun: ["まじ.わる", "か.わす"],
+    meaning: "Intercambiar / cruzar",
+    examples: [
+      { segments: ruby("[友達|ともだち]とてがみを[交|か]わします。"), translation: "Intercambio cartas con un amigo." },
+      { segments: ruby("[交差点|こうさてん]で[右|みぎ]に[曲|ま]がります。"), translation: "Doblo a la derecha en la intersección." },
+      { segments: ruby("[学校|がっこう]で[会話|かいわ]を[交|か]わします。"), translation: "Intercambiamos palabras en la escuela." },
+      { segments: ruby("[交通|こうつう]ルールを[守|まも]ってください。"), translation: "Por favor, respeta las normas de tránsito." },
+      { segments: ruby("[名刺|めいし]を[交|か]わしました。"), translation: "Intercambiamos tarjetas de presentación." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "光",
+    level: 2,
+    strokeCount: 6,
+    on: ["コウ"],
+    kun: ["ひかり", "ひか.る"],
+    meaning: "Luz / brillar",
+    examples: [
+      { segments: ruby("[月|つき]の[光|ひかり]がきれいです。"), translation: "La luz de la luna es hermosa." },
+      { segments: ruby("[光|ひか]る[星|ほし]が[見|み]えます。"), translation: "Se ve una estrella brillante." },
+      { segments: ruby("[朝|あさ]の[光|ひかり]が[部屋|へや]に[入|はい]ります。"), translation: "La luz de la mañana entra en la habitación." },
+      { segments: ruby("[太陽|たいよう]の[光|ひかり]はあたたかいです。"), translation: "La luz del sol es cálida." },
+      { segments: ruby("[信号|しんごう]の[光|ひかり]をよく[見|み]てください。"), translation: "Mira bien la luz del semáforo." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "考",
+    level: 2,
+    strokeCount: 6,
+    on: ["コウ"],
+    kun: ["かんが.える"],
+    meaning: "Pensar / considerar",
+    examples: [
+      { segments: ruby("よく[考|かんが]えてから[答|こた]えます。"), translation: "Respondo después de pensarlo bien." },
+      { segments: ruby("[将来|しょうらい]のことを[考|かんが]えます。"), translation: "Pienso en el futuro." },
+      { segments: ruby("[先生|せんせい]の[質問|しつもん]を[考|かんが]えています。"), translation: "Estoy pensando en la pregunta del profesor." },
+      { segments: ruby("[家族|かぞく]と[旅行|りょこう]の[計画|けいかく]を[考|かんが]えます。"), translation: "Pienso el plan de viaje con mi familia." },
+      { segments: ruby("もうすこし[考|かんが]えてみます。"), translation: "Voy a pensarlo un poco más." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "行",
+    level: 2,
+    strokeCount: 6,
+    on: ["コウ", "ギョウ"],
+    kun: ["い.く", "おこな.う"],
+    meaning: "Ir / realizar",
+    examples: [
+      { segments: ruby("[学校|がっこう]へ[行|い]きます。"), translation: "Voy a la escuela." },
+      { segments: ruby("[明日|あした][図書館|としょかん]へ[行|い]きます。"), translation: "Mañana iré a la biblioteca." },
+      { segments: ruby("[旅行|りょこう]で[京都|きょうと]へ[行|い]きました。"), translation: "Fui a Kioto de viaje." },
+      { segments: ruby("[運動会|うんどうかい]を[行|おこな]います。"), translation: "Realizamos el festival deportivo." },
+      { segments: ruby("[銀行|ぎんこう]へ[行|い]ってお[金|かね]をおります。"), translation: "Voy al banco a retirar dinero." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "高",
+    level: 2,
+    strokeCount: 10,
+    on: ["コウ"],
+    kun: ["たか.い"],
+    meaning: "Alto / caro",
+    examples: [
+      { segments: ruby("[山|やま]が[高|たか]いです。"), translation: "La montaña es alta." },
+      { segments: ruby("この[本|ほん]は少し[高|たか]いです。"), translation: "Este libro es un poco caro." },
+      { segments: ruby("[高|たか]い[木|き]が[見|み]えます。"), translation: "Se ve un árbol alto." },
+      { segments: ruby("[東京|とうきょう]の[建物|たてもの]は[高|たか]いです。"), translation: "Los edificios de Tokio son altos." },
+      { segments: ruby("[高音|こうおん]がよく[聞|き]こえます。"), translation: "Se escuchan bien los tonos agudos." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "黄",
+    level: 2,
+    strokeCount: 11,
+    on: ["コウ", "オウ"],
+    kun: ["き", "きいろ"],
+    meaning: "Amarillo",
+    examples: [
+      { segments: ruby("[黄|き]いろい[花|はな]が[咲|さ]いています。"), translation: "Están floreciendo flores amarillas." },
+      { segments: ruby("[黄|き]いろの[車|くるま]が[来|き]ました。"), translation: "Llegó un auto amarillo." },
+      { segments: ruby("[黄|き]いろい[鳥|とり]を[見|み]ました。"), translation: "Vi un pájaro amarillo." },
+      { segments: ruby("[信号|しんごう]が[黄|き]いろになりました。"), translation: "El semáforo se puso amarillo." },
+      { segments: ruby("[黄|き]いろのえんぴつを[使|つか]います。"), translation: "Uso un lápiz amarillo." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "合",
+    level: 2,
+    strokeCount: 6,
+    on: ["ゴウ", "ガッ"],
+    kun: ["あ.う", "あ.わせる"],
+    meaning: "Juntar / coincidir / combinar",
+    examples: [
+      { segments: ruby("[友達|ともだち]と[時間|じかん]を[合|あ]わせます。"), translation: "Ajusto la hora con mi amigo." },
+      { segments: ruby("[答|こた]えが[合|あ]っています。"), translation: "La respuesta es correcta." },
+      { segments: ruby("[二人|ふたり]の[意見|いけん]が[合|あ]いました。"), translation: "Las opiniones de los dos coincidieron." },
+      { segments: ruby("[力|ちから]を[合|あ]わせてがんばります。"), translation: "Nos esforzamos uniendo fuerzas." },
+      { segments: ruby("[合図|あいず]を[見|み]て[始|はじ]めてください。"), translation: "Empieza al ver la señal." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "谷",
+    level: 2,
+    strokeCount: 7,
+    on: ["コク"],
+    kun: ["たに"],
+    meaning: "Valle",
+    examples: [
+      { segments: ruby("[谷|たに]に[川|かわ]がながれています。"), translation: "En el valle corre un río." },
+      { segments: ruby("[深|ふか]い[谷|たに]があります。"), translation: "Hay un valle profundo." },
+      { segments: ruby("[谷|たに]の[向|む]こうに[村|むら]があります。"), translation: "Al otro lado del valle hay un pueblo." },
+      { segments: ruby("[山|やま]から[谷|たに]が[見|み]えます。"), translation: "Desde la montaña se ve el valle." },
+      { segments: ruby("[谷間|たにま]にきりがでています。"), translation: "Hay niebla en el valle." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "国",
+    level: 2,
+    strokeCount: 8,
+    on: ["コク"],
+    kun: ["くに"],
+    meaning: "País",
+    examples: [
+      { segments: ruby("[日本|にほん]は[島|しま]の[国|くに]です。"), translation: "Japón es un país insular." },
+      { segments: ruby("[国|くに]へ[帰|かえ]りたいです。"), translation: "Quiero volver a mi país." },
+      { segments: ruby("[外国|がいこく]の[文化|ぶんか]に[興味|きょうみ]があります。"), translation: "Me interesa la cultura extranjera." },
+      { segments: ruby("[国語|こくご]の[授業|じゅぎょう]があります。"), translation: "Hay clase de lengua nacional." },
+      { segments: ruby("[自分|じぶん]の[国|くに]を[紹介|しょうかい]します。"), translation: "Presento mi país." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "黒",
+    level: 2,
+    strokeCount: 11,
+    on: ["コク"],
+    kun: ["くろ", "くろ.い"],
+    meaning: "Negro",
+    examples: [
+      { segments: ruby("[黒|くろ]い[犬|いぬ]がいます。"), translation: "Hay un perro negro." },
+      { segments: ruby("[黒|くろ]いかばんを[使|つか]っています。"), translation: "Estoy usando un bolso negro." },
+      { segments: ruby("[黒板|こくばん]に[字|じ]を[書|か]きます。"), translation: "Escribo en la pizarra." },
+      { segments: ruby("[空|そら]が[黒|くろ]くなってきました。"), translation: "El cielo se está oscureciendo." },
+      { segments: ruby("[黒|くろ]いくつを[買|か]いました。"), translation: "Compré zapatos negros." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "今",
+    level: 2,
+    strokeCount: 4,
+    on: ["コン"],
+    kun: ["いま"],
+    meaning: "Ahora",
+    examples: [
+      { segments: ruby("[今|いま]、しゅくだいをしています。"), translation: "Ahora estoy haciendo la tarea." },
+      { segments: ruby("[今朝|けさ]は[早|はや]く[起|お]きました。"), translation: "Esta mañana me levanté temprano." },
+      { segments: ruby("[今週|こんしゅう]はとてもいそがしいです。"), translation: "Esta semana estoy muy ocupado." },
+      { segments: ruby("[今月|こんげつ]はテストが二つあります。"), translation: "Este mes hay dos pruebas." },
+      { segments: ruby("[今|いま]から[行|い]きます。"), translation: "Voy ahora mismo." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "才",
+    level: 2,
+    strokeCount: 3,
+    on: ["サイ"],
+    kun: [],
+    meaning: "Años de edad / talento",
+    examples: [
+      { segments: ruby("わたしは十[才|さい]です。"), translation: "Tengo diez años." },
+      { segments: ruby("[妹|いもうと]は五[才|さい]です。"), translation: "Mi hermana menor tiene cinco años." },
+      { segments: ruby("あの[子|こ]は七[才|さい]になりました。"), translation: "Ese niño cumplió siete años." },
+      { segments: ruby("[何才|なんさい]ですか。"), translation: "¿Cuántos años tienes?" },
+      { segments: ruby("まだ一[才|さい]です。"), translation: "Todavía tiene un año." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "細",
+    level: 2,
+    strokeCount: 11,
+    on: ["サイ"],
+    kun: ["ほそ.い", "こま.かい"],
+    meaning: "Delgado / fino / detallado",
+    examples: [
+      { segments: ruby("[細|ほそ]い[道|みち]を[歩|ある]きます。"), translation: "Camino por un sendero estrecho." },
+      { segments: ruby("[細|ほそ]いペンで[書|か]きます。"), translation: "Escribo con un bolígrafo fino." },
+      { segments: ruby("[細|こま]かいところまで[見|み]ます。"), translation: "Miro hasta los detalles." },
+      { segments: ruby("[妹|いもうと]の[指|ゆび]は[細|ほそ]いです。"), translation: "Los dedos de mi hermana menor son delgados." },
+      { segments: ruby("[細|こま]かい[字|じ]を[読|よ]みます。"), translation: "Leo las letras pequeñas." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "作",
+    level: 2,
+    strokeCount: 7,
+    on: ["サク", "サ"],
+    kun: ["つく.る"],
+    meaning: "Hacer / crear",
+    examples: [
+      { segments: ruby("[母|はは]が[夕食|ゆうしょく]を[作|つく]ります。"), translation: "Mi madre prepara la cena." },
+      { segments: ruby("[紙|かみ]で[花|はな]を[作|つく]りました。"), translation: "Hice una flor de papel." },
+      { segments: ruby("[作文|さくぶん]を[書|か]きます。"), translation: "Escribo una redacción." },
+      { segments: ruby("[新|あたら]しいゲームを[作|つく]りたいです。"), translation: "Quiero crear un juego nuevo." },
+      { segments: ruby("[友達|ともだち]といっしょにケーキを[作|つく]ります。"), translation: "Hago un pastel junto con un amigo." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "算",
+    level: 2,
+    strokeCount: 14,
+    on: ["サン"],
+    kun: [],
+    meaning: "Cálculo / contar",
+    examples: [
+      { segments: ruby("[算数|さんすう]が[好|す]きです。"), translation: "Me gustan las matemáticas." },
+      { segments: ruby("[算数|さんすう]のしゅくだいをします。"), translation: "Hago la tarea de matemáticas." },
+      { segments: ruby("[計算|けいさん]してください。"), translation: "Por favor, calcúlelo." },
+      { segments: ruby("[暗算|あんざん]で[答|こた]えました。"), translation: "Respondí haciendo cálculo mental." },
+      { segments: ruby("[計算|けいさん]が[少|すこ]しむずかしいです。"), translation: "El cálculo es un poco difícil." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "止",
+    level: 2,
+    strokeCount: 4,
+    on: ["シ"],
+    kun: ["と.まる", "と.める"],
+    meaning: "Parar / detener",
+    examples: [
+      { segments: ruby("[雨|あめ]が[止|や]みました。"), translation: "La lluvia se detuvo." },
+      { segments: ruby("ここで[車|くるま]を[止|と]めてください。"), translation: "Por favor, detenga el auto aquí." },
+      { segments: ruby("[駅|えき]で[電車|でんしゃ]が[止|と]まります。"), translation: "El tren se detiene en la estación." },
+      { segments: ruby("[止|と]まれの[標識|ひょうしき]があります。"), translation: "Hay una señal de alto." },
+      { segments: ruby("[音楽|おんがく]を[止|と]めます。"), translation: "Detengo la música." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "市",
+    level: 2,
+    strokeCount: 5,
+    on: ["シ"],
+    kun: ["いち"],
+    meaning: "Ciudad / mercado",
+    examples: [
+      { segments: ruby("[市|し]の[図書館|としょかん]へ[行|い]きます。"), translation: "Voy a la biblioteca municipal." },
+      { segments: ruby("[市役所|しやくしょ]は[駅|えき]の[近|ちか]くです。"), translation: "La municipalidad está cerca de la estación." },
+      { segments: ruby("[青森市|あおもりし]に[住|す]んでいます。"), translation: "Vivo en la ciudad de Aomori." },
+      { segments: ruby("[朝市|あさいち]で[魚|さかな]を[買|か]いました。"), translation: "Compré pescado en el mercado matutino." },
+      { segments: ruby("[市内|しない]をバスでまわります。"), translation: "Recorro la ciudad en autobús." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "矢",
+    level: 2,
+    strokeCount: 5,
+    on: ["シ"],
+    kun: ["や"],
+    meaning: "Flecha",
+    examples: [
+      { segments: ruby("[矢|や]がまっすぐ[飛|と]びます。"), translation: "La flecha vuela recta." },
+      { segments: ruby("[弓|ゆみ]と[矢|や]を[使|つか]います。"), translation: "Uso arco y flecha." },
+      { segments: ruby("[上|うえ]の[矢印|やじるし]を[見|み]てください。"), translation: "Por favor, mire la flecha de arriba." },
+      { segments: ruby("[地図|ちず]の[矢印|やじるし]にしたがって[行|い]きます。"), translation: "Sigo la flecha del mapa." },
+      { segments: ruby("[矢|や]の[方向|ほうこう]へ[進|すす]みます。"), translation: "Avanzo en la dirección de la flecha." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "姉",
+    level: 2,
+    strokeCount: 7,
+    on: ["シ"],
+    kun: ["あね"],
+    meaning: "Hermana mayor",
+    examples: [
+      { segments: ruby("[姉|あね]は[大学生|だいがくせい]です。"), translation: "Mi hermana mayor es universitaria." },
+      { segments: ruby("[姉|あね]といっしょに[買|か]い[物|もの]に[行|い]きます。"), translation: "Voy de compras con mi hermana mayor." },
+      { segments: ruby("[姉|あね]がケーキを[作|つく]りました。"), translation: "Mi hermana mayor hizo un pastel." },
+      { segments: ruby("[姉|あね]の[部屋|へや]はきれいです。"), translation: "La habitación de mi hermana mayor está ordenada." },
+      { segments: ruby("[姉妹|しまい]でなかよく[話|はな]します。"), translation: "Las hermanas hablamos bien entre nosotras." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "思",
+    level: 2,
+    strokeCount: 9,
+    on: ["シ"],
+    kun: ["おも.う"],
+    meaning: "Pensar / sentir",
+    examples: [
+      { segments: ruby("そう[思|おも]います。"), translation: "Eso pienso." },
+      { segments: ruby("[今日|きょう]は[暑|あつ]いと[思|おも]います。"), translation: "Pienso que hoy hace calor." },
+      { segments: ruby("[家族|かぞく]のことをよく[思|おも]います。"), translation: "Pienso mucho en mi familia." },
+      { segments: ruby("[友達|ともだち]も[同|おな]じだと[思|おも]います。"), translation: "Pienso que mi amigo también es igual." },
+      { segments: ruby("いい[考|かんが]えだと[思|おも]います。"), translation: "Pienso que es una buena idea." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "紙",
+    level: 2,
+    strokeCount: 10,
+    on: ["シ"],
+    kun: ["かみ"],
+    meaning: "Papel",
+    examples: [
+      { segments: ruby("[白|しろ]い[紙|かみ]に[名前|なまえ]を[書|か]きます。"), translation: "Escribo mi nombre en una hoja blanca." },
+      { segments: ruby("[紙|かみ]を一[枚|まい]ください。"), translation: "Por favor, deme una hoja de papel." },
+      { segments: ruby("[新聞紙|しんぶんし]を[読|よ]みます。"), translation: "Leo el periódico." },
+      { segments: ruby("[紙|かみ]でつるを[作|つく]ります。"), translation: "Hago una grulla de papel." },
+      { segments: ruby("[大事|だいじ]な[紙|かみ]をなくしました。"), translation: "Perdí un papel importante." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "寺",
+    level: 2,
+    strokeCount: 6,
+    on: ["ジ"],
+    kun: ["てら"],
+    meaning: "Templo budista",
+    examples: [
+      { segments: ruby("[古|ふる]い[寺|てら]を[見|み]に[行|い]きます。"), translation: "Voy a ver un templo antiguo." },
+      { segments: ruby("[寺|てら]の[庭|にわ]がしずかです。"), translation: "El jardín del templo está silencioso." },
+      { segments: ruby("[京都|きょうと]には[有名|ゆうめい]な[寺|てら]がたくさんあります。"), translation: "En Kioto hay muchos templos famosos." },
+      { segments: ruby("[寺|てら]の[鐘|かね]が[聞|き]こえます。"), translation: "Se escucha la campana del templo." },
+      { segments: ruby("[寺|てら]の[前|まえ]でしゃしんを[撮|と]りました。"), translation: "Me tomé una foto frente al templo." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "自",
+    level: 2,
+    strokeCount: 6,
+    on: ["ジ", "シ"],
+    kun: ["みずか.ら"],
+    meaning: "Uno mismo / auto-",
+    examples: [
+      { segments: ruby("[自分|じぶん]でします。"), translation: "Lo hago yo mismo." },
+      { segments: ruby("[自転車|じてんしゃ]で[学校|がっこう]へ[行|い]きます。"), translation: "Voy a la escuela en bicicleta." },
+      { segments: ruby("[自然|しぜん]が[好|す]きです。"), translation: "Me gusta la naturaleza." },
+      { segments: ruby("[自分|じぶん]の[部屋|へや]を[掃除|そうじ]します。"), translation: "Limpio mi propia habitación." },
+      { segments: ruby("[自由|じゆう][時間|じかん]に[本|ほん]を[読|よ]みます。"), translation: "Leo en mi tiempo libre." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "時",
+    level: 2,
+    strokeCount: 10,
+    on: ["ジ"],
+    kun: ["とき"],
+    meaning: "Hora / tiempo / momento",
+    examples: [
+      { segments: ruby("いま[何時|なんじ]ですか。"), translation: "¿Qué hora es ahora?" },
+      { segments: ruby("七[時|じ]に[起|お]きます。"), translation: "Me levanto a las siete." },
+      { segments: ruby("[時間|じかん]がありますか。"), translation: "¿Tienes tiempo?" },
+      { segments: ruby("[子|こ]どもの[時|とき]、よくここで[遊|あそ]びました。"), translation: "Cuando era niño jugaba mucho aquí." },
+      { segments: ruby("[来|く]る[時|とき]に[電話|でんわ]してください。"), translation: "Llámame cuando vengas." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "室",
+    level: 2,
+    strokeCount: 9,
+    on: ["シツ"],
+    kun: ["むろ"],
+    meaning: "Sala / habitación",
+    examples: [
+      { segments: ruby("[教室|きょうしつ]で[日本語|にほんご]を[勉強|べんきょう]します。"), translation: "Estudio japonés en la sala de clases." },
+      { segments: ruby("[会議室|かいぎしつ]は二[階|かい]です。"), translation: "La sala de reuniones está en el segundo piso." },
+      { segments: ruby("[理科室|りかしつ]へ[行|い]きます。"), translation: "Voy al laboratorio de ciencias." },
+      { segments: ruby("[部屋|へや]の[中|なか]に小さな[室|むろ]があります。"), translation: "Dentro del cuarto hay una pequeña cámara." },
+      { segments: ruby("[教室|きょうしつ]のまどを[開|あ]けます。"), translation: "Abro la ventana del aula." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "社",
+    level: 2,
+    strokeCount: 7,
+    on: ["シャ"],
+    kun: ["やしろ"],
+    meaning: "Empresa / santuario",
+    examples: [
+      { segments: ruby("[会社|かいしゃ]で[父|ちち]が[働|はたら]いています。"), translation: "Mi padre trabaja en una empresa." },
+      { segments: ruby("[神社|じんじゃ]へ[行|い]きました。"), translation: "Fui al santuario." },
+      { segments: ruby("[社長|しゃちょう]はとてもいそがしいです。"), translation: "El presidente de la empresa está muy ocupado." },
+      { segments: ruby("[会|かい][社|しゃ]の[前|まえ]で[待|ま]ちます。"), translation: "Espero frente a la empresa." },
+      { segments: ruby("[神社|じんじゃ]でおいのりをします。"), translation: "Rezo en el santuario." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "弱",
+    level: 2,
+    strokeCount: 10,
+    on: ["ジャク"],
+    kun: ["よわ.い"],
+    meaning: "Débil",
+    examples: [
+      { segments: ruby("[体|からだ]が[弱|よわ]いです。"), translation: "Tengo el cuerpo débil." },
+      { segments: ruby("[風|かぜ]が[弱|よわ]くなりました。"), translation: "El viento se debilitó." },
+      { segments: ruby("[弱|よわ]い[音|おと]が[聞|き]こえます。"), translation: "Se oye un sonido débil." },
+      { segments: ruby("[弟|おとうと]はまだ[力|ちから]が[弱|よわ]いです。"), translation: "Mi hermano menor todavía tiene poca fuerza." },
+      { segments: ruby("[電波|でんぱ]が[弱|よわ]いです。"), translation: "La señal es débil." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "首",
+    level: 2,
+    strokeCount: 9,
+    on: ["シュ"],
+    kun: ["くび"],
+    meaning: "Cuello",
+    examples: [
+      { segments: ruby("[首|くび]が[少|すこ]しいたいです。"), translation: "Me duele un poco el cuello." },
+      { segments: ruby("[首|くび]をゆっくり[回|まわ]します。"), translation: "Giro lentamente el cuello." },
+      { segments: ruby("[長|なが]い[首|くび]のどうぶつがいます。"), translation: "Hay un animal de cuello largo." },
+      { segments: ruby("[首都|しゅと]は[東京|とうきょう]です。"), translation: "La capital es Tokio." },
+      { segments: ruby("[寒|さむ]いので[首|くび]にマフラーをします。"), translation: "Como hace frío, me pongo una bufanda en el cuello." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "秋",
+    level: 2,
+    strokeCount: 9,
+    on: ["シュウ"],
+    kun: ["あき"],
+    meaning: "Otoño",
+    examples: [
+      { segments: ruby("[秋|あき]はすずしいです。"), translation: "El otoño es fresco." },
+      { segments: ruby("[秋|あき]の[山|やま]がきれいです。"), translation: "La montaña en otoño es hermosa." },
+      { segments: ruby("[秋|あき]に[紅葉|こうよう]を[見|み]に[行|い]きます。"), translation: "En otoño voy a ver las hojas rojas." },
+      { segments: ruby("[秋休|あきやす]みはありません。"), translation: "No hay vacaciones de otoño." },
+      { segments: ruby("[秋|あき]の[食|た]べ[物|もの]が[好|す]きです。"), translation: "Me gusta la comida del otoño." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "週",
+    level: 2,
+    strokeCount: 11,
+    on: ["シュウ"],
+    kun: [],
+    meaning: "Semana",
+    examples: [
+      { segments: ruby("[今週|こんしゅう]はテストがあります。"), translation: "Esta semana hay prueba." },
+      { segments: ruby("[来週|らいしゅう][友達|ともだち]と[会|あ]います。"), translation: "La próxima semana me veré con un amigo." },
+      { segments: ruby("一[週間|しゅうかん]まいにち[勉強|べんきょう]しました。"), translation: "Estudié todos los días durante una semana." },
+      { segments: ruby("[毎週|まいしゅう][土曜日|どようび]にサッカーをします。"), translation: "Juego fútbol todos los sábados." },
+      { segments: ruby("[先週|せんしゅう]はとてもいそがしかったです。"), translation: "La semana pasada estuvo muy ocupada." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "春",
+    level: 2,
+    strokeCount: 9,
+    on: ["シュン"],
+    kun: ["はる"],
+    meaning: "Primavera",
+    examples: [
+      { segments: ruby("[春|はる]にさくらが[咲|さ]きます。"), translation: "En primavera florecen los cerezos." },
+      { segments: ruby("[春|はる]はあたたかいです。"), translation: "La primavera es cálida." },
+      { segments: ruby("[春休|はるやす]みに[旅行|りょこう]します。"), translation: "Viajo en las vacaciones de primavera." },
+      { segments: ruby("[春風|はるかぜ]がきもちいいです。"), translation: "La brisa de primavera se siente agradable." },
+      { segments: ruby("[春|はる]の[花|はな]を[見|み]に[行|い]きます。"), translation: "Voy a ver flores de primavera." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "書",
+    level: 2,
+    strokeCount: 10,
+    on: ["ショ"],
+    kun: ["か.く"],
+    meaning: "Escribir / escrito",
+    examples: [
+      { segments: ruby("[名前|なまえ]を[書|か]いてください。"), translation: "Por favor, escriba su nombre." },
+      { segments: ruby("[手紙|てがみ]を[書|か]きます。"), translation: "Escribo una carta." },
+      { segments: ruby("[黒板|こくばん]に[字|じ]を[書|か]きます。"), translation: "Escribo letras en la pizarra." },
+      { segments: ruby("[図書館|としょかん]で[本|ほん]を[借|か]ります。"), translation: "Pido prestado un libro en la biblioteca." },
+      { segments: ruby("[読書|どくしょ]が[好|す]きです。"), translation: "Me gusta la lectura." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "少",
+    level: 2,
+    strokeCount: 4,
+    on: ["ショウ"],
+    kun: ["すく.ない", "すこ.し"],
+    meaning: "Poco / escaso",
+    examples: [
+      { segments: ruby("[水|みず]が[少|すく]ないです。"), translation: "Hay poca agua." },
+      { segments: ruby("もう[少|すこ]し[待|ま]ってください。"), translation: "Espere un poco más, por favor." },
+      { segments: ruby("[今日|きょう]は[人|ひと]が[少|すく]ないです。"), translation: "Hoy hay poca gente." },
+      { segments: ruby("[少|すこ]し[日本語|にほんご]がわかります。"), translation: "Entiendo un poco de japonés." },
+      { segments: ruby("[時間|じかん]が[少|すく]ないです。"), translation: "Tengo poco tiempo." },
+    ],
+    hasSvg: true,
+  },
+  {
+  char: "場",
+  level: 2,
+  strokeCount: 12,
+  on: ["ジョウ", "バ"],
+  kun: ["ば"],
+  meaning: "Lugar / Sitio",
+  examples: [
+    {
+      segments: ruby("[場|ば][所|しょ]を[教|おし]えてください。"),
+      translation: "Por favor, indíqueme el lugar.",
+    },
+    {
+      segments: ruby("ここは[静|しず]かな[場|ば][所|しょ]です。"),
+      translation: "Este es un lugar tranquilo.",
+    },
+    {
+      segments: ruby("[会|かい][場|じょう]に[早|はや]く[着|つ]きました。"),
+      translation: "Llegué temprano al lugar del evento.",
+    },
+    {
+      segments: ruby("この[場|ば]で[待|ま]ちましょう。"),
+      translation: "Esperemos en este lugar.",
+    },
+    {
+      segments: ruby("[入|はい]り[口|ぐち]の[近|ちか]くに[場|ば][所|しょ]があります。"),
+      translation: "Hay un lugar cerca de la entrada.",
+    },
+  ],
+  hasSvg: true,
+  },
+  {
+    char: "色",
+    level: 2,
+    strokeCount: 6,
+    on: ["ショク", "シキ"],
+    kun: ["いろ"],
+    meaning: "Color",
+    examples: [
+      {
+        segments: ruby("この[色|いろ]が[好|す]きです。"),
+        translation: "Me gusta este color.",
+      },
+      {
+        segments: ruby("[青|あお]い[色|いろ]のかばんです。"),
+        translation: "Es un bolso de color azul.",
+      },
+      {
+        segments: ruby("[春|はる]は[明|あか]るい[色|いろ]が[多|おお]いです。"),
+        translation: "En primavera hay muchos colores claros.",
+      },
+      {
+        segments: ruby("[紙|かみ]に[色|いろ]をぬります。"),
+        translation: "Pinto color sobre el papel.",
+      },
+      {
+        segments: ruby("[服|ふく]の[色|いろ]を[変|か]えました。"),
+        translation: "Cambié el color de la ropa.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "食",
+    level: 2,
+    strokeCount: 9,
+    on: ["ショク", "ジキ"],
+    kun: ["た.べる", "く.う"],
+    meaning: "Comer / Comida",
+    examples: [
+      {
+        segments: ruby("[朝|あさ]ごはんを[食|た]べます。"),
+        translation: "Desayuno.",
+      },
+      {
+        segments: ruby("[野|や][菜|さい]をよく[食|た]べてください。"),
+        translation: "Por favor, coma muchas verduras.",
+      },
+      {
+        segments: ruby("[昼|ひる]にパンを[食|た]べました。"),
+        translation: "Al mediodía comí pan.",
+      },
+      {
+        segments: ruby("この[店|みせ]で[食|しょく][事|じ]をします。"),
+        translation: "Comeremos en esta tienda o local.",
+      },
+      {
+        segments: ruby("よくかんで[食|た]べましょう。"),
+        translation: "Comamos masticando bien.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "心",
+    level: 2,
+    strokeCount: 4,
+    on: ["シン"],
+    kun: ["こころ"],
+    meaning: "Corazón / Mente",
+    examples: [
+      {
+        segments: ruby("[心|こころ]が[落|お]ち[着|つ]きます。"),
+        translation: "Mi corazón se tranquiliza.",
+      },
+      {
+        segments: ruby("やさしい[心|こころ]を[持|も]ちましょう。"),
+        translation: "Tengamos un corazón amable.",
+      },
+      {
+        segments: ruby("[心|こころ]をこめて[手|て][紙|がみ]を[書|か]きます。"),
+        translation: "Escribo la carta con todo el corazón.",
+      },
+      {
+        segments: ruby("[心|しん][配|ぱい]しないでください。"),
+        translation: "Por favor, no se preocupe.",
+      },
+      {
+        segments: ruby("[心|こころ]の[中|なか]で[考|かんが]えます。"),
+        translation: "Lo pienso dentro de mi mente.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "新",
+    level: 2,
+    strokeCount: 13,
+    on: ["シン"],
+    kun: ["あたら.しい"],
+    meaning: "Nuevo",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[本|ほん]を[買|か]いました。"),
+        translation: "Compré un libro nuevo.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[友|とも]だちができました。"),
+        translation: "Hice un nuevo amigo.",
+      },
+      {
+        segments: ruby("[新|あたら]しいくつをはきます。"),
+        translation: "Me pongo zapatos nuevos.",
+      },
+      {
+        segments: ruby("[新|あたら]しいクラスが[始|はじ]まります。"),
+        translation: "Comienza una clase nueva.",
+      },
+      {
+        segments: ruby("この[店|みせ]は[新|あたら]しいです。"),
+        translation: "Esta tienda es nueva.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "親",
+    level: 2,
+    strokeCount: 16,
+    on: ["シン"],
+    kun: ["おや", "した.しい"],
+    meaning: "Padre / Madre / Familiar",
+    examples: [
+      {
+        segments: ruby("[親|おや]と[買|か]い[物|もの]に[行|い]きます。"),
+        translation: "Voy de compras con mis padres.",
+      },
+      {
+        segments: ruby("[親|おや]に[電|でん][話|わ]をします。"),
+        translation: "Llamo a mis padres.",
+      },
+      {
+        segments: ruby("[親|おや]の[手|て][伝|つだ]いをします。"),
+        translation: "Ayudo a mis padres.",
+      },
+      {
+        segments: ruby("[親|おや]といっしょに[食|しょく][事|じ]をします。"),
+        translation: "Como junto con mis padres.",
+      },
+      {
+        segments: ruby("[親|おや]に[手|て][紙|がみ]を[書|か]きました。"),
+        translation: "Escribí una carta a mis padres.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "図",
+    level: 2,
+    strokeCount: 7,
+    on: ["ズ", "ト"],
+    kun: [],
+    meaning: "Dibujo / Diagrama / Plano",
+    examples: [
+      {
+        segments: ruby("[地|ち][図|ず]を[見|み]ます。"),
+        translation: "Miro el mapa.",
+      },
+      {
+        segments: ruby("[図|ず]をかいて[説|せつ][明|めい]します。"),
+        translation: "Lo explico dibujando un esquema.",
+      },
+      {
+        segments: ruby("この[図|ず]はわかりやすいです。"),
+        translation: "Este diagrama es fácil de entender.",
+      },
+      {
+        segments: ruby("[本|ほん]の[中|なか]に[図|ず]があります。"),
+        translation: "Hay un dibujo dentro del libro.",
+      },
+      {
+        segments: ruby("[図|ず][書|しょ][館|かん]で[本|ほん]を[読|よ]みます。"),
+        translation: "Leo libros en la biblioteca.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "数",
+    level: 2,
+    strokeCount: 13,
+    on: ["スウ", "ス"],
+    kun: ["かず", "かぞ.える"],
+    meaning: "Número / Contar",
+    examples: [
+      {
+        segments: ruby("[数|かず]を[数|かぞ]えます。"),
+        translation: "Cuento los números.",
+      },
+      {
+        segments: ruby("[学|がっ][校|こう]で[数|すう][学|がく]を[勉|べん][強|きょう]します。"),
+        translation: "Estudio matemáticas en la escuela.",
+      },
+      {
+        segments: ruby("[人|ひと]の[数|かず]が[多|おお]いです。"),
+        translation: "La cantidad de personas es grande.",
+      },
+      {
+        segments: ruby("いすの[数|かず]を[数|かぞ]えてください。"),
+        translation: "Por favor, cuente la cantidad de sillas.",
+      },
+      {
+        segments: ruby("この[数|すう][字|じ]を[読|よ]んでください。"),
+        translation: "Por favor, lea este número.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "西",
+    level: 2,
+    strokeCount: 6,
+    on: ["セイ", "サイ"],
+    kun: ["にし"],
+    meaning: "Oeste",
+    examples: [
+      {
+        segments: ruby("[西|にし]の[空|そら]が[赤|あか]いです。"),
+        translation: "El cielo del oeste está rojo.",
+      },
+      {
+        segments: ruby("[西|にし]へ[歩|ある]きます。"),
+        translation: "Camino hacia el oeste.",
+      },
+      {
+        segments: ruby("[西|にし]の[方|ほう]に[山|やま]があります。"),
+        translation: "Hay una montaña hacia el oeste.",
+      },
+      {
+        segments: ruby("[西|にし][口|ぐち]で[待|ま]ちましょう。"),
+        translation: "Esperemos en la salida oeste.",
+      },
+      {
+        segments: ruby("[西|にし]の[国|くに]について[学|まな]びます。"),
+        translation: "Aprendo sobre los países del oeste.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "声",
+    level: 2,
+    strokeCount: 7,
+    on: ["セイ", "ショウ"],
+    kun: ["こえ"],
+    meaning: "Voz",
+    examples: [
+      {
+        segments: ruby("[大|おお]きい[声|こえ]で[読|よ]みます。"),
+        translation: "Leo con voz alta.",
+      },
+      {
+        segments: ruby("[先|せん][生|せい]の[声|こえ]が[聞|き]こえます。"),
+        translation: "Se escucha la voz del profesor.",
+      },
+      {
+        segments: ruby("きれいな[声|こえ]ですね。"),
+        translation: "Qué voz tan bonita.",
+      },
+      {
+        segments: ruby("もう[少|すこ]し[小|ちい]さい[声|こえ]で[話|はな]してください。"),
+        translation: "Por favor, hable con una voz un poco más baja.",
+      },
+      {
+        segments: ruby("[名|な][前|まえ]を[声|こえ]に[出|だ]して[言|い]います。"),
+        translation: "Digo el nombre en voz alta.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "星",
+    level: 2,
+    strokeCount: 9,
+    on: ["セイ", "ショウ"],
+    kun: ["ほし"],
+    meaning: "Estrella",
+    examples: [
+      {
+        segments: ruby("[夜|よる]、[星|ほし]がよく[見|み]えます。"),
+        translation: "Por la noche se ven bien las estrellas.",
+      },
+      {
+        segments: ruby("[空|そら]に[星|ほし]がたくさんあります。"),
+        translation: "Hay muchas estrellas en el cielo.",
+      },
+      {
+        segments: ruby("いちばん[明|あか]るい[星|ほし]です。"),
+        translation: "Es la estrella más brillante.",
+      },
+      {
+        segments: ruby("[子|こ]どもと[星|ほし]を[見|み]ました。"),
+        translation: "Vi las estrellas con el niño.",
+      },
+      {
+        segments: ruby("[星|ほし]の[形|かたち]をかきます。"),
+        translation: "Dibujo la forma de una estrella.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "晴",
+    level: 2,
+    strokeCount: 12,
+    on: ["セイ"],
+    kun: ["は.れる", "は.らす"],
+    meaning: "Despejado / Aclarar",
+    examples: [
+      {
+        segments: ruby("[今|きょう][日|う]は[晴|は]れです。"),
+        translation: "Hoy está despejado.",
+      },
+      {
+        segments: ruby("[明|あ][日|した]も[晴|は]れるでしょう。"),
+        translation: "Probablemente mañana también estará despejado.",
+      },
+      {
+        segments: ruby("[空|そら]が[晴|は]れてきました。"),
+        translation: "El cielo se ha ido despejando.",
+      },
+      {
+        segments: ruby("[晴|は]れた[日|ひ]に[公|こう][園|えん]へ[行|い]きます。"),
+        translation: "Voy al parque en un día despejado.",
+      },
+      {
+        segments: ruby("[雨|あめ]のあとで[晴|は]れました。"),
+        translation: "Después de la lluvia se despejó.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "切",
+    level: 2,
+    strokeCount: 4,
+    on: ["セツ", "サイ"],
+    kun: ["き.る", "き.れる"],
+    meaning: "Cortar / Estar cortado",
+    examples: [
+      {
+        segments: ruby("はさみで[紙|かみ]を[切|き]ります。"),
+        translation: "Corto el papel con tijeras.",
+      },
+      {
+        segments: ruby("[肉|にく]を[小|ちい]さく[切|き]ってください。"),
+        translation: "Por favor, corte la carne en trozos pequeños.",
+      },
+      {
+        segments: ruby("このナイフはよく[切|き]れます。"),
+        translation: "Este cuchillo corta muy bien.",
+      },
+      {
+        segments: ruby("[長|なが]い[紙|かみ]を[半|はん][分|ぶん]に[切|き]ります。"),
+        translation: "Corto el papel largo por la mitad.",
+      },
+      {
+        segments: ruby("[電|でん][話|わ]が[切|き]れました。"),
+        translation: "La llamada se cortó.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "雪",
+    level: 2,
+    strokeCount: 11,
+    on: ["セツ"],
+    kun: ["ゆき"],
+    meaning: "Nieve",
+    examples: [
+      {
+        segments: ruby("[雪|ゆき]が[降|ふ]っています。"),
+        translation: "Está nevando.",
+      },
+      {
+        segments: ruby("[山|やま]に[雪|ゆき]があります。"),
+        translation: "Hay nieve en la montaña.",
+      },
+      {
+        segments: ruby("[雪|ゆき]の[日|ひ]は[寒|さむ]いです。"),
+        translation: "Los días de nieve hace frío.",
+      },
+      {
+        segments: ruby("[子|こ]どもが[雪|ゆき]で[遊|あそ]んでいます。"),
+        translation: "Los niños están jugando con la nieve.",
+      },
+      {
+        segments: ruby("[雪|ゆき]を[見|み]ながら[歩|ある]きます。"),
+        translation: "Camino mirando la nieve.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "船",
+    level: 2,
+    strokeCount: 11,
+    on: ["セン"],
+    kun: ["ふね", "ふな"],
+    meaning: "Barco",
+    examples: [
+      {
+        segments: ruby("[大|おお]きい[船|ふね]が[見|み]えます。"),
+        translation: "Se ve un barco grande.",
+      },
+      {
+        segments: ruby("[船|ふね]で[島|しま]へ[行|い]きます。"),
+        translation: "Voy a la isla en barco.",
+      },
+      {
+        segments: ruby("[港|みなと]に[船|ふね]がたくさんあります。"),
+        translation: "Hay muchos barcos en el puerto.",
+      },
+      {
+        segments: ruby("[白|しろ]い[船|ふね]に[乗|の]りました。"),
+        translation: "Subí a un barco blanco.",
+      },
+      {
+        segments: ruby("その[船|ふね]はとても[速|はや]いです。"),
+        translation: "Ese barco es muy rápido.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "線",
+    level: 2,
+    strokeCount: 15,
+    on: ["セン"],
+    kun: ["せん", "すじ"],
+    meaning: "Línea",
+    examples: [
+      {
+        segments: ruby("ノートに[線|せん]をひきます。"),
+        translation: "Trazo una línea en el cuaderno.",
+      },
+      {
+        segments: ruby("この[線|せん]はまっすぐです。"),
+        translation: "Esta línea es recta.",
+      },
+      {
+        segments: ruby("[赤|あか]い[線|せん]で[書|か]いてください。"),
+        translation: "Por favor, escríbalo con una línea roja.",
+      },
+      {
+        segments: ruby("[地|ち][図|ず]に[線|せん]がたくさんあります。"),
+        translation: "En el mapa hay muchas líneas.",
+      },
+      {
+        segments: ruby("[線|せん]の[上|うえ]をなぞります。"),
+        translation: "Repaso sobre la línea.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "前",
+    level: 2,
+    strokeCount: 9,
+    on: ["ゼン"],
+    kun: ["まえ"],
+    meaning: "Delante / Antes",
+    examples: [
+      {
+        segments: ruby("[駅|えき]の[前|まえ]で[会|あ]いましょう。"),
+        translation: "Encontrémonos frente a la estación.",
+      },
+      {
+        segments: ruby("[名|な][前|まえ]を[書|か]いてください。"),
+        translation: "Por favor, escriba su nombre.",
+      },
+      {
+        segments: ruby("[家|いえ]の[前|まえ]に[車|くるま]があります。"),
+        translation: "Hay un coche delante de la casa.",
+      },
+      {
+        segments: ruby("[食|しょく][事|じ]の[前|まえ]に[手|て]を[洗|あら]います。"),
+        translation: "Me lavo las manos antes de comer.",
+      },
+      {
+        segments: ruby("[先|せん][生|せい]の[前|まえ]で[話|はな]します。"),
+        translation: "Hablo delante del profesor.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "組",
+    level: 2,
+    strokeCount: 11,
+    on: ["ソ"],
+    kun: ["く.む", "くみ"],
+    meaning: "Grupo / Armar",
+    examples: [
+      {
+        segments: ruby("[一|いち][組|くみ]の[学|がく][生|せい]です。"),
+        translation: "Soy estudiante del grupo 1.",
+      },
+      {
+        segments: ruby("[三|さん][人|にん]でチームを[組|く]みます。"),
+        translation: "Formamos un equipo de tres personas.",
+      },
+      {
+        segments: ruby("この[組|くみ]はにぎやかです。"),
+        translation: "Este grupo es animado.",
+      },
+      {
+        segments: ruby("[友|とも]だちとペアを[組|く]みました。"),
+        translation: "Hice pareja con un amigo.",
+      },
+      {
+        segments: ruby("[同|おな]じ[組|くみ]の[子|こ]と[話|はな]します。"),
+        translation: "Hablo con un niño del mismo grupo.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "走",
+    level: 2,
+    strokeCount: 7,
+    on: ["ソウ"],
+    kun: ["はし.る"],
+    meaning: "Correr",
+    examples: [
+      {
+        segments: ruby("[公|こう][園|えん]で[走|はし]ります。"),
+        translation: "Corro en el parque.",
+      },
+      {
+        segments: ruby("[子|こ]どもが[庭|にわ]を[走|はし]っています。"),
+        translation: "El niño está corriendo por el jardín.",
+      },
+      {
+        segments: ruby("[電|でん][車|しゃ]に[間|ま]に[合|あ]うように[走|はし]りました。"),
+        translation: "Corrí para alcanzar el tren.",
+      },
+      {
+        segments: ruby("[雨|あめ]の[中|なか]を[走|はし]りません。"),
+        translation: "No corro bajo la lluvia.",
+      },
+      {
+        segments: ruby("[朝|あさ]、[少|すこ]し[走|はし]ります。"),
+        translation: "Por la mañana corro un poco.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "多",
+    level: 2,
+    strokeCount: 6,
+    on: ["タ"],
+    kun: ["おお.い"],
+    meaning: "Mucho / Muchos",
+    examples: [
+      {
+        segments: ruby("このまちは[人|ひと]が[多|おお]いです。"),
+        translation: "En esta ciudad hay mucha gente.",
+      },
+      {
+        segments: ruby("[休|やす]みの[日|ひ]は[車|くるま]が[多|おお]いです。"),
+        translation: "En los días libres hay muchos coches.",
+      },
+      {
+        segments: ruby("[質|しつ][問|もん]が[多|おお]いですね。"),
+        translation: "Hay muchas preguntas, ¿verdad?",
+      },
+      {
+        segments: ruby("この[本|ほん]は[字|じ]が[多|おお]いです。"),
+        translation: "Este libro tiene muchas letras.",
+      },
+      {
+        segments: ruby("[今|こ][年|とし]は[雨|あめ]が[多|おお]いです。"),
+        translation: "Este año hay mucha lluvia.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "太",
+    level: 2,
+    strokeCount: 4,
+    on: ["タイ", "タ"],
+    kun: ["ふと.い", "ふと.る"],
+    meaning: "Grueso / Gordo",
+    examples: [
+      {
+        segments: ruby("[太|ふと]い[木|き]です。"),
+        translation: "Es un árbol grueso.",
+      },
+      {
+        segments: ruby("このペンは[少|すこ]し[太|ふと]いです。"),
+        translation: "Este lápiz es un poco grueso.",
+      },
+      {
+        segments: ruby("[太|ふと]い[線|せん]をかいてください。"),
+        translation: "Por favor, dibuje una línea gruesa.",
+      },
+      {
+        segments: ruby("[太|ふと]いロープを[使|つか]います。"),
+        translation: "Uso una cuerda gruesa.",
+      },
+      {
+        segments: ruby("この[字|じ]は[太|ふと]く[書|か]いてあります。"),
+        translation: "Esta letra está escrita gruesa.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "体",
+    level: 2,
+    strokeCount: 7,
+    on: ["タイ", "テイ"],
+    kun: ["からだ"],
+    meaning: "Cuerpo",
+    examples: [
+      {
+        segments: ruby("[体|からだ]に[気|き]をつけてください。"),
+        translation: "Por favor, cuide su cuerpo.",
+      },
+      {
+        segments: ruby("[体|からだ]が[少|すこ]し[重|おも]いです。"),
+        translation: "Siento el cuerpo un poco pesado.",
+      },
+      {
+        segments: ruby("[毎|まい][朝|あさ]、[体|からだ]を[動|うご]かします。"),
+        translation: "Cada mañana muevo el cuerpo.",
+      },
+      {
+        segments: ruby("[体|たい][育|いく]の[時|じ][間|かん]が[好|す]きです。"),
+        translation: "Me gusta la clase de educación física.",
+      },
+      {
+        segments: ruby("[体|からだ]をゆっくり[休|やす]めましょう。"),
+        translation: "Descansemos el cuerpo con calma.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "台",
+    level: 2,
+    strokeCount: 5,
+    on: ["ダイ", "タイ"],
+    kun: [],
+    meaning: "Base / Plataforma / Mostrador",
+    examples: [
+      {
+        segments: ruby("[机|つくえ]の[上|うえ]に[台|だい]があります。"),
+        translation: "Hay una base sobre el escritorio.",
+      },
+      {
+        segments: ruby("テレビ[台|だい]をきれいにします。"),
+        translation: "Limpio el mueble del televisor.",
+      },
+      {
+        segments: ruby("[台|だい][所|どころ]で[母|はは]を[手|て][伝|つだ]います。"),
+        translation: "Ayudo a mi madre en la cocina.",
+      },
+      {
+        segments: ruby("その[台|だい]の[上|うえ]に[本|ほん]を[置|お]きます。"),
+        translation: "Pongo el libro sobre esa base.",
+      },
+      {
+        segments: ruby("[高|たか]い[台|だい]に[花|はな]を[置|お]きました。"),
+        translation: "Puse las flores sobre una base alta.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "地",
+    level: 2,
+    strokeCount: 6,
+    on: ["チ", "ジ"],
+    kun: [],
+    meaning: "Tierra / Suelo / Terreno",
+    examples: [
+      {
+        segments: ruby("[地|ち][図|ず]で[場|ば][所|しょ]を[見|み]ます。"),
+        translation: "Veo el lugar en el mapa.",
+      },
+      {
+        segments: ruby("この[地|ち][方|ほう]は[静|しず]かです。"),
+        translation: "Esta zona es tranquila.",
+      },
+      {
+        segments: ruby("[地|じ][面|めん]がぬれています。"),
+        translation: "El suelo está mojado.",
+      },
+      {
+        segments: ruby("[地|ち][下|か]へ[行|い]きます。"),
+        translation: "Voy hacia abajo o al subsuelo.",
+      },
+      {
+        segments: ruby("[地|ち][方|ほう]の[町|まち]を[旅|たび]します。"),
+        translation: "Viajo por un pueblo de provincia.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "池",
+    level: 2,
+    strokeCount: 6,
+    on: ["チ"],
+    kun: ["いけ"],
+    meaning: "Estanque",
+    examples: [
+      {
+        segments: ruby("[池|いけ]に[魚|さかな]がいます。"),
+        translation: "Hay peces en el estanque.",
+      },
+      {
+        segments: ruby("[公|こう][園|えん]の[池|いけ]を[見|み]ました。"),
+        translation: "Vi el estanque del parque.",
+      },
+      {
+        segments: ruby("[小|ちい]さい[池|いけ]の[水|みず]はきれいです。"),
+        translation: "El agua del estanque pequeño está limpia.",
+      },
+      {
+        segments: ruby("[池|いけ]の[近|ちか]くで[休|やす]みます。"),
+        translation: "Descanso cerca del estanque.",
+      },
+      {
+        segments: ruby("[鳥|とり]が[池|いけ]におります。"),
+        translation: "Un pájaro está en el estanque.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "知",
+    level: 2,
+    strokeCount: 9,
+    on: ["チ"],
+    kun: ["し.る"],
+    meaning: "Saber / Conocer",
+    examples: [
+      {
+        segments: ruby("その[人|ひと]を[知|し]っています。"),
+        translation: "Conozco a esa persona.",
+      },
+      {
+        segments: ruby("[答|こた]えを[知|し]りません。"),
+        translation: "No sé la respuesta.",
+      },
+      {
+        segments: ruby("[名|な][前|まえ]を[知|し]りたいです。"),
+        translation: "Quiero saber el nombre.",
+      },
+      {
+        segments: ruby("[新|あたら]しいことを[知|し]りました。"),
+        translation: "Aprendí algo nuevo.",
+      },
+      {
+        segments: ruby("[電|でん][車|しゃ]の[時|じ][間|かん]を[知|し]っていますか。"),
+        translation: "¿Sabe el horario del tren?",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "茶",
+    level: 2,
+    strokeCount: 9,
+    on: ["チャ", "サ"],
+    kun: ["ちゃ"],
+    meaning: "Té",
+    examples: [
+      {
+        segments: ruby("[熱|あつ]いお[茶|ちゃ]を[飲|の]みます。"),
+        translation: "Tomo té caliente.",
+      },
+      {
+        segments: ruby("[食|しょく][後|ご]にお[茶|ちゃ]をください。"),
+        translation: "Después de comer, por favor deme té.",
+      },
+      {
+        segments: ruby("[母|はは]がお[茶|ちゃ]をいれてくれました。"),
+        translation: "Mi madre me preparó té.",
+      },
+      {
+        segments: ruby("つめたいお[茶|ちゃ]もあります。"),
+        translation: "También hay té frío.",
+      },
+      {
+        segments: ruby("お[茶|ちゃ]を[一|いっ][杯|ぱい][飲|の]みましょう。"),
+        translation: "Tomemos una taza de té.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "昼",
+    level: 2,
+    strokeCount: 9,
+    on: ["チュウ"],
+    kun: ["ひる"],
+    meaning: "Mediodía / Día",
+    examples: [
+      {
+        segments: ruby("[昼|ひる]ごはんを[食|た]べます。"),
+        translation: "Almuerzo.",
+      },
+      {
+        segments: ruby("[昼|ひる]は[会|かい][社|しゃ]にいます。"),
+        translation: "Al mediodía estoy en la empresa.",
+      },
+      {
+        segments: ruby("[昼|ひる]に[友|とも]だちと[会|あ]います。"),
+        translation: "Me reuniré con un amigo al mediodía.",
+      },
+      {
+        segments: ruby("[昼|ひる][休|やす]みに[少|すこ]し[歩|ある]きます。"),
+        translation: "En el descanso del mediodía camino un poco.",
+      },
+      {
+        segments: ruby("[昼|ひる]の[空|そら]は[青|あお]いです。"),
+        translation: "El cielo del mediodía es azul.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "長",
+    level: 2,
+    strokeCount: 8,
+    on: ["チョウ"],
+    kun: ["なが.い"],
+    meaning: "Largo / Jefe",
+    examples: [
+      {
+        segments: ruby("[長|なが]い[道|みち]を[歩|ある]きます。"),
+        translation: "Camino por un camino largo.",
+      },
+      {
+        segments: ruby("この[本|ほん]は[長|なが]いです。"),
+        translation: "Este libro es largo.",
+      },
+      {
+        segments: ruby("[長|なが]い[時|じ][間|かん][待|ま]ちました。"),
+        translation: "Esperé mucho tiempo.",
+      },
+      {
+        segments: ruby("[校|こう][長|ちょう][先|せん][生|せい]の[話|はなし]を[聞|き]きます。"),
+        translation: "Escucho las palabras del director.",
+      },
+      {
+        segments: ruby("[長|なが]い[線|せん]をかいてください。"),
+        translation: "Por favor, dibuje una línea larga.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "鳥",
+    level: 2,
+    strokeCount: 11,
+    on: ["チョウ"],
+    kun: ["とり"],
+    meaning: "Pájaro",
+    examples: [
+      {
+        segments: ruby("[鳥|とり]が[空|そら]を[飛|と]んでいます。"),
+        translation: "Un pájaro está volando por el cielo.",
+      },
+      {
+        segments: ruby("[朝|あさ]、[鳥|とり]の[声|こえ]が[聞|き]こえます。"),
+        translation: "Por la mañana se escucha el canto de los pájaros.",
+      },
+      {
+        segments: ruby("[小|ちい]さい[鳥|とり]を[見|み]ました。"),
+        translation: "Vi un pájaro pequeño.",
+      },
+      {
+        segments: ruby("[鳥|とり]は[木|き]の[上|うえ]にいます。"),
+        translation: "El pájaro está sobre el árbol.",
+      },
+      {
+        segments: ruby("[鳥|とり]の[絵|え]をかきます。"),
+        translation: "Dibujo un pájaro.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "朝",
+    level: 2,
+    strokeCount: 12,
+    on: ["チョウ"],
+    kun: ["あさ"],
+    meaning: "Mañana",
+    examples: [
+      {
+        segments: ruby("[朝|あさ]ごはんを[食|た]べます。"),
+        translation: "Desayuno.",
+      },
+      {
+        segments: ruby("[毎|まい][朝|あさ]、[六|ろく][時|じ]に[起|お]きます。"),
+        translation: "Cada mañana me levanto a las seis.",
+      },
+      {
+        segments: ruby("[朝|あさ]の[空|そら]はきれいです。"),
+        translation: "El cielo de la mañana es bonito.",
+      },
+      {
+        segments: ruby("[朝|あさ]、[駅|えき]まで[歩|ある]きます。"),
+        translation: "Por la mañana camino hasta la estación.",
+      },
+      {
+        segments: ruby("[朝|あさ]は[少|すこ]し[寒|さむ]いです。"),
+        translation: "Por la mañana hace un poco de frío.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "直",
+    level: 2,
+    strokeCount: 8,
+    on: ["チョク", "ジキ"],
+    kun: ["なお.す", "なお.る", "ただ.ちに"],
+    meaning: "Arreglar / Directo",
+    examples: [
+      {
+        segments: ruby("まちがいを[直|なお]します。"),
+        translation: "Corrijo el error.",
+      },
+      {
+        segments: ruby("この[文|ぶん]を[直|なお]してください。"),
+        translation: "Por favor, corrija esta oración.",
+      },
+      {
+        segments: ruby("[家|いえ]に[直|ちょく][接|せつ][帰|かえ]ります。"),
+        translation: "Regreso directamente a casa.",
+      },
+      {
+        segments: ruby("[時|と][計|けい]が[直|なお]りました。"),
+        translation: "El reloj fue arreglado.",
+      },
+      {
+        segments: ruby("[直|ただ]ちに[先|せん][生|せい]に[知|し]らせます。"),
+        translation: "Aviso inmediatamente al profesor.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "通",
+    level: 2,
+    strokeCount: 10,
+    on: ["ツウ", "ツ"],
+    kun: ["とお.る", "かよ.う"],
+    meaning: "Pasar / Ir y venir / Comunicación",
+    examples: [
+      {
+        segments: ruby("この[道|みち]を[通|とお]ります。"),
+        translation: "Paso por este camino.",
+      },
+      {
+        segments: ruby("[毎|まい][日|にち][学|がっ][校|こう]に[通|かよ]っています。"),
+        translation: "Voy a la escuela todos los días.",
+      },
+      {
+        segments: ruby("[車|くるま]がたくさん[通|とお]ります。"),
+        translation: "Pasan muchos coches.",
+      },
+      {
+        segments: ruby("[電|でん][話|わ]がやっと[通|つう]じました。"),
+        translation: "Por fin la llamada se pudo comunicar.",
+      },
+      {
+        segments: ruby("[駅|えき]までこの[道|みち]を[通|とお]ってください。"),
+        translation: "Por favor, pase por este camino hasta la estación.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "弟",
+    level: 2,
+    strokeCount: 7,
+    on: ["テイ", "ダイ"],
+    kun: ["おとうと"],
+    meaning: "Hermano menor",
+    examples: [
+      {
+        segments: ruby("[弟|おとうと]と[遊|あそ]びます。"),
+        translation: "Juego con mi hermano menor.",
+      },
+      {
+        segments: ruby("[弟|おとうと]は[小|しょう][学|がく][生|せい]です。"),
+        translation: "Mi hermano menor es estudiante de primaria.",
+      },
+      {
+        segments: ruby("[弟|おとうと]に[本|ほん]をあげました。"),
+        translation: "Le di un libro a mi hermano menor.",
+      },
+      {
+        segments: ruby("[弟|おとうと]と[公|こう][園|えん]へ[行|い]きます。"),
+        translation: "Voy al parque con mi hermano menor.",
+      },
+      {
+        segments: ruby("[弟|おとうと]は[野|や][球|きゅう]が[好|す]きです。"),
+        translation: "A mi hermano menor le gusta el béisbol.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "店",
+    level: 2,
+    strokeCount: 8,
+    on: ["テン"],
+    kun: ["みせ"],
+    meaning: "Tienda",
+    examples: [
+      {
+        segments: ruby("この[店|みせ]は[安|やす]いです。"),
+        translation: "Esta tienda es barata.",
+      },
+      {
+        segments: ruby("[店|みせ]でパンを[買|か]います。"),
+        translation: "Compro pan en la tienda.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[店|みせ]ができました。"),
+        translation: "Abrieron una tienda nueva.",
+      },
+      {
+        segments: ruby("あの[店|みせ]は[人|ひと]が[多|おお]いです。"),
+        translation: "En esa tienda hay mucha gente.",
+      },
+      {
+        segments: ruby("[店|みせ]の[前|まえ]で[待|ま]っています。"),
+        translation: "Estoy esperando delante de la tienda.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "点",
+    level: 2,
+    strokeCount: 9,
+    on: ["テン"],
+    kun: ["てん"],
+    meaning: "Punto / Marca",
+    examples: [
+      {
+        segments: ruby("ノートに[点|てん]をつけます。"),
+        translation: "Pongo un punto en el cuaderno.",
+      },
+      {
+        segments: ruby("この[答|こた]えは[百|ひゃく][点|てん]です。"),
+        translation: "Esta respuesta vale cien puntos.",
+      },
+      {
+        segments: ruby("[大|たい][切|せつ]な[点|てん]を[見|み]ましょう。"),
+        translation: "Veamos el punto importante.",
+      },
+      {
+        segments: ruby("[黒|くろ]い[点|てん]が[一|ひと]つあります。"),
+        translation: "Hay un punto negro.",
+      },
+      {
+        segments: ruby("[名|な][前|まえ]のあとに[点|てん]を[打|う]ちません。"),
+        translation: "No se pone punto después del nombre.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "電",
+    level: 2,
+    strokeCount: 13,
+    on: ["デン"],
+    kun: [],
+    meaning: "Electricidad",
+    examples: [
+      {
+        segments: ruby("[電|でん][車|しゃ]で[会|かい][社|しゃ]へ[行|い]きます。"),
+        translation: "Voy a la empresa en tren.",
+      },
+      {
+        segments: ruby("[電|でん][気|き]をつけてください。"),
+        translation: "Por favor, encienda la luz.",
+      },
+      {
+        segments: ruby("[電|でん][話|わ]をかけます。"),
+        translation: "Hago una llamada telefónica.",
+      },
+      {
+        segments: ruby("[電|でん][話|わ][番|ばん][号|ごう]を[書|か]きます。"),
+        translation: "Escribo el número de teléfono.",
+      },
+      {
+        segments: ruby("[電|でん][車|しゃ]の[時|じ][間|かん]を[調|しら]べます。"),
+        translation: "Reviso el horario del tren.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "刀",
+    level: 2,
+    strokeCount: 2,
+    on: ["トウ"],
+    kun: ["かたな"],
+    meaning: "Espada / Sable",
+    examples: [
+      {
+        segments: ruby("[日|に][本|ほん]の[刀|かたな]は[有|ゆう][名|めい]です。"),
+        translation: "La espada japonesa es famosa.",
+      },
+      {
+        segments: ruby("この[絵|え]に[刀|かたな]があります。"),
+        translation: "En este dibujo hay una espada.",
+      },
+      {
+        segments: ruby("[刀|かたな]の[形|かたち]を[見|み]ます。"),
+        translation: "Observo la forma de la espada.",
+      },
+      {
+        segments: ruby("[古|ふる]い[刀|かたな]の[話|はなし]を[聞|き]きました。"),
+        translation: "Escuché una historia sobre una espada antigua.",
+      },
+      {
+        segments: ruby("[刀|かたな]はこの[箱|はこ]の[中|なか]です。"),
+        translation: "La espada está dentro de esta caja.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "冬",
+    level: 2,
+    strokeCount: 5,
+    on: ["トウ"],
+    kun: ["ふゆ"],
+    meaning: "Invierno",
+    examples: [
+      {
+        segments: ruby("[冬|ふゆ]はとても[寒|さむ]いです。"),
+        translation: "El invierno es muy frío.",
+      },
+      {
+        segments: ruby("[冬|ふゆ]に[雪|ゆき]が[降|ふ]ります。"),
+        translation: "En invierno nieva.",
+      },
+      {
+        segments: ruby("[冬|ふゆ]の[朝|あさ]は[暗|くら]いです。"),
+        translation: "Las mañanas de invierno son oscuras.",
+      },
+      {
+        segments: ruby("[冬|ふゆ][休|やす]みに[家|いえ]へ[帰|かえ]ります。"),
+        translation: "En las vacaciones de invierno vuelvo a casa.",
+      },
+      {
+        segments: ruby("[冬|ふゆ]のコートを[着|き]ます。"),
+        translation: "Me pongo el abrigo de invierno.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "当",
+    level: 2,
+    strokeCount: 6,
+    on: ["トウ"],
+    kun: ["あ.たる", "あ.てる"],
+    meaning: "Acertar / Correspondiente",
+    examples: [
+      {
+        segments: ruby("[答|こた]えが[当|あ]たりました。"),
+        translation: "La respuesta fue correcta.",
+      },
+      {
+        segments: ruby("くじが[当|あ]たるといいですね。"),
+        translation: "Ojalá gane la lotería.",
+      },
+      {
+        segments: ruby("[正|ただ]しい[絵|え]にまるを[当|あ]ててください。"),
+        translation: "Por favor, marque el dibujo correcto.",
+      },
+      {
+        segments: ruby("[日|ひ]がよく[当|あ]たる[部|へ][屋|や]です。"),
+        translation: "Es una habitación donde llega bien el sol.",
+      },
+      {
+        segments: ruby("この[言|こと][葉|ば]はここに[当|あ]てはまります。"),
+        translation: "Esta palabra corresponde aquí.",
+      },
+    ],
+    hasSvg: true,
+  },
+  {
+  char: "東",
+  level: 2,
+  strokeCount: 8,
+  on: ["トウ"],
+  kun: ["ひがし"],
+  meaning: "Este",
+  examples: [
+    { segments: ruby("[東|ひがし]の[空|そら]があかるいです。"), translation: "El cielo del este está claro." },
+    { segments: ruby("[東口|ひがしぐち]で[会|あ]いましょう。"), translation: "Encontrémonos en la salida este." },
+    { segments: ruby("[東|ひがし]へ[行|い]きます。"), translation: "Voy hacia el este." },
+    { segments: ruby("[東京|とうきょう]へ[行|い]きたいです。"), translation: "Quiero ir a Tokio." },
+    { segments: ruby("[東側|ひがしがわ]の[席|せき]に[座|すわ]ります。"), translation: "Me siento en el lado este." },
+  ],
+  hasSvg: true,
+  },
+  {
+    char: "答",
+    level: 2,
+    strokeCount: 12,
+    on: ["トウ"],
+    kun: ["こた.える", "こた.え"],
+    meaning: "Respuesta / responder",
+    examples: [
+      { segments: ruby("[答|こた]えを[書|か]いてください。"), translation: "Por favor, escribe la respuesta." },
+      { segments: ruby("[先生|せんせい]の[質問|しつもん]に[答|こた]えます。"), translation: "Respondo a la pregunta del profesor." },
+      { segments: ruby("[正|ただ]しい[答|こた]えです。"), translation: "Es la respuesta correcta." },
+      { segments: ruby("[答|こた]えがわかりません。"), translation: "No sé la respuesta." },
+      { segments: ruby("[答|こた]えを[見|み]せてください。"), translation: "Por favor, muéstrame la respuesta." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "頭",
+    level: 2,
+    strokeCount: 16,
+    on: ["トウ", "ズ"],
+    kun: ["あたま", "かしら"],
+    meaning: "Cabeza",
+    examples: [
+      { segments: ruby("[頭|あたま]がいたいです。"), translation: "Me duele la cabeza." },
+      { segments: ruby("[頭|あたま]に[帽子|ぼうし]をかぶります。"), translation: "Me pongo un sombrero en la cabeza." },
+      { segments: ruby("[頭|あたま]を[下|さ]げます。"), translation: "Inclino la cabeza." },
+      { segments: ruby("[先頭|せんとう]に[立|た]ちます。"), translation: "Me pongo al frente." },
+      { segments: ruby("[頭|あたま]の[上|うえ]に[本|ほん]をのせます。"), translation: "Pongo un libro sobre la cabeza." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "同",
+    level: 2,
+    strokeCount: 6,
+    on: ["ドウ"],
+    kun: ["おな.じ"],
+    meaning: "Mismo / igual",
+    examples: [
+      { segments: ruby("[同|おな]じ[本|ほん]を[読|よ]みます。"), translation: "Leo el mismo libro." },
+      { segments: ruby("[同|おな]じ[色|いろ]です。"), translation: "Es del mismo color." },
+      { segments: ruby("[同|おな]じ[時間|じかん]に[来|き]てください。"), translation: "Por favor, ven a la misma hora." },
+      { segments: ruby("[友達|ともだち]と[同|おな]じクラスです。"), translation: "Estoy en la misma clase que mi amigo." },
+      { segments: ruby("[同時|どうじ]に[始|はじ]めます。"), translation: "Empezamos al mismo tiempo." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "道",
+    level: 2,
+    strokeCount: 12,
+    on: ["ドウ"],
+    kun: ["みち"],
+    meaning: "Camino / calle",
+    examples: [
+      { segments: ruby("この[道|みち]をまっすぐ[行|い]きます。"), translation: "Voy derecho por este camino." },
+      { segments: ruby("[道|みち]が[広|ひろ]いです。"), translation: "El camino es ancho." },
+      { segments: ruby("[駅|えき]への[道|みち]を[教|おし]えてください。"), translation: "Por favor, indíqueme el camino a la estación." },
+      { segments: ruby("[山道|やまみち]を[歩|ある]きます。"), translation: "Camino por un sendero de montaña." },
+      { segments: ruby("[歩道|ほどう]を[歩|ある]いてください。"), translation: "Por favor, camina por la vereda." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "読",
+    level: 2,
+    strokeCount: 14,
+    on: ["ドク", "トク"],
+    kun: ["よ.む"],
+    meaning: "Leer",
+    examples: [
+      { segments: ruby("[本|ほん]を[読|よ]みます。"), translation: "Leo un libro." },
+      { segments: ruby("[新聞|しんぶん]を[読|よ]みます。"), translation: "Leo el periódico." },
+      { segments: ruby("[声|こえ]を[出|だ]して[読|よ]みます。"), translation: "Leo en voz alta." },
+      { segments: ruby("この[漢字|かんじ]はどう[読|よ]みますか。"), translation: "¿Cómo se lee este kanji?" },
+      { segments: ruby("[毎日|まいにち]すこしずつ[読|よ]みます。"), translation: "Leo un poco cada día." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "内",
+    level: 2,
+    strokeCount: 4,
+    on: ["ナイ", "ダイ"],
+    kun: ["うち", "ない"],
+    meaning: "Interior / dentro / casa",
+    examples: [
+      { segments: ruby("[内|うち]は[四人|よにん][家族|かぞく]です。"), translation: "En mi casa somos una familia de cuatro." },
+      { segments: ruby("[校内|こうない]で[走|はし]らないでください。"), translation: "Por favor, no corras dentro de la escuela." },
+      { segments: ruby("[内側|うちがわ]に[名前|なまえ]を[書|か]いてください。"), translation: "Por favor, escribe tu nombre en el lado interior." },
+      { segments: ruby("[箱|はこ]の[内|なか]に[手紙|てがみ]があります。"), translation: "Hay una carta dentro de la caja." },
+      { segments: ruby("[案内|あんない]を[読|よ]んでください。"), translation: "Por favor, lee la guía." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "南",
+    level: 2,
+    strokeCount: 9,
+    on: ["ナン"],
+    kun: ["みなみ"],
+    meaning: "Sur",
+    examples: [
+      { segments: ruby("[南|みなみ]の[空|そら]を[見|み]ます。"), translation: "Miro el cielo del sur." },
+      { segments: ruby("[南口|みなみぐち]で[会|あ]いましょう。"), translation: "Encontrémonos en la salida sur." },
+      { segments: ruby("[南|みなみ]へ[行|い]きます。"), translation: "Voy hacia el sur." },
+      { segments: ruby("この[町|まち]の[南側|みなみがわ]です。"), translation: "Es el lado sur de esta ciudad." },
+      { segments: ruby("[南風|みなみかぜ]が[吹|ふ]いています。"), translation: "Sopla viento del sur." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "肉",
+    level: 2,
+    strokeCount: 6,
+    on: ["ニク"],
+    kun: [],
+    meaning: "Carne",
+    examples: [
+      { segments: ruby("[肉|にく]を[食|た]べます。"), translation: "Como carne." },
+      { segments: ruby("[牛肉|ぎゅうにく]が[好|す]きです。"), translation: "Me gusta la carne de vacuno." },
+      { segments: ruby("[肉屋|にくや]へ[行|い]きます。"), translation: "Voy a la carnicería." },
+      { segments: ruby("[肉|にく]を[焼|や]きます。"), translation: "Aso la carne." },
+      { segments: ruby("この[料理|りょうり]には[肉|にく]が[入|はい]っています。"), translation: "Este plato lleva carne." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "馬",
+    level: 2,
+    strokeCount: 10,
+    on: ["バ"],
+    kun: ["うま", "ま"],
+    meaning: "Caballo",
+    examples: [
+      { segments: ruby("[馬|うま]が[走|はし]っています。"), translation: "El caballo está corriendo." },
+      { segments: ruby("[白|しろ]い[馬|うま]です。"), translation: "Es un caballo blanco." },
+      { segments: ruby("[馬|うま]を[見|み]ました。"), translation: "Vi un caballo." },
+      { segments: ruby("[木馬|もくば]に[乗|の]ります。"), translation: "Me subo al caballito de madera." },
+      { segments: ruby("[馬車|ばしゃ]が[通|とお]ります。"), translation: "Pasa un carruaje." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "売",
+    level: 2,
+    strokeCount: 7,
+    on: ["バイ"],
+    kun: ["う.る", "う.れる"],
+    meaning: "Vender",
+    examples: [
+      { segments: ruby("この[店|みせ]で[花|はな]を[売|う]っています。"), translation: "En esta tienda venden flores." },
+      { segments: ruby("[本|ほん]を[売|う]ります。"), translation: "Vendo libros." },
+      { segments: ruby("[切符|きっぷ]はここで[売|う]っています。"), translation: "Los boletos se venden aquí." },
+      { segments: ruby("[店員|てんいん]がパンを[売|う]っています。"), translation: "El dependiente está vendiendo pan." },
+      { segments: ruby("[売店|ばいてん]でジュースを[買|か]います。"), translation: "Compro jugo en el kiosco." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "買",
+    level: 2,
+    strokeCount: 12,
+    on: ["バイ"],
+    kun: ["か.う"],
+    meaning: "Comprar",
+    examples: [
+      { segments: ruby("[本|ほん]を[買|か]います。"), translation: "Compro un libro." },
+      { segments: ruby("[店|みせ]でパンを[買|か]います。"), translation: "Compro pan en la tienda." },
+      { segments: ruby("[切符|きっぷ]を[買|か]ってください。"), translation: "Por favor, compre el boleto." },
+      { segments: ruby("[新|あたら]しい[靴|くつ]を[買|か]いました。"), translation: "Compré zapatos nuevos." },
+      { segments: ruby("[買|か]い[物|もの]に[行|い]きます。"), translation: "Voy de compras." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "麦",
+    level: 2,
+    strokeCount: 7,
+    on: ["バク"],
+    kun: ["むぎ"],
+    meaning: "Trigo / cebada",
+    examples: [
+      { segments: ruby("[麦|むぎ]の[畑|はたけ]です。"), translation: "Es un campo de trigo." },
+      { segments: ruby("[麦茶|むぎちゃ]を[飲|の]みます。"), translation: "Tomo té de cebada." },
+      { segments: ruby("[小麦粉|こむぎこ]でパンをつくります。"), translation: "Hago pan con harina de trigo." },
+      { segments: ruby("[麦|むぎ]がよく[育|そだ]っています。"), translation: "El trigo está creciendo bien." },
+      { segments: ruby("[金色|きんいろ]の[麦|むぎ]がきれいです。"), translation: "El trigo dorado es bonito." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "半",
+    level: 2,
+    strokeCount: 5,
+    on: ["ハン"],
+    kun: ["なか.ば"],
+    meaning: "Mitad",
+    examples: [
+      { segments: ruby("[半分|はんぶん]ください。"), translation: "Por favor, deme la mitad." },
+      { segments: ruby("[半分|はんぶん]だけ[食|た]べます。"), translation: "Como solo la mitad." },
+      { segments: ruby("[一時半|いちじはん]です。"), translation: "Es la una y media." },
+      { segments: ruby("このケーキを[半分|はんぶん]にします。"), translation: "Parto este pastel en dos." },
+      { segments: ruby("[後半|こうはん]もがんばります。"), translation: "También daré lo mejor en la segunda mitad." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "番",
+    level: 2,
+    strokeCount: 12,
+    on: ["バン"],
+    kun: [],
+    meaning: "Número / turno / orden",
+    examples: [
+      { segments: ruby("[一番|いちばん][好|す]きです。"), translation: "Es el que más me gusta." },
+      { segments: ruby("[二番|にばん]です。"), translation: "Es el número dos." },
+      { segments: ruby("[番号|ばんごう]を[書|か]いてください。"), translation: "Por favor, escriba el número." },
+      { segments: ruby("[番組|ばんぐみ]を[見|み]ます。"), translation: "Veo un programa." },
+      { segments: ruby("[順番|じゅんばん]を[待|ま]ってください。"), translation: "Por favor, espere su turno." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "父",
+    level: 2,
+    strokeCount: 4,
+    on: ["フ"],
+    kun: ["ちち"],
+    meaning: "Padre",
+    examples: [
+      { segments: ruby("[父|ちち]は[会社員|かいしゃいん]です。"), translation: "Mi padre es empleado de oficina." },
+      { segments: ruby("[父|ちち]と[出|で]かけます。"), translation: "Salgo con mi padre." },
+      { segments: ruby("[父|ちち]の[車|くるま]です。"), translation: "Es el auto de mi padre." },
+      { segments: ruby("お[父|とう]さんは[家|いえ]にいます。"), translation: "Papá está en casa." },
+      { segments: ruby("[父|ちち]に[手紙|てがみ]を[書|か]きます。"), translation: "Le escribo una carta a mi padre." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "風",
+    level: 2,
+    strokeCount: 9,
+    on: ["フウ", "フ"],
+    kun: ["かぜ", "かざ"],
+    meaning: "Viento",
+    examples: [
+      { segments: ruby("[風|かぜ]が[強|つよ]いです。"), translation: "El viento es fuerte." },
+      { segments: ruby("[風|かぜ]で[紙|かみ]が[飛|と]びました。"), translation: "El papel salió volando por el viento." },
+      { segments: ruby("[台風|たいふう]が[来|き]ます。"), translation: "Se acerca un tifón." },
+      { segments: ruby("[北風|きたかぜ]がつめたいです。"), translation: "El viento del norte está frío." },
+      { segments: ruby("[風車|ふうしゃ]がまわっています。"), translation: "El molino está girando." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "分",
+    level: 2,
+    strokeCount: 4,
+    on: ["ブン", "フン", "ブ"],
+    kun: ["わ.かる", "わ.ける"],
+    meaning: "Minuto / parte / entender",
+    examples: [
+      { segments: ruby("[半分|はんぶん]ください。"), translation: "Por favor, deme la mitad." },
+      { segments: ruby("[三分|さんぷん]まってください。"), translation: "Por favor, espere tres minutos." },
+      { segments: ruby("[自分|じぶん]でします。"), translation: "Lo haré yo mismo." },
+      { segments: ruby("[分|わ]かりました。"), translation: "Entendido." },
+      { segments: ruby("これで[十分|じゅうぶん]です。"), translation: "Con esto es suficiente." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "聞",
+    level: 2,
+    strokeCount: 14,
+    on: ["ブン", "モン"],
+    kun: ["き.く", "き.こえる"],
+    meaning: "Oír / escuchar / preguntar",
+    examples: [
+      { segments: ruby("[先生|せんせい]の[話|はなし]を[聞|き]きます。"), translation: "Escucho lo que dice el profesor." },
+      { segments: ruby("[名前|なまえ]を[聞|き]きます。"), translation: "Pregunto el nombre." },
+      { segments: ruby("よく[聞|き]こえません。"), translation: "No puedo oír bien." },
+      { segments: ruby("[音楽|おんがく]を[聞|き]きます。"), translation: "Escucho música." },
+      { segments: ruby("もう[一度|いちど][聞|き]いてください。"), translation: "Por favor, pregúntelo una vez más." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "米",
+    level: 2,
+    strokeCount: 6,
+    on: ["ベイ", "マイ"],
+    kun: ["こめ"],
+    meaning: "Arroz",
+    examples: [
+      { segments: ruby("[米|こめ]を[買|か]います。"), translation: "Compro arroz." },
+      { segments: ruby("[白|しろ]い[米|こめ]です。"), translation: "Es arroz blanco." },
+      { segments: ruby("[米|こめ]を[洗|あら]います。"), translation: "Lavo el arroz." },
+      { segments: ruby("[米|こめ]をたきます。"), translation: "Cocino arroz." },
+      { segments: ruby("[新|あたら]しい[米|こめ]がおいしいです。"), translation: "El arroz nuevo está rico." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "歩",
+    level: 2,
+    strokeCount: 8,
+    on: ["ホ", "ブ"],
+    kun: ["ある.く", "あゆ.む"],
+    meaning: "Caminar / paso",
+    examples: [
+      { segments: ruby("[歩|ある]いて[学校|がっこう]へ[行|い]きます。"), translation: "Voy caminando a la escuela." },
+      { segments: ruby("[一歩|いっぽ]ずつ[進|すす]みます。"), translation: "Avanzo paso a paso." },
+      { segments: ruby("[散歩|さんぽ]が[好|す]きです。"), translation: "Me gusta pasear." },
+      { segments: ruby("ゆっくり[歩|ある]いてください。"), translation: "Por favor, camine despacio." },
+      { segments: ruby("[歩道|ほどう]を[歩|ある]きます。"), translation: "Camino por la vereda." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "母",
+    level: 2,
+    strokeCount: 5,
+    on: ["ボ"],
+    kun: ["はは"],
+    meaning: "Madre",
+    examples: [
+      { segments: ruby("[母|はは]はやさしいです。"), translation: "Mi madre es amable." },
+      { segments: ruby("[母|はは]と[買|か]い[物|もの]に[行|い]きます。"), translation: "Voy de compras con mi madre." },
+      { segments: ruby("[母|はは]の[料理|りょうり]が[好|す]きです。"), translation: "Me gusta la comida de mi madre." },
+      { segments: ruby("お[母|かあ]さんに[電話|でんわ]します。"), translation: "Llamo a mi mamá." },
+      { segments: ruby("[母|はは]に[花|はな]をあげます。"), translation: "Le doy flores a mi madre." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "方",
+    level: 2,
+    strokeCount: 4,
+    on: ["ホウ"],
+    kun: ["かた"],
+    meaning: "Dirección / forma / persona",
+    examples: [
+      { segments: ruby("あの[方|かた]は[先生|せんせい]です。"), translation: "Esa persona es profesora." },
+      { segments: ruby("[北|きた]の[方|ほう]です。"), translation: "Está hacia el norte." },
+      { segments: ruby("この[方|ほう]が[早|はや]いです。"), translation: "Esta forma es más rápida." },
+      { segments: ruby("[行|い]き[方|かた]を[教|おし]えてください。"), translation: "Por favor, enséñeme cómo ir." },
+      { segments: ruby("[夕方|ゆうがた]に[帰|かえ]ります。"), translation: "Vuelvo al atardecer." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "北",
+    level: 2,
+    strokeCount: 5,
+    on: ["ホク"],
+    kun: ["きた"],
+    meaning: "Norte",
+    examples: [
+      { segments: ruby("[北|きた]はさむいです。"), translation: "El norte es frío." },
+      { segments: ruby("[北口|きたぐち]で[会|あ]いましょう。"), translation: "Encontrémonos en la salida norte." },
+      { segments: ruby("[北風|きたかぜ]が[吹|ふ]いています。"), translation: "Sopla viento del norte." },
+      { segments: ruby("[北|きた]へ[行|い]きます。"), translation: "Voy hacia el norte." },
+      { segments: ruby("この[町|まち]の[北側|きたがわ]です。"), translation: "Es el lado norte de esta ciudad." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "毎",
+    level: 2,
+    strokeCount: 6,
+    on: ["マイ"],
+    kun: [],
+    meaning: "Cada / todos",
+    examples: [
+      { segments: ruby("[毎日|まいにち][勉強|べんきょう]します。"), translation: "Estudio todos los días." },
+      { segments: ruby("[毎朝|まいあさ][六時|ろくじ]に[起|お]きます。"), translation: "Me levanto cada mañana a las seis." },
+      { segments: ruby("[毎週|まいしゅう][図書館|としょかん]へ[行|い]きます。"), translation: "Voy a la biblioteca cada semana." },
+      { segments: ruby("[毎年|まいとし][花見|はなみ]をします。"), translation: "Cada año vemos los cerezos." },
+      { segments: ruby("[毎回|まいかい][楽|たの]しいです。"), translation: "Cada vez es divertido." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "妹",
+    level: 2,
+    strokeCount: 8,
+    on: ["マイ"],
+    kun: ["いもうと"],
+    meaning: "Hermana menor",
+    examples: [
+      { segments: ruby("[妹|いもうと]がいます。"), translation: "Tengo una hermana menor." },
+      { segments: ruby("[妹|いもうと]は[小学生|しょうがくせい]です。"), translation: "Mi hermana menor está en primaria." },
+      { segments: ruby("[妹|いもうと]と[公園|こうえん]で[遊|あそ]びます。"), translation: "Juego en el parque con mi hermana menor." },
+      { segments: ruby("[妹|いもうと]に[本|ほん]をあげます。"), translation: "Le doy un libro a mi hermana menor." },
+      { segments: ruby("[妹|いもうと]の[名前|なまえ]はさくらです。"), translation: "Mi hermana menor se llama Sakura." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "万",
+    level: 2,
+    strokeCount: 3,
+    on: ["マン", "バン"],
+    kun: ["よろず"],
+    meaning: "Diez mil",
+    examples: [
+      { segments: ruby("[一万|いちまん][円|えん]です。"), translation: "Son diez mil yenes." },
+      { segments: ruby("[一万|いちまん][円|えん]を[持|も]っています。"), translation: "Tengo diez mil yenes." },
+      { segments: ruby("[二万|にまん][円|えん]の[時計|とけい]です。"), translation: "Es un reloj de veinte mil yenes." },
+      { segments: ruby("[万年筆|まんねんひつ]を[使|つか]います。"), translation: "Uso una pluma estilográfica." },
+      { segments: ruby("[一万|いちまん][回|かい]は[多|おお]いです。"), translation: "Diez mil veces es mucho." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "明",
+    level: 2,
+    strokeCount: 8,
+    on: ["メイ", "ミョウ"],
+    kun: ["あか.るい", "あ.ける", "あ.かり", "あ.く", "あ.くる", "あ.かす"],
+    meaning: "Claro / brillante",
+    examples: [
+      { segments: ruby("[明|あか]るい[部屋|へや]です。"), translation: "Es una habitación luminosa." },
+      { segments: ruby("[明日|あした][行|い]きます。"), translation: "Iré mañana." },
+      { segments: ruby("[月|つき]が[明|あか]るいです。"), translation: "La luna brilla." },
+      { segments: ruby("[電気|でんき]をつけて[明|あか]るくします。"), translation: "Enciendo la luz para aclarar el lugar." },
+      { segments: ruby("[明|あか]るい[声|こえ]であいさつします。"), translation: "Saludo con voz alegre." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "鳴",
+    level: 2,
+    strokeCount: 14,
+    on: ["メイ"],
+    kun: ["な.く", "な.る", "なら.す"],
+    meaning: "Sonar / cantar / llorar",
+    examples: [
+      { segments: ruby("[鳥|とり]が[鳴|な]いています。"), translation: "Los pájaros están cantando." },
+      { segments: ruby("ベルが[鳴|な]りました。"), translation: "Sonó la campana." },
+      { segments: ruby("[電話|でんわ]が[鳴|な]っています。"), translation: "El teléfono está sonando." },
+      { segments: ruby("[犬|いぬ]が[鳴|な]いています。"), translation: "El perro está ladrando." },
+      { segments: ruby("[鐘|かね]が[鳴|な]ります。"), translation: "La campana suena." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "毛",
+    level: 2,
+    strokeCount: 4,
+    on: ["モウ"],
+    kun: ["け"],
+    meaning: "Pelo / pelaje",
+    examples: [
+      { segments: ruby("[猫|ねこ]の[毛|け]がやわらかいです。"), translation: "El pelaje del gato es suave." },
+      { segments: ruby("[毛糸|けいと]でぼうしをあみます。"), translation: "Tejo un gorro con lana." },
+      { segments: ruby("[白|しろ]い[毛|け]があります。"), translation: "Hay pelos blancos." },
+      { segments: ruby("[長|なが]い[毛|け]ですね。"), translation: "Tu pelo es largo." },
+      { segments: ruby("[毛布|もうふ]をかけます。"), translation: "Me cubro con una manta." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "門",
+    level: 2,
+    strokeCount: 8,
+    on: ["モン"],
+    kun: ["かど"],
+    meaning: "Puerta / portal",
+    examples: [
+      { segments: ruby("[門|もん]のまえで[待|ま]ちます。"), translation: "Espero delante de la puerta." },
+      { segments: ruby("[学校|がっこう]の[門|もん]が[開|あ]いています。"), translation: "La puerta de la escuela está abierta." },
+      { segments: ruby("[正門|せいもん]から[入|はい]ります。"), translation: "Entro por la puerta principal." },
+      { segments: ruby("[門|もん]を[閉|し]めてください。"), translation: "Por favor, cierre la puerta." },
+      { segments: ruby("[校門|こうもん]のそばに[立|た]ちます。"), translation: "Me paro cerca de la puerta de la escuela." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "夜",
+    level: 2,
+    strokeCount: 8,
+    on: ["ヤ"],
+    kun: ["よる", "よ"],
+    meaning: "Noche",
+    examples: [
+      { segments: ruby("[夜|よる]はしずかです。"), translation: "La noche es tranquila." },
+      { segments: ruby("[夜|よる]に[本|ほん]を[読|よ]みます。"), translation: "Leo un libro por la noche." },
+      { segments: ruby("[今夜|こんや]は[月|つき]がきれいです。"), translation: "Esta noche la luna está hermosa." },
+      { segments: ruby("[夜道|よみち]はあぶないです。"), translation: "Caminar de noche es peligroso." },
+      { segments: ruby("[夜空|よぞら]を[見|み]ます。"), translation: "Miro el cielo nocturno." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "野",
+    level: 2,
+    strokeCount: 11,
+    on: ["ヤ"],
+    kun: ["の"],
+    meaning: "Campo / llanura",
+    examples: [
+      { segments: ruby("[野原|のはら]で[遊|あそ]びます。"), translation: "Juego en el campo." },
+      { segments: ruby("[野球|やきゅう]が[好|す]きです。"), translation: "Me gusta el béisbol." },
+      { segments: ruby("[広|ひろ]い[野|の]です。"), translation: "Es un campo amplio." },
+      { segments: ruby("[山|やま]と[野|の]が[見|み]えます。"), translation: "Se ven montes y llanuras." },
+      { segments: ruby("[野菜|やさい]を[食|た]べます。"), translation: "Como verduras." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "友",
+    level: 2,
+    strokeCount: 4,
+    on: ["ユウ"],
+    kun: ["とも"],
+    meaning: "Amigo",
+    examples: [
+      { segments: ruby("[友達|ともだち]と[話|はな]します。"), translation: "Hablo con un amigo." },
+      { segments: ruby("[友|とも]だちが[来|き]ました。"), translation: "Vino un amigo." },
+      { segments: ruby("[友|とも]だちに[手紙|てがみ]を[書|か]きます。"), translation: "Le escribo una carta a un amigo." },
+      { segments: ruby("[友|とも]だちと[写真|しゃしん]を[撮|と]ります。"), translation: "Me saco una foto con un amigo." },
+      { segments: ruby("[友|とも]だちと[同|おな]じクラスです。"), translation: "Estoy en la misma clase que mi amigo." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "用",
+    level: 2,
+    strokeCount: 5,
+    on: ["ヨウ"],
+    kun: ["もち.いる"],
+    meaning: "Uso / asunto",
+    examples: [
+      { segments: ruby("[用事|ようじ]があります。"), translation: "Tengo un asunto que hacer." },
+      { segments: ruby("[用紙|ようし]に[名前|なまえ]を[書|か]いてください。"), translation: "Por favor, escriba su nombre en la hoja." },
+      { segments: ruby("[用事|ようじ]があるので[帰|かえ]ります。"), translation: "Vuelvo porque tengo algo que hacer." },
+      { segments: ruby("[用|よう]がすんだら[来|き]てください。"), translation: "Por favor, venga cuando termine." },
+      { segments: ruby("[用意|ようい]してください。"), translation: "Por favor, prepárelo." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "曜",
+    level: 2,
+    strokeCount: 18,
+    on: ["ヨウ"],
+    kun: [],
+    meaning: "Día de la semana",
+    examples: [
+      { segments: ruby("[月曜日|げつようび]は[会議|かいぎ]があります。"), translation: "El lunes hay reunión." },
+      { segments: ruby("[火曜日|かようび]に[行|い]きます。"), translation: "Iré el martes." },
+      { segments: ruby("[水曜日|すいようび]は[家|いえ]にいます。"), translation: "El miércoles estoy en casa." },
+      { segments: ruby("[木曜日|もくようび]にテストがあります。"), translation: "El jueves hay prueba." },
+      { segments: ruby("[日曜日|にちようび]は[休|やす]みです。"), translation: "El domingo es día libre." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "来",
+    level: 2,
+    strokeCount: 7,
+    on: ["ライ"],
+    kun: ["く.る", "きた.る"],
+    meaning: "Venir",
+    examples: [
+      { segments: ruby("[先生|せんせい]が[来|き]ます。"), translation: "Viene la profesora." },
+      { segments: ruby("また[来週|らいしゅう][来|き]てください。"), translation: "Por favor, venga otra vez la próxima semana." },
+      { segments: ruby("[友達|ともだち]が[家|いえ]に[来|き]ました。"), translation: "Un amigo vino a mi casa." },
+      { segments: ruby("[来年|らいねん][日本|にほん]へ[行|い]きます。"), translation: "El próximo año iré a Japón." },
+      { segments: ruby("バスがまだ[来|き]ません。"), translation: "El bus todavía no llega." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "里",
+    level: 2,
+    strokeCount: 7,
+    on: ["リ"],
+    kun: ["さと"],
+    meaning: "Aldea / pueblo natal",
+    examples: [
+      { segments: ruby("[里|さと]へ[帰|かえ]ります。"), translation: "Vuelvo a mi pueblo." },
+      { segments: ruby("[山里|やまざと]はしずかです。"), translation: "La aldea de montaña es tranquila." },
+      { segments: ruby("[里|さと]は[山|やま]の[近|ちか]くです。"), translation: "El pueblo está cerca de la montaña." },
+      { segments: ruby("[母|はは]の[里|さと]へ[行|い]きます。"), translation: "Voy al pueblo natal de mi madre." },
+      { segments: ruby("[里|さと]の[空気|くうき]はきれいです。"), translation: "El aire del pueblo es limpio." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "理",
+    level: 2,
+    strokeCount: 11,
+    on: ["リ"],
+    kun: [],
+    meaning: "Razón / lógica / ciencia",
+    examples: [
+      { segments: ruby("[理科|りか]が[好|す]きです。"), translation: "Me gusta ciencias." },
+      { segments: ruby("[理|り][由|ゆう]を[話|はな]してください。"), translation: "Por favor, explique la razón." },
+      { segments: ruby("[料理|りょうり]をします。"), translation: "Cocino." },
+      { segments: ruby("[無理|むり]をしないでください。"), translation: "Por favor, no se esfuerce demasiado." },
+      { segments: ruby("[理科室|りかしつ]へ[行|い]きます。"), translation: "Voy a la sala de ciencias." },
+    ],
+    hasSvg: true,
+  },
+  {
+    char: "話",
+    level: 2,
+    strokeCount: 13,
+    on: ["ワ"],
+    kun: ["はな.す", "はなし"],
+    meaning: "Hablar / historia",
+    examples: [
+      { segments: ruby("[友達|ともだち]と[話|はな]します。"), translation: "Hablo con un amigo." },
+      { segments: ruby("[先生|せんせい]の[話|はなし]を[聞|き]きます。"), translation: "Escucho la explicación del profesor." },
+      { segments: ruby("[日本語|にほんご]で[話|はな]してください。"), translation: "Por favor, hable en japonés." },
+      { segments: ruby("[電話|でんわ]で[話|はな]しました。"), translation: "Hablé por teléfono." },
+      { segments: ruby("おもしろい[話|はなし]ですね。"), translation: "Es una historia interesante." },
+    ],
+    hasSvg: true,
+  },
 ];
+
+export const LEVEL3: KanjiEntry[]  = [
+  {
+    char: "悪",
+    level: 3,
+    strokeCount: 11,
+    on: ["アク", "オ"],
+    kun: ["わる.い"],
+    meaning: "Malo / maldad",
+    examples: [
+      {
+        segments: ruby("[悪|わる]いことをしてはいけません。"),
+        translation: "No se deben hacer cosas malas.",
+      },
+      {
+        segments: ruby("[天気|てんき]が[悪|わる]いです。"),
+        translation: "El clima está malo.",
+      },
+      {
+        segments: ruby("[悪口|わるくち]を[言|い]わないでください。"),
+        translation: "Por favor, no hables mal de otros.",
+      },
+      {
+        segments: ruby("[気分|きぶん]が[悪|わる]いです。"),
+        translation: "Me siento mal.",
+      },
+      {
+        segments: ruby("[悪|あく]いことは[早|はや]くなおしましょう。"),
+        translation: "Corrijamos pronto las malas acciones.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "安",
+    level: 3,
+    strokeCount: 6,
+    on: ["アン"],
+    kun: ["やす.い"],
+    meaning: "Barato / tranquilo",
+    examples: [
+      {
+        segments: ruby("この[店|みせ]の[野菜|やさい]は[安|やす]いです。"),
+        translation: "Las verduras de esta tienda son baratas.",
+      },
+      {
+        segments: ruby("[安|やす]いペンを[買|か]いました。"),
+        translation: "Compré un lápiz barato.",
+      },
+      {
+        segments: ruby("[元気|げんき]な[顔|かお]を[見|み]て[安心|あんしん]しました。"),
+        translation: "Me tranquilicé al ver una cara animada.",
+      },
+      {
+        segments: ruby("[安全|あんぜん]な[場所|ばしょ]で[待|ま]ってください。"),
+        translation: "Por favor, espere en un lugar seguro.",
+      },
+      {
+        segments: ruby("[値段|ねだん]が[安|やす]いので[買|か]いやすいです。"),
+        translation: "Como el precio es barato, es fácil comprarlo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "暗",
+    level: 3,
+    strokeCount: 13,
+    on: ["アン"],
+    kun: ["くら.い"],
+    meaning: "Oscuro",
+    examples: [
+      {
+        segments: ruby("[部屋|へや]が[暗|くら]いです。"),
+        translation: "La habitación está oscura.",
+      },
+      {
+        segments: ruby("[暗|くら]い[道|みち]を[一人|ひとり]で[歩|ある]きません。"),
+        translation: "No camino solo por un camino oscuro.",
+      },
+      {
+        segments: ruby("[外|そと]が[暗|くら]くなる[前|まえ]に[帰|かえ]ります。"),
+        translation: "Vuelvo antes de que oscurezca.",
+      },
+      {
+        segments: ruby("[暗記|あんき]するまで[何回|なんかい]も[読|よ]みます。"),
+        translation: "Lo leo muchas veces hasta memorizarlo.",
+      },
+      {
+        segments: ruby("[暗|くら]い[色|いろ]の[服|ふく]を[着|き]ています。"),
+        translation: "Llevo ropa de color oscuro.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "医",
+    level: 3,
+    strokeCount: 7,
+    on: ["イ"],
+    kun: [],
+    meaning: "Medicina / médico",
+    examples: [
+      {
+        segments: ruby("[医者|いしゃ]に[診|み]てもらいます。"),
+        translation: "Me revisa un médico.",
+      },
+      {
+        segments: ruby("[病院|びょういん]で[医|い][学|がく]の[本|ほん]を[見|み]ました。"),
+        translation: "Vi un libro de medicina en el hospital.",
+      },
+      {
+        segments: ruby("[医務室|いむしつ]へ[行|い]ってください。"),
+        translation: "Por favor, vaya a la enfermería.",
+      },
+      {
+        segments: ruby("[医者|いしゃ]の[話|はなし]をよく[聞|き]きます。"),
+        translation: "Escucho bien lo que dice el médico.",
+      },
+      {
+        segments: ruby("[医療|いりょう]は[人|ひと]の[生活|せいかつ]に[大切|たいせつ]です。"),
+        translation: "La atención médica es importante para la vida de las personas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "委",
+    level: 3,
+    strokeCount: 8,
+    on: ["イ"],
+    kun: ["ゆだ.ねる"],
+    meaning: "Encargar / confiar",
+    examples: [
+      {
+        segments: ruby("この[仕事|しごと]を[先生|せんせい]に[委|ゆだ]ねます。"),
+        translation: "Le encargo este trabajo al profesor.",
+      },
+      {
+        segments: ruby("[委員|いいん]として[活動|かつどう]します。"),
+        translation: "Actúo como miembro del comité.",
+      },
+      {
+        segments: ruby("[学級|がっきゅう][委員|いいん]を[選|えら]びます。"),
+        translation: "Elegimos al delegado del curso.",
+      },
+      {
+        segments: ruby("[大事|だいじ]なことは[信頼|しんらい]できる[人|ひと]に[委|ゆだ]ねます。"),
+        translation: "Las cosas importantes se confían a alguien de confianza.",
+      },
+      {
+        segments: ruby("[委員会|いいんかい]で[話|はな]し[合|あ]います。"),
+        translation: "Conversamos en el comité.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "意",
+    level: 3,
+    strokeCount: 13,
+    on: ["イ"],
+    kun: [],
+    meaning: "Idea / intención / significado",
+    examples: [
+      {
+        segments: ruby("[意見|いけん]を[言|い]ってください。"),
+        translation: "Por favor, diga su opinión.",
+      },
+      {
+        segments: ruby("[意味|いみ]がよくわかりません。"),
+        translation: "No entiendo bien el significado.",
+      },
+      {
+        segments: ruby("[注意|ちゅうい]して[歩|ある]いてください。"),
+        translation: "Por favor, camine con cuidado.",
+      },
+      {
+        segments: ruby("[相手|あいて]の[意見|いけん]も[聞|き]きましょう。"),
+        translation: "Escuchemos también la opinión de la otra persona.",
+      },
+      {
+        segments: ruby("[意外|いがい]な[答|こた]えでおどろきました。"),
+        translation: "Me sorprendió una respuesta inesperada.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "育",
+    level: 3,
+    strokeCount: 8,
+    on: ["イク"],
+    kun: ["そだ.つ", "そだ.てる"],
+    meaning: "Crecer / criar / educar",
+    examples: [
+      {
+        segments: ruby("[花|はな]を[育|そだ]てています。"),
+        translation: "Estoy cultivando flores.",
+      },
+      {
+        segments: ruby("[子|こ]どもが[元気|げんき]に[育|そだ]っています。"),
+        translation: "Los niños están creciendo sanos.",
+      },
+      {
+        segments: ruby("[学校|がっこう]は[人|ひと]を[育|そだ]てる[場所|ばしょ]です。"),
+        translation: "La escuela es un lugar para formar personas.",
+      },
+      {
+        segments: ruby("[教育|きょういく]はとても[大切|たいせつ]です。"),
+        translation: "La educación es muy importante.",
+      },
+      {
+        segments: ruby("[野菜|やさい]を[育|そだ]てるのが[好|す]きです。"),
+        translation: "Me gusta cultivar verduras.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "員",
+    level: 3,
+    strokeCount: 10,
+    on: ["イン"],
+    kun: [],
+    meaning: "Miembro / empleado",
+    examples: [
+      {
+        segments: ruby("[店員|てんいん]さんに[聞|き]きます。"),
+        translation: "Le pregunto al dependiente.",
+      },
+      {
+        segments: ruby("[会社員|かいしゃいん]として[働|はたら]いています。"),
+        translation: "Trabajo como empleado de empresa.",
+      },
+      {
+        segments: ruby("[委員|いいん]が[前|まえ]に[立|た]ちます。"),
+        translation: "El miembro del comité se pone al frente.",
+      },
+      {
+        segments: ruby("[会員|かいいん]だけが[入|はい]れます。"),
+        translation: "Solo los socios pueden entrar.",
+      },
+      {
+        segments: ruby("[全員|ぜんいん]そろいました。"),
+        translation: "Ya están todos reunidos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "院",
+    level: 3,
+    strokeCount: 10,
+    on: ["イン"],
+    kun: [],
+    meaning: "Institución / hospital",
+    examples: [
+      {
+        segments: ruby("[病院|びょういん]へ[行|い]きます。"),
+        translation: "Voy al hospital.",
+      },
+      {
+        segments: ruby("[入院|にゅういん]している[友達|ともだち]に[会|あ]います。"),
+        translation: "Visito a un amigo que está hospitalizado.",
+      },
+      {
+        segments: ruby("[医院|いいん]の[前|まえ]で[待|ま]ちます。"),
+        translation: "Espero frente a la clínica.",
+      },
+      {
+        segments: ruby("[大学院|だいがくいん]で[研究|けんきゅう]しています。"),
+        translation: "Investigo en posgrado.",
+      },
+      {
+        segments: ruby("[院内|いんない]ではしずかにしてください。"),
+        translation: "Por favor, guarde silencio dentro del hospital.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "飲",
+    level: 3,
+    strokeCount: 12,
+    on: ["イン"],
+    kun: ["の.む"],
+    meaning: "Beber",
+    examples: [
+      {
+        segments: ruby("[水|みず]を[飲|の]みます。"),
+        translation: "Bebo agua.",
+      },
+      {
+        segments: ruby("[薬|くすり]を[飲|の]んでください。"),
+        translation: "Por favor, tome la medicina.",
+      },
+      {
+        segments: ruby("[朝|あさ]はあたたかいお[茶|ちゃ]を[飲|の]みます。"),
+        translation: "Por la mañana tomo té caliente.",
+      },
+      {
+        segments: ruby("[飲|の]み[物|もの]は[何|なに]がいいですか。"),
+        translation: "¿Qué bebida prefiere?",
+      },
+      {
+        segments: ruby("[飲食店|いんしょくてん]で[昼|ひる]ごはんを[食|た]べます。"),
+        translation: "Almuerzo en un local de comida.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "運",
+    level: 3,
+    strokeCount: 12,
+    on: ["ウン"],
+    kun: ["はこ.ぶ"],
+    meaning: "Transportar / suerte",
+    examples: [
+      {
+        segments: ruby("[荷物|にもつ]を[運|はこ]びます。"),
+        translation: "Transporto el equipaje.",
+      },
+      {
+        segments: ruby("[重|おも]い[箱|はこ]を[二人|ふたり]で[運|はこ]びます。"),
+        translation: "Llevamos una caja pesada entre dos personas.",
+      },
+      {
+        segments: ruby("[運動|うんどう]をすると[元気|げんき]になります。"),
+        translation: "Hacer ejercicio da energía.",
+      },
+      {
+        segments: ruby("[運|うん]がいい[日|ひ]でした。"),
+        translation: "Fue un día de buena suerte.",
+      },
+      {
+        segments: ruby("[安全|あんぜん]に[運転|うんてん]してください。"),
+        translation: "Por favor, conduzca con seguridad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "泳",
+    level: 3,
+    strokeCount: 8,
+    on: ["エイ"],
+    kun: ["およ.ぐ"],
+    meaning: "Nadar",
+    examples: [
+      {
+        segments: ruby("[海|うみ]で[泳|およ]ぎます。"),
+        translation: "Nado en el mar.",
+      },
+      {
+        segments: ruby("[魚|さかな]が[水|みず]の[中|なか]を[泳|およ]いでいます。"),
+        translation: "El pez está nadando en el agua.",
+      },
+      {
+        segments: ruby("[夏休|なつやす]みにプールで[泳|およ]ぎました。"),
+        translation: "Nadé en la piscina durante las vacaciones de verano.",
+      },
+      {
+        segments: ruby("[長|なが]い[時間|じかん][泳|およ]ぐのはたいへんです。"),
+        translation: "Nadar durante mucho tiempo es cansador.",
+      },
+      {
+        segments: ruby("[水泳|すいえい]の[授業|じゅぎょう]があります。"),
+        translation: "Hay clase de natación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "駅",
+    level: 3,
+    strokeCount: 14,
+    on: ["エキ"],
+    kun: [],
+    meaning: "Estación",
+    examples: [
+      {
+        segments: ruby("[駅|えき]で[友達|ともだち]を[待|ま]ちます。"),
+        translation: "Espero a mi amigo en la estación.",
+      },
+      {
+        segments: ruby("[駅前|えきまえ]はにぎやかです。"),
+        translation: "Frente a la estación hay mucho ambiente.",
+      },
+      {
+        segments: ruby("[次|つぎ]の[駅|えき]で[降|お]ります。"),
+        translation: "Bajo en la siguiente estación.",
+      },
+      {
+        segments: ruby("[駅員|えきいん]さんに[道|みち]を[聞|き]きました。"),
+        translation: "Le pregunté el camino a un empleado de la estación.",
+      },
+      {
+        segments: ruby("[家|いえ]から[駅|えき]まで[歩|ある]きます。"),
+        translation: "Camino desde casa hasta la estación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "央",
+    level: 3,
+    strokeCount: 5,
+    on: ["オウ"],
+    kun: [],
+    meaning: "Centro",
+    examples: [
+      {
+        segments: ruby("[中央|ちゅうおう]に[立|た]ってください。"),
+        translation: "Por favor, póngase en el centro.",
+      },
+      {
+        segments: ruby("[中央|ちゅうおう][線|せん]の[近|ちか]くです。"),
+        translation: "Está cerca de la línea central.",
+      },
+      {
+        segments: ruby("[会場|かいじょう]の[中央|ちゅうおう]に[花|はな]があります。"),
+        translation: "Hay flores en el centro del lugar.",
+      },
+      {
+        segments: ruby("[中央|ちゅうおう]の[席|せき]があいています。"),
+        translation: "El asiento del centro está libre.",
+      },
+      {
+        segments: ruby("[中央口|ちゅうおうぐち]で[会|あ]いましょう。"),
+        translation: "Encontrémonos en la entrada central.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "横",
+    level: 3,
+    strokeCount: 15,
+    on: ["オウ"],
+    kun: ["よこ"],
+    meaning: "Lado / horizontal",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]の[横|よこ]に[立|た]ちます。"),
+        translation: "Me pongo al lado del profesor.",
+      },
+      {
+        segments: ruby("[横|よこ]に[線|せん]を[引|ひ]いてください。"),
+        translation: "Por favor, trace una línea horizontal.",
+      },
+      {
+        segments: ruby("[本棚|ほんだな]の[横|よこ]にいすがあります。"),
+        translation: "Hay una silla al lado del estante.",
+      },
+      {
+        segments: ruby("[横断歩道|おうだんほどう]を[渡|わた]ります。"),
+        translation: "Cruzo el paso peatonal.",
+      },
+      {
+        segments: ruby("[道|みち]の[横|よこ]に[花|はな]が[咲|さ]いています。"),
+        translation: "Hay flores floreciendo al lado del camino.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "屋",
+    level: 3,
+    strokeCount: 9,
+    on: ["オク"],
+    kun: ["や"],
+    meaning: "Tienda / techo / persona de oficio",
+    examples: [
+      {
+        segments: ruby("[本屋|ほんや]で[辞書|じしょ]を[買|か]いました。"),
+        translation: "Compré un diccionario en la librería.",
+      },
+      {
+        segments: ruby("[花屋|はなや]の[前|まえ]で[止|と]まります。"),
+        translation: "Me detengo frente a la florería.",
+      },
+      {
+        segments: ruby("[八百屋|やおや]で[野菜|やさい]を[買|か]います。"),
+        translation: "Compro verduras en la verdulería.",
+      },
+      {
+        segments: ruby("[屋上|おくじょう]から[町|まち]が[見|み]えます。"),
+        translation: "Desde la azotea se ve la ciudad.",
+      },
+      {
+        segments: ruby("[魚屋|さかなや]は[駅|えき]の[近|ちか]くです。"),
+        translation: "La pescadería está cerca de la estación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "温",
+    level: 3,
+    strokeCount: 12,
+    on: ["オン"],
+    kun: ["あたた.かい", "あたた.まる"],
+    meaning: "Tibio / cálido",
+    examples: [
+      {
+        segments: ruby("[温|あたた]かいスープを[飲|の]みます。"),
+        translation: "Tomo una sopa caliente.",
+      },
+      {
+        segments: ruby("[温度|おんど]を[見|み]てください。"),
+        translation: "Por favor, revise la temperatura.",
+      },
+      {
+        segments: ruby("[手|て]を[温|あたた]めます。"),
+        translation: "Me caliento las manos.",
+      },
+      {
+        segments: ruby("[温泉|おんせん]に[入|はい]るのが[好|す]きです。"),
+        translation: "Me gusta entrar a las aguas termales.",
+      },
+      {
+        segments: ruby("[部屋|へや]が[温|あたた]かくなりました。"),
+        translation: "La habitación se puso cálida.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "化",
+    level: 3,
+    strokeCount: 4,
+    on: ["カ", "ケ"],
+    kun: ["ば.ける"],
+    meaning: "Cambio / transformar",
+    examples: [
+      {
+        segments: ruby("[文化|ぶんか]を[学|まな]びます。"),
+        translation: "Aprendo sobre cultura.",
+      },
+      {
+        segments: ruby("[気温|きおん]が[変化|へんか]しました。"),
+        translation: "La temperatura cambió.",
+      },
+      {
+        segments: ruby("[化学|かがく]の[実験|じっけん]をします。"),
+        translation: "Hacemos un experimento de química.",
+      },
+      {
+        segments: ruby("[町|まち]が[大|おお]きく[変化|へんか]しました。"),
+        translation: "La ciudad cambió mucho.",
+      },
+      {
+        segments: ruby("[葉|は]の[色|いろ]が[変化|へんか]しています。"),
+        translation: "El color de las hojas está cambiando.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "荷",
+    level: 3,
+    strokeCount: 10,
+    on: ["カ"],
+    kun: ["に"],
+    meaning: "Carga / equipaje",
+    examples: [
+      {
+        segments: ruby("[荷物|にもつ]を[持|も]ちます。"),
+        translation: "Llevo el equipaje.",
+      },
+      {
+        segments: ruby("[重|おも]い[荷物|にもつ]を[運|はこ]びます。"),
+        translation: "Transporto un equipaje pesado.",
+      },
+      {
+        segments: ruby("[荷台|にだい]に[箱|はこ]をのせます。"),
+        translation: "Pongo la caja en la plataforma de carga.",
+      },
+      {
+        segments: ruby("[手荷物|てにもつ]はこちらです。"),
+        translation: "Este es el equipaje de mano.",
+      },
+      {
+        segments: ruby("[荷物|にもつ]は[部屋|へや]の[中|なか]にあります。"),
+        translation: "El equipaje está dentro de la habitación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "界",
+    level: 3,
+    strokeCount: 9,
+    on: ["カイ"],
+    kun: [],
+    meaning: "Mundo / ámbito",
+    examples: [
+      {
+        segments: ruby("[世界|せかい]にはいろいろな[国|くに]があります。"),
+        translation: "En el mundo hay muchos países.",
+      },
+      {
+        segments: ruby("[世|せ][界|かい]の[地図|ちず]を[見|み]ます。"),
+        translation: "Miro un mapa del mundo.",
+      },
+      {
+        segments: ruby("[自然界|しぜんかい]のことを[学|まな]びます。"),
+        translation: "Aprendo sobre el mundo natural.",
+      },
+      {
+        segments: ruby("[世界中|せかいじゅう]の[人|ひと]と[話|はな]したいです。"),
+        translation: "Quiero hablar con personas de todo el mundo.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[世|せ][界|かい]を[知|し]るのは[楽|たの]しいです。"),
+        translation: "Es divertido conocer un mundo nuevo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "開",
+    level: 3,
+    strokeCount: 12,
+    on: ["カイ"],
+    kun: ["ひら.く", "あ.ける"],
+    meaning: "Abrir",
+    examples: [
+      {
+        segments: ruby("[窓|まど]を[開|あ]けてください。"),
+        translation: "Por favor, abre la ventana.",
+      },
+      {
+        segments: ruby("[店|みせ]は九[時|じ]に[開|ひら]きます。"),
+        translation: "La tienda abre a las nueve.",
+      },
+      {
+        segments: ruby("[本|ほん]を[開|ひら]いて[読|よ]みます。"),
+        translation: "Abro el libro y leo.",
+      },
+      {
+        segments: ruby("[会議|かいぎ]を[開|ひら]きます。"),
+        translation: "Realizo una reunión.",
+      },
+      {
+        segments: ruby("[ドア|どあ]が[開|あ]いています。"),
+        translation: "La puerta está abierta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "階",
+    level: 3,
+    strokeCount: 12,
+    on: ["カイ"],
+    kun: [],
+    meaning: "Piso / escalón",
+    examples: [
+      {
+        segments: ruby("三[階|かい]に[教室|きょうしつ]があります。"),
+        translation: "Hay una sala en el tercer piso.",
+      },
+      {
+        segments: ruby("[階段|かいだん]を[上|のぼ]ります。"),
+        translation: "Subo las escaleras.",
+      },
+      {
+        segments: ruby("二[階|かい]で[勉強|べんきょう]します。"),
+        translation: "Estudio en el segundo piso.",
+      },
+      {
+        segments: ruby("[一|いっ][階|かい]に[受付|うけつけ]があります。"),
+        translation: "La recepción está en el primer piso.",
+      },
+      {
+        segments: ruby("[階段|かいだん]の[下|した]で[待|ま]ちます。"),
+        translation: "Espero abajo de las escaleras.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "寒",
+    level: 3,
+    strokeCount: 12,
+    on: ["カン"],
+    kun: ["さむ.い"],
+    meaning: "Frío",
+    examples: [
+      {
+        segments: ruby("[今日|きょう]はとても[寒|さむ]いです。"),
+        translation: "Hoy hace mucho frío.",
+      },
+      {
+        segments: ruby("[寒|さむ]いのでコートを[着|き]ます。"),
+        translation: "Como hace frío, me pongo abrigo.",
+      },
+      {
+        segments: ruby("[朝|あさ]は[寒|さむ]かったです。"),
+        translation: "En la mañana hacía frío.",
+      },
+      {
+        segments: ruby("[冬|ふゆ]の[海|うみ]は[寒|さむ]いです。"),
+        translation: "El mar en invierno es frío.",
+      },
+      {
+        segments: ruby("[寒気|さむけ]がします。"),
+        translation: "Siento escalofríos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "感",
+    level: 3,
+    strokeCount: 13,
+    on: ["カン"],
+    kun: [],
+    meaning: "Sentir / impresión",
+    examples: [
+      {
+        segments: ruby("[感|かん]じたことを[書|か]いてください。"),
+        translation: "Por favor, escribe lo que sentiste.",
+      },
+      {
+        segments: ruby("[安心感|あんしんかん]があります。"),
+        translation: "Hay una sensación de tranquilidad.",
+      },
+      {
+        segments: ruby("[感謝|かんしゃ]しています。"),
+        translation: "Estoy agradecido.",
+      },
+      {
+        segments: ruby("[同|おな]じように[感|かん]じます。"),
+        translation: "Siento lo mismo.",
+      },
+      {
+        segments: ruby("[季節|きせつ]の[変化|へんか]を[感|かん]じます。"),
+        translation: "Siento el cambio de estación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "漢",
+    level: 3,
+    strokeCount: 13,
+    on: ["カン"],
+    kun: [],
+    meaning: "Chino / kanji",
+    examples: [
+      {
+        segments: ruby("[漢字|かんじ]を[書|か]く[練習|れんしゅう]をします。"),
+        translation: "Practico escribir kanji.",
+      },
+      {
+        segments: ruby("[漢字|かんじ]の[意味|いみ]を[調|しら]べます。"),
+        translation: "Busco el significado del kanji.",
+      },
+      {
+        segments: ruby("[漢字|かんじ]は[読|よ]むのがむずかしいです。"),
+        translation: "Leer kanji es difícil.",
+      },
+      {
+        segments: ruby("[漢文|かんぶん]を[学|まな]びます。"),
+        translation: "Estudio textos clásicos chinos.",
+      },
+      {
+        segments: ruby("[漢字帳|かんじちょう]を[使|つか]います。"),
+        translation: "Uso un cuaderno de kanji.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "館",
+    level: 3,
+    strokeCount: 16,
+    on: ["カン"],
+    kun: ["やかた"],
+    meaning: "Edificio / salón / museo",
+    examples: [
+      {
+        segments: ruby("[図書館|としょかん]で[本|ほん]を[借|か]ります。"),
+        translation: "Pido libros prestados en la biblioteca.",
+      },
+      {
+        segments: ruby("[体育館|たいいくかん]で[練習|れんしゅう]します。"),
+        translation: "Practico en el gimnasio.",
+      },
+      {
+        segments: ruby("[映画館|えいがかん]へ[行|い]きます。"),
+        translation: "Voy al cine.",
+      },
+      {
+        segments: ruby("[図書館|としょかん]はしずかです。"),
+        translation: "La biblioteca es silenciosa.",
+      },
+      {
+        segments: ruby("[美術館|びじゅつかん]で[絵|え]を[見|み]ました。"),
+        translation: "Vi pinturas en el museo de arte.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "岸",
+    level: 3,
+    strokeCount: 8,
+    on: ["ガン"],
+    kun: ["きし"],
+    meaning: "Orilla / ribera",
+    examples: [
+      {
+        segments: ruby("[川岸|かわぎし]を[歩|ある]きます。"),
+        translation: "Camino por la orilla del río.",
+      },
+      {
+        segments: ruby("[岸|きし]に[船|ふね]があります。"),
+        translation: "Hay un barco en la orilla.",
+      },
+      {
+        segments: ruby("[向|む]こうの[岸|きし]が[見|み]えます。"),
+        translation: "Se ve la orilla de enfrente.",
+      },
+      {
+        segments: ruby("[海岸|かいがん]で[写真|しゃしん]を[撮|と]ります。"),
+        translation: "Tomo fotos en la costa.",
+      },
+      {
+        segments: ruby("[岸|きし]の[近|ちか]くで[休|やす]みます。"),
+        translation: "Descanso cerca de la orilla.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "起",
+    level: 3,
+    strokeCount: 10,
+    on: ["キ"],
+    kun: ["お.きる", "お.こす"],
+    meaning: "Levantarse / ocurrir",
+    examples: [
+      {
+        segments: ruby("六[時|じ]に[起|お]きます。"),
+        translation: "Me levanto a las seis.",
+      },
+      {
+        segments: ruby("[朝|あさ]は[早|はや]く[起|お]きます。"),
+        translation: "En la mañana me levanto temprano.",
+      },
+      {
+        segments: ruby("[事故|じこ]が[起|お]きました。"),
+        translation: "Ocurrió un accidente.",
+      },
+      {
+        segments: ruby("[母|はは]が[弟|おとうと]を[起|お]こします。"),
+        translation: "Mi madre despierta a mi hermano menor.",
+      },
+      {
+        segments: ruby("[何|なに]が[起|お]きたのですか。"),
+        translation: "¿Qué ocurrió?",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "期",
+    level: 3,
+    strokeCount: 12,
+    on: ["キ", "ゴ"],
+    kun: [],
+    meaning: "Periodo / plazo",
+    examples: [
+      {
+        segments: ruby("[試験|しけん]の[期|き][間|かん]です。"),
+        translation: "Es el periodo de exámenes.",
+      },
+      {
+        segments: ruby("[期末|きまつ]テストがあります。"),
+        translation: "Hay un examen de fin de periodo.",
+      },
+      {
+        segments: ruby("[期|き][待|たい]しています。"),
+        translation: "Tengo expectativas.",
+      },
+      {
+        segments: ruby("[今期|こんき]の[目標|もくひょう]を[決|き]めます。"),
+        translation: "Defino la meta de este periodo.",
+      },
+      {
+        segments: ruby("[開会|かいかい]の[時|じ][間|かん]が[近|ちか]いです。"),
+        translation: "La hora de inicio del evento está cerca.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "客",
+    level: 3,
+    strokeCount: 9,
+    on: ["キャク", "カク"],
+    kun: [],
+    meaning: "Cliente / visitante",
+    examples: [
+      {
+        segments: ruby("[客|きゃく]がたくさん[来|き]ました。"),
+        translation: "Vinieron muchos clientes.",
+      },
+      {
+        segments: ruby("[お客|きゃく]さんにお[茶|ちゃ]を[出|だ]します。"),
+        translation: "Sirvo té a los invitados.",
+      },
+      {
+        segments: ruby("[旅行客|りょこうきゃく]が[駅|えき]にいます。"),
+        translation: "Hay turistas en la estación.",
+      },
+      {
+        segments: ruby("[客室|きゃくしつ]は二[階|かい]です。"),
+        translation: "La habitación de huéspedes está en el segundo piso.",
+      },
+      {
+        segments: ruby("[客|きゃく]の[名前|なまえ]を[書|か]きます。"),
+        translation: "Escribo el nombre del cliente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "究",
+    level: 3,
+    strokeCount: 7,
+    on: ["キュウ"],
+    kun: [],
+    meaning: "Investigar / profundizar",
+    examples: [
+      {
+        segments: ruby("[研|けん][究|きゅう]が[好|す]きです。"),
+        translation: "Me gusta la investigación.",
+      },
+      {
+        segments: ruby("[宇宙|うちゅう]を[研|けん][究|きゅう]します。"),
+        translation: "Investigo el espacio.",
+      },
+      {
+        segments: ruby("[原|げん][因|いん]を[究|きゅう]めます。"),
+        translation: "Investigo la causa.",
+      },
+      {
+        segments: ruby("[研|けん][究|きゅう][室|しつ]で[勉強|べんきょう]します。"),
+        translation: "Estudio en el laboratorio de investigación.",
+      },
+      {
+        segments: ruby("[詳|くわ]しく[研|けん][究|きゅう]したいです。"),
+        translation: "Quiero investigar en detalle.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "急",
+    level: 3,
+    strokeCount: 9,
+    on: ["キュウ"],
+    kun: ["いそ.ぐ"],
+    meaning: "Rápido / urgente / apresurarse",
+    examples: [
+      {
+        segments: ruby("[急|いそ]いで[駅|えき]へ[行|い]きます。"),
+        translation: "Voy rápido a la estación.",
+      },
+      {
+        segments: ruby("[急|きゅう]に[雨|あめ]が[降|ふ]りました。"),
+        translation: "De repente empezó a llover.",
+      },
+      {
+        segments: ruby("[急行|きゅうこう]に[乗|の]ります。"),
+        translation: "Subo al tren expreso.",
+      },
+      {
+        segments: ruby("[急|きゅう]がないのでゆっくり[歩|ある]きます。"),
+        translation: "Como no tengo prisa, camino despacio.",
+      },
+      {
+        segments: ruby("[急|いそ]がなくてもだいじょうぶです。"),
+        translation: "No hace falta apresurarse.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "級",
+    level: 3,
+    strokeCount: 9,
+    on: ["キュウ"],
+    kun: [],
+    meaning: "Nivel / grado / clase",
+    examples: [
+      {
+        segments: ruby("三[級|きゅう]の[漢字|かんじ]を[勉強|べんきょう]します。"),
+        translation: "Estudio kanji de nivel 3.",
+      },
+      {
+        segments: ruby("[上級|じょうきゅう]クラスに[入|はい]ります。"),
+        translation: "Entro a la clase avanzada.",
+      },
+      {
+        segments: ruby("[級|きゅう]が[上|あ]がりました。"),
+        translation: "Subí de nivel.",
+      },
+      {
+        segments: ruby("[同|おな]じ[級|きゅう]の[友達|ともだち]です。"),
+        translation: "Es un amigo del mismo nivel.",
+      },
+      {
+        segments: ruby("[初級|しょきゅう]の[文法|ぶんぽう]を[復習|ふくしゅう]します。"),
+        translation: "Repaso la gramática básica.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "宮",
+    level: 3,
+    strokeCount: 10,
+    on: ["キュウ", "グウ", "ク", "クウ"],
+    kun: ["みや"],
+    meaning: "Santuario / palacio",
+    examples: [
+      {
+        segments: ruby("[神|じん][宮|ぐう]へ[行|い]きます。"),
+        translation: "Voy al santuario.",
+      },
+      {
+        segments: ruby("[宮|みや]の[前|まえ]で[写真|しゃしん]を[撮|と]ります。"),
+        translation: "Tomo fotos frente al santuario.",
+      },
+      {
+        segments: ruby("[宮殿|きゅうでん]はとても[大|おお]きいです。"),
+        translation: "El palacio es muy grande.",
+      },
+      {
+        segments: ruby("[有名|ゆうめい]な[神|じん][宮|ぐう]です。"),
+        translation: "Es un santuario famoso.",
+      },
+      {
+        segments: ruby("[宮|みや]の[中|なか]はしずかでした。"),
+        translation: "Dentro del santuario estaba silencioso.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "球",
+    level: 3,
+    strokeCount: 11,
+    on: ["キュウ"],
+    kun: ["たま"],
+    meaning: "Pelota / esfera",
+    examples: [
+      {
+        segments: ruby("[球|たま]を[投|な]げます。"),
+        translation: "Lanzo la pelota.",
+      },
+      {
+        segments: ruby("[野球|やきゅう]が[好|す]きです。"),
+        translation: "Me gusta el béisbol.",
+      },
+      {
+        segments: ruby("[地球|ちきゅう]はまるいです。"),
+        translation: "La Tierra es redonda.",
+      },
+      {
+        segments: ruby("[白|しろ]い[球|たま]がころがっています。"),
+        translation: "Una pelota blanca está rodando.",
+      },
+      {
+        segments: ruby("[球場|きゅうじょう]で[試合|しあい]を[見|み]ます。"),
+        translation: "Veo un partido en el estadio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "去",
+    level: 3,
+    strokeCount: 5,
+    on: ["キョ", "コ"],
+    kun: ["さ.る"],
+    meaning: "Irse / pasado",
+    examples: [
+      {
+        segments: ruby("[去年|きょねん]は[日本|にほん]へ[行|い]きました。"),
+        translation: "El año pasado fui a Japón.",
+      },
+      {
+        segments: ruby("[過|す]ぎ[去|さ]ったことです。"),
+        translation: "Es algo que ya pasó.",
+      },
+      {
+        segments: ruby("[客|きゃく]が[去|さ]りました。"),
+        translation: "El visitante se fue.",
+      },
+      {
+        segments: ruby("[去|さ]る[者|もの]は[追|お]いません。"),
+        translation: "No persigo a quien se va.",
+      },
+      {
+        segments: ruby("[去|きょ][年|ねん]より[暑|あつ]いです。"),
+        translation: "Hace más calor que el año pasado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "橋",
+    level: 3,
+    strokeCount: 16,
+    on: ["キョウ"],
+    kun: ["はし"],
+    meaning: "Puente",
+    examples: [
+      {
+        segments: ruby("[橋|はし]を[渡|わた]ります。"),
+        translation: "Cruzo el puente.",
+      },
+      {
+        segments: ruby("[大|おお]きい[橋|はし]があります。"),
+        translation: "Hay un puente grande.",
+      },
+      {
+        segments: ruby("[川|かわ]に[橋|はし]がかかっています。"),
+        translation: "Hay un puente sobre el río.",
+      },
+      {
+        segments: ruby("[橋|はし]の[上|うえ]から[景色|けしき]を[見|み]ます。"),
+        translation: "Miro el paisaje desde el puente.",
+      },
+      {
+        segments: ruby("[赤|あか]い[橋|はし]は[有名|ゆうめい]です。"),
+        translation: "El puente rojo es famoso.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "業",
+    level: 3,
+    strokeCount: 13,
+    on: ["ギョウ", "ゴウ"],
+    kun: ["わざ"],
+    meaning: "Trabajo / industria / tarea",
+    examples: [
+      {
+        segments: ruby("[授業|じゅぎょう]が[始|はじ]まります。"),
+        translation: "La clase va a empezar.",
+      },
+      {
+        segments: ruby("[宿題|しゅくだい]は[授業|じゅぎょう]のあとです。"),
+        translation: "La tarea es después de clase.",
+      },
+      {
+        segments: ruby("[作業|さぎょう]を[続|つづ]けます。"),
+        translation: "Continúo con el trabajo.",
+      },
+      {
+        segments: ruby("[工業|こうぎょう]について[学|まな]びます。"),
+        translation: "Aprendo sobre industria.",
+      },
+      {
+        segments: ruby("[授業|じゅぎょう]で[漢字|かんじ]を[習|なら]いました。"),
+        translation: "Aprendí kanji en clase.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "曲",
+    level: 3,
+    strokeCount: 6,
+    on: ["キョク"],
+    kun: ["ま.がる", "ま.げる"],
+    meaning: "Melodía / doblar / torcer",
+    examples: [
+      {
+        segments: ruby("この[曲|きょく]が[好|す]きです。"),
+        translation: "Me gusta esta canción.",
+      },
+      {
+        segments: ruby("[右|みぎ]に[曲|ま]がってください。"),
+        translation: "Por favor, dobla a la derecha.",
+      },
+      {
+        segments: ruby("[道|みち]が[曲|ま]がっています。"),
+        translation: "El camino está doblado.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[曲|きょく]を[聞|き]きます。"),
+        translation: "Escucho una canción nueva.",
+      },
+      {
+        segments: ruby("[紙|かみ]を[曲|ま]げます。"),
+        translation: "Doblo el papel.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "局",
+    level: 3,
+    strokeCount: 7,
+    on: ["キョク"],
+    kun: [],
+    meaning: "Oficina / estación / canal",
+    examples: [
+      {
+        segments: ruby("[郵便局|ゆうびんきょく]へ[行|い]きます。"),
+        translation: "Voy a la oficina de correos.",
+      },
+      {
+        segments: ruby("[放送局|ほうそうきょく]で[働|はたら]いています。"),
+        translation: "Trabajo en una emisora.",
+      },
+      {
+        segments: ruby("[結局|けっきょく][行|い]きませんでした。"),
+        translation: "Al final no fui.",
+      },
+      {
+        segments: ruby("[郵便局|ゆうびんきょく]は[駅|えき]の[近|ちか]くです。"),
+        translation: "La oficina de correos está cerca de la estación.",
+      },
+      {
+        segments: ruby("[テレビ局|てれびきょく]の[前|まえ]を[通|とお]ります。"),
+        translation: "Paso frente al canal de televisión.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "銀",
+    level: 3,
+    strokeCount: 14,
+    on: ["ギン"],
+    kun: ["しろがね"],
+    meaning: "Plata",
+    examples: [
+      { segments: ruby("[銀行|ぎんこう]へ[行|い]きます。"), translation: "Voy al banco." },
+      { segments: ruby("[銀色|ぎんいろ]の[自転車|じてんしゃ]です。"), translation: "Es una bicicleta de color plateado." },
+      { segments: ruby("[銀|ぎん]のゆびわを[見|み]ました。"), translation: "Vi un anillo de plata." },
+      { segments: ruby("[銀河|ぎんが]の[写真|しゃしん]を[見|み]ます。"), translation: "Miro una foto de la galaxia." },
+      { segments: ruby("この[銀|ぎん]のコップはきれいです。"), translation: "Esta copa de plata es bonita." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "区",
+    level: 3,
+    strokeCount: 4,
+    on: ["ク"],
+    kun: [],
+    meaning: "Distrito / zona",
+    examples: [
+      { segments: ruby("[北区|きたく]に[住|す]んでいます。"), translation: "Vivo en Kita-ku." },
+      { segments: ruby("この[区|く]はしずかです。"), translation: "Este distrito es tranquilo." },
+      { segments: ruby("[中央区|ちゅうおうく]へ[行|い]きます。"), translation: "Voy a Chuo-ku." },
+      { segments: ruby("[地図|ちず]で[区|く]を[見|み]ます。"), translation: "Veo el distrito en el mapa." },
+      { segments: ruby("この[区|く]には[公園|こうえん]がたくさんあります。"), translation: "En este distrito hay muchos parques." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "苦",
+    level: 3,
+    strokeCount: 8,
+    on: ["ク"],
+    kun: ["くる.しい", "にが.い"],
+    meaning: "Sufrir / amargo",
+    examples: [
+      { segments: ruby("この[薬|くすり]は[苦|にが]いです。"), translation: "Esta medicina es amarga." },
+      { segments: ruby("[苦|くる]しいときは[休|やす]んでください。"), translation: "Cuando te sientas mal, descansa." },
+      { segments: ruby("[苦手|にがて]な[科目|かもく]があります。"), translation: "Hay una materia que no se me da bien." },
+      { segments: ruby("[苦労|くろう]してこの[問題|もんだい]をときました。"), translation: "Resolví este problema con esfuerzo." },
+      { segments: ruby("[苦|にが]いコーヒーは[飲|の]みません。"), translation: "No tomo café amargo." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "具",
+    level: 3,
+    strokeCount: 8,
+    on: ["グ"],
+    kun: [],
+    meaning: "Utensilio / herramienta",
+    examples: [
+      { segments: ruby("[道具|どうぐ]を[使|つか]います。"), translation: "Uso herramientas." },
+      { segments: ruby("[文房具|ぶんぼうぐ]を[買|か]いました。"), translation: "Compré útiles de escritorio." },
+      { segments: ruby("[台所|だいどころ]の[道具|どうぐ]を[洗|あら]います。"), translation: "Lavo los utensilios de cocina." },
+      { segments: ruby("この[道具|どうぐ]は[便利|べんり]です。"), translation: "Esta herramienta es útil." },
+      { segments: ruby("[雨具|あまぐ]を[持|も]って[出|で]かけます。"), translation: "Salgo llevando equipo para la lluvia." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "君",
+    level: 3,
+    strokeCount: 7,
+    on: ["クン"],
+    kun: ["きみ"],
+    meaning: "Tú / señor",
+    examples: [
+      { segments: ruby("[君|きみ]の[名前|なまえ]を[教|おし]えてください。"), translation: "Por favor, dime tu nombre." },
+      { segments: ruby("[田中君|たなかくん]は[教室|きょうしつ]にいます。"), translation: "Tanaka-kun está en la sala." },
+      { segments: ruby("[君|きみ]はどう[思|おも]いますか。"), translation: "¿Qué piensas tú?" },
+      { segments: ruby("[君|きみ]の[本|ほん]を[机|つくえ]のうえにおきました。"), translation: "Puse tu libro sobre la mesa." },
+      { segments: ruby("[君|きみ]とまた[会|あ]いたいです。"), translation: "Quiero volver a verte." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "係",
+    level: 3,
+    strokeCount: 9,
+    on: ["ケイ"],
+    kun: ["かか.る", "かかり"],
+    meaning: "Encargado / relación",
+    examples: [
+      { segments: ruby("[係|かかり]の[人|ひと]に[聞|き]いてください。"), translation: "Por favor, pregunte al encargado." },
+      { segments: ruby("この[仕事|しごと]はわたしの[係|かかり]です。"), translation: "Este trabajo está a mi cargo." },
+      { segments: ruby("[受付係|うけつけがかり]はあちらです。"), translation: "El encargado de recepción está por allá." },
+      { segments: ruby("この[問題|もんだい]は[健康|けんこう]に[関係|かんけい]があります。"), translation: "Este problema tiene relación con la salud." },
+      { segments: ruby("[係|かかり]の[先生|せんせい]に[名前|なまえ]を[伝|つた]えます。"), translation: "Le digo mi nombre al profesor encargado." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "軽",
+    level: 3,
+    strokeCount: 12,
+    on: ["ケイ"],
+    kun: ["かる.い"],
+    meaning: "Ligero",
+    examples: [
+      { segments: ruby("このかばんは[軽|かる]いです。"), translation: "Esta mochila es ligera." },
+      { segments: ruby("[軽|かる]い[運動|うんどう]をします。"), translation: "Hago ejercicio ligero." },
+      { segments: ruby("[軽|かる]くドアをノックしてください。"), translation: "Por favor, golpee suavemente la puerta." },
+      { segments: ruby("この[箱|はこ]は[見|み]た[目|め]より[軽|かる]いです。"), translation: "Esta caja es más ligera de lo que parece." },
+      { segments: ruby("[軽食|けいしょく]を[食|た]べてから[出|で]かけます。"), translation: "Como algo ligero antes de salir." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "血",
+    level: 3,
+    strokeCount: 6,
+    on: ["ケツ"],
+    kun: ["ち"],
+    meaning: "Sangre",
+    examples: [
+      { segments: ruby("[血|ち]が[出|で]ました。"), translation: "Salió sangre." },
+      { segments: ruby("[血液|けつえき]の[検査|けんさ]をします。"), translation: "Me haré un examen de sangre." },
+      { segments: ruby("[血|ち]の[色|いろ]は[赤|あか]いです。"), translation: "El color de la sangre es rojo." },
+      { segments: ruby("[血|ち]を[止|と]めてください。"), translation: "Por favor, detén la sangre." },
+      { segments: ruby("[手|て]に[血|ち]がついています。"), translation: "Tengo sangre en la mano." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "決",
+    level: 3,
+    strokeCount: 7,
+    on: ["ケツ"],
+    kun: ["き.める", "き.まる"],
+    meaning: "Decidir",
+    examples: [
+      { segments: ruby("あしたの[予定|よてい]を[決|き]めます。"), translation: "Decido el plan de mañana." },
+      { segments: ruby("[時間|じかん]が[決|き]まりました。"), translation: "La hora ya quedó decidida." },
+      { segments: ruby("みんなで[場所|ばしょ]を[決|き]めましょう。"), translation: "Decidamos juntos el lugar." },
+      { segments: ruby("[決心|けっしん]して[日本語|にほんご]を[勉強|べんきょう]します。"), translation: "He decidido estudiar japonés." },
+      { segments: ruby("まだ[答|こた]えを[決|き]めていません。"), translation: "Todavía no he decidido la respuesta." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "研",
+    level: 3,
+    strokeCount: 9,
+    on: ["ケン"],
+    kun: ["と.ぐ"],
+    meaning: "Investigar / pulir",
+    examples: [
+      { segments: ruby("[研究|けんきゅう]をしています。"), translation: "Estoy investigando." },
+      { segments: ruby("[研究室|けんきゅうしつ]で[先生|せんせい]に[会|あ]いました。"), translation: "Me encontré con el profesor en el laboratorio." },
+      { segments: ruby("ナイフを[研|と]ぎます。"), translation: "Afilo el cuchillo." },
+      { segments: ruby("[日本語教育|にほんごきょういく]を[研究|けんきゅう]したいです。"), translation: "Quiero investigar la enseñanza del japonés." },
+      { segments: ruby("[研究|けんきゅう]のために[本|ほん]をたくさん[読|よ]みます。"), translation: "Leo muchos libros para la investigación." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "県",
+    level: 3,
+    strokeCount: 9,
+    on: ["ケン"],
+    kun: [],
+    meaning: "Prefectura",
+    examples: [
+      { segments: ruby("[宮城県|みやぎけん]に[住|す]んでいます。"), translation: "Vivo en la prefectura de Miyagi." },
+      { segments: ruby("[県庁|けんちょう]は[町|まち]の[中心|ちゅうしん]にあります。"), translation: "La sede de la prefectura está en el centro de la ciudad." },
+      { segments: ruby("この[県|けん]は[海|うみ]が[近|ちか]いです。"), translation: "Esta prefectura está cerca del mar." },
+      { segments: ruby("[県|けん]の[地図|ちず]を[見|み]ます。"), translation: "Miro el mapa de la prefectura." },
+      { segments: ruby("[県外|けんがい]へ[旅行|りょこう]します。"), translation: "Viajo fuera de la prefectura." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "庫",
+    level: 3,
+    strokeCount: 10,
+    on: ["コ", "ク"],
+    kun: [],
+    meaning: "Almacén / depósito",
+    examples: [
+      { segments: ruby("[倉庫|そうこ]に[荷物|にもつ]があります。"), translation: "Hay equipaje en el almacén." },
+      { segments: ruby("[文庫本|ぶんこぼん]を[一冊|いっさつ][買|か]いました。"), translation: "Compré un libro de bolsillo." },
+      { segments: ruby("この[倉庫|そうこ]は[広|ひろ]いです。"), translation: "Este almacén es amplio." },
+      { segments: ruby("[道具|どうぐ]を[倉庫|そうこ]にしまいます。"), translation: "Guardo las herramientas en el almacén." },
+      { segments: ruby("[冷蔵庫|れいぞうこ]に[牛乳|ぎゅうにゅう]があります。"), translation: "Hay leche en el refrigerador." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "湖",
+    level: 3,
+    strokeCount: 12,
+    on: ["コ"],
+    kun: ["みずうみ"],
+    meaning: "Lago",
+    examples: [
+      { segments: ruby("[湖|みずうみ]がとてもきれいです。"), translation: "El lago es muy bonito." },
+      { segments: ruby("[湖|みずうみ]のそばを[歩|ある]きます。"), translation: "Camino junto al lago." },
+      { segments: ruby("[湖|みずうみ]に[鳥|とり]がいます。"), translation: "Hay aves en el lago." },
+      { segments: ruby("[大|おお]きな[湖|みずうみ]を[見|み]ました。"), translation: "Vi un lago grande." },
+      { segments: ruby("[湖水|こすい]はとてもつめたいです。"), translation: "El agua del lago está muy fría." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "向",
+    level: 3,
+    strokeCount: 6,
+    on: ["コウ"],
+    kun: ["む.く", "む.こう"],
+    meaning: "Dirigirse / enfrente",
+    examples: [
+      { segments: ruby("[前|まえ]を[向|む]いてください。"), translation: "Por favor, mira al frente." },
+      { segments: ruby("[向|む]こうに[山|やま]が[見|み]えます。"), translation: "Al frente se ve una montaña." },
+      { segments: ruby("[南|みなみ]を[向|む]いた[部屋|へや]です。"), translation: "Es una habitación orientada al sur." },
+      { segments: ruby("[駅|えき]へ[向|む]かいます。"), translation: "Me dirijo a la estación." },
+      { segments: ruby("[向上|こうじょう]のために[毎日|まいにち][練習|れんしゅう]します。"), translation: "Practico cada día para mejorar." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "幸",
+    level: 3,
+    strokeCount: 8,
+    on: ["コウ"],
+    kun: ["しあわ.せ", "さいわ.い"],
+    meaning: "Felicidad / afortunado",
+    examples: [
+      { segments: ruby("[幸|しあわ]せです。"), translation: "Soy feliz." },
+      { segments: ruby("[幸|しあわ]せな[日|ひ]でした。"), translation: "Fue un día feliz." },
+      { segments: ruby("みなさんの[幸|しあわ]せを[願|ねが]います。"), translation: "Deseo la felicidad de todos." },
+      { segments: ruby("[不幸|ふこう]な[話|はなし]は[聞|き]きたくありません。"), translation: "No quiero escuchar historias tristes." },
+      { segments: ruby("[幸運|こううん]を[祈|いの]ります。"), translation: "Deseo buena suerte." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "港",
+    level: 3,
+    strokeCount: 12,
+    on: ["コウ"],
+    kun: ["みなと"],
+    meaning: "Puerto",
+    examples: [
+      { segments: ruby("[港|みなと]へ[行|い]きます。"), translation: "Voy al puerto." },
+      { segments: ruby("[港|みなと]に[船|ふね]がたくさんあります。"), translation: "Hay muchos barcos en el puerto." },
+      { segments: ruby("[港町|みなとまち]はにぎやかです。"), translation: "La ciudad portuaria es animada." },
+      { segments: ruby("[港|みなと]の[近|ちか]くで[魚|さかな]を[食|た]べます。"), translation: "Como pescado cerca del puerto." },
+      { segments: ruby("[空港|くうこう]までバスで[行|い]きます。"), translation: "Voy al aeropuerto en bus." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "号",
+    level: 3,
+    strokeCount: 5,
+    on: ["ゴウ"],
+    kun: [],
+    meaning: "Número / edición",
+    examples: [
+      { segments: ruby("[番号|ばんごう]を[書|か]いてください。"), translation: "Por favor, escribe el número." },
+      { segments: ruby("[一号|いちごう]の[教室|きょうしつ]です。"), translation: "Es la sala número uno." },
+      { segments: ruby("[電話番号|でんわばんごう]を[教|おし]えてください。"), translation: "Por favor, dime tu número de teléfono." },
+      { segments: ruby("[三号車|さんごうしゃ]に[乗|の]ります。"), translation: "Subo al vagón número tres." },
+      { segments: ruby("[号外|ごうがい]を[読|よ]みました。"), translation: "Leí la edición especial." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "根",
+    level: 3,
+    strokeCount: 10,
+    on: ["コン"],
+    kun: ["ね"],
+    meaning: "Raíz",
+    examples: [
+      { segments: ruby("[木|き]の[根|ね]が[見|み]えます。"), translation: "Se ven las raíces del árbol." },
+      { segments: ruby("[花|はな]の[根|ね]に[水|みず]をやります。"), translation: "Riego la raíz de la flor." },
+      { segments: ruby("[根気|こんき]よく[勉強|べんきょう]します。"), translation: "Estudio con paciencia y constancia." },
+      { segments: ruby("[根本|こんぽん]から[考|かんが]えます。"), translation: "Lo pienso desde la base." },
+      { segments: ruby("[強|つよ]い[根|ね]をもつ[木|き]です。"), translation: "Es un árbol con raíces fuertes." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "祭",
+    level: 3,
+    strokeCount: 11,
+    on: ["サイ"],
+    kun: ["まつ.り"],
+    meaning: "Festival",
+    examples: [
+      { segments: ruby("[祭|まつ]りへ[行|い]きます。"), translation: "Voy al festival." },
+      { segments: ruby("[夏祭|なつまつ]りはにぎやかです。"), translation: "El festival de verano es animado." },
+      { segments: ruby("[祭|まつ]りでたこやきを[食|た]べます。"), translation: "Como takoyaki en el festival." },
+      { segments: ruby("[祭|まつ]りの[音|おと]が[聞|き]こえます。"), translation: "Se oye el sonido del festival." },
+      { segments: ruby("[文化祭|ぶんかさい]の[準備|じゅんび]をしています。"), translation: "Estamos preparando el festival cultural." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "皿",
+    level: 3,
+    strokeCount: 5,
+    on: ["ベイ"],
+    kun: ["さら"],
+    meaning: "Plato",
+    examples: [
+      { segments: ruby("[皿|さら]を[洗|あら]います。"), translation: "Lavo el plato." },
+      { segments: ruby("[白|しろ]い[皿|さら]を[使|つか]います。"), translation: "Uso un plato blanco." },
+      { segments: ruby("[皿|さら]にりんごをのせます。"), translation: "Pongo una manzana en el plato." },
+      { segments: ruby("この[皿|さら]は[丸|まる]いです。"), translation: "Este plato es redondo." },
+      { segments: ruby("[大|おお]きい[皿|さら]にサラダをいれます。"), translation: "Pongo ensalada en un plato grande." },
+    ],
+    hasSvg: false,
+  },
+  {
+  char: "仕",
+  level: 3,
+  strokeCount: 5,
+  on: ["シ"],
+  kun: ["つか.える"],
+  meaning: "Servir / trabajo",
+  examples: [
+    { segments: ruby("[仕事|しごと]をします。"), translation: "Trabajo." },
+    { segments: ruby("[父|ちち]は[銀行|ぎんこう]で[仕事|しごと]をしています。"), translation: "Mi padre trabaja en un banco." },
+    { segments: ruby("[仕方|しかた]がわかりません。"), translation: "No entiendo la manera de hacerlo." },
+    { segments: ruby("[家|いえ]の[仕事|しごと]をてつだいます。"), translation: "Ayudo con las tareas de la casa." },
+    { segments: ruby("[仕事中|しごとちゅう]なので、あとで[返事|へんじ]します。"), translation: "Estoy trabajando, así que responderé después." },
+  ],
+  hasSvg: false,
+  },
+  {
+    char: "死",
+    level: 3,
+    strokeCount: 6,
+    on: ["シ"],
+    kun: ["し.ぬ"],
+    meaning: "Morir / muerte",
+    examples: [
+      { segments: ruby("[魚|さかな]が[死|し]にました。"), translation: "El pez murió." },
+      { segments: ruby("[虫|むし]が[死|し]んでいます。"), translation: "El insecto está muerto." },
+      { segments: ruby("[必死|ひっし]で[勉強|べんきょう]しました。"), translation: "Estudié con todas mis fuerzas." },
+      { segments: ruby("[死者|ししゃ]をしのぶ[日|ひ]です。"), translation: "Es un día para recordar a los fallecidos." },
+      { segments: ruby("[死|し]について[考|かんが]える[本|ほん]を[読|よ]みました。"), translation: "Leí un libro que reflexiona sobre la muerte." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "使",
+    level: 3,
+    strokeCount: 8,
+    on: ["シ"],
+    kun: ["つか.う"],
+    meaning: "Usar",
+    examples: [
+      { segments: ruby("このペンを[使|つか]ってください。"), translation: "Use este lápiz, por favor." },
+      { segments: ruby("[日本語|にほんご]で[辞書|じしょ]を[使|つか]います。"), translation: "Uso un diccionario en japonés." },
+      { segments: ruby("[毎日|まいにち]パソコンを[使|つか]います。"), translation: "Uso la computadora todos los días." },
+      { segments: ruby("[使|つか]い[方|かた]を[教|おし]えてください。"), translation: "Enséñeme cómo usarlo." },
+      { segments: ruby("[大切|たいせつ]に[時間|じかん]を[使|つか]いたいです。"), translation: "Quiero usar bien mi tiempo." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "始",
+    level: 3,
+    strokeCount: 8,
+    on: ["シ"],
+    kun: ["はじ.まる", "はじ.める"],
+    meaning: "Empezar / comenzar",
+    examples: [
+      { segments: ruby("[授業|じゅぎょう]が[九時|くじ]に[始|はじ]まります。"), translation: "La clase empieza a las nueve." },
+      { segments: ruby("これから[会議|かいぎ]を[始|はじ]めます。"), translation: "Ahora comenzaremos la reunión." },
+      { segments: ruby("[雨|あめ]が[降|ふ]り[始|はじ]めました。"), translation: "Empezó a llover." },
+      { segments: ruby("[新|あたら]しい[生活|せいかつ]が[始|はじ]まります。"), translation: "Comienza una nueva vida." },
+      { segments: ruby("[勉強|べんきょう]を[始|はじ]める[前|まえ]に[本|ほん]を[開|ひら]きます。"), translation: "Antes de empezar a estudiar, abro el libro." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "指",
+    level: 3,
+    strokeCount: 9,
+    on: ["シ"],
+    kun: ["ゆび", "さ.す"],
+    meaning: "Dedo / señalar",
+    examples: [
+      { segments: ruby("[指|ゆび]が[痛|いた]いです。"), translation: "Me duele el dedo." },
+      { segments: ruby("[先生|せんせい]が[地図|ちず]を[指|さ]しています。"), translation: "El profesor está señalando el mapa." },
+      { segments: ruby("[人|ひと]を[指|ゆび]で[指|さ]さないでください。"), translation: "No señale a las personas con el dedo." },
+      { segments: ruby("[親指|おやゆび]を[上|あ]げます。"), translation: "Levanto el pulgar." },
+      { segments: ruby("[目標|もくひょう]を[指|めざ]してがんばります。"), translation: "Me esfuerzo para alcanzar la meta." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "歯",
+    level: 3,
+    strokeCount: 12,
+    on: ["シ"],
+    kun: ["は"],
+    meaning: "Diente",
+    examples: [
+      { segments: ruby("[毎日|まいにち][歯|は]をみがきます。"), translation: "Me cepillo los dientes todos los días." },
+      { segments: ruby("[歯|は]が[痛|いた]いです。"), translation: "Me duele un diente." },
+      { segments: ruby("[歯医者|はいしゃ]へ[行|い]きます。"), translation: "Voy al dentista." },
+      { segments: ruby("[食後|しょくご]に[歯|は]をみがきます。"), translation: "Me cepillo los dientes después de comer." },
+      { segments: ruby("[前歯|まえば]がすこし[白|しろ]いです。"), translation: "Los dientes delanteros son un poco blancos." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "詩",
+    level: 3,
+    strokeCount: 13,
+    on: ["シ"],
+    kun: [],
+    meaning: "Poesía / poema",
+    examples: [
+      { segments: ruby("[詩|し]を[読|よ]みます。"), translation: "Leo un poema." },
+      { segments: ruby("[短|みじか]い[詩|し]を[書|か]きました。"), translation: "Escribí un poema corto." },
+      { segments: ruby("[日本|にほん]の[詩|し]に[興味|きょうみ]があります。"), translation: "Me interesa la poesía japonesa." },
+      { segments: ruby("[詩人|しじん]の[名前|なまえ]を[覚|おぼ]えました。"), translation: "Memoricé el nombre del poeta." },
+      { segments: ruby("[美|うつく]しい[詩|し]を[聞|き]いて、[感動|かんどう]しました。"), translation: "Escuché un poema hermoso y me emocioné." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "次",
+    level: 3,
+    strokeCount: 6,
+    on: ["ジ", "シ"],
+    kun: ["つぎ", "つ.ぐ"],
+    meaning: "Siguiente",
+    examples: [
+      { segments: ruby("[次|つぎ]のページを[開|ひら]いてください。"), translation: "Abra la siguiente página, por favor." },
+      { segments: ruby("[次|つぎ]はわたしの[番|ばん]です。"), translation: "El siguiente turno es el mío." },
+      { segments: ruby("[次回|じかい]の[授業|じゅぎょう]は[月曜日|げつようび]です。"), translation: "La próxima clase es el lunes." },
+      { segments: ruby("[次|つぎ]の[駅|えき]で[降|お]ります。"), translation: "Me bajo en la siguiente estación." },
+      { segments: ruby("[次|つ]ぎの[人|ひと]をよんでください。"), translation: "Llame a la siguiente persona." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "事",
+    level: 3,
+    strokeCount: 8,
+    on: ["ジ", "ズ"],
+    kun: ["こと"],
+    meaning: "Cosa / asunto",
+    examples: [
+      { segments: ruby("[大事|だいじ]な[事|こと]を[話|はな]します。"), translation: "Hablaré de algo importante." },
+      { segments: ruby("[仕事|しごと]の[事|こと]で[電話|でんわ]しました。"), translation: "Llamé por un asunto de trabajo." },
+      { segments: ruby("[事前|じぜん]に[準備|じゅんび]してください。"), translation: "Prepárese con anticipación." },
+      { segments: ruby("[知|し]らない[事|こと]がたくさんあります。"), translation: "Hay muchas cosas que no sé." },
+      { segments: ruby("[大切|たいせつ]な[事|こと]を[忘|わす]れないでください。"), translation: "No olvide las cosas importantes." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "持",
+    level: 3,
+    strokeCount: 9,
+    on: ["ジ"],
+    kun: ["も.つ"],
+    meaning: "Tener / sostener / llevar",
+    examples: [
+      { segments: ruby("[重|おも]いかばんを[持|も]ちます。"), translation: "Llevo una mochila pesada." },
+      { segments: ruby("[辞書|じしょ]を[持|も]ってきてください。"), translation: "Traiga el diccionario, por favor." },
+      { segments: ruby("[時間|じかん]に[余裕|よゆう]を[持|も]ちましょう。"), translation: "Tengamos tiempo de sobra." },
+      { segments: ruby("[手|て]に[花|はな]を[持|も]っています。"), translation: "Tiene una flor en la mano." },
+      { segments: ruby("[気持|きも]ちを[言葉|ことば]で[伝|つた]えるのはむずかしいです。"), translation: "Es difícil expresar los sentimientos con palabras." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "式",
+    level: 3,
+    strokeCount: 6,
+    on: ["シキ"],
+    kun: [],
+    meaning: "Ceremonia / fórmula / estilo",
+    examples: [
+      { segments: ruby("[入学式|にゅうがくしき]に[出|で]ます。"), translation: "Asisto a la ceremonia de ingreso." },
+      { segments: ruby("[卒業式|そつぎょうしき]は[三月|さんがつ]です。"), translation: "La ceremonia de graduación es en marzo." },
+      { segments: ruby("[結婚式|けっこんしき]で[歌|うた]を[歌|うた]いました。"), translation: "Canté una canción en la boda." },
+      { segments: ruby("[数学|すうがく]の[式|しき]を[書|か]きます。"), translation: "Escribo una fórmula de matemáticas." },
+      { segments: ruby("[日本式|にほんしき]のあいさつを[学|まな]びます。"), translation: "Aprendo el estilo japonés de saludo." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "実",
+    level: 3,
+    strokeCount: 8,
+    on: ["ジツ"],
+    kun: ["み", "みの.る"],
+    meaning: "Fruto / realidad",
+    examples: [
+      { segments: ruby("[木|き]に[赤|あか]い[実|み]があります。"), translation: "Hay frutos rojos en el árbol." },
+      { segments: ruby("[果物|くだもの]の[実|み]を[食|た]べます。"), translation: "Como la pulpa de la fruta." },
+      { segments: ruby("[実際|じっさい]にやってみましょう。"), translation: "Intentemos hacerlo de verdad." },
+      { segments: ruby("[努力|どりょく]が[実|みの]りました。"), translation: "El esfuerzo dio fruto." },
+      { segments: ruby("[事実|じじつ]を[知|し]りたいです。"), translation: "Quiero conocer los hechos." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "写",
+    level: 3,
+    strokeCount: 5,
+    on: ["シャ"],
+    kun: ["うつ.す", "うつ.る"],
+    meaning: "Copiar / fotografiar",
+    examples: [
+      { segments: ruby("[写真|しゃしん]を[写|うつ]します。"), translation: "Tomo una fotografía." },
+      { segments: ruby("[黒板|こくばん]の[文|ぶん]をノートに[写|うつ]します。"), translation: "Copio la frase de la pizarra en el cuaderno." },
+      { segments: ruby("[写真|しゃしん]に[山|やま]が[写|うつ]っています。"), translation: "La montaña sale en la foto." },
+      { segments: ruby("[写生|しゃせい]の[時間|じかん]に[花|はな]をかきます。"), translation: "En la hora de dibujo al natural, dibujo flores." },
+      { segments: ruby("[答|こた]えをそのまま[写|うつ]さないでください。"), translation: "No copie la respuesta tal cual." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "者",
+    level: 3,
+    strokeCount: 8,
+    on: ["シャ"],
+    kun: ["もの"],
+    meaning: "Persona / alguien",
+    examples: [
+      { segments: ruby("[若者|わかもの]が[公園|こうえん]にいます。"), translation: "Hay jóvenes en el parque." },
+      { segments: ruby("[医者|いしゃ]になりたいです。"), translation: "Quiero ser médico." },
+      { segments: ruby("[学者|がくしゃ]の[話|はなし]を[聞|き]きました。"), translation: "Escuché la charla de un investigador." },
+      { segments: ruby("[読者|どくしゃ]の[意見|いけん]を[集|あつ]めます。"), translation: "Reúno las opiniones de los lectores." },
+      { segments: ruby("[知|し]らない[者|もの]にドアを[開|あ]けません。"), translation: "No abro la puerta a desconocidos." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "主",
+    level: 3,
+    strokeCount: 5,
+    on: ["シュ"],
+    kun: ["ぬし", "おも"],
+    meaning: "Principal / dueño / señor",
+    examples: [
+      { segments: ruby("[主|おも]な[理由|りゆう]を[説明|せつめい]します。"), translation: "Explico la razón principal." },
+      { segments: ruby("[主人|しゅじん]はまだ[帰|かえ]っていません。"), translation: "El dueño aún no ha vuelto." },
+      { segments: ruby("[主語|しゅご]を[書|か]いてください。"), translation: "Escriba el sujeto, por favor." },
+      { segments: ruby("[主|ぬし]のいない[家|いえ]はしずかです。"), translation: "La casa sin su dueño está silenciosa." },
+      { segments: ruby("[主役|しゅやく]はこの[人|ひと]です。"), translation: "El protagonista es esta persona." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "守",
+    level: 3,
+    strokeCount: 6,
+    on: ["シュ"],
+    kun: ["まも.る"],
+    meaning: "Proteger / cumplir",
+    examples: [
+      { segments: ruby("[約束|やくそく]を[守|まも]ってください。"), translation: "Cumpla la promesa, por favor." },
+      { segments: ruby("[子|こ]どもを[守|まも]ることは[大切|たいせつ]です。"), translation: "Es importante proteger a los niños." },
+      { segments: ruby("[時間|じかん]を[守|まも]ります。"), translation: "Cumplo el horario." },
+      { segments: ruby("[交通|こうつう]ルールを[守|まも]りましょう。"), translation: "Respetemos las normas de tránsito." },
+      { segments: ruby("[文化|ぶんか]を[守|まも]る[活動|かつどう]があります。"), translation: "Hay actividades para proteger la cultura." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "取",
+    level: 3,
+    strokeCount: 8,
+    on: ["シュ"],
+    kun: ["と.る"],
+    meaning: "Tomar / obtener",
+    examples: [
+      { segments: ruby("[本|ほん]を[取|と]ってください。"), translation: "Pásame el libro, por favor." },
+      { segments: ruby("[写真|しゃしん]を[取|と]ります。"), translation: "Tomo una foto." },
+      { segments: ruby("[点|てん]を[取|と]るためにがんばります。"), translation: "Me esfuerzo para sacar puntos." },
+      { segments: ruby("[休|やす]みを[取|と]りたいです。"), translation: "Quiero tomarme un descanso." },
+      { segments: ruby("[必要|ひつよう]なデータだけを[取|と]ります。"), translation: "Tomo solo los datos necesarios." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "酒",
+    level: 3,
+    strokeCount: 10,
+    on: ["シュ"],
+    kun: ["さけ", "さか"],
+    meaning: "Alcohol / sake",
+    examples: [
+      { segments: ruby("[父|ちち]は[酒|さけ]が[好|す]きです。"), translation: "A mi padre le gusta el alcohol." },
+      { segments: ruby("[日本酒|にほんしゅ]を[飲|の]んだことがあります。"), translation: "He probado sake japonés." },
+      { segments: ruby("[酒屋|さかや]の[前|まえ]を[通|とお]ります。"), translation: "Paso frente a la licorería." },
+      { segments: ruby("[強|つよ]い[酒|さけ]は[飲|の]みません。"), translation: "No bebo alcohol fuerte." },
+      { segments: ruby("[酒|さけ]の[名前|なまえ]をまだよく[知|し]りません。"), translation: "Todavía no conozco bien los nombres de las bebidas alcohólicas." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "受",
+    level: 3,
+    strokeCount: 8,
+    on: ["ジュ"],
+    kun: ["う.ける", "う.かる"],
+    meaning: "Recibir / rendir / aprobar",
+    examples: [
+      { segments: ruby("[授業|じゅぎょう]を[受|う]けます。"), translation: "Tomo una clase." },
+      { segments: ruby("[試験|しけん]を[受|う]ける[予定|よてい]です。"), translation: "Tengo planeado rendir el examen." },
+      { segments: ruby("[電話|でんわ]を[受|う]けました。"), translation: "Recibí una llamada." },
+      { segments: ruby("[説明|せつめい]を[受|う]けて、よくわかりました。"), translation: "Recibí la explicación y entendí bien." },
+      { segments: ruby("[大学|だいがく]に[受|う]かりたいです。"), translation: "Quiero aprobar el ingreso a la universidad." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "州",
+    level: 3,
+    strokeCount: 6,
+    on: ["シュウ"],
+    kun: ["す"],
+    meaning: "Provincia / estado / región",
+    examples: [
+      { segments: ruby("[九州|きゅうしゅう]へ[旅行|りょこう]に[行|い]きます。"), translation: "Voy de viaje a Kyushu." },
+      { segments: ruby("[本州|ほんしゅう]に[住|す]んでいます。"), translation: "Vivo en Honshu." },
+      { segments: ruby("[州|しゅう]の[名前|なまえ]を[地図|ちず]で[確認|かくにん]します。"), translation: "Reviso en el mapa el nombre de la región." },
+      { segments: ruby("[四国|しこく]と[九州|きゅうしゅう]を[船|ふね]で[結|むす]びます。"), translation: "Se conecta Shikoku y Kyushu por barco." },
+      { segments: ruby("[九州|きゅうしゅう]の[食|た]べ[物|もの]はおいしいです。"), translation: "La comida de Kyushu es rica." },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "拾",
+    level: 3,
+    strokeCount: 9,
+    on: ["シュウ", "ジュウ"],
+    kun: ["ひろ.う"],
+    meaning: "Recoger / juntar",
+    examples: [
+      {
+        segments: ruby("[道|みち]でごみを[拾|ひろ]います。"),
+        translation: "Recojo basura en el camino.",
+      },
+      {
+        segments: ruby("[海|うみ]で[貝殻|かいがら]を[拾|ひろ]いました。"),
+        translation: "Recogí una concha en el mar.",
+      },
+      {
+        segments: ruby("[教室|きょうしつ]でえんぴつを[拾|ひろ]います。"),
+        translation: "Recojo un lápiz en la sala de clases.",
+      },
+      {
+        segments: ruby("[落|お]ちていた[紙|かみ]を[拾|ひろ]ってください。"),
+        translation: "Por favor, recoge el papel que se cayó.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[鍵|かぎ]を[拾|ひろ]いました。"),
+        translation: "El profesor recogió una llave.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "終",
+    level: 3,
+    strokeCount: 11,
+    on: ["シュウ"],
+    kun: ["お.わる", "お.える"],
+    meaning: "Terminar / acabar",
+    examples: [
+      {
+        segments: ruby("[授業|じゅぎょう]は三[時|じ]に[終|お]わります。"),
+        translation: "La clase termina a las tres.",
+      },
+      {
+        segments: ruby("[仕事|しごと]が[終|お]わりました。"),
+        translation: "El trabajo terminó.",
+      },
+      {
+        segments: ruby("[本|ほん]を[最後|さいご]まで[読|よ]み[終|お]えました。"),
+        translation: "Pude terminar de leer el libro hasta el final.",
+      },
+      {
+        segments: ruby("[夏休|なつやす]みはもうすぐ[終|お]わります。"),
+        translation: "Las vacaciones de verano terminarán pronto.",
+      },
+      {
+        segments: ruby("[会議|かいぎ]を[終|お]えて[帰|かえ]ります。"),
+        translation: "Termino la reunión y vuelvo a casa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "習",
+    level: 3,
+    strokeCount: 11,
+    on: ["シュウ"],
+    kun: ["なら.う"],
+    meaning: "Aprender / practicar",
+    examples: [
+      {
+        segments: ruby("[日本語|にほんご]を[習|なら]っています。"),
+        translation: "Estoy aprendiendo japonés.",
+      },
+      {
+        segments: ruby("[毎日|まいにち]ピアノを[習|なら]います。"),
+        translation: "Aprendo piano todos los días.",
+      },
+      {
+        segments: ruby("[学校|がっこう]で[漢字|かんじ]を[習|なら]いました。"),
+        translation: "Aprendí kanji en la escuela.",
+      },
+      {
+        segments: ruby("[新|あたら]しいことを[習|なら]うのが[好|す]きです。"),
+        translation: "Me gusta aprender cosas nuevas.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[文法|ぶんぽう]を[習|なら]います。"),
+        translation: "Aprendo gramática con el profesor.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "集",
+    level: 3,
+    strokeCount: 12,
+    on: ["シュウ"],
+    kun: ["あつ.まる", "あつ.める"],
+    meaning: "Reunir / reunirse",
+    examples: [
+      {
+        segments: ruby("[公園|こうえん]に[子|こ]どもが[集|あつ]まります。"),
+        translation: "Los niños se reúnen en el parque.",
+      },
+      {
+        segments: ruby("[切手|きって]を[集|あつ]めています。"),
+        translation: "Estoy juntando estampillas.",
+      },
+      {
+        segments: ruby("[朝|あさ]九[時|じ]にみんなが[集|あつ]まります。"),
+        translation: "Todos se reúnen a las nueve de la mañana.",
+      },
+      {
+        segments: ruby("[必要|ひつよう]な[資料|しりょう]を[集|あつ]めます。"),
+        translation: "Reúno los materiales necesarios.",
+      },
+      {
+        segments: ruby("[人|ひと]がたくさん[集|あつ]まる[店|みせ]です。"),
+        translation: "Es una tienda donde se reúne mucha gente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "住",
+    level: 3,
+    strokeCount: 7,
+    on: ["ジュウ"],
+    kun: ["す.む", "す.まう"],
+    meaning: "Vivir / residir",
+    examples: [
+      {
+        segments: ruby("[日本|にほん]に[住|す]んでいます。"),
+        translation: "Vivo en Japón.",
+      },
+      {
+        segments: ruby("[駅|えき]の[近|ちか]くに[住|す]んでいます。"),
+        translation: "Vivo cerca de la estación.",
+      },
+      {
+        segments: ruby("[静|しず]かな[町|まち]に[住|す]みたいです。"),
+        translation: "Quiero vivir en una ciudad tranquila.",
+      },
+      {
+        segments: ruby("[昔|むかし]この[村|むら]に[住|す]んでいました。"),
+        translation: "Antes vivía en este pueblo.",
+      },
+      {
+        segments: ruby("[家族|かぞく]といっしょに[住|す]んでいます。"),
+        translation: "Vivo junto con mi familia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "重",
+    level: 3,
+    strokeCount: 9,
+    on: ["ジュウ", "チョウ"],
+    kun: ["おも.い", "かさ.なる"],
+    meaning: "Pesado / importante",
+    examples: [
+      {
+        segments: ruby("この[箱|はこ]はとても[重|おも]いです。"),
+        translation: "Esta caja es muy pesada.",
+      },
+      {
+        segments: ruby("[重|おも]いかばんを[持|も]ちます。"),
+        translation: "Llevo una mochila pesada.",
+      },
+      {
+        segments: ruby("[重要|じゅうよう]な[話|はなし]です。"),
+        translation: "Es una conversación importante.",
+      },
+      {
+        segments: ruby("[教科書|きょうかしょ]が[多|おお]くてかばんが[重|おも]いです。"),
+        translation: "La mochila está pesada porque hay muchos libros de texto.",
+      },
+      {
+        segments: ruby("[体重|たいじゅう]を[毎朝|まいあさ][計|はか]ります。"),
+        translation: "Mido mi peso cada mañana.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "宿",
+    level: 3,
+    strokeCount: 11,
+    on: ["シュク"],
+    kun: ["やど", "やど.る", "やど.す"],
+    meaning: "Alojamiento / hospedarse",
+    examples: [
+      {
+        segments: ruby("[夏休|なつやす]みの[宿題|しゅくだい]をします。"),
+        translation: "Hago la tarea de vacaciones de verano.",
+      },
+      {
+        segments: ruby("[宿題|しゅくだい]を[学校|がっこう]へ[持|も]っていきます。"),
+        translation: "Llevo la tarea a la escuela.",
+      },
+      {
+        segments: ruby("[駅|えき]の[近|ちか]くの[宿|やど]に[泊|と]まります。"),
+        translation: "Me hospedo en una posada cerca de la estación.",
+      },
+      {
+        segments: ruby("[旅行|りょこう]で[静|しず]かな[宿|やど]を[選|えら]びます。"),
+        translation: "En el viaje elijo un alojamiento tranquilo.",
+      },
+      {
+        segments: ruby("[宿泊|しゅくはく]の[予約|よやく]をしました。"),
+        translation: "Hice la reserva del alojamiento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "所",
+    level: 3,
+    strokeCount: 8,
+    on: ["ショ"],
+    kun: ["ところ"],
+    meaning: "Lugar",
+    examples: [
+      {
+        segments: ruby("[本|ほん]はもとの[所|ところ]にもどしてください。"),
+        translation: "Por favor, devuelve el libro a su lugar original.",
+      },
+      {
+        segments: ruby("[静|しず]かな[所|ところ]で[勉強|べんきょう]します。"),
+        translation: "Estudio en un lugar tranquilo.",
+      },
+      {
+        segments: ruby("[台所|だいどころ]で[母|はは]が[料理|りょうり]をしています。"),
+        translation: "Mi madre está cocinando en la cocina.",
+      },
+      {
+        segments: ruby("[行|い]きたい[所|ところ]がたくさんあります。"),
+        translation: "Hay muchos lugares a los que quiero ir.",
+      },
+      {
+        segments: ruby("[近|ちか]い[所|ところ]に[店|みせ]があります。"),
+        translation: "Hay una tienda en un lugar cercano.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "暑",
+    level: 3,
+    strokeCount: 12,
+    on: ["ショ"],
+    kun: ["あつ.い"],
+    meaning: "Caluroso",
+    examples: [
+      {
+        segments: ruby("きょうはとても[暑|あつ]いです。"),
+        translation: "Hoy hace mucho calor.",
+      },
+      {
+        segments: ruby("[暑|あつ]いので[水|みず]をのみます。"),
+        translation: "Como hace calor, tomo agua.",
+      },
+      {
+        segments: ruby("[夏|なつ]の[午後|ごご]は[暑|あつ]いです。"),
+        translation: "Las tardes de verano son calurosas.",
+      },
+      {
+        segments: ruby("[暑|あつ]い[日|ひ]はぼうしをかぶります。"),
+        translation: "En los días calurosos uso sombrero.",
+      },
+      {
+        segments: ruby("[教室|きょうしつ]が[暑|あつ]いから[窓|まど]を[開|あ]けます。"),
+        translation: "Como la sala está calurosa, abro la ventana.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "助",
+    level: 3,
+    strokeCount: 7,
+    on: ["ジョ"],
+    kun: ["たす.ける", "たす.かる"],
+    meaning: "Ayudar / salvar",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]を[助|たす]けます。"),
+        translation: "Ayudo a mi amigo.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[助|たす]けてくれました。"),
+        translation: "El profesor me ayudó.",
+      },
+      {
+        segments: ruby("[困|こま]っている[人|ひと]を[助|たす]けます。"),
+        translation: "Ayudo a la persona que está en problemas.",
+      },
+      {
+        segments: ruby("[家族|かぞく]に[助|たす]けてもらいました。"),
+        translation: "Mi familia me ayudó.",
+      },
+      {
+        segments: ruby("[救助|きゅうじょ]の[人|ひと]が[来|き]ました。"),
+        translation: "Llegó el personal de rescate.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "昭",
+    level: 3,
+    strokeCount: 9,
+    on: ["ショウ"],
+    kun: [],
+    meaning: "Claro / brillante",
+    examples: [
+      {
+        segments: ruby("[昭和|しょうわ]の[歌|うた]を[聞|き]きます。"),
+        translation: "Escucho canciones de la era Showa.",
+      },
+      {
+        segments: ruby("[昭和|しょうわ]の[写真|しゃしん]を[見|み]ました。"),
+        translation: "Vi fotos de la era Showa.",
+      },
+      {
+        segments: ruby("[祖父|そふ]は[昭和|しょうわ]に[生|う]まれました。"),
+        translation: "Mi abuelo nació en la era Showa.",
+      },
+      {
+        segments: ruby("[昭和|しょうわ]の[町|まち]を[紹介|しょうかい]する[本|ほん]です。"),
+        translation: "Es un libro que presenta las ciudades de la era Showa.",
+      },
+      {
+        segments: ruby("[昭和|しょうわ]の[時代|じだい]を[学|まな]びます。"),
+        translation: "Estudio la época Showa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "消",
+    level: 3,
+    strokeCount: 10,
+    on: ["ショウ"],
+    kun: ["き.える", "け.す"],
+    meaning: "Apagar / desaparecer",
+    examples: [
+      {
+        segments: ruby("[電気|でんき]を[消|け]します。"),
+        translation: "Apago la luz.",
+      },
+      {
+        segments: ruby("[火|ひ]が[消|き]えました。"),
+        translation: "El fuego se apagó.",
+      },
+      {
+        segments: ruby("[黒板|こくばん]の[字|じ]を[消|け]します。"),
+        translation: "Borro las letras de la pizarra.",
+      },
+      {
+        segments: ruby("[雪|ゆき]がすぐに[消|き]えました。"),
+        translation: "La nieve desapareció de inmediato.",
+      },
+      {
+        segments: ruby("[消|しょう][防車|ぼうしゃ]が[来|き]ました。"),
+        translation: "Llegó el carro de bomberos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "商",
+    level: 3,
+    strokeCount: 11,
+    on: ["ショウ"],
+    kun: ["あきな.う"],
+    meaning: "Comercio / vender",
+    examples: [
+      {
+        segments: ruby("[商店|しょうてん]で[買|か]い[物|もの]をします。"),
+        translation: "Hago compras en la tienda.",
+      },
+      {
+        segments: ruby("[父|ちち]は[商売|しょうばい]をしています。"),
+        translation: "Mi padre se dedica al comercio.",
+      },
+      {
+        segments: ruby("[商店街|しょうてんがい]はにぎやかです。"),
+        translation: "La calle comercial es animada.",
+      },
+      {
+        segments: ruby("[商品|しょうひん]を[見|み]ます。"),
+        translation: "Miro los productos.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[商品|しょうひん]がならんでいます。"),
+        translation: "Hay productos nuevos alineados en la tienda.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "章",
+    level: 3,
+    strokeCount: 11,
+    on: ["ショウ"],
+    kun: [],
+    meaning: "Capítulo",
+    examples: [
+      {
+        segments: ruby("[第一章|だいいっしょう]を[読|よ]みます。"),
+        translation: "Leo el primer capítulo.",
+      },
+      {
+        segments: ruby("この[章|しょう]はとても[大切|たいせつ]です。"),
+        translation: "Este capítulo es muy importante.",
+      },
+      {
+        segments: ruby("[本|ほん]の[最後|さいご]の[章|しょう]です。"),
+        translation: "Es el último capítulo del libro.",
+      },
+      {
+        segments: ruby("[文章|ぶんしょう]を[声|こえ]に[出|だ]して[読|よ]みます。"),
+        translation: "Leo el texto en voz alta.",
+      },
+      {
+        segments: ruby("[校章|こうしょう]がついたぼうしです。"),
+        translation: "Es una gorra con el emblema de la escuela.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "勝",
+    level: 3,
+    strokeCount: 12,
+    on: ["ショウ"],
+    kun: ["か.つ", "まさ.る"],
+    meaning: "Ganar / victoria",
+    examples: [
+      {
+        segments: ruby("[試合|しあい]に[勝|か]ちました。"),
+        translation: "Ganamos el partido.",
+      },
+      {
+        segments: ruby("[勝負|しょうぶ]はまだおわっていません。"),
+        translation: "La competencia todavía no termina.",
+      },
+      {
+        segments: ruby("[兄|あに]に[勝|か]ちたいです。"),
+        translation: "Quiero ganarle a mi hermano mayor.",
+      },
+      {
+        segments: ruby("[勝者|しょうしゃ]にメダルをわたします。"),
+        translation: "Le entrego una medalla al ganador.",
+      },
+      {
+        segments: ruby("きょうはわたしたちのチームが[勝|か]ちました。"),
+        translation: "Hoy ganó nuestro equipo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "乗",
+    level: 3,
+    strokeCount: 9,
+    on: ["ジョウ"],
+    kun: ["の.る", "の.せる"],
+    meaning: "Subirse / montar",
+    examples: [
+      {
+        segments: ruby("[電車|でんしゃ]に[乗|の]ります。"),
+        translation: "Me subo al tren.",
+      },
+      {
+        segments: ruby("[自転車|じてんしゃ]に[乗|の]って[学校|がっこう]へ[行|い]きます。"),
+        translation: "Voy a la escuela en bicicleta.",
+      },
+      {
+        segments: ruby("[車|くるま]に[乗|の]せてください。"),
+        translation: "Por favor, déjame subir al auto.",
+      },
+      {
+        segments: ruby("[飛行機|ひこうき]に[乗|の]るのは[好|す]きです。"),
+        translation: "Me gusta subir al avión.",
+      },
+      {
+        segments: ruby("[次|つぎ]のバスに[乗|の]ります。"),
+        translation: "Me subiré al próximo bus.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "植",
+    level: 3,
+    strokeCount: 12,
+    on: ["ショク"],
+    kun: ["う.える", "う.わる"],
+    meaning: "Plantar",
+    examples: [
+      {
+        segments: ruby("[庭|にわ]に[花|はな]を[植|う]えます。"),
+        translation: "Planto flores en el jardín.",
+      },
+      {
+        segments: ruby("[木|き]を[植|う]える[日|ひ]です。"),
+        translation: "Es el día de plantar árboles.",
+      },
+      {
+        segments: ruby("[植木鉢|うえきばち]にトマトを[植|う]えました。"),
+        translation: "Planté tomates en una maceta.",
+      },
+      {
+        segments: ruby("[学校|がっこう]で[木|き]を[植|う]えます。"),
+        translation: "Plantamos árboles en la escuela.",
+      },
+      {
+        segments: ruby("[道|みち]のそばに[木|き]が[植|う]えてあります。"),
+        translation: "Hay árboles plantados al lado del camino.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "申",
+    level: 3,
+    strokeCount: 5,
+    on: ["シン"],
+    kun: ["もう.す"],
+    meaning: "Decir / informar",
+    examples: [
+      {
+        segments: ruby("わたしはハラと[申|もう]します。"),
+        translation: "Mi nombre es Hara.",
+      },
+      {
+        segments: ruby("[申|もう]しわけありません。"),
+        translation: "Lo siento mucho.",
+      },
+      {
+        segments: ruby("[後|あと]でくわしく[申|もう]します。"),
+        translation: "Lo explicaré con más detalle después.",
+      },
+      {
+        segments: ruby("[申請書|しんせいしょ]を[出|だ]します。"),
+        translation: "Entrego el formulario de solicitud.",
+      },
+      {
+        segments: ruby("[電話|でんわ]で[欠席|けっせき]を[申|もう]し[出|で]ます。"),
+        translation: "Aviso por teléfono que voy a faltar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "身",
+    level: 3,
+    strokeCount: 7,
+    on: ["シン"],
+    kun: ["み"],
+    meaning: "Cuerpo / uno mismo",
+    examples: [
+      {
+        segments: ruby("[身長|しんちょう]を[計|はか]ります。"),
+        translation: "Mido mi estatura.",
+      },
+      {
+        segments: ruby("[身|み]の[回|まわ]りをきれいにします。"),
+        translation: "Mantengo limpio lo que me rodea.",
+      },
+      {
+        segments: ruby("[身|み]じたくをして[出|で]かけます。"),
+        translation: "Me preparo y salgo.",
+      },
+      {
+        segments: ruby("[身|み]をまもるためにヘルメットをかぶります。"),
+        translation: "Me pongo casco para proteger el cuerpo.",
+      },
+      {
+        segments: ruby("[身近|みぢか]な[例|れい]で[説明|せつめい]します。"),
+        translation: "Lo explico con un ejemplo cercano.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "神",
+    level: 3,
+    strokeCount: 9,
+    on: ["シン", "ジン"],
+    kun: ["かみ"],
+    meaning: "Dios / divinidad",
+    examples: [
+      {
+        segments: ruby("[神社|じんじゃ]へ[行|い]きます。"),
+        translation: "Voy al santuario.",
+      },
+      {
+        segments: ruby("[神様|かみさま]においのりします。"),
+        translation: "Rezo a la divinidad.",
+      },
+      {
+        segments: ruby("この[町|まち]には[古|ふる]い[神社|じんじゃ]があります。"),
+        translation: "En esta ciudad hay un santuario antiguo.",
+      },
+      {
+        segments: ruby("[神話|しんわ]を[読|よ]みます。"),
+        translation: "Leo mitología.",
+      },
+      {
+        segments: ruby("[山|やま]の[神|かみ]の[話|はなし]を[聞|き]きました。"),
+        translation: "Escuché una historia sobre la divinidad de la montaña.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "真",
+    level: 3,
+    strokeCount: 10,
+    on: ["シン"],
+    kun: ["ま", "まこと"],
+    meaning: "Verdadero / real",
+    examples: [
+      {
+        segments: ruby("[真|ま]っ[白|しろ]な[紙|かみ]です。"),
+        translation: "Es una hoja completamente blanca.",
+      },
+      {
+        segments: ruby("[写真|しゃしん]を[見|み]せてください。"),
+        translation: "Por favor, muéstrame la foto.",
+      },
+      {
+        segments: ruby("[本当|ほんとう]のことを[話|はな]してください。"),
+        translation: "Por favor, di la verdad.",
+      },
+      {
+        segments: ruby("[真|ま]ん[中|なか]に[立|た]ってください。"),
+        translation: "Por favor, párate justo en el centro.",
+      },
+      {
+        segments: ruby("[真夜中|まよなか]に[目|め]が[覚|さ]めました。"),
+        translation: "Me desperté a medianoche.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "深",
+    level: 3,
+    strokeCount: 11,
+    on: ["シン"],
+    kun: ["ふか.い", "ふか.める", "ふか.まる"],
+    meaning: "Profundo",
+    examples: [
+      {
+        segments: ruby("この[川|かわ]はとても[深|ふか]いです。"),
+        translation: "Este río es muy profundo.",
+      },
+      {
+        segments: ruby("[深|ふか]く[考|かんが]えてから[答|こた]えます。"),
+        translation: "Respondo después de pensar profundamente.",
+      },
+      {
+        segments: ruby("[夜|よる]が[深|ふか]くなりました。"),
+        translation: "La noche se hizo avanzada.",
+      },
+      {
+        segments: ruby("[意味|いみ]をもっと[深|ふか]く[知|し]りたいです。"),
+        translation: "Quiero entender el significado más a fondo.",
+      },
+      {
+        segments: ruby("[深呼吸|しんこきゅう]をしてください。"),
+        translation: "Por favor, respira profundamente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "進",
+    level: 3,
+    strokeCount: 11,
+    on: ["シン"],
+    kun: ["すす.む", "すす.める"],
+    meaning: "Avanzar / progresar",
+    examples: [
+      {
+        segments: ruby("[前|まえ]に[進|すす]んでください。"),
+        translation: "Por favor, avance hacia adelante.",
+      },
+      {
+        segments: ruby("[計画|けいかく]が[少|すこ]しずつ[進|すす]んでいます。"),
+        translation: "El plan está avanzando poco a poco.",
+      },
+      {
+        segments: ruby("[信号|しんごう]が[青|あお]になったら[進|すす]みます。"),
+        translation: "Avanzo cuando el semáforo se pone verde.",
+      },
+      {
+        segments: ruby("[勉強|べんきょう]を[進|すす]めましょう。"),
+        translation: "Sigamos avanzando con el estudio.",
+      },
+      {
+        segments: ruby("[進学|しんがく]について[家族|かぞく]と[話|はな]しました。"),
+        translation: "Hablé con mi familia sobre continuar los estudios.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "世",
+    level: 3,
+    strokeCount: 5,
+    on: ["セイ", "セ"],
+    kun: ["よ"],
+    meaning: "Mundo / generación",
+    examples: [
+      {
+        segments: ruby("[世界|せかい]にはたくさんの[国|くに]があります。"),
+        translation: "En el mundo hay muchos países.",
+      },
+      {
+        segments: ruby("[世|よ]の[中|なか]は[広|ひろ]いです。"),
+        translation: "El mundo es amplio.",
+      },
+      {
+        segments: ruby("[世話|せわ]になりました。"),
+        translation: "Muchas gracias por su ayuda.",
+      },
+      {
+        segments: ruby("[次|つぎ]の[世代|せだい]に[伝|つた]えたいです。"),
+        translation: "Quiero transmitirlo a la siguiente generación.",
+      },
+      {
+        segments: ruby("[世界地図|せかいちず]を[見|み]ています。"),
+        translation: "Estoy mirando un mapa del mundo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "整",
+    level: 3,
+    strokeCount: 16,
+    on: ["セイ"],
+    kun: ["ととの.える", "ととの.う"],
+    meaning: "Ordenar / arreglar",
+    examples: [
+      {
+        segments: ruby("[机|つくえ]の[上|うえ]を[整|ととの]えます。"),
+        translation: "Ordeno la parte de arriba del escritorio.",
+      },
+      {
+        segments: ruby("[生活|せいかつ]のリズムを[整|ととの]えたいです。"),
+        translation: "Quiero ordenar mi ritmo de vida.",
+      },
+      {
+        segments: ruby("[列|れつ]を[整|ととの]えてください。"),
+        translation: "Por favor, formen la fila correctamente.",
+      },
+      {
+        segments: ruby("[気持|きも]ちを[整|ととの]えてから[話|はな]します。"),
+        translation: "Hablo después de ordenar mis ideas.",
+      },
+      {
+        segments: ruby("[整理|せいり][整頓|せいとん]をします。"),
+        translation: "Hago orden y organización.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "昔",
+    level: 3,
+    strokeCount: 8,
+    on: ["セキ", "シャク"],
+    kun: ["むかし"],
+    meaning: "Antiguamente / antes",
+    examples: [
+      {
+        segments: ruby("[昔|むかし]この[町|まち]に[住|す]んでいました。"),
+        translation: "Antes vivía en esta ciudad.",
+      },
+      {
+        segments: ruby("[昔話|むかしばなし]を[読|よ]みます。"),
+        translation: "Leo un cuento tradicional.",
+      },
+      {
+        segments: ruby("[昔|むかし]の[写真|しゃしん]を[見|み]ました。"),
+        translation: "Vi fotos antiguas.",
+      },
+      {
+        segments: ruby("[父|ちち]は[昔|むかし]ここで[働|はたら]いていました。"),
+        translation: "Mi padre trabajaba aquí antes.",
+      },
+      {
+        segments: ruby("[昔|むかし]から[有名|ゆうめい]な[寺|てら]です。"),
+        translation: "Es un templo famoso desde hace mucho tiempo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "全",
+    level: 3,
+    strokeCount: 6,
+    on: ["ゼン"],
+    kun: ["まった.く", "すべ.て"],
+    meaning: "Todo / completo",
+    examples: [
+      {
+        segments: ruby("[全部|ぜんぶ][食|た]べました。"),
+        translation: "Me lo comí todo.",
+      },
+      {
+        segments: ruby("[全員|ぜんいん]そろいました。"),
+        translation: "Todos ya están presentes.",
+      },
+      {
+        segments: ruby("[全|すべ]ての[問題|もんだい]を[解|と]きました。"),
+        translation: "Resolví todos los problemas.",
+      },
+      {
+        segments: ruby("[安全|あんぜん]に[気|き]をつけてください。"),
+        translation: "Por favor, tenga cuidado con la seguridad.",
+      },
+      {
+        segments: ruby("[全然|ぜんぜん]わかりませんでした。"),
+        translation: "No entendí nada en absoluto.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "相",
+    level: 3,
+    strokeCount: 9,
+    on: ["ソウ", "ショウ"],
+    kun: ["あい"],
+    meaning: "Mutuo / compañero / aspecto",
+    examples: [
+      {
+        segments: ruby("[相手|あいて]の[話|はなし]をよく[聞|き]きます。"),
+        translation: "Escucho bien lo que dice la otra persona.",
+      },
+      {
+        segments: ruby("[相談|そうだん]したいことがあります。"),
+        translation: "Hay algo que quiero consultar.",
+      },
+      {
+        segments: ruby("[相変|あいか]わらず[元気|げんき]ですね。"),
+        translation: "Sigues tan bien como siempre.",
+      },
+      {
+        segments: ruby("[首相|しゅしょう]のニュースを[見|み]ました。"),
+        translation: "Vi las noticias del primer ministro.",
+      },
+      {
+        segments: ruby("[相手|あいて]に[失礼|しつれい]のないようにします。"),
+        translation: "Procuro no ser descortés con la otra persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "送",
+    level: 3,
+    strokeCount: 9,
+    on: ["ソウ"],
+    kun: ["おく.る"],
+    meaning: "Enviar / acompañar",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]にメールを[送|おく]ります。"),
+        translation: "Le envío un correo a un amigo.",
+      },
+      {
+        segments: ruby("[駅|えき]まで[送|おく]ってください。"),
+        translation: "Por favor, acompáñame hasta la estación.",
+      },
+      {
+        segments: ruby("[荷物|にもつ]を[送|おく]りました。"),
+        translation: "Envié el paquete.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[写真|しゃしん]を[送|おく]ります。"),
+        translation: "Le envío la foto al profesor.",
+      },
+      {
+        segments: ruby("[見送|みおく]りに[来|き]てくれました。"),
+        translation: "Vino a despedirme.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "想",
+    level: 3,
+    strokeCount: 13,
+    on: ["ソウ"],
+    kun: ["おも.う"],
+    meaning: "Pensar / imaginar",
+    examples: [
+      {
+        segments: ruby("[将来|しょうらい]のことを[想像|そうぞう]します。"),
+        translation: "Imagino cosas sobre el futuro.",
+      },
+      {
+        segments: ruby("[想像|そうぞう]より[難|むずか]しかったです。"),
+        translation: "Fue más difícil de lo que imaginaba.",
+      },
+      {
+        segments: ruby("[家族|かぞく]を[想|おも]う[気持|きも]ちは[大切|たいせつ]です。"),
+        translation: "Es importante pensar con cariño en la familia.",
+      },
+      {
+        segments: ruby("[感想|かんそう]を[発表|はっぴょう]してください。"),
+        translation: "Por favor, exponga su opinión o impresión.",
+      },
+      {
+        segments: ruby("[理想|りそう]の[生活|せいかつ]について[考|かんが]えます。"),
+        translation: "Pienso en el estilo de vida ideal.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "息",
+    level: 3,
+    strokeCount: 10,
+    on: ["ソク"],
+    kun: ["いき"],
+    meaning: "Aliento / respiración",
+    examples: [
+      {
+        segments: ruby("[息|いき]を[大|おお]きくすってください。"),
+        translation: "Por favor, respire profundamente.",
+      },
+      {
+        segments: ruby("[走|はし]ったので[息|いき]がきれました。"),
+        translation: "Como corrí, me quedé sin aliento.",
+      },
+      {
+        segments: ruby("[息子|むすこ]は[中学生|ちゅうがくせい]です。"),
+        translation: "Mi hijo está en secundaria.",
+      },
+      {
+        segments: ruby("[深|ふか]い[息|いき]をして[落|お]ち[着|つ]きます。"),
+        translation: "Respiro profundo y me tranquilizo.",
+      },
+      {
+        segments: ruby("[息|いき]を[止|と]めないでください。"),
+        translation: "Por favor, no contenga la respiración.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "速",
+    level: 3,
+    strokeCount: 10,
+    on: ["ソク"],
+    kun: ["はや.い", "はや.める"],
+    meaning: "Rápido",
+    examples: [
+      {
+        segments: ruby("この[電車|でんしゃ]はとても[速|はや]いです。"),
+        translation: "Este tren es muy rápido.",
+      },
+      {
+        segments: ruby("[歩|ある]く[速|はや]さを[少|すこ]し[落|お]とします。"),
+        translation: "Bajo un poco la velocidad al caminar.",
+      },
+      {
+        segments: ruby("[返事|へんじ]はできるだけ[速|はや]くします。"),
+        translation: "Responderé lo más rápido posible.",
+      },
+      {
+        segments: ruby("[速読|そくどく]の[練習|れんしゅう]をします。"),
+        translation: "Practico lectura rápida.",
+      },
+      {
+        segments: ruby("[足|あし]の[速|はや]い[人|ひと]です。"),
+        translation: "Es una persona que corre rápido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "族",
+    level: 3,
+    strokeCount: 11,
+    on: ["ゾク"],
+    kun: [],
+    meaning: "Familia / grupo",
+    examples: [
+      {
+        segments: ruby("[家族|かぞく]といっしょに[住|す]んでいます。"),
+        translation: "Vivo junto con mi familia.",
+      },
+      {
+        segments: ruby("[水族館|すいぞくかん]へ[行|い]きました。"),
+        translation: "Fui al acuario.",
+      },
+      {
+        segments: ruby("[家族|かぞく]で[旅行|りょこう]する[予定|よてい]です。"),
+        translation: "Tenemos pensado viajar en familia.",
+      },
+      {
+        segments: ruby("[民族|みんぞく]の[文化|ぶんか]を[学|まな]びます。"),
+        translation: "Estudio la cultura de los pueblos o etnias.",
+      },
+      {
+        segments: ruby("[家族写真|かぞくしゃしん]を[部屋|へや]にかざっています。"),
+        translation: "Tengo una foto familiar decorando la habitación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "他",
+    level: 3,
+    strokeCount: 5,
+    on: ["タ"],
+    kun: ["ほか"],
+    meaning: "Otro / además",
+    examples: [
+      {
+        segments: ruby("[他|ほか]に[質問|しつもん]はありますか。"),
+        translation: "¿Hay otras preguntas?",
+      },
+      {
+        segments: ruby("[他|ほか]の[人|ひと]にも[聞|き]いてみます。"),
+        translation: "También les preguntaré a otras personas.",
+      },
+      {
+        segments: ruby("[他国|たこく]の[文化|ぶんか]に[興味|きょうみ]があります。"),
+        translation: "Me interesa la cultura de otros países.",
+      },
+      {
+        segments: ruby("[他|ほか]の[色|いろ]も[見|み]せてください。"),
+        translation: "Por favor, muéstrame también otros colores.",
+      },
+      {
+        segments: ruby("[他人|たにん]に[迷惑|めいわく]をかけないようにします。"),
+        translation: "Procuro no molestar a otras personas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "打",
+    level: 3,
+    strokeCount: 5,
+    on: ["ダ"],
+    kun: ["う.つ"],
+    meaning: "Golpear / teclear",
+    examples: [
+      {
+        segments: ruby("ボールを[打|う]ちます。"),
+        translation: "Golpeo la pelota.",
+      },
+      {
+        segments: ruby("[太鼓|たいこ]を[打|う]つ[音|おと]が[聞|き]こえます。"),
+        translation: "Se escucha el sonido de golpear el tambor.",
+      },
+      {
+        segments: ruby("パソコンで[字|じ]を[打|う]ちます。"),
+        translation: "Tecleo caracteres en el computador.",
+      },
+      {
+        segments: ruby("[電話|でんわ]を[打|う]ち[合|あ]わせに[使|つか]います。"),
+        translation: "Uso el teléfono para coordinar una reunión.",
+      },
+      {
+        segments: ruby("[注射|ちゅうしゃ]を[打|う]ちました。"),
+        translation: "Me pusieron una inyección.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "対",
+    level: 3,
+    strokeCount: 7,
+    on: ["タイ", "ツイ"],
+    kun: [],
+    meaning: "Opuesto / frente a / contra",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]に[対|たい]して[失礼|しつれい]のないようにします。"),
+        translation: "Procuro no ser descortés con el profesor.",
+      },
+      {
+        segments: ruby("[反対|はんたい]の[方向|ほうこう]へ[行|い]きました。"),
+        translation: "Fui en la dirección opuesta.",
+      },
+      {
+        segments: ruby("[対話|たいわ]が[大切|たいせつ]です。"),
+        translation: "El diálogo es importante.",
+      },
+      {
+        segments: ruby("[一対|いっつい]のくつがあります。"),
+        translation: "Hay un par de zapatos.",
+      },
+      {
+        segments: ruby("[対戦|たいせん][相手|あいて]を[待|ま]っています。"),
+        translation: "Estoy esperando al rival del enfrentamiento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "待",
+    level: 3,
+    strokeCount: 9,
+    on: ["タイ"],
+    kun: ["ま.つ"],
+    meaning: "Esperar",
+    examples: [
+      {
+        segments: ruby("[駅|えき]で[友達|ともだち]を[待|ま]ちます。"),
+        translation: "Espero a mi amigo en la estación.",
+      },
+      {
+        segments: ruby("ここで[少|すこ]し[待|ま]ってください。"),
+        translation: "Por favor, espere aquí un momento.",
+      },
+      {
+        segments: ruby("[長|なが]い[時間|じかん][待|ま]ちました。"),
+        translation: "Esperé durante mucho tiempo.",
+      },
+      {
+        segments: ruby("[待合室|まちあいしつ]で[名前|なまえ]を[呼|よ]ばれるのを[待|ま]ちます。"),
+        translation: "Espero en la sala de espera a que llamen mi nombre.",
+      },
+      {
+        segments: ruby("[春|はる]が[来|く]るのを[待|ま]っています。"),
+        translation: "Estoy esperando que llegue la primavera.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "代",
+    level: 3,
+    strokeCount: 5,
+    on: ["ダイ", "タイ"],
+    kun: ["か.わる", "か.える", "よ"],
+    meaning: "Generación / reemplazar / costo",
+    examples: [
+      {
+        segments: ruby("[電話代|でんわだい]を[払|はら]います。"),
+        translation: "Pago la cuenta del teléfono.",
+      },
+      {
+        segments: ruby("[父|ちち]の[代|か]わりに[行|い]きます。"),
+        translation: "Voy en lugar de mi padre.",
+      },
+      {
+        segments: ruby("[次|つぎ]の[時代|じだい]について[考|かんが]えます。"),
+        translation: "Pienso en la próxima era o generación.",
+      },
+      {
+        segments: ruby("[お金|おかね]の[代|か]わりにカードを[使|つか]います。"),
+        translation: "Uso tarjeta en lugar de efectivo.",
+      },
+      {
+        segments: ruby("[十代|じゅうだい]の[学生|がくせい]です。"),
+        translation: "Es un estudiante adolescente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "第",
+    level: 3,
+    strokeCount: 11,
+    on: ["ダイ"],
+    kun: [],
+    meaning: "Número ordinal",
+    examples: [
+      {
+        segments: ruby("[第一|だいいち][希望|きぼう]は[日本語|にほんご]です。"),
+        translation: "Mi primera opción es japonés.",
+      },
+      {
+        segments: ruby("[第一章|だいいっしょう]を[読|よ]みます。"),
+        translation: "Leo el primer capítulo.",
+      },
+      {
+        segments: ruby("[第二|だいに][問|もん]に[答|こた]えてください。"),
+        translation: "Por favor, responda la segunda pregunta.",
+      },
+      {
+        segments: ruby("[第|だい][三|さん][回|かい]のテストがあります。"),
+        translation: "Habrá una tercera prueba.",
+      },
+      {
+        segments: ruby("[第一印象|だいいちいんしょう]がとてもよかったです。"),
+        translation: "La primera impresión fue muy buena.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "題",
+    level: 3,
+    strokeCount: 18,
+    on: ["ダイ"],
+    kun: [],
+    meaning: "Tema / título / problema",
+    examples: [
+      {
+        segments: ruby("[宿題|しゅくだい]をもう[終|お]えました。"),
+        translation: "Ya terminé la tarea.",
+      },
+      {
+        segments: ruby("[問題|もんだい]の[題|だい]をよく[読|よ]んでください。"),
+        translation: "Por favor, lea bien el enunciado del problema.",
+      },
+      {
+        segments: ruby("[今日|きょう]の[話題|わだい]は[旅行|りょこう]です。"),
+        translation: "El tema de hoy es el viaje.",
+      },
+      {
+        segments: ruby("[題名|だいめい]をノートに[書|か]きます。"),
+        translation: "Escribo el título en el cuaderno.",
+      },
+      {
+        segments: ruby("[作文|さくぶん]の[題|だい]が[難|むずか]しいです。"),
+        translation: "El tema de la redacción es difícil.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "炭",
+    level: 3,
+    strokeCount: 9,
+    on: ["タン"],
+    kun: ["すみ"],
+    meaning: "Carbón",
+    examples: [
+      {
+        segments: ruby("[炭|すみ]で[火|ひ]をおこします。"),
+        translation: "Enciendo el fuego con carbón.",
+      },
+      {
+        segments: ruby("[木炭|もくたん]を[使|つか]って[肉|にく]を[焼|や]きます。"),
+        translation: "Asamos carne usando carbón vegetal.",
+      },
+      {
+        segments: ruby("[黒|くろ]い[炭|すみ]がたくさんあります。"),
+        translation: "Hay mucho carbón negro.",
+      },
+      {
+        segments: ruby("[炭酸水|たんさんすい]を[飲|の]みます。"),
+        translation: "Bebo agua con gas.",
+      },
+      {
+        segments: ruby("[炭|すみ]のにおいがします。"),
+        translation: "Se siente olor a carbón.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "短",
+    level: 3,
+    strokeCount: 12,
+    on: ["タン"],
+    kun: ["みじか.い"],
+    meaning: "Corto",
+    examples: [
+      {
+        segments: ruby("このえんぴつは[短|みじか]いです。"),
+        translation: "Este lápiz es corto.",
+      },
+      {
+        segments: ruby("[短|みじか]い[文|ぶん]を[書|か]いてください。"),
+        translation: "Por favor, escribe una oración corta.",
+      },
+      {
+        segments: ruby("[夏休|なつやす]みはあっという[間|ま]に[終|お]わり、[短|みじか]く[感|かん]じました。"),
+        translation: "Las vacaciones de verano terminaron rápidamente y se sintieron cortas.",
+      },
+      {
+        segments: ruby("[短歌|たんか]を[読|よ]みました。"),
+        translation: "Leí un poema tanka.",
+      },
+      {
+        segments: ruby("[髪|かみ]を[短|みじか]くしました。"),
+        translation: "Me corté el cabello más corto.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "談",
+    level: 3,
+    strokeCount: 15,
+    on: ["ダン"],
+    kun: [],
+    meaning: "Conversación / hablar",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]と[談笑|だんしょう]しています。"),
+        translation: "Estoy conversando y riendo con amigos.",
+      },
+      {
+        segments: ruby("[面談|めんだん]の[時間|じかん]があります。"),
+        translation: "Hay una hora de entrevista.",
+      },
+      {
+        segments: ruby("[先生|せんせい]と[進路|しんろ]について[相談|そうだん]しました。"),
+        translation: "Consulté con el profesor sobre mi futuro académico.",
+      },
+      {
+        segments: ruby("[談話室|だんわしつ]で[少|すこ]し[休|やす]みます。"),
+        translation: "Descanso un momento en la sala de conversación.",
+      },
+      {
+        segments: ruby("[昔話|むかしばなし]を[談|だん]じる[会|かい]に[出|で]ました。"),
+        translation: "Asistí a una reunión para hablar de historias antiguas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "着",
+    level: 3,
+    strokeCount: 12,
+    on: ["チャク", "ジャク"],
+    kun: ["き.る", "つ.く"],
+    meaning: "Ponerse / llegar",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しいシャツを[着|き]ます。"),
+        translation: "Me pongo una camisa nueva.",
+      },
+      {
+        segments: ruby("[駅|えき]に[着|つ]いたら[電話|でんわ]してください。"),
+        translation: "Cuando llegues a la estación, por favor llama.",
+      },
+      {
+        segments: ruby("[上着|うわぎ]を[着|き]て[出|で]かけます。"),
+        translation: "Salgo con una chaqueta puesta.",
+      },
+      {
+        segments: ruby("[飛行機|ひこうき]は[午後|ごご]に[空港|くうこう]へ[着|つ]きます。"),
+        translation: "El avión llega al aeropuerto por la tarde.",
+      },
+      {
+        segments: ruby("[着物|きもの]を[着|き]た[人|ひと]を[見|み]ました。"),
+        translation: "Vi a una persona vestida con kimono.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "注",
+    level: 3,
+    strokeCount: 8,
+    on: ["チュウ"],
+    kun: ["そそ.ぐ"],
+    meaning: "Verter / notar / pedir",
+    examples: [
+      {
+        segments: ruby("[水|みず]をコップに[注|そそ]ぎます。"),
+        translation: "Vierto agua en el vaso.",
+      },
+      {
+        segments: ruby("[先生|せんせい]の[話|はなし]に[注意|ちゅうい]してください。"),
+        translation: "Presta atención a lo que dice el profesor.",
+      },
+      {
+        segments: ruby("[店|みせ]でラーメンを[注文|ちゅうもん]しました。"),
+        translation: "Pedí ramen en la tienda.",
+      },
+      {
+        segments: ruby("[注目|ちゅうもく]される[選手|せんしゅ]です。"),
+        translation: "Es un deportista que atrae atención.",
+      },
+      {
+        segments: ruby("[熱|あつ]いお[茶|ちゃ]をゆっくり[注|そそ]ぎます。"),
+        translation: "Sirvo té caliente lentamente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "柱",
+    level: 3,
+    strokeCount: 9,
+    on: ["チュウ"],
+    kun: ["はしら"],
+    meaning: "Pilar / columna",
+    examples: [
+      {
+        segments: ruby("[木|き]の[柱|はしら]が[太|ふと]いです。"),
+        translation: "El pilar de madera es grueso.",
+      },
+      {
+        segments: ruby("[家|いえ]の[柱|はしら]に[時計|とけい]がかかっています。"),
+        translation: "Hay un reloj colgado en el pilar de la casa.",
+      },
+      {
+        segments: ruby("[神社|じんじゃ]の[赤|あか]い[柱|はしら]がきれいです。"),
+        translation: "Los pilares rojos del santuario son bonitos.",
+      },
+      {
+        segments: ruby("[電柱|でんちゅう]のそばで[待|ま]っています。"),
+        translation: "Estoy esperando junto al poste eléctrico.",
+      },
+      {
+        segments: ruby("[この[柱|はしら]は[建物|たてもの]をささえる[大切|たいせつ]な[部分|ぶぶん]です。"),
+        translation: "Este pilar es una parte importante que sostiene el edificio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "丁",
+    level: 3,
+    strokeCount: 2,
+    on: ["チョウ", "テイ"],
+    kun: [],
+    meaning: "Bloque / sección / cortesía",
+    examples: [
+      {
+        segments: ruby("[一丁|いっちょう]めの[角|かど]で[曲|ま]がります。"),
+        translation: "Dobla en la esquina de la primera cuadra.",
+      },
+      {
+        segments: ruby("[丁寧|ていねい]に[説明|せつめい]してください。"),
+        translation: "Por favor, explíquelo con cortesía y cuidado.",
+      },
+      {
+        segments: ruby("[包丁|ほうちょう]はあぶないです。"),
+        translation: "El cuchillo de cocina es peligroso.",
+      },
+      {
+        segments: ruby("[二丁目|にちょうめ]に[住|す]んでいます。"),
+        translation: "Vivo en la segunda cuadra.",
+      },
+      {
+        segments: ruby("[先生|せんせい]はいつも[丁寧|ていねい]に[話|はな]します。"),
+        translation: "El profesor siempre habla con mucha cortesía.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "帳",
+    level: 3,
+    strokeCount: 11,
+    on: ["チョウ"],
+    kun: [],
+    meaning: "Cuaderno / libreta / cortina",
+    examples: [
+      {
+        segments: ruby("[手帳|てちょう]に[予定|よてい]を[書|か]きます。"),
+        translation: "Escribo mis planes en la agenda.",
+      },
+      {
+        segments: ruby("[帳面|ちょうめん]を[開|ひら]いてください。"),
+        translation: "Por favor, abra la libreta.",
+      },
+      {
+        segments: ruby("[家計簿|かけいぼ]の[帳|ちょう]をつけています。"),
+        translation: "Llevo el registro de gastos del hogar.",
+      },
+      {
+        segments: ruby("[蚊帳|かや]の[中|なか]で[寝|ね]ます。"),
+        translation: "Duermo dentro del mosquitero.",
+      },
+      {
+        segments: ruby("[連絡帳|れんらくちょう]を[学校|がっこう]へ[持|も]っていきます。"),
+        translation: "Llevo el cuaderno de comunicaciones a la escuela.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "調",
+    level: 3,
+    strokeCount: 15,
+    on: ["チョウ"],
+    kun: ["しら.べる", "ととの.う"],
+    meaning: "Investigar / ajustar / tono",
+    examples: [
+      {
+        segments: ruby("[意味|いみ]を[辞書|じしょ]で[調|しら]べます。"),
+        translation: "Busco el significado en el diccionario.",
+      },
+      {
+        segments: ruby("[音|おと]の[調子|ちょうし]がいいです。"),
+        translation: "El tono del sonido está bien.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[原因|げんいん]を[調|しら]べています。"),
+        translation: "El profesor está investigando la causa.",
+      },
+      {
+        segments: ruby("[体調|たいちょう]がよくないので[早|はや]く[寝|ね]ます。"),
+        translation: "Como no me siento bien, me acuesto temprano.",
+      },
+      {
+        segments: ruby("[楽器|がっき]の[音|おと]を[調|ととの]えます。"),
+        translation: "Ajusto el sonido del instrumento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "追",
+    level: 3,
+    strokeCount: 9,
+    on: ["ツイ"],
+    kun: ["お.う"],
+    meaning: "Seguir / perseguir",
+    examples: [
+      {
+        segments: ruby("[猫|ねこ]がボールを[追|お]っています。"),
+        translation: "El gato está persiguiendo la pelota.",
+      },
+      {
+        segments: ruby("[夢|ゆめ]を[追|お]いかけたいです。"),
+        translation: "Quiero perseguir mis sueños.",
+      },
+      {
+        segments: ruby("[後|あと]から[追|お]い[付|つ]きました。"),
+        translation: "Lo alcancé desde atrás.",
+      },
+      {
+        segments: ruby("[追試|ついし]を[受|う]けることになりました。"),
+        translation: "Resultó que tendré que rendir una prueba de recuperación.",
+      },
+      {
+        segments: ruby("[警察|けいさつ]が[車|くるま]を[追|お]っています。"),
+        translation: "La policía está persiguiendo el auto.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "定",
+    level: 3,
+    strokeCount: 8,
+    on: ["テイ", "ジョウ"],
+    kun: ["さだ.める", "さだ.まる"],
+    meaning: "Decidir / fijar / estable",
+    examples: [
+      {
+        segments: ruby("[時間|じかん]を[定|さだ]めて[集|あつ]まります。"),
+        translation: "Fijamos una hora y nos reunimos.",
+      },
+      {
+        segments: ruby("[予定|よてい]がまだ[定|さだ]まっていません。"),
+        translation: "El plan todavía no está definido.",
+      },
+      {
+        segments: ruby("[定休日|ていきゅうび]は[月曜日|げつようび]です。"),
+        translation: "El día de cierre fijo es el lunes.",
+      },
+      {
+        segments: ruby("[定規|じょうぎ]で[線|せん]を[引|ひ]きます。"),
+        translation: "Trazo una línea con la regla.",
+      },
+      {
+        segments: ruby("[席|せき]が[決|き]まったら[定|さだ]かにお[知|し]らせします。"),
+        translation: "Le avisaremos una vez que el asiento quede definido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "庭",
+    level: 3,
+    strokeCount: 10,
+    on: ["テイ"],
+    kun: ["にわ"],
+    meaning: "Jardín / patio",
+    examples: [
+      {
+        segments: ruby("[庭|にわ]に[花|はな]を[植|う]えました。"),
+        translation: "Planté flores en el jardín.",
+      },
+      {
+        segments: ruby("[広|ひろ]い[庭|にわ]がある[家|いえ]です。"),
+        translation: "Es una casa con un jardín amplio.",
+      },
+      {
+        segments: ruby("[庭|にわ]で[子|こ]どもが[遊|あそ]んでいます。"),
+        translation: "Los niños están jugando en el patio.",
+      },
+      {
+        segments: ruby("[家庭|かてい]での[時間|じかん]を[大切|たいせつ]にします。"),
+        translation: "Valoro el tiempo en familia.",
+      },
+      {
+        segments: ruby("[石|いし]の[多|おお]い[庭|にわ]がきれいです。"),
+        translation: "Es bonito el jardín con muchas piedras.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "笛",
+    level: 3,
+    strokeCount: 11,
+    on: ["テキ"],
+    kun: ["ふえ"],
+    meaning: "Flauta / silbato",
+    examples: [
+      {
+        segments: ruby("[笛|ふえ]の[音|おと]が[聞|き]こえます。"),
+        translation: "Se escucha el sonido de una flauta.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[笛|ふえ]を[吹|ふ]きました。"),
+        translation: "El profesor tocó el silbato.",
+      },
+      {
+        segments: ruby("[笛|ふえ]を[使|つか]って[合図|あいず]します。"),
+        translation: "Doy la señal usando un silbato.",
+      },
+      {
+        segments: ruby("[竹|たけ]で[笛|ふえ]をつくります。"),
+        translation: "Hago una flauta de bambú.",
+      },
+      {
+        segments: ruby("[笛|ふえ]の[練習|れんしゅう]をしています。"),
+        translation: "Estoy practicando la flauta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "鉄",
+    level: 3,
+    strokeCount: 13,
+    on: ["テツ"],
+    kun: [],
+    meaning: "Hierro",
+    examples: [
+      {
+        segments: ruby("[鉄|てつ]でできた[橋|はし]です。"),
+        translation: "Es un puente hecho de hierro.",
+      },
+      {
+        segments: ruby("[地下鉄|ちかてつ]で[学校|がっこう]へ[行|い]きます。"),
+        translation: "Voy a la escuela en metro.",
+      },
+      {
+        segments: ruby("[鉄道|てつどう]がこの[町|まち]を[通|とお]っています。"),
+        translation: "El ferrocarril pasa por esta ciudad.",
+      },
+      {
+        segments: ruby("[鉄|てつ]はとても[重|おも]いです。"),
+        translation: "El hierro es muy pesado.",
+      },
+      {
+        segments: ruby("[鉄橋|てっきょう]の[上|うえ]を[電車|でんしゃ]が[通|とお]ります。"),
+        translation: "El tren pasa por encima del puente de hierro.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "転",
+    level: 3,
+    strokeCount: 11,
+    on: ["テン"],
+    kun: ["ころ.ぶ", "ころ.がる"],
+    meaning: "Caer / girar / cambiar",
+    examples: [
+      {
+        segments: ruby("[自転車|じてんしゃ]で[学校|がっこう]へ[行|い]きます。"),
+        translation: "Voy a la escuela en bicicleta.",
+      },
+      {
+        segments: ruby("[石|いし]が[坂|さか]を[転|ころ]がりました。"),
+        translation: "La piedra rodó por la pendiente.",
+      },
+      {
+        segments: ruby("[道|みち]で[転|ころ]ばないように[気|き]をつけます。"),
+        translation: "Tengo cuidado de no caerme en el camino.",
+      },
+      {
+        segments: ruby("[転校生|てんこうせい]が[来|き]ました。"),
+        translation: "Llegó un estudiante transferido.",
+      },
+      {
+        segments: ruby("[気持|きも]ちを[転換|てんかん]したいです。"),
+        translation: "Quiero cambiar de ánimo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "都",
+    level: 3,
+    strokeCount: 11,
+    on: ["ト", "ツ"],
+    kun: ["みやこ"],
+    meaning: "Capital / metrópoli",
+    examples: [
+      {
+        segments: ruby("[東京都|とうきょうと]に[住|す]んでいます。"),
+        translation: "Vivo en Tokio metropolitano.",
+      },
+      {
+        segments: ruby("[京都|きょうと]は[歴史|れきし]のある[都|みやこ]です。"),
+        translation: "Kioto es una capital histórica.",
+      },
+      {
+        segments: ruby("[都会|とかい]の[生活|せいかつ]はにぎやかです。"),
+        translation: "La vida en la ciudad es animada.",
+      },
+      {
+        segments: ruby("[都心|としん]へ[買|か]い[物|もの]に[行|い]きます。"),
+        translation: "Voy de compras al centro de la ciudad.",
+      },
+      {
+        segments: ruby("[都合|つごう]のいい[時間|じかん]を[教|おし]えてください。"),
+        translation: "Por favor, indíqueme un horario conveniente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "度",
+    level: 3,
+    strokeCount: 9,
+    on: ["ド", "ト", "タク"],
+    kun: ["たび"],
+    meaning: "Grado / vez / ocasión",
+    examples: [
+      {
+        segments: ruby("[今度|こんど]いっしょに[行|い]きましょう。"),
+        translation: "La próxima vez vayamos juntos.",
+      },
+      {
+        segments: ruby("[一度|いちど]この[本|ほん]を[読|よ]んでください。"),
+        translation: "Por favor, lea este libro una vez.",
+      },
+      {
+        segments: ruby("[何度|なんど]も[練習|れんしゅう]しました。"),
+        translation: "Practiqué muchas veces.",
+      },
+      {
+        segments: ruby("きょうは三十[度|ど]くらいあります。"),
+        translation: "Hoy hay alrededor de 30 grados.",
+      },
+      {
+        segments: ruby("[支度|したく]ができたら[出|で]かけます。"),
+        translation: "Salgo cuando ya esté preparado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "投",
+    level: 3,
+    strokeCount: 7,
+    on: ["トウ"],
+    kun: ["な.げる"],
+    meaning: "Lanzar / arrojar",
+    examples: [
+      {
+        segments: ruby("ボールを[投|な]げます。"),
+        translation: "Lanzo la pelota.",
+      },
+      {
+        segments: ruby("[手紙|てがみ]をポストに[投|とう][函|かん]します。"),
+        translation: "Echo la carta en el buzón.",
+      },
+      {
+        segments: ruby("[石|いし]を[川|かわ]に[投|な]げました。"),
+        translation: "Lancé una piedra al río.",
+      },
+      {
+        segments: ruby("[試合|しあい]でボールをうまく[投|な]げられました。"),
+        translation: "Pude lanzar bien la pelota en el partido.",
+      },
+      {
+        segments: ruby("[投票|とうひょう]の[日|ひ]を[確認|かくにん]します。"),
+        translation: "Confirmo el día de la votación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "豆",
+    level: 3,
+    strokeCount: 7,
+    on: ["トウ", "ズ"],
+    kun: ["まめ"],
+    meaning: "Poroto / haba / grano",
+    examples: [
+      {
+        segments: ruby("[豆|まめ]を[煮|に]ます。"),
+        translation: "Cocino porotos.",
+      },
+      {
+        segments: ruby("[豆腐|とうふ]を[食|た]べます。"),
+        translation: "Como tofu.",
+      },
+      {
+        segments: ruby("[赤|あか]い[豆|まめ]を[使|つか]います。"),
+        translation: "Uso porotos rojos.",
+      },
+      {
+        segments: ruby("[納豆|なっとう]が[好|す]きです。"),
+        translation: "Me gusta el natto.",
+      },
+      {
+        segments: ruby("[豆|まめ]の[数|かず]を[数|かぞ]えます。"),
+        translation: "Cuento la cantidad de granos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "島",
+    level: 3,
+    strokeCount: 10,
+    on: ["トウ"],
+    kun: ["しま"],
+    meaning: "Isla",
+    examples: [
+      {
+        segments: ruby("[小|ちい]さな[島|しま]へ[船|ふね]で[行|い]きます。"),
+        translation: "Voy en barco a una isla pequeña.",
+      },
+      {
+        segments: ruby("[島|しま]の[海|うみ]はとてもきれいです。"),
+        translation: "El mar de la isla es muy bonito.",
+      },
+      {
+        segments: ruby("[島国|しまぐに]の[文化|ぶんか]を[学|まな]びます。"),
+        translation: "Estudio la cultura de los países insulares.",
+      },
+      {
+        segments: ruby("[無人島|むじんとう]の[話|はなし]を[読|よ]みました。"),
+        translation: "Leí una historia sobre una isla desierta.",
+      },
+      {
+        segments: ruby("[島|しま]で[夕日|ゆうひ]を[見|み]ました。"),
+        translation: "Vi el atardecer en la isla.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+      char: "湯",
+      level: 3,
+      strokeCount: 12,
+      on: ["トウ"],
+      kun: ["ゆ"],
+      meaning: "Agua caliente / agua termal",
+      examples: [
+        {
+          segments: ruby("[熱|あつ]い[湯|ゆ]に[気|き]をつけてください。"),
+          translation: "Por favor, tenga cuidado con el agua caliente.",
+        },
+        {
+          segments: ruby("[湯|ゆ]をわかしてお[茶|ちゃ]をいれます。"),
+          translation: "Hiervo agua y preparo té.",
+        },
+        {
+          segments: ruby("[温泉|おんせん]の[湯|ゆ]がとてもきもちいいです。"),
+          translation: "El agua termal se siente muy bien.",
+        },
+        {
+          segments: ruby("[風呂|ふろ]に[湯|ゆ]をいれます。"),
+          translation: "Pongo agua caliente en la bañera.",
+        },
+        {
+          segments: ruby("[湯気|ゆげ]がたくさんでています。"),
+          translation: "Está saliendo mucho vapor.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "登",
+      level: 3,
+      strokeCount: 12,
+      on: ["トウ", "ト"],
+      kun: ["のぼ.る"],
+      meaning: "Subir / ascender",
+      examples: [
+        {
+          segments: ruby("[山|やま]に[登|のぼ]ります。"),
+          translation: "Subo la montaña.",
+        },
+        {
+          segments: ruby("[階段|かいだん]をゆっくり[登|のぼ]ってください。"),
+          translation: "Por favor, suba las escaleras lentamente.",
+        },
+        {
+          segments: ruby("[朝|あさ][早|はや]く[山頂|さんちょう]まで[登|のぼ]りました。"),
+          translation: "Subí hasta la cima temprano en la mañana.",
+        },
+        {
+          segments: ruby("[登校|とうこう]の[時間|じかん]です。"),
+          translation: "Es la hora de ir a la escuela.",
+        },
+        {
+          segments: ruby("[日|ひ]が[山|やま]のうえに[登|のぼ]ります。"),
+          translation: "El sol asciende sobre la montaña.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "等",
+      level: 3,
+      strokeCount: 12,
+      on: ["トウ"],
+      kun: ["ひと.しい"],
+      meaning: "Igual / etcétera / clase",
+      examples: [
+        {
+          segments: ruby("[一等賞|いっとうしょう]をもらいました。"),
+          translation: "Recibí el primer premio.",
+        },
+        {
+          segments: ruby("[友達|ともだち][等|など]と[公園|こうえん]へ[行|い]きます。"),
+          translation: "Voy al parque con amigos, entre otros.",
+        },
+        {
+          segments: ruby("[点数|てんすう]がほとんど[等|ひと]しいです。"),
+          translation: "Los puntajes son casi iguales.",
+        },
+        {
+          segments: ruby("[高等学校|こうとうがっこう]についてしらべます。"),
+          translation: "Investigo sobre la escuela secundaria superior.",
+        },
+        {
+          segments: ruby("[同|おな]じ[等級|とうきゅう]の[品物|しなもの]です。"),
+          translation: "Es un producto de la misma categoría.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "動",
+      level: 3,
+      strokeCount: 11,
+      on: ["ドウ"],
+      kun: ["うご.く", "うご.かす"],
+      meaning: "Moverse / mover",
+      examples: [
+        {
+          segments: ruby("[車|くるま]がゆっくり[動|うご]いています。"),
+          translation: "El auto se está moviendo lentamente.",
+        },
+        {
+          segments: ruby("[机|つくえ]をこちらへ[動|うご]かしてください。"),
+          translation: "Por favor, mueva el escritorio hacia acá.",
+        },
+        {
+          segments: ruby("[動物|どうぶつ]が[好|す]きです。"),
+          translation: "Me gustan los animales.",
+        },
+        {
+          segments: ruby("[感動|かんどう]する[映画|えいが]でした。"),
+          translation: "Fue una película conmovedora.",
+        },
+        {
+          segments: ruby("[急|きゅう]に[動|うご]くとあぶないです。"),
+          translation: "Es peligroso moverse de repente.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "童",
+      level: 3,
+      strokeCount: 12,
+      on: ["ドウ"],
+      kun: [],
+      meaning: "Niño",
+      examples: [
+        {
+          segments: ruby("[児童|じどう]が[校庭|こうてい]で[遊|あそ]んでいます。"),
+          translation: "Los niños están jugando en el patio de la escuela.",
+        },
+        {
+          segments: ruby("[童話|どうわ]を[読|よ]むのが[好|す]きです。"),
+          translation: "Me gusta leer cuentos infantiles.",
+        },
+        {
+          segments: ruby("[児童館|じどうかん]へ[行|い]きました。"),
+          translation: "Fui al centro infantil.",
+        },
+        {
+          segments: ruby("[童話|どうわ]の[主人公|しゅじんこう]はやさしいです。"),
+          translation: "El protagonista del cuento infantil es amable.",
+        },
+        {
+          segments: ruby("[児童|じどう]の[安全|あんぜん]が[大切|たいせつ]です。"),
+          translation: "La seguridad de los niños es importante.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "農",
+      level: 3,
+      strokeCount: 13,
+      on: ["ノウ"],
+      kun: [],
+      meaning: "Agricultura",
+      examples: [
+        {
+          segments: ruby("[農家|のうか]で[野菜|やさい]をつくります。"),
+          translation: "En la granja se cultivan verduras.",
+        },
+        {
+          segments: ruby("[農業|のうぎょう]について[学|まな]びます。"),
+          translation: "Estudio sobre agricultura.",
+        },
+        {
+          segments: ruby("[農村|のうそん]はしずかで[空気|くうき]がきれいです。"),
+          translation: "El pueblo agrícola es tranquilo y el aire está limpio.",
+        },
+        {
+          segments: ruby("[農場|のうじょう]で[牛|うし]を[見|み]ました。"),
+          translation: "Vi vacas en la granja.",
+        },
+        {
+          segments: ruby("[日本|にほん]の[農産物|のうさんぶつ]はおいしいです。"),
+          translation: "Los productos agrícolas de Japón son deliciosos.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "波",
+      level: 3,
+      strokeCount: 8,
+      on: ["ハ"],
+      kun: ["なみ"],
+      meaning: "Ola",
+      examples: [
+        {
+          segments: ruby("[海|うみ]の[波|なみ]がおおきいです。"),
+          translation: "Las olas del mar son grandes.",
+        },
+        {
+          segments: ruby("[波|なみ]の[音|おと]を[聞|き]くとおちつきます。"),
+          translation: "Escuchar el sonido de las olas me tranquiliza.",
+        },
+        {
+          segments: ruby("[高|たか]い[波|なみ]に[気|き]をつけてください。"),
+          translation: "Por favor, tenga cuidado con las olas altas.",
+        },
+        {
+          segments: ruby("[電波|でんぱ]がよわいです。"),
+          translation: "La señal es débil.",
+        },
+        {
+          segments: ruby("[波|なみ]が[砂浜|すなはま]まで[来|き]ました。"),
+          translation: "La ola llegó hasta la playa.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "配",
+      level: 3,
+      strokeCount: 10,
+      on: ["ハイ"],
+      kun: ["くば.る"],
+      meaning: "Distribuir / repartir",
+      examples: [
+        {
+          segments: ruby("[先生|せんせい]がプリントを[配|くば]ります。"),
+          translation: "El profesor reparte las hojas.",
+        },
+        {
+          segments: ruby("[心配|しんぱい]しないでください。"),
+          translation: "Por favor, no se preocupe.",
+        },
+        {
+          segments: ruby("[牛乳|ぎゅうにゅう]をみんなに[配|くば]ります。"),
+          translation: "Reparto leche a todos.",
+        },
+        {
+          segments: ruby("[配達|はいたつ]の[人|ひと]が[来|き]ました。"),
+          translation: "Llegó la persona del reparto.",
+        },
+        {
+          segments: ruby("[気|き]を[配|くば]ることが[大切|たいせつ]です。"),
+          translation: "Es importante estar atento y considerar a los demás.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "倍",
+      level: 3,
+      strokeCount: 10,
+      on: ["バイ"],
+      kun: [],
+      meaning: "Doble / veces",
+      examples: [
+        {
+          segments: ruby("[二|に][倍|ばい]の[大|おお]きさです。"),
+          translation: "Es del doble de tamaño.",
+        },
+        {
+          segments: ruby("きょうはいつもの[倍|ばい][勉強|べんきょう]しました。"),
+          translation: "Hoy estudié el doble que siempre.",
+        },
+        {
+          segments: ruby("[三倍|さんばい]の[速|はや]さで[進|すす]みます。"),
+          translation: "Avanzamos a triple velocidad.",
+        },
+        {
+          segments: ruby("[給料|きゅうりょう]が[前|まえ]の[倍|ばい]になりました。"),
+          translation: "Mi sueldo se volvió el doble que antes.",
+        },
+        {
+          segments: ruby("[何|なん][倍|ばい]くらい[広|ひろ]いですか。"),
+          translation: "¿Aproximadamente cuántas veces más grande es?",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "箱",
+      level: 3,
+      strokeCount: 15,
+      on: ["ソウ"],
+      kun: ["はこ"],
+      meaning: "Caja",
+      examples: [
+        {
+          segments: ruby("[箱|はこ]の[中|なか]に[本|ほん]があります。"),
+          translation: "Hay libros dentro de la caja.",
+        },
+        {
+          segments: ruby("[重|おも]い[箱|はこ]を[運|はこ]びます。"),
+          translation: "Transporto una caja pesada.",
+        },
+        {
+          segments: ruby("[赤|あか]い[箱|はこ]を[開|あ]けてください。"),
+          translation: "Por favor, abra la caja roja.",
+        },
+        {
+          segments: ruby("[道具箱|どうぐばこ]を[机|つくえ]のしたにおきます。"),
+          translation: "Pongo la caja de herramientas debajo del escritorio.",
+        },
+        {
+          segments: ruby("[空|から]の[箱|はこ]をかたづけます。"),
+          translation: "Ordeno la caja vacía.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "畑",
+      level: 3,
+      strokeCount: 9,
+      on: [],
+      kun: ["はたけ"],
+      meaning: "Huerto / campo cultivado",
+      examples: [
+        {
+          segments: ruby("[畑|はたけ]でトマトをそだてます。"),
+          translation: "Cultivo tomates en el huerto.",
+        },
+        {
+          segments: ruby("[祖父|そふ]は[畑|はたけ]ではたらいています。"),
+          translation: "Mi abuelo trabaja en el campo cultivado.",
+        },
+        {
+          segments: ruby("[広|ひろ]い[畑|はたけ]がつづいています。"),
+          translation: "Se extienden grandes campos cultivados.",
+        },
+        {
+          segments: ruby("[畑|はたけ]の[野菜|やさい]はしんせんです。"),
+          translation: "Las verduras del huerto son frescas.",
+        },
+        {
+          segments: ruby("[学校|がっこう]の[畑|はたけ]でいもをそだてます。"),
+          translation: "Cultivamos papas en el huerto de la escuela.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "発",
+      level: 3,
+      strokeCount: 9,
+      on: ["ハツ", "ホツ"],
+      kun: [],
+      meaning: "Partir / emitir / surgir",
+      examples: [
+        {
+          segments: ruby("[電車|でんしゃ]は九[時|じ]に[発|はつ][車|しゃ]します。"),
+          translation: "El tren parte a las nueve.",
+        },
+        {
+          segments: ruby("[発音|はつおん]をよく[練習|れんしゅう]します。"),
+          translation: "Practico bien la pronunciación.",
+        },
+        {
+          segments: ruby("[元気|げんき]な[声|こえ]で[発表|はっぴょう]してください。"),
+          translation: "Por favor, exponga con voz enérgica.",
+        },
+        {
+          segments: ruby("[新|あたら]しいアイデアが[発|はっ]せいしました。"),
+          translation: "Surgió una idea nueva.",
+        },
+        {
+          segments: ruby("[出発|しゅっぱつ]の[時間|じかん]を[確認|かくにん]します。"),
+          translation: "Confirmo la hora de salida.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "反",
+      level: 3,
+      strokeCount: 4,
+      on: ["ハン", "タン"],
+      kun: ["そ.る"],
+      meaning: "Opuesto / contrario / anti",
+      examples: [
+        {
+          segments: ruby("[反対|はんたい]の[方向|ほうこう]へ[行|い]きました。"),
+          translation: "Fui en la dirección opuesta.",
+        },
+        {
+          segments: ruby("[反復|はんぷく]して[練習|れんしゅう]します。"),
+          translation: "Practico repitiendo una y otra vez.",
+        },
+        {
+          segments: ruby("[反省|はんせい]してつぎは[気|き]をつけます。"),
+          translation: "Reflexiono sobre ello y la próxima vez tendré cuidado.",
+        },
+        {
+          segments: ruby("[板|いた]が[少|すこ]し[反|そ]っています。"),
+          translation: "La tabla está un poco curvada.",
+        },
+        {
+          segments: ruby("[反応|はんのう]がはやいですね。"),
+          translation: "Su reacción es rápida.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "坂",
+      level: 3,
+      strokeCount: 7,
+      on: [],
+      kun: ["さか"],
+      meaning: "Pendiente / cuesta",
+      examples: [
+        {
+          segments: ruby("[坂|さか]をのぼるのはたいへんです。"),
+          translation: "Subir la pendiente es duro.",
+        },
+        {
+          segments: ruby("[急|きゅう]な[坂|さか]に[気|き]をつけてください。"),
+          translation: "Por favor, tenga cuidado con la pendiente empinada.",
+        },
+        {
+          segments: ruby("[坂道|さかみち]をじてんしゃでくだります。"),
+          translation: "Bajo por la cuesta en bicicleta.",
+        },
+        {
+          segments: ruby("[この[坂|さか]のうえに[学校|がっこう]があります。"),
+          translation: "Arriba de esta cuesta está la escuela.",
+        },
+        {
+          segments: ruby("[雨|あめ]の[日|ひ]は[坂|さか]がすべりやすいです。"),
+          translation: "En los días de lluvia la pendiente resbala fácilmente.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "板",
+      level: 3,
+      strokeCount: 8,
+      on: ["ハン", "バン"],
+      kun: ["いた"],
+      meaning: "Tabla / plancha",
+      examples: [
+        {
+          segments: ruby("[板|いた]で[棚|たな]をつくります。"),
+          translation: "Hago un estante con tablas.",
+        },
+        {
+          segments: ruby("[黒板|こくばん]に[字|じ]を[書|か]きます。"),
+          translation: "Escribo letras en la pizarra.",
+        },
+        {
+          segments: ruby("[木|き]の[板|いた]が[長|なが]いです。"),
+          translation: "La tabla de madera es larga.",
+        },
+        {
+          segments: ruby("[看板|かんばん]をよく[見|み]てください。"),
+          translation: "Por favor, mire bien el letrero.",
+        },
+        {
+          segments: ruby("[板|いた]のうえに[本|ほん]をおきます。"),
+          translation: "Pongo el libro sobre la tabla.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "皮",
+      level: 3,
+      strokeCount: 5,
+      on: ["ヒ"],
+      kun: ["かわ"],
+      meaning: "Piel / cáscara",
+      examples: [
+        {
+          segments: ruby("りんごの[皮|かわ]をむきます。"),
+          translation: "Pelo la cáscara de la manzana.",
+        },
+        {
+          segments: ruby("[手|て]の[皮|かわ]がかわいています。"),
+          translation: "La piel de la mano está reseca.",
+        },
+        {
+          segments: ruby("[皮|かわ]のかばんをつかっています。"),
+          translation: "Uso un bolso de cuero.",
+        },
+        {
+          segments: ruby("バナナの[皮|かわ]をすててください。"),
+          translation: "Por favor, bote la cáscara de plátano.",
+        },
+        {
+          segments: ruby("[木|き]の[皮|かわ]があついです。"),
+          translation: "La corteza del árbol es gruesa.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "悲",
+      level: 3,
+      strokeCount: 12,
+      on: ["ヒ"],
+      kun: ["かな.しい"],
+      meaning: "Triste",
+      examples: [
+        {
+          segments: ruby("[悲|かな]しいニュースを[聞|き]きました。"),
+          translation: "Escuché una noticia triste.",
+        },
+        {
+          segments: ruby("[悲|かな]しい[映画|えいが]で[泣|な]きました。"),
+          translation: "Lloré con una película triste.",
+        },
+        {
+          segments: ruby("[友達|ともだち]がいなくて[悲|かな]しかったです。"),
+          translation: "Me sentí triste porque mi amigo no estaba.",
+        },
+        {
+          segments: ruby("[悲|かな]しまないでください。"),
+          translation: "Por favor, no se ponga triste.",
+        },
+        {
+          segments: ruby("[悲劇|ひげき]について[勉強|べんきょう]しました。"),
+          translation: "Estudié sobre una tragedia.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "美",
+      level: 3,
+      strokeCount: 9,
+      on: ["ビ", "ミ"],
+      kun: ["うつく.しい"],
+      meaning: "Bello / hermoso",
+      examples: [
+        {
+          segments: ruby("[美|うつく]しい[花|はな]ですね。"),
+          translation: "Es una flor hermosa.",
+        },
+        {
+          segments: ruby("[景色|けしき]がとても[美|うつく]しいです。"),
+          translation: "El paisaje es muy hermoso.",
+        },
+        {
+          segments: ruby("[美術館|びじゅつかん]へ[行|い]きました。"),
+          translation: "Fui al museo de arte.",
+        },
+        {
+          segments: ruby("[美人|びじん]ということばを[習|なら]いました。"),
+          translation: "Aprendí la palabra que significa persona hermosa.",
+        },
+        {
+          segments: ruby("[心|こころ]の[美|うつく]しい[人|ひと]です。"),
+          translation: "Es una persona de corazón hermoso.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "鼻",
+      level: 3,
+      strokeCount: 14,
+      on: ["ビ"],
+      kun: ["はな"],
+      meaning: "Nariz",
+      examples: [
+        {
+          segments: ruby("[鼻|はな]がつまっています。"),
+          translation: "Tengo la nariz tapada.",
+        },
+        {
+          segments: ruby("[花|はな]のにおいを[鼻|はな]でかぎます。"),
+          translation: "Huelo el aroma de la flor con la nariz.",
+        },
+        {
+          segments: ruby("[犬|いぬ]は[鼻|はな]がいいです。"),
+          translation: "Los perros tienen buen olfato.",
+        },
+        {
+          segments: ruby("[鼻水|はなみず]がでるのでティッシュをつかいます。"),
+          translation: "Me sale moquito, así que uso un pañuelo.",
+        },
+        {
+          segments: ruby("[鼻|はな]をつよくさわらないでください。"),
+          translation: "Por favor, no se toque la nariz con fuerza.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+      char: "筆",
+      level: 3,
+      strokeCount: 12,
+      on: ["ヒツ"],
+      kun: ["ふで"],
+      meaning: "Pincel / escribir",
+      examples: [
+        {
+          segments: ruby("[筆|ふで]で[字|じ]を[書|か]きます。"),
+          translation: "Escribo caracteres con pincel.",
+        },
+        {
+          segments: ruby("[筆箱|ふでばこ]を[机|つくえ]のうえにおきます。"),
+          translation: "Pongo el estuche sobre el escritorio.",
+        },
+        {
+          segments: ruby("[毛筆|もうひつ]の[練習|れんしゅう]をしています。"),
+          translation: "Estoy practicando caligrafía con pincel.",
+        },
+        {
+          segments: ruby("[筆|ふで]の[先|さき]がやわらかいです。"),
+          translation: "La punta del pincel es suave.",
+        },
+        {
+          segments: ruby("[筆者|ひっしゃ]の[考|かんが]えをよみとります。"),
+          translation: "Comprendo la idea del autor.",
+        },
+      ],
+      hasSvg: false,
+    },
+    {
+    char: "氷",
+    level: 3,
+    strokeCount: 5,
+    on: ["ヒョウ"],
+    kun: ["こおり", "ひ"],
+    meaning: "Hielo",
+    examples: [
+      {
+        segments: ruby("[水|みず]が[氷|こおり]になりました。"),
+        translation: "El agua se convirtió en hielo.",
+      },
+      {
+        segments: ruby("[氷|こおり]をコップにいれます。"),
+        translation: "Pongo hielo en el vaso.",
+      },
+      {
+        segments: ruby("[冬|ふゆ]の[朝|あさ]は[池|いけ]に[氷|こおり]がはります。"),
+        translation: "En las mañanas de invierno se forma hielo en el estanque.",
+      },
+      {
+        segments: ruby("[氷水|こおりみず]で[手|て]をひやします。"),
+        translation: "Enfrío mis manos con agua helada.",
+      },
+      {
+        segments: ruby("[氷|こおり]はつめたくてすべりやすいです。"),
+        translation: "El hielo es frío y resbaladizo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "表",
+    level: 3,
+    strokeCount: 8,
+    on: ["ヒョウ"],
+    kun: ["おもて", "あらわ.す"],
+    meaning: "Superficie / tabla / expresar",
+    examples: [
+      {
+        segments: ruby("[時間割表|じかんわりひょう]を[見|み]てください。"),
+        translation: "Por favor, mire el horario.",
+      },
+      {
+        segments: ruby("[表|おもて]に[名前|なまえ]を[書|か]きます。"),
+        translation: "Escribo el nombre en la parte delantera.",
+      },
+      {
+        segments: ruby("[気持|きも]ちをことばで[表|あらわ]します。"),
+        translation: "Expreso mis sentimientos con palabras.",
+      },
+      {
+        segments: ruby("[発表|はっぴょう]の[時間|じかん]になりました。"),
+        translation: "Llegó la hora de la presentación.",
+      },
+      {
+        segments: ruby("[駅|えき]の[前|まえ]に[地図|ちず]の[表|ひょう]があります。"),
+        translation: "Frente a la estación hay un panel con un mapa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "秒",
+    level: 3,
+    strokeCount: 9,
+    on: ["ビョウ"],
+    kun: [],
+    meaning: "Segundo",
+    examples: [
+      {
+        segments: ruby("[一|いち][分|ふん]は六十[秒|びょう]です。"),
+        translation: "Un minuto son sesenta segundos.",
+      },
+      {
+        segments: ruby("[十|じゅう][秒|びょう]まってください。"),
+        translation: "Por favor, espere diez segundos.",
+      },
+      {
+        segments: ruby("[秒針|びょうしん]がうごいています。"),
+        translation: "La aguja de los segundos está moviéndose.",
+      },
+      {
+        segments: ruby("[五|ご][秒|びょう]で[答|こた]えてください。"),
+        translation: "Por favor, responda en cinco segundos.",
+      },
+      {
+        segments: ruby("[一|いち][秒|びょう]でも[早|はや]く[走|はし]りたいです。"),
+        translation: "Quiero correr aunque sea un segundo más rápido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "病",
+    level: 3,
+    strokeCount: 10,
+    on: ["ビョウ"],
+    kun: ["や.む", "やまい"],
+    meaning: "Enfermedad / enfermarse",
+    examples: [
+      {
+        segments: ruby("[病気|びょうき]なので[学校|がっこう]を[休|やす]みます。"),
+        translation: "Como estoy enfermo, faltaré a la escuela.",
+      },
+      {
+        segments: ruby("[病院|びょういん]へ[行|い]きました。"),
+        translation: "Fui al hospital.",
+      },
+      {
+        segments: ruby("[重|おも]い[病|やまい]ではありません。"),
+        translation: "No es una enfermedad grave.",
+      },
+      {
+        segments: ruby("[風邪|かぜ]で[三日|みっか][間|かん][病|や]みました。"),
+        translation: "Estuve enfermo tres días por un resfriado.",
+      },
+      {
+        segments: ruby("[病室|びょうしつ]でしずかにしてください。"),
+        translation: "Por favor, guarde silencio en la habitación del hospital.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "品",
+    level: 3,
+    strokeCount: 9,
+    on: ["ヒン"],
+    kun: ["しな"],
+    meaning: "Artículo / producto / calidad",
+    examples: [
+      {
+        segments: ruby("[店|みせ]で[新|あたら]しい[品物|しなもの]を[見|み]ました。"),
+        translation: "Vi productos nuevos en la tienda.",
+      },
+      {
+        segments: ruby("[上品|じょうひん]なことばづかいですね。"),
+        translation: "Su forma de hablar es elegante.",
+      },
+      {
+        segments: ruby("[商品|しょうひん]をたなにならべます。"),
+        translation: "Coloco los productos en el estante.",
+      },
+      {
+        segments: ruby("[品|しな]の[数|かず]をたしかめてください。"),
+        translation: "Por favor, verifique la cantidad de artículos.",
+      },
+      {
+        segments: ruby("[食料品|しょくりょうひん]を[買|か]いに[行|い]きます。"),
+        translation: "Voy a comprar alimentos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "負",
+    level: 3,
+    strokeCount: 9,
+    on: ["フ"],
+    kun: ["ま.ける", "お.う"],
+    meaning: "Perder / cargar / llevar",
+    examples: [
+      {
+        segments: ruby("[試合|しあい]に[負|ま]けました。"),
+        translation: "Perdí el partido.",
+      },
+      {
+        segments: ruby("[重|おも]いにもつを[背負|せお]っています。"),
+        translation: "Lleva una carga pesada en la espalda.",
+      },
+      {
+        segments: ruby("[負担|ふたん]をへらすことが[大切|たいせつ]です。"),
+        translation: "Es importante reducir la carga.",
+      },
+      {
+        segments: ruby("[強|つよ]いチームにも[負|ま]けないようにがんばります。"),
+        translation: "Me esforzaré para no perder contra un equipo fuerte.",
+      },
+      {
+        segments: ruby("[責任|せきにん]を[負|お]う[立場|たちば]です。"),
+        translation: "Es una posición que conlleva responsabilidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "部",
+    level: 3,
+    strokeCount: 11,
+    on: ["ブ"],
+    kun: [],
+    meaning: "Sección / club / parte",
+    examples: [
+      {
+        segments: ruby("[部屋|へや]をきれいにします。"),
+        translation: "Limpio la habitación.",
+      },
+      {
+        segments: ruby("[部活|ぶかつ]でバスケットボールをしています。"),
+        translation: "Practico básquetbol en el club escolar.",
+      },
+      {
+        segments: ruby("[一部|いちぶ]だけ[読|よ]みました。"),
+        translation: "Leí solo una parte.",
+      },
+      {
+        segments: ruby("[全部|ぜんぶ]ではなくこの[部分|ぶぶん]だけです。"),
+        translation: "No es todo, solo esta parte.",
+      },
+      {
+        segments: ruby("[文学部|ぶんがくぶ]で[勉強|べんきょう]しています。"),
+        translation: "Estudio en la facultad de literatura.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "服",
+    level: 3,
+    strokeCount: 8,
+    on: ["フク"],
+    kun: [],
+    meaning: "Ropa",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[服|ふく]を[買|か]いました。"),
+        translation: "Compré ropa nueva.",
+      },
+      {
+        segments: ruby("[冬|ふゆ]の[服|ふく]を[出|だ]します。"),
+        translation: "Saco la ropa de invierno.",
+      },
+      {
+        segments: ruby("[制服|せいふく]を[着|き]て[学校|がっこう]へ[行|い]きます。"),
+        translation: "Voy a la escuela con uniforme.",
+      },
+      {
+        segments: ruby("[服|ふく]がぬれたので[着替|きが]えます。"),
+        translation: "Como la ropa se mojó, me cambio.",
+      },
+      {
+        segments: ruby("[白|しろ]い[服|ふく]がよくにあいます。"),
+        translation: "La ropa blanca le queda bien.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "福",
+    level: 3,
+    strokeCount: 13,
+    on: ["フク"],
+    kun: [],
+    meaning: "Fortuna / felicidad",
+    examples: [
+      {
+        segments: ruby("[幸福|こうふく]な[生活|せいかつ]を[願|ねが]っています。"),
+        translation: "Deseo una vida feliz.",
+      },
+      {
+        segments: ruby("[福|ふく]が[来|く]るようにいのります。"),
+        translation: "Rezo para que llegue la buena fortuna.",
+      },
+      {
+        segments: ruby("[福引|ふくびき]で[景品|けいひん]をもらいました。"),
+        translation: "Recibí un premio en una rifa.",
+      },
+      {
+        segments: ruby("[福岡|ふくおか]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Fukuoka.",
+      },
+      {
+        segments: ruby("[家族|かぞく]の[幸福|こうふく]がいちばん[大切|たいせつ]です。"),
+        translation: "La felicidad de la familia es lo más importante.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "物",
+    level: 3,
+    strokeCount: 8,
+    on: ["ブツ", "モツ"],
+    kun: ["もの"],
+    meaning: "Cosa / objeto",
+    examples: [
+      {
+        segments: ruby("[重|おも]い[物|もの]を[持|も]ちます。"),
+        translation: "Llevo un objeto pesado.",
+      },
+      {
+        segments: ruby("[食|た]べ[物|もの]を[買|か]いに[行|い]きます。"),
+        translation: "Voy a comprar comida.",
+      },
+      {
+        segments: ruby("[忘|わす]れ[物|もの]に[気|き]をつけてください。"),
+        translation: "Por favor, tenga cuidado de no olvidar sus cosas.",
+      },
+      {
+        segments: ruby("[動物|どうぶつ]が[好|す]きです。"),
+        translation: "Me gustan los animales.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[物|もの]はここにおきます。"),
+        translation: "Pongo aquí las cosas importantes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "平",
+    level: 3,
+    strokeCount: 5,
+    on: ["ヘイ", "ビョウ"],
+    kun: ["たい.ら", "ひら"],
+    meaning: "Plano / tranquilo / paz",
+    examples: [
+      {
+        segments: ruby("[平|たい]らな[道|みち]を[歩|ある]きます。"),
+        translation: "Camino por un camino plano.",
+      },
+      {
+        segments: ruby("[平日|へいじつ]は[仕事|しごと]があります。"),
+        translation: "En los días de semana tengo trabajo.",
+      },
+      {
+        segments: ruby("[平和|へいわ]はとても[大切|たいせつ]です。"),
+        translation: "La paz es muy importante.",
+      },
+      {
+        segments: ruby("[心|こころ]を[平|たい]らにして[話|はな]します。"),
+        translation: "Hablo manteniéndome calmado.",
+      },
+      {
+        segments: ruby("[平均|へいきん]てんをしらべます。"),
+        translation: "Reviso el puntaje promedio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "返",
+    level: 3,
+    strokeCount: 7,
+    on: ["ヘン"],
+    kun: ["かえ.す", "かえ.る"],
+    meaning: "Devolver / regresar",
+    examples: [
+      {
+        segments: ruby("[本|ほん]を[図書館|としょかん]へ[返|かえ]します。"),
+        translation: "Devuelvo el libro a la biblioteca.",
+      },
+      {
+        segments: ruby("[返事|へんじ]を[早|はや]くください。"),
+        translation: "Por favor, responda pronto.",
+      },
+      {
+        segments: ruby("[借|か]りたおかねはきちんと[返|かえ]します。"),
+        translation: "Devuelvo correctamente el dinero prestado.",
+      },
+      {
+        segments: ruby("[道|みち]をまちがえたので[引|ひ]き[返|かえ]しました。"),
+        translation: "Como me equivoqué de camino, regresé.",
+      },
+      {
+        segments: ruby("[質問|しつもん]にはあとで[返答|へんとう]します。"),
+        translation: "Responderé la pregunta más tarde.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "勉",
+    level: 3,
+    strokeCount: 10,
+    on: ["ベン"],
+    kun: [],
+    meaning: "Esfuerzo / estudio",
+    examples: [
+      {
+        segments: ruby("[毎日|まいにち][勉強|べんきょう]します。"),
+        translation: "Estudio todos los días.",
+      },
+      {
+        segments: ruby("[試験|しけん]のためにもっと[勉強|べんきょう]します。"),
+        translation: "Estudiaré más para el examen.",
+      },
+      {
+        segments: ruby("[勉学|べんがく]に[励|はげ]みます。"),
+        translation: "Me dedico con esfuerzo al estudio.",
+      },
+      {
+        segments: ruby("[友達|ともだち]といっしょに[勉強|べんきょう]するとたのしいです。"),
+        translation: "Es divertido estudiar junto con amigos.",
+      },
+      {
+        segments: ruby("[勉強|べんきょう]したことをノートにまとめます。"),
+        translation: "Organizo en apuntes lo que estudié.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "放",
+    level: 3,
+    strokeCount: 8,
+    on: ["ホウ"],
+    kun: ["はな.す", "はな.つ"],
+    meaning: "Soltar / dejar / emitir",
+    examples: [
+      {
+        segments: ruby("[鳥|とり]を[空|そら]へ[放|はな]しました。"),
+        translation: "Solté al pájaro al cielo.",
+      },
+      {
+        segments: ruby("[放課後|ほうかご]に[図書館|としょかん]へ[行|い]きます。"),
+        translation: "Después de clases voy a la biblioteca.",
+      },
+      {
+        segments: ruby("[電気|でんき]をつけたまま[放|ほう]っておかないでください。"),
+        translation: "Por favor, no deje la luz encendida.",
+      },
+      {
+        segments: ruby("[話|はなし]を[放送|ほうそう]で[聞|き]きました。"),
+        translation: "Escuché el anuncio por la transmisión.",
+      },
+      {
+        segments: ruby("[犬|いぬ]をひとりで[放|はな]してはいけません。"),
+        translation: "No se debe dejar suelto al perro solo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "味",
+    level: 3,
+    strokeCount: 8,
+    on: ["ミ"],
+    kun: ["あじ"],
+    meaning: "Sabor / gusto",
+    examples: [
+      {
+        segments: ruby("このスープはいい[味|あじ]です。"),
+        translation: "Esta sopa tiene buen sabor.",
+      },
+      {
+        segments: ruby("[味見|あじみ]をしてからだします。"),
+        translation: "Lo pruebo antes de servirlo.",
+      },
+      {
+        segments: ruby("[日本|にほん]の[料理|りょうり]の[味|あじ]が[好|す]きです。"),
+        translation: "Me gusta el sabor de la comida japonesa.",
+      },
+      {
+        segments: ruby("[甘|あま]い[味|あじ]もからい[味|あじ]も[好|す]きです。"),
+        translation: "Me gustan tanto los sabores dulces como los picantes.",
+      },
+      {
+        segments: ruby("[意味|いみ]の[味|あじ]をよく[考|かんが]えます。"),
+        translation: "Pienso bien en el matiz del significado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "命",
+    level: 3,
+    strokeCount: 8,
+    on: ["メイ", "ミョウ"],
+    kun: ["いのち"],
+    meaning: "Vida / ordenar",
+    examples: [
+      {
+        segments: ruby("[命|いのち]を[大切|たいせつ]にしてください。"),
+        translation: "Por favor, cuide la vida.",
+      },
+      {
+        segments: ruby("[先生|せんせい]の[命令|めいれい]をよく[聞|き]きます。"),
+        translation: "Escucho bien la orden del profesor.",
+      },
+      {
+        segments: ruby("[生|い]き[物|もの]の[命|いのち]について[学|まな]びます。"),
+        translation: "Aprendo sobre la vida de los seres vivos.",
+      },
+      {
+        segments: ruby("[命|いのち]があることに[感謝|かんしゃ]します。"),
+        translation: "Agradezco el hecho de estar vivo.",
+      },
+      {
+        segments: ruby("[救命|きゅうめい]の[方法|ほうほう]をならいました。"),
+        translation: "Aprendí métodos de salvamento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "面",
+    level: 3,
+    strokeCount: 9,
+    on: ["メン"],
+    kun: ["おも", "つら"],
+    meaning: "Cara / superficie / aspecto",
+    examples: [
+      {
+        segments: ruby("[面白|おもしろ]い[本|ほん]を[読|よ]みました。"),
+        translation: "Leí un libro interesante.",
+      },
+      {
+        segments: ruby("[紙|かみ]の[表面|ひょうめん]に[字|じ]を[書|か]きます。"),
+        translation: "Escribo letras en la superficie del papel.",
+      },
+      {
+        segments: ruby("[正面|しょうめん]を[見|み]てください。"),
+        translation: "Por favor, mire de frente.",
+      },
+      {
+        segments: ruby("[面会|めんかい]の[時間|じかん]をまもります。"),
+        translation: "Respeto el horario de visita.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[面|めん]からこの[問題|もんだい]を[考|かんが]えます。"),
+        translation: "Pienso este problema desde un nuevo ángulo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "問",
+    level: 3,
+    strokeCount: 11,
+    on: ["モン"],
+    kun: ["と.う", "とい"],
+    meaning: "Pregunta / problema / preguntar",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]に[質問|しつもん]を[問|と]います。"),
+        translation: "Le hago una pregunta al profesor.",
+      },
+      {
+        segments: ruby("[問題|もんだい]をよく[読|よ]んでください。"),
+        translation: "Por favor, lea bien el problema.",
+      },
+      {
+        segments: ruby("[問|と]いの[答|こた]えをノートに[書|か]きます。"),
+        translation: "Escribo la respuesta de la pregunta en el cuaderno.",
+      },
+      {
+        segments: ruby("[問|もん][題|だい]が[難|むずか]しかったです。"),
+        translation: "El problema fue difícil.",
+      },
+      {
+        segments: ruby("[人間|にんげん]の[生|い]き[方|かた]を[問|と]う[本|ほん]です。"),
+        translation: "Es un libro que cuestiona la forma de vivir del ser humano.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "役",
+    level: 3,
+    strokeCount: 7,
+    on: ["ヤク", "エキ"],
+    kun: [],
+    meaning: "Papel / función / servicio",
+    examples: [
+      {
+        segments: ruby("[駅員|えきいん]の[人|ひと]に[道|みち]を[聞|き]きました。"),
+        translation: "Le pregunté el camino a un empleado de la estación.",
+      },
+      {
+        segments: ruby("[役目|やくめ]をしっかりはたします。"),
+        translation: "Cumplo bien mi función.",
+      },
+      {
+        segments: ruby("[主役|しゅやく]はその[人|ひと]です。"),
+        translation: "La persona principal es esa.",
+      },
+      {
+        segments: ruby("[役所|やくしょ]へ[書類|しょるい]を[出|だ]しに[行|い]きます。"),
+        translation: "Voy a la municipalidad a entregar documentos.",
+      },
+      {
+        segments: ruby("[社会|しゃかい]で[役|やく]に[立|た]つ[人|ひと]になりたいです。"),
+        translation: "Quiero convertirme en alguien útil para la sociedad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "薬",
+    level: 3,
+    strokeCount: 16,
+    on: ["ヤク"],
+    kun: ["くすり"],
+    meaning: "Medicina",
+    examples: [
+      {
+        segments: ruby("[薬|くすり]をのんでやすみます。"),
+        translation: "Tomo medicina y descanso.",
+      },
+      {
+        segments: ruby("[病院|びょういん]で[薬|くすり]をもらいました。"),
+        translation: "Recibí medicina en el hospital.",
+      },
+      {
+        segments: ruby("[食後|しょくご]に[薬|くすり]をのんでください。"),
+        translation: "Por favor, tome la medicina después de comer.",
+      },
+      {
+        segments: ruby("[薬局|やっきょく]で[風邪薬|かぜぐすり]を[買|か]います。"),
+        translation: "Compro medicina para el resfriado en la farmacia.",
+      },
+      {
+        segments: ruby("[薬|くすり]の[説明|せつめい]をよく[読|よ]みます。"),
+        translation: "Leo bien las instrucciones de la medicina.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "由",
+    level: 3,
+    strokeCount: 5,
+    on: ["ユ", "ユウ", "ユイ"],
+    kun: ["よし"],
+    meaning: "Razón / motivo / origen",
+    examples: [
+      {
+        segments: ruby("[理|り][由|ゆう]を[教|おし]えてください。"),
+        translation: "Por favor, dime la razón.",
+      },
+      {
+        segments: ruby("[自|じ][由|ゆう]な[時|じ][間|かん]があります。"),
+        translation: "Tengo tiempo libre.",
+      },
+      {
+        segments: ruby("[由|ゆ][来|らい]を[調|しら]べます。"),
+        translation: "Investigo el origen.",
+      },
+      {
+        segments: ruby("[欠|けっ][席|せき]の[理|り][由|ゆう]を[先|せん][生|せい]に[話|はな]します。"),
+        translation: "Le explico al profesor la razón de mi ausencia.",
+      },
+      {
+        segments: ruby("[理|り][由|ゆう]がわかってあんしんしました。"),
+        translation: "Me tranquilicé al entender la razón.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "油",
+    level: 3,
+    strokeCount: 8,
+    on: ["ユ"],
+    kun: ["あぶら"],
+    meaning: "Aceite",
+    examples: [
+      {
+        segments: ruby("[油|あぶら]で[野|や][菜|さい]をいためます。"),
+        translation: "Salteo verduras con aceite.",
+      },
+      {
+        segments: ruby("[油|あぶら]がはねないように[気|き]をつけます。"),
+        translation: "Tengo cuidado para que el aceite no salpique.",
+      },
+      {
+        segments: ruby("[油|あぶら]を[少|すこ]しだけ[入|い]れてください。"),
+        translation: "Por favor, agrega solo un poco de aceite.",
+      },
+      {
+        segments: ruby("[石|せき][油|ゆ]について[勉|べん][強|きょう]しました。"),
+        translation: "Estudié sobre el petróleo.",
+      },
+      {
+        segments: ruby("[油|あぶら]のにおいが[台|だい][所|どころ]にのこっています。"),
+        translation: "El olor a aceite quedó en la cocina.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "有",
+    level: 3,
+    strokeCount: 6,
+    on: ["ユウ", "ウ"],
+    kun: ["あ.る"],
+    meaning: "Tener / existir",
+    examples: [
+      {
+        segments: ruby("[有|ゆう][名|めい]な[寺|てら]です。"),
+        translation: "Es un templo famoso.",
+      },
+      {
+        segments: ruby("[有|ゆう][料|りょう]ですか。"),
+        translation: "¿Es de pago?",
+      },
+      {
+        segments: ruby("[時|じ][間|かん]に[余|よ][裕|ゆう]が有ります。"),
+        translation: "Tengo algo de tiempo de sobra.",
+      },
+      {
+        segments: ruby("[有|ゆう][意|い][義|ぎ]な[会|かい][議|ぎ]でした。"),
+        translation: "Fue una reunión significativa.",
+      },
+      {
+        segments: ruby("[有|ゆう][無|む]をたしかめてください。"),
+        translation: "Por favor, verifica si lo hay o no.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "遊",
+    level: 3,
+    strokeCount: 12,
+    on: ["ユウ", "ユ"],
+    kun: ["あそ.ぶ"],
+    meaning: "Jugar / divertirse",
+    examples: [
+      {
+        segments: ruby("[公|こう][園|えん]で[友|とも][達|だち]と[遊|あそ]びます。"),
+        translation: "Juego con mis amigos en el parque.",
+      },
+      {
+        segments: ruby("[子|こ]どもが[外|そと]で[遊|あそ]んでいます。"),
+        translation: "Los niños están jugando afuera.",
+      },
+      {
+        segments: ruby("[夏|なつ][休|やす]みに[海|うみ]で[遊|あそ]びました。"),
+        translation: "En las vacaciones de verano jugué en el mar.",
+      },
+      {
+        segments: ruby("[遊|ゆう][園|えん][地|ち]へ[行|い]きたいです。"),
+        translation: "Quiero ir al parque de diversiones.",
+      },
+      {
+        segments: ruby("[遊|あそ]ぶ[時|とき]もルールをまもります。"),
+        translation: "Incluso al jugar respetamos las reglas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "予",
+    level: 3,
+    strokeCount: 4,
+    on: ["ヨ"],
+    kun: [],
+    meaning: "Anticipado / previo",
+    examples: [
+      {
+        segments: ruby("[予|よ][定|てい]をノートに[書|か]きます。"),
+        translation: "Escribo el plan en el cuaderno.",
+      },
+      {
+        segments: ruby("[予|よ][約|やく]をしておきました。"),
+        translation: "Hice una reserva de antemano.",
+      },
+      {
+        segments: ruby("[予|よ][習|しゅう]してから[授|じゅ][業|ぎょう]に[出|で]ます。"),
+        translation: "Repaso antes de asistir a clase.",
+      },
+      {
+        segments: ruby("[天|てん][気|き][予|よ][報|ほう]を[見|み]ました。"),
+        translation: "Vi el pronóstico del tiempo.",
+      },
+      {
+        segments: ruby("[予|よ][定|てい]の[時|じ][間|かん]より[早|はや]く[着|つ]きました。"),
+        translation: "Llegué antes de la hora prevista.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "羊",
+    level: 3,
+    strokeCount: 6,
+    on: ["ヨウ"],
+    kun: ["ひつじ"],
+    meaning: "Oveja",
+    examples: [
+      {
+        segments: ruby("[羊|ひつじ]が[草|くさ]を[食|た]べています。"),
+        translation: "La oveja está comiendo pasto.",
+      },
+      {
+        segments: ruby("[白|しろ]い[羊|ひつじ]を[見|み]ました。"),
+        translation: "Vi una oveja blanca.",
+      },
+      {
+        segments: ruby("[羊|ひつじ]の[毛|け]はあたたかいです。"),
+        translation: "La lana de oveja es abrigadora.",
+      },
+      {
+        segments: ruby("[牧|ぼく][場|じょう]で[羊|ひつじ]をそだてています。"),
+        translation: "Crían ovejas en la granja.",
+      },
+      {
+        segments: ruby("[子|こ]どもが[羊|ひつじ]にえさをあげました。"),
+        translation: "El niño le dio comida a la oveja.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "洋",
+    level: 3,
+    strokeCount: 9,
+    on: ["ヨウ"],
+    kun: [],
+    meaning: "Occidental / océano",
+    examples: [
+      {
+        segments: ruby("[洋|よう][食|しょく]が[好|す]きです。"),
+        translation: "Me gusta la comida occidental.",
+      },
+      {
+        segments: ruby("[太|たい][平|へい][洋|よう]はとても[広|ひろ]いです。"),
+        translation: "El océano Pacífico es muy grande.",
+      },
+      {
+        segments: ruby("[洋|よう][服|ふく]を[着|き]て[出|で]かけます。"),
+        translation: "Salgo vestido con ropa occidental.",
+      },
+      {
+        segments: ruby("[西|せい][洋|よう]の[文|ぶん][化|か]について[学|まな]びます。"),
+        translation: "Aprendo sobre la cultura occidental.",
+      },
+      {
+        segments: ruby("[洋|よう][画|が]を[美|び][術|じゅつ][館|かん]で[見|み]ました。"),
+        translation: "Vi pintura occidental en el museo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "葉",
+    level: 3,
+    strokeCount: 12,
+    on: ["ヨウ"],
+    kun: ["は"],
+    meaning: "Hoja",
+    examples: [
+      {
+        segments: ruby("[木|き]の[葉|は]がみどりです。"),
+        translation: "Las hojas del árbol están verdes.",
+      },
+      {
+        segments: ruby("[秋|あき]になると[葉|は]の[色|いろ]がかわります。"),
+        translation: "En otoño cambia el color de las hojas.",
+      },
+      {
+        segments: ruby("[葉|は]っぱを[集|あつ]めました。"),
+        translation: "Junté hojas.",
+      },
+      {
+        segments: ruby("[言|こと][葉|ば]づかいに[気|き]をつけてください。"),
+        translation: "Por favor, cuide su forma de hablar.",
+      },
+      {
+        segments: ruby("[落|お]ち[葉|ば]が[道|みち]にたくさんあります。"),
+        translation: "Hay muchas hojas caídas en el camino.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "陽",
+    level: 3,
+    strokeCount: 12,
+    on: ["ヨウ"],
+    kun: [],
+    meaning: "Sol / luz del sol",
+    examples: [
+      {
+        segments: ruby("[太|たい][陽|よう]がまぶしいです。"),
+        translation: "El sol está muy brillante.",
+      },
+      {
+        segments: ruby("[陽|ひ]あたりのいい[部|へ][屋|や]です。"),
+        translation: "Es una habitación con buena luz solar.",
+      },
+      {
+        segments: ruby("[陽|よう][気|き]な[人|ひと]ですね。"),
+        translation: "Es una persona alegre.",
+      },
+      {
+        segments: ruby("[朝|あさ]の[陽|ひ]ざしがきれいです。"),
+        translation: "La luz del sol de la mañana es hermosa.",
+      },
+      {
+        segments: ruby("[太|たい][陽|よう]の[光|ひかり]で[部|へ][屋|や]があかるいです。"),
+        translation: "La habitación está iluminada por la luz del sol.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "様",
+    level: 3,
+    strokeCount: 14,
+    on: ["ヨウ"],
+    kun: ["さま"],
+    meaning: "Forma / apariencia / señor(a)",
+    examples: [
+      {
+        segments: ruby("お[客|きゃく][様|さま]が[来|き]ました。"),
+        translation: "Llegó un cliente.",
+      },
+      {
+        segments: ruby("[様|よう][子|す]をみてから[決|き]めます。"),
+        translation: "Decidiré después de ver cómo está la situación.",
+      },
+      {
+        segments: ruby("[神|かみ][様|さま]においのりします。"),
+        translation: "Rezo a la divinidad.",
+      },
+      {
+        segments: ruby("[同|おな]じ[様|よう]にやってみてください。"),
+        translation: "Por favor, inténtelo de la misma manera.",
+      },
+      {
+        segments: ruby("[王|おう][様|さま]の[話|はなし]を[読|よ]みました。"),
+        translation: "Leí una historia sobre un rey.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "落",
+    level: 3,
+    strokeCount: 12,
+    on: ["ラク"],
+    kun: ["お.ちる", "お.とす"],
+    meaning: "Caer / dejar caer",
+    examples: [
+      {
+        segments: ruby("[葉|は]が[地|ち][面|めん]に[落|お]ちました。"),
+        translation: "La hoja cayó al suelo.",
+      },
+      {
+        segments: ruby("[本|ほん]を[落|お]としてしまいました。"),
+        translation: "Se me cayó el libro.",
+      },
+      {
+        segments: ruby("[成|せい][績|せき]が[少|すこ]し[落|お]ちました。"),
+        translation: "Mi rendimiento bajó un poco.",
+      },
+      {
+        segments: ruby("[気|き]を[落|お]とさないでください。"),
+        translation: "Por favor, no se desanime.",
+      },
+      {
+        segments: ruby("[村|むら]の[近|ちか]くに[滝|たき]が[落|お]ちています。"),
+        translation: "Cerca del pueblo cae una cascada.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "流",
+    level: 3,
+    strokeCount: 10,
+    on: ["リュウ", "ル"],
+    kun: ["なが.れる", "なが.す"],
+    meaning: "Fluir / corriente / estilo",
+    examples: [
+      {
+        segments: ruby("[川|かわ]の[水|みず]が[流|なが]れています。"),
+        translation: "El agua del río está fluyendo.",
+      },
+      {
+        segments: ruby("[音|おん][楽|がく]を[流|なが]してください。"),
+        translation: "Por favor, ponga música.",
+      },
+      {
+        segments: ruby("[涙|なみだ]が[流|なが]れました。"),
+        translation: "Me corrieron lágrimas.",
+      },
+      {
+        segments: ruby("[流|りゅう][行|こう]の[服|ふく]を[見|み]ました。"),
+        translation: "Vi ropa de moda.",
+      },
+      {
+        segments: ruby("[交|こう][通|つう]の[流|なが]れがはやいです。"),
+        translation: "El flujo del tránsito es rápido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "旅",
+    level: 3,
+    strokeCount: 10,
+    on: ["リョ"],
+    kun: ["たび"],
+    meaning: "Viaje",
+    examples: [
+      {
+        segments: ruby("[家|か][族|ぞく]と[旅|たび]に[出|で]かけます。"),
+        translation: "Salgo de viaje con mi familia.",
+      },
+      {
+        segments: ruby("[旅|たび]の[思|おも]い[出|で]を[写|しゃ][真|しん]にのこします。"),
+        translation: "Guardo recuerdos del viaje en fotos.",
+      },
+      {
+        segments: ruby("[旅|たび][館|かん]に[泊|と]まりました。"),
+        translation: "Me hospedé en una posada japonesa.",
+      },
+      {
+        segments: ruby("[一|ひと]り[旅|たび]をしてみたいです。"),
+        translation: "Quiero intentar viajar solo.",
+      },
+      {
+        segments: ruby("[長|なが]い[旅|たび]のあとで[家|いえ]に[帰|かえ]りました。"),
+        translation: "Volví a casa después de un largo viaje.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "両",
+    level: 3,
+    strokeCount: 6,
+    on: ["リョウ"],
+    kun: [],
+    meaning: "Ambos / dos",
+    examples: [
+      {
+        segments: ruby("[両|りょう][手|て]を[上|あ]げてください。"),
+        translation: "Por favor, levante ambas manos.",
+      },
+      {
+        segments: ruby("[両|りょう][親|しん]はしごとをしています。"),
+        translation: "Ambos padres trabajan.",
+      },
+      {
+        segments: ruby("[両|りょう][方|ほう]の[意|い][見|けん]を[聞|き]きます。"),
+        translation: "Escucho ambas opiniones.",
+      },
+      {
+        segments: ruby("[電|でん][車|しゃ]は[両|りょう][方|ほう]に[動|うご]きます。"),
+        translation: "El tren va en ambas direcciones.",
+      },
+      {
+        segments: ruby("[両|りょう][足|あし]がつかれました。"),
+        translation: "Se me cansaron ambas piernas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "緑",
+    level: 3,
+    strokeCount: 14,
+    on: ["リョク", "ロク"],
+    kun: ["みどり"],
+    meaning: "Verde",
+    examples: [
+      {
+        segments: ruby("[緑|みどり]の[木|き]がたくさんあります。"),
+        translation: "Hay muchos árboles verdes.",
+      },
+      {
+        segments: ruby("[信|しん][号|ごう]が[緑|みどり]になりました。"),
+        translation: "El semáforo se puso en verde.",
+      },
+      {
+        segments: ruby("[緑|みどり]のペンをつかいます。"),
+        translation: "Uso un lápiz verde.",
+      },
+      {
+        segments: ruby("[公|こう][園|えん]は[緑|みどり]がゆたかです。"),
+        translation: "El parque tiene mucha vegetación.",
+      },
+      {
+        segments: ruby("[目|め]にやさしい[緑|みどり]の[色|いろ]です。"),
+        translation: "Es un color verde agradable para la vista.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "礼",
+    level: 3,
+    strokeCount: 5,
+    on: ["レイ", "ライ"],
+    kun: [],
+    meaning: "Saludo / cortesía / agradecimiento",
+    examples: [
+      {
+        segments: ruby("[礼|れい]をしてから[入|はい]ります。"),
+        translation: "Hago una reverencia antes de entrar.",
+      },
+      {
+        segments: ruby("[お礼|おれい]のことばを[伝|つた]えます。"),
+        translation: "Transmito palabras de agradecimiento.",
+      },
+      {
+        segments: ruby("[礼|れい][儀|ぎ]をまもることが[大|たい][切|せつ]です。"),
+        translation: "Es importante respetar la cortesía.",
+      },
+      {
+        segments: ruby("[先|せん][生|せい]にていねいに[礼|れい]をしました。"),
+        translation: "Saludé al profesor con cortesía.",
+      },
+      {
+        segments: ruby("[お礼|おれい]の[手|て][紙|がみ]を[書|か]きます。"),
+        translation: "Escribo una carta de agradecimiento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "列",
+    level: 3,
+    strokeCount: 6,
+    on: ["レツ"],
+    kun: [],
+    meaning: "Fila / línea / serie",
+    examples: [
+      {
+        segments: ruby("[一|いち][列|れつ]に[並|なら]んでください。"),
+        translation: "Por favor, formen una fila.",
+      },
+      {
+        segments: ruby("[前|まえ]の[列|れつ]に[座|すわ]ります。"),
+        translation: "Me siento en la fila de adelante.",
+      },
+      {
+        segments: ruby("[列|れっ][車|しゃ]が[駅|えき]に[着|つ]きました。"),
+        translation: "El tren llegó a la estación.",
+      },
+      {
+        segments: ruby("[長|なが]い[列|れつ]ができています。"),
+        translation: "Se ha formado una fila larga.",
+      },
+      {
+        segments: ruby("[文|も][字|じ]をたてに[列|れつ]べます。"),
+        translation: "Ordeno los caracteres en columna.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "練",
+    level: 3,
+    strokeCount: 14,
+    on: ["レン"],
+    kun: ["ね.る"],
+    meaning: "Practicar / amasar / refinar",
+    examples: [
+      {
+        segments: ruby("[毎|まい][日|にち][練|れん][習|しゅう]します。"),
+        translation: "Practico todos los días.",
+      },
+      {
+        segments: ruby("[発|はつ][音|おん]を[何|なん][回|かい]も[練|れん][習|しゅう]しました。"),
+        translation: "Practiqué la pronunciación muchas veces.",
+      },
+      {
+        segments: ruby("[よく[練|ね]ったパンのきじです。"),
+        translation: "Es una masa de pan bien amasada.",
+      },
+      {
+        segments: ruby("[部|ぶ][活|かつ]の[練|れん][習|しゅう]は[放|ほう][課|か][後|ご]です。"),
+        translation: "La práctica del club es después de clases.",
+      },
+      {
+        segments: ruby("[練|れん][習|しゅう]したぶんだけじょうずになります。"),
+        translation: "Mientras más practicas, mejor te vuelves.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "路",
+    level: 3,
+    strokeCount: 13,
+    on: ["ロ"],
+    kun: ["じ"],
+    meaning: "Camino / ruta",
+    examples: [
+      {
+        segments: ruby("[帰|かえ]り[路|みち]に[友|とも][達|だち]と[話|はな]しました。"),
+        translation: "Hablé con un amigo en el camino de regreso.",
+      },
+      {
+        segments: ruby("[道|どう][路]がこみあっています。"),
+        translation: "La ruta está congestionada.",
+      },
+      {
+        segments: ruby("[進|しん][路]について[先|せん][生|せい]に[相|そう][談|だん]します。"),
+        translation: "Consulto al profesor sobre mi camino futuro.",
+      },
+      {
+        segments: ruby("[山|やま][道|みち]はほそい[路|みち]です。"),
+        translation: "El camino de montaña es angosto.",
+      },
+      {
+        segments: ruby("[最|さい][短|たん][路|ろ]をしらべます。"),
+        translation: "Busco la ruta más corta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "和",
+    level: 3,
+    strokeCount: 8,
+    on: ["ワ", "オ", "カ"],
+    kun: ["やわ.らぐ", "なご.む"],
+    meaning: "Armonía / japonés / paz",
+    examples: [
+      {
+        segments: ruby("[和|わ][食|しょく]が[好|す]きです。"),
+        translation: "Me gusta la comida japonesa.",
+      },
+      {
+        segments: ruby("[和|わ][室|しつ]でしずかに[休|やす]みます。"),
+        translation: "Descanso tranquilamente en una habitación japonesa.",
+      },
+      {
+        segments: ruby("[和|わ]やかなふんいきの[教|きょう][室|しつ]です。"),
+        translation: "Es un aula con un ambiente armonioso.",
+      },
+      {
+        segments: ruby("[平|へい][和|わ]をたいせつにしたいです。"),
+        translation: "Quiero valorar la paz.",
+      },
+      {
+        segments: ruby("[友|とも][達|だち]と[仲|なか]よく[和|わ]やかに[話|はな]します。"),
+        translation: "Converso amistosamente y en armonía con mis amigos.",
+      },
+    ],
+    hasSvg: false,
+  },
+]
+
+const LEVEL4: KanjiEntry[] = [
+  {
+    char: "愛",
+    level: 4,
+    strokeCount: 13,
+    on: ["アイ"],
+    kun: ["いと.しい", "め.でる"],
+    meaning: "Amor / cariño",
+    examples: [
+      {
+        segments: ruby("[家族|かぞく]を[愛|あい]しています。"),
+        translation: "Amo a mi familia.",
+      },
+      {
+        segments: ruby("[愛犬|あいけん]と[毎朝|まいあさ][散歩|さんぽ]します。"),
+        translation: "Paseo cada mañana con mi perro querido.",
+      },
+      {
+        segments: ruby("[母|はは]の[愛情|あいじょう]を[感|かん]じます。"),
+        translation: "Siento el cariño de mi madre.",
+      },
+      {
+        segments: ruby("[平和|へいわ]を[愛|あい]する[人|ひと]です。"),
+        translation: "Es una persona que ama la paz.",
+      },
+      {
+        segments: ruby("[愛|いと]しい[子|こ]どもの[写真|しゃしん]です。"),
+        translation: "Es una foto de un hijo querido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "械",
+    level: 4,
+    strokeCount: 11,
+    on: ["カイ"],
+    kun: [],
+    meaning: "Máquina / mecanismo",
+    examples: [
+      {
+        segments: ruby("[工場|こうじょう]で[機械|きかい]がうごいています。"),
+        translation: "Las máquinas están funcionando en la fábrica.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[機械|きかい]を[使|つか]います。"),
+        translation: "Uso una máquina nueva.",
+      },
+      {
+        segments: ruby("[この[機械|きかい]はとてもべんりです。"),
+        translation: "Esta máquina es muy útil.",
+      },
+      {
+        segments: ruby("[機械|きかい]の[音|おと]が[大|おお]きいです。"),
+        translation: "El sonido de la máquina es fuerte.",
+      },
+      {
+        segments: ruby("[機械|きかい]の[使|つか]い[方|かた]を[習|なら]います。"),
+        translation: "Aprendo cómo usar la máquina.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "泣",
+    level: 4,
+    strokeCount: 8,
+    on: ["キュウ"],
+    kun: ["な.く"],
+    meaning: "Llorar",
+    examples: [
+      {
+        segments: ruby("[赤|あか]ちゃんが[泣|な]いています。"),
+        translation: "El bebé está llorando.",
+      },
+      {
+        segments: ruby("[映画|えいが]を[見|み]て[泣|な]きました。"),
+        translation: "Lloré al ver la película.",
+      },
+      {
+        segments: ruby("[妹|いもうと]は[転|ころ]んで[泣|な]きました。"),
+        translation: "Mi hermana menor se cayó y lloró.",
+      },
+      {
+        segments: ruby("[悲|かな]しくても[人前|ひとまえ]では[泣|な]きません。"),
+        translation: "Aunque esté triste, no lloro delante de la gente.",
+      },
+      {
+        segments: ruby("[犬|いぬ]がいなくなって[子|こ]どもが[泣|な]いています。"),
+        translation: "El niño está llorando porque el perro desapareció.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "健",
+    level: 4,
+    strokeCount: 11,
+    on: ["ケン"],
+    kun: ["すこ.やか"],
+    meaning: "Saludable / sano",
+    examples: [
+      {
+        segments: ruby("[健|すこ]やかに[育|そだ]ってほしいです。"),
+        translation: "Quiero que crezca sano.",
+      },
+      {
+        segments: ruby("[健康|けんこう]のために[毎日|まいにち][歩|ある]きます。"),
+        translation: "Camino todos los días por mi salud.",
+      },
+      {
+        segments: ruby("[健康|けんこう]な[食事|しょくじ]をこころがけます。"),
+        translation: "Procuro tener una alimentación saludable.",
+      },
+      {
+        segments: ruby("[健全|けんぜん]な[生活|せいかつ]が[大切|たいせつ]です。"),
+        translation: "Una vida sana es importante.",
+      },
+      {
+        segments: ruby("[体|からだ]が[健|すこ]やかなら[勉強|べんきょう]もしやすいです。"),
+        translation: "Si el cuerpo está sano, también es más fácil estudiar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "産",
+    level: 4,
+    strokeCount: 11,
+    on: ["サン"],
+    kun: ["う.む", "う.まれる"],
+    meaning: "Producir / nacer",
+    examples: [
+      {
+        segments: ruby("[北海道|ほっかいどう]は[牛乳|ぎゅうにゅう]の[産地|さんち]です。"),
+        translation: "Hokkaido es una zona productora de leche.",
+      },
+      {
+        segments: ruby("[日本|にほん]で[産|う]まれました。"),
+        translation: "Nací en Japón.",
+      },
+      {
+        segments: ruby("[野菜|やさい]をたくさん[産|う]む[土地|とち]です。"),
+        translation: "Es una tierra que produce muchas verduras.",
+      },
+      {
+        segments: ruby("[母|はは]が[弟|おとうと]を[産|う]みました。"),
+        translation: "Mi madre dio a luz a mi hermano menor.",
+      },
+      {
+        segments: ruby("[生産|せいさん]の[量|りょう]がふえました。"),
+        translation: "La cantidad de producción aumentó.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "唱",
+    level: 4,
+    strokeCount: 11,
+    on: ["ショウ"],
+    kun: ["とな.える"],
+    meaning: "Cantar / recitar",
+    examples: [
+      {
+        segments: ruby("[校歌|こうか]を[唱|しょう]います。"),
+        translation: "Cantamos el himno de la escuela.",
+      },
+      {
+        segments: ruby("[意見|いけん]を[唱|とな]える[人|ひと]がいます。"),
+        translation: "Hay personas que expresan su opinión.",
+      },
+      {
+        segments: ruby("[歌|うた]をみんなで[唱|しょう]しました。"),
+        translation: "Cantamos todos juntos una canción.",
+      },
+      {
+        segments: ruby("[大|おお]きな[声|こえ]で[唱|とな]えてください。"),
+        translation: "Por favor, recítelo con voz fuerte.",
+      },
+      {
+        segments: ruby("[合唱|がっしょう]の[練習|れんしゅう]をします。"),
+        translation: "Practicamos coro.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "然",
+    level: 4,
+    strokeCount: 12,
+    on: ["ゼン", "ネン"],
+    kun: [],
+    meaning: "Natural / así",
+    examples: [
+      {
+        segments: ruby("[自然|しぜん]がゆたかな[町|まち]です。"),
+        translation: "Es una ciudad rica en naturaleza.",
+      },
+      {
+        segments: ruby("[全然|ぜんぜん]わかりませんでした。"),
+        translation: "No entendí nada en absoluto.",
+      },
+      {
+        segments: ruby("[自然|しぜん]な[笑顔|えがお]ですね。"),
+        translation: "Tienes una sonrisa natural.",
+      },
+      {
+        segments: ruby("[突然|とつぜん][雨|あめ]が[降|ふ]りました。"),
+        translation: "De repente comenzó a llover.",
+      },
+      {
+        segments: ruby("[当然|とうぜん]の[結果|けっか]です。"),
+        translation: "Es un resultado esperado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "典",
+    level: 4,
+    strokeCount: 8,
+    on: ["テン"],
+    kun: [],
+    meaning: "Código / ceremonia / modelo",
+    examples: [
+      {
+        segments: ruby("[辞典|じてん]で[意味|いみ]を[調|しら]べます。"),
+        translation: "Busco el significado en el diccionario.",
+      },
+      {
+        segments: ruby("[入学式|にゅうがくしき]は[学校|がっこう]のたいせつな[式典|しきてん]です。"),
+        translation: "La ceremonia de ingreso es una ceremonia importante de la escuela.",
+      },
+      {
+        segments: ruby("[古典|こてん]を[読|よ]むのが[好|す]きです。"),
+        translation: "Me gusta leer literatura clásica.",
+      },
+      {
+        segments: ruby("[典型|てんけい]てきな[例|れい]を[見|み]せます。"),
+        translation: "Mostraré un ejemplo típico.",
+      },
+      {
+        segments: ruby("[国語辞典|こくごじてん]を[机|つくえ]の[上|うえ]におきます。"),
+        translation: "Pongo el diccionario de japonés sobre la mesa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "票",
+    level: 4,
+    strokeCount: 11,
+    on: ["ヒョウ"],
+    kun: [],
+    meaning: "Voto / boleto / boleta",
+    examples: [
+      {
+        segments: ruby("[切符|きっぷ]の[代|か]わりに[入場票|にゅうじょうひょう]をもらいました。"),
+        translation: "En lugar de un boleto, recibí una entrada.",
+      },
+      {
+        segments: ruby("[投票|とうひょう]の[日|ひ]を[確認|かくにん]します。"),
+        translation: "Confirmo el día de la votación.",
+      },
+      {
+        segments: ruby("[一票|いっぴょう]をだいじにします。"),
+        translation: "Valoro cada voto.",
+      },
+      {
+        segments: ruby("[票|ひょう]に[名前|なまえ]を[書|か]いてください。"),
+        translation: "Por favor, escriba su nombre en la boleta.",
+      },
+      {
+        segments: ruby("[得票数|とくひょうすう]を[数|かぞ]えます。"),
+        translation: "Contamos el número de votos obtenidos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "民",
+    level: 4,
+    strokeCount: 5,
+    on: ["ミン"],
+    kun: ["たみ"],
+    meaning: "Pueblo / ciudadanos",
+    examples: [
+      {
+        segments: ruby("[国民|こくみん]の[生活|せいかつ]をまもります。"),
+        translation: "Protegemos la vida de los ciudadanos.",
+      },
+      {
+        segments: ruby("[住民|じゅうみん]の[声|こえ]を[聞|き]きます。"),
+        translation: "Escuchamos la voz de los vecinos.",
+      },
+      {
+        segments: ruby("[民話|みんわ]を[子|こ]どもに[読|よ]みます。"),
+        translation: "Leo cuentos populares a los niños.",
+      },
+      {
+        segments: ruby("[市民|しみん]のための[公園|こうえん]です。"),
+        translation: "Es un parque para los ciudadanos.",
+      },
+      {
+        segments: ruby("[民|たみ]の[願|ねが]いを[大切|たいせつ]にします。"),
+        translation: "Valoramos los deseos del pueblo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "案",
+    level: 4,
+    strokeCount: 10,
+    on: ["アン"],
+    kun: [],
+    meaning: "Idea / plan / propuesta",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[案|あん]を[考|かんが]えます。"),
+        translation: "Pienso en una propuesta nueva.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[案内|あんない]してもらいました。"),
+        translation: "El profesor me guió.",
+      },
+      {
+        segments: ruby("[旅行|りょこう]の[案|あん]を[家族|かぞく]と[話|はな]します。"),
+        translation: "Converso con mi familia sobre el plan del viaje.",
+      },
+      {
+        segments: ruby("[案|あん]をもう一[度|ど][見直|みなお]します。"),
+        translation: "Reviso la propuesta una vez más.",
+      },
+      {
+        segments: ruby("[図書館|としょかん]の[案内図|あんないず]を[見|み]ます。"),
+        translation: "Miro el mapa de guía de la biblioteca.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "害",
+    level: 4,
+    strokeCount: 10,
+    on: ["ガイ"],
+    kun: [],
+    meaning: "Daño / perjuicio",
+    examples: [
+      {
+        segments: ruby("[台風|たいふう]の[害|がい]が[大|おお]きかったです。"),
+        translation: "El daño del tifón fue grande.",
+      },
+      {
+        segments: ruby("[虫害|ちゅうがい]をふせぐ[薬|くすり]です。"),
+        translation: "Es un medicamento para prevenir daños de insectos.",
+      },
+      {
+        segments: ruby("[健康|けんこう]に[害|がい]のある[習慣|しゅうかん]はやめます。"),
+        translation: "Dejo los hábitos dañinos para la salud.",
+      },
+      {
+        segments: ruby("[被害|ひがい]の[様子|ようす]を[調|しら]べます。"),
+        translation: "Investigo el estado de los daños.",
+      },
+      {
+        segments: ruby("[公害|こうがい]について[勉強|べんきょう]しました。"),
+        translation: "Estudié sobre la contaminación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "給",
+    level: 4,
+    strokeCount: 12,
+    on: ["キュウ"],
+    kun: [],
+    meaning: "Suministrar / pagar",
+    examples: [
+      {
+        segments: ruby("[給食|きゅうしょく]は[十二時|じゅうにじ]です。"),
+        translation: "El almuerzo escolar es a las doce.",
+      },
+      {
+        segments: ruby("[水|みず]を[給|きゅう]する[車|くるま]が[来|き]ました。"),
+        translation: "Llegó el vehículo que suministra agua.",
+      },
+      {
+        segments: ruby("[給料|きゅうりょう]をもらいました。"),
+        translation: "Recibí mi salario.",
+      },
+      {
+        segments: ruby("[学校|がっこう]で[給食当番|きゅうしょくとうばん]をします。"),
+        translation: "Hago el turno del almuerzo escolar en la escuela.",
+      },
+      {
+        segments: ruby("[十分|じゅうぶん]な[休|やす]みを[給|きゅう]することが[大切|たいせつ]です。"),
+        translation: "Es importante dar suficiente descanso.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "験",
+    level: 4,
+    strokeCount: 18,
+    on: ["ケン", "ゲン"],
+    kun: [],
+    meaning: "Prueba / experiencia",
+    examples: [
+      {
+        segments: ruby("あした[試験|しけん]があります。"),
+        translation: "Mañana hay examen.",
+      },
+      {
+        segments: ruby("[実験|じっけん]をしてみます。"),
+        translation: "Haré un experimento.",
+      },
+      {
+        segments: ruby("[体験|たいけん]したことを[話|はな]します。"),
+        translation: "Hablaré de lo que experimenté.",
+      },
+      {
+        segments: ruby("[受験生|じゅけんせい]は[毎日|まいにち][勉強|べんきょう]しています。"),
+        translation: "Los estudiantes que rinden examen estudian todos los días.",
+      },
+      {
+        segments: ruby("[経験|けいけん]から[学|まな]ぶことがたくさんあります。"),
+        translation: "Hay muchas cosas que aprender de la experiencia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "散",
+    level: 4,
+    strokeCount: 12,
+    on: ["サン"],
+    kun: ["ち.る", "ち.らす"],
+    meaning: "Dispersarse / esparcir / paseo",
+    examples: [
+      {
+        segments: ruby("[公園|こうえん]を[散歩|さんぽ]します。"),
+        translation: "Paseo por el parque.",
+      },
+      {
+        segments: ruby("[花|はな]が[風|かぜ]で[散|ち]りました。"),
+        translation: "Las flores se dispersaron por el viento.",
+      },
+      {
+        segments: ruby("[部屋|へや]に[紙|かみ]を[散|ち]らさないでください。"),
+        translation: "Por favor, no dejes papeles desordenados en la habitación.",
+      },
+      {
+        segments: ruby("[散会|さんかい]のまえに[先生|せんせい]が[話|はな]しました。"),
+        translation: "Antes de disolver la reunión, habló el profesor.",
+      },
+      {
+        segments: ruby("[朝|あさ]の[散歩|さんぽ]は[気持|きも]ちがいいです。"),
+        translation: "El paseo de la mañana se siente bien.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "焼",
+    level: 4,
+    strokeCount: 12,
+    on: ["ショウ"],
+    kun: ["や.く", "や.ける"],
+    meaning: "Quemar / asar / hornear",
+    examples: [
+      {
+        segments: ruby("[魚|さかな]を[焼|や]きます。"),
+        translation: "Asamos pescado.",
+      },
+      {
+        segments: ruby("[日|ひ]に[焼|や]けて[顔|かお]があかいです。"),
+        translation: "Se me puso roja la cara por el sol.",
+      },
+      {
+        segments: ruby("[パン|ぱん]がよく[焼|や]けました。"),
+        translation: "El pan quedó bien horneado.",
+      },
+      {
+        segments: ruby("[肉|にく]を[焼|や]くにおいがします。"),
+        translation: "Se siente olor a carne asada.",
+      },
+      {
+        segments: ruby("[夕焼|ゆうや]けがとてもきれいです。"),
+        translation: "El cielo del atardecer está muy bonito.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "争",
+    level: 4,
+    strokeCount: 6,
+    on: ["ソウ"],
+    kun: ["あらそ.う"],
+    meaning: "Discutir / competir / conflicto",
+    examples: [
+      {
+        segments: ruby("[兄弟|きょうだい]でおもちゃを[争|あらそ]っています。"),
+        translation: "Los hermanos están peleando por un juguete.",
+      },
+      {
+        segments: ruby("[争|あらそ]わずに[話|はな]し[合|あ]いましょう。"),
+        translation: "Conversemos sin discutir.",
+      },
+      {
+        segments: ruby("[平和|へいわ]のために[争|あらそ]いをなくしたいです。"),
+        translation: "Quiero eliminar los conflictos por la paz.",
+      },
+      {
+        segments: ruby("[試合|しあい]で一[位|い]を[争|あらそ]います。"),
+        translation: "Competimos por el primer lugar en el partido.",
+      },
+      {
+        segments: ruby("[戦争|せんそう]について[勉強|べんきょう]しました。"),
+        translation: "Estudié sobre la guerra.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "伝",
+    level: 4,
+    strokeCount: 6,
+    on: ["デン"],
+    kun: ["つた.える", "つた.わる"],
+    meaning: "Transmitir / contar",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]のことばをみんなに[伝|つた]えます。"),
+        translation: "Transmito a todos las palabras del profesor.",
+      },
+      {
+        segments: ruby("[電話|でんわ]で[伝言|でんごん]をのこしました。"),
+        translation: "Dejé un recado por teléfono.",
+      },
+      {
+        segments: ruby("[昔|むかし]の[話|はなし]が[今|いま]まで[伝|つた]わっています。"),
+        translation: "Las historias antiguas se han transmitido hasta hoy.",
+      },
+      {
+        segments: ruby("[気持|きも]ちをうまく[伝|つた]えたいです。"),
+        translation: "Quiero expresar bien mis sentimientos.",
+      },
+      {
+        segments: ruby("[伝統|でんとう]ある[祭|まつ]りです。"),
+        translation: "Es un festival tradicional.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "標",
+    level: 4,
+    strokeCount: 15,
+    on: ["ヒョウ"],
+    kun: [],
+    meaning: "Marca / meta / estándar",
+    examples: [
+      {
+        segments: ruby("[目標|もくひょう]をきめて[勉強|べんきょう]します。"),
+        translation: "Estudio fijando una meta.",
+      },
+      {
+        segments: ruby("[道|みち]の[標識|ひょうしき]を[見|み]てください。"),
+        translation: "Por favor, mira la señal del camino.",
+      },
+      {
+        segments: ruby("[目標|もくひょう]に[向|む]かってがんばります。"),
+        translation: "Me esfuerzo hacia mi meta.",
+      },
+      {
+        segments: ruby("[標本|ひょうほん]を[理科室|りかしつ]で[見|み]ました。"),
+        translation: "Vi una muestra en la sala de ciencias.",
+      },
+      {
+        segments: ruby("[国際|こくさい][標準|ひょうじゅん]を[学|まな]びます。"),
+        translation: "Estudio estándares internacionales.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "無",
+    level: 4,
+    strokeCount: 12,
+    on: ["ム", "ブ"],
+    kun: ["な.い"],
+    meaning: "No tener / sin",
+    examples: [
+      {
+        segments: ruby("[時間|じかん]が[無|な]いのでいそぎます。"),
+        translation: "Como no tengo tiempo, me apuro.",
+      },
+      {
+        segments: ruby("[無理|むり]をしないでください。"),
+        translation: "Por favor, no te esfuerces demasiado.",
+      },
+      {
+        segments: ruby("[無料|むりょう]で[入|はい]れます。"),
+        translation: "Se puede entrar gratis.",
+      },
+      {
+        segments: ruby("[大|たい]した[理由|りゆう]は[無|な]いです。"),
+        translation: "No hay una razón importante.",
+      },
+      {
+        segments: ruby("[無事|ぶじ]に[家|いえ]へ[帰|かえ]りました。"),
+        translation: "Volví a casa sin problemas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "以",
+    level: 4,
+    strokeCount: 5,
+    on: ["イ"],
+    kun: [],
+    meaning: "Desde / por medio de / más que",
+    examples: [
+      {
+        segments: ruby("これ[以|い][上|じょう]は[進|すす]めません。"),
+        translation: "No se puede avanzar más que esto.",
+      },
+      {
+        segments: ruby("[五時|ごじ][以|い][前|ぜん]に[来|き]てください。"),
+        translation: "Por favor, venga antes de las cinco.",
+      },
+      {
+        segments: ruby("[来週|らいしゅう][以|い][後|ご]にもう[一度|いちど][話|はな]しましょう。"),
+        translation: "Volvamos a hablar después de la próxima semana.",
+      },
+      {
+        segments: ruby("[日曜日|にちようび][以外|いがい]は[学校|がっこう]があります。"),
+        translation: "Hay clases excepto los domingos.",
+      },
+      {
+        segments: ruby("[電車|でんしゃ]で[行|い]く[以外|いがい]の[方法|ほうほう]を[考|かんが]えます。"),
+        translation: "Pienso en un método distinto a ir en tren.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "街",
+    level: 4,
+    strokeCount: 12,
+    on: ["ガイ", "カイ"],
+    kun: ["まち"],
+    meaning: "Ciudad / calle / barrio",
+    examples: [
+      {
+        segments: ruby("[静|しず]かな[街|まち]です。"),
+        translation: "Es una ciudad tranquila.",
+      },
+      {
+        segments: ruby("[商店街|しょうてんがい]で[買|か]い[物|もの]をします。"),
+        translation: "Hago compras en la calle comercial.",
+      },
+      {
+        segments: ruby("[街角|まちかど]で[友達|ともだち]に[会|あ]いました。"),
+        translation: "Me encontré con un amigo en una esquina de la ciudad.",
+      },
+      {
+        segments: ruby("この[街|まち]は[夜|よる]もにぎやかです。"),
+        translation: "Esta ciudad es animada incluso de noche.",
+      },
+      {
+        segments: ruby("[古|ふる]い[街並|まちな]みを[見|み]ながら[歩|ある]きます。"),
+        translation: "Camino observando el paisaje urbano antiguo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "挙",
+    level: 4,
+    strokeCount: 10,
+    on: ["キョ"],
+    kun: ["あ.げる", "あ.がる"],
+    meaning: "Levantar / elegir",
+    examples: [
+      {
+        segments: ruby("[手|て]を[挙|あ]げてください。"),
+        translation: "Por favor, levante la mano.",
+      },
+      {
+        segments: ruby("[意見|いけん]がある[人|ひと]は[手|て]を[挙|あ]げてください。"),
+        translation: "Quien tenga una opinión, por favor levante la mano.",
+      },
+      {
+        segments: ruby("[選挙|せんきょ]について[勉強|べんきょう]しました。"),
+        translation: "Estudié sobre las elecciones.",
+      },
+      {
+        segments: ruby("[名前|なまえ]が[例|れい]として[挙|あ]がりました。"),
+        translation: "Mi nombre apareció como ejemplo.",
+      },
+      {
+        segments: ruby("[多数決|たすうけつ]で[手|て]を[挙|あ]げます。"),
+        translation: "Levantamos la mano en una votación por mayoría.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "固",
+    level: 4,
+    strokeCount: 8,
+    on: ["コ"],
+    kun: ["かた.い", "かた.まる", "かた.める"],
+    meaning: "Duro / fijar / solidificar",
+    examples: [
+      {
+        segments: ruby("このパンはすこし[固|かた]いです。"),
+        translation: "Este pan está un poco duro.",
+      },
+      {
+        segments: ruby("[考|かんが]えが[固|かた]すぎるかもしれません。"),
+        translation: "Quizá mi forma de pensar es demasiado rígida.",
+      },
+      {
+        segments: ruby("[寒|さむ]くて[地面|じめん]が[固|かた]まりました。"),
+        translation: "Con el frío, el suelo se endureció.",
+      },
+      {
+        segments: ruby("ねじをしっかり[固|かた]めてください。"),
+        translation: "Por favor, ajuste bien el tornillo.",
+      },
+      {
+        segments: ruby("[固定|こてい]された[席|せき]に[座|すわ]ります。"),
+        translation: "Me siento en el asiento asignado de forma fija.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "残",
+    level: 4,
+    strokeCount: 10,
+    on: ["ザン"],
+    kun: ["のこ.る", "のこ.す"],
+    meaning: "Quedar / dejar / permanecer",
+    examples: [
+      {
+        segments: ruby("[ご飯|ごはん]を[残|のこ]さないでください。"),
+        translation: "Por favor, no deje comida.",
+      },
+      {
+        segments: ruby("[宿題|しゅくだい]がまだ[残|のこ]っています。"),
+        translation: "Todavía queda tarea.",
+      },
+      {
+        segments: ruby("[最後|さいご]まで[残|のこ]って[手伝|てつだ]いました。"),
+        translation: "Me quedé hasta el final para ayudar.",
+      },
+      {
+        segments: ruby("[残念|ざんねん]ですが、きょうは[行|い]けません。"),
+        translation: "Lamentablemente, hoy no puedo ir.",
+      },
+      {
+        segments: ruby("[心|こころ]に[残|のこ]る[言葉|ことば]でした。"),
+        translation: "Fueron palabras que quedaron en mi corazón.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "照",
+    level: 4,
+    strokeCount: 13,
+    on: ["ショウ"],
+    kun: ["て.る", "て.らす", "て.れる"],
+    meaning: "Brillar / iluminar",
+    examples: [
+      {
+        segments: ruby("[太陽|たいよう]が[部屋|へや]を[照|て]らしています。"),
+        translation: "El sol está iluminando la habitación.",
+      },
+      {
+        segments: ruby("[月|つき]に[照|て]らされた[海|うみ]がきれいです。"),
+        translation: "El mar iluminado por la luna es hermoso.",
+      },
+      {
+        segments: ruby("[照明|しょうめい]をつけてください。"),
+        translation: "Por favor, encienda la iluminación.",
+      },
+      {
+        segments: ruby("[強|つよ]い[光|ひかり]が[顔|かお]を[照|て]らしました。"),
+        translation: "Una luz fuerte iluminó mi rostro.",
+      },
+      {
+        segments: ruby("[日|ひ]が[照|て]ってあたたかいです。"),
+        translation: "Hace calor porque está soleado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "倉",
+    level: 4,
+    strokeCount: 10,
+    on: ["ソウ"],
+    kun: ["くら"],
+    meaning: "Almacén / bodega",
+    examples: [
+      {
+        segments: ruby("[倉庫|そうこ]に[荷物|にもつ]を[置|お]きます。"),
+        translation: "Pongo el equipaje en la bodega.",
+      },
+      {
+        segments: ruby("[古|ふる]い[倉|くら]を[掃除|そうじ]しました。"),
+        translation: "Limpié un viejo almacén.",
+      },
+      {
+        segments: ruby("[米|こめ]を[倉|くら]にしまいます。"),
+        translation: "Guardo el arroz en el almacén.",
+      },
+      {
+        segments: ruby("[倉庫|そうこ]の[鍵|かぎ]を[先生|せんせい]が[持|も]っています。"),
+        translation: "El profesor tiene la llave de la bodega.",
+      },
+      {
+        segments: ruby("[学校|がっこう]の[裏|うら]に[小|ちい]さな[倉庫|そうこ]があります。"),
+        translation: "Detrás de la escuela hay una bodega pequeña.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "徒",
+    level: 4,
+    strokeCount: 10,
+    on: ["ト"],
+    kun: [],
+    meaning: "Alumno / a pie / grupo",
+    examples: [
+      {
+        segments: ruby("[生徒|せいと]が[教室|きょうしつ]に[入|はい]ります。"),
+        translation: "Los alumnos entran al aula.",
+      },
+      {
+        segments: ruby("[徒歩|とほ]で[駅|えき]まで[行|い]きます。"),
+        translation: "Voy a pie hasta la estación.",
+      },
+      {
+        segments: ruby("[生徒会|せいとかい]の[会議|かいぎ]があります。"),
+        translation: "Hay una reunión del consejo estudiantil.",
+      },
+      {
+        segments: ruby("[全校|ぜんこう]の[生徒|せいと]が[体育館|たいいくかん]に[集|あつ]まりました。"),
+        translation: "Todos los alumnos de la escuela se reunieron en el gimnasio.",
+      },
+      {
+        segments: ruby("[徒歩|とほ]の[人|ひと]はここを[通|とお]ってください。"),
+        translation: "Las personas que van a pie, por favor pasen por aquí.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "不",
+    level: 4,
+    strokeCount: 4,
+    on: ["フ", "ブ"],
+    kun: [],
+    meaning: "No / falta / negación",
+    examples: [
+      {
+        segments: ruby("[不安|ふあん]な[気持|きも]ちになりました。"),
+        translation: "Me sentí inquieto.",
+      },
+      {
+        segments: ruby("[不便|ふべん]ですが、ここには[店|みせ]がありません。"),
+        translation: "Es incómodo, pero aquí no hay tiendas.",
+      },
+      {
+        segments: ruby("[不注意|ふちゅうい]でコップを[落|お]としました。"),
+        translation: "Dejé caer el vaso por descuido.",
+      },
+      {
+        segments: ruby("[不明|ふめい]な[点|てん]は[先生|せんせい]に[聞|き]きます。"),
+        translation: "Pregunto al profesor los puntos que no están claros.",
+      },
+      {
+        segments: ruby("[不自由|ふじゆう]なく[生活|せいかつ]できることに[感謝|かんしゃ]します。"),
+        translation: "Agradezco poder vivir sin carencias.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "約",
+    level: 4,
+    strokeCount: 9,
+    on: ["ヤク"],
+    kun: [],
+    meaning: "Promesa / aproximadamente / resumen",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]と[約束|やくそく]しました。"),
+        translation: "Hice una promesa con un amigo.",
+      },
+      {
+        segments: ruby("[会議|かいぎ]は[約|やく]一[時間|じかん]です。"),
+        translation: "La reunión dura aproximadamente una hora.",
+      },
+      {
+        segments: ruby("[予約|よやく]してから[行|い]きます。"),
+        translation: "Voy después de reservar.",
+      },
+      {
+        segments: ruby("[水|みず]を[節約|せつやく]しましょう。"),
+        translation: "Ahorremos agua.",
+      },
+      {
+        segments: ruby("[話|はなし]の[内容|ないよう]を[要約|ようやく]してください。"),
+        translation: "Por favor, resuma el contenido de la conversación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "衣",
+    level: 4,
+    strokeCount: 6,
+    on: ["イ"],
+    kun: ["ころも"],
+    meaning: "Ropa / vestimenta",
+    examples: [
+      {
+        segments: ruby("[衣服|いふく]をきちんとたたみます。"),
+        translation: "Doblo bien la ropa.",
+      },
+      {
+        segments: ruby("[白|しろ]い[衣|ころも]を[着|き]た[人|ひと]がいます。"),
+        translation: "Hay una persona vestida con ropa blanca.",
+      },
+      {
+        segments: ruby("[季節|きせつ]がかわるので[衣替|ころもが]えをします。"),
+        translation: "Como cambia la estación, hago cambio de ropa.",
+      },
+      {
+        segments: ruby("[雨具|あまぐ]や[防寒衣|ぼうかんい]をじゅんびします。"),
+        translation: "Preparo impermeable y ropa de abrigo.",
+      },
+      {
+        segments: ruby("[和服|わふく]も[洋服|ようふく]も[好|す]きです。"),
+        translation: "Me gusta tanto la ropa japonesa como la occidental.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "各",
+    level: 4,
+    strokeCount: 6,
+    on: ["カク"],
+    kun: ["おのおの"],
+    meaning: "Cada / respectivo",
+    examples: [
+      {
+        segments: ruby("[各自|かくじ]でノートをじゅんびしてください。"),
+        translation: "Por favor, cada uno prepare su cuaderno.",
+      },
+      {
+        segments: ruby("[各国|かっこく]の[文化|ぶんか]を[学|まな]びます。"),
+        translation: "Estudio la cultura de cada país.",
+      },
+      {
+        segments: ruby("[各駅停車|かくえきていしゃ]に[乗|の]ります。"),
+        translation: "Subo al tren que se detiene en cada estación.",
+      },
+      {
+        segments: ruby("[各教室|かくきょうしつ]を[見|み]てまわりました。"),
+        translation: "Recorrí y miré cada sala.",
+      },
+      {
+        segments: ruby("[各人|かくじん]の[意見|いけん]を[大切|たいせつ]にします。"),
+        translation: "Valoro la opinión de cada persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "漁",
+    level: 4,
+    strokeCount: 14,
+    on: ["ギョ", "リョウ"],
+    kun: [],
+    meaning: "Pesca",
+    examples: [
+      {
+        segments: ruby("[漁師|りょうし]が[朝|あさ][早|はや]く[海|うみ]へ[出|で]ます。"),
+        translation: "El pescador sale al mar temprano por la mañana.",
+      },
+      {
+        segments: ruby("[漁港|ぎょこう]に[船|ふね]がならんでいます。"),
+        translation: "Hay barcos alineados en el puerto pesquero.",
+      },
+      {
+        segments: ruby("[漁業|ぎょぎょう]について[勉強|べんきょう]しました。"),
+        translation: "Estudié sobre la industria pesquera.",
+      },
+      {
+        segments: ruby("[漁場|ぎょじょう]の[水|みず]はきれいです。"),
+        translation: "Las aguas de la zona de pesca están limpias.",
+      },
+      {
+        segments: ruby("[今年|ことし]は[魚|さかな]がよくとれて[漁|りょう]が[多|おお]いそうです。"),
+        translation: "Parece que este año se ha pescado mucho.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "功",
+    level: 4,
+    strokeCount: 5,
+    on: ["コウ", "ク"],
+    kun: [],
+    meaning: "Mérito / logro",
+    examples: [
+      {
+        segments: ruby("[努力|どりょく]の[功|こう]でテストに[合格|ごうかく]しました。"),
+        translation: "Gracias al fruto del esfuerzo aprobé el examen.",
+      },
+      {
+        segments: ruby("[成功|せいこう]の[理由|りゆう]を[考|かんが]えます。"),
+        translation: "Pienso en la razón del éxito.",
+      },
+      {
+        segments: ruby("[功績|こうせき]をたたえる[会|かい]がありました。"),
+        translation: "Hubo una reunión para reconocer los méritos.",
+      },
+      {
+        segments: ruby("[父|ちち]の[助|たす]けが[大|おお]きな[成果|せいか]につながりました。"),
+        translation: "La ayuda de mi padre contribuyó mucho al resultado.",
+      },
+      {
+        segments: ruby("この[工夫|くふう]が[成功|せいこう]につながった[功|こう]だと[思|おも]います。"),
+        translation: "Creo que este ingenio fue clave para el éxito.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "氏",
+    level: 4,
+    strokeCount: 4,
+    on: ["シ"],
+    kun: ["うじ"],
+    meaning: "Apellido / señor / clan",
+    examples: [
+      {
+        segments: ruby("[氏名|しめい]を[書|か]いてください。"),
+        translation: "Por favor, escriba su nombre y apellido.",
+      },
+      {
+        segments: ruby("[山田|やまだ][氏|し]が[会議|かいぎ]に[出|で]ます。"),
+        translation: "El señor Yamada asistirá a la reunión.",
+      },
+      {
+        segments: ruby("[記事|きじ]では[田中|たなか][氏|し]の[意見|いけん]が[紹介|しょうかい]されていました。"),
+        translation: "En el artículo se presentaba la opinión del señor Tanaka.",
+      },
+      {
+        segments: ruby("[氏族|しぞく]の[歴史|れきし]を[学|まな]びます。"),
+        translation: "Estudio la historia de los clanes.",
+      },
+      {
+        segments: ruby("[源|みなもと][氏|うじ]の[名前|なまえ]を[授業|じゅぎょう]で[聞|き]きました。"),
+        translation: "Escuché el nombre del clan Minamoto en clase.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "城",
+    level: 4,
+    strokeCount: 9,
+    on: ["ジョウ"],
+    kun: ["しろ"],
+    meaning: "Castillo",
+    examples: [
+      {
+        segments: ruby("[城|しろ]の[上|うえ]から[町|まち]が[見|み]えます。"),
+        translation: "Desde arriba del castillo se ve la ciudad.",
+      },
+      {
+        segments: ruby("[古|ふる]い[城|しろ]を[見学|けんがく]しました。"),
+        translation: "Visité un castillo antiguo.",
+      },
+      {
+        segments: ruby("[城門|じょうもん]の[前|まえ]で[写真|しゃしん]をとります。"),
+        translation: "Tomo una foto frente a la puerta del castillo.",
+      },
+      {
+        segments: ruby("[城下町|じょうかまち]は[観光客|かんこうきゃく]でにぎやかです。"),
+        translation: "La ciudad del castillo está animada por los turistas.",
+      },
+      {
+        segments: ruby("[名古屋城|なごやじょう]へ[行|い]ってみたいです。"),
+        translation: "Quiero ir al castillo de Nagoya.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "巣",
+    level: 4,
+    strokeCount: 11,
+    on: ["ソウ"],
+    kun: ["す"],
+    meaning: "Nido",
+    examples: [
+      {
+        segments: ruby("[鳥|とり]が[巣|す]をつくっています。"),
+        translation: "El pájaro está haciendo su nido.",
+      },
+      {
+        segments: ruby("[木|き]の[上|うえ]に[巣|す]があります。"),
+        translation: "Hay un nido arriba del árbol.",
+      },
+      {
+        segments: ruby("[巣箱|すばこ]を[庭|にわ]におきました。"),
+        translation: "Puse una caja nido en el jardín.",
+      },
+      {
+        segments: ruby("[蜂|はち]の[巣|す]に[近|ちか]づかないでください。"),
+        translation: "Por favor, no se acerque al nido de avispas.",
+      },
+      {
+        segments: ruby("[親鳥|おやどり]が[巣|す]にもどってきました。"),
+        translation: "El ave madre volvió al nido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "努",
+    level: 4,
+    strokeCount: 7,
+    on: ["ド"],
+    kun: ["つと.める"],
+    meaning: "Esforzarse",
+    examples: [
+      {
+        segments: ruby("[毎日|まいにち][努力|どりょく]しています。"),
+        translation: "Me esfuerzo todos los días.",
+      },
+      {
+        segments: ruby("[合格|ごうかく]できるように[努|つと]めます。"),
+        translation: "Me esforzaré para poder aprobar.",
+      },
+      {
+        segments: ruby("[先生|せんせい]は[生徒|せいと]のために[努力|どりょく]しています。"),
+        translation: "El profesor se esfuerza por sus alumnos.",
+      },
+      {
+        segments: ruby("[健康|けんこう]をたもつように[努|つと]めています。"),
+        translation: "Me esfuerzo por mantener la salud.",
+      },
+      {
+        segments: ruby("[努力|どりょく]の[結果|けっか]がでてうれしいです。"),
+        translation: "Me alegra ver el resultado del esfuerzo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "夫",
+    level: 4,
+    strokeCount: 4,
+    on: ["フ", "フウ"],
+    kun: ["おっと"],
+    meaning: "Esposo / hombre",
+    examples: [
+      {
+        segments: ruby("[夫|おっと]は[毎朝|まいあさ][早|はや]く[出|で]かけます。"),
+        translation: "Mi esposo sale temprano cada mañana.",
+      },
+      {
+        segments: ruby("[工夫|くふう]してもっとつかいやすくします。"),
+        translation: "Haré ajustes ingeniosos para que sea más fácil de usar.",
+      },
+      {
+        segments: ruby("[夫婦|ふうふ]で[旅行|りょこう]しました。"),
+        translation: "Viajamos como matrimonio.",
+      },
+      {
+        segments: ruby("[農夫|のうふ]が[畑|はたけ]ではたらいています。"),
+        translation: "Un campesino está trabajando en el campo.",
+      },
+      {
+        segments: ruby("この[方法|ほうほう]にはもう[少|すこ]し[工夫|くふう]が[必要|ひつよう]です。"),
+        translation: "Este método necesita un poco más de ingenio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "勇",
+    level: 4,
+    strokeCount: 9,
+    on: ["ユウ"],
+    kun: ["いさ.む"],
+    meaning: "Valentía / coraje",
+    examples: [
+      {
+        segments: ruby("[勇気|ゆうき]をだして[発表|はっぴょう]しました。"),
+        translation: "Me armé de valor e hice la presentación.",
+      },
+      {
+        segments: ruby("[勇気|ゆうき]があれば[新|あたら]しいことに[挑戦|ちょうせん]できます。"),
+        translation: "Si tienes valor, puedes desafiarte con cosas nuevas.",
+      },
+      {
+        segments: ruby("[勇者|ゆうしゃ]の[話|はなし]を[読|よ]みました。"),
+        translation: "Leí una historia sobre un héroe valiente.",
+      },
+      {
+        segments: ruby("[困難|こんなん]に[立|た]ち[向|む]かう[勇気|ゆうき]が[大切|たいせつ]です。"),
+        translation: "Es importante tener el valor de enfrentar las dificultades.",
+      },
+      {
+        segments: ruby("[友達|ともだち]のことばが[勇気|ゆうき]になりました。"),
+        translation: "Las palabras de mi amigo me dieron valor.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "位",
+    level: 4,
+    strokeCount: 7,
+    on: ["イ"],
+    kun: ["くらい"],
+    meaning: "Puesto / rango / aproximadamente",
+    examples: [
+      {
+        segments: ruby("[一位|いちい]になりました。"),
+        translation: "Quedé en primer lugar.",
+      },
+      {
+        segments: ruby("[どの位|どのくらい][時間|じかん]がかかりますか。"),
+        translation: "¿Cuánto tiempo tarda aproximadamente?",
+      },
+      {
+        segments: ruby("[上位|じょうい]の[人|ひと]たちはとても[速|はや]いです。"),
+        translation: "Las personas de los primeros puestos son muy rápidas.",
+      },
+      {
+        segments: ruby("[位|くらい]ちがいはありますが、だいたいおなじです。"),
+        translation: "Hay una pequeña diferencia, pero en general es lo mismo.",
+      },
+      {
+        segments: ruby("[地位|ちい]よりも[人柄|ひとがら]が[大切|たいせつ]です。"),
+        translation: "Más importante que el cargo es la calidad humana.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "覚",
+    level: 4,
+    strokeCount: 12,
+    on: ["カク"],
+    kun: ["おぼ.える", "さ.ます", "さ.める"],
+    meaning: "Recordar / aprender / despertarse",
+    examples: [
+      {
+        segments: ruby("[漢字|かんじ]を[覚|おぼ]えます。"),
+        translation: "Memorizo kanji.",
+      },
+      {
+        segments: ruby("[朝|あさ]六[時|じ]に[目|め]が[覚|さ]めます。"),
+        translation: "Me despierto a las seis de la mañana.",
+      },
+      {
+        segments: ruby("[名前|なまえ]をすぐに[覚|おぼ]えられませんでした。"),
+        translation: "No pude memorizar el nombre de inmediato.",
+      },
+      {
+        segments: ruby("[感覚|かんかく]がすこしちがいます。"),
+        translation: "La sensación es un poco distinta.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]なことはノートに[書|か]いて[覚|おぼ]えます。"),
+        translation: "Anoto lo importante en el cuaderno para recordarlo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "共",
+    level: 4,
+    strokeCount: 6,
+    on: ["キョウ"],
+    kun: ["とも"],
+    meaning: "Junto / compartir / común",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]と[共|とも]に[勉強|べんきょう]します。"),
+        translation: "Estudio junto con mis amigos.",
+      },
+      {
+        segments: ruby("[共通|きょうつう]の[話題|わだい]があります。"),
+        translation: "Tenemos un tema en común.",
+      },
+      {
+        segments: ruby("[共|とも]に[生|い]きることが[大切|たいせつ]です。"),
+        translation: "Es importante vivir juntos.",
+      },
+      {
+        segments: ruby("[公共|こうきょう]の[場|ば]ではしずかにしてください。"),
+        translation: "Por favor, guarde silencio en lugares públicos.",
+      },
+      {
+        segments: ruby("[家族|かぞく]と[共|とも]に[夕食|ゆうしょく]を[食|た]べます。"),
+        translation: "Ceno junto con mi familia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "好",
+    level: 4,
+    strokeCount: 6,
+    on: ["コウ"],
+    kun: ["この.む", "す.く", "す.き"],
+    meaning: "Gustar / preferir",
+    examples: [
+      {
+        segments: ruby("[日本語|にほんご]が[好|す]きです。"),
+        translation: "Me gusta el japonés.",
+      },
+      {
+        segments: ruby("[好|この]みの[色|いろ]を[選|えら]んでください。"),
+        translation: "Por favor, elija el color que prefiera.",
+      },
+      {
+        segments: ruby("[天気|てんき]がよくて[気分|きぶん]も[良|よ]好です。"),
+        translation: "Hace buen tiempo y también me siento bien.",
+      },
+      {
+        segments: ruby("[好奇心|こうきしん]をもって[学|まな]ぶことが[大切|たいせつ]です。"),
+        translation: "Es importante aprender con curiosidad.",
+      },
+      {
+        segments: ruby("[甘|あま]いものが[好|す]きな[人|ひと]は[多|おお]いです。"),
+        translation: "A muchas personas les gustan los dulces.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "司",
+    level: 4,
+    strokeCount: 5,
+    on: ["シ"],
+    kun: ["つかさど.る"],
+    meaning: "Dirigir / encargado",
+    examples: [
+      {
+        segments: ruby("[上司|じょうし]に[相談|そうだん]します。"),
+        translation: "Consulto con mi superior.",
+      },
+      {
+        segments: ruby("[司会|しかい]を[担当|たんとう]します。"),
+        translation: "Estaré a cargo de la conducción.",
+      },
+      {
+        segments: ruby("[神社|じんじゃ]で[祭|まつ]りを[司|つかさど]る[人|ひと]がいます。"),
+        translation: "En el santuario hay personas encargadas de dirigir el festival.",
+      },
+      {
+        segments: ruby("[寿司|すし]が[好|す]きです。"),
+        translation: "Me gusta el sushi.",
+      },
+      {
+        segments: ruby("[会|かい]の[司会者|しかいしゃ]が[最初|さいしょ]にあいさつしました。"),
+        translation: "El presentador saludó al comienzo de la reunión.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "縄",
+    level: 4,
+    strokeCount: 15,
+    on: ["ジョウ"],
+    kun: ["なわ"],
+    meaning: "Cuerda",
+    examples: [
+      {
+        segments: ruby("[縄|なわ]で[箱|はこ]をしばります。"),
+        translation: "Amarro la caja con una cuerda.",
+      },
+      {
+        segments: ruby("[縄跳|なわと]びの[練習|れんしゅう]をします。"),
+        translation: "Practico salto de cuerda.",
+      },
+      {
+        segments: ruby("[太|ふと]い[縄|なわ]を[使|つか]ってください。"),
+        translation: "Por favor, use una cuerda gruesa.",
+      },
+      {
+        segments: ruby("[沖縄|おきなわ]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Okinawa.",
+      },
+      {
+        segments: ruby("[縄|なわ]をしっかり[結|むす]んでください。"),
+        translation: "Por favor, ate bien la cuerda.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "束",
+    level: 4,
+    strokeCount: 7,
+    on: ["ソク"],
+    kun: ["たば", "たば.ねる", "つか", "つか.ねる"],
+    meaning: "Manojo / grupo / promesa",
+    examples: [
+      {
+        segments: ruby("[花|はな]を一[束|たば][買|か]いました。"),
+        translation: "Compré un ramo de flores.",
+      },
+      {
+        segments: ruby("[本|ほん]をひもで[束|たば]ねます。"),
+        translation: "Ato los libros con una cuerda.",
+      },
+      {
+        segments: ruby("[約束|やくそく]をまもってください。"),
+        translation: "Por favor, cumpla la promesa.",
+      },
+      {
+        segments: ruby("[野菜|やさい]を一[束|たば]ずつならべます。"),
+        translation: "Coloco las verduras en manojos.",
+      },
+      {
+        segments: ruby("[髪|かみ]をうしろで[束|たば]ねました。"),
+        translation: "Me até el cabello hacia atrás.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "灯",
+    level: 4,
+    strokeCount: 6,
+    on: ["トウ"],
+    kun: ["ひ"],
+    meaning: "Luz / lámpara",
+    examples: [
+      {
+        segments: ruby("[灯|あか]りをつけてください。"),
+        translation: "Por favor, encienda la luz.",
+      },
+      {
+        segments: ruby("[街灯|がいとう]が[夜道|よみち]をてらしています。"),
+        translation: "Las farolas iluminan el camino nocturno.",
+      },
+      {
+        segments: ruby("[豆電球|まめでんきゅう]の[灯|ひ]がやさしいです。"),
+        translation: "La luz de la ampolleta pequeña es suave.",
+      },
+      {
+        segments: ruby("[灯台|とうだい]が[海|うみ]の[近|ちか]くにあります。"),
+        translation: "Hay un faro cerca del mar.",
+      },
+      {
+        segments: ruby("[小|ちい]さな[灯|ひ]でも[暗|くら]い[部屋|へや]をあかるくできます。"),
+        translation: "Incluso una pequeña luz puede iluminar una habitación oscura.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "付",
+    level: 4,
+    strokeCount: 5,
+    on: ["フ"],
+    kun: ["つ.ける", "つ.く"],
+    meaning: "Pegar / adjuntar / acompañar",
+    examples: [
+      {
+        segments: ruby("[名前|なまえ]を[紙|かみ]に[付|つ]けてください。"),
+        translation: "Por favor, ponga su nombre en el papel.",
+      },
+      {
+        segments: ruby("[気|き]を[付|つ]けて[帰|かえ]ってください。"),
+        translation: "Por favor, vuelva con cuidado.",
+      },
+      {
+        segments: ruby("[日付|ひづけ]をノートに[書|か]きます。"),
+        translation: "Escribo la fecha en el cuaderno.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[付|つ]いて[行|い]きます。"),
+        translation: "Sigo al profesor.",
+      },
+      {
+        segments: ruby("[電気|でんき]を[付|つ]けたままにしないでください。"),
+        translation: "Por favor, no deje la luz encendida.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "要",
+    level: 4,
+    strokeCount: 9,
+    on: ["ヨウ"],
+    kun: ["い.る", "かなめ"],
+    meaning: "Necesitar / importante",
+    examples: [
+      {
+        segments: ruby("[時間|じかん]が[要|い]ります。"),
+        translation: "Se necesita tiempo.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[要点|ようてん]をメモしてください。"),
+        translation: "Por favor, anote los puntos importantes.",
+      },
+      {
+        segments: ruby("[旅行|りょこう]にはじゅんびが[必要|ひつよう]です。"),
+        translation: "Para un viaje se necesita preparación.",
+      },
+      {
+        segments: ruby("[この[部分|ぶぶん]がいちばん[重要|じゅうよう]です。"),
+        translation: "Esta parte es la más importante.",
+      },
+      {
+        segments: ruby("[安全|あんぜん]のためにヘルメットが[要|い]ります。"),
+        translation: "Por seguridad, se necesita casco.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "茨",
+    level: 4,
+    strokeCount: 9,
+    on: [],
+    kun: ["いばら"],
+    meaning: "Espina / zarza",
+    examples: [
+      {
+        segments: ruby("[茨|いばら]の[道|みち]は[歩|ある]きにくいです。"),
+        translation: "El camino lleno de espinas es difícil de caminar.",
+      },
+      {
+        segments: ruby("[茨城|いばらき]へ[行|い]ったことがあります。"),
+        translation: "He ido a Ibaraki.",
+      },
+      {
+        segments: ruby("[茨|いばら]に[服|ふく]がひっかかりました。"),
+        translation: "Mi ropa se enganchó en las zarzas.",
+      },
+      {
+        segments: ruby("[庭|にわ]の[茨|いばら]をきります。"),
+        translation: "Corto las zarzas del jardín.",
+      },
+      {
+        segments: ruby("[茨|いばら]のある[場所|ばしょ]には[近|ちか]づかないでください。"),
+        translation: "Por favor, no se acerque a los lugares con espinas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "潟",
+    level: 4,
+    strokeCount: 15,
+    on: [],
+    kun: ["かた"],
+    meaning: "Laguna / ensenada",
+    examples: [
+      {
+        segments: ruby("[新潟|にいがた]へ[旅行|りょこう]しました。"),
+        translation: "Viajé a Niigata.",
+      },
+      {
+        segments: ruby("[潟|かた]の[近|ちか]くで[鳥|とり]を[見|み]ました。"),
+        translation: "Vi aves cerca de la laguna.",
+      },
+      {
+        segments: ruby("[潟|かた]にはたくさんの[生|い]き[物|もの]がいます。"),
+        translation: "En la laguna hay muchos seres vivos.",
+      },
+      {
+        segments: ruby("[新潟県|にいがたけん]のお[米|こめ]はゆうめいです。"),
+        translation: "El arroz de la prefectura de Niigata es famoso.",
+      },
+      {
+        segments: ruby("[潟|かた]の[水|みず]がしずかにひろがっています。"),
+        translation: "El agua de la laguna se extiende tranquilamente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "協",
+    level: 4,
+    strokeCount: 8,
+    on: ["キョウ"],
+    kun: [],
+    meaning: "Cooperar",
+    examples: [
+      {
+        segments: ruby("[みんなで[協力|きょうりょく]してそうじします。"),
+        translation: "Todos cooperamos para limpiar.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[協力|きょうりょく]をおねがいしました。"),
+        translation: "Le pedí cooperación al profesor.",
+      },
+      {
+        segments: ruby("[協会|きょうかい]の[人|ひと]が[説明|せつめい]しました。"),
+        translation: "Una persona de la asociación dio una explicación.",
+      },
+      {
+        segments: ruby("[家族|かぞく]の[協力|きょうりょく]に[感謝|かんしゃ]しています。"),
+        translation: "Agradezco la cooperación de mi familia.",
+      },
+      {
+        segments: ruby("[協同|きょうどう]で[作業|さぎょう]すると[早|はや]いです。"),
+        translation: "Cuando se trabaja en conjunto, es más rápido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "香",
+    level: 4,
+    strokeCount: 9,
+    on: ["コウ", "キョウ"],
+    kun: ["か", "かお.り", "かお.る"],
+    meaning: "Aroma / fragancia",
+    examples: [
+      {
+        segments: ruby("[花|はな]の[香|かお]りがします。"),
+        translation: "Se siente el aroma de las flores.",
+      },
+      {
+        segments: ruby("[いい[香|かお]りのお[茶|ちゃ]ですね。"),
+        translation: "Qué buen aroma tiene este té.",
+      },
+      {
+        segments: ruby("[香水|こうすい]をすこしだけつけます。"),
+        translation: "Me pongo solo un poco de perfume.",
+      },
+      {
+        segments: ruby("[台所|だいどころ]からおいしそうな[香|かお]りがしてきました。"),
+        translation: "Desde la cocina vino un aroma delicioso.",
+      },
+      {
+        segments: ruby("[香川県|かがわけん]のうどんはゆうめいです。"),
+        translation: "Los udon de la prefectura de Kagawa son famosos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "試",
+    level: 4,
+    strokeCount: 13,
+    on: ["シ"],
+    kun: ["こころ.みる", "ため.す"],
+    meaning: "Probar / examen",
+    examples: [
+      {
+        segments: ruby("[試験|しけん]のために[勉強|べんきょう]します。"),
+        translation: "Estudio para el examen.",
+      },
+      {
+        segments: ruby("この[服|ふく]を[試|ため]してみます。"),
+        translation: "Voy a probar esta ropa.",
+      },
+      {
+        segments: ruby("[試合|しあい]でベストをつくします。"),
+        translation: "Daré lo mejor de mí en el partido.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[方法|ほうほう]を[試|こころ]みました。"),
+        translation: "Intenté un método nuevo.",
+      },
+      {
+        segments: ruby("[試|ため]しに一[回|かい]やってみてください。"),
+        translation: "Inténtelo una vez como prueba.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "臣",
+    level: 4,
+    strokeCount: 7,
+    on: ["シン", "ジン"],
+    kun: [],
+    meaning: "Ministro / servidor",
+    examples: [
+      {
+        segments: ruby("[大臣|だいじん]のニュースを[見|み]ました。"),
+        translation: "Vi noticias sobre un ministro.",
+      },
+      {
+        segments: ruby("[外務大臣|がいむだいじん]が[会見|かいけん]をひらきました。"),
+        translation: "El ministro de Asuntos Exteriores dio una conferencia.",
+      },
+      {
+        segments: ruby("[家臣|かしん]の[話|はなし]を[歴史|れきし]で[学|まな]びます。"),
+        translation: "Estudiamos en historia sobre los vasallos.",
+      },
+      {
+        segments: ruby("[忠臣|ちゅうしん]の[物語|ものがたり]を[読|よ]みました。"),
+        translation: "Leí la historia de un vasallo leal.",
+      },
+      {
+        segments: ruby("[大臣|だいじん]の[名前|なまえ]をノートに[書|か]きました。"),
+        translation: "Escribí el nombre del ministro en el cuaderno.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "側",
+    level: 4,
+    strokeCount: 11,
+    on: ["ソク"],
+    kun: ["がわ"],
+    meaning: "Lado",
+    examples: [
+      {
+        segments: ruby("[右側|みぎがわ]に[立|た]ってください。"),
+        translation: "Por favor, párese al lado derecho.",
+      },
+      {
+        segments: ruby("[川|かわ]の[側|そば]を[歩|ある]きます。"),
+        translation: "Camino al lado del río.",
+      },
+      {
+        segments: ruby("[内側|うちがわ]からドアをあけます。"),
+        translation: "Abro la puerta desde dentro.",
+      },
+      {
+        segments: ruby("[反対|はんたい][側|がわ]にも[店|みせ]があります。"),
+        translation: "También hay una tienda al lado opuesto.",
+      },
+      {
+        segments: ruby("[席|せき]は[窓|まど][側|がわ]がいいです。"),
+        translation: "Prefiero un asiento junto a la ventana.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "働",
+    level: 4,
+    strokeCount: 13,
+    on: ["ドウ"],
+    kun: ["はたら.く"],
+    meaning: "Trabajar",
+    examples: [
+      {
+        segments: ruby("[父|ちち]は[会社|かいしゃ]で[働|はたら]いています。"),
+        translation: "Mi padre trabaja en una empresa.",
+      },
+      {
+        segments: ruby("[将来|しょうらい]は[日本|にほん]で[働|はたら]きたいです。"),
+        translation: "En el futuro quiero trabajar en Japón.",
+      },
+      {
+        segments: ruby("[働|はたら]きすぎないように[休|やす]みも[大切|たいせつ]です。"),
+        translation: "También es importante descansar para no trabajar demasiado.",
+      },
+      {
+        segments: ruby("[工場|こうじょう]でたくさんの[人|ひと]が[働|はたら]いています。"),
+        translation: "Muchas personas están trabajando en la fábrica.",
+      },
+      {
+        segments: ruby("[働|はたら]く[時間|じかん]をきちんと[守|まも]ります。"),
+        translation: "Respeto correctamente el horario de trabajo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "府",
+    level: 4,
+    strokeCount: 8,
+    on: ["フ"],
+    kun: [],
+    meaning: "Gobierno / prefectura urbana",
+    examples: [
+      {
+        segments: ruby("[大阪府|おおさかふ]へ[行|い]きました。"),
+        translation: "Fui a la prefectura de Osaka.",
+      },
+      {
+        segments: ruby("[府立|ふりつ]の[学校|がっこう]についてしらべます。"),
+        translation: "Investigo sobre una escuela de administración prefectural.",
+      },
+      {
+        segments: ruby("[政府|せいふ]の[発表|はっぴょう]を[聞|き]きました。"),
+        translation: "Escuché el anuncio del gobierno.",
+      },
+      {
+        segments: ruby("[京都府|きょうとふ]の[地図|ちず]を[見|み]ます。"),
+        translation: "Miro el mapa de la prefectura de Kioto.",
+      },
+      {
+        segments: ruby("[府|ふ]の[施設|しせつ]を[利用|りよう]します。"),
+        translation: "Utilizo una instalación prefectural.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "養",
+    level: 4,
+    strokeCount: 15,
+    on: ["ヨウ"],
+    kun: ["やしな.う"],
+    meaning: "Criar / nutrir / cultivar",
+    examples: [
+      {
+        segments: ruby("[子|こ]どもを[大切|たいせつ]に[養|やしな]います。"),
+        translation: "Crío a los niños con cuidado.",
+      },
+      {
+        segments: ruby("[栄養|えいよう]のある[食事|しょくじ]をとります。"),
+        translation: "Tomo una comida nutritiva.",
+      },
+      {
+        segments: ruby("[教養|きょうよう]を[深|ふか]めたいです。"),
+        translation: "Quiero ampliar mi cultura general.",
+      },
+      {
+        segments: ruby("[動物|どうぶつ]を[家|いえ]で[養|やしな]うのはたいへんです。"),
+        translation: "Criar animales en casa es difícil.",
+      },
+      {
+        segments: ruby("[養分|ようぶん]のある[土|つち]が[必要|ひつよう]です。"),
+        translation: "Se necesita tierra con nutrientes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "印",
+    level: 4,
+    strokeCount: 6,
+    on: ["イン"],
+    kun: ["しるし"],
+    meaning: "Marca / sello / señal",
+    examples: [
+      {
+        segments: ruby("[大事|だいじ]な[所|ところ]に[印|しるし]をつけます。"),
+        translation: "Pongo una marca en la parte importante.",
+      },
+      {
+        segments: ruby("[名前|なまえ]の[横|よこ]に[印|しるし]を[書|か]いてください。"),
+        translation: "Por favor, ponga una marca al lado del nombre.",
+      },
+      {
+        segments: ruby("[印刷|いんさつ]した[紙|かみ]を[配|くば]ります。"),
+        translation: "Reparto las hojas impresas.",
+      },
+      {
+        segments: ruby("[この[印|しるし]が[目印|めじるし]です。"),
+        translation: "Esta marca es la referencia.",
+      },
+      {
+        segments: ruby("[先生|せんせい]から[合格|ごうかく]の[印|しるし]をもらいました。"),
+        translation: "Recibí del profesor una señal de aprobación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "完",
+    level: 4,
+    strokeCount: 7,
+    on: ["カン"],
+    kun: [],
+    meaning: "Completar / terminar",
+    examples: [
+      {
+        segments: ruby("[宿題|しゅくだい]が[完了|かんりょう]しました。"),
+        translation: "La tarea quedó terminada.",
+      },
+      {
+        segments: ruby("[仕事|しごと]を[完全|かんぜん]におえました。"),
+        translation: "Pude terminar el trabajo completamente.",
+      },
+      {
+        segments: ruby("[準備|じゅんび]が[完|かん]ぺきです。"),
+        translation: "La preparación está perfecta.",
+      },
+      {
+        segments: ruby("[今日|きょう]でこの[本|ほん]を[読|よ]み[終|お]えて[完了|かんりょう]です。"),
+        translation: "Hoy terminaré este libro por completo.",
+      },
+      {
+        segments: ruby("[工事|こうじ]は[来週|らいしゅう][完了|かんりょう]する[予定|よてい]です。"),
+        translation: "La obra está prevista para completarse la próxima semana.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "鏡",
+    level: 4,
+    strokeCount: 19,
+    on: ["キョウ"],
+    kun: ["かがみ"],
+    meaning: "Espejo",
+    examples: [
+      {
+        segments: ruby("[鏡|かがみ]で[顔|かお]を[見|み]ます。"),
+        translation: "Me miro la cara en el espejo.",
+      },
+      {
+        segments: ruby("[朝|あさ]、[鏡|かがみ]の[前|まえ]で[髪|かみ]をととのえます。"),
+        translation: "Por la mañana me arreglo el cabello frente al espejo.",
+      },
+      {
+        segments: ruby("[大|おお]きな[鏡|かがみ]が[部屋|へや]にあります。"),
+        translation: "Hay un espejo grande en la habitación.",
+      },
+      {
+        segments: ruby("[眼鏡|めがね]をかけるとよく[見|み]えます。"),
+        translation: "Con lentes veo bien.",
+      },
+      {
+        segments: ruby("[鏡|かがみ]がくもったのでふきました。"),
+        translation: "Como el espejo se empañó, lo limpié.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "候",
+    level: 4,
+    strokeCount: 10,
+    on: ["コウ"],
+    kun: ["そうろう"],
+    meaning: "Señales / clima / esperar",
+    examples: [
+      {
+        segments: ruby("[天候|てんこう]がかわりやすいです。"),
+        translation: "El tiempo cambia con facilidad.",
+      },
+      {
+        segments: ruby("[気候|きこう]があたたかい[地域|ちいき]です。"),
+        translation: "Es una región de clima cálido.",
+      },
+      {
+        segments: ruby("[体調|たいちょう]のようすを[見|み]て[候補|こうほ]をきめます。"),
+        translation: "Decidimos la opción viendo cómo está la condición física.",
+      },
+      {
+        segments: ruby("[候補|こうほ]の[中|なか]から一つ[選|えら]びます。"),
+        translation: "Elijo una opción entre los candidatos.",
+      },
+      {
+        segments: ruby("[天候|てんこう]がわるいので[出発|しゅっぱつ]をおくらせます。"),
+        translation: "Como el tiempo está malo, retrasamos la salida.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "児",
+    level: 4,
+    strokeCount: 7,
+    on: ["ジ", "ニ"],
+    kun: [],
+    meaning: "Niño",
+    examples: [
+      {
+        segments: ruby("[児童|じどう]が[校庭|こうてい]で[遊|あそ]んでいます。"),
+        translation: "Los niños están jugando en el patio de la escuela.",
+      },
+      {
+        segments: ruby("[小児科|しょうにか]へ[行|い]きました。"),
+        translation: "Fui a pediatría.",
+      },
+      {
+        segments: ruby("[児童館|じどうかん]で[本|ほん]を[読|よ]みます。"),
+        translation: "Leo libros en el centro infantil.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[児童|じどう]がクラスに[入|はい]りました。"),
+        translation: "Entró un nuevo niño a la clase.",
+      },
+      {
+        segments: ruby("[児童|じどう]の[安全|あんぜん]をまもることが[大切|たいせつ]です。"),
+        translation: "Es importante proteger la seguridad de los niños.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "信",
+    level: 4,
+    strokeCount: 9,
+    on: ["シン"],
+    kun: ["しん.じる"],
+    meaning: "Creer / confianza",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]を[信|しん]じています。"),
+        translation: "Confío en mi amigo.",
+      },
+      {
+        segments: ruby("[先生|せんせい]のことばを[信|しん]じてがんばります。"),
+        translation: "Creeré en las palabras del profesor y me esforzaré.",
+      },
+      {
+        segments: ruby("[手紙|てがみ]を[送|おく]るときは[住所|じゅうしょ]を[確認|かくにん]します。"),
+        translation: "Cuando envío una carta, confirmo la dirección.",
+      },
+      {
+        segments: ruby("[自信|じしん]をもって[発表|はっぴょう]してください。"),
+        translation: "Por favor, exponga con confianza.",
+      },
+      {
+        segments: ruby("[信号|しんごう]が[青|あお]になったら[進|すす]みます。"),
+        translation: "Avanzo cuando el semáforo se pone verde.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "続",
+    level: 4,
+    strokeCount: 13,
+    on: ["ゾク"],
+    kun: ["つづ.く", "つづ.ける"],
+    meaning: "Continuar / seguir",
+    examples: [
+      {
+        segments: ruby("[雨|あめ]が三[日|にち][続|つづ]いています。"),
+        translation: "Ha seguido lloviendo por tres días.",
+      },
+      {
+        segments: ruby("[勉強|べんきょう]を[毎日|まいにち][続|つづ]けることが[大切|たいせつ]です。"),
+        translation: "Es importante continuar estudiando todos los días.",
+      },
+      {
+        segments: ruby("[行列|ぎょうれつ]がまだ[続|つづ]いています。"),
+        translation: "La fila todavía continúa.",
+      },
+      {
+        segments: ruby("[続|つづ]きはあした[読|よ]みましょう。"),
+        translation: "Leamos la continuación mañana.",
+      },
+      {
+        segments: ruby("[試合|しあい]のあとも[練習|れんしゅう]を[続|つづ]けました。"),
+        translation: "Seguimos practicando incluso después del partido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "特",
+    level: 4,
+    strokeCount: 10,
+    on: ["トク"],
+    kun: [],
+    meaning: "Especial",
+    examples: [
+      {
+        segments: ruby("きょうは[特別|とくべつ]な[日|ひ]です。"),
+        translation: "Hoy es un día especial.",
+      },
+      {
+        segments: ruby("[特急|とっきゅう]に[乗|の]って[東京|とうきょう]へ[行|い]きます。"),
+        translation: "Voy a Tokio en tren expreso.",
+      },
+      {
+        segments: ruby("[特|とく]にこの[部分|ぶぶん]をよく[見|み]てください。"),
+        translation: "Por favor, mire especialmente esta parte.",
+      },
+      {
+        segments: ruby("[特長|とくちょう]をノートにまとめます。"),
+        translation: "Resumiré las características en el cuaderno.",
+      },
+      {
+        segments: ruby("[特別室|とくべつしつ]で[会議|かいぎ]をします。"),
+        translation: "Tendremos la reunión en una sala especial.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "阜",
+    level: 4,
+    strokeCount: 8,
+    on: ["フ"],
+    kun: [],
+    meaning: "Colina / usado en nombres",
+    examples: [
+      {
+        segments: ruby("[岐阜|ぎふ]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Gifu.",
+      },
+      {
+        segments: ruby("[岐阜県|ぎふけん]の[地図|ちず]を[見|み]ました。"),
+        translation: "Vi el mapa de la prefectura de Gifu.",
+      },
+      {
+        segments: ruby("[岐阜|ぎふ]の[山|やま]はうつくしいです。"),
+        translation: "Las montañas de Gifu son hermosas.",
+      },
+      {
+        segments: ruby("[岐阜駅|ぎふえき]で[友達|ともだち]と[会|あ]いました。"),
+        translation: "Me encontré con un amigo en la estación de Gifu.",
+      },
+      {
+        segments: ruby("[岐阜|ぎふ]の[文化|ぶんか]について[学|まな]びました。"),
+        translation: "Aprendí sobre la cultura de Gifu.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "浴",
+    level: 4,
+    strokeCount: 10,
+    on: ["ヨク"],
+    kun: ["あ.びる", "あ.びせる"],
+    meaning: "Bañarse / recibir",
+    examples: [
+      {
+        segments: ruby("[朝|あさ]シャワーを[浴|あ]びます。"),
+        translation: "Me doy una ducha por la mañana.",
+      },
+      {
+        segments: ruby("[日光|にっこう]を[浴|あ]びながら[歩|ある]きます。"),
+        translation: "Camino recibiendo la luz del sol.",
+      },
+      {
+        segments: ruby("[お風呂|おふろ]に[入|はい]って[体|からだ]をあたためます。"),
+        translation: "Entro al baño para calentar el cuerpo.",
+      },
+      {
+        segments: ruby("[海辺|うみべ]で[風|かぜ]を[浴|あ]びるときもちがいいです。"),
+        translation: "Se siente bien recibir el viento junto al mar.",
+      },
+      {
+        segments: ruby("[入浴|にゅうよく]のあとで[牛乳|ぎゅうにゅう]を[飲|の]みます。"),
+        translation: "Después del baño tomo leche.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "英",
+    level: 4,
+    strokeCount: 8,
+    on: ["エイ"],
+    kun: [],
+    meaning: "Inglés / excelente",
+    examples: [
+      {
+        segments: ruby("[英語|えいご]を[毎日|まいにち][勉強|べんきょう]しています。"),
+        translation: "Estudio inglés todos los días.",
+      },
+      {
+        segments: ruby("[英会話|えいかいわ]の[練習|れんしゅう]をしました。"),
+        translation: "Practiqué conversación en inglés.",
+      },
+      {
+        segments: ruby("[英国|えいこく]の[歴史|れきし]に[興味|きょうみ]があります。"),
+        translation: "Me interesa la historia del Reino Unido.",
+      },
+      {
+        segments: ruby("[英雄|えいゆう]の[話|はなし]を[読|よ]みました。"),
+        translation: "Leí una historia sobre un héroe.",
+      },
+      {
+        segments: ruby("[英単語|えいたんご]を十[個|こ][覚|おぼ]えました。"),
+        translation: "Memoricé diez palabras en inglés.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "官",
+    level: 4,
+    strokeCount: 8,
+    on: ["カン"],
+    kun: [],
+    meaning: "Oficial / gobierno",
+    examples: [
+      {
+        segments: ruby("[警官|けいかん]が[道|みち]を[案内|あんない]してくれました。"),
+        translation: "Un policía me indicó el camino.",
+      },
+      {
+        segments: ruby("[官公庁|かんこうちょう]で[働|はたら]く[人|ひと]もいます。"),
+        translation: "También hay personas que trabajan en oficinas públicas.",
+      },
+      {
+        segments: ruby("[外交官|がいこうかん]の[仕事|しごと]についてしらべました。"),
+        translation: "Investigué sobre el trabajo de un diplomático.",
+      },
+      {
+        segments: ruby("[官|かん]の[発表|はっぴょう]をニュースで[聞|き]きました。"),
+        translation: "Escuché el anuncio oficial en las noticias.",
+      },
+      {
+        segments: ruby("[官庁|かんちょう][街|がい]は[朝|あさ]からいそがしそうです。"),
+        translation: "El distrito gubernamental parece ocupado desde la mañana.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "競",
+    level: 4,
+    strokeCount: 20,
+    on: ["キョウ", "ケイ"],
+    kun: ["きそ.う", "せ.る"],
+    meaning: "Competir",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]と[速|はや]さを[競|きそ]いました。"),
+        translation: "Competí en velocidad con un amigo.",
+      },
+      {
+        segments: ruby("[競争|きょうそう]はとてもはげしかったです。"),
+        translation: "La competencia fue muy intensa.",
+      },
+      {
+        segments: ruby("[運動会|うんどうかい]で[一位|いちい]を[競|きそ]います。"),
+        translation: "Competimos por el primer lugar en el festival deportivo.",
+      },
+      {
+        segments: ruby("[競技|きょうぎ]のルールをよく[読|よ]んでください。"),
+        translation: "Por favor, lea bien las reglas de la disciplina.",
+      },
+      {
+        segments: ruby("[店|みせ]どうしが[安|やす]い[値段|ねだん]で[競|きそ]っています。"),
+        translation: "Las tiendas compiten con precios bajos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "康",
+    level: 4,
+    strokeCount: 11,
+    on: ["コウ"],
+    kun: [],
+    meaning: "Salud / tranquilidad",
+    examples: [
+      {
+        segments: ruby("[健康|けんこう]に[気|き]をつけています。"),
+        translation: "Cuido mi salud.",
+      },
+      {
+        segments: ruby("[健康的|けんこうてき]な[生活|せいかつ]をめざします。"),
+        translation: "Busco una vida saludable.",
+      },
+      {
+        segments: ruby("[山|やま]の[中|なか]で[心|こころ]が[安康|あんこう]になります。"),
+        translation: "En la montaña el corazón se siente tranquilo.",
+      },
+      {
+        segments: ruby("[健康診断|けんこうしんだん]をうけました。"),
+        translation: "Me hice un chequeo médico.",
+      },
+      {
+        segments: ruby("[健康|けんこう]な[体|からだ]のために[毎朝|まいあさ][歩|ある]きます。"),
+        translation: "Camino todas las mañanas para tener un cuerpo sano.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "治",
+    level: 4,
+    strokeCount: 8,
+    on: ["ジ", "チ"],
+    kun: ["なお.る", "なお.す", "おさ.める"],
+    meaning: "Curar / gobernar",
+    examples: [
+      {
+        segments: ruby("[風邪|かぜ]がやっと[治|なお]りました。"),
+        translation: "Por fin me curé del resfriado.",
+      },
+      {
+        segments: ruby("[医者|いしゃ]が[病気|びょうき]を[治|なお]します。"),
+        translation: "El médico cura la enfermedad.",
+      },
+      {
+        segments: ruby("[政治|せいじ]についてニュースを[見|み]ました。"),
+        translation: "Vi noticias sobre política.",
+      },
+      {
+        segments: ruby("[痛|いた]みをしっかり[治|なお]したいです。"),
+        translation: "Quiero curar bien el dolor.",
+      },
+      {
+        segments: ruby("[町|まち]をよく[治|おさ]めることが[大切|たいせつ]です。"),
+        translation: "Es importante gobernar bien la ciudad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "井",
+    level: 4,
+    strokeCount: 4,
+    on: ["セイ", "ショウ"],
+    kun: ["い"],
+    meaning: "Pozo",
+    examples: [
+      {
+        segments: ruby("[井戸|いど]の[水|みず]はつめたいです。"),
+        translation: "El agua del pozo está fría.",
+      },
+      {
+        segments: ruby("[古|ふる]い[井戸|いど]を[見|み]ました。"),
+        translation: "Vi un pozo antiguo.",
+      },
+      {
+        segments: ruby("[井戸|いど]の[近|ちか]くで[遊|あそ]ばないでください。"),
+        translation: "Por favor, no juegue cerca del pozo.",
+      },
+      {
+        segments: ruby("[井|い]の[中|なか]をのぞきました。"),
+        translation: "Miré dentro del pozo.",
+      },
+      {
+        segments: ruby("[山井|やまい]という[名字|みょうじ]の[人|ひと]に[会|あ]いました。"),
+        translation: "Conocí a una persona de apellido Yamai.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "卒",
+    level: 4,
+    strokeCount: 8,
+    on: ["ソツ"],
+    kun: [],
+    meaning: "Graduarse / terminar",
+    examples: [
+      {
+        segments: ruby("[大学|だいがく]を[卒業|そつぎょう]しました。"),
+        translation: "Me gradué de la universidad.",
+      },
+      {
+        segments: ruby("[卒業式|そつぎょうしき]で[歌|うた]をうたいました。"),
+        translation: "Canté en la ceremonia de graduación.",
+      },
+      {
+        segments: ruby("[卒業生|そつぎょうせい]が[学校|がっこう]をたずねました。"),
+        translation: "Un graduado visitó la escuela.",
+      },
+      {
+        segments: ruby("[小学校|しょうがっこう][卒業|そつぎょう]の[写真|しゃしん]を[見|み]ました。"),
+        translation: "Vi fotos de la graduación de la primaria.",
+      },
+      {
+        segments: ruby("[今年|ことし]の[春|はる]に[卒業|そつぎょう]する[予定|よてい]です。"),
+        translation: "Tengo previsto graduarme esta primavera.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "徳",
+    level: 4,
+    strokeCount: 14,
+    on: ["トク"],
+    kun: [],
+    meaning: "Virtud / beneficio",
+    examples: [
+      {
+        segments: ruby("[道徳|どうとく]の[授業|じゅぎょう]があります。"),
+        translation: "Hay clase de educación moral.",
+      },
+      {
+        segments: ruby("[徳|とく]のある[行動|こうどう]をこころがけます。"),
+        translation: "Procuro actuar con virtud.",
+      },
+      {
+        segments: ruby("[お徳用|おとくよう]の[品物|しなもの]を[買|か]いました。"),
+        translation: "Compré un producto económico de formato grande.",
+      },
+      {
+        segments: ruby("[徳島|とくしま]へ[行|い]ってみたいです。"),
+        translation: "Quiero ir a Tokushima.",
+      },
+      {
+        segments: ruby("[人|ひと]にしんせつにすると[徳|とく]になります。"),
+        translation: "Ser amable con los demás trae beneficio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "富",
+    level: 4,
+    strokeCount: 12,
+    on: ["フ", "フウ"],
+    kun: ["と.む", "とみ"],
+    meaning: "Riqueza / abundancia",
+    examples: [
+      {
+        segments: ruby("[富士山|ふじさん]を[見|み]ました。"),
+        translation: "Vi el monte Fuji.",
+      },
+      {
+        segments: ruby("[知識|ちしき]が[豊富|ほうふ]な[先生|せんせい]です。"),
+        translation: "Es un profesor con muchos conocimientos.",
+      },
+      {
+        segments: ruby("[富|とみ]のある[生活|せいかつ]よりも[心|こころ]の[豊|ゆた]かさが[大切|たいせつ]です。"),
+        translation: "Más importante que una vida con riqueza es la riqueza interior.",
+      },
+      {
+        segments: ruby("[経験|けいけん]が[豊富|ほうふ]なのであんしんです。"),
+        translation: "Da confianza porque tiene mucha experiencia.",
+      },
+      {
+        segments: ruby("[富山|とやま]の[景色|けしき]はうつくしいです。"),
+        translation: "Los paisajes de Toyama son hermosos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "利",
+    level: 4,
+    strokeCount: 7,
+    on: ["リ"],
+    kun: ["き.く"],
+    meaning: "Beneficio / utilidad / interés",
+    examples: [
+      {
+        segments: ruby("[便利|べんり]な[道具|どうぐ]ですね。"),
+        translation: "Es una herramienta útil, ¿verdad?",
+      },
+      {
+        segments: ruby("[利用|りよう]するときはルールをまもります。"),
+        translation: "Cuando lo uso, respeto las reglas.",
+      },
+      {
+        segments: ruby("[利益|りえき]よりも[安全|あんぜん]が[大切|たいせつ]です。"),
+        translation: "Más importante que la ganancia es la seguridad.",
+      },
+      {
+        segments: ruby("[地利|ちり]をいかして[農業|のうぎょう]をしています。"),
+        translation: "Aprovechan las condiciones del lugar para hacer agricultura.",
+      },
+      {
+        segments: ruby("[利口|りこう]な[子|こ]どもですね。"),
+        translation: "Es un niño muy inteligente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "栄",
+    level: 4,
+    strokeCount: 9,
+    on: ["エイ"],
+    kun: ["さか.える", "は.え", "は.やす"],
+    meaning: "Prosperar / gloria",
+    examples: [
+      {
+        segments: ruby("[町|まち]が[栄|さか]えています。"),
+        translation: "La ciudad está prosperando.",
+      },
+      {
+        segments: ruby("[栄養|えいよう]のある[食事|しょくじ]をとります。"),
+        translation: "Tomo una comida nutritiva.",
+      },
+      {
+        segments: ruby("[学校|がっこう]の[栄光|えいこう]をたたえます。"),
+        translation: "Honramos la gloria de la escuela.",
+      },
+      {
+        segments: ruby("[葉|は]がしげって[木|き]がよく[栄|は]えています。"),
+        translation: "Las hojas crecen densas y el árbol se ve frondoso.",
+      },
+      {
+        segments: ruby("[商店街|しょうてんがい]が[昔|むかし]よりも[栄|さか]えています。"),
+        translation: "La calle comercial está más próspera que antes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "管",
+    level: 4,
+    strokeCount: 14,
+    on: ["カン"],
+    kun: ["くだ"],
+    meaning: "Tubo / administrar",
+    examples: [
+      {
+        segments: ruby("[水道管|すいどうかん]をしらべます。"),
+        translation: "Reviso la tubería de agua.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[資料|しりょう]を[管理|かんり]しています。"),
+        translation: "El profesor está administrando los materiales.",
+      },
+      {
+        segments: ruby("[図書館|としょかん]の[本|ほん]はきちんと[管理|かんり]されています。"),
+        translation: "Los libros de la biblioteca están bien organizados.",
+      },
+      {
+        segments: ruby("[細|ほそ]い[管|くだ]をとおして[水|みず]がながれます。"),
+        translation: "El agua fluye por un tubo delgado.",
+      },
+      {
+        segments: ruby("[健康|けんこう]を[管理|かんり]することが[大切|たいせつ]です。"),
+        translation: "Es importante cuidar y administrar la salud.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "極",
+    level: 4,
+    strokeCount: 12,
+    on: ["キョク", "ゴク"],
+    kun: ["きわ.める", "きわ.まる", "きわ.み"],
+    meaning: "Extremo / máximo / llevar al límite",
+    examples: [
+      {
+        segments: ruby("[南極|なんきょく]はとてもさむいです。"),
+        translation: "La Antártida es muy fría.",
+      },
+      {
+        segments: ruby("[最後|さいご]まで[極|きわ]めたいです。"),
+        translation: "Quiero llevarlo al máximo hasta el final.",
+      },
+      {
+        segments: ruby("[極上|ごくじょう]の[景色|けしき]でした。"),
+        translation: "Fue un paisaje extraordinario.",
+      },
+      {
+        segments: ruby("[研究|けんきゅう]を[極|きわ]めるには[時間|じかん]がかかります。"),
+        translation: "Dominar una investigación toma tiempo.",
+      },
+      {
+        segments: ruby("[話|はなし]が[極端|きょくたん]にならないようにします。"),
+        translation: "Procuro que la conversación no se vuelva extrema.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "佐",
+    level: 4,
+    strokeCount: 7,
+    on: ["サ"],
+    kun: [],
+    meaning: "Ayuda / auxiliar",
+    examples: [
+      {
+        segments: ruby("[佐藤|さとう]さんに[会|あ]いました。"),
+        translation: "Me encontré con el señor Satō.",
+      },
+      {
+        segments: ruby("[補佐|ほさ]の[役割|やくわり]を[担当|たんとう]します。"),
+        translation: "Me encargaré del rol de apoyo.",
+      },
+      {
+        segments: ruby("[先生|せんせい]を[補佐|ほさ]する[人|ひと]がいます。"),
+        translation: "Hay una persona que apoya al profesor.",
+      },
+      {
+        segments: ruby("[佐賀|さが]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Saga.",
+      },
+      {
+        segments: ruby("[会議|かいぎ]では[補佐|ほさ]の[説明|せつめい]も[大切|たいせつ]です。"),
+        translation: "En la reunión también es importante la explicación de apoyo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "滋",
+    level: 4,
+    strokeCount: 12,
+    on: ["ジ"],
+    kun: ["しげ.る"],
+    meaning: "Nutrir / abundar",
+    examples: [
+      {
+        segments: ruby("[滋賀|しが]へ[行|い]ったことがあります。"),
+        translation: "He ido a Shiga.",
+      },
+      {
+        segments: ruby("[滋養|じよう]のある[食事|しょくじ]をとります。"),
+        translation: "Tomo una comida nutritiva.",
+      },
+      {
+        segments: ruby("[草木|くさき]が[滋|しげ]っています。"),
+        translation: "La vegetación está creciendo densamente.",
+      },
+      {
+        segments: ruby("[滋味|じみ]ぶかい[料理|りょうり]でした。"),
+        translation: "Fue una comida de sabor profundo y nutritivo.",
+      },
+      {
+        segments: ruby("[心|こころ]を[滋|しげ]らせるような[音楽|おんがく]です。"),
+        translation: "Es una música que nutre el corazón.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "成",
+    level: 4,
+    strokeCount: 6,
+    on: ["セイ", "ジョウ"],
+    kun: ["な.る", "な.す"],
+    meaning: "Convertirse / lograr / formar",
+    examples: [
+      {
+        segments: ruby("[大人|おとな]に[成|な]りたいです。"),
+        translation: "Quiero convertirme en adulto.",
+      },
+      {
+        segments: ruby("[成功|せいこう]するまでがんばります。"),
+        translation: "Me esforzaré hasta tener éxito.",
+      },
+      {
+        segments: ruby("[作文|さくぶん]がよく[完成|かんせい]しました。"),
+        translation: "La redacción quedó bien terminada.",
+      },
+      {
+        segments: ruby("[計画|けいかく]を[成|な]しとげるのはたいへんです。"),
+        translation: "Lograr el plan es difícil.",
+      },
+      {
+        segments: ruby("[平成|へいせい]について[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos sobre la era Heisei en clase.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "孫",
+    level: 4,
+    strokeCount: 10,
+    on: ["ソン"],
+    kun: ["まご"],
+    meaning: "Nieto / nieta",
+    examples: [
+      {
+        segments: ruby("[祖父|そふ]は[孫|まご]をとてもかわいがっています。"),
+        translation: "El abuelo quiere mucho a su nieto.",
+      },
+      {
+        segments: ruby("[孫|まご]といっしょに[公園|こうえん]で[遊|あそ]びます。"),
+        translation: "Juego en el parque junto con mi nieto.",
+      },
+      {
+        segments: ruby("[夏休|なつやす]みに[孫|まご]が[家|いえ]へ[来|き]ました。"),
+        translation: "En las vacaciones de verano mi nieto vino a la casa.",
+      },
+      {
+        segments: ruby("[孫娘|まごむすめ]に[本|ほん]をプレゼントしました。"),
+        translation: "Le regalé un libro a mi nieta.",
+      },
+      {
+        segments: ruby("[祖母|そぼ]が[孫|まご]の[写真|しゃしん]を[見|み]てよろこびました。"),
+        translation: "La abuela se alegró al ver la foto de su nieto.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "栃",
+    level: 4,
+    strokeCount: 9,
+    on: [],
+    kun: ["とち"],
+    meaning: "Castaño japonés / usado en nombres",
+    examples: [
+      {
+        segments: ruby("[栃木|とちぎ]へ[旅行|りょこう]しました。"),
+        translation: "Viajé a Tochigi.",
+      },
+      {
+        segments: ruby("[栃木県|とちぎけん]の[有名|ゆうめい]な[場所|ばしょ]をしらべます。"),
+        translation: "Investigo lugares famosos de la prefectura de Tochigi.",
+      },
+      {
+        segments: ruby("[栃|とち]の[木|き]の[実|み]を[見|み]ました。"),
+        translation: "Vi el fruto del castaño japonés.",
+      },
+      {
+        segments: ruby("[栃木|とちぎ]の[山|やま]はとてもきれいです。"),
+        translation: "Las montañas de Tochigi son muy hermosas.",
+      },
+      {
+        segments: ruby("[栃|とち]という[字|じ]は[地名|ちめい]でよく[見|み]ます。"),
+        translation: "El carácter 栃 se ve mucho en nombres de lugares.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "副",
+    level: 4,
+    strokeCount: 11,
+    on: ["フク"],
+    kun: [],
+    meaning: "Secundario / auxiliar / vice",
+    examples: [
+      {
+        segments: ruby("[副会長|ふくかいちょう]が[挨拶|あいさつ]しました。"),
+        translation: "El vicepresidente saludó.",
+      },
+      {
+        segments: ruby("[副作用|ふくさよう]に[気|き]をつけてください。"),
+        translation: "Por favor, tenga cuidado con los efectos secundarios.",
+      },
+      {
+        segments: ruby("[主役|しゅやく]だけでなく[副役|ふくやく]も[大切|たいせつ]です。"),
+        translation: "No solo el papel principal, también el secundario es importante.",
+      },
+      {
+        segments: ruby("[辞書|じしょ]の[副読本|ふくどくほん]も[使|つか]います。"),
+        translation: "También uso el libro complementario.",
+      },
+      {
+        segments: ruby("[副|ふく]の[仕事|しごと]を[手伝|てつだ]います。"),
+        translation: "Ayudo con la tarea auxiliar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "陸",
+    level: 4,
+    strokeCount: 11,
+    on: ["リク"],
+    kun: [],
+    meaning: "Tierra firme / continente",
+    examples: [
+      {
+        segments: ruby("[陸上|りくじょう]の[練習|れんしゅう]をします。"),
+        translation: "Practico atletismo.",
+      },
+      {
+        segments: ruby("[大陸|たいりく]の[地図|ちず]を[見|み]ます。"),
+        translation: "Miro el mapa del continente.",
+      },
+      {
+        segments: ruby("[海|うみ]よりも[陸|りく]を[旅|たび]するほうが[好|す]きです。"),
+        translation: "Me gusta más viajar por tierra que por mar.",
+      },
+      {
+        segments: ruby("[陸地|りくち]がみえてきました。"),
+        translation: "Ya se empezó a ver tierra firme.",
+      },
+      {
+        segments: ruby("[陸上部|りくじょうぶ]の[友達|ともだち]は[毎日|まいにち][走|はし]っています。"),
+        translation: "Mi amigo del club de atletismo corre todos los días.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "媛",
+    level: 4,
+    strokeCount: 12,
+    on: ["エン"],
+    kun: ["ひめ"],
+    meaning: "Princesa / usado en nombres",
+    examples: [
+      {
+        segments: ruby("[愛媛|えひめ]へ[行|い]ってみたいです。"),
+        translation: "Quiero ir a Ehime.",
+      },
+      {
+        segments: ruby("[愛媛県|えひめけん]のみかんはゆうめいです。"),
+        translation: "Las mandarinas de la prefectura de Ehime son famosas.",
+      },
+      {
+        segments: ruby("[媛|ひめ]という[漢字|かんじ]は[地名|ちめい]で[見|み]ることが[多|おお]いです。"),
+        translation: "El kanji 媛 se ve mucho en nombres de lugares.",
+      },
+      {
+        segments: ruby("[愛媛|えひめ]の[海|うみ]はとてもきれいです。"),
+        translation: "El mar de Ehime es muy hermoso.",
+      },
+      {
+        segments: ruby("[昔|むかし]の[本|ほん]で[媛|ひめ]ということばを[見|み]ました。"),
+        translation: "Vi la palabra 媛 en un libro antiguo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "関",
+    level: 4,
+    strokeCount: 14,
+    on: ["カン"],
+    kun: ["せき", "かか.わる"],
+    meaning: "Relación / barrera / conectar",
+    examples: [
+      {
+        segments: ruby("[関係|かんけい]のある[資料|しりょう]を[集|あつ]めます。"),
+        translation: "Reúno materiales relacionados.",
+      },
+      {
+        segments: ruby("[関東|かんとう]へ[出張|しゅっちょう]しました。"),
+        translation: "Fui de viaje de negocios a Kantō.",
+      },
+      {
+        segments: ruby("[この[問題|もんだい]に[関|かか]わる[人|ひと]はだれですか。"),
+        translation: "¿Quiénes están relacionados con este problema?",
+      },
+      {
+        segments: ruby("[関心|かんしん]をもってニュースを[見|み]ています。"),
+        translation: "Veo las noticias con interés.",
+      },
+      {
+        segments: ruby("[関西|かんさい]の[文化|ぶんか]にも[興味|きょうみ]があります。"),
+        translation: "También me interesa la cultura de Kansai.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "熊",
+    level: 4,
+    strokeCount: 14,
+    on: ["ユウ"],
+    kun: ["くま"],
+    meaning: "Oso",
+    examples: [
+      {
+        segments: ruby("[山|やま]で[熊|くま]を[見|み]かけました。"),
+        translation: "Vi un oso en la montaña.",
+      },
+      {
+        segments: ruby("[熊|くま]に[注意|ちゅうい]してください。"),
+        translation: "Por favor, tenga cuidado con los osos.",
+      },
+      {
+        segments: ruby("[熊本|くまもと]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Kumamoto.",
+      },
+      {
+        segments: ruby("[動物園|どうぶつえん]の[熊|くま]はおおきかったです。"),
+        translation: "El oso del zoológico era grande.",
+      },
+      {
+        segments: ruby("[森|もり]の[奥|おく]に[熊|くま]がすんでいます。"),
+        translation: "En lo profundo del bosque viven osos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "差",
+    level: 4,
+    strokeCount: 10,
+    on: ["サ"],
+    kun: ["さ.す", "さ.し", "ちが.う", "ちが.い"],
+    meaning: "Diferencia / señalar / extender",
+    examples: [
+      {
+        segments: ruby("[二人|ふたり]の[差|さ]はすこしです。"),
+        translation: "La diferencia entre los dos es pequeña.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[地図|ちず]を[差|さ]して[説明|せつめい]しました。"),
+        translation: "El profesor explicó señalando el mapa.",
+      },
+      {
+        segments: ruby("[雨|あめ]なのでかさを[差|さ]します。"),
+        translation: "Como llueve, abro el paraguas.",
+      },
+      {
+        segments: ruby("[考|かんが]え[方|かた]には[個人差|こじんさ]があります。"),
+        translation: "Hay diferencias individuales en la forma de pensar.",
+      },
+      {
+        segments: ruby("[気温|きおん]の[差|さ]が[大|おお]きい[日|ひ]です。"),
+        translation: "Es un día con gran diferencia de temperatura.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "辞",
+    level: 4,
+    strokeCount: 13,
+    on: ["ジ"],
+    kun: ["や.める", "ことば"],
+    meaning: "Palabra / renunciar / diccionario",
+    examples: [
+      {
+        segments: ruby("[辞書|じしょ]で[意味|いみ]を[調|しら]べます。"),
+        translation: "Busco el significado en el diccionario.",
+      },
+      {
+        segments: ruby("[会社|かいしゃ]を[辞|や]める[前|まえ]によく[考|かんが]えます。"),
+        translation: "Pienso bien antes de renunciar a la empresa.",
+      },
+      {
+        segments: ruby("[お礼|おれい]の[辞|ことば]を[伝|つた]えました。"),
+        translation: "Transmití palabras de agradecimiento.",
+      },
+      {
+        segments: ruby("[祝辞|しゅくじ]を[聞|き]いてうれしくなりました。"),
+        translation: "Me alegró escuchar el discurso de felicitación.",
+      },
+      {
+        segments: ruby("[仕事|しごと]を[辞|や]める[理由|りゆう]を[話|はな]しました。"),
+        translation: "Expliqué la razón para dejar el trabajo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "省",
+    level: 4,
+    strokeCount: 9,
+    on: ["セイ", "ショウ"],
+    kun: ["かえり.みる", "はぶ.く"],
+    meaning: "Reflexionar / omitir / ministerio",
+    examples: [
+      {
+        segments: ruby("[今日|きょう]のことを[反省|はんせい]します。"),
+        translation: "Reflexiono sobre lo de hoy.",
+      },
+      {
+        segments: ruby("[説明|せつめい]を[少|すこ]し[省|はぶ]きます。"),
+        translation: "Omito un poco la explicación.",
+      },
+      {
+        segments: ruby("[環境省|かんきょうしょう]のニュースを[見|み]ました。"),
+        translation: "Vi noticias del Ministerio de Medio Ambiente.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[行動|こうどう]を[省|かえり]みることが[大切|たいせつ]です。"),
+        translation: "Es importante reflexionar sobre la propia conducta.",
+      },
+      {
+        segments: ruby("[時間|じかん]を[節約|せつやく]するために[手順|てじゅん]を[省|はぶ]きました。"),
+        translation: "Omití pasos para ahorrar tiempo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "帯",
+    level: 4,
+    strokeCount: 10,
+    on: ["タイ"],
+    kun: ["お.びる", "おび"],
+    meaning: "Cinturón / llevar / zona",
+    examples: [
+      {
+        segments: ruby("[着物|きもの]の[帯|おび]をしめます。"),
+        translation: "Ajusto el obi del kimono.",
+      },
+      {
+        segments: ruby("[携帯|けいたい]で[写真|しゃしん]をとります。"),
+        translation: "Tomo una foto con el celular.",
+      },
+      {
+        segments: ruby("[熱帯|ねったい]の[植物|しょくぶつ]を[見|み]ました。"),
+        translation: "Vi plantas tropicales.",
+      },
+      {
+        segments: ruby("[責任|せきにん]を[帯|お]びる[仕事|しごと]です。"),
+        translation: "Es un trabajo que implica responsabilidad.",
+      },
+      {
+        segments: ruby("[携帯電話|けいたいでんわ]を[忘|わす]れないでください。"),
+        translation: "Por favor, no olvide el teléfono móvil.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "奈",
+    level: 4,
+    strokeCount: 8,
+    on: ["ナ"],
+    kun: [],
+    meaning: "Usado en nombres",
+    examples: [
+      {
+        segments: ruby("[奈良|なら]へ[修学|しゅうがく][旅行|りょこう]で[行|い]きました。"),
+        translation: "Fui a Nara en viaje de estudios.",
+      },
+      {
+        segments: ruby("[奈良県|ならけん]の[寺|てら]はゆうめいです。"),
+        translation: "Los templos de la prefectura de Nara son famosos.",
+      },
+      {
+        segments: ruby("[奈良公園|ならこうえん]で[鹿|しか]を[見|み]ました。"),
+        translation: "Vi ciervos en el parque de Nara.",
+      },
+      {
+        segments: ruby("[奈良時代|ならじだい]について[勉強|べんきょう]しました。"),
+        translation: "Estudié sobre el período Nara.",
+      },
+      {
+        segments: ruby("[奈良駅|ならえき]で[友達|ともだち]と[待|ま]ち[合|あ]わせました。"),
+        translation: "Me encontré con un amigo en la estación de Nara.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "兵",
+    level: 4,
+    strokeCount: 7,
+    on: ["ヘイ", "ヒョウ"],
+    kun: ["つわもの"],
+    meaning: "Soldado",
+    examples: [
+      {
+        segments: ruby("[兵士|へいし]の[話|はなし]を[歴史|れきし]で[学|まな]びます。"),
+        translation: "Estudiamos en historia sobre los soldados.",
+      },
+      {
+        segments: ruby("[兵隊|へいたい]が[列|れつ]になって[歩|ある]いています。"),
+        translation: "Los soldados caminan en fila.",
+      },
+      {
+        segments: ruby("[兵庫|ひょうご]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Hyōgo.",
+      },
+      {
+        segments: ruby("[古|ふる]い[兵器|へいき]について[本|ほん]で[読|よ]みました。"),
+        translation: "Leí en un libro sobre armas antiguas.",
+      },
+      {
+        segments: ruby("[兵|つわもの]どもの[夢|ゆめ]のあと、という[言葉|ことば]を[習|なら]いました。"),
+        translation: "Aprendí la expresión ‘tras los sueños de los guerreros’.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "良",
+    level: 4,
+    strokeCount: 7,
+    on: ["リョウ"],
+    kun: ["よ.い"],
+    meaning: "Bueno",
+    examples: [
+      {
+        segments: ruby("[今日は|きょうは][天気|てんき]が[良|よ]いです。"),
+        translation: "Hoy hace buen tiempo.",
+      },
+      {
+        segments: ruby("[体調|たいちょう]が[良|よ]くなりました。"),
+        translation: "Mi estado físico mejoró.",
+      },
+      {
+        segments: ruby("[良い|よい][考|かんが]えですね。"),
+        translation: "Es una buena idea.",
+      },
+      {
+        segments: ruby("[不良品|ふりょうひん]はべつにしておきます。"),
+        translation: "Separaré los productos defectuosos.",
+      },
+      {
+        segments: ruby("[友達|ともだち]と[仲|なか]が[良|よ]いです。"),
+        translation: "Me llevo bien con mis amigos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "塩",
+    level: 4,
+    strokeCount: 13,
+    on: ["エン"],
+    kun: ["しお"],
+    meaning: "Sal",
+    examples: [
+      {
+        segments: ruby("[塩|しお]をすこし[入|い]れてください。"),
+        translation: "Por favor, agregue un poco de sal.",
+      },
+      {
+        segments: ruby("[塩|しお]あじのスープが[好|す]きです。"),
+        translation: "Me gusta la sopa con sabor salado.",
+      },
+      {
+        segments: ruby("[海水|かいすい]には[塩|しお]がふくまれています。"),
+        translation: "El agua de mar contiene sal.",
+      },
+      {
+        segments: ruby("[塩分|えんぶん]をとりすぎないようにします。"),
+        translation: "Procuro no consumir demasiada sal.",
+      },
+      {
+        segments: ruby("[野菜|やさい]に[塩|しお]をかけて[食|た]べます。"),
+        translation: "Como las verduras con sal.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "観",
+    level: 4,
+    strokeCount: 18,
+    on: ["カン"],
+    kun: ["み.る"],
+    meaning: "Observar / ver / contemplar",
+    examples: [
+      {
+        segments: ruby("[映画|えいが]を[観|み]ました。"),
+        translation: "Vi una película.",
+      },
+      {
+        segments: ruby("[観光|かんこう]で[京都|きょうと]へ[行|い]きました。"),
+        translation: "Fui a Kioto de turismo.",
+      },
+      {
+        segments: ruby("[植物|しょくぶつ]をよく[観察|かんさつ]します。"),
+        translation: "Observo bien las plantas.",
+      },
+      {
+        segments: ruby("[美術館|びじゅつかん]で[絵|え]を[観|み]るのが[好|す]きです。"),
+        translation: "Me gusta contemplar pinturas en el museo.",
+      },
+      {
+        segments: ruby("[世界観|せかいかん]がおもしろい[本|ほん]です。"),
+        translation: "Es un libro con una visión del mundo interesante.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "訓",
+    level: 4,
+    strokeCount: 10,
+    on: ["クン"],
+    kun: [],
+    meaning: "Enseñanza / instrucción",
+    examples: [
+      {
+        segments: ruby("[訓練|くんれん]を[毎日|まいにち]しています。"),
+        translation: "Entreno todos los días.",
+      },
+      {
+        segments: ruby("[先生|せんせい]の[教訓|きょうくん]を[忘|わす]れません。"),
+        translation: "No olvido la enseñanza del profesor.",
+      },
+      {
+        segments: ruby("[訓読|くんどく]の[読|よ]み[方|かた]を[習|なら]いました。"),
+        translation: "Aprendí la forma de lectura kun.",
+      },
+      {
+        segments: ruby("[避難|ひなん][訓練|くんれん]に[参加|さんか]しました。"),
+        translation: "Participé en un simulacro de evacuación.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[教訓|きょうくん]がのこる[話|はなし]です。"),
+        translation: "Es una historia que deja una enseñanza importante.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "菜",
+    level: 4,
+    strokeCount: 11,
+    on: ["サイ"],
+    kun: ["な"],
+    meaning: "Verdura / plato",
+    examples: [
+      {
+        segments: ruby("[野菜|やさい]をたくさん[食|た]べます。"),
+        translation: "Como muchas verduras.",
+      },
+      {
+        segments: ruby("[青菜|あおな]をいためました。"),
+        translation: "Salteé verduras de hoja verde.",
+      },
+      {
+        segments: ruby("サラダには[新鮮|しんせん]な[菜|な]がひつようです。"),
+        translation: "Para la ensalada se necesitan verduras frescas.",
+      },
+      {
+        segments: ruby("[お菜|おかず]を一つ[選|えら]んでください。"),
+        translation: "Por favor, elija un plato acompañante.",
+      },
+      {
+        segments: ruby("[春野菜|はるやさい]が[店|みせ]にならんでいます。"),
+        translation: "Las verduras de primavera están alineadas en la tienda.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "鹿",
+    level: 4,
+    strokeCount: 11,
+    on: ["ロク"],
+    kun: ["しか"],
+    meaning: "Ciervo",
+    examples: [
+      {
+        segments: ruby("[奈良公園|ならこうえん]で[鹿|しか]を[見|み]ました。"),
+        translation: "Vi ciervos en el parque de Nara.",
+      },
+      {
+        segments: ruby("[鹿|しか]が[草|くさ]を[食|た]べています。"),
+        translation: "El ciervo está comiendo pasto.",
+      },
+      {
+        segments: ruby("[子|こ]どもが[鹿|しか]にせんべいをあげました。"),
+        translation: "El niño le dio galletas al ciervo.",
+      },
+      {
+        segments: ruby("[鹿児島|かごしま]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Kagoshima.",
+      },
+      {
+        segments: ruby("[森|もり]の[中|なか]で[鹿|しか]を[見|み]かけました。"),
+        translation: "Vi un ciervo dentro del bosque.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "清",
+    level: 4,
+    strokeCount: 11,
+    on: ["セイ", "ショウ"],
+    kun: ["きよ.い", "きよ.める"],
+    meaning: "Puro / limpio",
+    examples: [
+      {
+        segments: ruby("[川|かわ]の[水|みず]がとても[清|きよ]いです。"),
+        translation: "El agua del río es muy limpia.",
+      },
+      {
+        segments: ruby("[気持|きも]ちを[清|きよ]めてからおいのりします。"),
+        translation: "Purifico mi mente antes de rezar.",
+      },
+      {
+        segments: ruby("[清掃|せいそう]の[時間|じかん]です。"),
+        translation: "Es la hora de la limpieza.",
+      },
+      {
+        segments: ruby("[清|きよ]らかな[音|おと]が[聞|き]こえます。"),
+        translation: "Se escucha un sonido puro.",
+      },
+      {
+        segments: ruby("[教室|きょうしつ]を[清潔|せいけつ]にたもちます。"),
+        translation: "Mantengo el aula limpia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "隊",
+    level: 4,
+    strokeCount: 12,
+    on: ["タイ"],
+    kun: [],
+    meaning: "Grupo / brigada / equipo",
+    examples: [
+      {
+        segments: ruby("[消防隊|しょうぼうたい]が[来|き]ました。"),
+        translation: "Llegó la brigada de bomberos.",
+      },
+      {
+        segments: ruby("[探検隊|たんけんたい]の[話|はなし]を[読|よ]みました。"),
+        translation: "Leí una historia sobre una expedición.",
+      },
+      {
+        segments: ruby("[隊長|たいちょう]がみんなに[指示|しじ]をだしました。"),
+        translation: "El jefe del grupo dio instrucciones a todos.",
+      },
+      {
+        segments: ruby("[応援隊|おうえんたい]として[友達|ともだち]をささえます。"),
+        translation: "Apoyo a mis amigos como parte del equipo de apoyo.",
+      },
+      {
+        segments: ruby("[救助隊|きゅうじょたい]がすぐに[現場|げんば]へ[向|む]かいました。"),
+        translation: "El equipo de rescate fue de inmediato al lugar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "梨",
+    level: 4,
+    strokeCount: 11,
+    on: ["リ"],
+    kun: ["なし"],
+    meaning: "Pera",
+    examples: [
+      {
+        segments: ruby("[梨|なし]をれいぞうこでひやします。"),
+        translation: "Enfrío peras en el refrigerador.",
+      },
+      {
+        segments: ruby("[秋|あき]になると[梨|なし]がおいしいです。"),
+        translation: "En otoño las peras son deliciosas.",
+      },
+      {
+        segments: ruby("[梨|なし]を一つむいてください。"),
+        translation: "Por favor, pele una pera.",
+      },
+      {
+        segments: ruby("[梨園|なしえん]を[見学|けんがく]しました。"),
+        translation: "Visité un huerto de peras.",
+      },
+      {
+        segments: ruby("[冷|つめ]たい[梨|なし]を[家族|かぞく]で[食|た]べました。"),
+        translation: "Comimos peras frías en familia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "別",
+    level: 4,
+    strokeCount: 7,
+    on: ["ベツ"],
+    kun: ["わか.れる"],
+    meaning: "Separar / diferente",
+    examples: [
+      {
+        segments: ruby("[別|べつ]の[紙|かみ]に[書|か]いてください。"),
+        translation: "Por favor, escríbalo en otra hoja.",
+      },
+      {
+        segments: ruby("[友達|ともだち]と[駅|えき]で[別|わか]れました。"),
+        translation: "Me despedí de mi amigo en la estación.",
+      },
+      {
+        segments: ruby("[特別|とくべつ]な[日|ひ]なのでケーキを[買|か]いました。"),
+        translation: "Como es un día especial, compré pastel.",
+      },
+      {
+        segments: ruby("[別々|べつべつ]に[行動|こうどう]しましょう。"),
+        translation: "Actuemos por separado.",
+      },
+      {
+        segments: ruby("[別|べつ]の[方法|ほうほう]も[考|かんが]えてみます。"),
+        translation: "También intentaré pensar en otro método.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "料",
+    level: 4,
+    strokeCount: 10,
+    on: ["リョウ"],
+    kun: [],
+    meaning: "Material / tarifa / ingrediente",
+    examples: [
+      {
+        segments: ruby("[材料|ざいりょう]をそろえます。"),
+        translation: "Reúno los ingredientes.",
+      },
+      {
+        segments: ruby("[料理|りょうり]をつくるのが[好|す]きです。"),
+        translation: "Me gusta cocinar.",
+      },
+      {
+        segments: ruby("[料金|りょうきん]を[先|さき]にはらいます。"),
+        translation: "Pago la tarifa por adelantado.",
+      },
+      {
+        segments: ruby("[無料|むりょう]の[資料|しりょう]をもらいました。"),
+        translation: "Recibí materiales gratuitos.",
+      },
+      {
+        segments: ruby("[調味料|ちょうみりょう]を[棚|たな]にしまいます。"),
+        translation: "Guardo los condimentos en el estante.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "岡",
+    level: 4,
+    strokeCount: 8,
+    on: [],
+    kun: ["おか"],
+    meaning: "Colina / usado en nombres",
+    examples: [
+      {
+        segments: ruby("[静岡|しずおか]へ[旅行|りょこう]しました。"),
+        translation: "Viajé a Shizuoka.",
+      },
+      {
+        segments: ruby("[岡|おか]の[上|うえ]から[海|うみ]が[見|み]えます。"),
+        translation: "Desde la colina se ve el mar.",
+      },
+      {
+        segments: ruby("[福岡|ふくおか]のラーメンはゆうめいです。"),
+        translation: "El ramen de Fukuoka es famoso.",
+      },
+      {
+        segments: ruby("[小|ちい]さな[岡|おか]をのぼりました。"),
+        translation: "Subí una pequeña colina.",
+      },
+      {
+        segments: ruby("[岡山|おかやま]の[果物|くだもの]はおいしいです。"),
+        translation: "Las frutas de Okayama son deliciosas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "願",
+    level: 4,
+    strokeCount: 19,
+    on: ["ガン"],
+    kun: ["ねが.う"],
+    meaning: "Desear / pedir",
+    examples: [
+      {
+        segments: ruby("[合格|ごうかく]を[願|ねが]っています。"),
+        translation: "Deseo aprobar.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[協力|きょうりょく]をお[願|ねが]いしました。"),
+        translation: "Le pedí cooperación al profesor.",
+      },
+      {
+        segments: ruby("[願書|がんしょ]を[出|だ]しました。"),
+        translation: "Presenté el formulario de postulación.",
+      },
+      {
+        segments: ruby("[家族|かぞく]のしあわせを[願|ねが]っています。"),
+        translation: "Deseo la felicidad de mi familia.",
+      },
+      {
+        segments: ruby("どうぞよろしくお[願|ねが]いします。"),
+        translation: "Mucho gusto, por favor trátame bien.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "軍",
+    level: 4,
+    strokeCount: 9,
+    on: ["グン"],
+    kun: [],
+    meaning: "Ejército / grupo militar",
+    examples: [
+      {
+        segments: ruby("[軍隊|ぐんたい]の[歴史|れきし]を[学|まな]びました。"),
+        translation: "Estudié la historia del ejército.",
+      },
+      {
+        segments: ruby("[将軍|しょうぐん]の[話|はなし]を[読|よ]みました。"),
+        translation: "Leí una historia sobre un shōgun.",
+      },
+      {
+        segments: ruby("[海軍|かいぐん]と[陸軍|りくぐん]のちがいをしらべます。"),
+        translation: "Investigo la diferencia entre marina y ejército de tierra.",
+      },
+      {
+        segments: ruby("[軍事|ぐんじ]についての[言葉|ことば]はむずかしいです。"),
+        translation: "Las palabras sobre temas militares son difíciles.",
+      },
+      {
+        segments: ruby("[昔|むかし]の[軍|ぐん]の[動|うご]きについて[授業|じゅぎょう]で[聞|き]きました。"),
+        translation: "En clase escuché sobre los movimientos de los ejércitos antiguos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "最",
+    level: 4,
+    strokeCount: 12,
+    on: ["サイ", "シュ"],
+    kun: ["もっと.も"],
+    meaning: "Lo más / máximo",
+    examples: [
+      {
+        segments: ruby("これが[最|もっと]も[大切|たいせつ]です。"),
+        translation: "Esto es lo más importante.",
+      },
+      {
+        segments: ruby("[今年|ことし]で[最|もっと]も[暑|あつ]い[日|ひ]です。"),
+        translation: "Es el día más caluroso del año.",
+      },
+      {
+        segments: ruby("[最近|さいきん]はよく[雨|あめ]が[降|ふ]ります。"),
+        translation: "Últimamente llueve mucho.",
+      },
+      {
+        segments: ruby("[最後|さいご]まであきらめません。"),
+        translation: "No me rendiré hasta el final.",
+      },
+      {
+        segments: ruby("[最高|さいこう]の[景色|けしき]でした。"),
+        translation: "Fue el mejor paisaje.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "失",
+    level: 4,
+    strokeCount: 5,
+    on: ["シツ"],
+    kun: ["うしな.う"],
+    meaning: "Perder / faltar / fracaso",
+    examples: [
+      {
+        segments: ruby("[財布|さいふ]を[失|うしな]いました。"),
+        translation: "Perdí la billetera.",
+      },
+      {
+        segments: ruby("[失敗|しっぱい]してもまた[頑張|がんば]ります。"),
+        translation: "Aunque falle, volveré a esforzarme.",
+      },
+      {
+        segments: ruby("[失礼|しつれい]します。"),
+        translation: "Con permiso / disculpe.",
+      },
+      {
+        segments: ruby("[自信|じしん]を[失|うしな]わないでください。"),
+        translation: "Por favor, no pierda la confianza en sí mismo.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[機会|きかい]を[失|うしな]いたくありません。"),
+        translation: "No quiero perder una oportunidad importante.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "静",
+    level: 4,
+    strokeCount: 14,
+    on: ["セイ", "ジョウ"],
+    kun: ["しず", "しず.か", "しず.まる"],
+    meaning: "Silencioso / tranquilo",
+    examples: [
+      {
+        segments: ruby("[図書館|としょかん]では[静|しず]かにしてください。"),
+        translation: "Por favor, guarde silencio en la biblioteca.",
+      },
+      {
+        segments: ruby("[静|しず]かな[部屋|へや]で[勉強|べんきょう]します。"),
+        translation: "Estudio en una habitación tranquila.",
+      },
+      {
+        segments: ruby("[静岡|しずおか]のお[茶|ちゃ]はゆうめいです。"),
+        translation: "El té de Shizuoka es famoso.",
+      },
+      {
+        segments: ruby("[心|こころ]を[静|しず]めて[話|はな]を[聞|き]きます。"),
+        translation: "Calmo mi mente y escucho la conversación.",
+      },
+      {
+        segments: ruby("[雨|あめ]の[音|おと]だけが[静|しず]かに[聞|き]こえます。"),
+        translation: "Solo se escucha tranquilamente el sonido de la lluvia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "達",
+    level: 4,
+    strokeCount: 12,
+    on: ["タツ"],
+    kun: [],
+    meaning: "Alcanzar / plural de personas",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]と[映画|えいが]を[見|み]ました。"),
+        translation: "Vi una película con mis amigos.",
+      },
+      {
+        segments: ruby("[目標|もくひょう]に[達|たっ]しました。"),
+        translation: "Alcancé la meta.",
+      },
+      {
+        segments: ruby("[子供達|こどもたち]が[元気|げんき]に[遊|あそ]んでいます。"),
+        translation: "Los niños están jugando con energía.",
+      },
+      {
+        segments: ruby("[上達|じょうたつ]するには[毎日|まいにち][練習|れんしゅう]が[必要|ひつよう]です。"),
+        translation: "Para mejorar se necesita práctica diaria.",
+      },
+      {
+        segments: ruby("[私達|わたしたち]は[同|おな]じクラスです。"),
+        translation: "Nosotros somos de la misma clase.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "熱",
+    level: 4,
+    strokeCount: 15,
+    on: ["ネツ"],
+    kun: ["あつ.い"],
+    meaning: "Calor / fiebre / entusiasmo",
+    examples: [
+      {
+        segments: ruby("きょうはとても[熱|あつ]いです。"),
+        translation: "Hoy hace mucho calor.",
+      },
+      {
+        segments: ruby("[熱|ねつ]があるので[病院|びょういん]へ[行|い]きます。"),
+        translation: "Como tengo fiebre, voy al hospital.",
+      },
+      {
+        segments: ruby("[熱心|ねっしん]に[勉強|べんきょう]しています。"),
+        translation: "Está estudiando con entusiasmo.",
+      },
+      {
+        segments: ruby("[熱湯|ねっとう]に[気|き]をつけてください。"),
+        translation: "Por favor, tenga cuidado con el agua hirviendo.",
+      },
+      {
+        segments: ruby("[夏|なつ]の[熱|あつ]さにまけないようにします。"),
+        translation: "Procuro no dejarme vencer por el calor del verano.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "辺",
+    level: 4,
+    strokeCount: 5,
+    on: ["ヘン"],
+    kun: ["あた.り", "べ"],
+    meaning: "Alrededor / zona",
+    examples: [
+      {
+        segments: ruby("[この辺|このへん]に[駅|えき]はありますか。"),
+        translation: "¿Hay una estación por aquí?",
+      },
+      {
+        segments: ruby("[海辺|うみべ]を[歩|ある]くのが[好|す]きです。"),
+        translation: "Me gusta caminar por la orilla del mar.",
+      },
+      {
+        segments: ruby("[周辺|しゅうへん]の[地図|ちず]を[見|み]ます。"),
+        translation: "Miro el mapa de los alrededores.",
+      },
+      {
+        segments: ruby("[机|つくえ]の[辺|へん]にペンがおちていました。"),
+        translation: "Había un lápiz caído al borde del escritorio.",
+      },
+      {
+        segments: ruby("[この辺|このあたり]は[夜|よる]になるとしずかです。"),
+        translation: "Esta zona se vuelve tranquila por la noche.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "量",
+    level: 4,
+    strokeCount: 12,
+    on: ["リョウ"],
+    kun: ["はか.る"],
+    meaning: "Cantidad / medir",
+    examples: [
+      {
+        segments: ruby("[水|みず]の[量|りょう]をはかります。"),
+        translation: "Mido la cantidad de agua.",
+      },
+      {
+        segments: ruby("[宿題|しゅくだい]の[量|りょう]が[多|おお]いです。"),
+        translation: "La cantidad de tarea es mucha.",
+      },
+      {
+        segments: ruby("[適量|てきりょう]の[塩|しお]を[入|い]れてください。"),
+        translation: "Por favor, agregue una cantidad adecuada de sal.",
+      },
+      {
+        segments: ruby("[体重|たいじゅう]を[毎朝|まいあさ]はかります。"),
+        translation: "Me peso todas las mañanas.",
+      },
+      {
+        segments: ruby("[勉強|べんきょう]の[量|りょう]をすこしずつふやします。"),
+        translation: "Aumento poco a poco la cantidad de estudio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "億",
+    level: 4,
+    strokeCount: 15,
+    on: ["オク"],
+    kun: [],
+    meaning: "Cien millones",
+    examples: [
+      {
+        segments: ruby("[日本|にほん]の[人口|じんこう]は一[億|おく][人|にん][以上|いじょう]です。"),
+        translation: "La población de Japón es de más de cien millones de personas.",
+      },
+      {
+        segments: ruby("この[会社|かいしゃ]は一[億|おく][円|えん]を[投資|とうし]しました。"),
+        translation: "Esta empresa invirtió cien millones de yenes.",
+      },
+      {
+        segments: ruby("[宝|たから]くじで一[億|おく][円|えん][当|あ]たったら、[家|いえ]を[買|か]いたいです。"),
+        translation: "Si ganara cien millones de yenes en la lotería, me gustaría comprar una casa.",
+      },
+      {
+        segments: ruby("一[億|おく]という[数|かず]はとても[大|おお]きいです。"),
+        translation: "El número cien millones es muy grande.",
+      },
+      {
+        segments: ruby("この[橋|はし]をつくるのに一[億|おく][円|えん]かかりました。"),
+        translation: "Construir este puente costó cien millones de yenes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "岐",
+    level: 4,
+    strokeCount: 7,
+    on: ["キ"],
+    kun: [],
+    meaning: "Bifurcación / usado en nombres",
+    examples: [
+      {
+        segments: ruby("この[道|みち]は[駅|えき]の[前|まえ]で二つに[分岐|ぶんき]します。"),
+        translation: "Este camino se divide en dos frente a la estación.",
+      },
+      {
+        segments: ruby("[分岐点|ぶんきてん]で[右|みぎ]に[曲|ま]がってください。"),
+        translation: "Por favor, gire a la derecha en la bifurcación.",
+      },
+      {
+        segments: ruby("[岐阜|ぎふ]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Gifu.",
+      },
+      {
+        segments: ruby("[岐阜県|ぎふけん]の[地図|ちず]を[見|み]ました。"),
+        translation: "Vi el mapa de la prefectura de Gifu.",
+      },
+      {
+        segments: ruby("ここは[道|みち]が[分岐|ぶんき]する[場所|ばしょ]です。"),
+        translation: "Este es un lugar donde el camino se bifurca.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "郡",
+    level: 4,
+    strokeCount: 10,
+    on: ["グン"],
+    kun: ["こおり"],
+    meaning: "Distrito / condado",
+    examples: [
+      {
+        segments: ruby("[郡|ぐん]の[名前|なまえ]を[地図|ちず]で[調|しら]べます。"),
+        translation: "Busco en el mapa el nombre del distrito.",
+      },
+      {
+        segments: ruby("この[村|むら]は[山田郡|やまだぐん]にあります。"),
+        translation: "Esta aldea está en el distrito de Yamada.",
+      },
+      {
+        segments: ruby("[郡内|ぐんない]の[学校|がっこう]を[調|しら]べました。"),
+        translation: "Revisé las escuelas dentro del distrito.",
+      },
+      {
+        segments: ruby("[県|けん]と[郡|ぐん]のちがいを[勉強|べんきょう]しました。"),
+        translation: "Estudié la diferencia entre prefectura y distrito.",
+      },
+      {
+        segments: ruby("[昔|むかし]は[郡|ぐん]ごとに[役所|やくしょ]がありました。"),
+        translation: "Antiguamente había una oficina en cada distrito.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "埼",
+    level: 4,
+    strokeCount: 11,
+    on: [],
+    kun: ["さき"],
+    meaning: "Promontorio / usado en nombres",
+    examples: [
+      {
+        segments: ruby("[埼玉|さいたま]へ[行|い]ったことがあります。"),
+        translation: "He ido a Saitama.",
+      },
+      {
+        segments: ruby("[埼玉県|さいたまけん]は[東京|とうきょう]の[北|きた]にあります。"),
+        translation: "La prefectura de Saitama está al norte de Tokio.",
+      },
+      {
+        segments: ruby("[埼玉|さいたま]で[友達|ともだち]に[会|あ]いました。"),
+        translation: "Me encontré con un amigo en Saitama.",
+      },
+      {
+        segments: ruby("[埼玉県|さいたまけん]の[電車|でんしゃ]は[便利|べんり]です。"),
+        translation: "Los trenes de la prefectura de Saitama son convenientes.",
+      },
+      {
+        segments: ruby("[埼|さき]という[漢字|かんじ]は[地名|ちめい]でよく[見|み]ます。"),
+        translation: "El kanji 埼 se ve mucho en nombres de lugares.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "借",
+    level: 4,
+    strokeCount: 10,
+    on: ["シャク"],
+    kun: ["か.りる"],
+    meaning: "Pedir prestado / alquilar",
+    examples: [
+      {
+        segments: ruby("[図書館|としょかん]で[本|ほん]を[借|か]ります。"),
+        translation: "Pido prestado un libro en la biblioteca.",
+      },
+      {
+        segments: ruby("[友達|ともだち]からペンを[借|か]りました。"),
+        translation: "Le pedí prestado un lápiz a un amigo.",
+      },
+      {
+        segments: ruby("この[部屋|へや]を[借|か]りたいです。"),
+        translation: "Quiero alquilar esta habitación.",
+      },
+      {
+        segments: ruby("[借|か]りたかさを[明日|あした][返|かえ]します。"),
+        translation: "Mañana devolveré el paraguas que pedí prestado.",
+      },
+      {
+        segments: ruby("すみません、[少|すこ]し[時間|じかん]を[借|か]りてもいいですか。"),
+        translation: "Disculpe, ¿puedo tomarle un poco de tiempo?",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "席",
+    level: 4,
+    strokeCount: 10,
+    on: ["セキ"],
+    kun: [],
+    meaning: "Asiento / lugar",
+    examples: [
+      {
+        segments: ruby("ここに[席|せき]があります。"),
+        translation: "Aquí hay un asiento.",
+      },
+      {
+        segments: ruby("[窓側|まどがわ]の[席|せき]に[座|すわ]ります。"),
+        translation: "Me siento en el asiento junto a la ventana.",
+      },
+      {
+        segments: ruby("[会議|かいぎ]の[席|せき]が[足|た]りません。"),
+        translation: "No hay suficientes asientos para la reunión.",
+      },
+      {
+        segments: ruby("[席|せき]を[予約|よやく]しました。"),
+        translation: "Reservé un asiento.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[席|せき]にもどってください。"),
+        translation: "Por favor, vuelva a su asiento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "単",
+    level: 4,
+    strokeCount: 9,
+    on: ["タン"],
+    kun: ["ひとえ"],
+    meaning: "Simple / unidad / solo",
+    examples: [
+      {
+        segments: ruby("この[問題|もんだい]は[簡単|かんたん]です。"),
+        translation: "Este problema es fácil.",
+      },
+      {
+        segments: ruby("[日本語|にほんご]の[単語|たんご]を十[個|こ][覚|おぼ]えました。"),
+        translation: "Memoricé diez palabras japonesas.",
+      },
+      {
+        segments: ruby("この[説明|せつめい]は[単純|たんじゅん]でわかりやすいです。"),
+        translation: "Esta explicación es simple y fácil de entender.",
+      },
+      {
+        segments: ruby("[長|なが]さの[単位|たんい]を[勉強|べんきょう]しています。"),
+        translation: "Estoy estudiando unidades de longitud.",
+      },
+      {
+        segments: ruby("[単独|たんどく]で[行動|こうどう]しないでください。"),
+        translation: "Por favor, no actúe solo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "念",
+    level: 4,
+    strokeCount: 8,
+    on: ["ネン"],
+    kun: [],
+    meaning: "Pensamiento / recuerdo / atención",
+    examples: [
+      {
+        segments: ruby("[記念写真|きねんしゃしん]を[撮|と]りました。"),
+        translation: "Tomamos una foto de recuerdo.",
+      },
+      {
+        segments: ruby("[卒業|そつぎょう][記念|きねん]に[時計|とけい]をもらいました。"),
+        translation: "Recibí un reloj como recuerdo de graduación.",
+      },
+      {
+        segments: ruby("[念|ねん]のため、もう一[度|ど][確認|かくにん]します。"),
+        translation: "Por si acaso, lo confirmaré una vez más.",
+      },
+      {
+        segments: ruby("[残念|ざんねん]ですが、[今日|きょう]は[行|い]けません。"),
+        translation: "Lamentablemente, hoy no puedo ir.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[記念日|きねんび]を[忘|わす]れません。"),
+        translation: "No olvido una fecha importante de recuerdo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "変",
+    level: 4,
+    strokeCount: 9,
+    on: ["ヘン"],
+    kun: ["か.わる", "か.える"],
+    meaning: "Cambiar / extraño",
+    examples: [
+      {
+        segments: ruby("[天気|てんき]が[急|きゅう]に[変|か]わりました。"),
+        translation: "El clima cambió de repente.",
+      },
+      {
+        segments: ruby("[予定|よてい]を[変|か]えてください。"),
+        translation: "Por favor, cambie el plan.",
+      },
+      {
+        segments: ruby("[大変|たいへん]な一[日|にち]でした。"),
+        translation: "Fue un día difícil.",
+      },
+      {
+        segments: ruby("この[字|じ]は[少|すこ]し[変|へん]です。"),
+        translation: "Este carácter es un poco extraño.",
+      },
+      {
+        segments: ruby("[生活|せいかつ]が[大|おお]きく[変|か]わりました。"),
+        translation: "La vida cambió mucho.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "輪",
+    level: 4,
+    strokeCount: 15,
+    on: ["リン"],
+    kun: ["わ"],
+    meaning: "Rueda / anillo / círculo",
+    examples: [
+      {
+        segments: ruby("[自転車|じてんしゃ]の[輪|わ]がまわっています。"),
+        translation: "La rueda de la bicicleta está girando.",
+      },
+      {
+        segments: ruby("[花|はな]の[輪|わ]をつくりました。"),
+        translation: "Hice una corona de flores.",
+      },
+      {
+        segments: ruby("[輪|わ]になって[座|すわ]ってください。"),
+        translation: "Por favor, siéntense formando un círculo.",
+      },
+      {
+        segments: ruby("[指輪|ゆびわ]をなくしました。"),
+        translation: "Perdí mi anillo.",
+      },
+      {
+        segments: ruby("[車輪|しゃりん]の[音|おと]が[聞|き]こえます。"),
+        translation: "Se escucha el sonido de una rueda.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "加",
+    level: 4,
+    strokeCount: 5,
+    on: ["カ"],
+    kun: ["くわ.える", "くわ.わる"],
+    meaning: "Agregar / sumarse",
+    examples: [
+      {
+        segments: ruby("[人数|にんずう]を二[人|り][加|くわ]えます。"),
+        translation: "Agrego dos personas al grupo.",
+      },
+      {
+        segments: ruby("[塩|しお]をすこし[加|くわ]えてください。"),
+        translation: "Por favor, agregue un poco de sal.",
+      },
+      {
+        segments: ruby("[会議|かいぎ]に[私|わたし]も[加|くわ]わります。"),
+        translation: "Yo también participaré en la reunión.",
+      },
+      {
+        segments: ruby("[税金|ぜいきん]が[加|くわ]わると[値段|ねだん]が[上|あ]がります。"),
+        translation: "Cuando se agrega el impuesto, el precio sube.",
+      },
+      {
+        segments: ruby("[新|あたら]しいルールを[加|くわ]えました。"),
+        translation: "Agregamos una nueva regla.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "希",
+    level: 4,
+    strokeCount: 7,
+    on: ["キ"],
+    kun: ["まれ"],
+    meaning: "Esperanza / raro",
+    examples: [
+      {
+        segments: ruby("[希望|きぼう]の[学校|がっこう]に[入|はい]りたいです。"),
+        translation: "Quiero entrar a la escuela que deseo.",
+      },
+      {
+        segments: ruby("[希望者|きぼうしゃ]は[手|て]を[挙|あ]げてください。"),
+        translation: "Quienes lo deseen, por favor levanten la mano.",
+      },
+      {
+        segments: ruby("[希望|きぼう]の[時間|じかん]を[教|おし]えてください。"),
+        translation: "Por favor, dígame el horario que prefiere.",
+      },
+      {
+        segments: ruby("[進学|しんがく]を[希望|きぼう]しています。"),
+        translation: "Deseo seguir estudiando.",
+      },
+      {
+        segments: ruby("[希望|きぼう]どおりの[結果|けっか]になりました。"),
+        translation: "El resultado salió como esperaba.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "群",
+    level: 4,
+    strokeCount: 13,
+    on: ["グン"],
+    kun: ["む.れる", "む.れ"],
+    meaning: "Grupo / rebaño / multitud",
+    examples: [
+      {
+        segments: ruby("[鳥|とり]の[群|む]れが[空|そら]を[飛|と]んでいます。"),
+        translation: "Una bandada de aves está volando por el cielo.",
+      },
+      {
+        segments: ruby("[人|ひと]の[群|む]れが[駅|えき]に[集|あつ]まっています。"),
+        translation: "Una multitud de personas se está reuniendo en la estación.",
+      },
+      {
+        segments: ruby("[羊|ひつじ]の[群|む]れを[見|み]ました。"),
+        translation: "Vi un rebaño de ovejas.",
+      },
+      {
+        segments: ruby("[群馬|ぐんま]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Gunma.",
+      },
+      {
+        segments: ruby("[群馬県|ぐんまけん]の[温泉|おんせん]はゆうめいです。"),
+        translation: "Las aguas termales de la prefectura de Gunma son famosas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "材",
+    level: 4,
+    strokeCount: 7,
+    on: ["ザイ"],
+    kun: [],
+    meaning: "Material / madera",
+    examples: [
+      {
+        segments: ruby("[料理|りょうり]の[材料|ざいりょう]を[買|か]いました。"),
+        translation: "Compré los ingredientes para cocinar.",
+      },
+      {
+        segments: ruby("[木材|もくざい]を[運|はこ]んでいます。"),
+        translation: "Estoy transportando madera.",
+      },
+      {
+        segments: ruby("[建築|けんちく][材料|ざいりょう]を[集|あつ]めています。"),
+        translation: "Estoy reuniendo materiales de construcción.",
+      },
+      {
+        segments: ruby("[教材|きょうざい]を[準備|じゅんび]しました。"),
+        translation: "Preparé el material de estudio.",
+      },
+      {
+        segments: ruby("この[机|つくえ]はいい[材|ざい]でできています。"),
+        translation: "Este escritorio está hecho de buen material.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "種",
+    level: 4,
+    strokeCount: 14,
+    on: ["シュ"],
+    kun: ["たね"],
+    meaning: "Semilla / tipo / clase",
+    examples: [
+      {
+        segments: ruby("[花|はな]の[種|たね]をまきました。"),
+        translation: "Sembré semillas de flores.",
+      },
+      {
+        segments: ruby("いろいろな[種類|しゅるい]があります。"),
+        translation: "Hay varios tipos.",
+      },
+      {
+        segments: ruby("[質問|しつもん]は三[種類|しゅるい]あります。"),
+        translation: "Hay tres tipos de preguntas.",
+      },
+      {
+        segments: ruby("[野菜|やさい]の[種|たね]を[買|か]いました。"),
+        translation: "Compré semillas de verduras.",
+      },
+      {
+        segments: ruby("この[種|たね]の[魚|さかな]はとても[大|おお]きいです。"),
+        translation: "Este tipo de pez es muy grande.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "積",
+    level: 4,
+    strokeCount: 16,
+    on: ["セキ"],
+    kun: ["つ.む", "つ.もる"],
+    meaning: "Apilar / acumular",
+    examples: [
+      {
+        segments: ruby("[本|ほん]を[机|つくえ]の[上|うえ]に[積|つ]みました。"),
+        translation: "Apilé libros sobre el escritorio.",
+      },
+      {
+        segments: ruby("[雪|ゆき]がたくさん[積|つ]もっています。"),
+        translation: "Se ha acumulado mucha nieve.",
+      },
+      {
+        segments: ruby("[経験|けいけん]を[積|つ]むことが[大切|たいせつ]です。"),
+        translation: "Es importante acumular experiencia.",
+      },
+      {
+        segments: ruby("[荷物|にもつ]を[車|くるま]に[積|つ]みます。"),
+        translation: "Cargo el equipaje en el auto.",
+      },
+      {
+        segments: ruby("[小|ちい]さな[努力|どりょく]を[積|つ]み[重|かさ]ねましょう。"),
+        translation: "Acumulemos pequeños esfuerzos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "置",
+    level: 4,
+    strokeCount: 13,
+    on: ["チ"],
+    kun: ["お.く"],
+    meaning: "Poner / dejar",
+    examples: [
+      {
+        segments: ruby("[本|ほん]を[机|つくえ]の[上|うえ]に[置|お]きます。"),
+        translation: "Pongo el libro sobre el escritorio.",
+      },
+      {
+        segments: ruby("ここに[荷物|にもつ]を[置|お]かないでください。"),
+        translation: "Por favor, no deje equipaje aquí.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[書類|しょるい]は[引|ひ]き[出|だ]しに[置|お]いてあります。"),
+        translation: "Los documentos importantes están guardados en el cajón.",
+      },
+      {
+        segments: ruby("[花|はな]を[窓|まど]の[近|ちか]くに[置|お]きました。"),
+        translation: "Puse flores cerca de la ventana.",
+      },
+      {
+        segments: ruby("[少|すこ]し[時間|じかん]を[置|お]いてから[考|かんが]えます。"),
+        translation: "Pensaré después de dejar pasar un poco de tiempo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "敗",
+    level: 4,
+    strokeCount: 11,
+    on: ["ハイ"],
+    kun: ["やぶ.れる"],
+    meaning: "Derrota / fracasar / perder",
+    examples: [
+      {
+        segments: ruby("[試合|しあい]に[敗|やぶ]れました。"),
+        translation: "Perdí el partido.",
+      },
+      {
+        segments: ruby("[失敗|しっぱい]から[学|まな]びます。"),
+        translation: "Aprendo de los errores.",
+      },
+      {
+        segments: ruby("[前回|ぜんかい]の[大会|たいかい]では[相手|あいて]に[敗|やぶ]れました。"),
+        translation: "En el torneo anterior perdí contra el rival.",
+      },
+      {
+        segments: ruby("[失敗|しっぱい]を[気|き]にしすぎないでください。"),
+        translation: "Por favor, no se preocupe demasiado por los fracasos.",
+      },
+      {
+        segments: ruby("[彼|かれ]はまだ一[度|ど]も[敗|やぶ]れていません。"),
+        translation: "Él todavía no ha sido derrotado ni una sola vez.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "便",
+    level: 4,
+    strokeCount: 9,
+    on: ["ベン", "ビン"],
+    kun: ["たよ.り"],
+    meaning: "Conveniencia / correo / vuelo",
+    examples: [
+      {
+        segments: ruby("このバスはとても[便利|べんり]です。"),
+        translation: "Este bus es muy conveniente.",
+      },
+      {
+        segments: ruby("[郵便局|ゆうびんきょく]へ[手紙|てがみ]を[出|だ]しに[行|い]きます。"),
+        translation: "Voy al correo a enviar una carta.",
+      },
+      {
+        segments: ruby("[朝|あさ]の[便|びん]で[東京|とうきょう]へ[行|い]きます。"),
+        translation: "Voy a Tokio en el vuelo de la mañana.",
+      },
+      {
+        segments: ruby("[返事|へんじ]は[郵便|ゆうびん]で[送|おく]りました。"),
+        translation: "Envié la respuesta por correo.",
+      },
+      {
+        segments: ruby("この[町|まち]は[交通|こうつう]の[便|べん]がいいです。"),
+        translation: "Esta ciudad tiene buen acceso de transporte.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "類",
+    level: 4,
+    strokeCount: 18,
+    on: ["ルイ"],
+    kun: ["たぐ.い"],
+    meaning: "Clase / tipo / categoría",
+    examples: [
+      {
+        segments: ruby("[書類|しょるい]を[机|つくえ]の[上|うえ]に[置|お]きます。"),
+        translation: "Pongo los documentos sobre el escritorio.",
+      },
+      {
+        segments: ruby("[魚類|ぎょるい]について[勉強|べんきょう]しました。"),
+        translation: "Estudié sobre los peces.",
+      },
+      {
+        segments: ruby("この[類|たぐ]いの[本|ほん]が[好|す]きです。"),
+        translation: "Me gustan este tipo de libros.",
+      },
+      {
+        segments: ruby("[人類|じんるい]の[歴史|れきし]を[学|まな]びます。"),
+        translation: "Estudio la historia de la humanidad.",
+      },
+      {
+        segments: ruby("[同類|どうるい]の[問題|もんだい]がたくさんあります。"),
+        translation: "Hay muchos problemas del mismo tipo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "果",
+    level: 4,
+    strokeCount: 8,
+    on: ["カ"],
+    kun: ["は.たす", "は.てる", "は.て"],
+    meaning: "Fruta / resultado / cumplir",
+    examples: [
+      {
+        segments: ruby("[果物|くだもの]を[毎日|まいにち][食|た]べます。"),
+        translation: "Como fruta todos los días.",
+      },
+      {
+        segments: ruby("[努力|どりょく]の[結果|けっか]がでました。"),
+        translation: "Apareció el resultado del esfuerzo.",
+      },
+      {
+        segments: ruby("[約束|やくそく]を[果|は]たしてください。"),
+        translation: "Por favor, cumpla la promesa.",
+      },
+      {
+        segments: ruby("[計画|けいかく]の[結果|けっか]を[先生|せんせい]に[話|はな]しました。"),
+        translation: "Le conté al profesor el resultado del plan.",
+      },
+      {
+        segments: ruby("[今日|きょう]の[仕事|しごと]を[果|は]たしてから[帰|かえ]ります。"),
+        translation: "Volveré a casa después de cumplir el trabajo de hoy.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "季",
+    level: 4,
+    strokeCount: 8,
+    on: ["キ"],
+    kun: [],
+    meaning: "Estación",
+    examples: [
+      {
+        segments: ruby("[四季|しき]の[変化|へんか]が[好|す]きです。"),
+        translation: "Me gustan los cambios de las cuatro estaciones.",
+      },
+      {
+        segments: ruby("[季節|きせつ]が[変|か]わると[服|ふく]も[変|か]わります。"),
+        translation: "Cuando cambia la estación, también cambia la ropa.",
+      },
+      {
+        segments: ruby("[春|はる]は[新|あたら]しい[季節|きせつ]のはじまりです。"),
+        translation: "La primavera es el comienzo de una nueva estación.",
+      },
+      {
+        segments: ruby("[季節|きせつ]の[食|た]べ[物|もの]を[楽|たの]しみます。"),
+        translation: "Disfruto la comida de temporada.",
+      },
+      {
+        segments: ruby("[季節風|きせつふう]がつよく[吹|ふ]いています。"),
+        translation: "Está soplando un fuerte viento estacional.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "径",
+    level: 4,
+    strokeCount: 8,
+    on: ["ケイ"],
+    kun: [],
+    meaning: "Diámetro / camino corto",
+    examples: [
+      {
+        segments: ruby("[直径|ちょっけい]をはかってください。"),
+        translation: "Por favor, mida el diámetro.",
+      },
+      {
+        segments: ruby("この[円|えん]の[直径|ちょっけい]は十センチです。"),
+        translation: "El diámetro de este círculo es de diez centímetros.",
+      },
+      {
+        segments: ruby("[半径|はんけい]と[直径|ちょっけい]のちがいを[勉強|べんきょう]しました。"),
+        translation: "Estudié la diferencia entre radio y diámetro.",
+      },
+      {
+        segments: ruby("[近径|きんけい]をとおって[駅|えき]へ[向|む]かいます。"),
+        translation: "Voy a la estación por un camino corto.",
+      },
+      {
+        segments: ruby("[数学|すうがく]の[時間|じかん]に[直径|ちょっけい]を[習|なら]いました。"),
+        translation: "En la clase de matemáticas aprendí el diámetro.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "崎",
+    level: 4,
+    strokeCount: 11,
+    on: [],
+    kun: ["さき"],
+    meaning: "Cabo / promontorio / usado en nombres",
+    examples: [
+      {
+        segments: ruby("[長崎|ながさき]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Nagasaki.",
+      },
+      {
+        segments: ruby("[宮崎|みやざき]の[海|うみ]はきれいです。"),
+        translation: "El mar de Miyazaki es hermoso.",
+      },
+      {
+        segments: ruby("[岬|みさき]のような[崎|さき]に[灯台|とうだい]があります。"),
+        translation: "En el cabo hay un faro.",
+      },
+      {
+        segments: ruby("[山崎|やまざき]さんはきょう[休|やす]みです。"),
+        translation: "El señor Yamazaki está ausente hoy.",
+      },
+      {
+        segments: ruby("[崎|さき]という[漢字|かんじ]は[名字|みょうじ]や[地名|ちめい]でよく[見|み]ます。"),
+        translation: "El kanji 崎 se ve mucho en apellidos y nombres de lugares.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "周",
+    level: 4,
+    strokeCount: 8,
+    on: ["シュウ"],
+    kun: ["まわ.り"],
+    meaning: "Alrededor / vuelta",
+    examples: [
+      {
+        segments: ruby("[学校|がっこう]の[周|まわ]りを[歩|ある]きました。"),
+        translation: "Caminé alrededor de la escuela.",
+      },
+      {
+        segments: ruby("[一周|いっしゅう]するのに十分かかります。"),
+        translation: "Tomar una vuelta completa demora diez minutos.",
+      },
+      {
+        segments: ruby("[周囲|しゅうい]の[人|ひと]に[気|き]をつけてください。"),
+        translation: "Por favor, preste atención a las personas de alrededor.",
+      },
+      {
+        segments: ruby("[地球|ちきゅう]は[太陽|たいよう]の[周|まわ]りをまわります。"),
+        translation: "La Tierra gira alrededor del Sol.",
+      },
+      {
+        segments: ruby("[机|つくえ]の[周|まわ]りをきれいにしました。"),
+        translation: "Limpié alrededor del escritorio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "折",
+    level: 4,
+    strokeCount: 7,
+    on: ["セツ", "シャク"],
+    kun: ["お.る", "おり", "お.れる"],
+    meaning: "Doblar / romper / ocasión",
+    examples: [
+      {
+        segments: ruby("[紙|かみ]を[半分|はんぶん]に[折|お]ります。"),
+        translation: "Doblo el papel por la mitad.",
+      },
+      {
+        segments: ruby("[木|き]の[枝|えだ]が[風|かぜ]で[折|お]れました。"),
+        translation: "La rama del árbol se quebró por el viento.",
+      },
+      {
+        segments: ruby("[折り紙|おりがみ]で[鶴|つる]をつくりました。"),
+        translation: "Hice una grulla de origami.",
+      },
+      {
+        segments: ruby("[失礼|しつれい]ながら、この[折|おり]にお[願|ねが]いがあります。"),
+        translation: "Disculpe, en esta ocasión tengo una petición.",
+      },
+      {
+        segments: ruby("[線|せん]にそって[折|お]ってください。"),
+        translation: "Por favor, doble siguiendo la línea.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "仲",
+    level: 4,
+    strokeCount: 6,
+    on: ["チュウ"],
+    kun: ["なか"],
+    meaning: "Relación / vínculo",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]と[仲|なか]がいいです。"),
+        translation: "Me llevo bien con mis amigos.",
+      },
+      {
+        segments: ruby("[仲間|なかま]といっしょに[勉強|べんきょう]します。"),
+        translation: "Estudio junto con mis compañeros.",
+      },
+      {
+        segments: ruby("[兄弟|きょうだい]はとても[仲|なか]がいいです。"),
+        translation: "Los hermanos se llevan muy bien.",
+      },
+      {
+        segments: ruby("[仲直|なかなお]りしてからまた[話|はな]しました。"),
+        translation: "Después de reconciliarnos, volvimos a hablar.",
+      },
+      {
+        segments: ruby("[仲|なか]よく[生活|せいかつ]することが[大切|たいせつ]です。"),
+        translation: "Es importante vivir en buena armonía.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "梅",
+    level: 4,
+    strokeCount: 10,
+    on: ["バイ"],
+    kun: ["うめ"],
+    meaning: "Ciruela japonesa",
+    examples: [
+      {
+        segments: ruby("[梅|うめ]の[花|はな]が[咲|さ]きました。"),
+        translation: "Florecieron las flores del ciruelo.",
+      },
+      {
+        segments: ruby("[梅干|うめぼ]しをおにぎりに[入|い]れます。"),
+        translation: "Pongo umeboshi dentro del onigiri.",
+      },
+      {
+        segments: ruby("[庭|にわ]に[梅|うめ]の[木|き]があります。"),
+        translation: "Hay un ciruelo en el jardín.",
+      },
+      {
+        segments: ruby("[梅雨|つゆ]の[時期|じき]は[雨|あめ]が[多|おお]いです。"),
+        translation: "En la temporada de lluvias llueve mucho.",
+      },
+      {
+        segments: ruby("[白|しろ]い[梅|うめ]の[花|はな]がとてもきれいです。"),
+        translation: "Las flores blancas del ciruelo son muy hermosas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "包",
+    level: 4,
+    strokeCount: 5,
+    on: ["ホウ"],
+    kun: ["つつ.む"],
+    meaning: "Envolver / incluir",
+    examples: [
+      {
+        segments: ruby("プレゼントを[紙|かみ]で[包|つつ]みます。"),
+        translation: "Envuelvo el regalo con papel.",
+      },
+      {
+        segments: ruby("[包丁|ほうちょう]をつかうときは[気|き]をつけてください。"),
+        translation: "Por favor, tenga cuidado al usar el cuchillo de cocina.",
+      },
+      {
+        segments: ruby("[全部|ぜんぶ]を[包|つつ]むのに[時間|じかん]がかかりました。"),
+        translation: "Tomó tiempo envolver todo.",
+      },
+      {
+        segments: ruby("[心|こころ]を[包|つつ]みこむようなやさしい[音楽|おんがく]です。"),
+        translation: "Es una música suave que envuelve el corazón.",
+      },
+      {
+        segments: ruby("[新聞紙|しんぶんし]でコップを[包|つつ]んで[運|はこ]びます。"),
+        translation: "Envuelvo el vaso con papel de diario para transportarlo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "令",
+    level: 4,
+    strokeCount: 5,
+    on: ["レイ"],
+    kun: [],
+    meaning: "Orden / mandato / era",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]の[命令|めいれい]を[聞|き]きました。"),
+        translation: "Escuché la orden del profesor.",
+      },
+      {
+        segments: ruby("[法令|ほうれい]をまもることが[大切|たいせつ]です。"),
+        translation: "Es importante obedecer las leyes y reglamentos.",
+      },
+      {
+        segments: ruby("[令和|れいわ]の[時代|じだい]について[話|はな]しました。"),
+        translation: "Hablamos sobre la era Reiwa.",
+      },
+      {
+        segments: ruby("[司令|しれい]が[出|だ]されました。"),
+        translation: "Se dio una orden.",
+      },
+      {
+        segments: ruby("[学校|がっこう]の[決|き]まりは一つの[命令|めいれい]のように[守|まも]ります。"),
+        translation: "Las reglas de la escuela se respetan como si fueran órdenes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "貨",
+    level: 4,
+    strokeCount: 11,
+    on: ["カ"],
+    kun: [],
+    meaning: "Mercancía / dinero",
+    examples: [
+      {
+        segments: ruby("[外国貨幣|がいこくかへい]を[見|み]ました。"),
+        translation: "Vi moneda extranjera.",
+      },
+      {
+        segments: ruby("[貨物列車|かもつれっしゃ]が[駅|えき]をとおります。"),
+        translation: "Un tren de carga pasa por la estación.",
+      },
+      {
+        segments: ruby("[通貨|つうか]の[種類|しゅるい]について[勉強|べんきょう]しました。"),
+        translation: "Estudié sobre los tipos de moneda.",
+      },
+      {
+        segments: ruby("[百貨店|ひゃっかてん]で[買|か]い[物|もの]をしました。"),
+        translation: "Hice compras en una tienda por departamentos.",
+      },
+      {
+        segments: ruby("[貨物|かもつ]を[車|くるま]からおろします。"),
+        translation: "Bajo la carga del auto.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "旗",
+    level: 4,
+    strokeCount: 14,
+    on: ["キ"],
+    kun: ["はた"],
+    meaning: "Bandera",
+    examples: [
+      {
+        segments: ruby("[赤|あか]い[旗|はた]がたっています。"),
+        translation: "Hay una bandera roja levantada.",
+      },
+      {
+        segments: ruby("[学校|がっこう]の[旗|はた]を[見|み]ました。"),
+        translation: "Vi la bandera de la escuela.",
+      },
+      {
+        segments: ruby("[国旗|こっき]について[勉強|べんきょう]しました。"),
+        translation: "Estudié sobre las banderas nacionales.",
+      },
+      {
+        segments: ruby("[運動会|うんどうかい]で[白|しろ]い[旗|はた]をふります。"),
+        translation: "En el festival deportivo agitamos una bandera blanca.",
+      },
+      {
+        segments: ruby("[旗|はた]が[風|かぜ]で[強|つよ]くゆれています。"),
+        translation: "La bandera está ondeando fuertemente por el viento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "景",
+    level: 4,
+    strokeCount: 12,
+    on: ["ケイ"],
+    kun: [],
+    meaning: "Paisaje / escena",
+    examples: [
+      {
+        segments: ruby("[山|やま]の[景色|けしき]がうつくしいです。"),
+        translation: "El paisaje de la montaña es hermoso.",
+      },
+      {
+        segments: ruby("[夜景|やけい]を[見|み]に[行|い]きました。"),
+        translation: "Fui a ver la vista nocturna.",
+      },
+      {
+        segments: ruby("[景色|けしき]のいい[場所|ばしょ]で[写真|しゃしん]をとりました。"),
+        translation: "Tomé una foto en un lugar con buena vista.",
+      },
+      {
+        segments: ruby("[風景|ふうけい]をながめながら[歩|ある]きます。"),
+        translation: "Camino mirando el paisaje.",
+      },
+      {
+        segments: ruby("[駅|えき]の[近|ちか]くからもきれいな[景色|けしき]が[見|み]えます。"),
+        translation: "Cerca de la estación también se puede ver un paisaje bonito.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "昨",
+    level: 4,
+    strokeCount: 9,
+    on: ["サク"],
+    kun: [],
+    meaning: "Ayer / pasado",
+    examples: [
+      {
+        segments: ruby("[昨日|きのう]は[雨|あめ]でした。"),
+        translation: "Ayer llovió.",
+      },
+      {
+        segments: ruby("[昨年|さくねん]の[夏|なつ]に[日本|にほん]へ[来|き]ました。"),
+        translation: "Vine a Japón en el verano del año pasado.",
+      },
+      {
+        segments: ruby("[昨夜|さくや]は[早|はや]く[寝|ね]ました。"),
+        translation: "Anoche me acosté temprano.",
+      },
+      {
+        segments: ruby("[昨年|さくねん]よりことしのほうがいそがしいです。"),
+        translation: "Este año estoy más ocupado que el año pasado.",
+      },
+      {
+        segments: ruby("[昨日|きのう]の[宿題|しゅくだい]はもう[終|お]わりました。"),
+        translation: "La tarea de ayer ya terminó.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "祝",
+    level: 4,
+    strokeCount: 9,
+    on: ["シュク", "シュウ"],
+    kun: ["いわ.う"],
+    meaning: "Celebrar / felicitar",
+    examples: [
+      {
+        segments: ruby("[誕生日|たんじょうび]を[祝|いわ]いました。"),
+        translation: "Celebré el cumpleaños.",
+      },
+      {
+        segments: ruby("[合格|ごうかく]を[祝|いわ]ってケーキを[食|た]べました。"),
+        translation: "Comimos pastel para celebrar la aprobación.",
+      },
+      {
+        segments: ruby("[祝日|しゅくじつ]なので[学校|がっこう]は[休|やす]みです。"),
+        translation: "Como es feriado, la escuela está cerrada.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[卒業|そつぎょう]を[祝|いわ]ってもらいました。"),
+        translation: "El profesor me felicitó por la graduación.",
+      },
+      {
+        segments: ruby("[結婚|けっこん]のお[祝|いわ]いに[花|はな]をおくりました。"),
+        translation: "Envié flores como celebración por el matrimonio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "節",
+    level: 4,
+    strokeCount: 13,
+    on: ["セツ", "セチ"],
+    kun: ["ふし"],
+    meaning: "Sección / nudo / moderación / estación",
+    examples: [
+      {
+        segments: ruby("[大切|たいせつ]な[部分|ぶぶん]を一[節|せつ]ずつ[読|よ]みます。"),
+        translation: "Leo cada sección importante una por una.",
+      },
+      {
+        segments: ruby("[季節|きせつ]の[変|か]わり[目|め]は[体調|たいちょう]に[気|き]をつけます。"),
+        translation: "En el cambio de estación cuido mi salud.",
+      },
+      {
+        segments: ruby("[竹|たけ]にはいくつも[節|ふし]があります。"),
+        translation: "El bambú tiene varios nudos.",
+      },
+      {
+        segments: ruby("[節約|せつやく]してお[金|かね]をためます。"),
+        translation: "Ahorro dinero siendo ahorrativo.",
+      },
+      {
+        segments: ruby("[文章|ぶんしょう]の一[節|せつ]をノートにうつしました。"),
+        translation: "Copié una sección del texto en el cuaderno.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "沖",
+    level: 4,
+    strokeCount: 7,
+    on: ["チュウ"],
+    kun: ["おき"],
+    meaning: "Alta mar / mar abierto",
+    examples: [
+      {
+        segments: ruby("[船|ふね]が[沖|おき]へ[出|で]ました。"),
+        translation: "El barco salió hacia mar abierto.",
+      },
+      {
+        segments: ruby("[沖縄|おきなわ]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Okinawa.",
+      },
+      {
+        segments: ruby("[沖|おき]のほうに[白|しろ]い[船|ふね]が[見|み]えます。"),
+        translation: "Se ve un barco blanco mar adentro.",
+      },
+      {
+        segments: ruby("[海|うみ]の[沖|おき]は[波|なみ]がつよいです。"),
+        translation: "En alta mar las olas son fuertes.",
+      },
+      {
+        segments: ruby("[沖縄県|おきなわけん]の[海|うみ]はとてもきれいです。"),
+        translation: "El mar de la prefectura de Okinawa es muy hermoso.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "博",
+    level: 4,
+    strokeCount: 12,
+    on: ["ハク", "バク"],
+    kun: [],
+    meaning: "Amplio / doctor / exposición",
+    examples: [
+      {
+        segments: ruby("[博物館|はくぶつかん]で[恐竜|きょうりゅう]の[骨|ほね]を[見|み]ました。"),
+        translation: "Vi huesos de dinosaurio en el museo.",
+      },
+      {
+        segments: ruby("[博士|はかせ]になりたいと[思|おも]っています。"),
+        translation: "Pienso que quiero llegar a ser doctor.",
+      },
+      {
+        segments: ruby("[博覧会|はくらんかい]の[写真|しゃしん]を[見|み]ました。"),
+        translation: "Vi fotos de una exposición.",
+      },
+      {
+        segments: ruby("[知識|ちしき]が[広|ひろ]くて[博識|はくしき]な[先生|せんせい]です。"),
+        translation: "Es un profesor muy culto y de amplios conocimientos.",
+      },
+      {
+        segments: ruby("[博物館|はくぶつかん]の[説明|せつめい]はとてもおもしろかったです。"),
+        translation: "La explicación del museo fue muy interesante.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "法",
+    level: 4,
+    strokeCount: 8,
+    on: ["ホウ", "ハッ", "ホッ"],
+    kun: [],
+    meaning: "Método / ley",
+    examples: [
+      {
+        segments: ruby("[勉強法|べんきょうほう]を[教|おし]えてください。"),
+        translation: "Por favor, enséñeme un método de estudio.",
+      },
+      {
+        segments: ruby("[法律|ほうりつ]をまもることが[大切|たいせつ]です。"),
+        translation: "Es importante obedecer la ley.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[方法|ほうほう]を[試|ため]してみます。"),
+        translation: "Voy a probar un método nuevo.",
+      },
+      {
+        segments: ruby("[文法|ぶんぽう]をしっかり[勉強|べんきょう]します。"),
+        translation: "Estudio bien la gramática.",
+      },
+      {
+        segments: ruby("[安全|あんぜん]な[使|つか]い[方|かた]を[守|まも]るのも一つの[法|ほう]です。"),
+        translation: "Respetar la manera segura de usarlo también es una regla.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "冷",
+    level: 4,
+    strokeCount: 7,
+    on: ["レイ"],
+    kun: ["つめ.たい", "ひ.える", "ひ.やす", "さ.める", "さ.ます"],
+    meaning: "Frío / enfriar",
+    examples: [
+      {
+        segments: ruby("[冷|つめ]たい[水|みず]を[飲|の]みます。"),
+        translation: "Bebo agua fría.",
+      },
+      {
+        segments: ruby("[食|た]べ[物|もの]をれいぞうこで[冷|ひ]やします。"),
+        translation: "Enfrío la comida en el refrigerador.",
+      },
+      {
+        segments: ruby("[冷蔵庫|れいぞうこ]の[中|なか]にジュースがあります。"),
+        translation: "Hay jugo dentro del refrigerador.",
+      },
+      {
+        segments: ruby("[冬|ふゆ]の[朝|あさ]は[空気|くうき]が[冷|つめ]たいです。"),
+        translation: "En las mañanas de invierno el aire está frío.",
+      },
+      {
+        segments: ruby("[熱|あつ]いお[茶|ちゃ]が[少|すこ]し[冷|さ]めました。"),
+        translation: "El té caliente se enfrió un poco.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "課",
+    level: 4,
+    strokeCount: 15,
+    on: ["カ"],
+    kun: [],
+    meaning: "Lección / sección / asignar",
+    examples: [
+      {
+        segments: ruby("[宿題|しゅくだい]の[課題|かだい]を[確認|かくにん]します。"),
+        translation: "Reviso la tarea asignada.",
+      },
+      {
+        segments: ruby("[日本語|にほんご]の[課|か]は[二時|にじ]からです。"),
+        translation: "La clase de japonés es desde las dos.",
+      },
+      {
+        segments: ruby("[会社|かいしゃ]の[課長|かちょう]が[会議|かいぎ]に[出|で]ます。"),
+        translation: "El jefe de sección de la empresa asistirá a la reunión.",
+      },
+      {
+        segments: ruby("[今日|きょう]の[課題|かだい]はかんたんでした。"),
+        translation: "La tarea de hoy fue sencilla.",
+      },
+      {
+        segments: ruby("[新|あたら]しいしごとが[私|わたし]に[課|か]されました。"),
+        translation: "Se me asignó un trabajo nuevo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "器",
+    level: 4,
+    strokeCount: 15,
+    on: ["キ"],
+    kun: ["うつわ"],
+    meaning: "Recipiente / instrumento / capacidad",
+    examples: [
+      {
+        segments: ruby("[白|しろ]い[器|うつわ]にサラダをいれます。"),
+        translation: "Pongo ensalada en un recipiente blanco.",
+      },
+      {
+        segments: ruby("[楽器|がっき]を[練習|れんしゅう]するのが[好|す]きです。"),
+        translation: "Me gusta practicar instrumentos musicales.",
+      },
+      {
+        segments: ruby("[大|おお]きな[器|うつわ]にスープを[入|い]れました。"),
+        translation: "Puse sopa en un recipiente grande.",
+      },
+      {
+        segments: ruby("[先生|せんせい]は[器用|きよう]に[字|じ]を[書|か]きます。"),
+        translation: "El profesor escribe con mucha destreza.",
+      },
+      {
+        segments: ruby("[彼|かれ]はみんなをまとめる[器|うつわ]の[大|おお]きい[人|ひと]です。"),
+        translation: "Él es una persona con gran capacidad para reunir a todos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "芸",
+    level: 4,
+    strokeCount: 7,
+    on: ["ゲイ"],
+    kun: [],
+    meaning: "Arte / técnica",
+    examples: [
+      {
+        segments: ruby("[美術館|びじゅつかん]で[芸術|げいじゅつ]を[楽|たの]しみました。"),
+        translation: "Disfruté del arte en el museo.",
+      },
+      {
+        segments: ruby("[学園祭|がくえんさい]で[伝統芸能|でんとうげいのう]を[見|み]ました。"),
+        translation: "Vi artes tradicionales en el festival escolar.",
+      },
+      {
+        segments: ruby("[芸人|げいにん]の[話|はなし]がおもしろかったです。"),
+        translation: "La conversación del comediante fue interesante.",
+      },
+      {
+        segments: ruby("[芸術|げいじゅつ]にはいろいろな[形|かたち]があります。"),
+        translation: "El arte tiene muchas formas.",
+      },
+      {
+        segments: ruby("[この[人|ひと]は[歌|うた]と[踊|おど]りの[芸|げい]を[持|も]っています。"),
+        translation: "Esta persona tiene talento para el canto y el baile.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "札",
+    level: 4,
+    strokeCount: 5,
+    on: ["サツ"],
+    kun: ["ふだ"],
+    meaning: "Billete / etiqueta / letrero",
+    examples: [
+      {
+        segments: ruby("[千円|せんえん][札|さつ]を[出|だ]しました。"),
+        translation: "Saqué un billete de mil yenes.",
+      },
+      {
+        segments: ruby("[名札|なふだ]をつけてください。"),
+        translation: "Por favor, póngase la tarjeta con nombre.",
+      },
+      {
+        segments: ruby("[値札|ねふだ]を[見|み]てから[買|か]います。"),
+        translation: "Miro la etiqueta de precio antes de comprar.",
+      },
+      {
+        segments: ruby("[木|き]の[札|ふだ]に[名前|なまえ]を[書|か]きました。"),
+        translation: "Escribí el nombre en una placa de madera.",
+      },
+      {
+        segments: ruby("[一万円|いちまんえん][札|さつ]はさいふの[中|なか]にあります。"),
+        translation: "El billete de diez mil yenes está dentro de la billetera.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "順",
+    level: 4,
+    strokeCount: 12,
+    on: ["ジュン"],
+    kun: [],
+    meaning: "Orden / turno",
+    examples: [
+      {
+        segments: ruby("[順番|じゅんばん]に[名前|なまえ]を[呼|よ]びます。"),
+        translation: "Llamo los nombres en orden.",
+      },
+      {
+        segments: ruby("[決|き]めた[順|じゅん]に[進|すす]めましょう。"),
+        translation: "Avancemos en el orden establecido.",
+      },
+      {
+        segments: ruby("[手順|てじゅん]をよく[読|よ]んでください。"),
+        translation: "Por favor, lea bien los pasos.",
+      },
+      {
+        segments: ruby("[年齢順|ねんれいじゅん]に[並|なら]んでください。"),
+        translation: "Por favor, fórmense por edad.",
+      },
+      {
+        segments: ruby("[順調|じゅんちょう]に[勉強|べんきょう]が[進|すす]んでいます。"),
+        translation: "El estudio está avanzando sin problemas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "説",
+    level: 4,
+    strokeCount: 14,
+    on: ["セツ", "ゼイ"],
+    kun: ["と.く"],
+    meaning: "Explicar / teoría",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]が[文法|ぶんぽう]を[説明|せつめい]しました。"),
+        translation: "El profesor explicó la gramática.",
+      },
+      {
+        segments: ruby("[小説|しょうせつ]を[読|よ]むのが[好|す]きです。"),
+        translation: "Me gusta leer novelas.",
+      },
+      {
+        segments: ruby("[理由|りゆう]をわかりやすく[説|と]いてください。"),
+        translation: "Por favor, explique la razón de forma clara.",
+      },
+      {
+        segments: ruby("[伝説|でんせつ]の[話|はなし]を[聞|き]きました。"),
+        translation: "Escuché una historia legendaria.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[説|せつ]について[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos en clase sobre una nueva teoría.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "兆",
+    level: 4,
+    strokeCount: 6,
+    on: ["チョウ"],
+    kun: ["きざ.す", "きざ.し"],
+    meaning: "Signo / indicio / billón japonés",
+    examples: [
+      {
+        segments: ruby("[雨|あめ]が[降|ふ]る[兆|きざ]しがあります。"),
+        translation: "Hay señales de que va a llover.",
+      },
+      {
+        segments: ruby("[春|はる]の[兆|きざ]しを[感|かん]じます。"),
+        translation: "Siento señales de la primavera.",
+      },
+      {
+        segments: ruby("[病気|びょうき]の[兆候|ちょうこう]に[気|き]をつけます。"),
+        translation: "Presto atención a los signos de enfermedad.",
+      },
+      {
+        segments: ruby("一[兆|ちょう]という[数|かず]はとても[大|おお]きいです。"),
+        translation: "El número de un billón es muy grande.",
+      },
+      {
+        segments: ruby("[成功|せいこう]の[兆|きざ]しが[少|すこ]しずつ[見|み]えてきました。"),
+        translation: "Poco a poco empezaron a verse señales de éxito.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "阪",
+    level: 4,
+    strokeCount: 7,
+    on: ["ハン"],
+    kun: ["さか"],
+    meaning: "Pendiente / usado en nombres",
+    examples: [
+      {
+        segments: ruby("[大阪|おおさか]へ[旅行|りょこう]したいです。"),
+        translation: "Quiero viajar a Osaka.",
+      },
+      {
+        segments: ruby("[大阪駅|おおさかえき]で[友達|ともだち]と[会|あ]いました。"),
+        translation: "Me encontré con un amigo en la estación de Osaka.",
+      },
+      {
+        segments: ruby("[阪神|はんしん]のニュースを[見|み]ました。"),
+        translation: "Vi noticias sobre Hanshin.",
+      },
+      {
+        segments: ruby("[急|きゅう]な[阪|さか]ではないので[歩|ある]きやすいです。"),
+        translation: "Como no es una pendiente pronunciada, es fácil caminar.",
+      },
+      {
+        segments: ruby("[大阪府|おおさかふ]はにぎやかな[場所|ばしょ]です。"),
+        translation: "La prefectura de Osaka es un lugar animado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "望",
+    level: 4,
+    strokeCount: 11,
+    on: ["ボウ", "モウ"],
+    kun: ["のぞ.む"],
+    meaning: "Esperar / desear / vista",
+    examples: [
+      {
+        segments: ruby("[将来|しょうらい]を[望|のぞ]んで[毎日|まいにち][勉強|べんきょう]しています。"),
+        translation: "Estudio todos los días con esperanza en el futuro.",
+      },
+      {
+        segments: ruby("[希望|きぼう]どおりの[結果|けっか]を[望|のぞ]みます。"),
+        translation: "Espero un resultado como deseo.",
+      },
+      {
+        segments: ruby("[展望台|てんぼうだい]から[海|うみ]が[見|み]えます。"),
+        translation: "Desde el mirador se ve el mar.",
+      },
+      {
+        segments: ruby("[私|わたし]は[静|しず]かな[生活|せいかつ]を[望|のぞ]んでいます。"),
+        translation: "Deseo una vida tranquila.",
+      },
+      {
+        segments: ruby("[望遠鏡|ぼうえんきょう]で[星|ほし]を[見|み]ました。"),
+        translation: "Vi las estrellas con un telescopio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "例",
+    level: 4,
+    strokeCount: 8,
+    on: ["レイ"],
+    kun: ["たと.える"],
+    meaning: "Ejemplo / caso",
+    examples: [
+      {
+        segments: ruby("[例文|れいぶん]を[読|よ]んでください。"),
+        translation: "Por favor, lea la oración de ejemplo.",
+      },
+      {
+        segments: ruby("[先生|せんせい]がわかりやすい[例|れい]を[出|だ]しました。"),
+        translation: "El profesor dio un ejemplo fácil de entender.",
+      },
+      {
+        segments: ruby("[一例|いちれい]としてこの[文|ぶん]を[使|つか]います。"),
+        translation: "Usaré esta oración como un ejemplo.",
+      },
+      {
+        segments: ruby("[例外|れいがい]もありますが、まずはこのルールを[覚|おぼ]えましょう。"),
+        translation: "También hay excepciones, pero primero aprendamos esta regla.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[経験|けいけん]を[例|れい]にして[話|はな]しました。"),
+        translation: "Hablé usando mi experiencia como ejemplo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "芽",
+    level: 4,
+    strokeCount: 8,
+    on: ["ガ"],
+    kun: ["め"],
+    meaning: "Brote",
+    examples: [
+      {
+        segments: ruby("[春|はる]になって[芽|め]がでました。"),
+        translation: "Llegó la primavera y brotaron nuevos retoños.",
+      },
+      {
+        segments: ruby("[豆|まめ]の[芽|め]が[土|つち]から[出|で]ています。"),
+        translation: "El brote del frijol está saliendo de la tierra.",
+      },
+      {
+        segments: ruby("[芽|め]が[大|おお]きくなるまで[毎日|まいにち][水|みず]をあげます。"),
+        translation: "Le doy agua todos los días hasta que el brote crezca.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[考|かんが]えの[芽|め]を[大切|たいせつ]にします。"),
+        translation: "Valoro el brote de una nueva idea.",
+      },
+      {
+        segments: ruby("[木|き]の[小|ちい]さな[芽|め]がたくさん[見|み]えます。"),
+        translation: "Se ven muchos brotes pequeños en el árbol.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "機",
+    level: 4,
+    strokeCount: 16,
+    on: ["キ"],
+    kun: ["はた"],
+    meaning: "Máquina / oportunidad",
+    examples: [
+      {
+        segments: ruby("[機械|きかい]の[使|つか]い[方|かた]を[習|なら]います。"),
+        translation: "Aprendo cómo usar la máquina.",
+      },
+      {
+        segments: ruby("[飛行機|ひこうき]で[北海道|ほっかいどう]へ[行|い]きます。"),
+        translation: "Voy a Hokkaido en avión.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[機会|きかい]をのがさないでください。"),
+        translation: "Por favor, no pierda una oportunidad importante.",
+      },
+      {
+        segments: ruby("[洗濯機|せんたくき]が[動|うご]いています。"),
+        translation: "La lavadora está funcionando.",
+      },
+      {
+        segments: ruby("[この[機会|きかい]にもっと[日本語|にほんご]を[話|はな]したいです。"),
+        translation: "Quiero hablar más japonés aprovechando esta oportunidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "欠",
+    level: 4,
+    strokeCount: 4,
+    on: ["ケツ"],
+    kun: ["か.ける", "か.く"],
+    meaning: "Faltar / carecer",
+    examples: [
+      {
+        segments: ruby("[今日|きょう]は[学校|がっこう]を[欠席|けっせき]します。"),
+        translation: "Hoy faltaré a la escuela.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[部分|ぶぶん]が[欠|か]けています。"),
+        translation: "Falta una parte importante.",
+      },
+      {
+        segments: ruby("[水分|すいぶん]が[欠|か]かせません。"),
+        translation: "El agua es indispensable.",
+      },
+      {
+        segments: ruby("[茶碗|ちゃわん]のふちが[少|すこ]し[欠|か]けています。"),
+        translation: "El borde del cuenco está un poco roto.",
+      },
+      {
+        segments: ruby("[元気|げんき]に[生活|せいかつ]するには[睡眠|すいみん]が[欠|か]かせません。"),
+        translation: "Para vivir con energía, el sueño es indispensable.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "刷",
+    level: 4,
+    strokeCount: 8,
+    on: ["サツ"],
+    kun: ["す.る", "は.く"],
+    meaning: "Imprimir",
+    examples: [
+      {
+        segments: ruby("[写真|しゃしん]を五[枚|まい][印刷|いんさつ]しました。"),
+        translation: "Imprimí cinco fotos.",
+      },
+      {
+        segments: ruby("[この[紙|かみ]に[地図|ちず]を[刷|す]ってください。"),
+        translation: "Por favor, imprima el mapa en este papel.",
+      },
+      {
+        segments: ruby("[新|あたら]しいポスターを[刷|す]りました。"),
+        translation: "Imprimimos un póster nuevo.",
+      },
+      {
+        segments: ruby("[印刷機|いんさつき]がうまく[動|うご]きません。"),
+        translation: "La impresora no funciona bien.",
+      },
+      {
+        segments: ruby("[必要|ひつよう]な[資料|しりょう]だけを[印刷|いんさつ]します。"),
+        translation: "Imprimo solo los materiales necesarios.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "初",
+    level: 4,
+    strokeCount: 7,
+    on: ["ショ", "ソ", "ショク"],
+    kun: ["はじ.め", "はじ.めて", "はつ", "うい", "そ.める"],
+    meaning: "Primero / comienzo",
+    examples: [
+      {
+        segments: ruby("[初|はじ]めて[日本|にほん]へ[来|き]ました。"),
+        translation: "Vine a Japón por primera vez.",
+      },
+      {
+        segments: ruby("[最初|さいしょ]のページを[読|よ]んでください。"),
+        translation: "Por favor, lea la primera página.",
+      },
+      {
+        segments: ruby("[初日|しょにち]はとてもきんちょうしました。"),
+        translation: "El primer día estuve muy nervioso.",
+      },
+      {
+        segments: ruby("[年|とし]の[初|はじ]めに[目標|もくひょう]をきめます。"),
+        translation: "Al comienzo del año fijo mis metas.",
+      },
+      {
+        segments: ruby("[初級|しょきゅう]の[文法|ぶんぽう]から[勉強|べんきょう]しています。"),
+        translation: "Estoy estudiando comenzando por la gramática de nivel inicial.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "浅",
+    level: 4,
+    strokeCount: 11,
+    on: ["セン"],
+    kun: ["あさ.い"],
+    meaning: "Poco profundo / superficial",
+    examples: [
+      {
+        segments: ruby("この[川|かわ]は[浅|あさ]いです。"),
+        translation: "Este río es poco profundo.",
+      },
+      {
+        segments: ruby("[知識|ちしき]がまだ[浅|あさ]いので、もっと[勉強|べんきょう]します。"),
+        translation: "Como mis conocimientos aún son superficiales, estudiaré más.",
+      },
+      {
+        segments: ruby("[浅草|あさくさ]へ[行|い]ったことがあります。"),
+        translation: "He ido a Asakusa.",
+      },
+      {
+        segments: ruby("[皿|さら]が[浅|あさ]いのでスープにはむきません。"),
+        translation: "Como el plato es poco hondo, no sirve para sopa.",
+      },
+      {
+        segments: ruby("[浅|あさ]い[考|かんが]えで[答|こた]えないようにします。"),
+        translation: "Procuro no responder con un pensamiento superficial.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "低",
+    level: 4,
+    strokeCount: 7,
+    on: ["テイ"],
+    kun: ["ひく.い", "ひく.める", "ひく.まる"],
+    meaning: "Bajo",
+    examples: [
+      {
+        segments: ruby("[気温|きおん]が[低|ひく]いです。"),
+        translation: "La temperatura está baja.",
+      },
+      {
+        segments: ruby("[声|こえ]を[低|ひく]くして[話|はな]してください。"),
+        translation: "Por favor, hable con voz baja.",
+      },
+      {
+        segments: ruby("[この[机|つくえ]は[少|すこ]し[低|ひく]いです。"),
+        translation: "Este escritorio es un poco bajo.",
+      },
+      {
+        segments: ruby("[低学年|ていがくねん]の[子|こ]どもにもわかる[説明|せつめい]です。"),
+        translation: "Es una explicación que también entienden los niños de cursos menores.",
+      },
+      {
+        segments: ruby("[山|やま]の[低|ひく]いところに[家|いえ]があります。"),
+        translation: "La casa está en la parte baja de la montaña.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "飯",
+    level: 4,
+    strokeCount: 12,
+    on: ["ハン"],
+    kun: ["めし"],
+    meaning: "Comida / arroz cocido",
+    examples: [
+      {
+        segments: ruby("[晩飯|ばんめし]はカレーでした。"),
+        translation: "La cena fue curry.",
+      },
+      {
+        segments: ruby("[朝|あさ]ご[飯|はん]をしっかり[食|た]べます。"),
+        translation: "Tomo bien el desayuno.",
+      },
+      {
+        segments: ruby("[昼|ひる]ご[飯|はん]のあとで[少|すこ]し[休|やす]みます。"),
+        translation: "Descanso un poco después del almuerzo.",
+      },
+      {
+        segments: ruby("[白|しろ]いご[飯|はん]が[好|す]きです。"),
+        translation: "Me gusta el arroz blanco.",
+      },
+      {
+        segments: ruby("[友達|ともだち]といっしょにご[飯|はん]を[食|た]べに[行|い]きました。"),
+        translation: "Fui a comer con un amigo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "牧",
+    level: 4,
+    strokeCount: 8,
+    on: ["ボク"],
+    kun: ["まき"],
+    meaning: "Pastoreo / granja",
+    examples: [
+      {
+        segments: ruby("[牧場|ぼくじょう]で[牛|うし]を[見|み]ました。"),
+        translation: "Vi vacas en la granja.",
+      },
+      {
+        segments: ruby("[北海道|ほっかいどう]の[牧場|ぼくじょう]はひろいです。"),
+        translation: "Las granjas de Hokkaido son amplias.",
+      },
+      {
+        segments: ruby("[牧草|ぼくそう]が[風|かぜ]でゆれています。"),
+        translation: "El pasto de pastoreo se mueve con el viento.",
+      },
+      {
+        segments: ruby("[牧場|ぼくじょう]でしぼりたての[牛乳|ぎゅうにゅう]を[飲|の]みました。"),
+        translation: "Tomé leche recién ordeñada en la granja.",
+      },
+      {
+        segments: ruby("[子|こ]どもたちが[牧場|ぼくじょう]で[動物|どうぶつ]とふれあいました。"),
+        translation: "Los niños convivieron con animales en la granja.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "連",
+    level: 4,
+    strokeCount: 10,
+    on: ["レン"],
+    kun: ["つら.なる", "つ.れる", "つ.らねる"],
+    meaning: "Conectar / llevar / serie",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]を[連|つ]れて[公園|こうえん]へ[行|い]きます。"),
+        translation: "Llevo a mi amigo al parque.",
+      },
+      {
+        segments: ruby("[連絡|れんらく]を[忘|わす]れないでください。"),
+        translation: "Por favor, no olvide comunicarse.",
+      },
+      {
+        segments: ruby("[山|やま]が[連|つら]なって[見|み]えます。"),
+        translation: "Se ven montañas alineadas unas tras otras.",
+      },
+      {
+        segments: ruby("[連休|れんきゅう]に[家族|かぞく]と[旅行|りょこう]します。"),
+        translation: "Viajaré con mi familia durante los feriados seguidos.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[連絡帳|れんらくちょう]を[出|だ]しました。"),
+        translation: "Le entregué al profesor el cuaderno de comunicaciones.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "賀",
+    level: 4,
+    strokeCount: 12,
+    on: ["ガ"],
+    kun: [],
+    meaning: "Celebrar / felicitación",
+    examples: [
+      {
+        segments: ruby("[卒業|そつぎょう]を[祝賀|しゅくが]する[会|かい]がありました。"),
+        translation: "Hubo una reunión para celebrar la graduación.",
+      },
+      {
+        segments: ruby("[年賀状|ねんがじょう]を[家族|かぞく]に[送|おく]ります。"),
+        translation: "Envío tarjetas de año nuevo a mi familia.",
+      },
+      {
+        segments: ruby("[合格|ごうかく]の[祝賀|しゅくが]のことばをもらいました。"),
+        translation: "Recibí palabras de felicitación por haber aprobado.",
+      },
+      {
+        segments: ruby("[賀正|がしょう]の[文字|もじ]を[見|み]ました。"),
+        translation: "Vi los caracteres de felicitación de año nuevo.",
+      },
+      {
+        segments: ruby("[結婚|けっこん]を[祝賀|しゅくが]するために[花|はな]をおくりました。"),
+        translation: "Envié flores para celebrar el matrimonio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "議",
+    level: 4,
+    strokeCount: 20,
+    on: ["ギ"],
+    kun: [],
+    meaning: "Debate / deliberación",
+    examples: [
+      {
+        segments: ruby("[会議|かいぎ]は[三時|さんじ]からです。"),
+        translation: "La reunión es desde las tres.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]なことをみんなで[議論|ぎろん]しました。"),
+        translation: "Debatimos todos sobre un tema importante.",
+      },
+      {
+        segments: ruby("[市議会|しぎかい]のニュースを[見|み]ました。"),
+        translation: "Vi noticias sobre el concejo municipal.",
+      },
+      {
+        segments: ruby("[先生|せんせい]たちが[会議室|かいぎしつ]に[集|あつ]まっています。"),
+        translation: "Los profesores se están reuniendo en la sala de reuniones.",
+      },
+      {
+        segments: ruby("[議題|ぎだい]を[先|さき]に[確認|かくにん]しましょう。"),
+        translation: "Confirmemos primero el tema de discusión.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "結",
+    level: 4,
+    strokeCount: 12,
+    on: ["ケツ"],
+    kun: ["むす.ぶ", "ゆ.う"],
+    meaning: "Unir / atar / resultado",
+    examples: [
+      {
+        segments: ruby("ひもをしっかり[結|むす]んでください。"),
+        translation: "Por favor, ate bien la cuerda.",
+      },
+      {
+        segments: ruby("[友達|ともだち]と[強|つよ]いきずなが[結|むす]ばれました。"),
+        translation: "Se formó un lazo fuerte con un amigo.",
+      },
+      {
+        segments: ruby("[結婚|けっこん]のお[祝|いわ]いに[行|い]きます。"),
+        translation: "Iré a felicitar por el matrimonio.",
+      },
+      {
+        segments: ruby("[結果|けっか]を[見|み]てからつぎを[決|き]めます。"),
+        translation: "Decidiré lo siguiente después de ver el resultado.",
+      },
+      {
+        segments: ruby("[髪|かみ]をうしろで[結|ゆ]いました。"),
+        translation: "Me amarré el cabello atrás.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "察",
+    level: 4,
+    strokeCount: 14,
+    on: ["サツ"],
+    kun: [],
+    meaning: "Observar / inferir",
+    examples: [
+      {
+        segments: ruby("[警察|けいさつ]にみちを[聞|き]きました。"),
+        translation: "Le pregunté el camino a la policía.",
+      },
+      {
+        segments: ruby("[観察|かんさつ]してから[答|こた]えます。"),
+        translation: "Observo primero y luego respondo.",
+      },
+      {
+        segments: ruby("[植物|しょくぶつ]のようすをよく[観察|かんさつ]しました。"),
+        translation: "Observé bien el estado de la planta.",
+      },
+      {
+        segments: ruby("[相手|あいて]の[気持|きも]ちを[察|さっ]することも[大切|たいせつ]です。"),
+        translation: "También es importante comprender los sentimientos de la otra persona.",
+      },
+      {
+        segments: ruby("[察知|さっち]するのがおそかったです。"),
+        translation: "Me demoré en darme cuenta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "松",
+    level: 4,
+    strokeCount: 8,
+    on: ["ショウ"],
+    kun: ["まつ"],
+    meaning: "Pino",
+    examples: [
+      {
+        segments: ruby("[松|まつ]の[木|き]が[庭|にわ]にあります。"),
+        translation: "Hay un pino en el jardín.",
+      },
+      {
+        segments: ruby("[松林|まつばやし]を[歩|ある]きました。"),
+        translation: "Caminé por un bosque de pinos.",
+      },
+      {
+        segments: ruby("[正月|しょうがつ]には[門松|かどまつ]を[見|み]ます。"),
+        translation: "En año nuevo se ven decoraciones de pino.",
+      },
+      {
+        segments: ruby("[松|まつ]は[冬|ふゆ]でもみどりです。"),
+        translation: "El pino sigue verde incluso en invierno.",
+      },
+      {
+        segments: ruby("[海辺|うみべ]の[松|まつ]が[風|かぜ]でゆれています。"),
+        translation: "Los pinos de la orilla del mar se mueven con el viento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "戦",
+    level: 4,
+    strokeCount: 13,
+    on: ["セン"],
+    kun: ["たたか.う"],
+    meaning: "Guerra / combatir",
+    examples: [
+      {
+        segments: ruby("[試合|しあい]でつよい[相手|あいて]と[戦|たたか]いました。"),
+        translation: "Competí contra un rival fuerte en el partido.",
+      },
+      {
+        segments: ruby("[戦争|せんそう]について[歴史|れきし]で[学|まな]びます。"),
+        translation: "Estudiamos sobre la guerra en historia.",
+      },
+      {
+        segments: ruby("[最後|さいご]まであきらめずに[戦|たたか]います。"),
+        translation: "Lucharé hasta el final sin rendirme.",
+      },
+      {
+        segments: ruby("[作戦|さくせん]をかんがえてから[行動|こうどう]します。"),
+        translation: "Actúo después de pensar una estrategia.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[弱|よわ]さと[戦|たたか]うことも[大切|たいせつ]です。"),
+        translation: "También es importante luchar contra las propias debilidades.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "底",
+    level: 4,
+    strokeCount: 8,
+    on: ["テイ"],
+    kun: ["そこ"],
+    meaning: "Fondo / base",
+    examples: [
+      {
+        segments: ruby("[海|うみ]の[底|そこ]はくらいです。"),
+        translation: "El fondo del mar es oscuro.",
+      },
+      {
+        segments: ruby("[箱|はこ]の[底|そこ]にかぎがありました。"),
+        translation: "Había una llave en el fondo de la caja.",
+      },
+      {
+        segments: ruby("[靴|くつ]の[底|そこ]がすべりやすいです。"),
+        translation: "La suela del zapato resbala con facilidad.",
+      },
+      {
+        segments: ruby("[心|こころ]の[底|そこ]からうれしいです。"),
+        translation: "Estoy feliz desde el fondo del corazón.",
+      },
+      {
+        segments: ruby("[川|かわ]の[底|そこ]がよく[見|み]えるほどみずがきれいです。"),
+        translation: "El agua está tan limpia que se ve el fondo del río.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "飛",
+    level: 4,
+    strokeCount: 9,
+    on: ["ヒ"],
+    kun: ["と.ぶ", "と.ばす"],
+    meaning: "Volar / saltar",
+    examples: [
+      {
+        segments: ruby("[鳥|とり]が[空|そら]を[飛|と]んでいます。"),
+        translation: "Un pájaro está volando por el cielo.",
+      },
+      {
+        segments: ruby("[飛行機|ひこうき]で[北海道|ほっかいどう]へ[行|い]きます。"),
+        translation: "Voy a Hokkaido en avión.",
+      },
+      {
+        segments: ruby("ボールを[遠|とお]くへ[飛|と]ばしました。"),
+        translation: "Lancé la pelota lejos.",
+      },
+      {
+        segments: ruby("[紙|かみ]ひこうきがうまく[飛|と]びました。"),
+        translation: "El avión de papel voló bien.",
+      },
+      {
+        segments: ruby("[急|きゅう]に[飛|と]び[出|だ]さないでください。"),
+        translation: "Por favor, no salga disparado de repente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "末",
+    level: 4,
+    strokeCount: 5,
+    on: ["マツ", "バツ"],
+    kun: ["すえ"],
+    meaning: "Final / punta / futuro",
+    examples: [
+      {
+        segments: ruby("[週末|しゅうまつ]は[家族|かぞく]とすごします。"),
+        translation: "Paso el fin de semana con mi familia.",
+      },
+      {
+        segments: ruby("[年末|ねんまつ]はとてもいそがしいです。"),
+        translation: "A fin de año estoy muy ocupado.",
+      },
+      {
+        segments: ruby("[道|みち]の[末|すえ]に[白|しろ]い[家|いえ]が[見|み]えます。"),
+        translation: "Al final del camino se ve una casa blanca.",
+      },
+      {
+        segments: ruby("[末|すえ][子|こ]はいつも[元気|げんき]です。"),
+        translation: "El hijo menor siempre está lleno de energía.",
+      },
+      {
+        segments: ruby("[将来|しょうらい]の[末|すえ]までしっかり[考|かんが]えたいです。"),
+        translation: "Quiero pensar bien incluso en el futuro lejano.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "老",
+    level: 4,
+    strokeCount: 6,
+    on: ["ロウ"],
+    kun: ["お.いる", "ふ.ける"],
+    meaning: "Envejecer / anciano",
+    examples: [
+      {
+        segments: ruby("[老人|ろうじん]がこうえんで[休|やす]んでいます。"),
+        translation: "Un anciano está descansando en el parque.",
+      },
+      {
+        segments: ruby("[年|とし]をとっても[元気|げんき]に[老|お]いたいです。"),
+        translation: "Quiero envejecer con energía.",
+      },
+      {
+        segments: ruby("[老犬|ろうけん]をたいせつに[世話|せわ]しています。"),
+        translation: "Cuido con cariño a mi perro anciano.",
+      },
+      {
+        segments: ruby("[敬老|けいろう]の[日|ひ]に[祖父母|そふぼ]へ[手紙|てがみ]をおくりました。"),
+        translation: "En el Día de Respeto a los Mayores envié una carta a mis abuelos.",
+      },
+      {
+        segments: ruby("[老|お]いても[学|まな]ぶ[気持|きも]ちは[大切|たいせつ]です。"),
+        translation: "Incluso al envejecer, es importante mantener las ganas de aprender.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "改",
+    level: 4,
+    strokeCount: 7,
+    on: ["カイ"],
+    kun: ["あらた.める", "あらた.まる"],
+    meaning: "Cambiar / corregir / renovar",
+    examples: [
+      {
+        segments: ruby("[予定|よてい]を[改|あらた]めます。"),
+        translation: "Modificaré el plan.",
+      },
+      {
+        segments: ruby("[名前|なまえ]を[改|あらた]めて[自己紹介|じこしょうかい]します。"),
+        translation: "Me presentaré nuevamente mencionando mi nombre.",
+      },
+      {
+        segments: ruby("[校則|こうそく]が[改正|かいせい]されました。"),
+        translation: "Las reglas escolares fueron modificadas.",
+      },
+      {
+        segments: ruby("[作文|さくぶん]のまちがいを[改|あらた]めました。"),
+        translation: "Corregí los errores de la redacción.",
+      },
+      {
+        segments: ruby("[気持|きも]ちを[改|あらた]めてもう一[度|ど]がんばります。"),
+        translation: "Renovaré mi actitud e intentaré una vez más.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "求",
+    level: 4,
+    strokeCount: 7,
+    on: ["キュウ", "グ"],
+    kun: ["もと.める"],
+    meaning: "Buscar / pedir / exigir",
+    examples: [
+      {
+        segments: ruby("[答|こた]えを[求|もと]めて[本|ほん]を[読|よ]みます。"),
+        translation: "Leo libros buscando respuestas.",
+      },
+      {
+        segments: ruby("[求人|きゅうじん]の[情報|じょうほう]を[見|み]ました。"),
+        translation: "Vi información de ofertas de trabajo.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[助言|じょげん]を[求|もと]めました。"),
+        translation: "Le pedí consejo al profesor.",
+      },
+      {
+        segments: ruby("[正解|せいかい]だけを[求|もと]めるのではなく、りゆうも[考|かんが]えます。"),
+        translation: "No busco solo la respuesta correcta, también pienso en la razón.",
+      },
+      {
+        segments: ruby("[平和|へいわ]を[求|もと]める[声|こえ]がひろがっています。"),
+        translation: "Las voces que buscan la paz se están expandiendo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "建",
+    level: 4,
+    strokeCount: 9,
+    on: ["ケン", "コン"],
+    kun: ["た.てる", "た.つ"],
+    meaning: "Construir / edificio",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[家|いえ]を[建|た]てます。"),
+        translation: "Construiremos una casa nueva.",
+      },
+      {
+        segments: ruby("[駅前|えきまえ]にたかい[建物|たてもの]があります。"),
+        translation: "Hay un edificio alto frente a la estación.",
+      },
+      {
+        segments: ruby("[建設|けんせつ]の[仕事|しごと]はたいへんです。"),
+        translation: "El trabajo de construcción es duro.",
+      },
+      {
+        segments: ruby("[図書館|としょかん]は十[年前|ねんまえ]に[建|た]てられました。"),
+        translation: "La biblioteca fue construida hace diez años.",
+      },
+      {
+        segments: ruby("[丈夫|じょうぶ]な[建物|たてもの]をつくることが[大切|たいせつ]です。"),
+        translation: "Es importante construir edificios resistentes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "参",
+    level: 4,
+    strokeCount: 8,
+    on: ["サン"],
+    kun: ["まい.る"],
+    meaning: "Participar / ir / consultar",
+    examples: [
+      {
+        segments: ruby("[会議|かいぎ]に[参加|さんか]します。"),
+        translation: "Participaré en la reunión.",
+      },
+      {
+        segments: ruby("[資料|しりょう]を[参考|さんこう]にしてください。"),
+        translation: "Por favor, use este material como referencia.",
+      },
+      {
+        segments: ruby("[神社|じんじゃ]へお[参|まい]りに[行|い]きました。"),
+        translation: "Fui al santuario a rezar.",
+      },
+      {
+        segments: ruby("[三人|さんにん]で[相談|そうだん]して[参加|さんか]をきめました。"),
+        translation: "Decidimos entre tres participar.",
+      },
+      {
+        segments: ruby("[参考書|さんこうしょ]を[買|か]って[勉強|べんきょう]します。"),
+        translation: "Compraré un libro de consulta para estudiar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "笑",
+    level: 4,
+    strokeCount: 10,
+    on: ["ショウ"],
+    kun: ["わら.う", "え.む"],
+    meaning: "Reír / sonreír",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]と[話|はな]して[笑|わら]いました。"),
+        translation: "Reí hablando con un amigo.",
+      },
+      {
+        segments: ruby("[先生|せんせい]のじょうだんでみんなが[笑|わら]いました。"),
+        translation: "Todos rieron con la broma del profesor.",
+      },
+      {
+        segments: ruby("[笑顔|えがお]であいさつしてください。"),
+        translation: "Por favor, salude con una sonrisa.",
+      },
+      {
+        segments: ruby("[赤|あか]ちゃんがにこにこ[笑|わら]っています。"),
+        translation: "El bebé está sonriendo feliz.",
+      },
+      {
+        segments: ruby("[笑|わら]ってすごす[時間|じかん]をたいせつにします。"),
+        translation: "Valoro el tiempo que paso riendo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "選",
+    level: 4,
+    strokeCount: 15,
+    on: ["セン"],
+    kun: ["えら.ぶ"],
+    meaning: "Elegir / seleccionar",
+    examples: [
+      {
+        segments: ruby("[好|す]きな[色|いろ]を[選|えら]んでください。"),
+        translation: "Por favor, elija el color que le guste.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[代表|だいひょう]を[選|えら]びました。"),
+        translation: "El profesor eligió al representante.",
+      },
+      {
+        segments: ruby("[選手|せんしゅ]として[大会|たいかい]に[出|で]ます。"),
+        translation: "Participaré en el torneo como competidor.",
+      },
+      {
+        segments: ruby("[自分|じぶん]で[道|みち]を[選|えら]ぶことが[大切|たいせつ]です。"),
+        translation: "Es importante elegir el propio camino.",
+      },
+      {
+        segments: ruby("[いくつかの[中|なか]から一つを[選択|せんたく]しました。"),
+        translation: "Seleccioné una opción entre varias.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "的",
+    level: 4,
+    strokeCount: 8,
+    on: ["テキ"],
+    kun: [],
+    meaning: "Objetivo / de tipo / -al",
+    examples: [
+      {
+        segments: ruby("[目的|もくてき]をはっきりさせてください。"),
+        translation: "Por favor, deje claro el objetivo.",
+      },
+      {
+        segments: ruby("[的確|てきかく]な[説明|せつめい]でよくわかりました。"),
+        translation: "Entendí bien gracias a una explicación precisa.",
+      },
+      {
+        segments: ruby("[具体的|ぐたいてき]な[例|れい]を[出|だ]してください。"),
+        translation: "Por favor, dé un ejemplo concreto.",
+      },
+      {
+        segments: ruby("[矢|や]が[的|まと]にあたりました。"),
+        translation: "La flecha dio en el blanco.",
+      },
+      {
+        segments: ruby("[勉強|べんきょう]の[目的|もくてき]を[考|かんが]えることも[大切|たいせつ]です。"),
+        translation: "También es importante pensar en el objetivo del estudio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "必",
+    level: 4,
+    strokeCount: 5,
+    on: ["ヒツ"],
+    kun: ["かなら.ず"],
+    meaning: "Necesariamente / sin falta",
+    examples: [
+      {
+        segments: ruby("[必|かなら]ず[明日|あした]までに[出|だ]してください。"),
+        translation: "Por favor, entréguelo sin falta antes de mañana.",
+      },
+      {
+        segments: ruby("[旅行|りょこう]にはパスポートが[必要|ひつよう]です。"),
+        translation: "Para viajar se necesita pasaporte.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[会議|かいぎ]なので[必|かなら]ず[出席|しゅっせき]します。"),
+        translation: "Como es una reunión importante, asistiré sin falta.",
+      },
+      {
+        segments: ruby("[成功|せいこう]には[努力|どりょく]が[必要|ひつよう]です。"),
+        translation: "Para el éxito se necesita esfuerzo.",
+      },
+      {
+        segments: ruby("[分|わ]からないときは[必|かなら]ず[聞|き]いてください。"),
+        translation: "Cuando no entienda, pregunte sin falta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "満",
+    level: 4,
+    strokeCount: 12,
+    on: ["マン"],
+    kun: ["み.ちる", "み.たす"],
+    meaning: "Llenar / estar lleno / completo",
+    examples: [
+      {
+        segments: ruby("[水|みず]がコップに[満|み]ちています。"),
+        translation: "El vaso está lleno de agua.",
+      },
+      {
+        segments: ruby("[満員|まんいん]で[電車|でんしゃ]に[乗|の]れませんでした。"),
+        translation: "El tren estaba lleno y no pude subir.",
+      },
+      {
+        segments: ruby("[答案|とうあん]で[満点|まんてん]をとりました。"),
+        translation: "Saqué puntaje completo en la prueba.",
+      },
+      {
+        segments: ruby("[心|こころ]を[満|み]たす[時間|じかん]がひつようです。"),
+        translation: "Se necesita tiempo que llene el corazón.",
+      },
+      {
+        segments: ruby("[満足|まんぞく]できる[結果|けっか]になりました。"),
+        translation: "Fue un resultado con el que quedé satisfecho.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "労",
+    level: 4,
+    strokeCount: 7,
+    on: ["ロウ"],
+    kun: ["いたわ.る"],
+    meaning: "Trabajo / esfuerzo / fatiga",
+    examples: [
+      {
+        segments: ruby("[労働|ろうどう]の[時間|じかん]を[守|まも]ります。"),
+        translation: "Respeto el horario de trabajo.",
+      },
+      {
+        segments: ruby("[長|なが]い[仕事|しごと]で[疲労|ひろう]がたまりました。"),
+        translation: "Se acumuló cansancio por el largo trabajo.",
+      },
+      {
+        segments: ruby("[苦労|くろう]して[覚|おぼ]えたことは[忘|わす]れにくいです。"),
+        translation: "Lo que se aprende con esfuerzo es difícil de olvidar.",
+      },
+      {
+        segments: ruby("[働|はたら]いている[父|ちち]を[労|いたわ]りました。"),
+        translation: "Cuidé y animé a mi padre que estaba trabajando.",
+      },
+      {
+        segments: ruby("[努力|どりょく]と[労力|ろうりょく]がひつような[仕事|しごと]です。"),
+        translation: "Es un trabajo que requiere esfuerzo y trabajo duro.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "未",
+    level: 4,
+    strokeCount: 5,
+    on: ["ミ"],
+    kun: ["いま.だ"],
+    meaning: "Aún no / todavía",
+    examples: [
+      {
+        segments: ruby("[宿題|しゅくだい]はまだ[未|み][完成|かんせい]です。"),
+        translation: "La tarea todavía no está terminada.",
+      },
+      {
+        segments: ruby("[未定|みてい]ですが、[来週|らいしゅう]に[行|い]くかもしれません。"),
+        translation: "Todavía no está decidido, pero quizá vaya la próxima semana.",
+      },
+      {
+        segments: ruby("[未来|みらい]について[話|はな]しましょう。"),
+        translation: "Hablemos sobre el futuro.",
+      },
+      {
+        segments: ruby("[彼|かれ]はまだ[未|み][経験|けいけん]ですが、やる[気|き]があります。"),
+        translation: "Él todavía no tiene experiencia, pero tiene ganas.",
+      },
+      {
+        segments: ruby("[未|いま]だに[答|こた]えが[見|み]つかりません。"),
+        translation: "Hasta ahora todavía no encuentro la respuesta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "録",
+    level: 4,
+    strokeCount: 16,
+    on: ["ロク"],
+    kun: [],
+    meaning: "Registrar / grabar / registro",
+    examples: [
+      {
+        segments: ruby("[授業|じゅぎょう]の[音声|おんせい]を[録音|ろくおん]しました。"),
+        translation: "Grabé el audio de la clase.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]なことをノートに[記録|きろく]します。"),
+        translation: "Anoto en el cuaderno las cosas importantes.",
+      },
+      {
+        segments: ruby("[録画|ろくが]した[番組|ばんぐみ]をあとで[見|み]ます。"),
+        translation: "Veré después el programa que grabé.",
+      },
+      {
+        segments: ruby("[新記録|しんきろく]が[出|で]ました。"),
+        translation: "Se estableció un nuevo récord.",
+      },
+      {
+        segments: ruby("[名前|なまえ]を[登録|とうろく]してください。"),
+        translation: "Por favor, registre su nombre.",
+      },
+    ],
+    hasSvg: false,
+  },
+];
+
+const LEVEL5: KanjiEntry[] = [
+  {
+    char: "圧",
+    level: 5,
+    strokeCount: 5,
+    on: ["アツ"],
+    kun: ["お.す", "へ.す"],
+    meaning: "Presión / oprimir",
+    examples: [
+      {
+        segments: ruby("[血圧|けつあつ]をはかります。"),
+        translation: "Mido la presión arterial.",
+      },
+      {
+        segments: ruby("[気圧|きあつ]がさがると[頭|あたま]が[痛|いた]くなることがあります。"),
+        translation: "Cuando baja la presión atmosférica, a veces me duele la cabeza.",
+      },
+      {
+        segments: ruby("[圧力|あつりょく]をかけすぎないでください。"),
+        translation: "Por favor, no ejerza demasiada presión.",
+      },
+      {
+        segments: ruby("[大勢|おおぜい]の[前|まえ]で[話|はな]すと[圧|あつ]を[感|かん]じます。"),
+        translation: "Cuando hablo frente a mucha gente, siento presión.",
+      },
+      {
+        segments: ruby("[圧縮|あっしゅく]したファイルを[送|おく]ります。"),
+        translation: "Enviaré el archivo comprimido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "囲",
+    level: 5,
+    strokeCount: 7,
+    on: ["イ"],
+    kun: ["かこ.む", "かこ.う"],
+    meaning: "Rodear / encerrar",
+    examples: [
+      {
+        segments: ruby("[机|つくえ]を[囲|かこ]んで[話|はな]し[合|あ]います。"),
+        translation: "Conversamos rodeando la mesa.",
+      },
+      {
+        segments: ruby("[家|いえ]の[周|まわ]りを[木|き]で[囲|かこ]みました。"),
+        translation: "Rodeé la casa con árboles.",
+      },
+      {
+        segments: ruby("[多|おお]くの[人|ひと]に[囲|かこ]まれて、すこし[緊張|きんちょう]しました。"),
+        translation: "Estaba rodeado de mucha gente y me puse un poco nervioso.",
+      },
+      {
+        segments: ruby("[静|しず]かな[住宅地|じゅうたくち]に[囲|かこ]まれた[学校|がっこう]です。"),
+        translation: "Es una escuela rodeada de un barrio residencial tranquilo.",
+      },
+      {
+        segments: ruby("[囲碁|いご]を[習|なら]い[始|はじ]めました。"),
+        translation: "Empecé a aprender go.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "移",
+    level: 5,
+    strokeCount: 11,
+    on: ["イ"],
+    kun: ["うつ.る", "うつ.す"],
+    meaning: "Mover / trasladar / cambiar",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[家|いえ]に[移|うつ]りました。"),
+        translation: "Me mudé a una casa nueva.",
+      },
+      {
+        segments: ruby("データを[新|あたら]しいパソコンへ[移|うつ]します。"),
+        translation: "Paso los datos al computador nuevo.",
+      },
+      {
+        segments: ruby("[会場|かいじょう]を三[階|がい]へ[移|うつ]します。"),
+        translation: "Trasladaremos el lugar al tercer piso.",
+      },
+      {
+        segments: ruby("[季節|きせつ]が[春|はる]から[夏|なつ]へ[移|うつ]っていきます。"),
+        translation: "La estación va pasando de primavera a verano.",
+      },
+      {
+        segments: ruby("[移動|いどう][時間|じかん]をふくめて[予定|よてい]をたてます。"),
+        translation: "Hago el plan incluyendo el tiempo de traslado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "因",
+    level: 5,
+    strokeCount: 6,
+    on: ["イン"],
+    kun: ["よ.る"],
+    meaning: "Causa / motivo",
+    examples: [
+      {
+        segments: ruby("[事故|じこ]の[原因|げんいん]を[調|しら]べています。"),
+        translation: "Estoy investigando la causa del accidente.",
+      },
+      {
+        segments: ruby("[風邪|かぜ]の[原因|げんいん]は[寝不足|ねぶそく]かもしれません。"),
+        translation: "La causa del resfrío quizá sea la falta de sueño.",
+      },
+      {
+        segments: ruby("[失敗|しっぱい]の[原因|げんいん]をノートにまとめました。"),
+        translation: "Resumí en el cuaderno la causa del error.",
+      },
+      {
+        segments: ruby("[天候|てんこう]に[因|よ]って[試合|しあい]が[中止|ちゅうし]になることがあります。"),
+        translation: "Dependiendo del clima, a veces el partido se cancela.",
+      },
+      {
+        segments: ruby("[原因|げんいん]がわかれば、[対策|たいさく]もしやすいです。"),
+        translation: "Si se entiende la causa, también es más fácil tomar medidas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "永",
+    level: 5,
+    strokeCount: 5,
+    on: ["エイ"],
+    kun: ["なが.い"],
+    meaning: "Eterno / duradero",
+    examples: [
+      {
+        segments: ruby("[永遠|えいえん]に[忘|わす]れません。"),
+        translation: "No lo olvidaré jamás.",
+      },
+      {
+        segments: ruby("[永久|えいきゅう]に[保存|ほぞん]してください。"),
+        translation: "Por favor, guárdelo de forma permanente.",
+      },
+      {
+        segments: ruby("[将来|しょうらい]は[日本|にほん]に[永住|えいじゅう]したいです。"),
+        translation: "En el futuro quiero vivir permanentemente en Japón.",
+      },
+      {
+        segments: ruby("この[記録|きろく]は[永遠|えいえん]に[残|のこ]したいです。"),
+        translation: "Quiero que este registro permanezca para siempre.",
+      },
+      {
+        segments: ruby("[末永|すえなが]くよろしくお[願|ねが]いします。"),
+        translation: "Espero seguir contando contigo por mucho tiempo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "営",
+    level: 5,
+    strokeCount: 12,
+    on: ["エイ"],
+    kun: ["いとな.む"],
+    meaning: "Gestionar / operar / llevar un negocio",
+    examples: [
+      {
+        segments: ruby("[父|ちち]は[小|ちい]さな[店|みせ]を[営|いとな]んでいます。"),
+        translation: "Mi padre administra una tienda pequeña.",
+      },
+      {
+        segments: ruby("[営業時間|えいぎょうじかん]は[午前|ごぜん]九[時|じ]からです。"),
+        translation: "El horario de atención es desde las 9 de la mañana.",
+      },
+      {
+        segments: ruby("[運営|うんえい]の[手伝|てつだ]いをしました。"),
+        translation: "Ayudé con la organización y el funcionamiento.",
+      },
+      {
+        segments: ruby("[営業中|えいぎょうちゅう]の[看板|かんばん]が[出|で]ています。"),
+        translation: "Está puesto el letrero de “abierto”.",
+      },
+      {
+        segments: ruby("[家族|かぞく]で[旅館|りょかん]を[営|いとな]んでいる[人|ひと]に[会|あ]いました。"),
+        translation: "Conocí a una persona cuya familia administra una posada.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "衛",
+    level: 5,
+    strokeCount: 16,
+    on: ["エイ"],
+    kun: [],
+    meaning: "Proteger / defensa / higiene",
+    examples: [
+      {
+        segments: ruby("[歯|は]の[衛生|えいせい]に[気|き]をつけます。"),
+        translation: "Cuido la higiene dental.",
+      },
+      {
+        segments: ruby("[衛星|えいせい]の[写真|しゃしん]を[見|み]ました。"),
+        translation: "Vi una foto satelital.",
+      },
+      {
+        segments: ruby("[防衛|ぼうえい]の[大切|たいせつ]さについて[考|かんが]えます。"),
+        translation: "Pienso en la importancia de la defensa.",
+      },
+      {
+        segments: ruby("[衛生的|えいせいてき]な[環境|かんきょう]が[必要|ひつよう]です。"),
+        translation: "Se necesita un entorno higiénico.",
+      },
+      {
+        segments: ruby("[自衛|じえい]のためにルールを[守|まも]ります。"),
+        translation: "Respeto las reglas para protegerme.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "易",
+    level: 5,
+    strokeCount: 8,
+    on: ["エキ", "イ"],
+    kun: ["やさ.しい"],
+    meaning: "Fácil / simple / cambiar",
+    examples: [
+      {
+        segments: ruby("この[説明|せつめい]はとても[易|やさ]しいです。"),
+        translation: "Esta explicación es muy fácil.",
+      },
+      {
+        segments: ruby("[貿易|ぼうえき]について[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos sobre comercio exterior en clase.",
+      },
+      {
+        segments: ruby("[平易|へいい]な[日本語|にほんご]で[書|か]いてあります。"),
+        translation: "Está escrito en japonés sencillo.",
+      },
+      {
+        segments: ruby("[安易|あんい]に[決|き]めないほうがいいです。"),
+        translation: "Es mejor no decidir a la ligera.",
+      },
+      {
+        segments: ruby("[容易|ようい]に[答|こた]えを[出|だ]さず、よく[考|かんが]えてください。"),
+        translation: "No saque la respuesta con demasiada facilidad; piense bien.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "益",
+    level: 5,
+    strokeCount: 10,
+    on: ["エキ", "ヤク"],
+    kun: [],
+    meaning: "Beneficio / ganancia",
+    examples: [
+      {
+        segments: ruby("[利益|りえき]だけでなく、[安全|あんぜん]も[大切|たいせつ]です。"),
+        translation: "No solo la ganancia; también la seguridad es importante.",
+      },
+      {
+        segments: ruby("この[本|ほん]はとても[有益|ゆうえき]でした。"),
+        translation: "Este libro fue muy útil y beneficioso.",
+      },
+      {
+        segments: ruby("[益々|ますます][日本語|にほんご]が[好|す]きになりました。"),
+        translation: "Cada vez me gusta más el japonés.",
+      },
+      {
+        segments: ruby("[公益|こうえき]のために[働|はたら]く[人|ひと]もいます。"),
+        translation: "También hay personas que trabajan por el bien público.",
+      },
+      {
+        segments: ruby("[収益|しゅうえき]が[少|すこ]しふえました。"),
+        translation: "Las ganancias aumentaron un poco.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "液",
+    level: 5,
+    strokeCount: 11,
+    on: ["エキ"],
+    kun: [],
+    meaning: "Líquido",
+    examples: [
+      {
+        segments: ruby("[液体|えきたい]をこぼさないでください。"),
+        translation: "Por favor, no derrame el líquido.",
+      },
+      {
+        segments: ruby("この[洗剤|せんざい]は[液体|えきたい]です。"),
+        translation: "Este detergente es líquido.",
+      },
+      {
+        segments: ruby("[血液|けつえき]の[検査|けんさ]を[受|う]けました。"),
+        translation: "Me hice un examen de sangre.",
+      },
+      {
+        segments: ruby("[消毒液|しょうどくえき]を[使|つか]ってください。"),
+        translation: "Por favor, use líquido desinfectante.",
+      },
+      {
+        segments: ruby("[液|えき]がもれないように、ふたをしっかり[閉|し]めます。"),
+        translation: "Cierro bien la tapa para que no se escape el líquido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "演",
+    level: 5,
+    strokeCount: 14,
+    on: ["エン"],
+    kun: [],
+    meaning: "Actuar / interpretar / exponer",
+    examples: [
+      {
+        segments: ruby("[学校|がっこう]の[劇|げき]で[主役|しゅやく]を[演|えん]じました。"),
+        translation: "Actué como protagonista en la obra de la escuela.",
+      },
+      {
+        segments: ruby("[演奏会|えんそうかい]を[聞|き]きに[行|い]きました。"),
+        translation: "Fui a escuchar el concierto.",
+      },
+      {
+        segments: ruby("[講演|こうえん]の[内容|ないよう]がとてもおもしろかったです。"),
+        translation: "El contenido de la charla fue muy interesante.",
+      },
+      {
+        segments: ruby("[演技|えんぎ]の[練習|れんしゅう]をしています。"),
+        translation: "Estoy practicando actuación.",
+      },
+      {
+        segments: ruby("[主演|しゅえん]の[俳優|はいゆう]が[人気|にんき]です。"),
+        translation: "El actor principal es popular.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "応",
+    level: 5,
+    strokeCount: 7,
+    on: ["オウ"],
+    kun: ["こた.える", "おう.じる"],
+    meaning: "Responder / corresponder",
+    examples: [
+      {
+        segments: ruby("[質問|しつもん]に[応|こた]えてください。"),
+        translation: "Por favor, responda la pregunta.",
+      },
+      {
+        segments: ruby("[応援|おうえん]ありがとうございます。"),
+        translation: "Muchas gracias por el apoyo.",
+      },
+      {
+        segments: ruby("[条件|じょうけん]を[確認|かくにん]してから[応募|おうぼ]します。"),
+        translation: "Postularé después de revisar las condiciones.",
+      },
+      {
+        segments: ruby("[気温|きおん]に[応|おう]じて[服|ふく]を[変|か]えます。"),
+        translation: "Cambio de ropa según la temperatura.",
+      },
+      {
+        segments: ruby("[対応|たいおう]がとても[早|はや]かったです。"),
+        translation: "La respuesta y atención fueron muy rápidas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "往",
+    level: 5,
+    strokeCount: 8,
+    on: ["オウ"],
+    kun: [],
+    meaning: "Ir y venir / ida",
+    examples: [
+      {
+        segments: ruby("[学校|がっこう]まで[往復|おうふく]で一[時間|じかん]かかります。"),
+        translation: "Ir y volver de la escuela toma una hora.",
+      },
+      {
+        segments: ruby("この[道|みち]は[車|くるま]の[往来|おうらい]が[多|おお]いです。"),
+        translation: "Por este camino pasa mucho tráfico.",
+      },
+      {
+        segments: ruby("[往復券|おうふくけん]を[窓口|まどぐち]で[買|か]いました。"),
+        translation: "Compré un boleto de ida y vuelta en la ventanilla.",
+      },
+      {
+        segments: ruby("[医者|いしゃ]が[家|いえ]まで[往診|おうしん]に[来|き]てくれました。"),
+        translation: "El médico vino a la casa a hacer una visita médica.",
+      },
+      {
+        segments: ruby("[往来|おうらい]の[少|すく]ないしずかな[通|とお]りです。"),
+        translation: "Es una calle tranquila con poco tránsito.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "桜",
+    level: 5,
+    strokeCount: 10,
+    on: ["オウ"],
+    kun: ["さくら"],
+    meaning: "Cerezo / flor de cerezo",
+    examples: [
+      {
+        segments: ruby("[桜|さくら]が[咲|さ]いています。"),
+        translation: "Los cerezos están floreciendo.",
+      },
+      {
+        segments: ruby("[春|はる]になると[桜|さくら]を[見|み]に[行|い]きます。"),
+        translation: "Cuando llega la primavera, voy a ver los cerezos.",
+      },
+      {
+        segments: ruby("[桜|さくら]の[下|した]で[写真|しゃしん]を[撮|と]りました。"),
+        translation: "Tomé una foto debajo de los cerezos.",
+      },
+      {
+        segments: ruby("[夜桜|よざくら]がとてもきれいでした。"),
+        translation: "Los cerezos de noche estaban muy hermosos.",
+      },
+      {
+        segments: ruby("[桜色|さくらいろ]のノートを[買|か]いました。"),
+        translation: "Compré un cuaderno color flor de cerezo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "可",
+    level: 5,
+    strokeCount: 5,
+    on: ["カ", "コク"],
+    kun: [],
+    meaning: "Posible / permitido",
+    examples: [
+      {
+        segments: ruby("ここでは[撮影|さつえい][可|か]です。"),
+        translation: "Aquí sí se permite tomar fotos.",
+      },
+      {
+        segments: ruby("[可能|かのう]なら、[早|はや]めに[来|き]てください。"),
+        translation: "Si es posible, venga temprano.",
+      },
+      {
+        segments: ruby("[先生|せんせい]から[外出|がいしゅつ]の[許可|きょか]をもらいました。"),
+        translation: "Recibí permiso del profesor para salir.",
+      },
+      {
+        segments: ruby("[使用|しよう][可|か]のマークがついています。"),
+        translation: "Tiene la marca de “uso permitido”.",
+      },
+      {
+        segments: ruby("[参加|さんか]の[可否|かひ]は[明日|あした][決|き]まります。"),
+        translation: "Mañana se decidirá si se puede participar o no.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "仮",
+    level: 5,
+    strokeCount: 6,
+    on: ["カ", "ケ"],
+    kun: ["かり"],
+    meaning: "Temporal / provisional",
+    examples: [
+      {
+        segments: ruby("[仮名|かな]を[先|さき]に[練習|れんしゅう]します。"),
+        translation: "Primero practico los kana.",
+      },
+      {
+        segments: ruby("[仮|かり]の[名前|なまえ]で[登録|とうろく]しました。"),
+        translation: "Me registré con un nombre provisional.",
+      },
+      {
+        segments: ruby("[仮定|かてい]して[考|かんが]えてみましょう。"),
+        translation: "Intentemos pensarlo suponiendo esa situación.",
+      },
+      {
+        segments: ruby("ここは[仮|かり]の[入口|いりぐち]です。"),
+        translation: "Esta es una entrada provisional.",
+      },
+      {
+        segments: ruby("[仮眠|かみん]をとってから[勉強|べんきょう]します。"),
+        translation: "Estudiaré después de dormir una siesta corta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "価",
+    level: 5,
+    strokeCount: 8,
+    on: ["カ", "ケ"],
+    kun: ["あたい"],
+    meaning: "Valor / precio",
+    examples: [
+      {
+        segments: ruby("この[本|ほん]の[価値|かち]は[高|たか]いです。"),
+        translation: "El valor de este libro es alto.",
+      },
+      {
+        segments: ruby("[物価|ぶっか]がすこし[上|あ]がりました。"),
+        translation: "El costo de la vida subió un poco.",
+      },
+      {
+        segments: ruby("この[時計|とけい]は[値段|ねだん]より[価値|かち]があります。"),
+        translation: "Este reloj vale más de lo que cuesta.",
+      },
+      {
+        segments: ruby("[発表|はっぴょう]の[内容|ないよう]について[評価|ひょうか]をもらいました。"),
+        translation: "Recibí una evaluación sobre el contenido de la presentación.",
+      },
+      {
+        segments: ruby("[原価|げんか]を[考|かんが]えて[値段|ねだん]を[決|き]めます。"),
+        translation: "Fijamos el precio pensando en el costo base.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "河",
+    level: 5,
+    strokeCount: 8,
+    on: ["カ"],
+    kun: ["かわ"],
+    meaning: "Río",
+    examples: [
+      {
+        segments: ruby("[河|かわ]の[水量|すいりょう]が[増|ふ]えています。"),
+        translation: "La cantidad de agua del río está aumentando.",
+      },
+      {
+        segments: ruby("[河口|かこう]で[鳥|とり]を[見|み]ました。"),
+        translation: "Vi aves en la desembocadura del río.",
+      },
+      {
+        segments: ruby("[河川敷|かせんじき]を[散歩|さんぽ]します。"),
+        translation: "Paseo por la ribera del río.",
+      },
+      {
+        segments: ruby("[雨|あめ]のあとで[河川|かせん]の[水|みず]がふえました。"),
+        translation: "Después de la lluvia aumentó el agua del río.",
+      },
+      {
+        segments: ruby("[銀河|ぎんが]の[写真|しゃしん]を[見|み]て[感動|かんどう]しました。"),
+        translation: "Me emocioné al ver una foto de la galaxia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "過",
+    level: 5,
+    strokeCount: 12,
+    on: ["カ"],
+    kun: ["す.ぎる", "す.ごす", "あやま.つ"],
+    meaning: "Pasar / exceder / error",
+    examples: [
+      {
+        segments: ruby("[食|た]べ[過|す]ぎないでください。"),
+        translation: "Por favor, no coma de más.",
+      },
+      {
+        segments: ruby("[過去|かこ]の[写真|しゃしん]を[見返|みかえ]しました。"),
+        translation: "Volví a mirar fotos del pasado.",
+      },
+      {
+        segments: ruby("バスが[家|いえ]の[前|まえ]を[通|とお]り[過|す]ぎました。"),
+        translation: "El bus pasó de largo frente a mi casa.",
+      },
+      {
+        segments: ruby("[過度|かど]な[心配|しんぱい]はよくありません。"),
+        translation: "Preocuparse en exceso no es bueno.",
+      },
+      {
+        segments: ruby("[約束|やくそく]の[時間|じかん]を[過|す]ぎてしまいました。"),
+        translation: "Se me pasó la hora acordada.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "快",
+    level: 5,
+    strokeCount: 7,
+    on: ["カイ"],
+    kun: ["こころよ.い"],
+    meaning: "Agradable / cómodo",
+    examples: [
+      {
+        segments: ruby("きょうは[快晴|かいせい]です。"),
+        translation: "Hoy el cielo está completamente despejado.",
+      },
+      {
+        segments: ruby("[不快|ふかい]なにおいがします。"),
+        translation: "Hay un olor desagradable.",
+      },
+      {
+        segments: ruby("[快適|かいてき]な[部屋|へや]で[勉強|べんきょう]しています。"),
+        translation: "Estoy estudiando en una habitación cómoda.",
+      },
+      {
+        segments: ruby("[快|こころよ]い[風|かぜ]が[部屋|へや]に[入|はい]ってきます。"),
+        translation: "Entra una brisa agradable a la habitación.",
+      },
+      {
+        segments: ruby("[明快|めいかい]な[説明|せつめい]でよくわかりました。"),
+        translation: "Entendí bien gracias a una explicación clara.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "解",
+    level: 5,
+    strokeCount: 13,
+    on: ["カイ", "ゲ"],
+    kun: ["と.く", "と.かす", "と.ける"],
+    meaning: "Resolver / entender / deshacer",
+    examples: [
+      {
+        segments: ruby("[問題|もんだい]を[解|と]きます。"),
+        translation: "Resuelvo el problema.",
+      },
+      {
+        segments: ruby("[先生|せんせい]の[説明|せつめい]でよく[理解|りかい]できました。"),
+        translation: "Con la explicación del profesor pude entender bien.",
+      },
+      {
+        segments: ruby("[緊張|きんちょう]が[少|すこ]し[解|と]けました。"),
+        translation: "La tensión se relajó un poco.",
+      },
+      {
+        segments: ruby("[答|こた]えが[分|わ]からないので、あとでもう一[度|ど][解|と]きます。"),
+        translation: "Como no sé la respuesta, lo resolveré otra vez más tarde.",
+      },
+      {
+        segments: ruby("[誤解|ごかい]がないように、ていねいに[話|はな]します。"),
+        translation: "Hablo con cuidado para que no haya malentendidos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "格",
+    level: 5,
+    strokeCount: 10,
+    on: ["カク", "コウ", "キャク", "ゴウ"],
+    kun: [],
+    meaning: "Categoría / nivel / carácter",
+    examples: [
+      {
+        segments: ruby("[合格|ごうかく]の[知|し]らせをもらいました。"),
+        translation: "Recibí la noticia de que aprobé.",
+      },
+      {
+        segments: ruby("[性格|せいかく]があかるい[人|ひと]です。"),
+        translation: "Es una persona de carácter alegre.",
+      },
+      {
+        segments: ruby("[価格|かかく]が[高|たか]すぎて[買|か]えませんでした。"),
+        translation: "No pude comprarlo porque el precio era demasiado alto.",
+      },
+      {
+        segments: ruby("[本格的|ほんかくてき]に[日本語|にほんご]を[勉強|べんきょう]し[始|はじ]めました。"),
+        translation: "Empecé a estudiar japonés en serio.",
+      },
+      {
+        segments: ruby("[この[商品|しょうひん]は[品質|ひんしつ]にふさわしい[価格|かかく]です。"),
+        translation: "Este producto tiene un precio acorde a su calidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "確",
+    level: 5,
+    strokeCount: 15,
+    on: ["カク", "コウ"],
+    kun: ["たし.か", "たし.かめる"],
+    meaning: "Confirmar / seguro / exacto",
+    examples: [
+      {
+        segments: ruby("[出発|しゅっぱつ][時間|じかん]を[確認|かくにん]してください。"),
+        translation: "Por favor, confirme la hora de salida.",
+      },
+      {
+        segments: ruby("[答|こた]えが[正|ただ]しいか[確|たし]かめます。"),
+        translation: "Compruebo si la respuesta es correcta.",
+      },
+      {
+        segments: ruby("[確実|かくじつ]に[終|お]わらせたいです。"),
+        translation: "Quiero terminarlo con seguridad.",
+      },
+      {
+        segments: ruby("[住所|じゅうしょ]をもう一[度|ど][確認|かくにん]しました。"),
+        translation: "Volví a confirmar la dirección.",
+      },
+      {
+        segments: ruby("[それは[確|たし]かにむずかしい[問題|もんだい]ですね。"),
+        translation: "Eso sí que es un problema difícil.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "額",
+    level: 5,
+    strokeCount: 18,
+    on: ["ガク"],
+    kun: ["ひたい"],
+    meaning: "Cantidad / frente",
+    examples: [
+      {
+        segments: ruby("[金額|きんがく]をよく[確認|かくにん]してください。"),
+        translation: "Por favor, revise bien el monto.",
+      },
+      {
+        segments: ruby("[額|ひたい]に[汗|あせ]がでています。"),
+        translation: "Tiene sudor en la frente.",
+      },
+      {
+        segments: ruby("[予算|よさん]の[総額|そうがく]が[決|き]まりました。"),
+        translation: "Se decidió el monto total del presupuesto.",
+      },
+      {
+        segments: ruby("[高額|こうがく]な[商品|しょうひん]なので、すぐには[買|か]えません。"),
+        translation: "Como es un producto caro, no puedo comprarlo de inmediato.",
+      },
+      {
+        segments: ruby("[絵|え]を[額|がく]に[入|い]れて[部屋|へや]にかざりました。"),
+        translation: "Puse la pintura en un marco y la decoré en la habitación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "刊",
+    level: 5,
+    strokeCount: 5,
+    on: ["カン"],
+    kun: [],
+    meaning: "Publicar / editar",
+    examples: [
+      {
+        segments: ruby("[週刊誌|しゅうかんし]を[駅|えき]で[買|か]いました。"),
+        translation: "Compré una revista semanal en la estación.",
+      },
+      {
+        segments: ruby("[新刊|しんかん]が[来週|らいしゅう][出|で]るそうです。"),
+        translation: "Dicen que la nueva publicación saldrá la próxima semana.",
+      },
+      {
+        segments: ruby("[月刊|げっかん]の[雑誌|ざっし]を[毎月|まいつき][読|よ]んでいます。"),
+        translation: "Leo una revista mensual todos los meses.",
+      },
+      {
+        segments: ruby("[刊行|かんこう]されたばかりの[本|ほん]を[予約|よやく]しました。"),
+        translation: "Reservé un libro recién publicado.",
+      },
+      {
+        segments: ruby("[新聞|しんぶん]の[夕刊|ゆうかん]は[午後|ごご]に[届|とど]きます。"),
+        translation: "La edición vespertina del periódico llega por la tarde.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "幹",
+    level: 5,
+    strokeCount: 13,
+    on: ["カン"],
+    kun: ["みき"],
+    meaning: "Tronco / base / principal",
+    examples: [
+      {
+        segments: ruby("[木|き]の[幹|みき]がとてもふといです。"),
+        translation: "El tronco del árbol es muy grueso.",
+      },
+      {
+        segments: ruby("[新幹線|しんかんせん]で[東京|とうきょう]へ[行|い]きます。"),
+        translation: "Voy a Tokio en shinkansen.",
+      },
+      {
+        segments: ruby("[会社|かいしゃ]の[幹部|かんぶ]が[会議|かいぎ]に[出|で]ました。"),
+        translation: "Un directivo de la empresa asistió a la reunión.",
+      },
+      {
+        segments: ruby("[幹事|かんじ]として[食事会|しょくじかい]の[準備|じゅんび]をしています。"),
+        translation: "Estoy preparando la comida como encargado de la organización.",
+      },
+      {
+        segments: ruby("[この[木|き]は[幹|みき]がまっすぐでうつくしいです。"),
+        translation: "Este árbol es hermoso porque su tronco es recto.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "慣",
+    level: 5,
+    strokeCount: 14,
+    on: ["カン"],
+    kun: ["な.れる", "な.らす"],
+    meaning: "Acostumbrarse / habituar",
+    examples: [
+      {
+        segments: ruby("[日本|にほん]の[生活|せいかつ]にだいぶ[慣|な]れました。"),
+        translation: "Ya me acostumbré bastante a la vida en Japón.",
+      },
+      {
+        segments: ruby("[毎日|まいにち][早起|はやお]きする[習慣|しゅうかん]に[慣|な]れました。"),
+        translation: "Me acostumbré al hábito de levantarme temprano todos los días.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[仕事|しごと]に[慣|な]れるまで[時間|じかん]がかかりました。"),
+        translation: "Me tomó tiempo acostumbrarme al trabajo nuevo.",
+      },
+      {
+        segments: ruby("[子|こ]どもを[水|みず]に[慣|な]らしています。"),
+        translation: "Estoy acostumbrando al niño al agua.",
+      },
+      {
+        segments: ruby("[使|つか]い[慣|な]れたペンのほうが[書|か]きやすいです。"),
+        translation: "Es más fácil escribir con un lápiz al que ya estoy acostumbrado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "眼",
+    level: 5,
+    strokeCount: 11,
+    on: ["ガン", "ゲン"],
+    kun: ["まなこ"],
+    meaning: "Ojo / mirada",
+    examples: [
+      {
+        segments: ruby("[眼鏡|めがね]をかけるとよく[見|み]えます。"),
+        translation: "Con lentes veo bien.",
+      },
+      {
+        segments: ruby("[眼科|がんか]で[検査|けんさ]を[受|う]けました。"),
+        translation: "Me hice un examen en oftalmología.",
+      },
+      {
+        segments: ruby("[彼|かれ]の[眼|まなこ]はとてもやさしいです。"),
+        translation: "Sus ojos son muy amables.",
+      },
+      {
+        segments: ruby("[遠|とお]くを[見|み]ると[眼|め]がつかれます。"),
+        translation: "Mirar a lo lejos me cansa la vista.",
+      },
+      {
+        segments: ruby("[肉眼|にくがん]では[見|み]えないものもあります。"),
+        translation: "Hay cosas que no se pueden ver a simple vista.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "紀",
+    level: 5,
+    strokeCount: 9,
+    on: ["キ"],
+    kun: [],
+    meaning: "Crónica / era / registro",
+    examples: [
+      {
+        segments: ruby("[世紀|せいき]が[変|か]わるころの[歴史|れきし]を[学|まな]びました。"),
+        translation: "Estudié la historia de la época en que cambió el siglo.",
+      },
+      {
+        segments: ruby("[紀元前|きげんぜん]の[話|はなし]はとてもむずかしいです。"),
+        translation: "Las historias de antes de Cristo son bastante difíciles.",
+      },
+      {
+        segments: ruby("[紀行文|きこうぶん]を[読|よ]むのが[好|す]きです。"),
+        translation: "Me gusta leer crónicas de viaje.",
+      },
+      {
+        segments: ruby("[古事記|こじき]のような[古|ふる]い[記録|きろく]にも[興味|きょうみ]があります。"),
+        translation: "También me interesan los registros antiguos como el Kojiki.",
+      },
+      {
+        segments: ruby("[卒業|そつぎょう][記念|きねん]に、この[出来事|できごと]を[紀|しる]しておきたいです。"),
+        translation: "Quiero dejar constancia de este acontecimiento como recuerdo de graduación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "基",
+    level: 5,
+    strokeCount: 11,
+    on: ["キ"],
+    kun: ["もと", "もとい"],
+    meaning: "Base / fundamento",
+    examples: [
+      {
+        segments: ruby("[基本|きほん]からしっかり[勉強|べんきょう]します。"),
+        translation: "Estudiaré bien desde lo básico.",
+      },
+      {
+        segments: ruby("[基礎|きそ]ができていると[応用|おうよう]もしやすいです。"),
+        translation: "Si la base está bien hecha, también es más fácil aplicar.",
+      },
+      {
+        segments: ruby("[この[計画|けいかく]は[三|みっ]つの[考|かんが]えに[基|もと]づいています。"),
+        translation: "Este plan se basa en tres ideas.",
+      },
+      {
+        segments: ruby("[日本語|にほんご]の[基礎力|きそりょく]をつけたいです。"),
+        translation: "Quiero desarrollar una base sólida de japonés.",
+      },
+      {
+        segments: ruby("[基地|きち]の[近|ちか]くでは[写真|しゃしん]を[撮|と]ってはいけません。"),
+        translation: "Cerca de la base no se permite tomar fotos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "寄",
+    level: 5,
+    strokeCount: 11,
+    on: ["キ"],
+    kun: ["よ.る", "よ.せる"],
+    meaning: "Acercarse / reunir / enviar",
+    examples: [
+      {
+        segments: ruby("[帰|かえ]りに[本屋|ほんや]へ[寄|よ]ります。"),
+        translation: "De regreso pasaré por la librería.",
+      },
+      {
+        segments: ruby("[駅|えき]に[近|ちか]い[店|みせ]に[寄|よ]ってから[帰|かえ]ります。"),
+        translation: "Volveré a casa después de pasar por una tienda cerca de la estación.",
+      },
+      {
+        segments: ruby("[意見|いけん]を[寄|よ]せてください。"),
+        translation: "Por favor, envíen sus opiniones.",
+      },
+      {
+        segments: ruby("[人形|にんぎょう]を[窓|まど]のそばに[寄|よ]せました。"),
+        translation: "Acerqué la muñeca junto a la ventana.",
+      },
+      {
+        segments: ruby("[寄付|きふ]に[協力|きょうりょく]してくれる[人|ひと]をさがしています。"),
+        translation: "Estamos buscando personas que colaboren con donaciones.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "規",
+    level: 5,
+    strokeCount: 11,
+    on: ["キ"],
+    kun: [],
+    meaning: "Regla / norma / estándar",
+    examples: [
+      {
+        segments: ruby("[学校|がっこう]の[規則|きそく]を[守|まも]りましょう。"),
+        translation: "Respetemos las reglas de la escuela.",
+      },
+      {
+        segments: ruby("[正規|せいき]の[方法|ほうほう]で[申|もう]し[込|こ]んでください。"),
+        translation: "Por favor, inscríbase por el método oficial.",
+      },
+      {
+        segments: ruby("[定規|じょうぎ]を[使|つか]って[線|せん]を[引|ひ]きます。"),
+        translation: "Trazo una línea usando una regla.",
+      },
+      {
+        segments: ruby("[大規模|だいきぼ]な[工事|こうじ]が[始|はじ]まりました。"),
+        translation: "Comenzó una obra de gran escala.",
+      },
+      {
+        segments: ruby("[規則|きそく]があるからこそ、みんなが[安心|あんしん]して[生活|せいかつ]できます。"),
+        translation: "Precisamente porque hay reglas, todos podemos vivir con tranquilidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "喜",
+    level: 5,
+    strokeCount: 12,
+    on: ["キ"],
+    kun: ["よろこ.ぶ"],
+    meaning: "Alegrarse / alegría",
+    examples: [
+      {
+        segments: ruby("[母|はは]がとても[喜|よろこ]んでくれました。"),
+        translation: "Mi madre se alegró mucho.",
+      },
+      {
+        segments: ruby("[合格|ごうかく]の[知|し]らせを[聞|き]いて[喜|よろこ]びました。"),
+        translation: "Me alegró escuchar la noticia de que aprobé.",
+      },
+      {
+        segments: ruby("[喜劇|きげき]の[映画|えいが]を[見|み]てたくさん[笑|わら]いました。"),
+        translation: "Vi una película de comedia y me reí mucho.",
+      },
+      {
+        segments: ruby("[子|こ]どもが[喜|よろこ]ぶプレゼントを[選|えら]びました。"),
+        translation: "Elegí un regalo que alegrará al niño.",
+      },
+      {
+        segments: ruby("[喜|よろこ]びの[気持|きも]ちを[言葉|ことば]で[伝|つた]えました。"),
+        translation: "Expresé con palabras mi alegría.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "技",
+    level: 5,
+    strokeCount: 7,
+    on: ["ギ"],
+    kun: ["わざ"],
+    meaning: "Técnica / habilidad",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[技|わざ]を[練習|れんしゅう]しています。"),
+        translation: "Estoy practicando una nueva técnica.",
+      },
+      {
+        segments: ruby("[会議|かいぎ]で[技術|ぎじゅつ]の[話|はなし]がでました。"),
+        translation: "En la reunión se habló de tecnología.",
+      },
+      {
+        segments: ruby("[職人|しょくにん]の[技|わざ]に[感動|かんどう]しました。"),
+        translation: "Me impresionó la habilidad del artesano.",
+      },
+      {
+        segments: ruby("[技術者|ぎじゅつしゃ]としてもっと[成長|せいちょう]したいです。"),
+        translation: "Quiero crecer más como técnico.",
+      },
+      {
+        segments: ruby("[試合|しあい]で[相手|あいて]の[技|わざ]をよく[見|み]ていました。"),
+        translation: "En el partido observé bien la técnica del rival.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "義",
+    level: 5,
+    strokeCount: 13,
+    on: ["ギ"],
+    kun: [],
+    meaning: "Justicia / deber / significado",
+    examples: [
+      {
+        segments: ruby("[意味|いみ]をしっかり[理解|りかい]するのが[大切|たいせつ]です。"),
+        translation: "Es importante comprender bien el significado.",
+      },
+      {
+        segments: ruby("[義務|ぎむ]を[果|は]たしてから[休|やす]みます。"),
+        translation: "Descansaré después de cumplir con mi deber.",
+      },
+      {
+        segments: ruby("[正義|せいぎ]についてみんなで[話|はな]し[合|あ]いました。"),
+        translation: "Conversamos todos sobre la justicia.",
+      },
+      {
+        segments: ruby("[講義|こうぎ]の[内容|ないよう]をノートにまとめました。"),
+        translation: "Resumí en el cuaderno el contenido de la clase.",
+      },
+      {
+        segments: ruby("[日本語|にほんご]では、[文脈|ぶんみゃく]によって[語義|ごぎ]が[変|か]わることがあります。"),
+        translation: "En japonés, según el contexto, el significado de una palabra puede cambiar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "逆",
+    level: 5,
+    strokeCount: 9,
+    on: ["ギャク", "ゲキ"],
+    kun: ["さか", "さか.らう"],
+    meaning: "Contrario / inverso / al revés",
+    examples: [
+      {
+        segments: ruby("[逆|ぎゃく]の[方向|ほうこう]へ[行|い]ってしまいました。"),
+        translation: "Terminé yendo en la dirección contraria.",
+      },
+      {
+        segments: ruby("[予想|よそう]と[逆|ぎゃく]の[結果|けっか]になりました。"),
+        translation: "El resultado fue contrario a lo que esperaba.",
+      },
+      {
+        segments: ruby("[逆転|ぎゃくてん]して[勝|か]ちました。"),
+        translation: "Dimos vuelta el resultado y ganamos.",
+      },
+      {
+        segments: ruby("[先生|せんせい]に[逆|さか]らわず、まず[話|はなし]を[聞|き]きます。"),
+        translation: "Sin ir contra el profesor, primero escucho lo que dice.",
+      },
+      {
+        segments: ruby("[逆|ぎゃく]に[考|かんが]えてみると、ちがう[見方|みかた]ができます。"),
+        translation: "Si lo piensas al revés, puedes verlo desde otro punto de vista.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "久",
+    level: 5,
+    strokeCount: 3,
+    on: ["キュウ", "ク"],
+    kun: ["ひさ.しい"],
+    meaning: "Mucho tiempo / largo tiempo",
+    examples: [
+      {
+        segments: ruby("[久|ひさ]しぶりに[友達|ともだち]に[会|あ]いました。"),
+        translation: "Me encontré con un amigo después de mucho tiempo.",
+      },
+      {
+        segments: ruby("[久|ひさ]しく[雨|あめ]が[降|ふ]っていません。"),
+        translation: "Hace bastante tiempo que no llueve.",
+      },
+      {
+        segments: ruby("[永久|えいきゅう]に[残|のこ]る[思|おも]い[出|で]です。"),
+        translation: "Es un recuerdo que permanecerá para siempre.",
+      },
+      {
+        segments: ruby("[長|なが]い[間|あいだ]ありがとう。[久|ひさ]しく[会|あ]えてうれしかったです。"),
+        translation: "Gracias por tanto tiempo. Me alegró verte después de mucho.",
+      },
+      {
+        segments: ruby("[研究|けんきゅう]に[長|なが]い[年月|としつき]をかけると、[久|ひさ]しい[努力|どりょく]が[実|みの]ります。"),
+        translation: "Cuando una investigación toma muchos años, el largo esfuerzo da frutos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "旧",
+    level: 5,
+    strokeCount: 5,
+    on: ["キュウ"],
+    kun: ["ふる.い", "もと"],
+    meaning: "Antiguo / anterior",
+    examples: [
+      {
+        segments: ruby("[旧|きゅう][校舎|こうしゃ]はもう[使|つか]われていません。"),
+        translation: "El antiguo edificio escolar ya no se usa.",
+      },
+      {
+        segments: ruby("[旧友|きゅうゆう]と[久|ひさ]しぶりに[会|あ]いました。"),
+        translation: "Me encontré con un viejo amigo después de mucho tiempo.",
+      },
+      {
+        segments: ruby("[旧|もと]の[住所|じゅうしょ]は[今|いま]でも[覚|おぼ]えています。"),
+        translation: "Todavía recuerdo la dirección anterior.",
+      },
+      {
+        segments: ruby("[新旧|しんきゅう]の[建物|たてもの]がならぶ[町|まち]です。"),
+        translation: "Es una ciudad donde se alinean edificios nuevos y antiguos.",
+      },
+      {
+        segments: ruby("[旧式|きゅうしき]の[機械|きかい]なので、[使|つか]い[方|かた]がすこしちがいます。"),
+        translation: "Como es una máquina antigua, la forma de usarla es un poco distinta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "救",
+    level: 5,
+    strokeCount: 11,
+    on: ["キュウ"],
+    kun: ["すく.う"],
+    meaning: "Salvar / ayudar / rescatar",
+    examples: [
+      {
+        segments: ruby("[困|こま]っている[人|ひと]を[救|すく]いたいです。"),
+        translation: "Quiero ayudar a una persona que está en problemas.",
+      },
+      {
+        segments: ruby("[救急車|きゅうきゅうしゃ]を[呼|よ]びました。"),
+        translation: "Llamé a una ambulancia.",
+      },
+      {
+        segments: ruby("[医者|いしゃ]が[患者|かんじゃ]を[救|すく]いました。"),
+        translation: "El médico salvó al paciente.",
+      },
+      {
+        segments: ruby("[救助隊|きゅうじょたい]がすぐに[現場|げんば]へ[向|む]かいました。"),
+        translation: "El equipo de rescate fue de inmediato al lugar.",
+      },
+      {
+        segments: ruby("[小|ちい]さなことばでも、だれかの[心|こころ]を[救|すく]うことがあります。"),
+        translation: "Incluso una pequeña palabra puede salvar el corazón de alguien.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "居",
+    level: 5,
+    strokeCount: 8,
+    on: ["キョ", "コ"],
+    kun: ["い.る"],
+    meaning: "Estar / permanecer / vivir",
+    examples: [
+      {
+        segments: ruby("いま[家|いえ]に[居|い]ます。"),
+        translation: "Ahora estoy en casa.",
+      },
+      {
+        segments: ruby("[長|なが]くここに[居|い]すぎました。"),
+        translation: "Me quedé aquí demasiado tiempo.",
+      },
+      {
+        segments: ruby("[居間|いま]で[家族|かぞく]と[話|はな]しています。"),
+        translation: "Estoy conversando con mi familia en la sala.",
+      },
+      {
+        segments: ruby("[外国|がいこく]で[長|なが]く[暮|く]らしても、[心|こころ]の[居場所|いばしょ]は[大切|たいせつ]です。"),
+        translation: "Aunque uno viva mucho tiempo en el extranjero, es importante tener un lugar al que sentir que pertenece.",
+      },
+      {
+        segments: ruby("[住居|じゅうきょ]の[環境|かんきょう]は[生活|せいかつ]に[大|おお]きく[関係|かんけい]します。"),
+        translation: "El entorno de la vivienda influye mucho en la vida diaria.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "許",
+    level: 5,
+    strokeCount: 11,
+    on: ["キョ"],
+    kun: ["ゆる.す", "もと"],
+    meaning: "Permitir / perdonar",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]に[外出|がいしゅつ]の[許可|きょか]をもらいました。"),
+        translation: "Recibí permiso del profesor para salir.",
+      },
+      {
+        segments: ruby("[小|ちい]さな[失敗|しっぱい]なら[許|ゆる]してあげましょう。"),
+        translation: "Si es un error pequeño, vamos a perdonarlo.",
+      },
+      {
+        segments: ruby("[写真|しゃしん]の[使用|しよう]は[許可|きょか]が[必要|ひつよう]です。"),
+        translation: "Para usar la foto se necesita permiso.",
+      },
+      {
+        segments: ruby("[自分|じぶん]を[許|ゆる]すことも[大切|たいせつ]です。"),
+        translation: "También es importante perdonarse a uno mismo.",
+      },
+      {
+        segments: ruby("[入場|にゅうじょう]を[許|ゆる]された[人|ひと]だけが[中|なか]へ[入|はい]れます。"),
+        translation: "Solo pueden entrar las personas a las que se les permitió el ingreso.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "境",
+    level: 5,
+    strokeCount: 14,
+    on: ["キョウ", "ケイ"],
+    kun: ["さかい"],
+    meaning: "Límite / frontera / entorno",
+    examples: [
+      {
+        segments: ruby("[県境|けんざかい]を[車|くるま]でこえました。"),
+        translation: "Cruzamos en auto el límite entre prefecturas.",
+      },
+      {
+        segments: ruby("[勉強|べんきょう]しやすい[環境|かんきょう]をつくりたいです。"),
+        translation: "Quiero crear un entorno fácil para estudiar.",
+      },
+      {
+        segments: ruby("[国境|こっきょう]の[近|ちか]くに[住|す]む[人|ひと]もいます。"),
+        translation: "También hay personas que viven cerca de la frontera.",
+      },
+      {
+        segments: ruby("[夢|ゆめ]と[現実|げんじつ]の[境|さかい]がわからなくなることがあります。"),
+        translation: "A veces no se distingue el límite entre sueño y realidad.",
+      },
+      {
+        segments: ruby("[自然|しぜん]を[守|まも]るには[生活|せいかつ][環境|かんきょう]も[考|かんが]える[必要|ひつよう]があります。"),
+        translation: "Para proteger la naturaleza también hay que pensar en el entorno de vida.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "均",
+    level: 5,
+    strokeCount: 7,
+    on: ["キン"],
+    kun: ["ひと.しい"],
+    meaning: "Igual / uniforme / promedio",
+    examples: [
+      {
+        segments: ruby("[平均|へいきん][点|てん]を[計算|けいさん]しました。"),
+        translation: "Calculé el puntaje promedio.",
+      },
+      {
+        segments: ruby("[均等|きんとう]に[分|わ]けてください。"),
+        translation: "Por favor, divídalo en partes iguales.",
+      },
+      {
+        segments: ruby("[熱|ねつ]が[均一|きんいつ]に[広|ひろ]がるようにします。"),
+        translation: "Hago que el calor se distribuya de manera uniforme.",
+      },
+      {
+        segments: ruby("[一人|ひとり]ひとりに[均等|きんとう]な[機会|きかい]があるべきです。"),
+        translation: "Cada persona debería tener oportunidades iguales.",
+      },
+      {
+        segments: ruby("[力|ちから]を[均等|きんとう]にいれないと、まっすぐ[書|か]けません。"),
+        translation: "Si no aplicas la fuerza de manera pareja, no puedes escribir recto.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "禁",
+    level: 5,
+    strokeCount: 13,
+    on: ["キン"],
+    kun: [],
+    meaning: "Prohibir",
+    examples: [
+      {
+        segments: ruby("ここは[禁煙|きんえん]です。"),
+        translation: "Aquí está prohibido fumar.",
+      },
+      {
+        segments: ruby("[立入|たちい]り[禁止|きんし]の[場所|ばしょ]です。"),
+        translation: "Es un lugar donde está prohibido entrar.",
+      },
+      {
+        segments: ruby("[館内|かんない]では[飲食|いんしょく][禁止|きんし]です。"),
+        translation: "Dentro del recinto está prohibido comer y beber.",
+      },
+      {
+        segments: ruby("[携帯電話|けいたいでんわ]の[使用|しよう]が[禁|きん]じられている[部屋|へや]です。"),
+        translation: "Es una sala donde está prohibido usar el teléfono móvil.",
+      },
+      {
+        segments: ruby("[法律|ほうりつ]で[禁|きん]じられていることはしてはいけません。"),
+        translation: "No se debe hacer lo que está prohibido por ley.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "句",
+    level: 5,
+    strokeCount: 5,
+    on: ["ク"],
+    kun: [],
+    meaning: "Frase / verso",
+    examples: [
+      {
+        segments: ruby("[短|みじか]い[句|く]をつくる[練習|れんしゅう]をしました。"),
+        translation: "Practiqué hacer frases cortas.",
+      },
+      {
+        segments: ruby("[俳句|はいく]を[読|よ]むのが[好|す]きです。"),
+        translation: "Me gusta leer haiku.",
+      },
+      {
+        segments: ruby("[文|ぶん]の[中|なか]の[重要|じゅうよう]な[句|く]に[線|せん]を[引|ひ]きました。"),
+        translation: "Subrayé la frase importante dentro de la oración.",
+      },
+      {
+        segments: ruby("[この[句|く]は[意味|いみ]が[深|ふか]いですね。"),
+        translation: "Esta frase tiene un significado profundo.",
+      },
+      {
+        segments: ruby("[季語|きご]を[入|い]れて[俳句|はいく]を一つ[作|つく]りました。"),
+        translation: "Hice un haiku incluyendo una palabra estacional.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "型",
+    level: 5,
+    strokeCount: 9,
+    on: ["ケイ"],
+    kun: ["かた"],
+    meaning: "Tipo / modelo / forma",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[型|かた]のスマホが[出|で]ました。"),
+        translation: "Salió un nuevo modelo de smartphone.",
+      },
+      {
+        segments: ruby("[同|おな]じ[型|かた]の[車|くるま]をよく[見|み]かけます。"),
+        translation: "Veo a menudo autos del mismo modelo.",
+      },
+      {
+        segments: ruby("[A型|エーがた]ですか、それとも[O型|オーがた]ですか。"),
+        translation: "¿Eres grupo A o grupo O?",
+      },
+      {
+        segments: ruby("[基本|きほん]の[型|かた]を[覚|おぼ]えてから[応用|おうよう]します。"),
+        translation: "Primero memorizo la forma básica y luego la aplico.",
+      },
+      {
+        segments: ruby("[この[服|ふく]は[古|ふる]い[型|かた]ですが、まだ[人気|にんき]があります。"),
+        translation: "Esta ropa es de un modelo antiguo, pero todavía es popular.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "経",
+    level: 5,
+    strokeCount: 11,
+    on: ["ケイ", "キョウ"],
+    kun: ["へ.る", "た.つ"],
+    meaning: "Pasar / experiencia / economía",
+    examples: [
+      {
+        segments: ruby("二[年|ねん]が[経|た]ちました。"),
+        translation: "Han pasado dos años.",
+      },
+      {
+        segments: ruby("[東京|とうきょう]を[経由|けいゆ]して[仙台|せんだい]へ[行|い]きます。"),
+        translation: "Voy a Sendai pasando por Tokio.",
+      },
+      {
+        segments: ruby("[経済|けいざい]のニュースを[毎朝|まいあさ][見|み]ています。"),
+        translation: "Veo noticias de economía todas las mañanas.",
+      },
+      {
+        segments: ruby("[経験|けいけん]を[通|とお]してたくさん[学|まな]びました。"),
+        translation: "Aprendí mucho a través de la experiencia.",
+      },
+      {
+        segments: ruby("[手術|しゅじゅつ]のあと、しばらく[時間|じかん]が[経|た]ってから[元気|げんき]になりました。"),
+        translation: "Después de la operación, con el paso del tiempo me recuperé.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "潔",
+    level: 5,
+    strokeCount: 15,
+    on: ["ケツ"],
+    kun: ["いさぎよ.い"],
+    meaning: "Limpio / puro / decidido",
+    examples: [
+      {
+        segments: ruby("[清潔|せいけつ]な[部屋|へや]はきもちがいいです。"),
+        translation: "Una habitación limpia se siente bien.",
+      },
+      {
+        segments: ruby("[清潔|せいけつ]な[服装|ふくそう]をこころがけています。"),
+        translation: "Procuro mantener una vestimenta limpia.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[潔|いさぎよ]くあやまりました。"),
+        translation: "Él se disculpó de manera franca y limpia.",
+      },
+      {
+        segments: ruby("[台所|だいどころ]をいつも[清潔|せいけつ]にしています。"),
+        translation: "Mantengo siempre limpia la cocina.",
+      },
+      {
+        segments: ruby("[潔|いさぎよ]い[決断|けつだん]が[必要|ひつよう]なときもあります。"),
+        translation: "Hay momentos en que se necesita una decisión decidida y clara.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "件",
+    level: 5,
+    strokeCount: 6,
+    on: ["ケン"],
+    kun: ["くだん"],
+    meaning: "Asunto / caso / cantidad de casos",
+    examples: [
+      {
+        segments: ruby("[大切|たいせつ]な[件|けん]について[話|はな]があります。"),
+        translation: "Tengo que hablar sobre un asunto importante.",
+      },
+      {
+        segments: ruby("[事件|じけん]のニュースを[見|み]ました。"),
+        translation: "Vi noticias sobre un incidente.",
+      },
+      {
+        segments: ruby("[明日|あした]は三[件|けん]の[予定|よてい]があります。"),
+        translation: "Mañana tengo tres compromisos.",
+      },
+      {
+        segments: ruby("[この[件|けん]はあとでメールで[連絡|れんらく]します。"),
+        translation: "Sobre este asunto me comunicaré después por correo.",
+      },
+      {
+        segments: ruby("[受付|うけつけ]で[相談|そうだん][件数|けんすう]を[確認|かくにん]しました。"),
+        translation: "En recepción confirmé la cantidad de consultas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "険",
+    level: 5,
+    strokeCount: 11,
+    on: ["ケン"],
+    kun: ["けわ.しい"],
+    meaning: "Peligroso / escarpado",
+    examples: [
+      {
+        segments: ruby("[険|けわ]しい[山道|やまみち]をのぼりました。"),
+        translation: "Subimos un camino de montaña escarpado.",
+      },
+      {
+        segments: ruby("[危険|きけん]な[場所|ばしょ]には[入|はい]らないでください。"),
+        translation: "Por favor, no entren en lugares peligrosos.",
+      },
+      {
+        segments: ruby("[表情|ひょうじょう]がすこし[険|けわ]しくなりました。"),
+        translation: "La expresión se volvió un poco severa.",
+      },
+      {
+        segments: ruby("[保険|ほけん]に[入|はい]っているので[安心|あんしん]です。"),
+        translation: "Como tengo seguro, estoy tranquilo.",
+      },
+      {
+        segments: ruby("[険|けわ]しい[意見|いけん]もありましたが、[最後|さいご]は[落|お]ち[着|つ]いて[話|はな]せました。"),
+        translation: "Hubo opiniones duras, pero al final pudimos hablar con calma.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "検",
+    level: 5,
+    strokeCount: 12,
+    on: ["ケン"],
+    kun: [],
+    meaning: "Inspeccionar / examinar",
+    examples: [
+      {
+        segments: ruby("[宿題|しゅくだい]を[提出|ていしゅつ]する[前|まえ]に[点検|てんけん]します。"),
+        translation: "Reviso la tarea antes de entregarla.",
+      },
+      {
+        segments: ruby("[血液|けつえき][検査|けんさ]を[受|う]けました。"),
+        translation: "Me hice un examen de sangre.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[答案|とうあん]を[検|けん]討しています。"),
+        translation: "El profesor está revisando las respuestas.",
+      },
+      {
+        segments: ruby("[安全|あんぜん]のために[機械|きかい]を[点検|てんけん]してください。"),
+        translation: "Por seguridad, por favor revise la máquina.",
+      },
+      {
+        segments: ruby("[検討|けんとう]した[結果|けっか]、この[方法|ほうほう]に[決|き]めました。"),
+        translation: "Después de examinarlo, decidimos este método.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "限",
+    level: 5,
+    strokeCount: 9,
+    on: ["ゲン"],
+    kun: ["かぎ.る", "かぎ.り"],
+    meaning: "Límite / restringir",
+    examples: [
+      {
+        segments: ruby("[時間|じかん]に[限|かぎ]りがあります。"),
+        translation: "El tiempo es limitado.",
+      },
+      {
+        segments: ruby("[今月|こんげつ][限|かぎ]りの[特別|とくべつ]なサービスです。"),
+        translation: "Es un servicio especial solo por este mes.",
+      },
+      {
+        segments: ruby("[人数|にんずう]を十[人|にん]に[限|かぎ]ります。"),
+        translation: "Limitamos la cantidad de personas a diez.",
+      },
+      {
+        segments: ruby("[無制限|むせいげん]に[使|つか]えるわけではありません。"),
+        translation: "No significa que se pueda usar sin límite.",
+      },
+      {
+        segments: ruby("[できることには[限界|げんかい]がありますが、できる[限|かぎ]りがんばります。"),
+        translation: "Hay límites en lo que se puede hacer, pero me esforzaré al máximo posible.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "現",
+    level: 5,
+    strokeCount: 11,
+    on: ["ゲン"],
+    kun: ["あらわ.れる", "あらわ.す"],
+    meaning: "Aparecer / actual / real",
+    examples: [
+      {
+        segments: ruby("[現代|げんだい]の[社会|しゃかい]について[考|かんが]えます。"),
+        translation: "Pienso sobre la sociedad actual.",
+      },
+      {
+        segments: ruby("[夢|ゆめ]の[中|なか]に[知|し]っている[人|ひと]が[現|あらわ]れました。"),
+        translation: "En el sueño apareció una persona conocida.",
+      },
+      {
+        segments: ruby("[現在|げんざい]の[状況|じょうきょう]を[説明|せつめい]してください。"),
+        translation: "Por favor, explique la situación actual.",
+      },
+      {
+        segments: ruby("[本音|ほんね]が[表情|ひょうじょう]に[現|あらわ]れています。"),
+        translation: "Los verdaderos sentimientos aparecen en la expresión.",
+      },
+      {
+        segments: ruby("[現実|げんじつ]は[思|おも]っていたより[厳|きび]しいこともあります。"),
+        translation: "A veces la realidad es más dura de lo que uno imaginaba.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "減",
+    level: 5,
+    strokeCount: 12,
+    on: ["ゲン"],
+    kun: ["へ.る", "へ.らす"],
+    meaning: "Disminuir / reducir",
+    examples: [
+      {
+        segments: ruby("[人数|にんずう]がすこし[減|へ]りました。"),
+        translation: "La cantidad de personas disminuyó un poco.",
+      },
+      {
+        segments: ruby("[食費|しょくひ]を[減|へ]らすために[自炊|じすい]をします。"),
+        translation: "Cocino en casa para reducir el gasto en comida.",
+      },
+      {
+        segments: ruby("[体重|たいじゅう]が二キロ[減|へ]りました。"),
+        translation: "Mi peso bajó dos kilos.",
+      },
+      {
+        segments: ruby("[事故|じこ]を[減|へ]らすには、みんなが[気|き]をつける[必要|ひつよう]があります。"),
+        translation: "Para reducir los accidentes, todos deben tener cuidado.",
+      },
+      {
+        segments: ruby("[残業|ざんぎょう]を[減|へ]らすために[仕事|しごと]の[進|すす]め[方|かた]を[見直|みなお]しました。"),
+        translation: "Revisamos la forma de trabajar para reducir las horas extra.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "故",
+    level: 5,
+    strokeCount: 9,
+    on: ["コ"],
+    kun: ["ゆえ"],
+    meaning: "Motivo / fallecido / intencionalmente",
+    examples: [
+      {
+        segments: ruby("[事故|じこ]の[原因|げんいん]は[故障|こしょう]でした。"),
+        translation: "La causa del accidente fue una avería.",
+      },
+      {
+        segments: ruby("[故郷|こきょう]の[景色|けしき]を[思|おも]い[出|だ]します。"),
+        translation: "Recuerdo los paisajes de mi pueblo natal.",
+      },
+      {
+        segments: ruby("[故|ゆえ]あって、きょうは[早|はや]く[帰|かえ]ります。"),
+        translation: "Por ciertas razones, hoy me voy temprano.",
+      },
+      {
+        segments: ruby("[故人|こじん]をしのぶ[会|かい]が[開|ひら]かれました。"),
+        translation: "Se realizó una reunión para recordar a la persona fallecida.",
+      },
+      {
+        segments: ruby("[機械|きかい]が[故障|こしょう]したので、[作業|さぎょう]をいったん[止|と]めました。"),
+        translation: "Como la máquina se averió, detuvimos el trabajo por un momento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "個",
+    level: 5,
+    strokeCount: 10,
+    on: ["コ", "カ"],
+    kun: [],
+    meaning: "Unidad de conteo / individual",
+    examples: [
+      {
+        segments: ruby("りんごを三[個|こ][買|か]いました。"),
+        translation: "Compré tres manzanas.",
+      },
+      {
+        segments: ruby("[個人|こじん]の[意見|いけん]も[大切|たいせつ]です。"),
+        translation: "La opinión individual también es importante.",
+      },
+      {
+        segments: ruby("[一個|いっこ]だけください。"),
+        translation: "Deme solo una unidad, por favor.",
+      },
+      {
+        segments: ruby("[個別|こべつ]に[説明|せつめい]します。"),
+        translation: "Lo explicaré de manera individual.",
+      },
+      {
+        segments: ruby("[個性|こせい]をいかすことが[大切|たいせつ]だと[思|おも]います。"),
+        translation: "Creo que es importante aprovechar la individualidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "護",
+    level: 5,
+    strokeCount: 20,
+    on: ["ゴ"],
+    kun: ["まも.る"],
+    meaning: "Proteger / resguardar",
+    examples: [
+      {
+        segments: ruby("[自然|しぜん]を[護|まも]るためにごみを[減|へ]らします。"),
+        translation: "Reducimos la basura para proteger la naturaleza.",
+      },
+      {
+        segments: ruby("[看護師|かんごし]として[働|はたら]いている[友達|ともだち]がいます。"),
+        translation: "Tengo un amigo que trabaja como enfermero.",
+      },
+      {
+        segments: ruby("[個人情報|こじんじょうほう]を[保護|ほご]してください。"),
+        translation: "Por favor, proteja la información personal.",
+      },
+      {
+        segments: ruby("[文化財|ぶんかざい]を[守|まも]り[護|まも]っていくことが[大切|たいせつ]です。"),
+        translation: "Es importante conservar y proteger el patrimonio cultural.",
+      },
+      {
+        segments: ruby("[護身|ごしん]のための[知識|ちしき]もときには[必要|ひつよう]です。"),
+        translation: "A veces también se necesitan conocimientos para la autoprotección.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "効",
+    level: 5,
+    strokeCount: 8,
+    on: ["コウ"],
+    kun: ["き.く"],
+    meaning: "Eficacia / efecto / funcionar",
+    examples: [
+      {
+        segments: ruby("[薬|くすり]がよく[効|き]きました。"),
+        translation: "La medicina funcionó bien.",
+      },
+      {
+        segments: ruby("[効率|こうりつ]のいい[勉強法|べんきょうほう]をさがしています。"),
+        translation: "Estoy buscando un método de estudio eficiente.",
+      },
+      {
+        segments: ruby("[冷房|れいぼう]が[効|き]いていてすずしいです。"),
+        translation: "El aire acondicionado está funcionando y hace fresco.",
+      },
+      {
+        segments: ruby("[努力|どりょく]が[効|こう]を[奏|そう]して、[成績|せいせき]があがりました。"),
+        translation: "El esfuerzo dio resultado y las notas subieron.",
+      },
+      {
+        segments: ruby("[時間|じかん]を[有効|ゆうこう]に[使|つか]いたいです。"),
+        translation: "Quiero usar el tiempo de manera efectiva.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "厚",
+    level: 5,
+    strokeCount: 9,
+    on: ["コウ"],
+    kun: ["あつ.い"],
+    meaning: "Grueso / profundo / cordial",
+    examples: [
+      {
+        segments: ruby("この[本|ほん]はとても[厚|あつ]いです。"),
+        translation: "Este libro es muy grueso.",
+      },
+      {
+        segments: ruby("[信頼|しんらい]の[厚|あつ]い[先生|せんせい]です。"),
+        translation: "Es un profesor que goza de gran confianza.",
+      },
+      {
+        segments: ruby("[厚着|あつぎ]をして[出|で]かけました。"),
+        translation: "Salí con ropa abrigada.",
+      },
+      {
+        segments: ruby("[厚意|こうい]に[感謝|かんしゃ]しています。"),
+        translation: "Agradezco la amabilidad recibida.",
+      },
+      {
+        segments: ruby("[雪|ゆき]が[厚|あつ]くつもっていました。"),
+        translation: "La nieve se había acumulado en una capa gruesa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "耕",
+    level: 5,
+    strokeCount: 10,
+    on: ["コウ"],
+    kun: ["たがや.す"],
+    meaning: "Cultivar / labrar",
+    examples: [
+      {
+        segments: ruby("[畑|はたけ]を[耕|たがや]しています。"),
+        translation: "Estoy labrando el campo.",
+      },
+      {
+        segments: ruby("[祖父|そふ]は[毎朝|まいあさ][土|つち]を[耕|たがや]します。"),
+        translation: "Mi abuelo labra la tierra cada mañana.",
+      },
+      {
+        segments: ruby("[農業|のうぎょう]では[土|つち]をよく[耕|たがや]すことが[大切|たいせつ]です。"),
+        translation: "En agricultura es importante labrar bien la tierra.",
+      },
+      {
+        segments: ruby("[機械|きかい]をつかって[広|ひろ]い[土地|とち]を[耕|たがや]しました。"),
+        translation: "Labramos una gran extensión de tierra usando maquinaria.",
+      },
+      {
+        segments: ruby("[心|こころ]を[耕|たがや]すように[本|ほん]を[読|よ]みたいです。"),
+        translation: "Quiero leer libros que cultiven el corazón.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "航",
+    level: 5,
+    strokeCount: 10,
+    on: ["コウ"],
+    kun: [],
+    meaning: "Navegar / volar / ruta",
+    examples: [
+      {
+        segments: ruby("[飛行機|ひこうき]が[北|きた]へ[向|む]かって[航|こう][行|こう]しています。"),
+        translation: "El avión está volando hacia el norte.",
+      },
+      {
+        segments: ruby("[船|ふね]が[海|うみ]を[航|こう][海|かい]しています。"),
+        translation: "El barco está navegando por el mar.",
+      },
+      {
+        segments: ruby("[航空券|こうくうけん]を[予約|よやく]しました。"),
+        translation: "Reservé un boleto de avión.",
+      },
+      {
+        segments: ruby("[悪天候|あくてんこう]のため、[航路|こうろ]が[変|か]わりました。"),
+        translation: "Por mal tiempo, la ruta cambió.",
+      },
+      {
+        segments: ruby("[航空|こうくう][会社|がいしゃ]で[働|はたら]くのが[夢|ゆめ]です。"),
+        translation: "Mi sueño es trabajar en una aerolínea.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "鉱",
+    level: 5,
+    strokeCount: 13,
+    on: ["コウ"],
+    kun: [],
+    meaning: "Mineral / mina",
+    examples: [
+      {
+        segments: ruby("[鉱山|こうざん]で[働|はたら]く[人|ひと]もいます。"),
+        translation: "También hay personas que trabajan en las minas.",
+      },
+      {
+        segments: ruby("[鉄鉱石|てっこうせき]について[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos en clase sobre el mineral de hierro.",
+      },
+      {
+        segments: ruby("[鉱物|こうぶつ]を[集|あつ]めるのが[好|す]きな[友達|ともだち]がいます。"),
+        translation: "Tengo un amigo al que le gusta coleccionar minerales.",
+      },
+      {
+        segments: ruby("[この[地域|ちいき]では[石炭|せきたん]や[鉱物|こうぶつ]がとれます。"),
+        translation: "En esta zona se extraen carbón y minerales.",
+      },
+      {
+        segments: ruby("[鉱石|こうせき]の[色|いろ]や[形|かたち]を[観察|かんさつ]しました。"),
+        translation: "Observé el color y la forma de los minerales.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "構",
+    level: 5,
+    strokeCount: 14,
+    on: ["コウ"],
+    kun: ["かま.える", "かま.う"],
+    meaning: "Estructura / preparar / importar",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[計画|けいかく]の[構想|こうそう]を[考|かんが]えています。"),
+        translation: "Estoy pensando la idea general de un nuevo plan.",
+      },
+      {
+        segments: ruby("[どうぞ、お[構|かま]いなく[進|すす]めてください。"),
+        translation: "Por favor, siga adelante sin preocuparse.",
+      },
+      {
+        segments: ruby("[店|みせ]の[前|まえ]にカメラを[構|かま]えました。"),
+        translation: "Me puse con la cámara frente a la tienda.",
+      },
+      {
+        segments: ruby("[この[建物|たてもの]の[構造|こうぞう]はとてもおもしろいです。"),
+        translation: "La estructura de este edificio es muy interesante.",
+      },
+      {
+        segments: ruby("[結果|けっか]よりも、まず[挑戦|ちょうせん]することが[大切|たいせつ]だと[構|かま]わず[進|すす]みました。"),
+        translation: "Avancé sin preocuparme, pensando que lo importante era intentarlo más que el resultado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "興",
+    level: 5,
+    strokeCount: 16,
+    on: ["コウ", "キョウ"],
+    kun: ["おこ.る", "おこ.す"],
+    meaning: "Interés / entusiasmo / surgir",
+    examples: [
+      {
+        segments: ruby("[日本史|にほんし]に[興味|きょうみ]があります。"),
+        translation: "Me interesa la historia de Japón.",
+      },
+      {
+        segments: ruby("[興味深|きょうみぶか]い[話|はなし]を[聞|き]きました。"),
+        translation: "Escuché una historia muy interesante.",
+      },
+      {
+        segments: ruby("[観客|かんきゃく]の[興奮|こうふん]が[伝|つた]わってきました。"),
+        translation: "Se sentía la emoción del público.",
+      },
+      {
+        segments: ruby("[町|まち]おこしのために[新|あたら]しいイベントを[興|おこ]しました。"),
+        translation: "Organizamos un evento nuevo para revitalizar la ciudad.",
+      },
+      {
+        segments: ruby("[急|きゅう]に[興|きょう]がさめてしまいました。"),
+        translation: "De repente se me fue el entusiasmo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "講",
+    level: 5,
+    strokeCount: 17,
+    on: ["コウ"],
+    kun: [],
+    meaning: "Conferencia / curso / explicar",
+    examples: [
+      {
+        segments: ruby("[大学|だいがく]で[特別|とくべつ][講義|こうぎ]を[受|う]けました。"),
+        translation: "Asistí a una clase especial en la universidad.",
+      },
+      {
+        segments: ruby("[講師|こうし]の[説明|せつめい]がとてもわかりやすかったです。"),
+        translation: "La explicación del instructor fue muy clara.",
+      },
+      {
+        segments: ruby("[安全|あんぜん]についての[講習会|こうしゅうかい]に[参加|さんか]しました。"),
+        translation: "Participé en un curso sobre seguridad.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[文法|ぶんぽう]をていねいに[講|こう]じてくれました。"),
+        translation: "El profesor enseñó la gramática cuidadosamente.",
+      },
+      {
+        segments: ruby("[講演会|こうえんかい]の[内容|ないよう]をノートにまとめました。"),
+        translation: "Resumí en el cuaderno el contenido de la conferencia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "告",
+    level: 5,
+    strokeCount: 7,
+    on: ["コク"],
+    kun: ["つ.げる"],
+    meaning: "Informar / anunciar",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]に[結果|けっか]を[報告|ほうこく]しました。"),
+        translation: "Le informé al profesor el resultado.",
+      },
+      {
+        segments: ruby("[卒業|そつぎょう]を[家族|かぞく]に[告|つ]げました。"),
+        translation: "Le anuncié a mi familia la graduación.",
+      },
+      {
+        segments: ruby("[広告|こうこく]を[見|み]てこの[商品|しょうひん]を[知|し]りました。"),
+        translation: "Conocí este producto al ver un anuncio.",
+      },
+      {
+        segments: ruby("[先|さき]に[結論|けつろん]を[告|つ]げてください。"),
+        translation: "Por favor, diga primero la conclusión.",
+      },
+      {
+        segments: ruby("[予告|よこく]どおり、[来週|らいしゅう]から[試験|しけん]が[始|はじ]まります。"),
+        translation: "Tal como se avisó, los exámenes empiezan la próxima semana.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "混",
+    level: 5,
+    strokeCount: 11,
+    on: ["コン"],
+    kun: ["ま.じる", "ま.ざる", "ま.ぜる", "こ.む"],
+    meaning: "Mezclar / estar lleno / confundirse",
+    examples: [
+      {
+        segments: ruby("[駅|えき]がとても[混|こ]んでいます。"),
+        translation: "La estación está muy llena.",
+      },
+      {
+        segments: ruby("[赤|あか]と[白|しろ]を[混|ま]ぜるとピンクになります。"),
+        translation: "Si mezclas rojo y blanco, se vuelve rosado.",
+      },
+      {
+        segments: ruby("[人|ひと]ごみに[混|ま]ぎれて[友達|ともだち]が[見|み]えなくなりました。"),
+        translation: "Entre la multitud dejé de ver a mi amigo.",
+      },
+      {
+        segments: ruby("[混乱|こんらん]しないように、ゆっくり[説明|せつめい]します。"),
+        translation: "Para que no haya confusión, lo explicaré despacio.",
+      },
+      {
+        segments: ruby("[平日|へいじつ]の[朝|あさ]は[電車|でんしゃ]が[特|とく]に[混|こ]みます。"),
+        translation: "En las mañanas de días de semana el tren se llena especialmente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "査",
+    level: 5,
+    strokeCount: 9,
+    on: ["サ"],
+    kun: [],
+    meaning: "Investigar / revisar",
+    examples: [
+      {
+        segments: ruby("[原因|げんいん]を[調査|ちょうさ]しています。"),
+        translation: "Estoy investigando la causa.",
+      },
+      {
+        segments: ruby("[会社|かいしゃ]が[安全|あんぜん]の[調査|ちょうさ]を[行|おこな]いました。"),
+        translation: "La empresa realizó una investigación de seguridad.",
+      },
+      {
+        segments: ruby("[警察|けいさつ]が[事件|じけん]を[捜査|そうさ]しています。"),
+        translation: "La policía está investigando el caso.",
+      },
+      {
+        segments: ruby("[調査票|ちょうさひょう]に[記入|きにゅう]してください。"),
+        translation: "Por favor, complete el formulario de encuesta.",
+      },
+      {
+        segments: ruby("[この[地域|ちいき]の[人口|じんこう]について[調査|ちょうさ]した[結果|けっか]を[発表|はっぴょう]しました。"),
+        translation: "Presentamos los resultados de la investigación sobre la población de esta zona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "再",
+    level: 5,
+    strokeCount: 6,
+    on: ["サイ", "サ"],
+    kun: ["ふたた.び"],
+    meaning: "De nuevo / repetir",
+    examples: [
+      {
+        segments: ruby("[再来週|さらいしゅう]にもう一[度|ど][会|あ]いましょう。"),
+        translation: "Volvamos a vernos pasado mañana de la próxima semana.",
+      },
+      {
+        segments: ruby("[説明|せつめい]を[再|ふたた]び[聞|き]きました。"),
+        translation: "Escuché la explicación nuevamente.",
+      },
+      {
+        segments: ruby("[再利用|さいりよう]できるものは[分|わ]けてください。"),
+        translation: "Por favor, separen lo que se puede reutilizar.",
+      },
+      {
+        segments: ruby("[試験|しけん]の[前|まえ]にもう一[度|ど][再確認|さいかくにん]します。"),
+        translation: "Antes del examen lo volveré a confirmar una vez más.",
+      },
+      {
+        segments: ruby("[問題|もんだい]があれば、あとで[再度|さいど][連絡|れんらく]します。"),
+        translation: "Si hay algún problema, me comunicaré nuevamente después.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "災",
+    level: 5,
+    strokeCount: 7,
+    on: ["サイ"],
+    kun: ["わざわ.い"],
+    meaning: "Desastre / calamidad",
+    examples: [
+      {
+        segments: ruby("[地震|じしん][災害|さいがい]に[備|そな]えて[水|みず]を[用意|ようい]しています。"),
+        translation: "Preparo agua por si ocurre un desastre sísmico.",
+      },
+      {
+        segments: ruby("[災害|さいがい]のときは[落|お]ち[着|つ]いて[行動|こうどう]してください。"),
+        translation: "En caso de desastre, por favor actúe con calma.",
+      },
+      {
+        segments: ruby("[火災|かさい]の[避難|ひなん][訓練|くんれん]に[参加|さんか]しました。"),
+        translation: "Participé en un simulacro de evacuación por incendio.",
+      },
+      {
+        segments: ruby("[天災|てんさい]だけでなく、[人災|じんさい]にも[気|き]をつける[必要|ひつよう]があります。"),
+        translation: "No solo hay que tener cuidado con los desastres naturales, sino también con los causados por personas.",
+      },
+      {
+        segments: ruby("[災|わざわ]いを[防|ふせ]ぐために、[日頃|ひごろ]から[準備|じゅんび]しておきます。"),
+        translation: "Me preparo desde antes para prevenir calamidades.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "妻",
+    level: 5,
+    strokeCount: 8,
+    on: ["サイ"],
+    kun: ["つま"],
+    meaning: "Esposa",
+    examples: [
+      {
+        segments: ruby("[妻|つま]といっしょに[買|か]い[物|もの]へ[行|い]きました。"),
+        translation: "Fui de compras junto con mi esposa.",
+      },
+      {
+        segments: ruby("[夫婦|ふうふ]で[将来|しょうらい]のことを[話|はな]しています。"),
+        translation: "Como matrimonio estamos hablando del futuro.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[妻|つま]に[花|はな]をプレゼントしました。"),
+        translation: "Él le regaló flores a su esposa.",
+      },
+      {
+        segments: ruby("[妻|つま]の[料理|りょうり]がとてもおいしいです。"),
+        translation: "La comida de mi esposa es muy rica.",
+      },
+      {
+        segments: ruby("[休日|きゅうじつ]は[妻|つま]と[子|こ]どもと[公園|こうえん]で[過|す]ごします。"),
+        translation: "Los días libres los paso en el parque con mi esposa y mis hijos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "採",
+    level: 5,
+    strokeCount: 11,
+    on: ["サイ"],
+    kun: ["と.る"],
+    meaning: "Recoger / adoptar / aceptar",
+    examples: [
+      {
+        segments: ruby("[意見|いけん]を[採用|さいよう]してもらいました。"),
+        translation: "Aceptaron mi propuesta.",
+      },
+      {
+        segments: ruby("[野菜|やさい]を[畑|はたけ]で[採|と]りました。"),
+        translation: "Recolecté verduras en el campo.",
+      },
+      {
+        segments: ruby("[会社|かいしゃ]が[新|あたら]しい[人|ひと]を[採用|さいよう]します。"),
+        translation: "La empresa contratará a una persona nueva.",
+      },
+      {
+        segments: ruby("[新聞|しんぶん]で[世論調査|よろんちょうさ]の[結果|けっか]が[採|と]り[上|あ]げられていました。"),
+        translation: "En el periódico se trataban los resultados de una encuesta de opinión.",
+      },
+      {
+        segments: ruby("[海辺|うみべ]で[貝|かい]を[採|と]るのが[楽|たの]しかったです。"),
+        translation: "Fue divertido recoger conchas en la playa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "際",
+    level: 5,
+    strokeCount: 14,
+    on: ["サイ"],
+    kun: ["きわ"],
+    meaning: "Ocasión / borde / momento de",
+    examples: [
+      {
+        segments: ruby("[困|こま]った[際|さい]は、すぐに[連絡|れんらく]してください。"),
+        translation: "En caso de problema, comuníquese de inmediato.",
+      },
+      {
+        segments: ruby("[留学|りゅうがく]の[際|さい]に[必要|ひつよう]な[書類|しょるい]をそろえます。"),
+        translation: "Reúno los documentos necesarios al momento de estudiar en el extranjero.",
+      },
+      {
+        segments: ruby("[窓|まど]の[際|きわ]に[花|はな]をかざりました。"),
+        translation: "Puse flores junto al borde de la ventana.",
+      },
+      {
+        segments: ruby("[卒業|そつぎょう]する[際|さい]、[先生|せんせい]にお[礼|れい]を[言|い]いました。"),
+        translation: "Al graduarme, le di las gracias al profesor.",
+      },
+      {
+        segments: ruby("[実際|じっさい]に[見|み]てみると、[写真|しゃしん]よりもっときれいでした。"),
+        translation: "Al verlo en persona, era incluso más bonito que en las fotos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "在",
+    level: 5,
+    strokeCount: 6,
+    on: ["ザイ"],
+    kun: ["あ.る"],
+    meaning: "Estar / existir / encontrarse",
+    examples: [
+      {
+        segments: ruby("[現在|げんざい]の[住所|じゅうしょ]を[書|か]いてください。"),
+        translation: "Por favor, escriba su dirección actual.",
+      },
+      {
+        segments: ruby("[在庫|ざいこ]がまだあります。"),
+        translation: "Todavía hay stock.",
+      },
+      {
+        segments: ruby("[海外|かいがい][在住|ざいじゅう]の[友達|ともだち]と[連絡|れんらく]をとっています。"),
+        translation: "Me estoy comunicando con un amigo que vive en el extranjero.",
+      },
+      {
+        segments: ruby("[存在|そんざい]の[大|おお]きさを[感|かん]じました。"),
+        translation: "Sentí la importancia de su existencia.",
+      },
+      {
+        segments: ruby("[必要|ひつよう]な[資料|しりょう]がここに[在|あ]ります。"),
+        translation: "Los materiales necesarios están aquí.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "財",
+    level: 5,
+    strokeCount: 10,
+    on: ["ザイ", "サイ", "ゾク"],
+    kun: ["たから"],
+    meaning: "Bienes / riqueza / patrimonio",
+    examples: [
+      {
+        segments: ruby("[文化財|ぶんかざい]を[大切|たいせつ]に[守|まも]ります。"),
+        translation: "Protegemos cuidadosamente el patrimonio cultural.",
+      },
+      {
+        segments: ruby("[財産|ざいさん]について[家族|かぞく]で[話|はな]しました。"),
+        translation: "Hablamos en familia sobre los bienes.",
+      },
+      {
+        segments: ruby("[財布|さいふ]を[家|いえ]に[忘|わす]れてしまいました。"),
+        translation: "Olvidé la billetera en casa.",
+      },
+      {
+        segments: ruby("[財政|ざいせい]の[問題|もんだい]をニュースで[聞|き]きました。"),
+        translation: "Escuché en las noticias sobre problemas fiscales.",
+      },
+      {
+        segments: ruby("[時間|じかん]も[大切|たいせつ]な[財産|ざいさん]の一つです。"),
+        translation: "El tiempo también es uno de los bienes valiosos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "罪",
+    level: 5,
+    strokeCount: 13,
+    on: ["ザイ"],
+    kun: ["つみ"],
+    meaning: "Delito / culpa / pecado",
+    examples: [
+      {
+        segments: ruby("[罪|つみ]をおかしてはいけません。"),
+        translation: "No se debe cometer un delito.",
+      },
+      {
+        segments: ruby("[罪悪感|ざいあくかん]を[感|かん]じました。"),
+        translation: "Sentí culpa.",
+      },
+      {
+        segments: ruby("[事故|じこ]の[責任|せきにん]がだれにあるのかは[慎重|しんちょう]に[調|しら]べる[必要|ひつよう]があります。"),
+        translation: "Es necesario investigar con cuidado quién tiene la responsabilidad del accidente.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[自分|じぶん]の[罪|つみ]をみとめました。"),
+        translation: "Él reconoció su culpa.",
+      },
+      {
+        segments: ruby("[無実|むじつ]なのに[罪|つみ]をきせられるのはとてもつらいことです。"),
+        translation: "Es muy duro ser acusado de un delito siendo inocente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "殺",
+    level: 5,
+    strokeCount: 10,
+    on: ["サツ", "サイ", "セツ"],
+    kun: ["ころ.す"],
+    meaning: "Matar / eliminar / disminuir",
+    examples: [
+      {
+        segments: ruby("[虫|むし]を[殺虫剤|さっちゅうざい]で[退治|たいじ]しました。"),
+        translation: "Eliminé los insectos con insecticida.",
+      },
+      {
+        segments: ruby("[殺菌|さっきん]してから[使|つか]ってください。"),
+        translation: "Por favor, úselo después de desinfectarlo.",
+      },
+      {
+        segments: ruby("[人|ひと]をきずつける[言葉|ことば]は、[心|こころ]を[殺|ころ]すことにもつながります。"),
+        translation: "Las palabras que hieren a una persona también pueden matar el ánimo.",
+      },
+      {
+        segments: ruby("[夏|なつ]は[暑|あつ]さをやわらげるために、すだれで[日差|ひざ]しを[殺|ころ]します。"),
+        translation: "En verano, para aliviar el calor, reducimos la luz del sol con persianas de bambú.",
+      },
+      {
+        segments: ruby("[時間|じかん]を[無駄|むだ]にしてしまうと、せっかくの[機会|きかい]を[殺|ころ]すことがあります。"),
+        translation: "Si desperdicias el tiempo, a veces terminas arruinando una buena oportunidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "雑",
+    level: 5,
+    strokeCount: 14,
+    on: ["ザツ", "ゾウ"],
+    kun: [],
+    meaning: "Variado / desordenado / mezcla",
+    examples: [
+      {
+        segments: ruby("[雑誌|ざっし]を[読|よ]みながらコーヒーを[飲|の]みます。"),
+        translation: "Tomo café mientras leo una revista.",
+      },
+      {
+        segments: ruby("[部屋|へや]が[雑然|ざつぜん]としているので、[片付|かたづ]けます。"),
+        translation: "Como la habitación está desordenada, la ordenaré.",
+      },
+      {
+        segments: ruby("[複雑|ふくざつ]な[問題|もんだい]なので、ゆっくり[考|かんが]えます。"),
+        translation: "Como es un problema complejo, lo pensaré despacio.",
+      },
+      {
+        segments: ruby("[雑音|ざつおん]が[多|おお]くて[聞|き]き[取|と]りにくかったです。"),
+        translation: "Había mucho ruido y fue difícil escuchar.",
+      },
+      {
+        segments: ruby("[仕事|しごと]がいそがしくて、きょうは少し[雑|ざつ]な[気持|きも]ちになっています。"),
+        translation: "Como el trabajo está muy ocupado, hoy me siento un poco inquieto y desordenado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "酸",
+    level: 5,
+    strokeCount: 14,
+    on: ["サン"],
+    kun: ["す.い"],
+    meaning: "Ácido / agrio",
+    examples: [
+      {
+        segments: ruby("このみかんはすこし[酸|す]いです。"),
+        translation: "Esta mandarina está un poco ácida.",
+      },
+      {
+        segments: ruby("[炭酸水|たんさんすい]を[冷|ひ]やして[飲|の]みます。"),
+        translation: "Enfrío agua con gas y la tomo.",
+      },
+      {
+        segments: ruby("[酸素|さんそ]は[生|い]きるために[必要|ひつよう]です。"),
+        translation: "El oxígeno es necesario para vivir.",
+      },
+      {
+        segments: ruby("[酸性|さんせい]と[アルカリ性|あるかりせい]のちがいを[学|まな]びました。"),
+        translation: "Aprendimos la diferencia entre ácido y alcalino.",
+      },
+      {
+        segments: ruby("[疲|つか]れたときは、すこし[酸|す]っぱいものが[食|た]べたくなります。"),
+        translation: "Cuando estoy cansado, me dan ganas de comer algo ácido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "賛",
+    level: 5,
+    strokeCount: 15,
+    on: ["サン"],
+    kun: [],
+    meaning: "Aprobar / apoyar / elogiar",
+    examples: [
+      {
+        segments: ruby("[私|わたし]はその[意見|いけん]に[賛成|さんせい]です。"),
+        translation: "Estoy de acuerdo con esa opinión.",
+      },
+      {
+        segments: ruby("[みんなが[賛成|さんせい]してくれたので、[計画|けいかく]を[進|すす]めます。"),
+        translation: "Como todos estuvieron de acuerdo, seguiremos con el plan.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[努力|どりょく]を[称賛|しょうさん]してくれました。"),
+        translation: "El profesor elogió mi esfuerzo.",
+      },
+      {
+        segments: ruby("[賛否|さんぴ]が[分|わ]かれる[問題|もんだい]です。"),
+        translation: "Es un tema que divide opiniones a favor y en contra.",
+      },
+      {
+        segments: ruby("[地域|ちいき]の[活動|かつどう]に[賛同|さんどう]する[人|ひと]がふえています。"),
+        translation: "Está aumentando la cantidad de personas que apoyan las actividades de la comunidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "士",
+    level: 5,
+    strokeCount: 3,
+    on: ["シ"],
+    kun: [],
+    meaning: "Persona especializada / guerrero / título",
+    examples: [
+      {
+        segments: ruby("[弁護士|べんごし]に[相談|そうだん]しました。"),
+        translation: "Consulté con un abogado.",
+      },
+      {
+        segments: ruby("[看護師|かんごし]や[医師|いし]は[人|ひと]を[助|たす]ける[仕事|しごと]です。"),
+        translation: "Los enfermeros y los médicos tienen trabajos para ayudar a las personas.",
+      },
+      {
+        segments: ruby("[兵士|へいし]の[生活|せいかつ]について[歴史|れきし]で[学|まな]びました。"),
+        translation: "Aprendimos en historia sobre la vida de los soldados.",
+      },
+      {
+        segments: ruby("[博士|はかせ]になるために[研究|けんきゅう]を[続|つづ]けています。"),
+        translation: "Sigo investigando para llegar a ser doctor.",
+      },
+      {
+        segments: ruby("[武士|ぶし]の[時代|じだい]の[話|はなし]を[読|よ]みました。"),
+        translation: "Leí una historia de la época de los samuráis.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "支",
+    level: 5,
+    strokeCount: 4,
+    on: ["シ"],
+    kun: ["ささ.える", "つか.える"],
+    meaning: "Sostener / apoyar / rama",
+    examples: [
+      {
+        segments: ruby("[家族|かぞく]を[支|ささ]えるために[働|はたら]いています。"),
+        translation: "Trabajo para mantener a mi familia.",
+      },
+      {
+        segments: ruby("[支店|してん]は[駅|えき]の[近|ちか]くにあります。"),
+        translation: "La sucursal está cerca de la estación.",
+      },
+      {
+        segments: ruby("[生活|せいかつ]を[支|ささ]えるお[金|かね]はとても[大切|たいせつ]です。"),
+        translation: "El dinero que sostiene la vida diaria es muy importante.",
+      },
+      {
+        segments: ruby("[支出|ししゅつ]を[減|へ]らすために[家計簿|かけいぼ]をつけます。"),
+        translation: "Llevo un registro del hogar para reducir los gastos.",
+      },
+      {
+        segments: ruby("[地域|ちいき]を[支|ささ]える[活動|かつどう]に[参加|さんか]しました。"),
+        translation: "Participé en una actividad para apoyar a la comunidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "史",
+    level: 5,
+    strokeCount: 5,
+    on: ["シ"],
+    kun: [],
+    meaning: "Historia",
+    examples: [
+      {
+        segments: ruby("[日本史|にほんし]が[好|す]きです。"),
+        translation: "Me gusta la historia de Japón.",
+      },
+      {
+        segments: ruby("[歴史|れきし]の[本|ほん]を[読|よ]んでいます。"),
+        translation: "Estoy leyendo un libro de historia.",
+      },
+      {
+        segments: ruby("[世界史|せかいし]の[授業|じゅぎょう]はとてもおもしろいです。"),
+        translation: "La clase de historia mundial es muy interesante.",
+      },
+      {
+        segments: ruby("[町|まち]の[史料館|しりょうかん]を[見学|けんがく]しました。"),
+        translation: "Visité el museo histórico de la ciudad.",
+      },
+      {
+        segments: ruby("[長|なが]い[歴史|れきし]をもつ[寺|てら]です。"),
+        translation: "Es un templo con una larga historia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "志",
+    level: 5,
+    strokeCount: 7,
+    on: ["シ"],
+    kun: ["こころざ.す", "こころざし"],
+    meaning: "Voluntad / aspiración / intención",
+    examples: [
+      {
+        segments: ruby("[将来|しょうらい]の[志|こころざし]を[先生|せんせい]に[話|はな]しました。"),
+        translation: "Le conté al profesor mi aspiración para el futuro.",
+      },
+      {
+        segments: ruby("[医者|いしゃ]を[志|こころざ]して[勉強|べんきょう]しています。"),
+        translation: "Estoy estudiando con la meta de ser médico.",
+      },
+      {
+        segments: ruby("[強|つよ]い[意志|いし]があれば[続|つづ]けられます。"),
+        translation: "Si tienes una voluntad fuerte, puedes continuar.",
+      },
+      {
+        segments: ruby("[同|おな]じ[志|こころざし]をもつ[仲間|なかま]と[出会|であ]いました。"),
+        translation: "Conocí compañeros que tienen la misma aspiración.",
+      },
+      {
+        segments: ruby("[入学|にゅうがく][志願|しがん]の[理由|りゆう]を[作文|さくぶん]に[書|か]きました。"),
+        translation: "Escribí en una redacción la razón por la que postulo al ingreso.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "枝",
+    level: 5,
+    strokeCount: 8,
+    on: ["シ"],
+    kun: ["えだ"],
+    meaning: "Rama",
+    examples: [
+      {
+        segments: ruby("[木|き]の[枝|えだ]に[鳥|とり]がとまっています。"),
+        translation: "Hay un pájaro posado en la rama del árbol.",
+      },
+      {
+        segments: ruby("[強|つよ]い[風|かぜ]で[枝|えだ]が[折|お]れました。"),
+        translation: "La rama se quebró con el viento fuerte.",
+      },
+      {
+        segments: ruby("[細|ほそ]い[枝|えだ]を[切|き]って[花瓶|かびん]に[入|い]れました。"),
+        translation: "Corté una rama delgada y la puse en un florero.",
+      },
+      {
+        segments: ruby("[枝豆|えだまめ]を[食|た]べながら[話|はな]しました。"),
+        translation: "Conversamos mientras comíamos edamame.",
+      },
+      {
+        segments: ruby("[木|き]の[枝|えだ]がひろがって、きれいな[影|かげ]をつくっています。"),
+        translation: "Las ramas del árbol se extienden y forman una hermosa sombra.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "師",
+    level: 5,
+    strokeCount: 10,
+    on: ["シ"],
+    kun: [],
+    meaning: "Maestro / especialista",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]は[私|わたし]にとって[良|よ]い[教師|きょうし]です。"),
+        translation: "El profesor es un buen maestro para mí.",
+      },
+      {
+        segments: ruby("[美容師|びようし]に[髪|かみ]を[切|き]ってもらいました。"),
+        translation: "Un peluquero me cortó el pelo.",
+      },
+      {
+        segments: ruby("[医師|いし]の[説明|せつめい]をしっかり[聞|き]きました。"),
+        translation: "Escuché bien la explicación del médico.",
+      },
+      {
+        segments: ruby("[講師|こうし]として[日本語|にほんご]を[教|おし]えています。"),
+        translation: "Enseño japonés como instructor.",
+      },
+      {
+        segments: ruby("[師匠|ししょう]から[技術|ぎじゅつ]を[学|まな]ぶことはとても[大切|たいせつ]です。"),
+        translation: "Es muy importante aprender la técnica de un maestro.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "資",
+    level: 5,
+    strokeCount: 13,
+    on: ["シ"],
+    kun: [],
+    meaning: "Recursos / material / cualificación",
+    examples: [
+      {
+        segments: ruby("[資料|しりょう]を[読|よ]んで[準備|じゅんび]しました。"),
+        translation: "Me preparé leyendo los materiales.",
+      },
+      {
+        segments: ruby("[資格|しかく]をとるために[勉強|べんきょう]しています。"),
+        translation: "Estoy estudiando para obtener una certificación.",
+      },
+      {
+        segments: ruby("[資源|しげん]を[大切|たいせつ]に[使|つか]いましょう。"),
+        translation: "Usemos los recursos con cuidado.",
+      },
+      {
+        segments: ruby("[資金|しきん]がたりないので、[計画|けいかく]を[見直|みなお]しました。"),
+        translation: "Como faltaban fondos, revisamos el plan.",
+      },
+      {
+        segments: ruby("[この[経験|けいけん]は、[将来|しょうらい]の[仕事|しごと]の[資|し]になると[思|おも]います。"),
+        translation: "Creo que esta experiencia servirá como recurso para el trabajo futuro.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "飼",
+    level: 5,
+    strokeCount: 13,
+    on: ["シ"],
+    kun: ["か.う"],
+    meaning: "Criar / tener animales",
+    examples: [
+      {
+        segments: ruby("[犬|いぬ]を[二匹|にひき][飼|か]っています。"),
+        translation: "Tengo dos perros.",
+      },
+      {
+        segments: ruby("[小|ちい]さいころ、[魚|さかな]を[飼|か]っていました。"),
+        translation: "Cuando era pequeño, criaba peces.",
+      },
+      {
+        segments: ruby("[動物|どうぶつ]を[飼|か]うには[責任|せきにん]が[必要|ひつよう]です。"),
+        translation: "Para criar animales se necesita responsabilidad.",
+      },
+      {
+        segments: ruby("[鳥|とり]のえさを[毎朝|まいあさ]あげて[飼|か]っています。"),
+        translation: "Crío al pájaro dándole comida cada mañana.",
+      },
+      {
+        segments: ruby("[近所|きんじょ]で[猫|ねこ]をたくさん[飼|か]っている[家|いえ]があります。"),
+        translation: "En el vecindario hay una casa donde tienen muchos gatos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "示",
+    level: 5,
+    strokeCount: 5,
+    on: ["ジ", "シ"],
+    kun: ["しめ.す"],
+    meaning: "Mostrar / indicar",
+    examples: [
+      {
+        segments: ruby("[地図|ちず]で[道|みち]を[示|しめ]してください。"),
+        translation: "Por favor, indíqueme el camino en el mapa.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[例|れい]を[示|しめ]してくれました。"),
+        translation: "El profesor me mostró un ejemplo.",
+      },
+      {
+        segments: ruby("[展示会|てんじかい]で[新|あたら]しい[製品|せいひん]を[見|み]ました。"),
+        translation: "Vi productos nuevos en una exposición.",
+      },
+      {
+        segments: ruby("[数字|すうじ]が[結果|けっか]をはっきり[示|しめ]しています。"),
+        translation: "Los números muestran claramente el resultado.",
+      },
+      {
+        segments: ruby("[気持|きも]ちをことばだけでなく[行動|こうどう]でも[示|しめ]したいです。"),
+        translation: "Quiero mostrar mis sentimientos no solo con palabras, sino también con acciones.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "似",
+    level: 5,
+    strokeCount: 7,
+    on: ["ジ"],
+    kun: ["に.る", "に.せる"],
+    meaning: "Parecerse / imitar",
+    examples: [
+      {
+        segments: ruby("[父|ちち]に[顔|かお]がよく[似|に]ています。"),
+        translation: "Mi cara se parece mucho a la de mi padre.",
+      },
+      {
+        segments: ruby("この[二人|ふたり]は[話|はな]し[方|かた]まで[似|に]ています。"),
+        translation: "Estas dos personas se parecen incluso en la manera de hablar.",
+      },
+      {
+        segments: ruby("[本物|ほんもの]に[似|に]せてつくられた[商品|しょうひん]には[注意|ちゅうい]が[必要|ひつよう]です。"),
+        translation: "Hay que tener cuidado con los productos hechos para parecerse a los auténticos.",
+      },
+      {
+        segments: ruby("[似顔絵|にがおえ]を[描|か]いてもらいました。"),
+        translation: "Me dibujaron un retrato caricaturesco.",
+      },
+      {
+        segments: ruby("[考|かんが]え[方|かた]は[似|に]ていても、[選|えら]ぶ[方法|ほうほう]は[少|すこ]しちがいます。"),
+        translation: "Aunque la forma de pensar se parece, la manera de elegir es un poco distinta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "識",
+    level: 5,
+    strokeCount: 19,
+    on: ["シキ"],
+    kun: [],
+    meaning: "Conocimiento / reconocer / discernir",
+    examples: [
+      {
+        segments: ruby("[知識|ちしき]をふやすために[毎日|まいにち][本|ほん]を[読|よ]んでいます。"),
+        translation: "Leo libros todos los días para aumentar mis conocimientos.",
+      },
+      {
+        segments: ruby("[常識|じょうしき]を[身|み]につけることも[大切|たいせつ]です。"),
+        translation: "También es importante adquirir sentido común.",
+      },
+      {
+        segments: ruby("[意識|いしき]して[発音|はつおん]を[練習|れんしゅう]しています。"),
+        translation: "Practico la pronunciación de manera consciente.",
+      },
+      {
+        segments: ruby("[問題|もんだい]の[本質|ほんしつ]を[認識|にんしき]するのはむずかしいです。"),
+        translation: "Es difícil reconocer la esencia del problema.",
+      },
+      {
+        segments: ruby("[文化|ぶんか]のちがいを[意識|いしき]すると、もっとていねいに[話|はな]せます。"),
+        translation: "Cuando eres consciente de las diferencias culturales, puedes hablar con más cuidado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "質",
+    level: 5,
+    strokeCount: 15,
+    on: ["シツ", "シチ", "チ"],
+    kun: ["たち", "ただ.す", "もと", "わりふ"],
+    meaning: "Calidad / naturaleza / pregunta",
+    examples: [
+      {
+        segments: ruby("[質|しつ]のいい[商品|しょうひん]を[選|えら]びたいです。"),
+        translation: "Quiero elegir un producto de buena calidad.",
+      },
+      {
+        segments: ruby("[質問|しつもん]があれば[手|て]を[挙|あ]げてください。"),
+        translation: "Si tienen preguntas, por favor levanten la mano.",
+      },
+      {
+        segments: ruby("[性質|せいしつ]のちがいを[比|くら]べました。"),
+        translation: "Comparamos las diferencias de propiedades.",
+      },
+      {
+        segments: ruby("[水|みず]の[質|しつ]がいいので、この[地域|ちいき]の[米|こめ]はおいしいです。"),
+        translation: "Como la calidad del agua es buena, el arroz de esta zona es delicioso.",
+      },
+      {
+        segments: ruby("[本質|ほんしつ]を[見|み]るには、[表面|ひょうめん]だけで[判断|はんだん]してはいけません。"),
+        translation: "Para ver la esencia, no se debe juzgar solo por la superficie.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "舎",
+    level: 5,
+    strokeCount: 8,
+    on: ["シャ"],
+    kun: [],
+    meaning: "Edificio / refugio / alojamiento",
+    examples: [
+      {
+        segments: ruby("[校舎|こうしゃ]がとてもきれいです。"),
+        translation: "El edificio de la escuela es muy bonito.",
+      },
+      {
+        segments: ruby("[宿舎|しゅくしゃ]で[生活|せいかつ]している[学生|がくせい]もいます。"),
+        translation: "También hay estudiantes que viven en una residencia.",
+      },
+      {
+        segments: ruby("[会社|かいしゃ]の[社宅|しゃたく]ではなく、[別|べつ]の[宿舎|しゅくしゃ]に[住|す]んでいます。"),
+        translation: "No vivo en la vivienda de la empresa, sino en otra residencia.",
+      },
+      {
+        segments: ruby("[馬舎|ばしゃ]の[近|ちか]くで[馬|うま]を[見|み]ました。"),
+        translation: "Vi caballos cerca del establo.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[校舎|こうしゃ]に[移|うつ]ってから、[教室|きょうしつ]がひろくなりました。"),
+        translation: "Después de cambiarnos al edificio nuevo, las aulas se hicieron más amplias.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "謝",
+    level: 5,
+    strokeCount: 17,
+    on: ["シャ"],
+    kun: ["あやま.る"],
+    meaning: "Agradecer / disculparse",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]にていねいに[謝|あやま]りました。"),
+        translation: "Me disculpé cortésmente con el profesor.",
+      },
+      {
+        segments: ruby("[感謝|かんしゃ]の[気持|きも]ちを[伝|つた]えたいです。"),
+        translation: "Quiero expresar mi agradecimiento.",
+      },
+      {
+        segments: ruby("[迷惑|めいわく]をかけたので、まず[謝|あやま]るべきです。"),
+        translation: "Como causaste molestias, primero debes disculparte.",
+      },
+      {
+        segments: ruby("[感謝祭|かんしゃさい]の[話|はなし]を[授業|じゅぎょう]で[聞|き]きました。"),
+        translation: "Escuché en clase sobre la fiesta de agradecimiento.",
+      },
+      {
+        segments: ruby("[心|こころ]から[感謝|かんしゃ]すると、その[気持|きも]ちはちゃんと[伝|つた]わります。"),
+        translation: "Si agradeces de corazón, ese sentimiento realmente se transmite.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "授",
+    level: 5,
+    strokeCount: 11,
+    on: ["ジュ"],
+    kun: ["さず.ける", "さず.かる"],
+    meaning: "Entregar / enseñar / conferir",
+    examples: [
+      {
+        segments: ruby("[授業|じゅぎょう]は九[時|じ]に[始|はじ]まります。"),
+        translation: "La clase empieza a las nueve.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[大切|たいせつ]なことを[授|さず]けてくれました。"),
+        translation: "El profesor me transmitió algo importante.",
+      },
+      {
+        segments: ruby("[大学|だいがく]で[特別|とくべつ][授業|じゅぎょう]を[受|う]けました。"),
+        translation: "Tomé una clase especial en la universidad.",
+      },
+      {
+        segments: ruby("[卒業式|そつぎょうしき]で[賞状|しょうじょう]を[授与|じゅよ]されました。"),
+        translation: "En la ceremonia de graduación me entregaron un diploma.",
+      },
+      {
+        segments: ruby("[知識|ちしき]をただ[受|う]け[取|と]るだけでなく、[自分|じぶん]でも[学|まな]ぶ[姿勢|しせい]が[大切|たいせつ]です。"),
+        translation: "No solo es importante recibir conocimientos, sino también aprender por uno mismo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "修",
+    level: 5,
+    strokeCount: 10,
+    on: ["シュウ", "シュ"],
+    kun: ["おさ.める", "おさ.まる"],
+    meaning: "Reparar / estudiar / completar",
+    examples: [
+      {
+        segments: ruby("[パソコン]を[修理|しゅうり]に[出|だ]しました。"),
+        translation: "Llevé el computador a reparar.",
+      },
+      {
+        segments: ruby("[大学|だいがく]で[日本史|にほんし]を[専修|せんしゅう]しています。"),
+        translation: "En la universidad me especializo en historia de Japón.",
+      },
+      {
+        segments: ruby("[修正|しゅうせい]したファイルをもう一[度|ど][送|おく]ります。"),
+        translation: "Enviaré otra vez el archivo corregido.",
+      },
+      {
+        segments: ruby("[修学|しゅうがく][旅行|りょこう]で[京都|きょうと]へ[行|い]きました。"),
+        translation: "Fui a Kioto en viaje de estudios.",
+      },
+      {
+        segments: ruby("[文|ぶん]のまちがいを[修|おさ]めるように、ていねいに[見直|みなお]しました。"),
+        translation: "Revisé cuidadosamente para corregir los errores de la oración.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "述",
+    level: 5,
+    strokeCount: 8,
+    on: ["ジュツ"],
+    kun: ["の.べる"],
+    meaning: "Expresar / describir",
+    examples: [
+      {
+        segments: ruby("[自分|じぶん]の[意見|いけん]を[述|の]べてください。"),
+        translation: "Por favor, exprese su opinión.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[感想|かんそう]を[述|の]べる[時間|じかん]をくれました。"),
+        translation: "El profesor nos dio tiempo para expresar nuestras impresiones.",
+      },
+      {
+        segments: ruby("[事実|じじつ]をそのまま[記述|きじゅつ]することが[大切|たいせつ]です。"),
+        translation: "Es importante describir los hechos tal como son.",
+      },
+      {
+        segments: ruby("[会議|かいぎ]で[考|かんが]えを[述|の]べるのは、まだすこし[緊張|きんちょう]します。"),
+        translation: "Todavía me pongo un poco nervioso al expresar mis ideas en una reunión.",
+      },
+      {
+        segments: ruby("[論文|ろんぶん]では、[結果|けっか]だけでなく[理由|りゆう]もくわしく[述|の]べる[必要|ひつよう]があります。"),
+        translation: "En un artículo académico es necesario exponer en detalle no solo el resultado, sino también la razón.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "術",
+    level: 5,
+    strokeCount: 11,
+    on: ["ジュツ"],
+    kun: ["すべ"],
+    meaning: "Técnica / arte / método",
+    examples: [
+      {
+        segments: ruby("[技術|ぎじゅつ]をみがくために[毎日|まいにち][練習|れんしゅう]しています。"),
+        translation: "Practico todos los días para mejorar mi técnica.",
+      },
+      {
+        segments: ruby("[美術|びじゅつ]が[好|す]きなので、[美術館|びじゅつかん]によく[行|い]きます。"),
+        translation: "Como me gusta el arte, voy seguido al museo.",
+      },
+      {
+        segments: ruby("[手術|しゅじゅつ]のあとで、[医者|いしゃ]の[説明|せつめい]を[聞|き]きました。"),
+        translation: "Después de la operación escuché la explicación del médico.",
+      },
+      {
+        segments: ruby("[生|い]きる[術|すべ]を[学|まな]ぶことも[大切|たいせつ]です。"),
+        translation: "También es importante aprender maneras de vivir.",
+      },
+      {
+        segments: ruby("[表現|ひょうげん][技術|ぎじゅつ]をのばすには、[見|み]ることと[作|つく]ることの[両方|りょうほう]が[必要|ひつよう]です。"),
+        translation: "Para desarrollar la técnica de expresión, se necesitan tanto observar como crear.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "準",
+    level: 5,
+    strokeCount: 13,
+    on: ["ジュン"],
+    kun: ["じゅん.じる", "じゅん.ずる"],
+    meaning: "Preparar / estándar / cuasi",
+    examples: [
+      {
+        segments: ruby("[試験|しけん]の[準備|じゅんび]はもうできましたか。"),
+        translation: "¿Ya está lista la preparación para el examen?",
+      },
+      {
+        segments: ruby("[時間|じかん]どおりに[始|はじ]められるように、はやめに[準備|じゅんび]します。"),
+        translation: "Me preparo con anticipación para poder empezar a tiempo.",
+      },
+      {
+        segments: ruby("[基準|きじゅん]に[合|あ]っているか[確認|かくにん]してください。"),
+        translation: "Por favor, confirme si cumple con el criterio.",
+      },
+      {
+        segments: ruby("[準急|じゅんきゅう]に[乗|の]って[学校|がっこう]へ[向|む]かいます。"),
+        translation: "Voy a la escuela en un tren semirrápido.",
+      },
+      {
+        segments: ruby("[心|こころ]の[準備|じゅんび]ができるまで、すこしまってください。"),
+        translation: "Por favor, espere un poco hasta que esté mentalmente preparado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "序",
+    level: 5,
+    strokeCount: 7,
+    on: ["ジョ"],
+    kun: ["つい.で", "ついで"],
+    meaning: "Orden / introducción / comienzo",
+    examples: [
+      {
+        segments: ruby("[順序|じゅんじょ]を[守|まも]って[並|なら]んでください。"),
+        translation: "Por favor, formen fila respetando el orden.",
+      },
+      {
+        segments: ruby("[本|ほん]の[序文|じょぶん]を[先|さき]に[読|よ]みました。"),
+        translation: "Primero leí la introducción del libro.",
+      },
+      {
+        segments: ruby("[授業|じゅぎょう]では、やさしいものから[順序|じゅんじょ]よく[学|まな]びます。"),
+        translation: "En clase aprendemos de manera ordenada, empezando por lo fácil.",
+      },
+      {
+        segments: ruby("[物事|ものごと]には[始|はじ]める[順序|じゅんじょ]があると[感|かん]じました。"),
+        translation: "Sentí que las cosas tienen un orden para empezar.",
+      },
+      {
+        segments: ruby("[話|はなし]の[序盤|じょばん]で[結論|けつろん]が[見|み]えてきました。"),
+        translation: "En la primera parte de la conversación ya empezó a verse la conclusión.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "招",
+    level: 5,
+    strokeCount: 8,
+    on: ["ショウ"],
+    kun: ["まね.く"],
+    meaning: "Invitar / llamar / causar",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]を[家|いえ]に[招|まね]きました。"),
+        translation: "Invité a un amigo a casa.",
+      },
+      {
+        segments: ruby("[結婚式|けっこんしき]に[招待|しょうたい]されました。"),
+        translation: "Fui invitado a una boda.",
+      },
+      {
+        segments: ruby("[先生|せんせい]を[講演会|こうえんかい]に[招|まね]く[予定|よてい]です。"),
+        translation: "Tenemos pensado invitar al profesor a la conferencia.",
+      },
+      {
+        segments: ruby("[油断|ゆだん]が[失敗|しっぱい]を[招|まね]くことがあります。"),
+        translation: "La falta de atención a veces puede provocar errores.",
+      },
+      {
+        segments: ruby("[招待状|しょうたいじょう]がきのう[届|とど]きました。"),
+        translation: "La invitación llegó ayer.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "証",
+    level: 5,
+    strokeCount: 12,
+    on: ["ショウ"],
+    kun: ["あかし"],
+    meaning: "Prueba / certificado / evidencia",
+    examples: [
+      {
+        segments: ruby("[身分|みぶん][証明書|しょうめいしょ]を[見|み]せてください。"),
+        translation: "Por favor, muestre su documento de identidad.",
+      },
+      {
+        segments: ruby("[合格|ごうかく][証|しょう]をもらいました。"),
+        translation: "Recibí el certificado de aprobación.",
+      },
+      {
+        segments: ruby("[努力|どりょく]した[証|あかし]がこの[結果|けっか]です。"),
+        translation: "Este resultado es la prueba de que me esforcé.",
+      },
+      {
+        segments: ruby("[事故|じこ]の[証拠|しょうこ]を[集|あつ]めています。"),
+        translation: "Estamos reuniendo pruebas del accidente.",
+      },
+      {
+        segments: ruby("[会員|かいいん][証|しょう]を[忘|わす]れずに[持|も]ってきてください。"),
+        translation: "Por favor, no olvide traer su tarjeta de miembro.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "象",
+    level: 5,
+    strokeCount: 12,
+    on: ["ショウ", "ゾウ"],
+    kun: [],
+    meaning: "Elefante / fenómeno / imagen",
+    examples: [
+      {
+        segments: ruby("[動物園|どうぶつえん]で[象|ぞう]を[見|み]ました。"),
+        translation: "Vi un elefante en el zoológico.",
+      },
+      {
+        segments: ruby("[天気|てんき]の[変化|へんか]は[自然|しぜん][現象|げんしょう]の一つです。"),
+        translation: "Los cambios del clima son uno de los fenómenos naturales.",
+      },
+      {
+        segments: ruby("[彼|かれ]にはやさしい[印象|いんしょう]があります。"),
+        translation: "Él da una impresión amable.",
+      },
+      {
+        segments: ruby("[事故|じこ]の[対象|たいしょう]となる[車|くるま]を[確認|かくにん]しました。"),
+        translation: "Confirmamos el auto que era objeto del accidente.",
+      },
+      {
+        segments: ruby("[この[作品|さくひん]は[平和|へいわ]を[象徴|しょうちょう]しています。"),
+        translation: "Esta obra simboliza la paz.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "賞",
+    level: 5,
+    strokeCount: 15,
+    on: ["ショウ"],
+    kun: [],
+    meaning: "Premio / galardón",
+    examples: [
+      {
+        segments: ruby("[作文|さくぶん]で[賞|しょう]をもらいました。"),
+        translation: "Recibí un premio por una redacción.",
+      },
+      {
+        segments: ruby("[最優秀|さいゆうしゅう][賞|しょう]をとった[学生|がくせい]をみんなで[祝|いわ]いました。"),
+        translation: "Todos felicitamos al estudiante que ganó el primer premio.",
+      },
+      {
+        segments: ruby("[受賞|じゅしょう]のニュースを[聞|き]いてうれしくなりました。"),
+        translation: "Me alegró escuchar la noticia del premio.",
+      },
+      {
+        segments: ruby("[努力|どりょく]がみとめられて[表彰|ひょうしょう]されました。"),
+        translation: "Reconocieron mi esfuerzo y me premiaron.",
+      },
+      {
+        segments: ruby("[賞品|しょうひん]として[本|ほん]を一[冊|さつ]もらいました。"),
+        translation: "Recibí un libro como premio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "条",
+    level: 5,
+    strokeCount: 7,
+    on: ["ジョウ", "チョウ", "デキ"],
+    kun: [],
+    meaning: "Artículo / condición / franja",
+    examples: [
+      {
+        segments: ruby("[契約書|けいやくしょ]の[第一条|だいいちじょう]を[読|よ]んでください。"),
+        translation: "Por favor, lea el artículo primero del contrato.",
+      },
+      {
+        segments: ruby("[条件|じょうけん]に[合|あ]えば[参加|さんか]できます。"),
+        translation: "Si cumple las condiciones, puede participar.",
+      },
+      {
+        segments: ruby("[三条|さんじょう]のルールをまもることが[必要|ひつよう]です。"),
+        translation: "Es necesario respetar tres reglas.",
+      },
+      {
+        segments: ruby("[横断|おうだん][歩道|ほどう]には[白|しろ]い[線|せん]がしま[条|じょう]に[引|ひ]かれています。"),
+        translation: "En el paso peatonal hay líneas blancas en franjas.",
+      },
+      {
+        segments: ruby("[その[話|はなし]には一つ[条件|じょうけん]があります。"),
+        translation: "Esa propuesta tiene una condición.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "状",
+    level: 5,
+    strokeCount: 7,
+    on: ["ジョウ"],
+    kun: [],
+    meaning: "Estado / forma / carta",
+    examples: [
+      {
+        segments: ruby("[現在|げんざい]の[状況|じょうきょう]を[説明|せつめい]してください。"),
+        translation: "Por favor, explique la situación actual.",
+      },
+      {
+        segments: ruby("[招待状|しょうたいじょう]が[家|いえ]に[届|とど]きました。"),
+        translation: "La invitación llegó a casa.",
+      },
+      {
+        segments: ruby("[丸|まる]い[形状|けいじょう]の[皿|さら]が[好|す]きです。"),
+        translation: "Me gustan los platos de forma redonda.",
+      },
+      {
+        segments: ruby("[症状|しょうじょう]がつづくなら、[病院|びょういん]へ[行|い]ったほうがいいです。"),
+        translation: "Si los síntomas continúan, es mejor ir al hospital.",
+      },
+      {
+        segments: ruby("[現状|げんじょう]をよく[理解|りかい]してから[次|つぎ]を[決|き]めます。"),
+        translation: "Decidiré lo siguiente después de comprender bien la situación actual.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "常",
+    level: 5,
+    strokeCount: 11,
+    on: ["ジョウ"],
+    kun: ["つね", "とこ"],
+    meaning: "Normal / habitual / siempre",
+    examples: [
+      {
+        segments: ruby("[常|つね]に[時間|じかん]を[意識|いしき]して[行動|こうどう]しています。"),
+        translation: "Actúo siempre siendo consciente del tiempo.",
+      },
+      {
+        segments: ruby("[日常|にちじょう]でよく[使|つか]う[表現|ひょうげん]を[練習|れんしゅう]しました。"),
+        translation: "Practiqué expresiones que se usan mucho en la vida diaria.",
+      },
+      {
+        segments: ruby("[異常|いじょう]があれば、すぐに[知|し]らせてください。"),
+        translation: "Si hay alguna anomalía, por favor avise de inmediato.",
+      },
+      {
+        segments: ruby("[常識|じょうしき]のある[行動|こうどう]をこころがけます。"),
+        translation: "Procuro comportarme con sentido común.",
+      },
+      {
+        segments: ruby("[常温|じょうおん]で[保存|ほぞん]できる[食品|しょくひん]です。"),
+        translation: "Es un alimento que se puede conservar a temperatura ambiente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "情",
+    level: 5,
+    strokeCount: 11,
+    on: ["ジョウ", "セイ"],
+    kun: ["なさ.け"],
+    meaning: "Sentimiento / situación / información",
+    examples: [
+      {
+        segments: ruby("[感情|かんじょう]をことばでうまく[伝|つた]えられませんでした。"),
+        translation: "No pude expresar bien mis sentimientos con palabras.",
+      },
+      {
+        segments: ruby("[情報|じょうほう]を[正|ただ]しく[集|あつ]めることが[大切|たいせつ]です。"),
+        translation: "Es importante reunir información correctamente.",
+      },
+      {
+        segments: ruby("[事情|じじょう]があって、きょうは[早|はや]く[帰|かえ]ります。"),
+        translation: "Por ciertas circunstancias, hoy me voy temprano.",
+      },
+      {
+        segments: ruby("[表情|ひょうじょう]を[見|み]ると、すこし[緊張|きんちょう]しているのがわかります。"),
+        translation: "Al verle la expresión, se nota que está un poco nervioso.",
+      },
+      {
+        segments: ruby("[人情|にんじょう]あふれる[町|まち]で[生活|せいかつ]したいです。"),
+        translation: "Quiero vivir en una ciudad llena de calidez humana.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "織",
+    level: 5,
+    strokeCount: 18,
+    on: ["ショク", "シキ"],
+    kun: ["お.る"],
+    meaning: "Tejer / organizar",
+    examples: [
+      {
+        segments: ruby("[布|ぬの]を[織|お]る[仕事|しごと]に[興味|きょうみ]があります。"),
+        translation: "Me interesa el trabajo de tejer telas.",
+      },
+      {
+        segments: ruby("[伝統的|でんとうてき]な[織物|おりもの]を[見学|けんがく]しました。"),
+        translation: "Visité tejidos tradicionales.",
+      },
+      {
+        segments: ruby("[組織|そしき]の[中|なか]での[役割|やくわり]を[理解|りかい]することが[大切|たいせつ]です。"),
+        translation: "Es importante entender el rol dentro de una organización.",
+      },
+      {
+        segments: ruby("[色|いろ]のちがう[糸|いと]を[織|お]り[合|あ]わせてつくります。"),
+        translation: "Se hace entretejiendo hilos de distintos colores.",
+      },
+      {
+        segments: ruby("[地域|ちいき]の[人々|ひとびと]が[協力|きょうりょく]して、[強|つよ]い[組織|そしき]をつくっています。"),
+        translation: "Las personas de la comunidad cooperan para formar una organización sólida.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "職",
+    level: 5,
+    strokeCount: 18,
+    on: ["ショク", "ソク"],
+    kun: [],
+    meaning: "Trabajo / puesto / profesión",
+    examples: [
+      {
+        segments: ruby("[就職|しゅうしょく]のために[面接|めんせつ]を[受|う]けました。"),
+        translation: "Tuve una entrevista para encontrar trabajo.",
+      },
+      {
+        segments: ruby("[職場|しょくば]ではていねいな[言葉|ことば]を[使|つか]います。"),
+        translation: "En el trabajo uso un lenguaje cortés.",
+      },
+      {
+        segments: ruby("[転職|てんしょく]するかどうか[考|かんが]えています。"),
+        translation: "Estoy pensando si cambiar de trabajo o no.",
+      },
+      {
+        segments: ruby("[公務員|こうむいん]という[職業|しょくぎょう]に[興味|きょうみ]があります。"),
+        translation: "Me interesa la profesión de funcionario público.",
+      },
+      {
+        segments: ruby("[自分|じぶん]に[合|あ]う[職|しょく]を[見|み]つけるには、いろいろな[経験|けいけん]が[必要|ひつよう]です。"),
+        translation: "Para encontrar un trabajo adecuado para uno mismo, se necesitan distintas experiencias.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "制",
+    level: 5,
+    strokeCount: 8,
+    on: ["セイ"],
+    kun: [],
+    meaning: "Sistema / control / regulación",
+    examples: [
+      {
+        segments: ruby("[学校|がっこう]は[制服|せいふく][制|せい]です。"),
+        translation: "La escuela tiene sistema de uniforme.",
+      },
+      {
+        segments: ruby("[予約制|よやくせい]なので、[先|さき]に[申|もう]し[込|こ]んでください。"),
+        translation: "Como funciona con reserva, por favor inscríbase antes.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[制度|せいど]について[説明|せつめい]がありました。"),
+        translation: "Hubo una explicación sobre el nuevo sistema.",
+      },
+      {
+        segments: ruby("[時間|じかん]を[制限|せいげん]して[勉強|べんきょう]しています。"),
+        translation: "Estudio limitando el tiempo.",
+      },
+      {
+        segments: ruby("[社会|しゃかい]の[制|せい]どを[理解|りかい]するには、[基本|きほん]から[学|まな]ぶ[必要|ひつよう]があります。"),
+        translation: "Para entender los sistemas de la sociedad, es necesario aprender desde lo básico.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "性",
+    level: 5,
+    strokeCount: 8,
+    on: ["セイ", "ショウ"],
+    kun: ["さが"],
+    meaning: "Naturaleza / característica",
+    examples: [
+      {
+        segments: ruby("[性格|せいかく]があかるい[人|ひと]です。"),
+        translation: "Es una persona de carácter alegre.",
+      },
+      {
+        segments: ruby("[可能性|かのうせい]はまだのこっています。"),
+        translation: "La posibilidad todavía existe.",
+      },
+      {
+        segments: ruby("[安全性|あんぜんせい]をしっかり[確認|かくにん]してください。"),
+        translation: "Por favor, confirme bien la seguridad.",
+      },
+      {
+        segments: ruby("[その[製品|せいひん]の[特性|とくせい]を[調|しら]べました。"),
+        translation: "Investigué las características de ese producto.",
+      },
+      {
+        segments: ruby("[人|ひと]にはそれぞれちがう[性|さが]があると[感|かん]じます。"),
+        translation: "Siento que cada persona tiene una naturaleza diferente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "政",
+    level: 5,
+    strokeCount: 9,
+    on: ["セイ", "ショウ"],
+    kun: ["まつりごと"],
+    meaning: "Política / gobierno",
+    examples: [
+      {
+        segments: ruby("[政治|せいじ]のニュースを[毎朝|まいあさ][見|み]ています。"),
+        translation: "Veo noticias de política todas las mañanas.",
+      },
+      {
+        segments: ruby("[行政|ぎょうせい]のしくみについて[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos en clase sobre el funcionamiento de la administración pública.",
+      },
+      {
+        segments: ruby("[政党|せいとう]のちがいを[比|くら]べています。"),
+        translation: "Estoy comparando las diferencias entre partidos políticos.",
+      },
+      {
+        segments: ruby("[政治家|せいじか]の[発言|はつげん]が[話題|わだい]になりました。"),
+        translation: "Las declaraciones del político se volvieron tema de conversación.",
+      },
+      {
+        segments: ruby("[暮|く]らしに[関係|かんけい]する[政策|せいさく]には[関心|かんしん]をもっています。"),
+        translation: "Tengo interés en las políticas que afectan la vida diaria.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "勢",
+    level: 5,
+    strokeCount: 13,
+    on: ["セイ", "ゼイ"],
+    kun: ["いきお.い"],
+    meaning: "Fuerza / impulso / situación",
+    examples: [
+      {
+        segments: ruby("[勢|いきお]いよくドアをあけました。"),
+        translation: "Abrí la puerta con fuerza.",
+      },
+      {
+        segments: ruby("[大勢|おおぜい]の[人|ひと]が[集|あつ]まっています。"),
+        translation: "Se está reuniendo mucha gente.",
+      },
+      {
+        segments: ruby("[最近|さいきん]の[景気|けいき]の[勢|いきお]いについて[話|はな]しました。"),
+        translation: "Hablamos sobre el impulso reciente de la economía.",
+      },
+      {
+        segments: ruby("[火|ひ]の[勢|いきお]いがつよくて、すぐには[近|ちか]づけませんでした。"),
+        translation: "El fuego tenía mucha fuerza y no pudimos acercarnos enseguida.",
+      },
+      {
+        segments: ruby("[勢力|せいりょく]がひろがりすぎないように[注意|ちゅうい]が[必要|ひつよう]です。"),
+        translation: "Hay que tener cuidado para que la influencia no se expanda demasiado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "精",
+    level: 5,
+    strokeCount: 14,
+    on: ["セイ", "ショウ"],
+    kun: ["しら.げる", "くわ.しい"],
+    meaning: "Espíritu / refinado / detallado",
+    examples: [
+      {
+        segments: ruby("[精神|せいしん]を[集中|しゅうちゅう]させて[勉強|べんきょう]します。"),
+        translation: "Concentro la mente para estudiar.",
+      },
+      {
+        segments: ruby("[精米|せいまい]した[米|こめ]を[使|つか]っています。"),
+        translation: "Estamos usando arroz refinado.",
+      },
+      {
+        segments: ruby("[精密|せいみつ]な[作業|さぎょう]には[注意|ちゅうい]が[必要|ひつよう]です。"),
+        translation: "Los trabajos precisos requieren cuidado.",
+      },
+      {
+        segments: ruby("[精一杯|せいいっぱい]がんばりました。"),
+        translation: "Me esforcé al máximo.",
+      },
+      {
+        segments: ruby("[内容|ないよう]をもっと[精|くわ]しく[知|し]りたいです。"),
+        translation: "Quiero conocer el contenido con más detalle.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "製",
+    level: 5,
+    strokeCount: 14,
+    on: ["セイ"],
+    kun: [],
+    meaning: "Fabricar / producto hecho",
+    examples: [
+      {
+        segments: ruby("[日本製|にほんせい]の[製品|せいひん]を[買|か]いました。"),
+        translation: "Compré un producto fabricado en Japón.",
+      },
+      {
+        segments: ruby("[工場|こうじょう]で[新|あたら]しい[製品|せいひん]をつくっています。"),
+        translation: "En la fábrica están haciendo un producto nuevo.",
+      },
+      {
+        segments: ruby("[手作|てづく]りの[製品|せいひん]にはあたたかみがあります。"),
+        translation: "Los productos hechos a mano tienen calidez.",
+      },
+      {
+        segments: ruby("[製作|せいさく]に[時間|じかん]がかかりました。"),
+        translation: "La producción tomó tiempo.",
+      },
+      {
+        segments: ruby("[この[会社|かいしゃ]は[安全|あんぜん]な[製品|せいひん]づくりを[大切|たいせつ]にしています。"),
+        translation: "Esta empresa valora la fabricación de productos seguros.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "税",
+    level: 5,
+    strokeCount: 12,
+    on: ["ゼイ"],
+    kun: [],
+    meaning: "Impuesto",
+    examples: [
+      {
+        segments: ruby("[買|か]い[物|もの]をすると[消費税|しょうひぜい]がかかります。"),
+        translation: "Cuando compras algo, se cobra impuesto al consumo.",
+      },
+      {
+        segments: ruby("[税金|ぜいきん]についての[説明|せつめい]を[聞|き]きました。"),
+        translation: "Escuché una explicación sobre los impuestos.",
+      },
+      {
+        segments: ruby("[税込|ぜいこ]みの[値段|ねだん]を[確認|かくにん]してください。"),
+        translation: "Por favor, revise el precio con impuesto incluido.",
+      },
+      {
+        segments: ruby("[住民税|じゅうみんぜい]や[所得税|しょとくぜい]について[勉強|べんきょう]しています。"),
+        translation: "Estoy estudiando sobre el impuesto de residencia y el impuesto a la renta.",
+      },
+      {
+        segments: ruby("[税率|ぜいりつ]が[変|か]わると、[生活|せいかつ]にも[影響|えいきょう]がでます。"),
+        translation: "Cuando cambia la tasa de impuestos, también afecta la vida diaria.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "責",
+    level: 5,
+    strokeCount: 11,
+    on: ["セキ"],
+    kun: ["せ.める"],
+    meaning: "Responsabilidad / culpar",
+    examples: [
+      {
+        segments: ruby("[責任|せきにん]をもって[仕事|しごと]をします。"),
+        translation: "Trabajo con responsabilidad.",
+      },
+      {
+        segments: ruby("[相手|あいて]をすぐに[責|せ]めるのはよくありません。"),
+        translation: "No está bien culpar de inmediato a la otra persona.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[役割|やくわり]に[責任|せきにん]を[感|かん]じています。"),
+        translation: "Siento responsabilidad por mi rol.",
+      },
+      {
+        segments: ruby("[失敗|しっぱい]の[原因|げんいん]をだれか一人のせいにして[責|せ]めるべきではありません。"),
+        translation: "No se debe culpar a una sola persona por la causa del error.",
+      },
+      {
+        segments: ruby("[責任感|せきにんかん]のある[人|ひと]だと[思|おも]われたいです。"),
+        translation: "Quiero que me vean como una persona con sentido de responsabilidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "績",
+    level: 5,
+    strokeCount: 17,
+    on: ["セキ"],
+    kun: [],
+    meaning: "Logro / resultado / rendimiento",
+    examples: [
+      {
+        segments: ruby("[成績|せいせき]がすこし[上|あ]がりました。"),
+        translation: "Mis notas subieron un poco.",
+      },
+      {
+        segments: ruby("[努力|どりょく]の[成果|せいか]が[成績|せいせき]にあらわれました。"),
+        translation: "El fruto del esfuerzo apareció en las notas.",
+      },
+      {
+        segments: ruby("[業績|ぎょうせき]がよかったので、[会社|かいしゃ]の[雰囲気|ふんいき]もあかるいです。"),
+        translation: "Como los resultados de la empresa fueron buenos, el ambiente también está mejor.",
+      },
+      {
+        segments: ruby("[実績|じっせき]をみて[判断|はんだん]することが[大切|たいせつ]です。"),
+        translation: "Es importante juzgar viendo los logros concretos.",
+      },
+      {
+        segments: ruby("[成績表|せいせきひょう]を[家族|かぞく]に[見|み]せました。"),
+        translation: "Le mostré a mi familia el boletín de notas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "接",
+    level: 5,
+    strokeCount: 11,
+    on: ["セツ", "ショウ"],
+    kun: ["つ.ぐ"],
+    meaning: "Contactar / tocar / unir",
+    examples: [
+      {
+        segments: ruby("[面接|めんせつ]の[時間|じかん]が[決|き]まりました。"),
+        translation: "Ya se decidió la hora de la entrevista.",
+      },
+      {
+        segments: ruby("[先生|せんせい]と[直接|ちょくせつ][話|はな]す[機会|きかい]がありました。"),
+        translation: "Tuve la oportunidad de hablar directamente con el profesor.",
+      },
+      {
+        segments: ruby("[人|ひと]と[接|せっ]するときは、ていねいな[言葉|ことば]を[使|つか]います。"),
+        translation: "Cuando trato con personas, uso un lenguaje cortés.",
+      },
+      {
+        segments: ruby("[点|てん]と[点|てん]を[接|せつ][続|ぞく]して[線|せん]にしてください。"),
+        translation: "Conecte los puntos para formar una línea.",
+      },
+      {
+        segments: ruby("[接客|せっきゃく]の[仕事|しごと]では、[相手|あいて]の[気持|きも]ちを[考|かんが]えることが[大切|たいせつ]です。"),
+        translation: "En trabajos de atención al público, es importante pensar en los sentimientos de la otra persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "設",
+    level: 5,
+    strokeCount: 11,
+    on: ["セツ"],
+    kun: ["もう.ける"],
+    meaning: "Establecer / instalar",
+    examples: [
+      {
+        segments: ruby("[会場|かいじょう]に[受付|うけつけ]を[設|もう]けました。"),
+        translation: "Instalamos una recepción en el lugar del evento.",
+      },
+      {
+        segments: ruby("[新|あたら]しいルールを[設|もう]ける[前|まえ]に、みんなの[意見|いけん]を[聞|き]きます。"),
+        translation: "Antes de establecer una nueva regla, escuchamos la opinión de todos.",
+      },
+      {
+        segments: ruby("[設備|せつび]がととのった[教室|きょうしつ]で[勉強|べんきょう]できます。"),
+        translation: "Podemos estudiar en un aula con buen equipamiento.",
+      },
+      {
+        segments: ruby("[学校|がっこう]の[近|ちか]くに[新|あたら]しい[施設|しせつ]が[設置|せっち]されました。"),
+        translation: "Se instaló una nueva instalación cerca de la escuela.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]なのは、[目標|もくひょう]を[設|もう]けたあとに[続|つづ]けて[努力|どりょく]することです。"),
+        translation: "Lo importante es seguir esforzándose después de fijar una meta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "絶",
+    level: 5,
+    strokeCount: 12,
+    on: ["ゼツ"],
+    kun: ["た.える", "た.やす", "た.つ"],
+    meaning: "Cortar / interrumpir / absoluto",
+    examples: [
+      {
+        segments: ruby("[連絡|れんらく]が[絶|た]えてしまいました。"),
+        translation: "Se interrumpió la comunicación.",
+      },
+      {
+        segments: ruby("[絶対|ぜったい]に[忘|わす]れないでください。"),
+        translation: "Por favor, no lo olvides bajo ningún motivo.",
+      },
+      {
+        segments: ruby("[山|やま]の[上|うえ]から[絶景|ぜっけい]が[見|み]えました。"),
+        translation: "Desde la cima de la montaña se veía un paisaje espectacular.",
+      },
+      {
+        segments: ruby("[水|みず]を[絶|た]やさないように[注意|ちゅうい]してください。"),
+        translation: "Por favor, tenga cuidado de no dejar que falte el agua.",
+      },
+      {
+        segments: ruby("[努力|どりょく]を[絶|た]たずに[続|つづ]ければ、いつか[結果|けっか]がでると[思|おも]います。"),
+        translation: "Creo que si sigues esforzándote sin detenerte, algún día habrá resultados.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "祖",
+    level: 5,
+    strokeCount: 9,
+    on: ["ソ"],
+    kun: [],
+    meaning: "Antepasado / fundador",
+    examples: [
+      {
+        segments: ruby("[祖父|そふ]は[毎朝|まいあさ][早|はや]く[起|お]きます。"),
+        translation: "Mi abuelo se levanta temprano todas las mañanas.",
+      },
+      {
+        segments: ruby("[祖母|そぼ]がつくる[料理|りょうり]はとてもおいしいです。"),
+        translation: "La comida que prepara mi abuela es muy rica.",
+      },
+      {
+        segments: ruby("[先祖|せんぞ]について[家族|かぞく]で[話|はな]しました。"),
+        translation: "Hablamos en familia sobre los antepasados.",
+      },
+      {
+        segments: ruby("[祖国|そこく]を[思|おも]う[気持|きも]ちは[人|ひと]それぞれです。"),
+        translation: "El sentimiento hacia la patria es distinto para cada persona.",
+      },
+      {
+        segments: ruby("[祖先|そせん]から[受|う]けついできた[文化|ぶんか]を[大切|たいせつ]にしたいです。"),
+        translation: "Quiero valorar la cultura heredada de los antepasados.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "素",
+    level: 5,
+    strokeCount: 10,
+    on: ["ソ", "ス"],
+    kun: [],
+    meaning: "Elemento / simple / natural",
+    examples: [
+      {
+        segments: ruby("[素材|そざい]のよさをいかした[料理|りょうり]です。"),
+        translation: "Es una comida que aprovecha la calidad de los ingredientes.",
+      },
+      {
+        segments: ruby("[素直|すなお]にあやまることも[大切|たいせつ]です。"),
+        translation: "También es importante disculparse con sinceridad.",
+      },
+      {
+        segments: ruby("[元素|げんそ]について[理科|りか]で[学|まな]びました。"),
+        translation: "Aprendimos sobre los elementos en ciencias.",
+      },
+      {
+        segments: ruby("[素手|すで]ではさわらないでください。"),
+        translation: "Por favor, no lo toque con las manos desnudas.",
+      },
+      {
+        segments: ruby("[素朴|そぼく]な[疑問|ぎもん]でも、[聞|き]くことは[大切|たいせつ]だと[思|おも]います。"),
+        translation: "Creo que incluso una duda simple merece ser preguntada.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "総",
+    level: 5,
+    strokeCount: 14,
+    on: ["ソウ"],
+    kun: [],
+    meaning: "Total / general",
+    examples: [
+      {
+        segments: ruby("[総数|そうすう]を[確認|かくにん]してください。"),
+        translation: "Por favor, confirme la cantidad total.",
+      },
+      {
+        segments: ruby("[総合|そうごう]テストの[結果|けっか]がでました。"),
+        translation: "Ya salieron los resultados del examen general.",
+      },
+      {
+        segments: ruby("[総理|そうり]の[発言|はつげん]がニュースになりました。"),
+        translation: "Las declaraciones del primer ministro salieron en las noticias.",
+      },
+      {
+        segments: ruby("[総|そう]じて[見|み]ると、よい[一年|いちねん]だったと[思|おも]います。"),
+        translation: "En general, creo que fue un buen año.",
+      },
+      {
+        segments: ruby("[総合的|そうごうてき]に[考|かんが]えて、この[方法|ほうほう]がいちばんよさそうです。"),
+        translation: "Considerándolo en conjunto, este método parece el mejor.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "造",
+    level: 5,
+    strokeCount: 10,
+    on: ["ゾウ"],
+    kun: ["つく.る"],
+    meaning: "Construir / fabricar",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[橋|はし]を[造|つく]っています。"),
+        translation: "Están construyendo un puente nuevo.",
+      },
+      {
+        segments: ruby("[酒造|しゅぞう]の[歴史|れきし]について[学|まな]びました。"),
+        translation: "Aprendimos sobre la historia de la fabricación de sake.",
+      },
+      {
+        segments: ruby("[人工|じんこう]の[池|いけ]を[造|つく]る[計画|けいかく]があります。"),
+        translation: "Hay un plan para construir un estanque artificial.",
+      },
+      {
+        segments: ruby("[この[建物|たてもの]は[木|き]を[中心|ちゅうしん]に[造|つく]られています。"),
+        translation: "Este edificio está construido principalmente con madera.",
+      },
+      {
+        segments: ruby("[伝統|でんとう]をまもりながら[新|あたら]しいものを[造|つく]るのはむずかしいですが、おもしろいです。"),
+        translation: "Crear algo nuevo manteniendo la tradición es difícil, pero interesante.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "像",
+    level: 5,
+    strokeCount: 14,
+    on: ["ゾウ"],
+    kun: [],
+    meaning: "Imagen / estatua",
+    examples: [
+      {
+        segments: ruby("[駅前|えきまえ]に[銅像|どうぞう]があります。"),
+        translation: "Hay una estatua de bronce frente a la estación.",
+      },
+      {
+        segments: ruby("[人物像|じんぶつぞう]を[想像|そうぞう]しながら[小説|しょうせつ]を[読|よ]みました。"),
+        translation: "Leí la novela imaginando cómo era el personaje.",
+      },
+      {
+        segments: ruby("[将来像|しょうらいぞう]をはっきりもつことが[大切|たいせつ]です。"),
+        translation: "Es importante tener una imagen clara del futuro.",
+      },
+      {
+        segments: ruby("[映像|えいぞう]がきれいで[見|み]やすかったです。"),
+        translation: "La imagen era nítida y fácil de ver.",
+      },
+      {
+        segments: ruby("[頭|あたま]の[中|なか]で[理想|りそう]の[自分像|じぶんぞう]を[描|えが]いています。"),
+        translation: "En mi mente dibujo la imagen de la persona que quiero llegar a ser.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "増",
+    level: 5,
+    strokeCount: 14,
+    on: ["ゾウ"],
+    kun: ["ま.える", "ふ.える", "ふ.やす"],
+    meaning: "Aumentar / incrementar",
+    examples: [
+      {
+        segments: ruby("[最近|さいきん]、[外国人|がいこくじん]の[観光客|かんこうきゃく]が[増|ふ]えています。"),
+        translation: "Últimamente han aumentado los turistas extranjeros.",
+      },
+      {
+        segments: ruby("[勉強|べんきょう][時間|じかん]をもう少し[増|ふ]やしたいです。"),
+        translation: "Quiero aumentar un poco más mi tiempo de estudio.",
+      },
+      {
+        segments: ruby("[体重|たいじゅう]が[増|ふ]えないように[気|き]をつけています。"),
+        translation: "Tengo cuidado para no subir de peso.",
+      },
+      {
+        segments: ruby("[収入|しゅうにゅう]が[増|ふ]えれば、もっと[安心|あんしん]して[生活|せいかつ]できます。"),
+        translation: "Si aumentan los ingresos, se puede vivir con más tranquilidad.",
+      },
+      {
+        segments: ruby("[経験|けいけん]を[増|ふ]やすには、いろいろなことに[挑戦|ちょうせん]する[必要|ひつよう]があります。"),
+        translation: "Para acumular experiencia, es necesario probar muchas cosas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "則",
+    level: 5,
+    strokeCount: 9,
+    on: ["ソク"],
+    kun: ["のっと.る"],
+    meaning: "Regla / norma / conforme a",
+    examples: [
+      {
+        segments: ruby("[規則|きそく]を[守|まも]ってください。"),
+        translation: "Por favor, respete las reglas.",
+      },
+      {
+        segments: ruby("[学校|がっこう][生活|せいかつ]は[校則|こうそく]に[従|したが]って[送|おく]ります。"),
+        translation: "La vida escolar se lleva siguiendo el reglamento del colegio.",
+      },
+      {
+        segments: ruby("[原則|げんそく]として、[遅刻|ちこく]は[認|みと]められません。"),
+        translation: "En principio, no se aceptan atrasos.",
+      },
+      {
+        segments: ruby("[法律|ほうりつ]に[則|のっと]って[手続|てつづ]きを[進|すす]めます。"),
+        translation: "Realizaremos el trámite conforme a la ley.",
+      },
+      {
+        segments: ruby("[生活|せいかつ]には[自由|じゆう]も[必要|ひつよう]ですが、[一定|いってい]の[規則|きそく]も[大切|たいせつ]です。"),
+        translation: "En la vida se necesita libertad, pero también son importantes ciertas reglas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "測",
+    level: 5,
+    strokeCount: 12,
+    on: ["ソク"],
+    kun: ["はか.る"],
+    meaning: "Medir / estimar",
+    examples: [
+      {
+        segments: ruby("[長|なが]さを[正確|せいかく]に[測|はか]ってください。"),
+        translation: "Por favor, mida la longitud con precisión.",
+      },
+      {
+        segments: ruby("[体温|たいおん]を[測|はか]ってから[学校|がっこう]へ[行|い]きます。"),
+        translation: "Me tomo la temperatura antes de ir a la escuela.",
+      },
+      {
+        segments: ruby("[予測|よそく]どおりに[雨|あめ]が[降|ふ]りました。"),
+        translation: "Llovió tal como se había previsto.",
+      },
+      {
+        segments: ruby("[気持|きも]ちは[簡単|かんたん]には[測|はか]れません。"),
+        translation: "Los sentimientos no se pueden medir fácilmente.",
+      },
+      {
+        segments: ruby("[時間|じかん]の[感覚|かんかく]を[正|ただ]しく[測|はか]るのは、いそがしいときほどむずかしいです。"),
+        translation: "Medir correctamente la sensación del tiempo es más difícil precisamente cuando uno está ocupado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "属",
+    level: 5,
+    strokeCount: 12,
+    on: ["ゾク", "ショク"],
+    kun: ["ぞく.する"],
+    meaning: "Pertenecer / grupo / género",
+    examples: [
+      {
+        segments: ruby("[私|わたし]は[音楽|おんがく]サークルに[属|ぞく]しています。"),
+        translation: "Pertenezco al club de música.",
+      },
+      {
+        segments: ruby("[この[動物|どうぶつ]は[猫|ねこ]の[仲間|なかま]に[属|ぞく]します。"),
+        translation: "Este animal pertenece al grupo de los gatos.",
+      },
+      {
+        segments: ruby("[家族|かぞく]に[属|ぞく]する[大切|たいせつ]な[写真|しゃしん]です。"),
+        translation: "Es una foto importante que pertenece a la familia.",
+      },
+      {
+        segments: ruby("[金属|きんぞく]でできた[机|つくえ]はじょうぶです。"),
+        translation: "Un escritorio hecho de metal es resistente.",
+      },
+      {
+        segments: ruby("[どの[分野|ぶんや]に[属|ぞく]する[問題|もんだい]なのかを[考|かんが]えると、[解決|かいけつ]しやすくなります。"),
+        translation: "Si piensas a qué área pertenece el problema, se vuelve más fácil resolverlo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "率",
+    level: 5,
+    strokeCount: 11,
+    on: ["ソツ", "リツ"],
+    kun: ["ひき.いる"],
+    meaning: "Tasa / liderar",
+    examples: [
+      {
+        segments: ruby("[出席率|しゅっせきりつ]がとても[高|たか]いクラスです。"),
+        translation: "Es una clase con una tasa de asistencia muy alta.",
+      },
+      {
+        segments: ruby("[効率|こうりつ]のいい[勉強法|べんきょうほう]をさがしています。"),
+        translation: "Estoy buscando un método de estudio eficiente.",
+      },
+      {
+        segments: ruby("[先生|せんせい]がクラスを[率|ひき]いて[見学|けんがく]に[行|い]きました。"),
+        translation: "El profesor dirigió a la clase y fueron de visita.",
+      },
+      {
+        segments: ruby("[成功率|せいこうりつ]をあげるために、もっと[準備|じゅんび]が[必要|ひつよう]です。"),
+        translation: "Para aumentar la tasa de éxito, hace falta más preparación.",
+      },
+      {
+        segments: ruby("[小|ちい]さな[工夫|くふう]でも[効率|こうりつ]は[大|おお]きく[変|か]わることがあります。"),
+        translation: "Incluso con pequeñas mejoras, la eficiencia puede cambiar mucho.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "損",
+    level: 5,
+    strokeCount: 13,
+    on: ["ソン"],
+    kun: ["そこ.なう", "そこ.ねる"],
+    meaning: "Perder / dañar / desventaja",
+    examples: [
+      {
+        segments: ruby("[急|いそ]いで[買|か]うと[損|そん]をすることがあります。"),
+        translation: "Si compras apresuradamente, a veces terminas perdiendo.",
+      },
+      {
+        segments: ruby("[機械|きかい]を[落|お]として[損|そこ]なってしまいました。"),
+        translation: "Se dañó la máquina al dejarla caer.",
+      },
+      {
+        segments: ruby("[損失|そんしつ]が[大|おお]きくならないように[注意|ちゅうい]します。"),
+        translation: "Tendremos cuidado de que la pérdida no se haga mayor.",
+      },
+      {
+        segments: ruby("[体調|たいちょう]を[損|そこ]ねないように、むりをしません。"),
+        translation: "No me esfuerzo demasiado para no perjudicar mi salud.",
+      },
+      {
+        segments: ruby("[得|とく]か[損|そん]かだけで[決|き]めずに、[長|なが]い[目|め]で[考|かんが]えたほうがいいです。"),
+        translation: "Es mejor pensar a largo plazo y no decidir solo por ganancia o pérdida.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "貸",
+    level: 5,
+    strokeCount: 12,
+    on: ["タイ"],
+    kun: ["か.す"],
+    meaning: "Prestar / alquilar",
+    examples: [
+      {
+        segments: ruby("[友達|ともだち]に[本|ほん]を[貸|か]しました。"),
+        translation: "Le presté un libro a un amigo.",
+      },
+      {
+        segments: ruby("[図書館|としょかん]は[本|ほん]を[無料|むりょう]で[貸|か]してくれます。"),
+        translation: "La biblioteca presta libros gratis.",
+      },
+      {
+        segments: ruby("[貸出中|かしだしちゅう]なので、いまは[借|か]りられません。"),
+        translation: "Está prestado en este momento, así que ahora no se puede pedir.",
+      },
+      {
+        segments: ruby("[会議室|かいぎしつ]を一[時間|じかん][貸|か]してください。"),
+        translation: "Por favor, préstenme la sala de reuniones por una hora.",
+      },
+      {
+        segments: ruby("[だれに[何|なに]を[貸|か]したか、ちゃんと[記録|きろく]しておくと[安心|あんしん]です。"),
+        translation: "Da tranquilidad dejar bien registrado qué se prestó y a quién.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "態",
+    level: 5,
+    strokeCount: 14,
+    on: ["タイ"],
+    kun: [],
+    meaning: "Estado / actitud / forma",
+    examples: [
+      {
+        segments: ruby("[態度|たいど]に[気|き]をつけてください。"),
+        translation: "Por favor, cuide su actitud.",
+      },
+      {
+        segments: ruby("[状態|じょうたい]がよくなってきました。"),
+        translation: "El estado ha ido mejorando.",
+      },
+      {
+        segments: ruby("[緊急|きんきゅう][事態|じたい]にそなえて[準備|じゅんび]しています。"),
+        translation: "Nos preparamos para una situación de emergencia.",
+      },
+      {
+        segments: ruby("[学|まな]ぶ[態度|たいど]がまじめだと[先生|せんせい]にほめられました。"),
+        translation: "El profesor elogió mi actitud seria para aprender.",
+      },
+      {
+        segments: ruby("[問題|もんだい]が[起|お]きたときの[対処|たいしょ]は、そのときの[状況|じょうきょう]や[態勢|たいせい]によって[変|か]わります。"),
+        translation: "La forma de enfrentar un problema cambia según la situación y la disposición del momento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "団",
+    level: 5,
+    strokeCount: 6,
+    on: ["ダン", "トン"],
+    kun: [],
+    meaning: "Grupo / organización / masa",
+    examples: [
+      {
+        segments: ruby("[団体|だんたい]で[旅行|りょこう]します。"),
+        translation: "Viajaremos en grupo.",
+      },
+      {
+        segments: ruby("[野球団|やきゅうだん]の[試合|しあい]を[見|み]ました。"),
+        translation: "Vi un partido de un equipo de béisbol.",
+      },
+      {
+        segments: ruby("[布団|ふとん]をほしてから[入|い]れます。"),
+        translation: "Ventilo el futón antes de guardarlo.",
+      },
+      {
+        segments: ruby("[少年団|しょうねんだん]の[活動|かつどう]に[参加|さんか]しています。"),
+        translation: "Participo en las actividades del grupo juvenil.",
+      },
+      {
+        segments: ruby("[一人|ひとり]でがんばることも[大切|たいせつ]ですが、[団体|だんたい]で[協力|きょうりょく]する[力|ちから]も[必要|ひつよう]です。"),
+        translation: "Es importante esforzarse solo, pero también se necesita la capacidad de cooperar en grupo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "断",
+    level: 5,
+    strokeCount: 11,
+    on: ["ダン"],
+    kun: ["た.つ", "ことわ.る"],
+    meaning: "Cortar / decidir / rechazar",
+    examples: [
+      {
+        segments: ruby("[電気|でんき]が[突然|とつぜん][切断|せつだん]されました。"),
+        translation: "La electricidad se cortó de repente.",
+      },
+      {
+        segments: ruby("[先生|せんせい]のさそいを[断|ことわ]るのは、すこしきんちょうします。"),
+        translation: "Me pone un poco nervioso rechazar una invitación del profesor.",
+      },
+      {
+        segments: ruby("[決断|けつだん]するには[勇気|ゆうき]が[必要|ひつよう]です。"),
+        translation: "Para tomar una decisión se necesita valentía.",
+      },
+      {
+        segments: ruby("[無断|むだん]で[写真|しゃしん]をつかってはいけません。"),
+        translation: "No se pueden usar fotos sin permiso.",
+      },
+      {
+        segments: ruby("[必要|ひつよう]のないことを[思|おも]い[切|き]って[断|た]つと、もっと[集中|しゅうちゅう]しやすくなります。"),
+        translation: "Si cortas decididamente lo que no es necesario, es más fácil concentrarte.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "築",
+    level: 5,
+    strokeCount: 16,
+    on: ["チク"],
+    kun: ["きず.く"],
+    meaning: "Construir / edificar",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[関係|かんけい]を[築|きず]いていきたいです。"),
+        translation: "Quiero ir construyendo nuevas relaciones.",
+      },
+      {
+        segments: ruby("[家|いえ]を[築|きず]くには[時間|じかん]とお[金|かね]がかかります。"),
+        translation: "Construir una casa requiere tiempo y dinero.",
+      },
+      {
+        segments: ruby("[建築|けんちく]に[興味|きょうみ]があるので、いろいろな[建物|たてもの]を[見|み]ます。"),
+        translation: "Como me interesa la arquitectura, observo muchos edificios.",
+      },
+      {
+        segments: ruby("[信頼|しんらい]は一[日|にち]では[築|きず]けません。"),
+        translation: "La confianza no se construye en un solo día.",
+      },
+      {
+        segments: ruby("[長|なが]い[時間|じかん]をかけて[築|きず]いたものほど、[大切|たいせつ]にしたくなります。"),
+        translation: "Mientras más tiempo tomó construir algo, más dan ganas de valorarlo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "貯",
+    level: 5,
+    strokeCount: 12,
+    on: ["チョ"],
+    kun: ["た.める", "たくわ.える"],
+    meaning: "Ahorrar / almacenar",
+    examples: [
+      {
+        segments: ruby("[貯金|ちょきん]を[少|すこ]しずつしています。"),
+        translation: "Estoy ahorrando poco a poco.",
+      },
+      {
+        segments: ruby("[水|みず]を[貯|た]めておくとあんしんです。"),
+        translation: "Da tranquilidad guardar agua.",
+      },
+      {
+        segments: ruby("[旅行|りょこう]のためにお[金|かね]を[貯|た]めています。"),
+        translation: "Estoy ahorrando dinero para viajar.",
+      },
+      {
+        segments: ruby("[力|ちから]を[貯|たくわ]えて、ここぞというときに[使|つか]いたいです。"),
+        translation: "Quiero guardar energía para usarla en el momento indicado.",
+      },
+      {
+        segments: ruby("[貯水池|ちょすいち]の[水量|すいりょう]がへると、[生活|せいかつ]にも[影響|えいきょう]がでます。"),
+        translation: "Si baja la cantidad de agua del embalse, también afecta la vida diaria.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "張",
+    level: 5,
+    strokeCount: 11,
+    on: ["チョウ"],
+    kun: ["は.る"],
+    meaning: "Estirar / tensar / afirmar",
+    examples: [
+      {
+        segments: ruby("[地図|ちず]を[壁|かべ]に[張|は]りました。"),
+        translation: "Pegué el mapa en la pared.",
+      },
+      {
+        segments: ruby("[緊張|きんちょう]して[声|こえ]がでませんでした。"),
+        translation: "Estaba tan nervioso que no me salía la voz.",
+      },
+      {
+        segments: ruby("[自信|じしん]をもって[意見|いけん]を[主張|しゅちょう]してください。"),
+        translation: "Exprese su opinión con confianza.",
+      },
+      {
+        segments: ruby("[糸|いと]をしっかり[張|は]ってください。"),
+        translation: "Por favor, tense bien el hilo.",
+      },
+      {
+        segments: ruby("[気持|きも]ちが[張|は]りつめているときほど、すこし[休|やす]むことが[大切|たいせつ]です。"),
+        translation: "Cuando los nervios están muy tensos, es aún más importante descansar un poco.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "停",
+    level: 5,
+    strokeCount: 11,
+    on: ["テイ"],
+    kun: ["と.まる", "と.める"],
+    meaning: "Detenerse / parar",
+    examples: [
+      {
+        segments: ruby("[電車|でんしゃ]が[駅|えき]で[停車|ていしゃ]します。"),
+        translation: "El tren se detiene en la estación.",
+      },
+      {
+        segments: ruby("[停留所|ていりゅうじょ]でバスを[待|ま]ちます。"),
+        translation: "Espero el bus en la parada.",
+      },
+      {
+        segments: ruby("[一時|いちじ][停止|ていし]してください。"),
+        translation: "Por favor, haga una detención momentánea.",
+      },
+      {
+        segments: ruby("[停電|ていでん]で[部屋|へや]が[暗|くら]くなりました。"),
+        translation: "La habitación quedó oscura por un corte de luz.",
+      },
+      {
+        segments: ruby("[車|くるま]が[家|いえ]の[前|まえ]に[停|と]まっています。"),
+        translation: "Hay un auto detenido frente a la casa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "提",
+    level: 5,
+    strokeCount: 12,
+    on: ["テイ", "チョウ"],
+    kun: ["さ.げる"],
+    meaning: "Presentar / proponer / entregar",
+    examples: [
+      {
+        segments: ruby("[レポート]を[明日|あした][提出|ていしゅつ]します。"),
+        translation: "Entregaré el informe mañana.",
+      },
+      {
+        segments: ruby("それはいい[提案|ていあん]ですね。"),
+        translation: "Esa es una buena propuesta.",
+      },
+      {
+        segments: ruby("[身分証|みぶんしょう]を[提示|ていじ]してください。"),
+        translation: "Por favor, muestre su identificación.",
+      },
+      {
+        segments: ruby("[飲|の]み[物|もの]が[無料|むりょう]で[提供|ていきょう]されます。"),
+        translation: "Se ofrecerán bebidas gratis.",
+      },
+      {
+        segments: ruby("[前提|ぜんてい]をしっかり[確認|かくにん]してから[話|はな]し[合|あ]いましょう。"),
+        translation: "Confirmemos bien la base del tema antes de conversar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "程",
+    level: 5,
+    strokeCount: 12,
+    on: ["テイ"],
+    kun: ["ほど"],
+    meaning: "Grado / nivel / aproximadamente",
+    examples: [
+      {
+        segments: ruby("ちょうどいい[程度|ていど]です。"),
+        translation: "Es un grado justo y adecuado.",
+      },
+      {
+        segments: ruby("[思|おも]った[程|ほど]むずかしくありませんでした。"),
+        translation: "No fue tan difícil como pensaba.",
+      },
+      {
+        segments: ruby("[作業|さぎょう]には一[時間|じかん][程|ほど]かかります。"),
+        translation: "El trabajo toma aproximadamente una hora.",
+      },
+      {
+        segments: ruby("[予定|よてい]どおりの[日程|にってい]で[進|すす]んでいます。"),
+        translation: "Avanza según el calendario previsto.",
+      },
+      {
+        segments: ruby("[疲|つか]れない[程度|ていど]に[運動|うんどう]するのがよいです。"),
+        translation: "Es bueno hacer ejercicio hasta un nivel que no te agote.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "適",
+    level: 5,
+    strokeCount: 14,
+    on: ["テキ"],
+    kun: [],
+    meaning: "Adecuado / apropiado",
+    examples: [
+      {
+        segments: ruby("この[服装|ふくそう]は[仕事|しごと]に[適|てき]しています。"),
+        translation: "Esta ropa es adecuada para el trabajo.",
+      },
+      {
+        segments: ruby("[適当|てきとう]な[大|おお]きさの[箱|はこ]を[選|えら]びます。"),
+        translation: "Elijo una caja de tamaño apropiado.",
+      },
+      {
+        segments: ruby("[目的|もくてき]に[適|てき]した[方法|ほうほう]を[考|かんが]えましょう。"),
+        translation: "Pensemos en un método adecuado para el objetivo.",
+      },
+      {
+        segments: ruby("[快適|かいてき]な[部屋|へや]で[勉強|べんきょう]できます。"),
+        translation: "Se puede estudiar en una habitación cómoda.",
+      },
+      {
+        segments: ruby("[最適|さいてき]な[答|こた]えをすぐに[見|み]つけるのはむずかしいです。"),
+        translation: "Encontrar de inmediato la mejor respuesta es difícil.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "統",
+    level: 5,
+    strokeCount: 12,
+    on: ["トウ"],
+    kun: ["す.べる"],
+    meaning: "Unir / integrar / gobernar",
+    examples: [
+      {
+        segments: ruby("クラスの[意見|いけん]を一つに[統一|とういつ]します。"),
+        translation: "Unificaremos la opinión de la clase.",
+      },
+      {
+        segments: ruby("[伝統|でんとう]ある[祭|まつ]りです。"),
+        translation: "Es un festival con tradición.",
+      },
+      {
+        segments: ruby("[統計|とうけい]の[数字|すうじ]を[見|み]ました。"),
+        translation: "Vi las cifras de estadística.",
+      },
+      {
+        segments: ruby("データを[統合|とうごう]して[見|み]やすくしました。"),
+        translation: "Integramos los datos para hacerlos más fáciles de ver.",
+      },
+      {
+        segments: ruby("[伝統的|でんとうてき]な[料理|りょうり]を[食|た]べました。"),
+        translation: "Comí comida tradicional.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "堂",
+    level: 5,
+    strokeCount: 11,
+    on: ["ドウ"],
+    kun: [],
+    meaning: "Salón / edificio principal",
+    examples: [
+      {
+        segments: ruby("[学校|がっこう]の[食堂|しょくどう]で[昼|ひる]ごはんを[食|た]べます。"),
+        translation: "Almuerzo en el comedor de la escuela.",
+      },
+      {
+        segments: ruby("[講堂|こうどう]で[卒業式|そつぎょうしき]があります。"),
+        translation: "La ceremonia de graduación será en el auditorio.",
+      },
+      {
+        segments: ruby("[本堂|ほんどう]に[入|はい]る[前|まえ]にくつをぬぎます。"),
+        translation: "Antes de entrar al salón principal me quito los zapatos.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[堂々|どうどう]と[自分|じぶん]の[意見|いけん]を[話|はな]しました。"),
+        translation: "Él expresó su opinión con seguridad.",
+      },
+      {
+        segments: ruby("[食堂|しょくどう]は十二[時|じ]になると[混|こ]みます。"),
+        translation: "El comedor se llena cuando llegan las doce.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "銅",
+    level: 5,
+    strokeCount: 14,
+    on: ["ドウ"],
+    kun: [],
+    meaning: "Cobre",
+    examples: [
+      {
+        segments: ruby("[駅前|えきまえ]に[銅像|どうぞう]があります。"),
+        translation: "Hay una estatua de bronce frente a la estación.",
+      },
+      {
+        segments: ruby("[銅|どう]は[赤茶色|あかちゃいろ]の[金属|きんぞく]です。"),
+        translation: "El cobre es un metal de color rojizo.",
+      },
+      {
+        segments: ruby("[銅線|どうせん]を[使|つか]ってつなぎます。"),
+        translation: "Lo conectamos usando cable de cobre.",
+      },
+      {
+        segments: ruby("このコインは[銅|どう]でできています。"),
+        translation: "Esta moneda está hecha de cobre.",
+      },
+      {
+        segments: ruby("[大会|たいかい]で[銅|どう]メダルをもらいました。"),
+        translation: "Recibí una medalla de bronce en el torneo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "導",
+    level: 5,
+    strokeCount: 15,
+    on: ["ドウ"],
+    kun: ["みちび.く"],
+    meaning: "Guiar / conducir / introducir",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]がていねいに[指導|しどう]してくれました。"),
+        translation: "El profesor me guió con mucho cuidado.",
+      },
+      {
+        segments: ruby("[新|あたら]しいシステムを[導入|どうにゅう]しました。"),
+        translation: "Se introdujo un sistema nuevo.",
+      },
+      {
+        segments: ruby("[道|みち]に[迷|まよ]った[人|ひと]を[駅|えき]まで[導|みちび]きました。"),
+        translation: "Guié hasta la estación a una persona que se había perdido.",
+      },
+      {
+        segments: ruby("[目標|もくひょう]が[毎日|まいにち]の[行動|こうどう]を[導|みちび]きます。"),
+        translation: "La meta guía las acciones de cada día.",
+      },
+      {
+        segments: ruby("[先生|せんせい]の一[言|こと]で、[答|こた]えに[導|みちび]かれました。"),
+        translation: "Una palabra del profesor me llevó a la respuesta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "得",
+    level: 5,
+    strokeCount: 11,
+    on: ["トク"],
+    kun: ["え.る", "う.る"],
+    meaning: "Obtener / ganar / ventaja",
+    examples: [
+      {
+        segments: ruby("[得意|とくい]な[科目|かもく]は[数学|すうがく]です。"),
+        translation: "La materia en la que soy bueno es matemáticas.",
+      },
+      {
+        segments: ruby("[試験|しけん]で高い[点|てん]を[得|え]ました。"),
+        translation: "Obtuve una nota alta en el examen.",
+      },
+      {
+        segments: ruby("[納得|なっとく]できる[説明|せつめい]でした。"),
+        translation: "Fue una explicación convincente.",
+      },
+      {
+        segments: ruby("[旅行|りょこう]をとおして[大切|たいせつ]な[経験|けいけん]を[得|え]ました。"),
+        translation: "A través del viaje obtuve una experiencia valiosa.",
+      },
+      {
+        segments: ruby("[得|とく]する[買|か]い[方|かた]を[教|おし]えてください。"),
+        translation: "Por favor, enséñeme una forma conveniente de comprar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "毒",
+    level: 5,
+    strokeCount: 8,
+    on: ["ドク"],
+    kun: [],
+    meaning: "Veneno / tóxico",
+    examples: [
+      {
+        segments: ruby("このきのこには[毒|どく]があります。"),
+        translation: "Este hongo tiene veneno.",
+      },
+      {
+        segments: ruby("[消毒|しょうどく]してから[使|つか]います。"),
+        translation: "Lo uso después de desinfectarlo.",
+      },
+      {
+        segments: ruby("[毒|どく]のある[虫|むし]には[近|ちか]づかないでください。"),
+        translation: "Por favor, no se acerque a insectos venenosos.",
+      },
+      {
+        segments: ruby("きつい[言葉|ことば]は[心|こころ]の[毒|どく]になることがあります。"),
+        translation: "Las palabras duras a veces se vuelven un veneno para el corazón.",
+      },
+      {
+        segments: ruby("[中毒|ちゅうどく]にならないように、ゲームの[時間|じかん]を[決|き]めています。"),
+        translation: "Fijo un tiempo para jugar y así no volverme dependiente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "独",
+    level: 5,
+    strokeCount: 9,
+    on: ["ドク", "トク"],
+    kun: ["ひと.り"],
+    meaning: "Solo / independiente / único",
+    examples: [
+      {
+        segments: ruby("[独立|どくりつ]して[店|みせ]を[始|はじ]めました。"),
+        translation: "Se independizó y abrió una tienda.",
+      },
+      {
+        segments: ruby("[独特|どくとく]な[雰囲気|ふんいき]があります。"),
+        translation: "Tiene una atmósfera única.",
+      },
+      {
+        segments: ruby("[独学|どくがく]で[日本語|にほんご]を[勉強|べんきょう]しています。"),
+        translation: "Estoy estudiando japonés por mi cuenta.",
+      },
+      {
+        segments: ruby("[独|ひと]りで[考|かんが]える[時間|じかん]も[必要|ひつよう]です。"),
+        translation: "También es necesario tener tiempo para pensar a solas.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[独自|どくじ]の[方法|ほうほう]で[問題|もんだい]を[解決|かいけつ]しました。"),
+        translation: "Él resolvió el problema con su propio método.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "任",
+    level: 5,
+    strokeCount: 6,
+    on: ["ニン"],
+    kun: ["まか.せる", "まか.す"],
+    meaning: "Encargar / confiar / responsabilidad",
+    examples: [
+      {
+        segments: ruby("この[仕事|しごと]は[私|わたし]に[任|まか]せてください。"),
+        translation: "Por favor, déjeme este trabajo a mí.",
+      },
+      {
+        segments: ruby("[責任|せきにん]をもって[働|はたら]きます。"),
+        translation: "Trabajaré con responsabilidad.",
+      },
+      {
+        segments: ruby("[先生|せんせい]にクラス[代表|だいひょう]を[任|まか]されました。"),
+        translation: "El profesor me encargó ser representante de la clase.",
+      },
+      {
+        segments: ruby("[任務|にんむ]を[終|お]えて[帰|かえ]ります。"),
+        translation: "Volveré después de terminar la misión.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]なことを[人|ひと]に[任|まか]せるには[信頼|しんらい]が[必要|ひつよう]です。"),
+        translation: "Para confiar algo importante a otra persona se necesita confianza.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "燃",
+    level: 5,
+    strokeCount: 16,
+    on: ["ネン"],
+    kun: ["も.える", "も.やす", "も.す"],
+    meaning: "Arder / quemar",
+    examples: [
+      {
+        segments: ruby("[火|ひ]が[燃|も]えています。"),
+        translation: "El fuego está ardiendo.",
+      },
+      {
+        segments: ruby("ここでごみを[燃|も]やしてはいけません。"),
+        translation: "Aquí no se puede quemar basura.",
+      },
+      {
+        segments: ruby("[車|くるま]に[燃料|ねんりょう]を[入|い]れます。"),
+        translation: "Le pongo combustible al auto.",
+      },
+      {
+        segments: ruby("[燃|も]えるごみはこの[袋|ふくろ]に[入|い]れてください。"),
+        translation: "Por favor, ponga la basura combustible en esta bolsa.",
+      },
+      {
+        segments: ruby("[目標|もくひょう]にむかう[気持|きも]ちが[胸|むね]に[燃|も]えています。"),
+        translation: "El deseo de avanzar hacia la meta arde en mi pecho.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "能",
+    level: 5,
+    strokeCount: 10,
+    on: ["ノウ"],
+    kun: ["あた.う"],
+    meaning: "Capacidad / poder",
+    examples: [
+      {
+        segments: ruby("[可能|かのう]なら、きょうじゅうに[終|お]わらせたいです。"),
+        translation: "Si es posible, me gustaría terminarlo hoy mismo.",
+      },
+      {
+        segments: ruby("[能力|のうりょく]をもっとのばしたいです。"),
+        translation: "Quiero desarrollar más mi capacidad.",
+      },
+      {
+        segments: ruby("[機能|きのう]がよくて[使|つか]いやすいです。"),
+        translation: "Tiene buenas funciones y es fácil de usar.",
+      },
+      {
+        segments: ruby("[本能|ほんのう]で[危険|きけん]を[感|かん]じることもあります。"),
+        translation: "A veces se percibe el peligro por instinto.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[能|のう]力を[信|しん]じて[挑戦|ちょうせん]することが[大切|たいせつ]です。"),
+        translation: "Es importante creer en la propia capacidad y atreverse a intentarlo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "破",
+    level: 5,
+    strokeCount: 10,
+    on: ["ハ"],
+    kun: ["やぶ.る", "やぶ.れる"],
+    meaning: "Romper / rasgar / quebrar",
+    examples: [
+      {
+        segments: ruby("[紙|かみ]を[破|やぶ]りました。"),
+        translation: "Rompí el papel.",
+      },
+      {
+        segments: ruby("[約束|やくそく]を[破|やぶ]ってはいけません。"),
+        translation: "No debes romper una promesa.",
+      },
+      {
+        segments: ruby("[記録|きろく]を[破|やぶ]りました。"),
+        translation: "Rompí el récord.",
+      },
+      {
+        segments: ruby("[壁|かべ]がすこし[破|やぶ]れています。"),
+        translation: "La pared está un poco dañada.",
+      },
+      {
+        segments: ruby("[破損|はそん]した[部品|ぶひん]を[交換|こうかん]します。"),
+        translation: "Cambiaremos la pieza dañada.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "犯",
+    level: 5,
+    strokeCount: 5,
+    on: ["ハン"],
+    kun: ["おか.す"],
+    meaning: "Cometer / infringir",
+    examples: [
+      {
+        segments: ruby("[法律|ほうりつ]を[犯|おか]してはいけません。"),
+        translation: "No se debe infringir la ley.",
+      },
+      {
+        segments: ruby("[規則|きそく]を[犯|おか]さないように[気|き]をつけます。"),
+        translation: "Tendré cuidado de no romper las reglas.",
+      },
+      {
+        segments: ruby("[犯人|はんにん]はまだ[見|み]つかっていません。"),
+        translation: "El culpable todavía no ha sido encontrado.",
+      },
+      {
+        segments: ruby("[犯罪|はんざい]を[防|ふせ]ぐために、[夜道|よみち]では[気|き]をつけます。"),
+        translation: "Para prevenir delitos, tengo cuidado al caminar de noche.",
+      },
+      {
+        segments: ruby("[小|ちい]さなことでも[約束|やくそく]を[犯|おか]せば、[信頼|しんらい]をうしないます。"),
+        translation: "Incluso algo pequeño, si rompe una promesa, hace perder la confianza.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "判",
+    level: 5,
+    strokeCount: 7,
+    on: ["ハン", "バン"],
+    kun: [],
+    meaning: "Juzgar / decidir / sello",
+    examples: [
+      {
+        segments: ruby("[正|ただ]しいかどうかを[判断|はんだん]してください。"),
+        translation: "Por favor, decida si es correcto o no.",
+      },
+      {
+        segments: ruby("[判子|はんこ]をここに[押|お]してください。"),
+        translation: "Por favor, ponga el sello aquí.",
+      },
+      {
+        segments: ruby("[判定|はんてい][結果|けっか]を[待|ま]っています。"),
+        translation: "Estoy esperando el resultado del veredicto.",
+      },
+      {
+        segments: ruby("[批判|ひはん]だけでなく、[提案|ていあん]も[必要|ひつよう]です。"),
+        translation: "No solo hace falta crítica, también propuestas.",
+      },
+      {
+        segments: ruby("[早|はや]く[判断|はんだん]しすぎないようにします。"),
+        translation: "Trataré de no decidir demasiado rápido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "版",
+    level: 5,
+    strokeCount: 8,
+    on: ["ハン"],
+    kun: [],
+    meaning: "Edición / versión / impresión",
+    examples: [
+      {
+        segments: ruby("[新版|しんぱん]の[辞書|じしょ]を[買|か]いました。"),
+        translation: "Compré la nueva edición del diccionario.",
+      },
+      {
+        segments: ruby("この[本|ほん]は[初版|しょはん]です。"),
+        translation: "Este libro es la primera edición.",
+      },
+      {
+        segments: ruby("[英語版|えいごばん]もあります。"),
+        translation: "También hay una versión en inglés.",
+      },
+      {
+        segments: ruby("[出版|しゅっぱん]の[仕事|しごと]に[興味|きょうみ]があります。"),
+        translation: "Me interesa el trabajo editorial.",
+      },
+      {
+        segments: ruby("[電子版|でんしばん]ならすぐに[読|よ]めます。"),
+        translation: "Si es la versión digital, se puede leer de inmediato.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "比",
+    level: 5,
+    strokeCount: 4,
+    on: ["ヒ"],
+    kun: ["くら.べる"],
+    meaning: "Comparar / proporción",
+    examples: [
+      {
+        segments: ruby("[兄|あに]と[背|せ]の[高|たか]さを[比|くら]べました。"),
+        translation: "Comparé mi altura con la de mi hermano mayor.",
+      },
+      {
+        segments: ruby("[比率|ひりつ]を[計算|けいさん]します。"),
+        translation: "Calculo la proporción.",
+      },
+      {
+        segments: ruby("[去年|きょねん]と[比|くら]べて、[今年|ことし]はすこし[楽|らく]です。"),
+        translation: "Comparado con el año pasado, este año es un poco más llevadero.",
+      },
+      {
+        segments: ruby("[比較的|ひかくてき]しずかな[場所|ばしょ]です。"),
+        translation: "Es un lugar relativamente tranquilo.",
+      },
+      {
+        segments: ruby("[自分|じぶん]を[人|ひと]と[比|くら]べすぎないようにしています。"),
+        translation: "Procuro no compararme demasiado con otras personas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "肥",
+    level: 5,
+    strokeCount: 8,
+    on: ["ヒ"],
+    kun: ["こ.える", "こえ", "こ.やす"],
+    meaning: "Fértil / engordar / abonar",
+    examples: [
+      {
+        segments: ruby("[肥料|ひりょう]を[畑|はたけ]にまきました。"),
+        translation: "Esparcí fertilizante en el campo.",
+      },
+      {
+        segments: ruby("[土地|とち]が[肥|こ]えているので、よく[野菜|やさい]がそだちます。"),
+        translation: "Como la tierra es fértil, las verduras crecen bien.",
+      },
+      {
+        segments: ruby("[肥満|ひまん]にならないように[運動|うんどう]します。"),
+        translation: "Hago ejercicio para no caer en sobrepeso.",
+      },
+      {
+        segments: ruby("[肥|こ]えた[土|つち]は[作物|さくもつ]をそだてやすいです。"),
+        translation: "La tierra fértil facilita el cultivo.",
+      },
+      {
+        segments: ruby("[土|つち]を[肥|こ]やすためにたいひを[使|つか]います。"),
+        translation: "Uso abono para enriquecer la tierra.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "非",
+    level: 5,
+    strokeCount: 8,
+    on: ["ヒ"],
+    kun: [],
+    meaning: "No / anti- / incorrecto",
+    examples: [
+      {
+        segments: ruby("[非常口|ひじょうぐち]はこちらです。"),
+        translation: "La salida de emergencia está por aquí.",
+      },
+      {
+        segments: ruby("[非常|ひじょう]に[暑|あつ]い一日でした。"),
+        translation: "Fue un día extremadamente caluroso.",
+      },
+      {
+        segments: ruby("それはまだ[非公開|ひこうかい]です。"),
+        translation: "Eso todavía no es público.",
+      },
+      {
+        segments: ruby("[彼|かれ]の[行動|こうどう]はすこし[非常識|ひじょうしき]でした。"),
+        translation: "Su comportamiento fue un poco poco razonable.",
+      },
+      {
+        segments: ruby("[非|ひ]があるかどうかを、よく[調|しら]べる[必要|ひつよう]があります。"),
+        translation: "Es necesario investigar bien si hubo culpa o no.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "費",
+    level: 5,
+    strokeCount: 12,
+    on: ["ヒ"],
+    kun: ["つい.やす", "つい.える"],
+    meaning: "Gasto / costo / consumir",
+    examples: [
+      {
+        segments: ruby("[交通費|こうつうひ]が思ったよりかかりました。"),
+        translation: "El gasto de transporte fue mayor de lo que pensaba.",
+      },
+      {
+        segments: ruby("[食費|しょくひ]を少し[減|へ]らしたいです。"),
+        translation: "Quiero reducir un poco el gasto en comida.",
+      },
+      {
+        segments: ruby("[学費|がくひ]を[払|はら]うために[働|はたら]いています。"),
+        translation: "Trabajo para pagar los gastos de estudio.",
+      },
+      {
+        segments: ruby("[消費税|しょうひぜい]もふくめて[計算|けいさん]してください。"),
+        translation: "Por favor, calcúlelo incluyendo el impuesto al consumo.",
+      },
+      {
+        segments: ruby("[時間|じかん]を[無駄|むだ]に[費|つい]やさないようにしています。"),
+        translation: "Procuro no gastar el tiempo inútilmente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "備",
+    level: 5,
+    strokeCount: 12,
+    on: ["ビ"],
+    kun: ["そな.える", "そな.わる"],
+    meaning: "Preparar / equipar / estar provisto",
+    examples: [
+      {
+        segments: ruby("[旅行|りょこう]の[準備|じゅんび]はもうできましたか。"),
+        translation: "¿Ya está lista la preparación para el viaje?",
+      },
+      {
+        segments: ruby("[地震|じしん]に[備|そな]えて[水|みず]を[買|か]いました。"),
+        translation: "Compré agua para prepararme para un terremoto.",
+      },
+      {
+        segments: ruby("[設備|せつび]がととのった[教室|きょうしつ]です。"),
+        translation: "Es un aula con buen equipamiento.",
+      },
+      {
+        segments: ruby("[必要|ひつよう]な[備品|びひん]を[確認|かくにん]してください。"),
+        translation: "Por favor, revise los artículos necesarios.",
+      },
+      {
+        segments: ruby("[心|こころ]の[準備|じゅんび]を[備|そな]えてから[話|はな]したいです。"),
+        translation: "Quiero hablar después de estar preparado mentalmente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "評",
+    level: 5,
+    strokeCount: 12,
+    on: ["ヒョウ"],
+    kun: [],
+    meaning: "Evaluar / comentar / reputación",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]に[発表|はっぴょう]の[評価|ひょうか]をもらいました。"),
+        translation: "El profesor me dio una evaluación de la presentación.",
+      },
+      {
+        segments: ruby("この[店|みせ]は[評判|ひょうばん]がいいです。"),
+        translation: "Este local tiene buena reputación.",
+      },
+      {
+        segments: ruby("[書評|しょひょう]を[読|よ]んでから、その[本|ほん]を[買|か]いました。"),
+        translation: "Compré ese libro después de leer una reseña.",
+      },
+      {
+        segments: ruby("[好評|こうひょう]だったので、また[開|ひら]くことになりました。"),
+        translation: "Como fue bien recibido, decidieron hacerlo otra vez.",
+      },
+      {
+        segments: ruby("[人|ひと]を[評|ひょう]する前に、まず[自分|じぶん]を[見直|みなお]したいです。"),
+        translation: "Antes de juzgar a otras personas, quiero revisarme a mí mismo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "貧",
+    level: 5,
+    strokeCount: 11,
+    on: ["ヒン", "ビン"],
+    kun: ["まず.しい"],
+    meaning: "Pobre / escaso",
+    examples: [
+      {
+        segments: ruby("[貧|まず]しい[生活|せいかつ]の中でも、[希望|きぼう]をもつことは[大切|たいせつ]です。"),
+        translation: "Incluso en una vida pobre, es importante tener esperanza.",
+      },
+      {
+        segments: ruby("[貧血|ひんけつ]で[少|すこ]し[気分|きぶん]がわるいです。"),
+        translation: "Me siento un poco mal por anemia.",
+      },
+      {
+        segments: ruby("[貧困|ひんこん]の[問題|もんだい]について[勉強|べんきょう]しました。"),
+        translation: "Estudiamos sobre el problema de la pobreza.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[貧|まず]しくても、いつもあかるいです。"),
+        translation: "Aunque es pobre, siempre está alegre.",
+      },
+      {
+        segments: ruby("[心|こころ]まで[貧|まず]しくならないようにしたいです。"),
+        translation: "Quiero evitar que hasta el corazón se vuelva pobre.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "布",
+    level: 5,
+    strokeCount: 5,
+    on: ["フ"],
+    kun: ["ぬの", "し.く"],
+    meaning: "Tela / distribuir",
+    examples: [
+      {
+        segments: ruby("[布|ぬの]を[切|き]って[袋|ふくろ]をつくります。"),
+        translation: "Corto tela para hacer una bolsa.",
+      },
+      {
+        segments: ruby("[毛布|もうふ]をかけて[寝|ね]ました。"),
+        translation: "Dormí cubierto con una manta.",
+      },
+      {
+        segments: ruby("[布団|ふとん]をほしてから[片付|かたづ]けます。"),
+        translation: "Tiendo el futón y luego lo guardo.",
+      },
+      {
+        segments: ruby("[資料|しりょう]をみんなに[配布|はいふ]しました。"),
+        translation: "Distribuí el material a todos.",
+      },
+      {
+        segments: ruby("[机|つくえ]の[上|うえ]に[布|ぬの]を[敷|し]いています。"),
+        translation: "Puse una tela sobre la mesa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "婦",
+    level: 5,
+    strokeCount: 11,
+    on: ["フ"],
+    kun: [],
+    meaning: "Mujer / esposa",
+    examples: [
+      {
+        segments: ruby("[夫婦|ふうふ]で[旅行|りょこう]に[行|い]きました。"),
+        translation: "El matrimonio se fue de viaje.",
+      },
+      {
+        segments: ruby("[主婦|しゅふ]として[毎日|まいにち][家事|かじ]をしています。"),
+        translation: "Como ama de casa, hago las labores del hogar todos los días.",
+      },
+      {
+        segments: ruby("[婦人服|ふじんふく]の[売|う]り[場|ば]は二[階|かい]です。"),
+        translation: "La sección de ropa de mujer está en el segundo piso.",
+      },
+      {
+        segments: ruby("[ご夫婦|ごふうふ]そろって[来|き]てくださいました。"),
+        translation: "El matrimonio vino junto.",
+      },
+      {
+        segments: ruby("[産婦人科|さんふじんか]の[予約|よやく]を[確認|かくにん]しました。"),
+        translation: "Confirmé la reserva en ginecología y obstetricia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "武",
+    level: 5,
+    strokeCount: 8,
+    on: ["ブ", "ム"],
+    kun: ["たけ", "たけ.し"],
+    meaning: "Militar / marcial",
+    examples: [
+      {
+        segments: ruby("[武道|ぶどう]を[習|なら]っています。"),
+        translation: "Estoy aprendiendo artes marciales.",
+      },
+      {
+        segments: ruby("[武士|ぶし]の[時代|じだい]について[学|まな]びました。"),
+        translation: "Aprendimos sobre la época de los samuráis.",
+      },
+      {
+        segments: ruby("[武器|ぶき]をもたずに[話|はな]し[合|あ]いで[解決|かいけつ]したいです。"),
+        translation: "Quiero resolverlo conversando, sin armas.",
+      },
+      {
+        segments: ruby("[武道館|ぶどうかん]でイベントがありました。"),
+        translation: "Hubo un evento en el Budokan.",
+      },
+      {
+        segments: ruby("[武|ぶ]だけでなく、[礼儀|れいぎ]も[大切|たいせつ]にするのが[武道|ぶどう]です。"),
+        translation: "En las artes marciales, no solo importa la fuerza, también la cortesía.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "復",
+    level: 5,
+    strokeCount: 12,
+    on: ["フク"],
+    kun: [],
+    meaning: "Recuperar / repetir / volver",
+    examples: [
+      {
+        segments: ruby("[授業|じゅぎょう]のあとで[復習|ふくしゅう]します。"),
+        translation: "Repaso después de la clase.",
+      },
+      {
+        segments: ruby("[体調|たいちょう]がだいぶ[回復|かいふく]しました。"),
+        translation: "Mi estado físico se ha recuperado bastante.",
+      },
+      {
+        segments: ruby("[往復|おうふく]で二[時間|じかん]かかります。"),
+        translation: "Ir y volver toma dos horas.",
+      },
+      {
+        segments: ruby("[元|もと]の[形|かたち]に[復元|ふくげん]しました。"),
+        translation: "Lo restauramos a su forma original.",
+      },
+      {
+        segments: ruby("[何度|なんど]も[復習|ふくしゅう]すると、[少|すこ]しずつ[自信|じしん]がついてきます。"),
+        translation: "Cuando repasas muchas veces, poco a poco ganas confianza.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "複",
+    level: 5,
+    strokeCount: 14,
+    on: ["フク"],
+    kun: [],
+    meaning: "Múltiple / complejo / duplicado",
+    examples: [
+      {
+        segments: ruby("[この[問題|もんだい]は[複雑|ふくざつ]です。"),
+        translation: "Este problema es complejo.",
+      },
+      {
+        segments: ruby("[複数|ふくすう]の[意見|いけん]を[聞|き]きました。"),
+        translation: "Escuché varias opiniones.",
+      },
+      {
+        segments: ruby("[複写|ふくしゃ]した[紙|かみ]を[配|くば]ります。"),
+        translation: "Repartiré las hojas copiadas.",
+      },
+      {
+        segments: ruby("[考|かんが]えが[複雑|ふくざつ]になったときは、ノートに[書|か]くとよいです。"),
+        translation: "Cuando las ideas se vuelven complejas, conviene escribirlas en un cuaderno.",
+      },
+      {
+        segments: ruby("[一つの[答|こた]えだけでなく、[複数|ふくすう]の[見方|みかた]があることを[学|まな]びました。"),
+        translation: "Aprendí que no hay solo una respuesta, sino varias formas de ver las cosas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "仏",
+    level: 5,
+    strokeCount: 4,
+    on: ["ブツ", "フツ"],
+    kun: ["ほとけ"],
+    meaning: "Buda / budista",
+    examples: [
+      {
+        segments: ruby("[寺|てら]で[仏像|ぶつぞう]を[見|み]ました。"),
+        translation: "Vi una estatua de Buda en el templo.",
+      },
+      {
+        segments: ruby("[仏教|ぶっきょう]について[少|すこ]し[勉強|べんきょう]しています。"),
+        translation: "Estoy estudiando un poco sobre budismo.",
+      },
+      {
+        segments: ruby("[お[盆|ぼん]には[先祖|せんぞ]や[仏|ほとけ]を[思|おも]います。"),
+        translation: "Durante Obon se recuerda a los antepasados y a los difuntos.",
+      },
+      {
+        segments: ruby("[静|しず]かな[寺|てら]で[仏像|ぶつぞう]をながめました。"),
+        translation: "Contemplé una estatua budista en un templo tranquilo.",
+      },
+      {
+        segments: ruby("[仏教|ぶっきょう]の[考|かんが]え[方|かた]に[興味|きょうみ]をもつ[人|ひと]もいます。"),
+        translation: "También hay personas que sienten interés por la forma de pensar del budismo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "粉",
+    level: 5,
+    strokeCount: 10,
+    on: ["フン", "コ"],
+    kun: ["こ", "こな"],
+    meaning: "Polvo / harina",
+    examples: [
+      {
+        segments: ruby("[小麦粉|こむぎこ]をつかってパンをつくります。"),
+        translation: "Uso harina para hacer pan.",
+      },
+      {
+        segments: ruby("[薬|くすり]は[粉薬|こなぐすり]です。"),
+        translation: "La medicina es en polvo.",
+      },
+      {
+        segments: ruby("[花粉|かふん]が多い[季節|きせつ]ですね。"),
+        translation: "Es la temporada en que hay mucho polen.",
+      },
+      {
+        segments: ruby("[粉雪|こなゆき]がしずかに[降|ふ]っています。"),
+        translation: "Está cayendo nieve fina suavemente.",
+      },
+      {
+        segments: ruby("[白|しろ]い[粉|こな]がテーブルの[上|うえ]にのっています。"),
+        translation: "Hay un polvo blanco sobre la mesa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "編",
+    level: 5,
+    strokeCount: 15,
+    on: ["ヘン"],
+    kun: ["あ.む"],
+    meaning: "Tejer / editar / compilar",
+    examples: [
+      {
+        segments: ruby("[母|はは]はマフラーを[編|あ]んでいます。"),
+        translation: "Mi madre está tejiendo una bufanda.",
+      },
+      {
+        segments: ruby("[編集|へんしゅう]の[仕事|しごと]に[興味|きょうみ]があります。"),
+        translation: "Me interesa el trabajo de edición.",
+      },
+      {
+        segments: ruby("[長編|ちょうへん]の[小説|しょうせつ]を[読|よ]み[始|はじ]めました。"),
+        translation: "Empecé a leer una novela larga.",
+      },
+      {
+        segments: ruby("[編|あ]み[物|もの]は[冬|ふゆ]にぴったりの[趣味|しゅみ]です。"),
+        translation: "Tejer es un pasatiempo ideal para el invierno.",
+      },
+      {
+        segments: ruby("[文章|ぶんしょう]を[編集|へんしゅう]すると、もっと[伝|つた]わりやすくなります。"),
+        translation: "Si editas un texto, se vuelve más fácil de entender.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "弁",
+    level: 5,
+    strokeCount: 5,
+    on: ["ベン"],
+    kun: [],
+    meaning: "Habla / distinguir / almuerzo en caja",
+    examples: [
+      {
+        segments: ruby("[昼|ひる]ごはんに[弁当|べんとう]を[食|た]べます。"),
+        translation: "A la hora de almuerzo como un bentō.",
+      },
+      {
+        segments: ruby("[弁護士|べんごし]に[相談|そうだん]しました。"),
+        translation: "Consulté con un abogado.",
+      },
+      {
+        segments: ruby("[遅刻|ちこく]した[理由|りゆう]を[弁解|べんかい]しました。"),
+        translation: "Expliqué la razón de mi atraso.",
+      },
+      {
+        segments: ruby("[方言|ほうげん]と[標準語|ひょうじゅんご]の[違|ちが]いがまだよく[分|わ]かりません。"),
+        translation: "Todavía no entiendo bien la diferencia entre dialecto y japonés estándar.",
+      },
+      {
+        segments: ruby("[食|た]べやすいように、[弁当|べんとう]を小さく[分|わ]けていれました。"),
+        translation: "Puse la comida en porciones pequeñas en el bentō para que fuera más fácil comer.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "保",
+    level: 5,
+    strokeCount: 9,
+    on: ["ホ", "ホウ"],
+    kun: ["たも.つ"],
+    meaning: "Mantener / proteger / conservar",
+    examples: [
+      {
+        segments: ruby("[健康|けんこう]を[保|たも]つために[運動|うんどう]しています。"),
+        translation: "Hago ejercicio para mantener la salud.",
+      },
+      {
+        segments: ruby("[保険|ほけん]の[内容|ないよう]を[確認|かくにん]しました。"),
+        translation: "Revisé el contenido del seguro.",
+      },
+      {
+        segments: ruby("[保育園|ほいくえん]へ[子|こ]どもをむかえに[行|い]きます。"),
+        translation: "Iré a buscar a mi hijo al jardín infantil.",
+      },
+      {
+        segments: ruby("[食|た]べ[物|もの]は[冷蔵庫|れいぞうこ]で[保存|ほぞん]してください。"),
+        translation: "Por favor, guarde la comida en el refrigerador.",
+      },
+      {
+        segments: ruby("[平和|へいわ]を[保|たも]つには、おたがいを[理解|りかい]する[努力|どりょく]が[必要|ひつよう]です。"),
+        translation: "Para mantener la paz, es necesario esforzarse en comprenderse mutuamente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "墓",
+    level: 5,
+    strokeCount: 13,
+    on: ["ボ"],
+    kun: ["はか"],
+    meaning: "Tumba",
+    examples: [
+      {
+        segments: ruby("[祖父母|そふぼ]の[墓|はか]まいりに[行|い]きました。"),
+        translation: "Fui a visitar la tumba de mis abuelos.",
+      },
+      {
+        segments: ruby("[山|やま]の近くに[古|ふる]い[墓地|ぼち]があります。"),
+        translation: "Hay un cementerio antiguo cerca de la montaña.",
+      },
+      {
+        segments: ruby("[墓石|はかいし]の[前|まえ]で[手|て]を[合|あ]わせました。"),
+        translation: "Junté las manos frente a la lápida.",
+      },
+      {
+        segments: ruby("[静|しず]かな[墓地|ぼち]で[先祖|せんぞ]を[思|おも]いました。"),
+        translation: "Recordé a los antepasados en un cementerio tranquilo.",
+      },
+      {
+        segments: ruby("[お[墓|はか]を大切にする[気持|きも]ちは、[家族|かぞく]を大切にすることにもつながると[思|おも]います。"),
+        translation: "Creo que valorar la tumba familiar también se relaciona con valorar a la familia.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "報",
+    level: 5,
+    strokeCount: 12,
+    on: ["ホウ"],
+    kun: ["むく.いる"],
+    meaning: "Informar / noticia / recompensa",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]に[結果|けっか]を[報告|ほうこく]しました。"),
+        translation: "Le informé el resultado al profesor.",
+      },
+      {
+        segments: ruby("[天気予報|てんきよほう]では、あした[雨|あめ]だそうです。"),
+        translation: "Según el pronóstico del tiempo, mañana lloverá.",
+      },
+      {
+        segments: ruby("[情報|じょうほう]を[正|ただ]しく[伝|つた]えることが[大切|たいせつ]です。"),
+        translation: "Es importante transmitir la información correctamente.",
+      },
+      {
+        segments: ruby("[良|よ]いことをしたら、その[報|むく]いがいつか[返|かえ]ってくると[思|おも]います。"),
+        translation: "Creo que si haces algo bueno, esa recompensa volverá algún día.",
+      },
+      {
+        segments: ruby("[第一|だいいち][報|ほう]を[聞|き]いて、みんながすぐに[集|あつ]まりました。"),
+        translation: "Al escuchar el primer informe, todos se reunieron de inmediato.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "豊",
+    level: 5,
+    strokeCount: 13,
+    on: ["ホウ"],
+    kun: ["ゆた.か"],
+    meaning: "Abundante / rico",
+    examples: [
+      {
+        segments: ruby("[自然|しぜん]が[豊|ゆた]かな[町|まち]です。"),
+        translation: "Es una ciudad rica en naturaleza.",
+      },
+      {
+        segments: ruby("[経験|けいけん]が[豊富|ほうふ]な[先生|せんせい]です。"),
+        translation: "Es un profesor con mucha experiencia.",
+      },
+      {
+        segments: ruby("[心|こころ]を[豊|ゆた]かにする[音楽|おんがく]が[好|す]きです。"),
+        translation: "Me gusta la música que enriquece el corazón.",
+      },
+      {
+        segments: ruby("[今年|ことし]は[豊作|ほうさく]だったそうです。"),
+        translation: "Dicen que este año hubo una cosecha abundante.",
+      },
+      {
+        segments: ruby("[豊|ゆた]かな[時間|じかん]とは、たくさんあることより[大切|たいせつ]に[使|つか]えることだと[思|おも]います。"),
+        translation: "Creo que un tiempo abundante no es tener mucho, sino poder usarlo de forma valiosa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "防",
+    level: 5,
+    strokeCount: 12,
+    on: ["ボウ"],
+    kun: ["ふせ.ぐ"],
+    meaning: "Prevenir / proteger",
+    examples: [
+      {
+        segments: ruby("[風邪|かぜ]を[防|ふせ]ぐためにマスクをします。"),
+        translation: "Uso mascarilla para prevenir resfriados.",
+      },
+      {
+        segments: ruby("[消防車|しょうぼうしゃ]がすぐに[来|き]ました。"),
+        translation: "El carro de bomberos llegó enseguida.",
+      },
+      {
+        segments: ruby("[事故|じこ][防止|ぼうし]のために、ゆっくり[運転|うんてん]してください。"),
+        translation: "Por favor, conduzca despacio para prevenir accidentes.",
+      },
+      {
+        segments: ruby("[予防接種|よぼうせっしゅ]を[受|う]けました。"),
+        translation: "Me puse una vacuna preventiva.",
+      },
+      {
+        segments: ruby("[防犯|ぼうはん]のために、[夜|よる]はドアをしっかり[閉|し]めます。"),
+        translation: "Por seguridad, cierro bien la puerta por la noche.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "貿",
+    level: 5,
+    strokeCount: 12,
+    on: ["ボウ"],
+    kun: [],
+    meaning: "Comercio exterior",
+    examples: [
+      {
+        segments: ruby("[貿易|ぼうえき]について[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos sobre comercio exterior en clase.",
+      },
+      {
+        segments: ruby("[日本|にほん]は多くの[国|くに]と[貿易|ぼうえき]しています。"),
+        translation: "Japón comercia con muchos países.",
+      },
+      {
+        segments: ruby("[貿易会社|ぼうえきがいしゃ]で[働|はたら]きたいです。"),
+        translation: "Quiero trabajar en una empresa de comercio exterior.",
+      },
+      {
+        segments: ruby("[貿易港|ぼうえきこう]には大きな[船|ふね]がたくさんあります。"),
+        translation: "En el puerto comercial hay muchos barcos grandes.",
+      },
+      {
+        segments: ruby("[国|くに]どうしの[貿易|ぼうえき]を[理解|りかい]すると、[世界|せかい]のつながりがよく[見|み]えてきます。"),
+        translation: "Cuando entiendes el comercio entre países, se ve mejor cómo está conectado el mundo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "暴",
+    level: 5,
+    strokeCount: 15,
+    on: ["ボウ", "バク"],
+    kun: ["あば.く", "あば.れる", "あら.い"],
+    meaning: "Violento / exponer / descontrolarse",
+    examples: [
+      {
+        segments: ruby("[暴風雨|ぼうふうう]のため、[外|そと]へ[出|で]られませんでした。"),
+        translation: "No pudimos salir por la tormenta violenta.",
+      },
+      {
+        segments: ruby("[秘密|ひみつ]を[暴|あば]いてはいけません。"),
+        translation: "No debes sacar a la luz un secreto.",
+      },
+      {
+        segments: ruby("[海|うみ]が[荒|あ]れていて、[波|なみ]が[暴|あば]れていました。"),
+        translation: "El mar estaba bravo y las olas estaban descontroladas.",
+      },
+      {
+        segments: ruby("[暴力|ぼうりょく]ではなく、[話|はな]し[合|あ]いで[解決|かいけつ]するべきです。"),
+        translation: "No con violencia, sino conversando es como se debe resolver.",
+      },
+      {
+        segments: ruby("[暴言|ぼうげん]は[相手|あいて]の[心|こころ]を[深|ふか]くきずつけます。"),
+        translation: "Las palabras violentas hieren profundamente el corazón de la otra persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "脈",
+    level: 5,
+    strokeCount: 10,
+    on: ["ミャク"],
+    kun: [],
+    meaning: "Pulso / vena / continuidad",
+    examples: [
+      {
+        segments: ruby("[医者|いしゃ]が[脈|みゃく]を[測|はか]りました。"),
+        translation: "El médico me tomó el pulso.",
+      },
+      {
+        segments: ruby("[脈拍|みゃくはく]がすこし[速|はや]いですね。"),
+        translation: "El pulso está un poco acelerado.",
+      },
+      {
+        segments: ruby("[山脈|さんみゃく]が[遠|とお]くに[見|み]えます。"),
+        translation: "A lo lejos se ve una cordillera.",
+      },
+      {
+        segments: ruby("[文|ぶん]の[流|なが]れや[脈絡|みゃくらく]を[考|かんが]えて[読|よ]んでください。"),
+        translation: "Por favor, lea pensando en el hilo y la conexión del texto.",
+      },
+      {
+        segments: ruby("[会話|かいわ]の[脈絡|みゃくらく]がわからないときは、[前|まえ]の[話|はなし]を[確認|かくにん]するとよいです。"),
+        translation: "Cuando no se entiende el hilo de una conversación, conviene revisar lo que se dijo antes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "務",
+    level: 5,
+    strokeCount: 11,
+    on: ["ム"],
+    kun: ["つと.める", "つと.まる"],
+    meaning: "Deber / labor / servir",
+    examples: [
+      {
+        segments: ruby("[事務所|じむしょ]に[書類|しょるい]を[届|とど]けました。"),
+        translation: "Entregué los documentos en la oficina.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[役目|やくめ]をしっかり[務|つと]めたいです。"),
+        translation: "Quiero cumplir bien mi función.",
+      },
+      {
+        segments: ruby("[勤務|きんむ][時間|じかん]が[少|すこ]し[変|か]わりました。"),
+        translation: "Mi horario de trabajo cambió un poco.",
+      },
+      {
+        segments: ruby("[義務|ぎむ]だけでなく、[責任|せきにん]も[考|かんが]える[必要|ひつよう]があります。"),
+        translation: "No solo hay que pensar en la obligación, también en la responsabilidad.",
+      },
+      {
+        segments: ruby("[司会|しかい]を[務|つと]めることになって、[事前|じぜん]に[流|なが]れを[確認|かくにん]しました。"),
+        translation: "Como me tocó ser el presentador, confirmé con anticipación el desarrollo del evento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "夢",
+    level: 5,
+    strokeCount: 13,
+    on: ["ム"],
+    kun: ["ゆめ"],
+    meaning: "Sueño / aspiración",
+    examples: [
+      {
+        segments: ruby("[将来|しょうらい]の[夢|ゆめ]は[先生|せんせい]になることです。"),
+        translation: "Mi sueño para el futuro es ser profesor.",
+      },
+      {
+        segments: ruby("[昨夜|さくや]おもしろい[夢|ゆめ]を[見|み]ました。"),
+        translation: "Anoche tuve un sueño interesante.",
+      },
+      {
+        segments: ruby("[夢中|むちゅう]になって[本|ほん]を[読|よ]みました。"),
+        translation: "Leí el libro completamente absorbido.",
+      },
+      {
+        segments: ruby("[子|こ]どものころからの[夢|ゆめ]をかなえたいです。"),
+        translation: "Quiero cumplir el sueño que tengo desde niño.",
+      },
+      {
+        segments: ruby("[夢|ゆめ]をもつだけでなく、それに[向|む]かって[動|うご]くことも[大切|たいせつ]です。"),
+        translation: "No solo es importante tener un sueño, también moverse hacia él.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "迷",
+    level: 5,
+    strokeCount: 9,
+    on: ["メイ"],
+    kun: ["まよ.う"],
+    meaning: "Perderse / dudar / confundir",
+    examples: [
+      {
+        segments: ruby("[駅|えき]で[道|みち]に[迷|まよ]いました。"),
+        translation: "Me perdí en la estación.",
+      },
+      {
+        segments: ruby("[進路|しんろ]について[迷|まよ]っています。"),
+        translation: "Estoy dudando sobre mi camino a seguir.",
+      },
+      {
+        segments: ruby("[迷惑|めいわく]をかけてすみません。"),
+        translation: "Disculpa por causar molestias.",
+      },
+      {
+        segments: ruby("[どちらを[選|えら]ぶか[迷|まよ]ったときは、[自分|じぶん]に[必要|ひつよう]なほうを[考|かんが]えます。"),
+        translation: "Cuando dudo entre dos opciones, pienso en la que realmente necesito.",
+      },
+      {
+        segments: ruby("[森|もり]で[迷子|まいご]にならないように、[地図|ちず]を[持|も]っていきます。"),
+        translation: "Llevo un mapa para no perderme en el bosque.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "綿",
+    level: 5,
+    strokeCount: 14,
+    on: ["メン"],
+    kun: ["わた"],
+    meaning: "Algodón",
+    examples: [
+      {
+        segments: ruby("[綿|わた]のシャツはやわらかくて[着|き]やすいです。"),
+        translation: "La camisa de algodón es suave y fácil de usar.",
+      },
+      {
+        segments: ruby("[布団|ふとん]の[中|なか]に[綿|わた]が入っています。"),
+        translation: "Dentro del futón hay algodón.",
+      },
+      {
+        segments: ruby("[木綿|もめん]の[服|ふく]は[夏|なつ]にぴったりです。"),
+        translation: "La ropa de algodón es ideal para el verano.",
+      },
+      {
+        segments: ruby("[綿|わた]をつめてクッションをつくりました。"),
+        translation: "Hice un cojín rellenándolo con algodón.",
+      },
+      {
+        segments: ruby("[肌|はだ]にやさしいので、[綿|めん][素材|そざい]の[服|ふく]を[選|えら]ぶことが多いです。"),
+        translation: "Como es amable con la piel, suelo elegir ropa de material de algodón.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "輸",
+    level: 5,
+    strokeCount: 16,
+    on: ["ユ"],
+    kun: [],
+    meaning: "Transportar / exportar / importar",
+    examples: [
+      {
+        segments: ruby("[商品|しょうひん]を[海外|かいがい]へ[輸出|ゆしゅつ]します。"),
+        translation: "Exportamos productos al extranjero.",
+      },
+      {
+        segments: ruby("[日本|にほん]は[食料|しょくりょう]を[輸入|ゆにゅう]することも多いです。"),
+        translation: "Japón también importa muchos alimentos.",
+      },
+      {
+        segments: ruby("[輸送|ゆそう]の[時間|じかん]が思ったよりかかりました。"),
+        translation: "El transporte tomó más tiempo de lo esperado.",
+      },
+      {
+        segments: ruby("[輸入品|ゆにゅうひん]の[値段|ねだん]があがりました。"),
+        translation: "Subió el precio de los productos importados.",
+      },
+      {
+        segments: ruby("[安全|あんぜん]に[輸送|ゆそう]するには、[包|つつ]み[方|かた]や[順序|じゅんじょ]にも[注意|ちゅうい]が[必要|ひつよう]です。"),
+        translation: "Para transportar algo con seguridad, también hay que cuidar la forma de envolverlo y el orden.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "余",
+    level: 5,
+    strokeCount: 7,
+    on: ["ヨ"],
+    kun: ["あま.る", "あま.す"],
+    meaning: "Sobra / resto / extra",
+    examples: [
+      {
+        segments: ruby("[時間|じかん]が[余|あま]ったので、[本|ほん]を[読|よ]みました。"),
+        translation: "Como me sobró tiempo, leí un libro.",
+      },
+      {
+        segments: ruby("[食|た]べ[物|もの]を[余|あま]さないようにしてください。"),
+        translation: "Por favor, trate de no dejar comida.",
+      },
+      {
+        segments: ruby("[予算|よさん]に[余裕|よゆう]がありません。"),
+        translation: "No hay margen en el presupuesto.",
+      },
+      {
+        segments: ruby("[余計|よけい]なことを[言|い]ってしまいました。"),
+        translation: "Terminé diciendo algo innecesario.",
+      },
+      {
+        segments: ruby("[少|すこ]しでも[心|こころ]に[余裕|よゆう]があると、もっと[落|お]ち[着|つ]いて[考|かんが]えられます。"),
+        translation: "Si hay aunque sea un poco de margen en el corazón, se puede pensar con más calma.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "容",
+    level: 5,
+    strokeCount: 10,
+    on: ["ヨウ"],
+    kun: [],
+    meaning: "Contenido / apariencia / aceptar",
+    examples: [
+      {
+        segments: ruby("[内容|ないよう]をよく[確認|かくにん]してください。"),
+        translation: "Por favor, revise bien el contenido.",
+      },
+      {
+        segments: ruby("[美容院|びよういん]で[髪|かみ]を[切|き]りました。"),
+        translation: "Me corté el pelo en la peluquería.",
+      },
+      {
+        segments: ruby("[許容|きょよう]できる[範囲|はんい]をこえています。"),
+        translation: "Está superando el rango que se puede aceptar.",
+      },
+      {
+        segments: ruby("[外見|がいけん]だけでなく、[内容|ないよう]も[大切|たいせつ]です。"),
+        translation: "No solo importa la apariencia, también el contenido.",
+      },
+      {
+        segments: ruby("[相手|あいて]のちがいを[受|う]け[容|い]れる[気持|きも]ちがあると、[関係|かんけい]はもっとよくなります。"),
+        translation: "Cuando hay disposición a aceptar las diferencias del otro, la relación mejora.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "略",
+    level: 5,
+    strokeCount: 11,
+    on: ["リャク"],
+    kun: ["ほぼ"],
+    meaning: "Abreviar / omitir / estrategia",
+    examples: [
+      {
+        segments: ruby("[地図|ちず]の[略図|りゃくず]をノートに[書|か]きました。"),
+        translation: "Dibujé un esquema simple del mapa en el cuaderno.",
+      },
+      {
+        segments: ruby("[細|こま]かい[説明|せつめい]は[省略|しょうりゃく]します。"),
+        translation: "Omitiré la explicación detallada.",
+      },
+      {
+        segments: ruby("[戦略|せんりゃく]を[考|かんが]えてから[行動|こうどう]します。"),
+        translation: "Actúo después de pensar una estrategia.",
+      },
+      {
+        segments: ruby("[略語|りゃくご]を[使|つか]うと、[意味|いみ]がわかりにくくなることがあります。"),
+        translation: "Cuando se usan abreviaturas, a veces el significado se vuelve difícil de entender.",
+      },
+      {
+        segments: ruby("[時間|じかん]がないときは、[大切|たいせつ]でない[部分|ぶぶん]をうまく[省略|しょうりゃく]することも[必要|ひつよう]です。"),
+        translation: "Cuando no hay tiempo, también es necesario omitir bien las partes que no son esenciales.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "留",
+    level: 5,
+    strokeCount: 10,
+    on: ["リュウ", "ル"],
+    kun: ["と.める", "と.まる"],
+    meaning: "Quedarse / detener /留学",
+    examples: [
+      {
+        segments: ruby("[日本|にほん]に[留学|りゅうがく]したいです。"),
+        translation: "Quiero venir a estudiar a Japón.",
+      },
+      {
+        segments: ruby("[心|こころ]に[残|のこ]る[思|おも]い[出|で]を[留|と]めておきたいです。"),
+        translation: "Quiero guardar los recuerdos que permanecen en el corazón.",
+      },
+      {
+        segments: ruby("[注意|ちゅうい]して[見|み]ると、[小|ちい]さな[変化|へんか]にも[気|き]が[留|と]まります。"),
+        translation: "Si observas con atención, también notarás los pequeños cambios.",
+      },
+      {
+        segments: ruby("[留守|るす]のあいだに[荷物|にもつ]が[届|とど]きました。"),
+        translation: "Mientras no estaba en casa, llegó un paquete.",
+      },
+      {
+        segments: ruby("[留学生|りゅうがくせい]どうしで[情報|じょうほう]を[共有|きょうゆう]すると、とても[安心|あんしん]できます。"),
+        translation: "Cuando los estudiantes extranjeros comparten información entre sí, da mucha tranquilidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "領",
+    level: 5,
+    strokeCount: 14,
+    on: ["リョウ"],
+    kun: [],
+    meaning: "Territorio / área / recibir",
+    examples: [
+      {
+        segments: ruby("[領収書|りょうしゅうしょ]をもらいました。"),
+        translation: "Recibí el comprobante.",
+      },
+      {
+        segments: ruby("[国領|こくりょう]をまもることは[大切|たいせつ]です。"),
+        translation: "Es importante proteger el territorio nacional.",
+      },
+      {
+        segments: ruby("[要領|ようりょう]よく[作業|さぎょう]してください。"),
+        translation: "Por favor, trabaje de manera eficiente y ordenada.",
+      },
+      {
+        segments: ruby("[料理|りょうり]の[要領|ようりょう]をつかむまで、すこし[時間|じかん]がかかりました。"),
+        translation: "Me tomó un poco de tiempo agarrarle la mano a la cocina.",
+      },
+      {
+        segments: ruby("[受領|じゅりょう]の[確認|かくにん]ができたら、こちらに[連絡|れんらく]してください。"),
+        translation: "Cuando se confirme la recepción, por favor comuníquese aquí.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "歴",
+    level: 5,
+    strokeCount: 14,
+    on: ["レキ", "レッキ"],
+    kun: [],
+    meaning: "Historia / trayectoria",
+    examples: [
+      {
+        segments: ruby("[歴史|れきし]の[授業|じゅぎょう]が[好|す]きです。"),
+        translation: "Me gustan las clases de historia.",
+      },
+      {
+        segments: ruby("[職歴|しょくれき]を[履歴書|りれきしょ]に[書|か]きました。"),
+        translation: "Escribí mi experiencia laboral en el currículum.",
+      },
+      {
+        segments: ruby("[長|なが]い[歴史|れきし]をもつ[寺|てら]を[見学|けんがく]しました。"),
+        translation: "Visité un templo con una larga historia.",
+      },
+      {
+        segments: ruby("[学習歴|がくしゅうれき]をふりかえると、自分の[成長|せいちょう]がわかります。"),
+        translation: "Cuando repasas tu historial de aprendizaje, puedes ver tu crecimiento.",
+      },
+      {
+        segments: ruby("[履歴書|りれきしょ]には、これまでの[経験|けいけん]や[学習歴|がくしゅうれき]をわかりやすく[書|か]くことが[大切|たいせつ]です。"),
+        translation: "En el currículum es importante escribir de forma clara la experiencia y el historial de estudios.",
+      },
+    ],
+    hasSvg: false,
+  },
+]
+
+const LEVEL6: KanjiEntry[] = [
+  {
+    char: "胃",
+    level: 6,
+    strokeCount: 9,
+    on: ["イ"],
+    kun: [],
+    meaning: "Estómago",
+    examples: [
+      {
+        segments: ruby("[朝|あさ]ごはんを[食|た]べないと[胃|い]が[痛|いた]くなることがあります。"),
+        translation: "Si no desayuno, a veces me duele el estómago.",
+      },
+      {
+        segments: ruby("[胃|い]の[調子|ちょうし]がよくないので、[病院|びょういん]へ[行|い]きます。"),
+        translation: "Como mi estómago no anda bien, iré al hospital.",
+      },
+      {
+        segments: ruby("[食|た]べすぎると[胃|い]に[負担|ふたん]がかかります。"),
+        translation: "Comer demasiado le carga trabajo al estómago.",
+      },
+      {
+        segments: ruby("[胃薬|いぐすり]を[飲|の]んで、しばらく[休|やす]みました。"),
+        translation: "Tomé medicina para el estómago y descansé un rato.",
+      },
+      {
+        segments: ruby("[胃|い]にやさしい[食事|しょくじ]をこころがけています。"),
+        translation: "Procuro llevar una alimentación suave para el estómago.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "異",
+    level: 6,
+    strokeCount: 11,
+    on: ["イ"],
+    kun: ["こと.なる"],
+    meaning: "Diferente / inusual",
+    examples: [
+      {
+        segments: ruby("[国|くに]が[異|こと]なると、[文化|ぶんか]もちがいます。"),
+        translation: "Cuando el país es distinto, la cultura también cambia.",
+      },
+      {
+        segments: ruby("[異文化|いぶんか]に[興味|きょうみ]があります。"),
+        translation: "Me interesan las culturas diferentes.",
+      },
+      {
+        segments: ruby("[兄弟|きょうだい]でも[考|かんが]え[方|かた]が[異|こと]なることがあります。"),
+        translation: "Incluso entre hermanos, a veces la forma de pensar es distinta.",
+      },
+      {
+        segments: ruby("[体|からだ]に[異常|いじょう]を[感|かん]じたら、すぐに[相談|そうだん]してください。"),
+        translation: "Si siente algo anormal en el cuerpo, consulte de inmediato.",
+      },
+      {
+        segments: ruby("[例年|れいねん]とは[異|こと]なる[天気|てんき]がつづいています。"),
+        translation: "Está continuando un clima distinto al habitual de otros años.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "遺",
+    level: 6,
+    strokeCount: 15,
+    on: ["イ"],
+    kun: ["のこ.す"],
+    meaning: "Dejar atrás / legado",
+    examples: [
+      {
+        segments: ruby("[祖先|そせん]が[遺|のこ]した[文化|ぶんか]を[大切|たいせつ]にしたいです。"),
+        translation: "Quiero valorar la cultura que dejaron nuestros antepasados.",
+      },
+      {
+        segments: ruby("[遺跡|いせき]を[見学|けんがく]して、[歴史|れきし]の[深|ふか]さを[感|かん]じました。"),
+        translation: "Visité unas ruinas y sentí la profundidad de la historia.",
+      },
+      {
+        segments: ruby("[遺伝|いでん]について[理科|りか]で[学|まな]びました。"),
+        translation: "Aprendimos sobre herencia genética en ciencias.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[言葉|ことば]を[子|こ]どもたちに[遺|のこ]したいです。"),
+        translation: "Quiero dejar palabras importantes a los niños.",
+      },
+      {
+        segments: ruby("[亡|な]くなった[人|ひと]の[遺品|いひん]を[整理|せいり]しました。"),
+        translation: "Ordené las pertenencias que dejó una persona fallecida.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "域",
+    level: 6,
+    strokeCount: 11,
+    on: ["イキ"],
+    kun: [],
+    meaning: "Área / zona / ámbito",
+    examples: [
+      {
+        segments: ruby("[この[地域|ちいき]はとても[静|しず]かです。"),
+        translation: "Esta zona es muy tranquila.",
+      },
+      {
+        segments: ruby("[危険|きけん][区域|くいき]には[入|はい]らないでください。"),
+        translation: "Por favor, no entren en la zona de peligro.",
+      },
+      {
+        segments: ruby("[専門|せんもん][領域|りょういき]の[話|はなし]なので、すこしむずかしいです。"),
+        translation: "Como es un tema de un ámbito especializado, es un poco difícil.",
+      },
+      {
+        segments: ruby("[地球|ちきゅう]の[気候|きこう]は[地域|ちいき]によって大きく[異|こと]なります。"),
+        translation: "El clima de la Tierra varía mucho según la región.",
+      },
+      {
+        segments: ruby("[この[問題|もんだい]は、[学校|がっこう]だけでなく[社会|しゃかい]全体の[領域|りょういき]にも[関係|かんけい]しています。"),
+        translation: "Este problema se relaciona no solo con la escuela, sino también con el ámbito de toda la sociedad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "宇",
+    level: 6,
+    strokeCount: 6,
+    on: ["ウ"],
+    kun: [],
+    meaning: "Espacio / universo",
+    examples: [
+      {
+        segments: ruby("[宇宙|うちゅう]についての[本|ほん]を[読|よ]みました。"),
+        translation: "Leí un libro sobre el universo.",
+      },
+      {
+        segments: ruby("[宇宙船|うちゅうせん]がどのように[飛|と]ぶのかに[興味|きょうみ]があります。"),
+        translation: "Me interesa cómo vuela una nave espacial.",
+      },
+      {
+        segments: ruby("[宇宙飛行士|うちゅうひこうし]になりたい[子|こ]どもも多いです。"),
+        translation: "También hay muchos niños que quieren ser astronautas.",
+      },
+      {
+        segments: ruby("[広|ひろ]い[宇宙|うちゅう]を[考|かんが]えると、[不思議|ふしぎ]な[気持|きも]ちになります。"),
+        translation: "Cuando pienso en el vasto universo, me da una sensación misteriosa.",
+      },
+      {
+        segments: ruby("[宇宙|うちゅう]の[写真|しゃしん]を[見|み]ると、[地球|ちきゅう]の小ささを[感|かん]じます。"),
+        translation: "Cuando veo fotos del universo, siento lo pequeña que es la Tierra.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "映",
+    level: 6,
+    strokeCount: 9,
+    on: ["エイ"],
+    kun: ["うつ.る", "うつ.す", "は.える"],
+    meaning: "Reflejar / proyectar / lucir",
+    examples: [
+      {
+        segments: ruby("[映画|えいが]を[家族|かぞく]といっしょに[見|み]ました。"),
+        translation: "Vi una película con mi familia.",
+      },
+      {
+        segments: ruby("[池|いけ]に[山|やま]がきれいに[映|うつ]っています。"),
+        translation: "La montaña se refleja hermosamente en el estanque.",
+      },
+      {
+        segments: ruby("この[写真|しゃしん]は[光|ひかり]がうまく[映|うつ]っていません。"),
+        translation: "En esta foto la luz no salió bien reflejada.",
+      },
+      {
+        segments: ruby("[赤|あか]い[服|ふく]は[写真|しゃしん]に[映|は]えますね。"),
+        translation: "La ropa roja luce bien en las fotos.",
+      },
+      {
+        segments: ruby("[画面|がめん]に[地図|ちず]を[映|うつ]して[説明|せつめい]しました。"),
+        translation: "Proyecté el mapa en la pantalla y lo expliqué.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "延",
+    level: 6,
+    strokeCount: 8,
+    on: ["エン"],
+    kun: ["の.びる", "の.べる", "の.ばす"],
+    meaning: "Extender / prolongar / postergar",
+    examples: [
+      {
+        segments: ruby("[会議|かいぎ]の[時間|じかん]を三十分[延長|えんちょう]しました。"),
+        translation: "Extendimos la reunión treinta minutos.",
+      },
+      {
+        segments: ruby("[雨|あめ]のため、[出発|しゅっぱつ]が[延期|えんき]になりました。"),
+        translation: "Por la lluvia, la salida fue aplazada.",
+      },
+      {
+        segments: ruby("[開館|かいかん][時間|じかん]が[延|の]びて、もっと[見学|けんがく]できました。"),
+        translation: "El horario de apertura se extendió y pudimos visitar más tiempo.",
+      },
+      {
+        segments: ruby("[休|やす]みを一日[延|の]ばして、ゆっくりすることにしました。"),
+        translation: "Decidimos extender un día más el descanso para estar tranquilos.",
+      },
+      {
+        segments: ruby("[線|せん]をまっすぐ[延|の]ばしてください。"),
+        translation: "Por favor, prolongue la línea en línea recta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "沿",
+    level: 6,
+    strokeCount: 8,
+    on: ["エン"],
+    kun: ["そ.う"],
+    meaning: "A lo largo de / seguir",
+    examples: [
+      {
+        segments: ruby("[川|かわ]に[沿|そ]って[歩|ある]きました。"),
+        translation: "Caminé a lo largo del río.",
+      },
+      {
+        segments: ruby("[線路|せんろ]に[沿|そ]う[道|みち]を[通|とお]って[駅|えき]へ[向|む]かいます。"),
+        translation: "Voy a la estación por el camino que sigue la vía del tren.",
+      },
+      {
+        segments: ruby("[海岸|かいがん]に[沿|そ]った[町|まち]は[景色|けしき]がきれいです。"),
+        translation: "Las ciudades a lo largo de la costa tienen paisajes bonitos.",
+      },
+      {
+        segments: ruby("[計画|けいかく]に[沿|そ]って[作業|さぎょう]を[進|すす]めています。"),
+        translation: "Estamos avanzando el trabajo siguiendo el plan.",
+      },
+      {
+        segments: ruby("[沿岸|えんがん][地域|ちいき]では[津波|つなみ]への[備|そな]えが[大切|たいせつ]です。"),
+        translation: "En las zonas costeras es importante prepararse para los tsunamis.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "恩",
+    level: 6,
+    strokeCount: 10,
+    on: ["オン"],
+    kun: [],
+    meaning: "Favor / gratitud",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]の[恩|おん]を[忘|わす]れません。"),
+        translation: "No olvidaré el favor del profesor.",
+      },
+      {
+        segments: ruby("[恩返|おんがえ]しができるように、もっと[努力|どりょく]したいです。"),
+        translation: "Quiero esforzarme más para poder devolver el favor.",
+      },
+      {
+        segments: ruby("[子|こ]どものころに[受|う]けた[恩|おん]は、大人になっても[残|のこ]ります。"),
+        translation: "Los favores recibidos en la niñez permanecen incluso al hacerse adulto.",
+      },
+      {
+        segments: ruby("[恩人|おんじん]にひさしぶりに[会|あ]えてうれしかったです。"),
+        translation: "Me alegró poder ver de nuevo a la persona que tanto me ayudó.",
+      },
+      {
+        segments: ruby("[自然|しぜん]の[恩恵|おんけい]を[受|う]けて[生活|せいかつ]していることを[忘|わす]れてはいけません。"),
+        translation: "No debemos olvidar que vivimos recibiendo los beneficios de la naturaleza.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "我",
+    level: 6,
+    strokeCount: 7,
+    on: ["ガ"],
+    kun: ["われ", "わ"],
+    meaning: "Yo / uno mismo / ego",
+    examples: [
+      {
+        segments: ruby("[我々|われわれ]はまだ[学|まな]びの[途中|とちゅう]です。"),
+        translation: "Nosotros todavía estamos en proceso de aprendizaje.",
+      },
+      {
+        segments: ruby("[我慢|がまん]することも、ときには[必要|ひつよう]です。"),
+        translation: "A veces también es necesario tener paciencia.",
+      },
+      {
+        segments: ruby("[自我|じが]がつよすぎると、[人|ひと]とぶつかることがあります。"),
+        translation: "Si el ego es demasiado fuerte, a veces uno choca con los demás.",
+      },
+      {
+        segments: ruby("[我|われ]を[忘|わす]れて[夢中|むちゅう]になってしまいました。"),
+        translation: "Me absorbí tanto que me olvidé de mí mismo.",
+      },
+      {
+        segments: ruby("[我慢強|がまんづよ]く[続|つづ]けることが、[結果|けっか]につながることもあります。"),
+        translation: "Seguir con paciencia y constancia a veces lleva a buenos resultados.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "灰",
+    level: 6,
+    strokeCount: 6,
+    on: ["カイ"],
+    kun: ["はい"],
+    meaning: "Ceniza",
+    examples: [
+      {
+        segments: ruby("[火山灰|かざんばい]が[町|まち]にふりました。"),
+        translation: "Cayó ceniza volcánica sobre la ciudad.",
+      },
+      {
+        segments: ruby("[灰色|はいいろ]の[空|そら]がひろがっています。"),
+        translation: "Un cielo gris se extiende por todas partes.",
+      },
+      {
+        segments: ruby("[燃|も]えた[紙|かみ]が[灰|はい]になりました。"),
+        translation: "El papel quemado se convirtió en ceniza.",
+      },
+      {
+        segments: ruby("[灰皿|はいざら]はこの[机|つくえ]の[上|うえ]にあります。"),
+        translation: "El cenicero está sobre esta mesa.",
+      },
+      {
+        segments: ruby("[灰|はい]をきれいに[片付|かたづ]けてから、つぎの[作業|さぎょう]を[始|はじ]めます。"),
+        translation: "Ordenaré bien la ceniza antes de comenzar el siguiente trabajo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "拡",
+    level: 6,
+    strokeCount: 8,
+    on: ["カク"],
+    kun: ["ひろ.がる", "ひろ.げる"],
+    meaning: "Ampliar / expandir",
+    examples: [
+      {
+        segments: ruby("[地図|ちず]を[拡大|かくだい]して[見|み]ます。"),
+        translation: "Amplío el mapa para verlo.",
+      },
+      {
+        segments: ruby("[感染|かんせん]が[拡|ひろ]がらないように[注意|ちゅうい]が[必要|ひつよう]です。"),
+        translation: "Hay que tener cuidado para que la infección no se expanda.",
+      },
+      {
+        segments: ruby("[教室|きょうしつ]を[拡張|かくちょう]する[工事|こうじ]が[始|はじ]まりました。"),
+        translation: "Comenzó la obra para ampliar el aula.",
+      },
+      {
+        segments: ruby("[考|かんが]えをもっと[広|ひろ]く[拡|ひろ]げたいです。"),
+        translation: "Quiero ampliar más mi forma de pensar.",
+      },
+      {
+        segments: ruby("[スマホ]の[画面|がめん]を[拡大|かくだい]すると、[小|ちい]さい[字|じ]も[読|よ]みやすくなります。"),
+        translation: "Si amplías la pantalla del celular, también se vuelve más fácil leer las letras pequeñas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "革",
+    level: 6,
+    strokeCount: 9,
+    on: ["カク"],
+    kun: ["かわ"],
+    meaning: "Cuero / reforma / cambio",
+    examples: [
+      {
+        segments: ruby("[革|かわ]の[靴|くつ]を[買|か]いました。"),
+        translation: "Compré zapatos de cuero.",
+      },
+      {
+        segments: ruby("[社会|しゃかい]をよくするために[改革|かいかく]が[必要|ひつよう]です。"),
+        translation: "Para mejorar la sociedad, se necesitan reformas.",
+      },
+      {
+        segments: ruby("[革|かわ]のバッグは[長|なが]く[使|つか]えます。"),
+        translation: "Los bolsos de cuero se pueden usar por mucho tiempo.",
+      },
+      {
+        segments: ruby("[生活|せいかつ]を[変|か]えるには、[考|かんが]え[方|かた]から[革|あらた]めることも[大切|たいせつ]です。"),
+        translation: "Para cambiar la vida, también es importante reformar primero la forma de pensar.",
+      },
+      {
+        segments: ruby("[技術革新|ぎじゅつかくしん]によって、[生活|せいかつ]がとても[便利|べんり]になりました。"),
+        translation: "Gracias a la innovación tecnológica, la vida se volvió muy cómoda.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "閣",
+    level: 6,
+    strokeCount: 14,
+    on: ["カク"],
+    kun: [],
+    meaning: "Gabinete / edificio elevado",
+    examples: [
+      {
+        segments: ruby("[内閣|ないかく]の[方針|ほうしん]がニュースで[発表|はっぴょう]されました。"),
+        translation: "Las políticas del gabinete se anunciaron en las noticias.",
+      },
+      {
+        segments: ruby("[内閣|ないかく][改造|かいぞう]の[話題|わだい]がつづいています。"),
+        translation: "Sigue el tema de la reorganización del gabinete.",
+      },
+      {
+        segments: ruby("[閣議|かくぎ]で[重要|じゅうよう]なことが[決|き]まります。"),
+        translation: "En la reunión del gabinete se deciden asuntos importantes.",
+      },
+      {
+        segments: ruby("[楼閣|ろうかく]のような[高|たか]い[建物|たてもの]を[絵|え]で[見|み]ました。"),
+        translation: "Vi en un dibujo un edificio alto como una torre-palacio.",
+      },
+      {
+        segments: ruby("[政治|せいじ]のニュースでは、[内閣|ないかく]という[言葉|ことば]をよく[聞|き]きます。"),
+        translation: "En las noticias de política se escucha a menudo la palabra “gabinete”.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "割",
+    level: 6,
+    strokeCount: 12,
+    on: ["カツ"],
+    kun: ["わ.る", "わり", "わ.れる", "さ.く"],
+    meaning: "Dividir / proporción / romper",
+    examples: [
+      {
+        segments: ruby("[卵|たまご]を二つに[割|わ]りました。"),
+        translation: "Partí el huevo en dos.",
+      },
+      {
+        segments: ruby("この[店|みせ]は一[割引|わりびき]です。"),
+        translation: "Esta tienda tiene un diez por ciento de descuento.",
+      },
+      {
+        segments: ruby("[役割|やくわり]をしっかり[理解|りかい]して[行動|こうどう]します。"),
+        translation: "Actúo entendiendo bien mi rol.",
+      },
+      {
+        segments: ruby("[割合|わりあい]を[計算|けいさん]する[問題|もんだい]は少しむずかしいです。"),
+        translation: "Los problemas de calcular proporciones son un poco difíciles.",
+      },
+      {
+        segments: ruby("[思|おも]っていた[割|わり]に、きょうの[仕事|しごと]は[早|はや]く[終|お]わりました。"),
+        translation: "En comparación con lo que pensaba, el trabajo de hoy terminó rápido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "株",
+    level: 6,
+    strokeCount: 10,
+    on: ["シュ"],
+    kun: ["かぶ"],
+    meaning: "Acción / cepa / tocón",
+    examples: [
+      {
+        segments: ruby("[株|かぶ]について[勉強|べんきょう]している[人|ひと]もいます。"),
+        translation: "También hay personas que están estudiando sobre acciones.",
+      },
+      {
+        segments: ruby("[株式会社|かぶしきがいしゃ]の[名前|なまえ]を[確認|かくにん]しました。"),
+        translation: "Confirmé el nombre de la sociedad anónima.",
+      },
+      {
+        segments: ruby("[木|き]の[株|かぶ]に[座|すわ]って[休|やす]みました。"),
+        translation: "Me senté sobre un tocón y descansé.",
+      },
+      {
+        segments: ruby("[一株|ひとかぶ]だけでも[花|はな]があると、[庭|にわ]の[印象|いんしょう]が[変|か]わります。"),
+        translation: "Aunque sea una sola mata de flores, cambia la impresión del jardín.",
+      },
+      {
+        segments: ruby("[株主|かぶぬし]という[言葉|ことば]をニュースで[聞|き]きました。"),
+        translation: "Escuché en las noticias la palabra “accionista”.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "干",
+    level: 6,
+    strokeCount: 3,
+    on: ["カン"],
+    kun: ["ほ.す", "ひ.る"],
+    meaning: "Secar / colgar / un poco",
+    examples: [
+      {
+        segments: ruby("[洗濯物|せんたくもの]をベランダに[干|ほ]しました。"),
+        translation: "Colgué la ropa lavada en el balcón.",
+      },
+      {
+        segments: ruby("[雨|あめ]がやんだので、ふとんを[干|ほ]します。"),
+        translation: "Como dejó de llover, voy a tender el futón.",
+      },
+      {
+        segments: ruby("[干物|ひもの]が[好|す]きです。"),
+        translation: "Me gustan los alimentos secos, como el pescado seco.",
+      },
+      {
+        segments: ruby("[若干|じゃっかん]の[違|ちが]いはありますが、ほとんどおなじです。"),
+        translation: "Hay una pequeña diferencia, pero en general es casi lo mismo.",
+      },
+      {
+        segments: ruby("[日|ひ]に[干|ひ]した[野菜|やさい]は、あじがこくなることがあります。"),
+        translation: "Las verduras secadas al sol a veces adquieren un sabor más intenso.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "巻",
+    level: 6,
+    strokeCount: 9,
+    on: ["カン"],
+    kun: ["ま.く", "まき"],
+    meaning: "Enrollar / volumen / rollo",
+    examples: [
+      {
+        segments: ruby("[寒|さむ]いのでマフラーを[首|くび]に[巻|ま]きました。"),
+        translation: "Como hace frío, me envolví una bufanda en el cuello.",
+      },
+      {
+        segments: ruby("[第一巻|だいいっかん]から[読|よ]み[始|はじ]めました。"),
+        translation: "Empecé a leer desde el volumen uno.",
+      },
+      {
+        segments: ruby("[のり[巻|ま]き]を[昼|ひる]ごはんに[食|た]べました。"),
+        translation: "Comí rollos de sushi al almuerzo.",
+      },
+      {
+        segments: ruby("[紙|かみ]をくるくる[巻|ま]いて[筒|つつ]をつくりました。"),
+        translation: "Enrollé el papel para hacer un tubo.",
+      },
+      {
+        segments: ruby("[事件|じけん]に[巻|ま]き[込|こ]まれないように、[夜道|よみち]では[気|き]をつけます。"),
+        translation: "Tengo cuidado de noche para no verme envuelto en problemas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "看",
+    level: 6,
+    strokeCount: 9,
+    on: ["カン"],
+    kun: ["み.る"],
+    meaning: "Cuidar / vigilar / observar",
+    examples: [
+      {
+        segments: ruby("[母|はは]が[病気|びょうき]の[祖父|そふ]を[看|み]ています。"),
+        translation: "Mi madre está cuidando a mi abuelo enfermo.",
+      },
+      {
+        segments: ruby("[看護師|かんごし]として[働|はたら]きたいです。"),
+        translation: "Quiero trabajar como enfermero.",
+      },
+      {
+        segments: ruby("[看板|かんばん]を[見|み]て、その[店|みせ]に[入|はい]りました。"),
+        translation: "Vi el letrero y entré en esa tienda.",
+      },
+      {
+        segments: ruby("[病人|びょうにん]を[看病|かんびょう]するのはたいへんですが[大切|たいせつ]です。"),
+        translation: "Cuidar a una persona enferma es difícil, pero importante.",
+      },
+      {
+        segments: ruby("[子|こ]どもの[様子|ようす]をしっかり[看|み]ながら、[危険|きけん]がないか[確認|かくにん]します。"),
+        translation: "Observo bien cómo está el niño mientras confirmo que no haya peligro.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "簡",
+    level: 6,
+    strokeCount: 18,
+    on: ["カン"],
+    kun: [],
+    meaning: "Sencillo / breve",
+    examples: [
+      {
+        segments: ruby("この[問題|もんだい]は[簡単|かんたん]です。"),
+        translation: "Este problema es fácil.",
+      },
+      {
+        segments: ruby("[簡潔|かんけつ]に[説明|せつめい]してください。"),
+        translation: "Por favor, explíquelo de manera breve y clara.",
+      },
+      {
+        segments: ruby("[簡易|かんい]な[方法|ほうほう]で[直|なお]しました。"),
+        translation: "Lo arreglé con un método sencillo.",
+      },
+      {
+        segments: ruby("[簡単|かんたん]そうに[見|み]えても、やってみるとむずかしいことがあります。"),
+        translation: "Aunque parezca fácil, a veces al intentarlo resulta difícil.",
+      },
+      {
+        segments: ruby("[文章|ぶんしょう]は[短|みじか]くても、[簡潔|かんけつ]であれば[伝|つた]わりやすいです。"),
+        translation: "Aunque un texto sea corto, si es claro y conciso, se entiende mejor.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "危",
+    level: 6,
+    strokeCount: 6,
+    on: ["キ"],
+    kun: ["あぶ.ない", "あや.うい"],
+    meaning: "Peligroso / arriesgado",
+    examples: [
+      {
+        segments: ruby("[危|あぶ]ないですから、そこに[立|た]たないでください。"),
+        translation: "Es peligroso, así que por favor no se quede ahí parado.",
+      },
+      {
+        segments: ruby("[危険|きけん]な[場所|ばしょ]には[入|はい]ってはいけません。"),
+        translation: "No se debe entrar en lugares peligrosos.",
+      },
+      {
+        segments: ruby("[夜道|よみち]は[危|あぶ]ないので、[気|き]をつけて[帰|かえ]ります。"),
+        translation: "Como los caminos de noche son peligrosos, vuelvo con cuidado.",
+      },
+      {
+        segments: ruby("[その[橋|はし]は[古|ふる]くて、少し[危|あや]うく[見|み]えます。"),
+        translation: "Ese puente es viejo y se ve un poco inseguro.",
+      },
+      {
+        segments: ruby("[危機|きき]をのりこえるには、[落|お]ち[着|つ]いて[考|かんが]えることが[大切|たいせつ]です。"),
+        translation: "Para superar una crisis, es importante pensar con calma.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "机",
+    level: 6,
+    strokeCount: 6,
+    on: ["キ"],
+    kun: ["つくえ"],
+    meaning: "Escritorio / mesa",
+    examples: [
+      {
+        segments: ruby("[机|つくえ]の[上|うえ]に[本|ほん]があります。"),
+        translation: "Hay un libro sobre el escritorio.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[机|つくえ]を[買|か]いました。"),
+        translation: "Compré un escritorio nuevo.",
+      },
+      {
+        segments: ruby("[机|つくえ]をきれいにしてから[勉強|べんきょう]します。"),
+        translation: "Ordeno el escritorio antes de estudiar.",
+      },
+      {
+        segments: ruby("[教室|きょうしつ]の[机|つくえ]にノートを[置|お]きました。"),
+        translation: "Puse el cuaderno en el escritorio del aula.",
+      },
+      {
+        segments: ruby("[机|つくえ]に[向|む]かう[時間|じかん]を[毎日|まいにち]つくることが[大切|たいせつ]です。"),
+        translation: "Es importante hacerse todos los días un tiempo para sentarse a estudiar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "揮",
+    level: 6,
+    strokeCount: 12,
+    on: ["キ"],
+    kun: [],
+    meaning: "Ejercer / demostrar / dirigir",
+    examples: [
+      {
+        segments: ruby("[試合|しあい]で[実力|じつりょく]を[発揮|はっき]しました。"),
+        translation: "Demostró su habilidad en el partido.",
+      },
+      {
+        segments: ruby("[緊張|きんちょう]すると、[力|ちから]を[十分|じゅうぶん]に[発揮|はっき]できないことがあります。"),
+        translation: "Cuando uno se pone nervioso, a veces no puede rendir al máximo.",
+      },
+      {
+        segments: ruby("[指揮者|しきしゃ]がみんなをまとめています。"),
+        translation: "El director de orquesta está guiando a todos.",
+      },
+      {
+        segments: ruby("[先生|せんせい]がクラスを[指揮|しき]して[活動|かつどう]を[進|すす]めました。"),
+        translation: "El profesor dirigió la clase y avanzó la actividad.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[良|よ]さを[発揮|はっき]するには、[安心|あんしん]して[話|はな]せる[環境|かんきょう]も[必要|ひつよう]です。"),
+        translation: "Para sacar lo mejor de uno mismo, también hace falta un entorno en el que se pueda hablar con tranquilidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "貴",
+    level: 6,
+    strokeCount: 12,
+    on: ["キ"],
+    kun: ["たっと.い", "とうと.い", "たっと.ぶ", "とうと.ぶ"],
+    meaning: "Valioso / noble / preciado",
+    examples: [
+      {
+        segments: ruby("[貴重|きちょう]な[経験|けいけん]をしました。"),
+        translation: "Tuve una experiencia valiosa.",
+      },
+      {
+        segments: ruby("[時間|じかん]はとても[貴重|きちょう]です。"),
+        translation: "El tiempo es muy valioso.",
+      },
+      {
+        segments: ruby("[図書館|としょかん]には[貴重|きちょう]な[資料|しりょう]があります。"),
+        translation: "En la biblioteca hay materiales valiosos.",
+      },
+      {
+        segments: ruby("[命|いのち]は何よりも[尊|とうと]く、[貴|たっと]いものです。"),
+        translation: "La vida es algo noble y valioso por encima de todo.",
+      },
+      {
+        segments: ruby("[小|ちい]さな[失敗|しっぱい]から[学|まな]ぶことも、[貴重|きちょう]な[成長|せいちょう]につながります。"),
+        translation: "Aprender de pequeños errores también lleva a un crecimiento valioso.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "疑",
+    level: 6,
+    strokeCount: 14,
+    on: ["ギ"],
+    kun: ["うたが.う"],
+    meaning: "Dudar / sospechar",
+    examples: [
+      {
+        segments: ruby("[本当|ほんとう]かどうか[疑|うたが]っています。"),
+        translation: "Estoy dudando de si es verdad o no.",
+      },
+      {
+        segments: ruby("[疑問|ぎもん]があれば、すぐに[質問|しつもん]してください。"),
+        translation: "Si tiene alguna duda, por favor pregunte enseguida.",
+      },
+      {
+        segments: ruby("[人|ひと]をすぐに[疑|うたが]うのはよくありません。"),
+        translation: "No está bien sospechar de la gente de inmediato.",
+      },
+      {
+        segments: ruby("[先生|せんせい]の[説明|せつめい]を[聞|き]いて、[疑問|ぎもん]がなくなりました。"),
+        translation: "Después de escuchar la explicación del profesor, se me fueron las dudas.",
+      },
+      {
+        segments: ruby("[何|なに]でも[疑|うたが]うのではなく、まず[事実|じじつ]を[確認|かくにん]することが[大切|たいせつ]です。"),
+        translation: "En vez de dudar de todo, lo importante es primero confirmar los hechos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "吸",
+    level: 6,
+    strokeCount: 6,
+    on: ["キュウ"],
+    kun: ["す.う"],
+    meaning: "Absorber / inhalar / fumar",
+    examples: [
+      {
+        segments: ruby("[朝|あさ]のきれいな[空気|くうき]を[吸|す]うと[気持|きも]ちがいいです。"),
+        translation: "Se siente bien respirar el aire limpio de la mañana.",
+      },
+      {
+        segments: ruby("[水|みず]をよく[吸|す]うタオルです。"),
+        translation: "Es una toalla que absorbe bien el agua.",
+      },
+      {
+        segments: ruby("[深|ふか]く[息|いき]を[吸|す]ってください。"),
+        translation: "Por favor, inhale profundamente.",
+      },
+      {
+        segments: ruby("[たばこ]を[吸|す]わない[人|ひと]も多いです。"),
+        translation: "También hay muchas personas que no fuman.",
+      },
+      {
+        segments: ruby("[植物|しょくぶつ]は[水|みず]や[光|ひかり]を[吸収|きゅうしゅう]して[育|そだ]ちます。"),
+        translation: "Las plantas crecen absorbiendo agua y luz.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "供",
+    level: 6,
+    strokeCount: 8,
+    on: ["キョウ", "ク"],
+    kun: ["そな.える", "とも"],
+    meaning: "Ofrecer / acompañar / niño",
+    examples: [
+      {
+        segments: ruby("[子供|こども]たちが[公園|こうえん]で[遊|あそ]んでいます。"),
+        translation: "Los niños están jugando en el parque.",
+      },
+      {
+        segments: ruby("[神社|じんじゃ]に[花|はな]を[供|そな]えました。"),
+        translation: "Ofrecí flores en el santuario.",
+      },
+      {
+        segments: ruby("[食事|しょくじ]を[客|きゃく]に[提供|ていきょう]しています。"),
+        translation: "Se está ofreciendo comida a los clientes.",
+      },
+      {
+        segments: ruby("[社長|しゃちょう]のお[供|とも]で[会場|かいじょう]へ[行|い]きました。"),
+        translation: "Fui al lugar acompañando al director.",
+      },
+      {
+        segments: ruby("[子供|こども]のころの[経験|けいけん]は、大人になってからも[心|こころ]に[残|のこ]ることがあります。"),
+        translation: "Las experiencias de la infancia a veces permanecen en el corazón incluso de adulto.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "胸",
+    level: 6,
+    strokeCount: 10,
+    on: ["キョウ"],
+    kun: ["むね", "むな"],
+    meaning: "Pecho / corazón",
+    examples: [
+      {
+        segments: ruby("[胸|むね]が[少|すこ]し[痛|いた]いです。"),
+        translation: "Me duele un poco el pecho.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[言葉|ことば]が[胸|むね]に[残|のこ]りました。"),
+        translation: "Unas palabras importantes se me quedaron en el corazón.",
+      },
+      {
+        segments: ruby("[胸|むね]を[張|は]って[話|はな]してください。"),
+        translation: "Hable con el pecho erguido, con confianza.",
+      },
+      {
+        segments: ruby("[胸元|むなもと]に[名札|なふだ]をつけています。"),
+        translation: "Llevo la tarjeta de identificación en el pecho.",
+      },
+      {
+        segments: ruby("[夢|ゆめ]に[向|む]かう[気持|きも]ちを[胸|むね]に、[毎日|まいにち]を[大切|たいせつ]に[過|す]ごしたいです。"),
+        translation: "Quiero vivir cada día valorándolo, llevando en el corazón el deseo de avanzar hacia mi sueño.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "郷",
+    level: 6,
+    strokeCount: 11,
+    on: ["キョウ", "ゴウ"],
+    kun: ["さと"],
+    meaning: "Pueblo natal / campo",
+    examples: [
+      {
+        segments: ruby("[故郷|こきょう]をひさしぶりに[訪|おとず]れました。"),
+        translation: "Visité mi pueblo natal después de mucho tiempo.",
+      },
+      {
+        segments: ruby("[郷土|きょうど][料理|りょうり]を[食|た]べました。"),
+        translation: "Comí comida típica local.",
+      },
+      {
+        segments: ruby("[故郷|こきょう]の[景色|けしき]を[思|おも]い[出|だ]します。"),
+        translation: "Recuerdo el paisaje de mi tierra.",
+      },
+      {
+        segments: ruby("[郷里|きょうり]に[住|す]む[家族|かぞく]に[電話|でんわ]しました。"),
+        translation: "Llamé a mi familia que vive en mi ciudad natal.",
+      },
+      {
+        segments: ruby("[故郷|こきょう]をはなれていても、その[場所|ばしょ]で[育|そだ]った[記憶|きおく]はずっと[心|こころ]に[残|のこ]ります。"),
+        translation: "Aunque uno se aleje de su tierra natal, los recuerdos de haber crecido allí permanecen siempre en el corazón.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "勤",
+    level: 6,
+    strokeCount: 12,
+    on: ["キン", "ゴン"],
+    kun: ["つと.める", "つと.まる"],
+    meaning: "Trabajar / servir / diligencia",
+    examples: [
+      {
+        segments: ruby("[会社|かいしゃ]に[勤|つと]めています。"),
+        translation: "Trabajo en una empresa.",
+      },
+      {
+        segments: ruby("[勤務|きんむ][時間|じかん]は九[時|じ]からです。"),
+        translation: "El horario de trabajo es desde las nueve.",
+      },
+      {
+        segments: ruby("[毎日|まいにち]まじめに[勤|つと]めることが[大切|たいせつ]です。"),
+        translation: "Es importante trabajar con seriedad todos los días.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[長|なが]く[同|おな]じ[会社|かいしゃ]に[勤|つと]めています。"),
+        translation: "Él trabaja desde hace mucho tiempo en la misma empresa.",
+      },
+      {
+        segments: ruby("[勤勉|きんべん]に[学|まな]ぶ[姿勢|しせい]は、[仕事|しごと]にも[勉強|べんきょう]にも[役立|やくだ]ちます。"),
+        translation: "Una actitud diligente para aprender sirve tanto para el trabajo como para el estudio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "筋",
+    level: 6,
+    strokeCount: 12,
+    on: ["キン"],
+    kun: ["すじ"],
+    meaning: "Músculo / hilo / lógica",
+    examples: [
+      {
+        segments: ruby("[運動|うんどう]のあとで[足|あし]の[筋|すじ]が[痛|いた]いです。"),
+        translation: "Después del ejercicio me duelen los músculos de la pierna.",
+      },
+      {
+        segments: ruby("[話|はなし]の[筋|すじ]がよくわかりませんでした。"),
+        translation: "No entendí bien el hilo de la historia.",
+      },
+      {
+        segments: ruby("[道|みち]の[筋|すじ]に[沿|そ]って[歩|ある]きました。"),
+        translation: "Caminé siguiendo la línea del camino.",
+      },
+      {
+        segments: ruby("[筋肉|きんにく]をきたえるために[毎日|まいにち][運動|うんどう]しています。"),
+        translation: "Hago ejercicio todos los días para fortalecer los músculos.",
+      },
+      {
+        segments: ruby("[筋道|すじみち]を[立|た]てて[説明|せつめい]すると、[相手|あいて]にも[伝|つた]わりやすくなります。"),
+        translation: "Si explicas las cosas con orden y lógica, se vuelven más fáciles de entender para la otra persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "系",
+    level: 6,
+    strokeCount: 7,
+    on: ["ケイ"],
+    kun: [],
+    meaning: "Sistema / grupo / tipo",
+    examples: [
+      {
+        segments: ruby("[理系|りけい]の[勉強|べんきょう]に[興味|きょうみ]があります。"),
+        translation: "Me interesa el estudio del área científica.",
+      },
+      {
+        segments: ruby("[太陽系|たいようけい]について[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos en clase sobre el sistema solar.",
+      },
+      {
+        segments: ruby("[同|おな]じ[系統|けいとう]の[言葉|ことば]を[集|あつ]めました。"),
+        translation: "Reuní palabras del mismo grupo o línea.",
+      },
+      {
+        segments: ruby("[この[店|みせ]は[辛|から]い[料理|りょうり][系|けい]が[人気|にんき]です。"),
+        translation: "En este local son populares los platos del tipo picante.",
+      },
+      {
+        segments: ruby("[考|かんが]えを[整理|せいり]するときは、まずどんな[系統|けいとう]に分けられるかを[見|み]るとよいです。"),
+        translation: "Al ordenar ideas, conviene primero ver en qué grupos o sistemas se pueden clasificar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "敬",
+    level: 6,
+    strokeCount: 12,
+    on: ["ケイ"],
+    kun: ["うやま.う"],
+    meaning: "Respetar / cortesía",
+    examples: [
+      {
+        segments: ruby("[年上|としうえ]の[人|ひと]を[敬|うやま]うことは[大切|たいせつ]です。"),
+        translation: "Es importante respetar a las personas mayores.",
+      },
+      {
+        segments: ruby("[敬語|けいご]は[仕事|しごと]でよく[使|つか]います。"),
+        translation: "El keigo se usa mucho en el trabajo.",
+      },
+      {
+        segments: ruby("[尊敬|そんけい]する[先生|せんせい]がいます。"),
+        translation: "Hay un profesor al que respeto.",
+      },
+      {
+        segments: ruby("[相手|あいて]を[敬|うやま]う[気持|きも]ちは、[言葉|ことば]にも[表|あらわ]れます。"),
+        translation: "El sentimiento de respeto hacia el otro también se refleja en las palabras.",
+      },
+      {
+        segments: ruby("[礼儀|れいぎ]だけでなく、[本当|ほんとう]に[相手|あいて]を[敬|うやま]う[心|こころ]をもつことが[大切|たいせつ]です。"),
+        translation: "No solo importa la cortesía, también es importante tener un respeto genuino por la otra persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "警",
+    level: 6,
+    strokeCount: 19,
+    on: ["ケイ"],
+    kun: [],
+    meaning: "Alerta / policía / advertencia",
+    examples: [
+      {
+        segments: ruby("[警察|けいさつ]に[相談|そうだん]しました。"),
+        translation: "Consulté con la policía.",
+      },
+      {
+        segments: ruby("[火災|かさい][警報|けいほう]が[鳴|な]りました。"),
+        translation: "Sonó la alarma de incendio.",
+      },
+      {
+        segments: ruby("[危険|きけん]を[警告|けいこく]する[看板|かんばん]があります。"),
+        translation: "Hay un letrero que advierte del peligro.",
+      },
+      {
+        segments: ruby("[警備員|けいびいん]が[入口|いりぐち]に[立|た]っています。"),
+        translation: "Hay un guardia de seguridad en la entrada.",
+      },
+      {
+        segments: ruby("[小|ちい]さな[変化|へんか]にも[警戒|けいかい]することが、[大|おお]きな[事故|じこ]を[防|ふせ]ぐことにつながります。"),
+        translation: "Estar atento incluso a pequeños cambios ayuda a prevenir grandes accidentes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "劇",
+    level: 6,
+    strokeCount: 15,
+    on: ["ゲキ"],
+    kun: [],
+    meaning: "Teatro / drama",
+    examples: [
+      {
+        segments: ruby("[学校|がっこう]の[劇|げき]に[参加|さんか]しました。"),
+        translation: "Participé en la obra de la escuela.",
+      },
+      {
+        segments: ruby("[演劇|えんげき]を[見|み]るのが[好|す]きです。"),
+        translation: "Me gusta ver teatro.",
+      },
+      {
+        segments: ruby("[悲劇|ひげき]の[物語|ものがたり]に[心|こころ]を[動|うご]かされました。"),
+        translation: "Me conmovió una historia trágica.",
+      },
+      {
+        segments: ruby("[劇場|げきじょう]で[新|あたら]しい[作品|さくひん]を[見|み]ました。"),
+        translation: "Vi una obra nueva en el teatro.",
+      },
+      {
+        segments: ruby("[短|みじか]い[劇|げき]でも、[気持|きも]ちの[変化|へんか]がしっかり[伝|つた]わると、とても[印象|いんしょう]に[残|のこ]ります。"),
+        translation: "Incluso en una obra corta, si se transmite bien el cambio de emociones, deja una impresión muy fuerte.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "激",
+    level: 6,
+    strokeCount: 16,
+    on: ["ゲキ"],
+    kun: ["はげ.しい"],
+    meaning: "Intenso / violento",
+    examples: [
+      {
+        segments: ruby("[雨|あめ]が[激|はげ]しく[降|ふ]っています。"),
+        translation: "Está lloviendo intensamente.",
+      },
+      {
+        segments: ruby("[激戦|げきせん]のすえに[勝|か]ちました。"),
+        translation: "Ganamos después de una dura batalla.",
+      },
+      {
+        segments: ruby("[気温|きおん]の[変化|へんか]が[激|はげ]しい[季節|きせつ]です。"),
+        translation: "Es una temporada con cambios bruscos de temperatura.",
+      },
+      {
+        segments: ruby("[感激|かんげき]して[言葉|ことば]がでませんでした。"),
+        translation: "Me emocioné tanto que me quedé sin palabras.",
+      },
+      {
+        segments: ruby("[意見|いけん]が[違|ちが]っても、[感情|かんじょう]が[激|はげ]しくなりすぎないように[話|はな]すことが[大切|たいせつ]です。"),
+        translation: "Aunque las opiniones sean distintas, es importante hablar sin dejar que las emociones se intensifiquen demasiado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "穴",
+    level: 6,
+    strokeCount: 5,
+    on: ["ケツ"],
+    kun: ["あな"],
+    meaning: "Agujero / hueco",
+    examples: [
+      {
+        segments: ruby("[服|ふく]に[小|ちい]さい[穴|あな]があいています。"),
+        translation: "La ropa tiene un pequeño agujero.",
+      },
+      {
+        segments: ruby("[地面|じめん]に[深|ふか]い[穴|あな]がありました。"),
+        translation: "Había un hoyo profundo en el suelo.",
+      },
+      {
+        segments: ruby("[穴|あな]をうめて、[道|みち]をなおしました。"),
+        translation: "Rellenaron el agujero y repararon el camino.",
+      },
+      {
+        segments: ruby("[地下鉄|ちかてつ]の[入口|いりぐち]は、[地面|じめん]にあいた[穴|あな]のように[見|み]えることがあります。"),
+        translation: "A veces la entrada del metro puede parecer un hueco abierto en el suelo.",
+      },
+      {
+        segments: ruby("[思|おも]わぬ[穴場|あなば]を[見|み]つけると、なんだかうれしくなります。"),
+        translation: "Cuando uno encuentra un buen lugar escondido e inesperado, se pone contento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "券",
+    level: 6,
+    strokeCount: 8,
+    on: ["ケン"],
+    kun: [],
+    meaning: "Boleto / cupón / ticket",
+    examples: [
+      {
+        segments: ruby("[映画|えいが]の[入場券|にゅうじょうけん]を[買|か]いました。"),
+        translation: "Compré una entrada para el cine.",
+      },
+      {
+        segments: ruby("[航空券|こうくうけん]を[予約|よやく]しました。"),
+        translation: "Reservé un boleto de avión.",
+      },
+      {
+        segments: ruby("[食事券|しょくじけん]をもらって、[店|みせ]で[使|つか]いました。"),
+        translation: "Recibí un cupón de comida y lo usé en una tienda.",
+      },
+      {
+        segments: ruby("[回数券|かいすうけん]を[買|か]うと、少し[安|やす]くなります。"),
+        translation: "Si compras un ticket múltiple, sale un poco más barato.",
+      },
+      {
+        segments: ruby("[チケット]や[入場券|にゅうじょうけん]は、なくさないように[早|はや]めに[場所|ばしょ]を[決|き]めておくと[安心|あんしん]です。"),
+        translation: "Da tranquilidad decidir desde antes dónde guardar los tickets o entradas para no perderlos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "絹",
+    level: 6,
+    strokeCount: 13,
+    on: ["ケン"],
+    kun: ["きぬ"],
+    meaning: "Seda",
+    examples: [
+      {
+        segments: ruby("[絹|きぬ]の[着物|きもの]はとてもきれいです。"),
+        translation: "El kimono de seda es muy hermoso.",
+      },
+      {
+        segments: ruby("[この[布|ぬの]は[絹|きぬ]でできています。"),
+        translation: "Esta tela está hecha de seda.",
+      },
+      {
+        segments: ruby("[絹糸|きぬいと]はなめらかでやわらかいです。"),
+        translation: "El hilo de seda es suave y liso.",
+      },
+      {
+        segments: ruby("[昔|むかし]は[絹|きぬ]が[高価|こうか]なものとされていました。"),
+        translation: "Antiguamente la seda era considerada algo costoso.",
+      },
+      {
+        segments: ruby("[絹|きぬ]のようになめらかな[手触|てざわ]りの[布|ぬの]をさわると、[上品|じょうひん]な[印象|いんしょう]を[受|う]けます。"),
+        translation: "Al tocar una tela suave como la seda, da una impresión elegante.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "権",
+    level: 6,
+    strokeCount: 15,
+    on: ["ケン", "ゴン"],
+    kun: [],
+    meaning: "Derecho / autoridad / poder",
+    examples: [
+      {
+        segments: ruby("[人権|じんけん]を[守|まも]ることは[大切|たいせつ]です。"),
+        translation: "Es importante proteger los derechos humanos.",
+      },
+      {
+        segments: ruby("[選挙権|せんきょけん]について[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos en clase sobre el derecho a voto.",
+      },
+      {
+        segments: ruby("[発言権|はつげんけん]はみんなにあります。"),
+        translation: "Todos tienen derecho a opinar.",
+      },
+      {
+        segments: ruby("[強|つよ]い[権力|けんりょく]には、[正|ただ]しい[使|つか]い方が[求|もと]められます。"),
+        translation: "Un gran poder exige una forma correcta de ser usado.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[権利|けんり]だけでなく、[相手|あいて]の[権利|けんり]も[大切|たいせつ]にすることが[社会|しゃかい]では[必要|ひつよう]です。"),
+        translation: "En la sociedad es necesario valorar no solo los propios derechos, sino también los de los demás.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "憲",
+    level: 6,
+    strokeCount: 16,
+    on: ["ケン"],
+    kun: [],
+    meaning: "Constitución / ley fundamental",
+    examples: [
+      {
+        segments: ruby("[日本国憲法|にほんこくけんぽう]について[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos en clase sobre la Constitución de Japón.",
+      },
+      {
+        segments: ruby("[憲法|けんぽう]は[国|くに]の[基本|きほん]となる[大切|たいせつ]な[決|き]まりです。"),
+        translation: "La constitución es una norma importante que sirve de base para el país.",
+      },
+      {
+        segments: ruby("[憲法|けんぽう]に[関|かん]する[本|ほん]を[図書館|としょかん]で[借|か]りました。"),
+        translation: "Pedí prestado en la biblioteca un libro relacionado con la constitución.",
+      },
+      {
+        segments: ruby("[憲法|けんぽう]の[役割|やくわり]を[理解|りかい]するのは、[社会|しゃかい]を[考|かんが]える[上|うえ]で[大切|たいせつ]です。"),
+        translation: "Entender el papel de la constitución es importante para pensar la sociedad.",
+      },
+      {
+        segments: ruby("[国民|こくみん]の[権利|けんり]と[義務|ぎむ]は、[憲法|けんぽう]の中でも[特|とく]に[大切|たいせつ]な[内容|ないよう]です。"),
+        translation: "Los derechos y deberes del pueblo son contenidos especialmente importantes dentro de la constitución.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "源",
+    level: 6,
+    strokeCount: 13,
+    on: ["ゲン"],
+    kun: ["みなもと"],
+    meaning: "Origen / fuente",
+    examples: [
+      {
+        segments: ruby("[川|かわ]の[源|みなもと]を[見|み]に[行|い]きました。"),
+        translation: "Fui a ver la fuente del río.",
+      },
+      {
+        segments: ruby("[電気|でんき]の[資源|しげん]を[大切|たいせつ]に[使|つか]いましょう。"),
+        translation: "Usemos con cuidado los recursos energéticos.",
+      },
+      {
+        segments: ruby("[問題|もんだい]の[原因|げんいん]や[源|みなもと]を[調|しら]べています。"),
+        translation: "Estoy investigando la causa y el origen del problema.",
+      },
+      {
+        segments: ruby("[自然|しぜん]の[資源|しげん]が[減|へ]ると、[生活|せいかつ]にも[影響|えいきょう]がでます。"),
+        translation: "Si disminuyen los recursos naturales, también afecta la vida diaria.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[力|ちから]の[源|みなもと]が何かを[知|し]ることは、[前|まえ]に[進|すす]む[助|たす]けになります。"),
+        translation: "Saber cuál es la fuente de tu propia fuerza ayuda a seguir adelante.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "厳",
+    level: 6,
+    strokeCount: 17,
+    on: ["ゲン", "ゴン"],
+    kun: ["きび.しい", "おごそ.か"],
+    meaning: "Estricto / severo / solemne",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]はとても[厳|きび]しいですが、やさしいです。"),
+        translation: "El profesor es muy estricto, pero amable.",
+      },
+      {
+        segments: ruby("[時間|じかん]に[厳|きび]しい[会社|かいしゃ]です。"),
+        translation: "Es una empresa estricta con el horario.",
+      },
+      {
+        segments: ruby("[冬|ふゆ]の[寒|さむ]さが[厳|きび]しくなってきました。"),
+        translation: "El frío del invierno se ha vuelto más severo.",
+      },
+      {
+        segments: ruby("[厳粛|げんしゅく]な[雰囲気|ふんいき]の中で[式|しき]が[行|おこな]われました。"),
+        translation: "La ceremonia se realizó en un ambiente solemne.",
+      },
+      {
+        segments: ruby("[自分|じぶん]に[厳|きび]しくするだけでなく、[休|やす]むべきときに[休|やす]むことも[大切|たいせつ]です。"),
+        translation: "No solo es importante ser exigente con uno mismo, sino también descansar cuando corresponde.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "己",
+    level: 6,
+    strokeCount: 3,
+    on: ["コ", "キ"],
+    kun: ["おのれ"],
+    meaning: "Uno mismo / yo",
+    examples: [
+      {
+        segments: ruby("[己|おのれ]を[知|し]ることはむずかしいです。"),
+        translation: "Conocerse a uno mismo es difícil.",
+      },
+      {
+        segments: ruby("[己|おのれ]の[弱|よわ]さと[向|む]き[合|あ]うことも[成長|せいちょう]の一つです。"),
+        translation: "Enfrentarse a las propias debilidades también es una forma de crecer.",
+      },
+      {
+        segments: ruby("[己|おのれ]に[負|ま]けないように、[毎日|まいにち][少|すこ]しずつ[努力|どりょく]しています。"),
+        translation: "Me esfuerzo cada día un poco para no vencerme a mí mismo.",
+      },
+      {
+        segments: ruby("[古|ふる]い[言葉|ことば]ですが、[己|おのれ]を[正|ただ]すという[表現|ひょうげん]があります。"),
+        translation: "Es una expresión antigua, pero existe la idea de corregirse a uno mismo.",
+      },
+      {
+        segments: ruby("[人|ひと]と[比|くら]べるよりも、まず[己|おのれ]の[昨日|きのう]と[今日|きょう]を[比|くら]べることが[大切|たいせつ]です. "),
+        translation: "Más importante que compararse con los demás es comparar el propio ayer con el hoy.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "呼",
+    level: 6,
+    strokeCount: 8,
+    on: ["コ"],
+    kun: ["よ.ぶ"],
+    meaning: "Llamar",
+    examples: [
+      {
+        segments: ruby("[名前|なまえ]を[呼|よ]ばれたので、[返事|へんじ]しました。"),
+        translation: "Como dijeron mi nombre, respondí.",
+      },
+      {
+        segments: ruby("[困|こま]ったときは[先生|せんせい]を[呼|よ]んでください。"),
+        translation: "Cuando tengas problemas, por favor llama al profesor.",
+      },
+      {
+        segments: ruby("[救急車|きゅうきゅうしゃ]を[呼|よ]ぶ[必要|ひつよう]があるかもしれません。"),
+        translation: "Puede que sea necesario llamar a una ambulancia.",
+      },
+      {
+        segments: ruby("[友達|ともだち]を[家|いえ]に[呼|よ]んでいっしょに[勉強|べんきょう]しました。"),
+        translation: "Llamé a un amigo a casa y estudiamos juntos.",
+      },
+      {
+        segments: ruby("[人|ひと]を[呼|よ]ぶときの[言葉|ことば]づかいには、[相手|あいて]との[関係|かんけい]がよく[表|あらわ]れます。"),
+        translation: "La forma de llamar a una persona refleja bien la relación que tienes con ella.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "誤",
+    level: 6,
+    strokeCount: 14,
+    on: ["ゴ"],
+    kun: ["あやま.る"],
+    meaning: "Error / equivocación",
+    examples: [
+      {
+        segments: ruby("[答|こた]えに[誤|あやま]りがあります。"),
+        translation: "Hay un error en la respuesta.",
+      },
+      {
+        segments: ruby("[誤解|ごかい]しないように、ていねいに[説明|せつめい]します。"),
+        translation: "Lo explicaré con cuidado para que no haya malentendidos.",
+      },
+      {
+        segments: ruby("[入力|にゅうりょく]に[誤|あやま]りがないか[確認|かくにん]してください。"),
+        translation: "Por favor, compruebe que no haya errores en el ingreso.",
+      },
+      {
+        segments: ruby("[誤字|ごじ]や[脱字|だつじ]を[直|なお]しました。"),
+        translation: "Corregí errores de escritura y omisiones.",
+      },
+      {
+        segments: ruby("[小|ちい]さな[誤|あやま]りでも、[大切|たいせつ]な[場面|ばめん]では[大|おお]きな[意味|いみ]をもつことがあります。"),
+        translation: "Incluso un pequeño error puede tener gran importancia en situaciones importantes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "后",
+    level: 6,
+    strokeCount: 6,
+    on: ["コウ", "ゴウ"],
+    kun: ["きさき"],
+    meaning: "Emperatriz / reina consorte",
+    examples: [
+      {
+        segments: ruby("[皇后|こうごう]に[関|かん]する[記事|きじ]を[読|よ]みました。"),
+        translation: "Leí un artículo sobre la emperatriz.",
+      },
+      {
+        segments: ruby("[昔|むかし]の[物語|ものがたり]には、[王|おう]や[后|きさき]がよく[出|で]てきます。"),
+        translation: "En los relatos antiguos aparecen a menudo reyes y reinas consortes.",
+      },
+      {
+        segments: ruby("[后|きさき]という[言葉|ことば]は、[日常|にちじょう]ではあまり[使|つか]いません。"),
+        translation: "La palabra “kisaki” no se usa mucho en la vida diaria.",
+      },
+      {
+        segments: ruby("[歴史|れきし]の[授業|じゅぎょう]で、[皇后|こうごう]の[役割|やくわり]について[学|まな]びました。"),
+        translation: "En clase de historia aprendimos sobre el papel de la emperatriz.",
+      },
+      {
+        segments: ruby("[古|ふる]い[言葉|ことば]や[歴史|れきし]の[表現|ひょうげん]を[知|し]ると、[本|ほん]や[物語|ものがたり]の[理解|りかい]がより[深|ふか]まります。"),
+        translation: "Cuando conoces palabras antiguas y expresiones históricas, entiendes mejor los libros y las historias.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "孝",
+    level: 6,
+    strokeCount: 7,
+    on: ["コウ"],
+    kun: [],
+    meaning: "Piedad filial / devoción a los padres",
+    examples: [
+      {
+        segments: ruby("[親孝行|おやこうこう]したいと[思|おも]っています。"),
+        translation: "Quiero ser agradecido y atento con mis padres.",
+      },
+      {
+        segments: ruby("[孝行|こうこう]な[子|こ]だとほめられました。"),
+        translation: "Me elogiaron diciendo que soy un hijo atento con sus padres.",
+      },
+      {
+        segments: ruby("[年|とし]をとった[親|おや]を[大切|たいせつ]にする[気持|きも]ちは、[孝|こう]の[心|こころ]にもつながります。"),
+        translation: "El deseo de cuidar a los padres mayores también se relaciona con la piedad filial.",
+      },
+      {
+        segments: ruby("[忙|いそが]しくても、ときどき[実家|じっか]に[連絡|れんらく]することも[親孝行|おやこうこう]の一つです。"),
+        translation: "Incluso estando ocupado, comunicarse de vez en cuando con la familia también es una forma de honrar a los padres.",
+      },
+      {
+        segments: ruby("[親孝行|おやこうこう]は[高価|こうか]な[物|もの]を[送|おく]ることだけでなく、[元気|げんき]でいることでも[表|あらわ]せます。"),
+        translation: "Ser buen hijo no solo significa regalar cosas caras, también puede expresarse manteniéndose bien y sano.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "皇",
+    level: 6,
+    strokeCount: 9,
+    on: ["コウ", "オウ"],
+    kun: [],
+    meaning: "Imperial / emperador",
+    examples: [
+      {
+        segments: ruby("[天皇|てんのう]について[歴史|れきし]で[学|まな]びました。"),
+        translation: "Aprendimos en historia sobre el emperador.",
+      },
+      {
+        segments: ruby("[皇室|こうしつ]に[関|かん]するニュースを[見|み]ました。"),
+        translation: "Vi noticias relacionadas con la familia imperial.",
+      },
+      {
+        segments: ruby("[皇后|こうごう]という[言葉|ことば]も[歴史|れきし]の[中|なか]でよく[出|で]てきます。"),
+        translation: "La palabra “emperatriz” también aparece mucho en la historia.",
+      },
+      {
+        segments: ruby("[皇居|こうきょ]の[近|ちか]くを[歩|ある]きました。"),
+        translation: "Caminé cerca del Palacio Imperial.",
+      },
+      {
+        segments: ruby("[歴史|れきし]の[言葉|ことば]を[学|まな]ぶと、[今|いま]の[社会|しゃかい]でふだん[使|つか]わない[表現|ひょうげん]にも[出会|であ]います。"),
+        translation: "Cuando estudias palabras históricas, también encuentras expresiones que normalmente no se usan en la sociedad actual.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "紅",
+    level: 6,
+    strokeCount: 9,
+    on: ["コウ", "ク"],
+    kun: ["べに", "くれない"],
+    meaning: "Rojo intenso / carmesí",
+    examples: [
+      {
+        segments: ruby("[紅葉|こうよう]がとてもきれいでした。"),
+        translation: "Las hojas otoñales estaban muy hermosas.",
+      },
+      {
+        segments: ruby("[紅茶|こうちゃ]を[飲|の]みながら[本|ほん]を[読|よ]みました。"),
+        translation: "Leí un libro mientras tomaba té negro.",
+      },
+      {
+        segments: ruby("[紅|べに]をひいた[唇|くちびる]が[印象的|いんしょうてき]でした。"),
+        translation: "Los labios pintados de rojo dejaron una impresión fuerte.",
+      },
+      {
+        segments: ruby("[山|やま]が[紅|くれない]に[染|そ]まる[季節|きせつ]が[好|す]きです。"),
+        translation: "Me gusta la estación en que las montañas se tiñen de rojo.",
+      },
+      {
+        segments: ruby("[秋|あき]の[紅葉|こうよう]を[見|み]ると、[季節|きせつ]のうつりかわりをはっきり[感|かん]じます。"),
+        translation: "Cuando veo las hojas rojas de otoño, siento claramente el cambio de estación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "降",
+    level: 6,
+    strokeCount: 10,
+    on: ["コウ"],
+    kun: ["お.りる", "お.ろす", "ふ.る"],
+    meaning: "Bajar / caer / llover",
+    examples: [
+      {
+        segments: ruby("[駅|えき]で[電車|でんしゃ]を[降|お]りました。"),
+        translation: "Me bajé del tren en la estación.",
+      },
+      {
+        segments: ruby("[雨|あめ]が[降|ふ]ってきました。"),
+        translation: "Empezó a llover.",
+      },
+      {
+        segments: ruby("[階段|かいだん]をゆっくり[降|お]りてください。"),
+        translation: "Por favor, baje las escaleras despacio.",
+      },
+      {
+        segments: ruby("[雪|ゆき]がたくさん[降|ふ]る[地域|ちいき]です。"),
+        translation: "Es una zona donde cae mucha nieve.",
+      },
+      {
+        segments: ruby("[バス]を[降|お]りるときは、[忘|わす]れ物がないか[最後|さいご]に[確認|かくにん]すると[安心|あんしん]です。"),
+        translation: "Al bajarte del bus, da tranquilidad revisar al final que no hayas olvidado nada.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "鋼",
+    level: 6,
+    strokeCount: 16,
+    on: ["コウ"],
+    kun: ["はがね"],
+    meaning: "Acero",
+    examples: [
+      {
+        segments: ruby("[鋼|はがね]でできた[橋|はし]はじょうぶです。"),
+        translation: "Un puente hecho de acero es resistente.",
+      },
+      {
+        segments: ruby("[鋼鉄|こうてつ]のように[強|つよ]い[心|こころ]をもちたいです。"),
+        translation: "Quiero tener un corazón fuerte como el acero.",
+      },
+      {
+        segments: ruby("[この[建物|たてもの]には[鋼|はがね]が多く[使|つか]われています。"),
+        translation: "En este edificio se usa mucho acero.",
+      },
+      {
+        segments: ruby("[鋼|はがね]は[重|おも]いですが、とても[丈夫|じょうぶ]な[材料|ざいりょう]です。"),
+        translation: "El acero es pesado, pero es un material muy resistente.",
+      },
+      {
+        segments: ruby("[技術|ぎじゅつ]が[発達|はったつ]すると、[鋼|はがね]のような[材料|ざいりょう]もより[安全|あんぜん]で[使|つか]いやすくなります。"),
+        translation: "Cuando la tecnología avanza, materiales como el acero también se vuelven más seguros y fáciles de usar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "刻",
+    level: 6,
+    strokeCount: 8,
+    on: ["コク"],
+    kun: ["きざ.む"],
+    meaning: "Grabar / momento / picar",
+    examples: [
+      {
+        segments: ruby("[名前|なまえ]を[石|いし]に[刻|きざ]みました。"),
+        translation: "Grabé el nombre en la piedra.",
+      },
+      {
+        segments: ruby("[時刻|じこく]を[確認|かくにん]してください。"),
+        translation: "Por favor, confirme la hora.",
+      },
+      {
+        segments: ruby("[野菜|やさい]を[細|こま]かく[刻|きざ]んで[料理|りょうり]しました。"),
+        translation: "Corté las verduras en trozos pequeños para cocinar.",
+      },
+      {
+        segments: ruby("[その[出来事|できごと]は[心|こころ]に[深|ふか]く[刻|きざ]まれています。"),
+        translation: "Ese suceso está grabado profundamente en mi corazón.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[言葉|ことば]を[胸|むね]に[刻|きざ]んでおくと、[迷|まよ]ったときの[助|たす]けになることがあります。"),
+        translation: "Guardar palabras importantes en el corazón a veces ayuda cuando uno duda.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "穀",
+    level: 6,
+    strokeCount: 14,
+    on: ["コク"],
+    kun: [],
+    meaning: "Cereal / grano",
+    examples: [
+      {
+        segments: ruby("[穀物|こくもつ]は[大切|たいせつ]な[食料|しょくりょう]です。"),
+        translation: "Los cereales son alimentos importantes.",
+      },
+      {
+        segments: ruby("[米|こめ]や[麦|むぎ]は[穀物|こくもつ]のなかまです。"),
+        translation: "El arroz y el trigo pertenecen al grupo de los cereales.",
+      },
+      {
+        segments: ruby("[穀物|こくもつ]を[保存|ほぞん]する[方法|ほうほう]について[学|まな]びました。"),
+        translation: "Aprendimos sobre métodos para conservar cereales.",
+      },
+      {
+        segments: ruby("[この[地域|ちいき]では[穀物|こくもつ]の[生産|せいさん]がさかんです。"),
+        translation: "En esta región es activa la producción de cereales.",
+      },
+      {
+        segments: ruby("[食|た]べ[物|もの]の[種類|しゅるい]を[知|し]るときは、[野菜|やさい]・[果物|くだもの]・[穀物|こくもつ]のように分けて[考|かんが]えるとわかりやすいです。"),
+        translation: "Para entender los tipos de alimentos, resulta más fácil pensarlos por grupos como verduras, frutas y cereales.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "骨",
+    level: 6,
+    strokeCount: 10,
+    on: ["コツ"],
+    kun: ["ほね"],
+    meaning: "Hueso / estructura / truco",
+    examples: [
+      {
+        segments: ruby("[魚|さかな]の[骨|ほね]に[気|き]をつけて[食|た]べてください。"),
+        translation: "Por favor, coma con cuidado con las espinas del pescado.",
+      },
+      {
+        segments: ruby("[足|あし]の[骨|ほね]を[折|お]ってしまいました。"),
+        translation: "Me fracturé un hueso de la pierna.",
+      },
+      {
+        segments: ruby("[勉強|べんきょう]の[骨|こつ]を[教|おし]えてもらいました。"),
+        translation: "Me enseñaron el truco para estudiar.",
+      },
+      {
+        segments: ruby("[背骨|せぼね]をまっすぐにして[座|すわ]ってください。"),
+        translation: "Por favor, siéntese con la espalda recta.",
+      },
+      {
+        segments: ruby("[何事|なにごと]にも[骨|こつ]がありますが、いちばん[大切|たいせつ]なのは[何度|なんど]も[試|ため]して[自分|じぶん]に[合|あ]う[方法|ほうほう]を[見|み]つけることです。"),
+        translation: "En todo hay trucos, pero lo más importante es probar muchas veces y encontrar el método que te acomoda.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "困",
+    level: 6,
+    strokeCount: 7,
+    on: ["コン"],
+    kun: ["こま.る"],
+    meaning: "Tener problemas / estar en apuros",
+    examples: [
+      {
+        segments: ruby("[お金|かね]がなくて[困|こま]っています。"),
+        translation: "Estoy en problemas porque no tengo dinero.",
+      },
+      {
+        segments: ruby("[困|こま]ったことがあれば、[相談|そうだん]してください。"),
+        translation: "Si tienes algún problema, por favor consulta.",
+      },
+      {
+        segments: ruby("[道|みち]に[迷|まよ]って[困|こま]っている[人|ひと]を[助|たす]けました。"),
+        translation: "Ayudé a una persona que estaba en apuros porque se había perdido.",
+      },
+      {
+        segments: ruby("[質問|しつもん]に[答|こた]えられなくて[困|こま]りました。"),
+        translation: "Me sentí en apuros porque no pude responder la pregunta.",
+      },
+      {
+        segments: ruby("[困難|こんなん]なことがあっても、一人で[抱|かか]えこまずに[人|ひと]に[頼|たよ]ることも[大切|たいせつ]です。"),
+        translation: "Aunque haya dificultades, también es importante no cargar todo solo y apoyarse en otras personas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "砂",
+    level: 6,
+    strokeCount: 9,
+    on: ["サ", "シャ"],
+    kun: ["すな"],
+    meaning: "Arena",
+    examples: [
+      {
+        segments: ruby("[海岸|かいがん]の[砂|すな]があたたかいです。"),
+        translation: "La arena de la playa está tibia.",
+      },
+      {
+        segments: ruby("[砂|すな]で[城|しろ]をつくりました。"),
+        translation: "Hice un castillo de arena.",
+      },
+      {
+        segments: ruby("[くつ]の中に[砂|すな]が入ってしまいました。"),
+        translation: "Se me metió arena en los zapatos.",
+      },
+      {
+        segments: ruby("[砂糖|さとう]を[入|い]れすぎないでください。"),
+        translation: "Por favor, no ponga demasiada azúcar.",
+      },
+      {
+        segments: ruby("[砂漠|さばく]の[写真|しゃしん]を[見|み]ると、[同|おな]じ[砂|すな]でも[海辺|うみべ]とはまったくちがう[景色|けしき]だとわかります。"),
+        translation: "Cuando ves fotos del desierto, notas que aunque sea la misma arena, el paisaje es totalmente distinto al de la playa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "座",
+    level: 6,
+    strokeCount: 10,
+    on: ["ザ"],
+    kun: ["すわ.る"],
+    meaning: "Sentarse / asiento",
+    examples: [
+      {
+        segments: ruby("[どうぞ、こちらに[座|すわ]ってください。"),
+        translation: "Por favor, siéntese aquí.",
+      },
+      {
+        segments: ruby("[前|まえ]の[席|せき]に[座|すわ]りました。"),
+        translation: "Me senté en el asiento delantero.",
+      },
+      {
+        segments: ruby("[星座|せいざ]に[興味|きょうみ]があります。"),
+        translation: "Me interesan las constelaciones.",
+      },
+      {
+        segments: ruby("[正座|せいざ]は少し[苦手|にがて]です。"),
+        translation: "No se me da muy bien sentarme en seiza.",
+      },
+      {
+        segments: ruby("[どこに[座|すわ]るかで、[見|み]え方や[聞|き]こえ方が[変|か]わることもあります。"),
+        translation: "Según dónde te sientes, a veces cambia la forma en que ves y escuchas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "済",
+    level: 6,
+    strokeCount: 11,
+    on: ["サイ"],
+    kun: ["す.む", "す.ます"],
+    meaning: "Terminar / resolver / economía",
+    examples: [
+      {
+        segments: ruby("[宿題|しゅくだい]はもう[済|す]みました。"),
+        translation: "La tarea ya quedó terminada.",
+      },
+      {
+        segments: ruby("[支払|しはら]いは昨日のうちに[済|す]ませました。"),
+        translation: "Dejé hecho el pago ayer mismo.",
+      },
+      {
+        segments: ruby("[経済|けいざい]についてのニュースを[見|み]ました。"),
+        translation: "Vi noticias sobre economía.",
+      },
+      {
+        segments: ruby("[問題|もんだい]が[無事|ぶじ]に[済|す]んでよかったです。"),
+        translation: "Qué bueno que el problema se resolvió sin inconvenientes.",
+      },
+      {
+        segments: ruby("[早|はや]めに[済|す]ませておくと、あとで[気持|きも]ちに[余裕|よゆう]ができます。"),
+        translation: "Si dejas las cosas hechas con anticipación, después tienes más tranquilidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "裁",
+    level: 6,
+    strokeCount: 12,
+    on: ["サイ"],
+    kun: ["た.つ", "さば.く"],
+    meaning: "Juzgar / cortar / decidir",
+    examples: [
+      {
+        segments: ruby("[裁判|さいばん]のニュースを[見|み]ました。"),
+        translation: "Vi noticias sobre un juicio.",
+      },
+      {
+        segments: ruby("[布|ぬの]をきれいに[裁|た]ってください。"),
+        translation: "Por favor, corte la tela con cuidado.",
+      },
+      {
+        segments: ruby("[先生|せんせい]が[公平|こうへい]に[裁|さば]いてくれました。"),
+        translation: "El profesor resolvió el asunto de manera justa.",
+      },
+      {
+        segments: ruby("[裁量|さいりょう]にまかされる[部分|ぶぶん]もあります。"),
+        translation: "También hay partes que quedan a criterio de cada uno.",
+      },
+      {
+        segments: ruby("[物事|ものごと]を[裁|さば]くときは、[感情|かんじょう]だけでなく[事実|じじつ]をもとに[考|かんが]えることが[大切|たいせつ]です。"),
+        translation: "Al juzgar algo, es importante pensar basándose no solo en emociones, sino también en los hechos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "策",
+    level: 6,
+    strokeCount: 12,
+    on: ["サク"],
+    kun: [],
+    meaning: "Medida / plan / estrategia",
+    examples: [
+      {
+        segments: ruby("[問題|もんだい]を[解決|かいけつ]するための[対策|たいさく]を[考|かんが]えます。"),
+        translation: "Pienso en medidas para resolver el problema.",
+      },
+      {
+        segments: ruby("[安全|あんぜん][対策|たいさく]をしっかりしてから[出発|しゅっぱつ]してください。"),
+        translation: "Por favor, tome bien las medidas de seguridad antes de salir.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[政策|せいさく]についてニュースで[聞|き]きました。"),
+        translation: "Escuché en las noticias sobre una nueva política.",
+      },
+      {
+        segments: ruby("[作戦|さくせん]や[策|さく]を[立|た]ててから[行動|こうどう]すると、[失敗|しっぱい]が[減|へ]ります。"),
+        translation: "Si actúas después de trazar una estrategia o un plan, disminuyen los errores.",
+      },
+      {
+        segments: ruby("[試験|しけん]の[前|まえ]に[勉強|べんきょう][策|さく]を[見直|みなお]しました。"),
+        translation: "Antes del examen revisé mi estrategia de estudio.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "冊",
+    level: 6,
+    strokeCount: 5,
+    on: ["サツ", "サク"],
+    kun: [],
+    meaning: "Contador de libros",
+    examples: [
+      {
+        segments: ruby("[本|ほん]を三[冊|さつ][買|か]いました。"),
+        translation: "Compré tres libros.",
+      },
+      {
+        segments: ruby("[今月|こんげつ]は五[冊|さつ]の[本|ほん]を[読|よ]みたいです。"),
+        translation: "Este mes quiero leer cinco libros.",
+      },
+      {
+        segments: ruby("[図書館|としょかん]で二[冊|さつ][借|か]りました。"),
+        translation: "Pedí prestados dos libros en la biblioteca.",
+      },
+      {
+        segments: ruby("[一|いっ][冊|さつ]ずつ[大切|たいせつ]に[読|よ]んでいきます。"),
+        translation: "Voy a leerlos con cuidado, uno por uno.",
+      },
+      {
+        segments: ruby("[辞書|じしょ]も[数|かぞ]えるときは一[冊|さつ]、二[冊|さつ]のように[言|い]います。"),
+        translation: "También al contar diccionarios se dice un libro, dos libros, usando 冊.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "蚕",
+    level: 6,
+    strokeCount: 10,
+    on: ["サン"],
+    kun: ["かいこ"],
+    meaning: "Gusano de seda",
+    examples: [
+      {
+        segments: ruby("[蚕|かいこ]は[絹|きぬ]をつくるもとになる[虫|むし]です。"),
+        translation: "El gusano de seda es el insecto del que se obtiene la seda.",
+      },
+      {
+        segments: ruby("[昔|むかし]は[蚕|かいこ]をそだてる[仕事|しごと]もさかんでした。"),
+        translation: "Antiguamente también era común el trabajo de criar gusanos de seda.",
+      },
+      {
+        segments: ruby("[養蚕|ようさん]について[歴史|れきし]で[学|まな]びました。"),
+        translation: "Aprendimos en historia sobre la sericultura.",
+      },
+      {
+        segments: ruby("[蚕|かいこ]がつくった[糸|いと]から[絹|きぬ]ができます。"),
+        translation: "De los hilos hechos por el gusano de seda se obtiene la seda.",
+      },
+      {
+        segments: ruby("[地域|ちいき]によっては、[蚕|かいこ]をそだてる[文化|ぶんか]が[今|いま]も[残|のこ]っています。"),
+        translation: "En algunas regiones todavía permanece la cultura de criar gusanos de seda.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "至",
+    level: 6,
+    strokeCount: 6,
+    on: ["シ"],
+    kun: ["いた.る"],
+    meaning: "Llegar a / extremo",
+    examples: [
+      {
+        segments: ruby("[駅|えき]から[会場|かいじょう]に[至|いた]る[道|みち]を[確認|かくにん]しました。"),
+        translation: "Confirmé el camino que lleva desde la estación hasta el lugar.",
+      },
+      {
+        segments: ruby("[長|なが]い[話|はなし][合|あ]いの[末|すえ]に、この[結論|けつろん]に[至|いた]りました。"),
+        translation: "Después de una larga conversación, llegamos a esta conclusión.",
+      },
+      {
+        segments: ruby("[至急|しきゅう][連絡|れんらく]してください。"),
+        translation: "Por favor, comuníquese con urgencia.",
+      },
+      {
+        segments: ruby("[一生懸命|いっしょうけんめい][練習|れんしゅう]した[結果|けっか]、[大会|たいかい]で[優勝|ゆうしょう]するに[至|いた]りました。"),
+        translation: "Como resultado de practicar con mucho esfuerzo, llegué a ganar el torneo.",
+      },
+      {
+        segments: ruby("[今日|きょう]に[至|いた]るまでの[努力|どりょく]を[忘|わす]れないようにしたいです。"),
+        translation: "Quiero no olvidar el esfuerzo realizado hasta llegar al día de hoy.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "私",
+    level: 6,
+    strokeCount: 7,
+    on: ["シ"],
+    kun: ["わたくし", "わたし"],
+    meaning: "Yo / privado",
+    examples: [
+      {
+        segments: ruby("[私|わたし]は[日本語|にほんご]を[勉強|べんきょう]しています。"),
+        translation: "Yo estudio japonés.",
+      },
+      {
+        segments: ruby("[私|わたくし]でよければ、お[手伝|てつだ]いします。"),
+        translation: "Si le parece bien, yo le ayudo.",
+      },
+      {
+        segments: ruby("[私立|しりつ]の[学校|がっこう]に[通|かよ]っています。"),
+        translation: "Asisto a una escuela privada.",
+      },
+      {
+        segments: ruby("[私物|しぶつ]はここに[置|お]かないでください。"),
+        translation: "Por favor, no deje objetos personales aquí.",
+      },
+      {
+        segments: ruby("[私|わたし]という[言葉|ことば]は[場面|ばめん]によって[使|つか]い[方|かた]が[少|すこ]し[変|か]わります。"),
+        translation: "La palabra “yo” en japonés cambia un poco según la situación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "姿",
+    level: 6,
+    strokeCount: 9,
+    on: ["シ"],
+    kun: ["すがた"],
+    meaning: "Figura / apariencia / forma",
+    examples: [
+      {
+        segments: ruby("[遠|とお]くに[山|やま]の[姿|すがた]が[見|み]えます。"),
+        translation: "A lo lejos se ve la silueta de la montaña.",
+      },
+      {
+        segments: ruby("[子|こ]どもたちの[元気|げんき]な[姿|すがた]を[見|み]るとうれしくなります。"),
+        translation: "Me alegra ver la energía de los niños.",
+      },
+      {
+        segments: ruby("[正|ただ]しい[姿勢|しせい]で[座|すわ]ってください。"),
+        translation: "Por favor, siéntese con una postura correcta.",
+      },
+      {
+        segments: ruby("[昔|むかし]の[町|まち]の[姿|すがた]を[写真|しゃしん]で[見|み]ました。"),
+        translation: "Vi en fotos cómo era la ciudad antiguamente.",
+      },
+      {
+        segments: ruby("[努力|どりょく]している[姿|すがた]は、[言葉|ことば]がなくても[人|ひと]の[心|こころ]を[動|うご]かすことがあります。"),
+        translation: "La imagen de alguien esforzándose puede conmover a las personas incluso sin palabras.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "視",
+    level: 6,
+    strokeCount: 11,
+    on: ["シ"],
+    kun: ["み.る"],
+    meaning: "Mirar / visión / considerar",
+    examples: [
+      {
+        segments: ruby("[問題|もんだい]をちがう[視点|してん]から[見|み]てみましょう。"),
+        translation: "Intentemos ver el problema desde otro punto de vista.",
+      },
+      {
+        segments: ruby("[視力|しりょく]が少しわるくなりました。"),
+        translation: "Mi vista empeoró un poco.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]なのは、[表面|ひょうめん]だけでなく[中身|なかみ]も[重視|じゅうし]することです。"),
+        translation: "Lo importante es valorar no solo la superficie, sino también el contenido.",
+      },
+      {
+        segments: ruby("[テレビ]を近くで[見|み]すぎると、[視力|しりょく]によくないかもしれません。"),
+        translation: "Si ves la televisión demasiado cerca, quizá no sea bueno para la vista.",
+      },
+      {
+        segments: ruby("[一つの[視点|してん]だけで[判断|はんだん]せず、いくつかの[見方|みかた]をもつことが[大切|たいせつ]です。"),
+        translation: "Es importante no juzgar desde un solo punto de vista, sino tener varias maneras de ver las cosas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "詞",
+    level: 6,
+    strokeCount: 12,
+    on: ["シ"],
+    kun: ["ことば"],
+    meaning: "Palabra / letra / categoría gramatical",
+    examples: [
+      {
+        segments: ruby("[歌詞|かし]の[意味|いみ]を[調|しら]べました。"),
+        translation: "Busqué el significado de la letra de la canción.",
+      },
+      {
+        segments: ruby("[動詞|どうし]と[名詞|めいし]のちがいを[習|なら]いました。"),
+        translation: "Aprendimos la diferencia entre verbo y sustantivo.",
+      },
+      {
+        segments: ruby("[助詞|じょし]の[使|つか]い[方|かた]は[日本語|にほんご]でとても[大切|たいせつ]です。"),
+        translation: "La forma de usar las partículas es muy importante en japonés.",
+      },
+      {
+        segments: ruby("[この[歌|うた]の[歌詞|かし]はとてもきれいです。"),
+        translation: "La letra de esta canción es muy bonita.",
+      },
+      {
+        segments: ruby("[文法|ぶんぽう]を[勉強|べんきょう]するときは、[動詞|どうし]・[形容詞|けいようし]・[名詞|めいし]のような[品詞|ひんし]を[理解|りかい]するとわかりやすいです。"),
+        translation: "Al estudiar gramática, se entiende mejor si comprendes categorías como verbo, adjetivo y sustantivo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "誌",
+    level: 6,
+    strokeCount: 14,
+    on: ["シ"],
+    kun: [],
+    meaning: "Revista / registro escrito",
+    examples: [
+      {
+        segments: ruby("[雑誌|ざっし]を[買|か]って[読|よ]みました。"),
+        translation: "Compré una revista y la leí.",
+      },
+      {
+        segments: ruby("[日誌|にっし]に[今日|きょう]の[出来事|できごと]を[書|か]きました。"),
+        translation: "Escribí en el diario lo que pasó hoy.",
+      },
+      {
+        segments: ruby("[学会誌|がっかいし]に[研究|けんきゅう][結果|けっか]がのりました。"),
+        translation: "Los resultados de la investigación salieron en una revista académica.",
+      },
+      {
+        segments: ruby("[雑誌|ざっし]には[新|あたら]しい[情報|じょうほう]がたくさんのっています。"),
+        translation: "En las revistas aparece mucha información nueva.",
+      },
+      {
+        segments: ruby("[日誌|にっし]のように[毎日|まいにち][記録|きろく]を[残|のこ]すと、あとで[自分|じぶん]の[変化|へんか]を[見返|みかえ]しやすくなります。"),
+        translation: "Si dejas un registro diario como en un cuaderno de bitácora, después es más fácil revisar tus propios cambios.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "磁",
+    level: 6,
+    strokeCount: 14,
+    on: ["ジ"],
+    kun: [],
+    meaning: "Magnetismo / magnético",
+    examples: [
+      {
+        segments: ruby("[磁石|じしゃく]が[鉄|てつ]をひきつけます。"),
+        translation: "El imán atrae el hierro.",
+      },
+      {
+        segments: ruby("[地球|ちきゅう]には[磁力|じりょく]があります。"),
+        translation: "La Tierra tiene fuerza magnética.",
+      },
+      {
+        segments: ruby("[磁場|じば]について[理科|りか]で[学|まな]びました。"),
+        translation: "Aprendimos sobre el campo magnético en ciencias.",
+      },
+      {
+        segments: ruby("[磁石|じしゃく]をつかって[実験|じっけん]しました。"),
+        translation: "Hicimos un experimento usando imanes.",
+      },
+      {
+        segments: ruby("[磁|じ][気|き]の[性質|せいしつ]を[知|し]ると、[方位|ほうい]や[機械|きかい]のしくみも[理解|りかい]しやすくなります。"),
+        translation: "Cuando entiendes las propiedades del magnetismo, se vuelve más fácil comprender también la orientación y el funcionamiento de las máquinas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "射",
+    level: 6,
+    strokeCount: 10,
+    on: ["シャ"],
+    kun: ["い.る"],
+    meaning: "Disparar / proyectar /射",
+    examples: [
+      {
+        segments: ruby("[太陽|たいよう]の[光|ひかり]が[窓|まど]から[射|さ]しています。"),
+        translation: "La luz del sol entra por la ventana.",
+      },
+      {
+        segments: ruby("[医者|いしゃ]に[注射|ちゅうしゃ]をしてもらいました。"),
+        translation: "El médico me puso una inyección.",
+      },
+      {
+        segments: ruby("[反射|はんしゃ]した[光|ひかり]がまぶしかったです。"),
+        translation: "La luz reflejada me encandiló.",
+      },
+      {
+        segments: ruby("[弓道|きゅうどう]で[的|まと]に[向|む]かって[矢|や]を[射|い]ます。"),
+        translation: "En kyūdō se dispara la flecha hacia el blanco.",
+      },
+      {
+        segments: ruby("[光|ひかり]の[射|さ]し[方|かた]によって、[写真|しゃしん]の[印象|いんしょう]は大きく[変|か]わります。"),
+        translation: "Según cómo incida la luz, la impresión de una foto cambia mucho.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "捨",
+    level: 6,
+    strokeCount: 11,
+    on: ["シャ"],
+    kun: ["す.てる"],
+    meaning: "Botar / abandonar / renunciar",
+    examples: [
+      {
+        segments: ruby("[いらない[紙|かみ]はごみばこに[捨|す]ててください。"),
+        translation: "Por favor, bote en el basurero el papel que no sirve.",
+      },
+      {
+        segments: ruby("[古|ふる]い[物|もの]を[捨|す]てたら、[部屋|へや]が広くなりました。"),
+        translation: "Cuando boté las cosas viejas, la habitación quedó más amplia.",
+      },
+      {
+        segments: ruby("[希望|きぼう]を[捨|す]てないでください。"),
+        translation: "Por favor, no abandone la esperanza.",
+      },
+      {
+        segments: ruby("[選|えら]ぶためには、いくつかを[捨|す]てる[勇気|ゆうき]も[必要|ひつよう]です。"),
+        translation: "Para elegir, también se necesita el valor de dejar algunas cosas atrás.",
+      },
+      {
+        segments: ruby("[ごみをただ[捨|す]てるだけでなく、[分|わ]けて[出|だ]すことも[社会|しゃかい]では[大切|たいせつ]です。"),
+        translation: "En la sociedad no solo es importante botar la basura, sino también separarla correctamente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "尺",
+    level: 6,
+    strokeCount: 4,
+    on: ["シャク"],
+    kun: [],
+    meaning: "Shaku / regla / medida",
+    examples: [
+      {
+        segments: ruby("[尺|しゃく]は[昔|むかし]の[長|なが]さの[単位|たんい]です。"),
+        translation: "Shaku es una antigua unidad de longitud.",
+      },
+      {
+        segments: ruby("[定規|じょうぎ]で[長|なが]さを[測|はか]るとき、[昔|むかし]は[尺|しゃく]という[言葉|ことば]も[使|つか]われました。"),
+        translation: "Al medir longitudes con una regla, antiguamente también se usaba la palabra shaku.",
+      },
+      {
+        segments: ruby("[三尺|さんじゃく]の[布|ぬの]が[必要|ひつよう]だと[言|い]われました。"),
+        translation: "Me dijeron que se necesitaban tres shaku de tela.",
+      },
+      {
+        segments: ruby("[尺度|しゃくど]という[言葉|ことば]は、[物事|ものごと]を[比|くら]べる[基準|きじゅん]という[意味|いみ]でも[使|つか]います。"),
+        translation: "La palabra escala también se usa con el sentido de criterio para comparar cosas.",
+      },
+      {
+        segments: ruby("[今|いま]はセンチやメートルを[使|つか]うことが多いですが、[歴史|れきし]の[中|なか]では[尺|しゃく]のような[単位|たんい]も[大切|たいせつ]でした。"),
+        translation: "Hoy se usan más los centímetros y metros, pero en la historia también fueron importantes unidades como el shaku.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "若",
+    level: 6,
+    strokeCount: 8,
+    on: ["ジャク", "ニャク", "ニャ"],
+    kun: ["わか.い", "も.しくは"],
+    meaning: "Joven / si acaso",
+    examples: [
+      {
+        segments: ruby("[若|わか]いころはよく[外|そと]で[遊|あそ]びました。"),
+        translation: "Cuando era joven jugaba mucho afuera.",
+      },
+      {
+        segments: ruby("[若者|わかもの]に[人気|にんき]のある[店|みせ]です。"),
+        translation: "Es una tienda popular entre los jóvenes.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[見|み]た[目|め]より[若|わか]く[見|み]えます。"),
+        translation: "Él parece más joven de lo que se ve.",
+      },
+      {
+        segments: ruby("[若|も]しくは[明日|あした]でもかまいません。"),
+        translation: "O si no, mañana también está bien.",
+      },
+      {
+        segments: ruby("[若|わか]いときの[経験|けいけん]は、そのあとの[考|かんが]え[方|かた]や[生|い]き[方|かた]に大きく[影響|えいきょう]します。"),
+        translation: "Las experiencias de la juventud influyen mucho en la manera de pensar y de vivir después.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "樹",
+    level: 6,
+    strokeCount: 16,
+    on: ["ジュ"],
+    kun: ["き"],
+    meaning: "Árbol / plantar",
+    examples: [
+      {
+        segments: ruby("[公園|こうえん]に大きな[樹|き]があります。"),
+        translation: "En el parque hay un árbol grande.",
+      },
+      {
+        segments: ruby("[樹木|じゅもく]を[守|まも]ることも[自然|しぜん][保護|ほご]の一つです。"),
+        translation: "Proteger los árboles también es una forma de proteger la naturaleza.",
+      },
+      {
+        segments: ruby("[庭|にわ]に新しい[樹|き]を[植|う]えました。"),
+        translation: "Planté un árbol nuevo en el jardín.",
+      },
+      {
+        segments: ruby("[常緑樹|じょうりょくじゅ]は一年中みどりです。"),
+        translation: "Los árboles de hoja perenne permanecen verdes todo el año.",
+      },
+      {
+        segments: ruby("[一本|いっぽん]の[樹|き]でも、[長|なが]い[年月|ねんげつ]をかけて[育|そだ]つことを[考|かんが]えると、[自然|しぜん]を[大切|たいせつ]にしたくなります。"),
+        translation: "Incluso un solo árbol te hace querer cuidar la naturaleza cuando piensas en los muchos años que tarda en crecer.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "収",
+    level: 6,
+    strokeCount: 4,
+    on: ["シュウ"],
+    kun: ["おさ.める", "おさ.まる"],
+    meaning: "Recoger / guardar / ingreso",
+    examples: [
+      {
+        segments: ruby("[仕事|しごと]の[書類|しょるい]を[引|ひ]き[出|だ]しに[収|おさ]めました。"),
+        translation: "Guardé los documentos del trabajo en el cajón.",
+      },
+      {
+        segments: ruby("[今月|こんげつ]の[収入|しゅうにゅう]を[確認|かくにん]しました。"),
+        translation: "Revisé los ingresos de este mes.",
+      },
+      {
+        segments: ruby("[ごみ]をきちんと[回収|かいしゅう]してください。"),
+        translation: "Por favor, recoja correctamente la basura.",
+      },
+      {
+        segments: ruby("[本棚|ほんだな]に[本|ほん]がきれいに[収|おさ]まっています。"),
+        translation: "Los libros están bien ordenados en el estante.",
+      },
+      {
+        segments: ruby("[必要|ひつよう]なものをきちんと[収|おさ]めておくと、[探|さが]す[時間|じかん]がへって[生活|せいかつ]が楽になります。"),
+        translation: "Si guardas bien lo necesario, tardas menos en buscar cosas y la vida se hace más fácil.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "宗",
+    level: 6,
+    strokeCount: 8,
+    on: ["シュウ", "ソウ"],
+    kun: [],
+    meaning: "Religión / secta / principal",
+    examples: [
+      {
+        segments: ruby("[宗教|しゅうきょう]について[授業|じゅぎょう]で[学|まな]びました。"),
+        translation: "Aprendimos sobre religión en clase.",
+      },
+      {
+        segments: ruby("[宗派|しゅうは]によって[考|かんが]え[方|かた]が少しちがいます。"),
+        translation: "Según la escuela religiosa, la forma de pensar cambia un poco.",
+      },
+      {
+        segments: ruby("[家|いえ]の[宗教|しゅうきょう]について[話|はな]すときは、[相手|あいて]の[考|かんが]えも[大切|たいせつ]にします。"),
+        translation: "Cuando hablo sobre la religión de mi familia, también valoro la forma de pensar del otro.",
+      },
+      {
+        segments: ruby("[宗|そう]とされる[考|かんが]え[方|かた]を[中心|ちゅうしん]に[話|はな]が[進|すす]みました。"),
+        translation: "La conversación avanzó tomando como centro la idea principal.",
+      },
+      {
+        segments: ruby("[宗教|しゅうきょう]や[文化|ぶんか]について[学|まな]ぶと、[自分|じぶん]とちがう[価値観|かちかん]を[理解|りかい]しやすくなります。"),
+        translation: "Cuando estudias religión y cultura, se vuelve más fácil comprender valores distintos a los tuyos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "就",
+    level: 6,
+    strokeCount: 12,
+    on: ["シュウ", "ジュ"],
+    kun: ["つ.く", "つ.ける"],
+    meaning: "Tomar un puesto / dedicarse / empezar",
+    examples: [
+      {
+        segments: ruby("[来年|らいねん][就職|しゅうしょく]したいです。"),
+        translation: "Quiero conseguir trabajo el próximo año.",
+      },
+      {
+        segments: ruby("[席|せき]に[就|つ]いてください。"),
+        translation: "Por favor, tomen asiento.",
+      },
+      {
+        segments: ruby("[仕事|しごと]に[就|つ]くために[資格|しかく]を[取|と]りたいです。"),
+        translation: "Quiero obtener una certificación para conseguir trabajo.",
+      },
+      {
+        segments: ruby("[授業|じゅぎょう]が始まる前に[自分|じぶん]の[場所|ばしょ]に[就|つ]きました。"),
+        translation: "Antes de que comenzara la clase, tomé mi lugar.",
+      },
+      {
+        segments: ruby("[どんな[仕事|しごと]に[就|つ]くかだけでなく、どんな[気持|きも]ちで[働|はたら]くかを[考|かんが]えることも[大切|たいせつ]です。"),
+        translation: "No solo importa qué trabajo vas a tomar, sino también con qué actitud vas a trabajar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "衆",
+    level: 6,
+    strokeCount: 12,
+    on: ["シュウ", "シュ"],
+    kun: [],
+    meaning: "Multitud / masas / público",
+    examples: [
+      {
+        segments: ruby("[観衆|かんしゅう]が[大|おお]きな[声|こえ]で[応援|おうえん]していました。"),
+        translation: "El público animaba con voz fuerte.",
+      },
+      {
+        segments: ruby("[大衆|たいしゅう]に[人気|にんき]のある[音楽|おんがく]です。"),
+        translation: "Es música popular entre el gran público.",
+      },
+      {
+        segments: ruby("[民衆|みんしゅう]の[生活|せいかつ]について[歴史|れきし]で[学|まな]びました。"),
+        translation: "En historia aprendimos sobre la vida del pueblo.",
+      },
+      {
+        segments: ruby("[人々|ひとびと]や[観衆|かんしゅう]の[前|まえ]で[話|はな]すのは、まだ少し[緊張|きんちょう]します。"),
+        translation: "Todavía me pone un poco nervioso hablar frente a la gente o al público.",
+      },
+      {
+        segments: ruby("[大衆的|たいしゅうてき]なものにも、[専門的|せんもんてき]なものにも、それぞれちがう[良|よ]さがあります。"),
+        translation: "Tanto lo popular como lo especializado tienen valores distintos y propios.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "従",
+    level: 6,
+    strokeCount: 10,
+    on: ["ジュウ", "ショウ", "ジュ"],
+    kun: ["したが.う", "したが.える"],
+    meaning: "Seguir / obedecer",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]の[指示|しじ]に[従|したが]ってください。"),
+        translation: "Por favor, siga las instrucciones del profesor.",
+      },
+      {
+        segments: ruby("[法律|ほうりつ]に[従|したが]って[行動|こうどう]することが[大切|たいせつ]です。"),
+        translation: "Es importante actuar conforme a la ley.",
+      },
+      {
+        segments: ruby("[年齢|ねんれい]に[従|したが]って[役割|やくわり]が[変|か]わることもあります。"),
+        translation: "Según la edad, a veces cambian los roles.",
+      },
+      {
+        segments: ruby("[従来|じゅうらい]の[方法|ほうほう]ではなく、[新|あたら]しいやり方を[試|ため]しました。"),
+        translation: "Probamos una forma nueva en vez del método tradicional.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[考|かんが]えをもつことは[大切|たいせつ]ですが、[必要|ひつよう]なときには[決|き]まりや[順序|じゅんじょ]に[従|したが]うことも[同|おな]じくらい[大切|たいせつ]です。"),
+        translation: "Es importante tener ideas propias, pero cuando hace falta, también es igual de importante seguir reglas y orden.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "縦",
+    level: 6,
+    strokeCount: 16,
+    on: ["ジュウ"],
+    kun: ["たて"],
+    meaning: "Vertical / largo",
+    examples: [
+      {
+        segments: ruby("[紙|かみ]に[縦|たて]の[線|せん]を[引|ひ]いてください。"),
+        translation: "Por favor, dibuje una línea vertical en el papel.",
+      },
+      {
+        segments: ruby("[縦書|たてが]きの[文|ぶん]を[読|よ]む[練習|れんしゅう]をしています。"),
+        translation: "Estoy practicando leer textos escritos en vertical.",
+      },
+      {
+        segments: ruby("[写真|しゃしん]を[縦|たて]にして[見|み]ると、またちがう[印象|いんしょう]になります。"),
+        translation: "Cuando ves la foto en formato vertical, da una impresión diferente.",
+      },
+      {
+        segments: ruby("[横|よこ]ではなく[縦|たて]に[並|なら]べてください。"),
+        translation: "Por favor, póngalo en vertical y no en horizontal.",
+      },
+      {
+        segments: ruby("[日本語|にほんご]では、[本|ほん]や[新聞|しんぶん]のように[縦書|たてが]きで[読|よ]む[形|かたち]もまだ大切にされています。"),
+        translation: "En japonés todavía se valora la forma de leer en vertical, como en libros y periódicos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "縮",
+    level: 6,
+    strokeCount: 17,
+    on: ["シュク"],
+    kun: ["ちぢ.む", "ちぢ.まる", "ちぢ.める", "ちぢ.れる", "ちぢ.らす"],
+    meaning: "Encoger / reducir",
+    examples: [
+      {
+        segments: ruby("[寒|さむ]くて[体|からだ]が[縮|ちぢ]みそうです。"),
+        translation: "Hace tanto frío que siento que el cuerpo se me encoge.",
+      },
+      {
+        segments: ruby("[時間|じかん]を[短縮|たんしゅく]するために、[作業|さぎょう]の[順番|じゅんばん]を[変|か]えました。"),
+        translation: "Cambiamos el orden del trabajo para reducir el tiempo.",
+      },
+      {
+        segments: ruby("[洗濯|せんたく]したら、シャツが少し[縮|ちぢ]みました。"),
+        translation: "Después de lavarla, la camisa se encogió un poco.",
+      },
+      {
+        segments: ruby("[文章|ぶんしょう]を少し[縮|ちぢ]めて、[短|みじか]くまとめました。"),
+        translation: "Acorté un poco el texto y lo resumí.",
+      },
+      {
+        segments: ruby("[努力|どりょく]しても[差|さ]がすぐに[縮|ちぢ]まるとはかぎりませんが、[続|つづ]けることで少しずつ近づけます。"),
+        translation: "Aunque el esfuerzo no siempre reduce la diferencia de inmediato, continuando uno puede acercarse poco a poco.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "熟",
+    level: 6,
+    strokeCount: 15,
+    on: ["ジュク"],
+    kun: ["う.れる"],
+    meaning: "Madura / dominar bien",
+    examples: [
+      {
+        segments: ruby("[果物|くだもの]がよく[熟|う]れています。"),
+        translation: "La fruta está bien madura.",
+      },
+      {
+        segments: ruby("[熟語|じゅくご]をおぼえると、[漢字|かんじ]の[意味|いみ]がわかりやすくなります。"),
+        translation: "Cuando memorizas palabras compuestas, el significado de los kanji se entiende mejor.",
+      },
+      {
+        segments: ruby("[熟練|じゅくれん]した[人|ひと]の[技|わざ]はすばらしいです。"),
+        translation: "La habilidad de una persona experimentada es admirable.",
+      },
+      {
+        segments: ruby("[十分|じゅうぶん]に[熟|う]れてから[食|た]べると、もっとあまくなります。"),
+        translation: "Si lo comes cuando está bien maduro, será más dulce.",
+      },
+      {
+        segments: ruby("[言葉|ことば]はただ[知|し]るだけでなく、[熟|じゅく]して[自然|しぜん]に[使|つか]えるようになるまで[練習|れんしゅう]することが大切です。"),
+        translation: "Con las palabras no basta con conocerlas; es importante practicarlas hasta poder usarlas con naturalidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "純",
+    level: 6,
+    strokeCount: 10,
+    on: ["ジュン"],
+    kun: [],
+    meaning: "Puro / simple",
+    examples: [
+      {
+        segments: ruby("[純粋|じゅんすい]な[気持|きも]ちで[応援|おうえん]しています。"),
+        translation: "Estoy apoyando con un sentimiento puro.",
+      },
+      {
+        segments: ruby("[純金|じゅんきん]でできた[指輪|ゆびわ]だそうです。"),
+        translation: "Dicen que es un anillo hecho de oro puro.",
+      },
+      {
+        segments: ruby("[純|じゅん]な[水|みず]ほど、よごれが少ないです。"),
+        translation: "Mientras más pura es el agua, menos impurezas tiene.",
+      },
+      {
+        segments: ruby("[彼|かれ]の[質問|しつもん]は[純粋|じゅんすい]な[興味|きょうみ]から出たものでした。"),
+        translation: "Su pregunta nació de un interés genuino.",
+      },
+      {
+        segments: ruby("[物事|ものごと]を[複雑|ふくざつ]に考えすぎず、[純粋|じゅんすい]に「何をしたいか」を見ることも大切です。"),
+        translation: "También es importante no pensar las cosas demasiado enredadas y ver con sinceridad qué es lo que uno quiere hacer.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "処",
+    level: 6,
+    strokeCount: 5,
+    on: ["ショ"],
+    kun: ["ところ", "お.る", "こ"],
+    meaning: "Lugar / tratar / manejar",
+    examples: [
+      {
+        segments: ruby("[この[処|ところ]は[静|しず]かで[勉強|べんきょう]しやすいです。"),
+        translation: "Este lugar es tranquilo y fácil para estudiar.",
+      },
+      {
+        segments: ruby("[問題|もんだい]をどう[処理|しょり]するか[考|かんが]えています。"),
+        translation: "Estoy pensando cómo manejar el problema.",
+      },
+      {
+        segments: ruby("[近|ちか]い[処|ところ]に[銀行|ぎんこう]があります。"),
+        translation: "Hay un banco cerca.",
+      },
+      {
+        segments: ruby("[事務|じむ]の[処理|しょり]に[時間|じかん]がかかりました。"),
+        translation: "Tomó tiempo procesar los trámites administrativos.",
+      },
+      {
+        segments: ruby("[困|こま]った[処|ところ]にすぐ[手|て]をうつのではなく、まず[何|なに]が起きているかを[落|お]ち着いて見ることが大切です。"),
+        translation: "Cuando hay problemas, antes de reaccionar de inmediato es importante observar con calma qué está ocurriendo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "署",
+    level: 6,
+    strokeCount: 13,
+    on: ["ショ"],
+    kun: [],
+    meaning: "Oficina / firmar",
+    examples: [
+      {
+        segments: ruby("[警察署|けいさつしょ]に[相談|そうだん]に[行|い]きました。"),
+        translation: "Fui a la comisaría a consultar.",
+      },
+      {
+        segments: ruby("[消防署|しょうぼうしょ]の[前|まえ]を[通|とお]りました。"),
+        translation: "Pasé por delante de la estación de bomberos.",
+      },
+      {
+        segments: ruby("[書類|しょるい]に[署名|しょめい]してください。"),
+        translation: "Por favor, firme el documento.",
+      },
+      {
+        segments: ruby("[区役所|くやくしょ]や[警察署|けいさつしょ]の[場所|ばしょ]を[確認|かくにん]しておくと安心です。"),
+        translation: "Da tranquilidad tener ubicadas la municipalidad y la comisaría.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[書類|しょるい]では、[内容|ないよう]を読んだうえで[署名|しょめい]することがとても大切です。"),
+        translation: "En documentos importantes, es muy importante firmar después de haber leído el contenido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "諸",
+    level: 6,
+    strokeCount: 15,
+    on: ["ショ"],
+    kun: ["もろ"],
+    meaning: "Varios / diversos",
+    examples: [
+      {
+        segments: ruby("[諸問題|しょもんだい]について[話|はな]し合いました。"),
+        translation: "Conversamos sobre varios problemas.",
+      },
+      {
+        segments: ruby("[諸国|しょこく]の[文化|ぶんか]を[比|くら]べるのはおもしろいです。"),
+        translation: "Es interesante comparar las culturas de distintos países.",
+      },
+      {
+        segments: ruby("[諸注意|しょちゅうい]をよく[読|よ]んでください。"),
+        translation: "Por favor, lea bien las distintas indicaciones.",
+      },
+      {
+        segments: ruby("[諸費用|しょひよう]もふくめて[計算|けいさん]してください。"),
+        translation: "Por favor, calcule incluyendo también los diversos gastos.",
+      },
+      {
+        segments: ruby("[一つ|ひとつ]の[問題|もんだい]だけでなく、[諸条件|しょじょうけん]を合わせて見ると、もっと正しく[判断|はんだん]できることがあります。"),
+        translation: "Si no miras solo un problema, sino también las distintas condiciones, a veces puedes juzgar de forma más correcta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "除",
+    level: 6,
+    strokeCount: 10,
+    on: ["ジョ", "ジ"],
+    kun: ["のぞ.く"],
+    meaning: "Quitar / excluir /除",
+    examples: [
+      {
+        segments: ruby("[机|つくえ]の上のごみを[取|と]り[除|のぞ]きました。"),
+        translation: "Quité la basura que había sobre el escritorio.",
+      },
+      {
+        segments: ruby("[彼|かれ]を[除|のぞ]いて、みんな[集|あつ]まりました。"),
+        translation: "Todos se reunieron excepto él.",
+      },
+      {
+        segments: ruby("[掃除|そうじ]でほこりを[除|のぞ]くのは大切です。"),
+        translation: "Es importante quitar el polvo al limpiar.",
+      },
+      {
+        segments: ruby("[不要|ふよう]な[部分|ぶぶん]を[削除|さくじょ]しました。"),
+        translation: "Eliminé las partes innecesarias.",
+      },
+      {
+        segments: ruby("[不安|ふあん]を[完全|かんぜん]に[除|のぞ]くことはむずかしくても、[一つ|ひとつ]ずつ[原因|げんいん]をへらしていくことはできます。"),
+        translation: "Aunque sea difícil quitar por completo la inquietud, sí se puede ir reduciendo sus causas una por una.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "承",
+    level: 6,
+    strokeCount: 8,
+    on: ["ショウ"],
+    kun: ["うけたまわ.る"],
+    meaning: "Recibir / aceptar / heredar",
+    examples: [
+      {
+        segments: ruby("[話|はなし]はたしかに[承知|しょうち]しました。"),
+        translation: "Sí, entendí y acepté lo que me dijo.",
+      },
+      {
+        segments: ruby("[注文|ちゅうもん]を[承|うけたまわ]りました。"),
+        translation: "Hemos recibido su pedido.",
+      },
+      {
+        segments: ruby("[伝統|でんとう]を[受|う]け[継|つ]いで[継承|けいしょう]することが大切です。"),
+        translation: "Es importante heredar y transmitir la tradición.",
+      },
+      {
+        segments: ruby("[会社|かいしゃ]の[担当|たんとう]から[承認|しょうにん]が出ました。"),
+        translation: "Llegó la aprobación del encargado de la empresa.",
+      },
+      {
+        segments: ruby("[相手|あいて]の[話|はなし]をきちんと[承知|しょうち]したうえで[返事|へんじ]すると、[誤解|ごかい]が少なくなります。"),
+        translation: "Si respondes después de haber entendido bien lo que dice la otra persona, se reducen los malentendidos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "将",
+    level: 6,
+    strokeCount: 10,
+    on: ["ショウ"],
+    kun: ["まさ.に"],
+    meaning: "Futuro / comandante / casi",
+    examples: [
+      {
+        segments: ruby("[将来|しょうらい]の[夢|ゆめ]について[考|かんが]えています。"),
+        translation: "Estoy pensando en mi sueño para el futuro.",
+      },
+      {
+        segments: ruby("[将棋|しょうぎ]を[習|なら]い[始|はじ]めました。"),
+        translation: "Empecé a aprender shōgi.",
+      },
+      {
+        segments: ruby("[将軍|しょうぐん]について[歴史|れきし]で[学|まな]びました。"),
+        translation: "Aprendimos sobre los shōgun en historia.",
+      },
+      {
+        segments: ruby("[まさに]その通りだという意味で、[将|まさ]にと言うことがあります。"),
+        translation: "A veces se usa 将に con el sentido de “exactamente así”.",
+      },
+      {
+        segments: ruby("[将来|しょうらい]を考えるときは、[大|おお]きな[夢|ゆめ]だけでなく、[今日|きょう]何をするかも同じくらい大切です。"),
+        translation: "Al pensar en el futuro, no solo son importantes los grandes sueños, sino también lo que haces hoy.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "傷",
+    level: 6,
+    strokeCount: 13,
+    on: ["ショウ"],
+    kun: ["きず", "いた.む", "きず.つく", "きず.つける"],
+    meaning: "Herida / dañar",
+    examples: [
+      {
+        segments: ruby("[手|て]に[小|ちい]さい[傷|きず]ができました。"),
+        translation: "Me salió una pequeña herida en la mano.",
+      },
+      {
+        segments: ruby("[相手|あいて]の[気持|きも]ちを[傷|きず]つけないように[話|はな]します。"),
+        translation: "Hablo con cuidado para no herir los sentimientos de la otra persona.",
+      },
+      {
+        segments: ruby("[心|こころ]の[傷|きず]は、[時間|じかん]をかけて少しずつよくなることもあります。"),
+        translation: "Las heridas del corazón a veces mejoran poco a poco con el tiempo.",
+      },
+      {
+        segments: ruby("[道路|どうろ]で[転|ころ]んで、[足|あし]に[傷|きず]をつくりました。"),
+        translation: "Me caí en la calle y me hice una herida en la pierna.",
+      },
+      {
+        segments: ruby("[言葉|ことば]は見えませんが、[使|つか]い方によっては[深|ふか]く人を[傷|きず]つけることがあります。"),
+        translation: "Las palabras no se ven, pero según cómo se usen pueden herir profundamente a una persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "障",
+    level: 6,
+    strokeCount: 14,
+    on: ["ショウ"],
+    kun: ["さわ.る"],
+    meaning: "Obstáculo / impedimento",
+    examples: [
+      {
+        segments: ruby("[機械|きかい]に[故障|こしょう]がありました。"),
+        translation: "La máquina tenía una avería.",
+      },
+      {
+        segments: ruby("[勉強|べんきょう]の[障害|しょうがい]になるものを[片付|かたづ]けました。"),
+        translation: "Ordené lo que estaba estorbando para estudiar.",
+      },
+      {
+        segments: ruby("[通行|つうこう]の[障|さわ]りになるので、ここに[置|お]かないでください。"),
+        translation: "Como estorba el paso, por favor no lo deje aquí.",
+      },
+      {
+        segments: ruby("[少|すこ]しの[故障|こしょう]でも、[大|おお]きな[事故|じこ]につながることがあります。"),
+        translation: "Incluso una pequeña avería puede llevar a un accidente grande.",
+      },
+      {
+        segments: ruby("[集中|しゅうちゅう]の[障害|しょうがい]になるものをへらすと、[短|みじか]い時間でも学びやすくなります。"),
+        translation: "Si reduces lo que interfiere con la concentración, se vuelve más fácil aprender incluso en poco tiempo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "蒸",
+    level: 6,
+    strokeCount: 13,
+    on: ["ジョウ"],
+    kun: ["む.す", "む.れる", "む.らす"],
+    meaning: "Cocer al vapor / vapor",
+    examples: [
+      {
+        segments: ruby("[野菜|やさい]を[蒸|む]して[食|た]べました。"),
+        translation: "Comí verduras cocidas al vapor.",
+      },
+      {
+        segments: ruby("[お[風呂|ふろ]の[中|なか]が[蒸|む]れてあついです。"),
+        translation: "Dentro del baño hay mucho vapor y hace calor.",
+      },
+      {
+        segments: ruby("[蒸気|じょうき]が上にのぼっています。"),
+        translation: "El vapor está subiendo.",
+      },
+      {
+        segments: ruby("[蒸|む]しパンをつくるのは思ったよりかんたんでした。"),
+        translation: "Hacer pan al vapor fue más fácil de lo que pensaba.",
+      },
+      {
+        segments: ruby("[蒸|む]らさないようにふたを少しあけると、[料理|りょうり]のしあがりがよくなることがあります。"),
+        translation: "A veces, si abres un poco la tapa para que no se llene demasiado de vapor, el resultado de la comida mejora.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "針",
+    level: 6,
+    strokeCount: 10,
+    on: ["シン"],
+    kun: ["はり"],
+    meaning: "Aguja / manecilla",
+    examples: [
+      {
+        segments: ruby("[時計|とけい]の[針|はり]が十二をさしています。"),
+        translation: "La manecilla del reloj marca las doce.",
+      },
+      {
+        segments: ruby("[針|はり]と[糸|いと]でボタンをつけました。"),
+        translation: "Cosí el botón con aguja e hilo.",
+      },
+      {
+        segments: ruby("[方針|ほうしん]をはっきりさせてから[進|すす]みます。"),
+        translation: "Avanzamos después de dejar clara la política o dirección a seguir.",
+      },
+      {
+        segments: ruby("[注射|ちゅうしゃ]の[針|はり]が少しこわいです。"),
+        translation: "Me da un poco de miedo la aguja de las inyecciones.",
+      },
+      {
+        segments: ruby("[小|ちい]さい[針|はり]でも、あつかい方をまちがえると[危|あぶ]ないので、[道具|どうぐ]はていねいに[使|つか]うことが大切です。"),
+        translation: "Incluso una aguja pequeña es peligrosa si se maneja mal, así que es importante usar las herramientas con cuidado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "仁",
+    level: 6,
+    strokeCount: 4,
+    on: ["ジン", "ニ"],
+    kun: [],
+    meaning: "Benevolencia / humanidad",
+    examples: [
+      {
+        segments: ruby("[仁愛|じんあい]の心を大切にしたいです。"),
+        translation: "Quiero valorar un corazón benevolente.",
+      },
+      {
+        segments: ruby("[歴史|れきし]の本で[仁|じん]という考え方を読みました。"),
+        translation: "Leí en un libro de historia la idea de la benevolencia.",
+      },
+      {
+        segments: ruby("[人|ひと]にやさしくすることは、[仁|じん]の心にもつながります。"),
+        translation: "Ser amable con los demás también se relaciona con un corazón bondadoso.",
+      },
+      {
+        segments: ruby("[仁義|じんぎ]という言葉は、[人|ひと]としての道を考えるときに使われることがあります。"),
+        translation: "La palabra jingi a veces se usa al hablar del camino correcto como persona.",
+      },
+      {
+        segments: ruby("[今|いま]の会話ではあまり使わない漢字ですが、[仁|じん]のような言葉を知ると、[昔|むかし]の考え方にもふれられます。"),
+        translation: "Es un kanji que no se usa mucho en la conversación actual, pero conocer palabras como 仁 te permite acercarte a formas de pensar antiguas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "垂",
+    level: 6,
+    strokeCount: 8,
+    on: ["スイ"],
+    kun: ["た.れる", "た.らす", "なんなんと.する"],
+    meaning: "Colgar / caer",
+    examples: [
+      {
+        segments: ruby("[木|き]の[枝|えだ]から葉が[垂|た]れています。"),
+        translation: "Las hojas cuelgan de la rama del árbol.",
+      },
+      {
+        segments: ruby("[汗|あせ]が[額|ひたい]から[垂|た]れてきました。"),
+        translation: "El sudor me empezó a caer desde la frente.",
+      },
+      {
+        segments: ruby("[ひも]を長く[垂|た]らしすぎないでください。"),
+        translation: "Por favor, no deje colgando demasiado la cuerda.",
+      },
+      {
+        segments: ruby("[垂直|すいちょく]の線を引くのは少しむずかしいです。"),
+        translation: "Dibujar una línea vertical es un poco difícil.",
+      },
+      {
+        segments: ruby("[窓|まど]から[垂|た]れるカーテンの長さで、部屋の印象がかなり変わります。"),
+        translation: "La longitud de las cortinas que cuelgan de la ventana cambia bastante la impresión de la habitación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "推",
+    level: 6,
+    strokeCount: 11,
+    on: ["スイ"],
+    kun: ["お.す"],
+    meaning: "Empujar / recomendar / suponer",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]がこの本を[推薦|すいせん]してくれました。"),
+        translation: "El profesor me recomendó este libro.",
+      },
+      {
+        segments: ruby("[理由|りゆう]を[考|かんが]えて、[結果|けっか]を[推測|すいそく]しました。"),
+        translation: "Pensé en la razón y deduje el resultado.",
+      },
+      {
+        segments: ruby("[車|くるま]をうしろから[押|お]して[推|お]し[出|だ]しました。"),
+        translation: "Empujamos el auto desde atrás para sacarlo.",
+      },
+      {
+        segments: ruby("[人気|にんき]の[理由|りゆう]を[推理|すいり]するのもおもしろいです。"),
+        translation: "También es interesante deducir por qué algo es popular.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[意見|いけん]を[強|つよ]く[押|お]しすぎるのではなく、[理由|りゆう]をそえて[推|お]すことが大切です。"),
+        translation: "Es importante no imponer demasiado la propia opinión, sino apoyarla con razones.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "寸",
+    level: 6,
+    strokeCount: 3,
+    on: ["スン"],
+    kun: [],
+    meaning: "Sun (medida) / poco",
+    examples: [
+      {
+        segments: ruby("[一寸|ちょっと]待ってください。"),
+        translation: "Espere un momento, por favor.",
+      },
+      {
+        segments: ruby("[寸法|すんぽう]をはかってから[作|つく]ります。"),
+        translation: "Lo haré después de medir las dimensiones.",
+      },
+      {
+        segments: ruby("[昔|むかし]は[寸|すん]という長さの単位も使われていました。"),
+        translation: "Antiguamente también se usaba la unidad de longitud llamada sun.",
+      },
+      {
+        segments: ruby("[棚|たな]の[寸法|すんぽう]が合わなくて、少しなおしました。"),
+        translation: "Las medidas del estante no coincidían y lo ajusté un poco.",
+      },
+      {
+        segments: ruby("[ものを作るときは、[大体|だいたい]で考えるだけでなく、[寸法|すんぽう]のような[数字|すうじ]でも[確|たし]かめることが大切です。"),
+        translation: "Al fabricar algo, es importante no pensar solo a ojo, sino también comprobarlo con números, como las medidas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "盛",
+    level: 6,
+    strokeCount: 11,
+    on: ["セイ", "ジョウ"],
+    kun: ["も.る", "さか.る", "さか.ん"],
+    meaning: "Servir / prosperar / lleno",
+    examples: [
+      {
+        segments: ruby("[ごはん]を大きいおわんに[盛|も]りました。"),
+        translation: "Serví arroz en un cuenco grande.",
+      },
+      {
+        segments: ruby("[この町|まち]は観光が[盛|さか]んです。"),
+        translation: "En esta ciudad el turismo es activo.",
+      },
+      {
+        segments: ruby("[話|はなし]が[盛|も]り上がって、時間をわすれました。"),
+        translation: "La conversación se animó tanto que olvidamos la hora.",
+      },
+      {
+        segments: ruby("[山盛|やまも]りの野菜を見て、おどろきました。"),
+        translation: "Me sorprendí al ver una montaña de verduras.",
+      },
+      {
+        segments: ruby("[元気|げんき]な町には、人が集まりやすく、活動も[盛|さか]んになりやすいです。"),
+        translation: "En una ciudad con energía es más fácil que la gente se reúna y que las actividades prosperen.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "聖",
+    level: 6,
+    strokeCount: 13,
+    on: ["セイ"],
+    kun: [],
+    meaning: "Sagrado / santo",
+    examples: [
+      {
+        segments: ruby("[聖書|せいしょ]を[読|よ]んだことがあります。"),
+        translation: "He leído la Biblia alguna vez.",
+      },
+      {
+        segments: ruby("[聖地|せいち]として知られる場所を訪れました。"),
+        translation: "Visité un lugar conocido como sitio sagrado.",
+      },
+      {
+        segments: ruby("[歴史|れきし]の中では、[聖|せい]という言葉が特別な意味で使われることがあります。"),
+        translation: "En la historia, la palabra “sagrado” a veces se usa con un sentido especial.",
+      },
+      {
+        segments: ruby("[聖歌|せいか]のようなしずかな音楽を聞くと、心が落ち着きます。"),
+        translation: "Cuando escucho música tranquila como himnos sagrados, mi corazón se calma.",
+      },
+      {
+        segments: ruby("[聖|せい]という言葉を学ぶと、宗教や歴史の文で見かける表現も少しわかりやすくなります。"),
+        translation: "Cuando aprendes la palabra “sagrado”, también se vuelven un poco más fáciles de entender expresiones que aparecen en textos religiosos o históricos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "誠",
+    level: 6,
+    strokeCount: 13,
+    on: ["セイ"],
+    kun: ["まこと"],
+    meaning: "Sinceridad / verdad",
+    examples: [
+      {
+        segments: ruby("[誠実|せいじつ]な[人|ひと]は[信頼|しんらい]されます。"),
+        translation: "Una persona sincera recibe confianza.",
+      },
+      {
+        segments: ruby("[心|こころ]をこめて[誠|まこと]におわびします。"),
+        translation: "Me disculpo sinceramente de corazón.",
+      },
+      {
+        segments: ruby("[誠意|せいい]をもって[説明|せつめい]しました。"),
+        translation: "Lo expliqué con sinceridad.",
+      },
+      {
+        segments: ruby("[彼|かれ]の[言葉|ことば]には[誠|まこと]があると[感|かん]じました。"),
+        translation: "Sentí sinceridad en sus palabras.",
+      },
+      {
+        segments: ruby("[誠実|せいじつ]に[努力|どりょく]を[続|つづ]けることは、[小|ちい]さくても[確|たし]かな[信頼|しんらい]につながります。"),
+        translation: "Seguir esforzándose con sinceridad lleva, aunque sea poco a poco, a una confianza verdadera.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "舌",
+    level: 6,
+    strokeCount: 6,
+    on: ["ゼツ"],
+    kun: ["した"],
+    meaning: "Lengua",
+    examples: [
+      {
+        segments: ruby("[舌|した]をやけどしてしまいました。"),
+        translation: "Me quemé la lengua.",
+      },
+      {
+        segments: ruby("[熱|あつ]いスープを[急|いそ]いで[飲|の]むと、[舌|した]が[痛|いた]くなります。"),
+        translation: "Si tomas sopa caliente muy rápido, te duele la lengua.",
+      },
+      {
+        segments: ruby("[舌|した]の[位置|いち]で[発音|はつおん]が[変|か]わることがあります。"),
+        translation: "La pronunciación puede cambiar según la posición de la lengua.",
+      },
+      {
+        segments: ruby("[赤|あか]ちゃんが[舌|した]を出して[笑|わら]っていました。"),
+        translation: "El bebé estaba sonriendo sacando la lengua.",
+      },
+      {
+        segments: ruby("[外国語|がいこくご]の[発音|はつおん]を[練習|れんしゅう]するときは、[口|くち]だけでなく[舌|した]の[動|うご]きにも[気|き]をつけるとよいです。"),
+        translation: "Al practicar la pronunciación de un idioma extranjero, conviene fijarse no solo en la boca, sino también en el movimiento de la lengua.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "宣",
+    level: 6,
+    strokeCount: 9,
+    on: ["セン"],
+    kun: [],
+    meaning: "Declarar / anunciar",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]が[予定|よてい]を[宣言|せんげん]しました。"),
+        translation: "El profesor anunció el plan.",
+      },
+      {
+        segments: ruby("[開会|かいかい]を[宣|せん]する[言葉|ことば]がありました。"),
+        translation: "Hubo unas palabras para declarar el inicio.",
+      },
+      {
+        segments: ruby("[宣伝|せんでん]を[見|み]て、この[商品|しょうひん]を[知|し]りました。"),
+        translation: "Conocí este producto al ver su publicidad.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[目標|もくひょう]をみんなの[前|まえ]で[宣言|せんげん]しました。"),
+        translation: "Declaré mi meta frente a todos.",
+      },
+      {
+        segments: ruby("[何|なに]かを[宣言|せんげん]すると、[自分|じぶん]の[気持|きも]ちがはっきりし、[行動|こうどう]もしやすくなることがあります。"),
+        translation: "Cuando declaras algo, a veces tus sentimientos se aclaran y te resulta más fácil actuar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "専",
+    level: 6,
+    strokeCount: 9,
+    on: ["セン"],
+    kun: ["もっぱ.ら"],
+    meaning: "Especializarse / exclusivamente",
+    examples: [
+      {
+        segments: ruby("[日本語|にほんご]を[専門|せんもん]に[勉強|べんきょう]しています。"),
+        translation: "Estoy estudiando japonés como especialidad.",
+      },
+      {
+        segments: ruby("[専用|せんよう]のコップを[使|つか]ってください。"),
+        translation: "Por favor, use el vaso exclusivo para eso.",
+      },
+      {
+        segments: ruby("[大学|だいがく]では[教育|きょういく]を[専攻|せんこう]したいです。"),
+        translation: "En la universidad quiero especializarme en educación.",
+      },
+      {
+        segments: ruby("[朝|あさ]は[勉強|べんきょう]に[専念|せんねん]する[時間|じかん]にしています。"),
+        translation: "Por la mañana lo tomo como tiempo para dedicarme al estudio.",
+      },
+      {
+        segments: ruby("[一つ|ひとつ]のことに[専念|せんねん]する[時間|じかん]をもつと、[考|かんが]えがまとまりやすくなります。"),
+        translation: "Tener un tiempo para concentrarse en una sola cosa ayuda a ordenar mejor las ideas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "泉",
+    level: 6,
+    strokeCount: 9,
+    on: ["セン"],
+    kun: ["いずみ"],
+    meaning: "Manantial / fuente",
+    examples: [
+      {
+        segments: ruby("[山|やま]の中から[泉|いずみ]がわいています。"),
+        translation: "En la montaña brota un manantial.",
+      },
+      {
+        segments: ruby("[公園|こうえん]に小さな[泉|いずみ]があります。"),
+        translation: "Hay una pequeña fuente en el parque.",
+      },
+      {
+        segments: ruby("[温泉|おんせん]でゆっくり[休|やす]みました。"),
+        translation: "Descansé tranquilamente en unas aguas termales.",
+      },
+      {
+        segments: ruby("[泉|いずみ]の[水|みず]はとてもつめたかったです。"),
+        translation: "El agua del manantial estaba muy fría.",
+      },
+      {
+        segments: ruby("[静|しず]かな[泉|いずみ]の[音|おと]を[聞|き]くと、[心|こころ]まで[落|お]ち[着|つ]いてくるように[感|かん]じます。"),
+        translation: "Cuando escucho el sonido de un manantial tranquilo, siento que hasta el corazón se calma.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "洗",
+    level: 6,
+    strokeCount: 9,
+    on: ["セン"],
+    kun: ["あら.う"],
+    meaning: "Lavar",
+    examples: [
+      {
+        segments: ruby("[手|て]をよく[洗|あら]ってください。"),
+        translation: "Por favor, lávese bien las manos.",
+      },
+      {
+        segments: ruby("[野菜|やさい]を[洗|あら]ってから[切|き]ります。"),
+        translation: "Lavo las verduras antes de cortarlas.",
+      },
+      {
+        segments: ruby("[顔|かお]を[洗|あら]って[目|め]がさめました。"),
+        translation: "Me lavé la cara y desperté bien.",
+      },
+      {
+        segments: ruby("[洗濯機|せんたくき]で[服|ふく]を[洗|あら]いました。"),
+        translation: "Lavé la ropa en la lavadora.",
+      },
+      {
+        segments: ruby("[食|た]べる[前|まえ]に[手|て]を[洗|あら]う[習慣|しゅうかん]をつけると、[健康|けんこう]を[守|まも]る[助|たす]けになります。"),
+        translation: "Adquirir el hábito de lavarse las manos antes de comer ayuda a proteger la salud.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "染",
+    level: 6,
+    strokeCount: 9,
+    on: ["セン"],
+    kun: ["そ.める", "そ.まる", "し.みる", "し.み"],
+    meaning: "Teñir / impregnarse / manchar",
+    examples: [
+      {
+        segments: ruby("[布|ぬの]を青く[染|そ]めました。"),
+        translation: "Teñí la tela de azul.",
+      },
+      {
+        segments: ruby("[夕日|ゆうひ]で[空|そら]が赤く[染|そ]まりました。"),
+        translation: "El cielo se tiñó de rojo con el atardecer.",
+      },
+      {
+        segments: ruby("[インク]が[紙|かみ]に[染|し]みました。"),
+        translation: "La tinta se impregnó en el papel.",
+      },
+      {
+        segments: ruby("[髪|かみ]を茶色に[染|そ]めました。"),
+        translation: "Me teñí el pelo de marrón.",
+      },
+      {
+        segments: ruby("[町|まち]が[夕焼|ゆうや]けに[染|そ]まる[景色|けしき]を見ると、[一日|いちにち]の終わりをしずかに[感|かん]じます。"),
+        translation: "Cuando veo la ciudad teñirse con el cielo del atardecer, siento con calma el final del día.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "銭",
+    level: 6,
+    strokeCount: 14,
+    on: ["セン"],
+    kun: ["ぜに"],
+    meaning: "Dinero / monedas",
+    examples: [
+      {
+        segments: ruby("[小銭|こぜに]が少したりません。"),
+        translation: "Me faltan un poco de monedas.",
+      },
+      {
+        segments: ruby("[銭湯|せんとう]でゆっくり[体|からだ]をあたためました。"),
+        translation: "Me relajé y calenté el cuerpo en un baño público.",
+      },
+      {
+        segments: ruby("[神社|じんじゃ]で[賽銭|さいせん]を入れてお[参|まい]りしました。"),
+        translation: "Eché una ofrenda monetaria en el santuario y recé.",
+      },
+      {
+        segments: ruby("[昔|むかし]は[銭|ぜに]という[言葉|ことば]が今よりもっと身近に使われていました。"),
+        translation: "Antiguamente la palabra “zeni” se usaba más en la vida cotidiana que hoy.",
+      },
+      {
+        segments: ruby("[小銭|こぜに]を[大切|たいせつ]にすると、[少|すこ]しずつでも[お金|かね]の[使|つか]い方に[気|き]をつける[習慣|しゅうかん]がついてきます。"),
+        translation: "Si valoras incluso las monedas pequeñas, poco a poco desarrollas el hábito de usar el dinero con más cuidado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "善",
+    level: 6,
+    strokeCount: 12,
+    on: ["ゼン"],
+    kun: ["よ.い"],
+    meaning: "Bueno / bondad",
+    examples: [
+      {
+        segments: ruby("[善意|ぜんい]で[手伝|てつだ]いました。"),
+        translation: "Ayudé con buena intención.",
+      },
+      {
+        segments: ruby("[善悪|ぜんあく]の[区別|くべつ]を[学|まな]ぶことは[大切|たいせつ]です。"),
+        translation: "Es importante aprender a distinguir entre el bien y el mal.",
+      },
+      {
+        segments: ruby("[最善|さいぜん]の[方法|ほうほう]を[考|かんが]えます。"),
+        translation: "Pensaré en la mejor manera posible.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[善良|ぜんりょう]な[人|ひと]として知られています。"),
+        translation: "Él es conocido como una persona bondadosa.",
+      },
+      {
+        segments: ruby("[善|よ]いことをしようとする[気持|きも]ちは、[大|おお]きなことでなくても[毎日|まいにち]の[行動|こうどう]に[表|あらわ]れます。"),
+        translation: "El deseo de hacer el bien, aunque no sea en algo grande, se refleja en las acciones de cada día.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "奏",
+    level: 6,
+    strokeCount: 9,
+    on: ["ソウ"],
+    kun: ["かな.でる"],
+    meaning: "Tocar / interpretar música",
+    examples: [
+      {
+        segments: ruby("[ピアノ]を[奏|かな]でるのが[好|す]きです。"),
+        translation: "Me gusta tocar el piano.",
+      },
+      {
+        segments: ruby("[演奏会|えんそうかい]を[聞|き]きに[行|い]きました。"),
+        translation: "Fui a escuchar un concierto.",
+      },
+      {
+        segments: ruby("[彼女|かのじょ]はやさしい[音|おと]を[奏|かな]でます。"),
+        translation: "Ella interpreta sonidos suaves.",
+      },
+      {
+        segments: ruby("[学校|がっこう]で[国歌|こっか]を[演奏|えんそう]しました。"),
+        translation: "Interpretamos el himno nacional en la escuela.",
+      },
+      {
+        segments: ruby("[音楽|おんがく]を[奏|かな]でるときは、[技術|ぎじゅつ]だけでなく[気持|きも]ちもいっしょに[伝|つた]わることがあります。"),
+        translation: "Cuando se interpreta música, a veces no solo se transmite la técnica, sino también el sentimiento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "窓",
+    level: 6,
+    strokeCount: 11,
+    on: ["ソウ"],
+    kun: ["まど"],
+    meaning: "Ventana",
+    examples: [
+      {
+        segments: ruby("[窓|まど]を[開|あ]けてください。"),
+        translation: "Por favor, abra la ventana.",
+      },
+      {
+        segments: ruby("[窓口|まどぐち]で[切符|きっぷ]を[買|か]いました。"),
+        translation: "Compré el boleto en la ventanilla.",
+      },
+      {
+        segments: ruby("[窓|まど]の外に[鳥|とり]がいました。"),
+        translation: "Había un pájaro afuera de la ventana.",
+      },
+      {
+        segments: ruby("[夜|よる]は[窓|まど]をしっかりしめます。"),
+        translation: "Por la noche cierro bien la ventana.",
+      },
+      {
+        segments: ruby("[窓|まど]から見える[景色|けしき]が変わると、[同|おな]じ[部屋|へや]でもちがう[気分|きぶん]になることがあります。"),
+        translation: "Cuando cambia el paisaje que se ve desde la ventana, hasta la misma habitación puede sentirse diferente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "創",
+    level: 6,
+    strokeCount: 12,
+    on: ["ソウ"],
+    kun: ["つく.る"],
+    meaning: "Crear / fundar",
+    examples: [
+      {
+        segments: ruby("[物語|ものがたり]を[創作|そうさく]するのが[好|す]きです。"),
+        translation: "Me gusta crear historias.",
+      },
+      {
+        segments: ruby("[学校|がっこう]は去年[創立|そうりつ]五十[周年|しゅうねん]をむかえました。"),
+        translation: "La escuela cumplió cincuenta años desde su fundación el año pasado.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[計画|けいかく]を[創|つく]るのは楽しいです。"),
+        translation: "Es divertido crear un plan nuevo.",
+      },
+      {
+        segments: ruby("[独創的|どくそうてき]な[発想|はっそう]におどろきました。"),
+        translation: "Me sorprendió una idea original.",
+      },
+      {
+        segments: ruby("[創造力|そうぞうりょく]をのばすには、まず[自由|じゆう]に[考|かんが]えてみる[時間|じかん]をもつことが大切です。"),
+        translation: "Para desarrollar la creatividad, primero es importante tener tiempo para pensar libremente.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "装",
+    level: 6,
+    strokeCount: 12,
+    on: ["ソウ", "ショウ"],
+    kun: ["よそお.う"],
+    meaning: "Vestir / equipar / adornar",
+    examples: [
+      {
+        segments: ruby("[服装|ふくそう]に[気|き]をつけてください。"),
+        translation: "Por favor, cuide su forma de vestir.",
+      },
+      {
+        segments: ruby("[プレゼント]の[包装|ほうそう]をきれいにしました。"),
+        translation: "Dejé bonito el envoltorio del regalo.",
+      },
+      {
+        segments: ruby("[部屋|へや]を花で[装飾|そうしょく]しました。"),
+        translation: "Decoré la habitación con flores.",
+      },
+      {
+        segments: ruby("[パーティー]のためにきれいに[装|よそお]いました。"),
+        translation: "Me arreglé con elegancia para la fiesta.",
+      },
+      {
+        segments: ruby("[外見|がいけん]を[整|ととの]える[装|よそお]いも大切ですが、[相手|あいて]に[安心|あんしん]をあたえる[態度|たいど]も同じくらい大切です。"),
+        translation: "Es importante cuidar la apariencia, pero también lo es tener una actitud que dé tranquilidad a la otra persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "層",
+    level: 6,
+    strokeCount: 14,
+    on: ["ソウ"],
+    kun: [],
+    meaning: "Capa / estrato / grupo",
+    examples: [
+      {
+        segments: ruby("[地層|ちそう]を[理科|りか]で[学|まな]びました。"),
+        translation: "Aprendimos sobre los estratos de la tierra en ciencias.",
+      },
+      {
+        segments: ruby("[この[ケーキ]は何[層|そう]にもなっています。"),
+        translation: "Este pastel tiene varias capas.",
+      },
+      {
+        segments: ruby("[若|わか]い[層|そう]に[人気|にんき]のある[商品|しょうひん]です。"),
+        translation: "Es un producto popular entre el grupo joven.",
+      },
+      {
+        segments: ruby("[空気|くうき]の[層|そう]について[説明|せつめい]を[聞|き]きました。"),
+        translation: "Escuché una explicación sobre las capas del aire.",
+      },
+      {
+        segments: ruby("[一つ|ひとつ]の[集団|しゅうだん]の中でも、[年齢|ねんれい]や[考|かんが]え方によっていくつかの[層|そう]に分けて考えることがあります。"),
+        translation: "Incluso dentro de un mismo grupo, a veces se piensa en varias capas según la edad o la forma de pensar.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "操",
+    level: 6,
+    strokeCount: 16,
+    on: ["ソウ"],
+    kun: ["あやつ.る", "みさお"],
+    meaning: "Manejar / controlar / virtud",
+    examples: [
+      {
+        segments: ruby("[機械|きかい]を[上手|じょうず]に[操|あやつ]るのはむずかしいです。"),
+        translation: "Manejar bien una máquina es difícil.",
+      },
+      {
+        segments: ruby("[毎朝|まいあさ][体操|たいそう]をしています。"),
+        translation: "Hago ejercicios todas las mañanas.",
+      },
+      {
+        segments: ruby("[飛行機|ひこうき]を[操縦|そうじゅう]するのが[夢|ゆめ]です。"),
+        translation: "Mi sueño es pilotar un avión.",
+      },
+      {
+        segments: ruby("[感情|かんじょう]に[操|あやつ]られず、[落|お]ち[着|つ]いて[考|かんが]えるようにしています。"),
+        translation: "Procuro pensar con calma sin dejarme controlar por las emociones.",
+      },
+      {
+        segments: ruby("[道具|どうぐ]や[機械|きかい]を[操|あやつ]る[力|ちから]だけでなく、[自分|じぶん]の[気持|きも]ちをうまく整えることも[大切|たいせつ]です。"),
+        translation: "No solo es importante la habilidad para manejar herramientas o máquinas, sino también saber ordenar bien los propios sentimientos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "蔵",
+    level: 6,
+    strokeCount: 15,
+    on: ["ゾウ", "ソウ"],
+    kun: ["くら"],
+    meaning: "Almacén / bodega",
+    examples: [
+      {
+        segments: ruby("[古|ふる]い[蔵|くら]が町に[残|のこ]っています。"),
+        translation: "Todavía queda una antigua bodega en la ciudad.",
+      },
+      {
+        segments: ruby("[酒蔵|さかぐら]を[見学|けんがく]しました。"),
+        translation: "Visité una bodega de sake.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な[物|もの]を[蔵|くら]にしまいました。"),
+        translation: "Guardé cosas importantes en la bodega.",
+      },
+      {
+        segments: ruby("[図書館|としょかん]には多くの[蔵書|ぞうしょ]があります。"),
+        translation: "La biblioteca tiene una gran colección de libros.",
+      },
+      {
+        segments: ruby("[昔|むかし]の[蔵|くら]を見ると、[物|もの]を長く大切に[保管|ほかん]するための工夫がよくわかります。"),
+        translation: "Cuando uno ve una bodega antigua, entiende bien los esfuerzos que se hacían para conservar las cosas durante mucho tiempo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "臓",
+    level: 6,
+    strokeCount: 19,
+    on: ["ゾウ"],
+    kun: [],
+    meaning: "Órgano interno",
+    examples: [
+      {
+        segments: ruby("[心臓|しんぞう]がどきどきしています。"),
+        translation: "Mi corazón late con fuerza.",
+      },
+      {
+        segments: ruby("[内臓|ないぞう]の[健康|けんこう]にも[気|き]をつけたいです。"),
+        translation: "Quiero cuidar también la salud de los órganos internos.",
+      },
+      {
+        segments: ruby("[医者|いしゃ]が[臓器|ぞうき]について[説明|せつめい]してくれました。"),
+        translation: "El médico me explicó sobre los órganos.",
+      },
+      {
+        segments: ruby("[心臓|しんぞう]に[負担|ふたん]をかけないように、むりをしません。"),
+        translation: "No me exijo demasiado para no cargar el corazón.",
+      },
+      {
+        segments: ruby("[体|からだ]の[表面|ひょうめん]だけでなく、[臓器|ぞうき]のように見えない[部分|ぶぶん]の[健康|けんこう]も大切にする必要があります。"),
+        translation: "No solo hay que cuidar la parte visible del cuerpo, sino también la salud de las partes invisibles como los órganos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "存",
+    level: 6,
+    strokeCount: 6,
+    on: ["ソン", "ゾン"],
+    kun: [],
+    meaning: "Existir / guardar / saber",
+    examples: [
+      {
+        segments: ruby("[保存|ほぞん]してください。"),
+        translation: "Por favor, guárdelo.",
+      },
+      {
+        segments: ruby("[あなた]の[名前|なまえ]はよく[存|ぞん]じています。"),
+        translation: "Conozco bien su nombre.",
+      },
+      {
+        segments: ruby("[存在|そんざい]の[大切|たいせつ]さについて[考|かんが]えました。"),
+        translation: "Pensé en la importancia de la existencia.",
+      },
+      {
+        segments: ruby("[食品|しょくひん]は[冷蔵庫|れいぞうこ]で[保存|ほぞん]してください。"),
+        translation: "Por favor, conserve los alimentos en el refrigerador.",
+      },
+      {
+        segments: ruby("[自分|じぶん]の[存在|そんざい]がだれかの[支|ささ]えになることもあると[知|し]ると、[毎日|まいにち]の[見方|みかた]が少し変わります。"),
+        translation: "Cuando uno sabe que su propia existencia puede sostener a alguien, cambia un poco la forma de ver cada día.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "尊",
+    level: 6,
+    strokeCount: 12,
+    on: ["ソン"],
+    kun: ["たっと.い", "とうと.い", "たっと.ぶ", "とうと.ぶ"],
+    meaning: "Respetar / valioso / noble",
+    examples: [
+      {
+        segments: ruby("[先生|せんせい]を[尊敬|そんけい]しています。"),
+        translation: "Respeto al profesor.",
+      },
+      {
+        segments: ruby("[命|いのち]は[尊|とうと]いものです。"),
+        translation: "La vida es algo valioso.",
+      },
+      {
+        segments: ruby("[相手|あいて]の[意見|いけん]を[尊重|そんちょう]してください。"),
+        translation: "Por favor, respete la opinión de la otra persona.",
+      },
+      {
+        segments: ruby("[自分|じぶん]とちがう[考|かんが]え方も[尊|たっと]ぶべきだと思います。"),
+        translation: "Creo que también se deben valorar las formas de pensar distintas a la propia.",
+      },
+      {
+        segments: ruby("[人|ひと]を[尊重|そんちょう]することは、ただ[礼儀|れいぎ]を守ることではなく、その人の[立場|たちば]や[気持|きも]ちを考えることでもあります。"),
+        translation: "Respetar a las personas no es solo guardar las formas, sino también pensar en su posición y en sus sentimientos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "退",
+    level: 6,
+    strokeCount: 9,
+    on: ["タイ"],
+    kun: ["しりぞ.く", "しりぞ.ける", "ひ.く", "の.く", "ど.く"],
+    meaning: "Retirarse / retroceder / salir",
+    examples: [
+      {
+        segments: ruby("[病院|びょういん]を[退院|たいいん]しました。"),
+        translation: "Recibí el alta y salí del hospital.",
+      },
+      {
+        segments: ruby("[危|あぶ]ないので、少し[後退|こうたい]してください。"),
+        translation: "Es peligroso, así que retroceda un poco.",
+      },
+      {
+        segments: ruby("[父|ちち]は来年[会社|かいしゃ]を[退職|たいしょく]する予定です。"),
+        translation: "Mi padre planea retirarse de la empresa el próximo año.",
+      },
+      {
+        segments: ruby("[必要|ひつよう]なら一度[退|しりぞ]いて、[考|かんが]えなおすことも大切です。"),
+        translation: "Si hace falta, también es importante dar un paso atrás y pensarlo de nuevo.",
+      },
+      {
+        segments: ruby("[前|まえ]に進むことだけでなく、ときには少し[退|ひ]いて全体を見ることで、もっとよい[判断|はんだん]ができることがあります。"),
+        translation: "No solo avanzar es importante; a veces, al retirarse un poco y mirar el conjunto, se puede juzgar mejor.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "宅",
+    level: 6,
+    strokeCount: 6,
+    on: ["タク"],
+    kun: [],
+    meaning: "Casa / hogar",
+    examples: [
+      {
+        segments: ruby("[自宅|じたく]で[仕事|しごと]をしました。"),
+        translation: "Trabajé desde casa.",
+      },
+      {
+        segments: ruby("[帰宅|きたく]したら、すぐに[手|て]を[洗|あら]います。"),
+        translation: "Cuando vuelvo a casa, me lavo las manos enseguida.",
+      },
+      {
+        segments: ruby("[社宅|しゃたく]に[住|す]んでいる[人|ひと]もいます。"),
+        translation: "También hay personas que viven en viviendas de la empresa.",
+      },
+      {
+        segments: ruby("[友達|ともだち]の[自宅|じたく]へ[遊|あそ]びに[行|い]きました。"),
+        translation: "Fui a visitar la casa de un amigo.",
+      },
+      {
+        segments: ruby("[在宅|ざいたく]の[時間|じかん]をうまく[使|つか]うと、[生活|せいかつ]と[仕事|しごと]の[流|なが]れを整えやすくなります。"),
+        translation: "Si aprovechas bien el tiempo en casa, se vuelve más fácil ordenar el ritmo entre la vida y el trabajo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "担",
+    level: 6,
+    strokeCount: 8,
+    on: ["タン"],
+    kun: ["かつ.ぐ", "にな.う"],
+    meaning: "Cargar / asumir / encargarse",
+    examples: [
+      {
+        segments: ruby("[重|おも]い[荷物|にもつ]を[担|かつ]いで[運|はこ]びました。"),
+        translation: "Llevé cargando un equipaje pesado.",
+      },
+      {
+        segments: ruby("この[部分|ぶぶん]は[私|わたし]が[担当|たんとう]します。"),
+        translation: "Yo me encargaré de esta parte.",
+      },
+      {
+        segments: ruby("[責任|せきにん]を[担|にな]う[立場|たちば]になりました。"),
+        translation: "Pasé a estar en una posición con responsabilidad a cargo.",
+      },
+      {
+        segments: ruby("[担任|たんにん]の[先生|せんせい]に[相談|そうだん]しました。"),
+        translation: "Consulté con el profesor jefe.",
+      },
+      {
+        segments: ruby("[仕事|しごと]を[分|わ]けるときは、だれが何を[担|にな]うのかをはっきりさせることが大切です。"),
+        translation: "Al repartir el trabajo, es importante dejar claro quién se hará cargo de qué.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "探",
+    level: 6,
+    strokeCount: 11,
+    on: ["タン"],
+    kun: ["さぐ.る", "さが.す"],
+    meaning: "Buscar / explorar",
+    examples: [
+      {
+        segments: ruby("[かばん]の中を[探|さが]しましたが、[鍵|かぎ]がありません。"),
+        translation: "Busqué dentro del bolso, pero no estaba la llave.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[仕事|しごと]を[探|さが]しています。"),
+        translation: "Estoy buscando un trabajo nuevo.",
+      },
+      {
+        segments: ruby("[道|みち]を[探|さが]しながら[歩|ある]きました。"),
+        translation: "Caminé mientras buscaba el camino.",
+      },
+      {
+        segments: ruby("[相手|あいて]の[気持|きも]ちを[探|さぐ]るような[質問|しつもん]は、時々むずかしいです。"),
+        translation: "A veces son difíciles las preguntas que intentan explorar los sentimientos del otro.",
+      },
+      {
+        segments: ruby("[答|こた]えを[探|さが]すときは、すぐにあきらめず、いくつかの[方法|ほうほう]を[試|ため]してみることが大切です。"),
+        translation: "Al buscar una respuesta, es importante no rendirse de inmediato y probar varios métodos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "誕",
+    level: 6,
+    strokeCount: 15,
+    on: ["タン"],
+    kun: [],
+    meaning: "Nacimiento / cumpleaños",
+    examples: [
+      {
+        segments: ruby("[誕生日|たんじょうび]おめでとうございます。"),
+        translation: "Feliz cumpleaños.",
+      },
+      {
+        segments: ruby("[来月|らいげつ]は[妹|いもうと]の[誕生日|たんじょうび]です。"),
+        translation: "El próximo mes es el cumpleaños de mi hermana menor.",
+      },
+      {
+        segments: ruby("[新|あたら]しい[命|いのち]の[誕生|たんじょう]は、とてもよろこばしいことです。"),
+        translation: "El nacimiento de una nueva vida es algo muy alegre.",
+      },
+      {
+        segments: ruby("[誕生日会|たんじょうびかい]の[準備|じゅんび]をしています。"),
+        translation: "Estamos preparando la fiesta de cumpleaños.",
+      },
+      {
+        segments: ruby("[誕生日|たんじょうび]は、ただ年を重ねる日ではなく、[今|いま]までをふり返る[機会|きかい]にもなります。"),
+        translation: "El cumpleaños no es solo el día en que uno suma años, sino también una oportunidad para mirar hacia atrás lo vivido.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "段",
+    level: 6,
+    strokeCount: 9,
+    on: ["ダン"],
+    kun: [],
+    meaning: "Escalón / etapa / grado",
+    examples: [
+      {
+        segments: ruby("[階段|かいだん]をゆっくり[上|のぼ]ってください。"),
+        translation: "Por favor, suba las escaleras despacio.",
+      },
+      {
+        segments: ruby("[話|はなし]を一[段|だん]ずつ[整理|せいり]しましょう。"),
+        translation: "Ordenemos el tema paso por paso.",
+      },
+      {
+        segments: ruby("[柔道|じゅうどう]で二[段|だん]になりました。"),
+        translation: "En judo llegué al segundo dan.",
+      },
+      {
+        segments: ruby("[値段|ねだん]を[見|み]てから[買|か]うかどうか[決|き]めます。"),
+        translation: "Decido si comprar o no después de ver el precio.",
+      },
+      {
+        segments: ruby("[何事|なにごと]も一気に進めるより、一[段|だん]ずつ進むほうが、長く続けやすいことがあります。"),
+        translation: "En muchas cosas, en vez de avanzar de golpe, a veces es más fácil continuar a largo plazo si se avanza etapa por etapa.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "暖",
+    level: 6,
+    strokeCount: 13,
+    on: ["ダン"],
+    kun: ["あたた.かい", "あたた.まる", "あたた.める"],
+    meaning: "Cálido / calentar",
+    examples: [
+      {
+        segments: ruby("[今日|きょう]は[暖|あたた]かいですね。"),
+        translation: "Hoy está templado, ¿verdad?",
+      },
+      {
+        segments: ruby("[部屋|へや]を[暖|あたた]めてから[寝|ね]ます。"),
+        translation: "Caliento la habitación antes de dormir.",
+      },
+      {
+        segments: ruby("[暖房|だんぼう]をつけると、すぐに部屋が[暖|あたた]まります。"),
+        translation: "Cuando enciendes la calefacción, la habitación se entibia rápido.",
+      },
+      {
+        segments: ruby("[暖|あたた]かい[飲|の]み物がのみたいです。"),
+        translation: "Quiero tomar algo caliente.",
+      },
+      {
+        segments: ruby("[寒|さむ]い日には、[体|からだ]だけでなく[気持|きも]ちまで[暖|あたた]かくなるような[言葉|ことば]がうれしいです。"),
+        translation: "En los días fríos, alegran las palabras que hacen sentir cálido no solo el cuerpo, sino también el ánimo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "値",
+    level: 6,
+    strokeCount: 10,
+    on: ["チ"],
+    kun: ["ね", "あたい"],
+    meaning: "Valor / precio",
+    examples: [
+      {
+        segments: ruby("この[商品|しょうひん]は[値段|ねだん]が高いです。"),
+        translation: "Este producto tiene un precio alto.",
+      },
+      {
+        segments: ruby("[数値|すうち]をよく[確認|かくにん]してください。"),
+        translation: "Por favor, revise bien los valores numéricos.",
+      },
+      {
+        segments: ruby("その[本|ほん]には、今でも[読|よ]む[価値|かち]があります。"),
+        translation: "Ese libro todavía tiene valor para ser leído.",
+      },
+      {
+        segments: ruby("[値|あたい]を入れて、[計算|けいさん]を始めます。"),
+        translation: "Ingresamos el valor y comenzamos el cálculo.",
+      },
+      {
+        segments: ruby("[値段|ねだん]だけでなく、[何|なに]にどんな[価値|かち]があるかを見ることも大切です。"),
+        translation: "Es importante mirar no solo el precio, sino también qué valor tiene realmente algo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "宙",
+    level: 6,
+    strokeCount: 8,
+    on: ["チュウ"],
+    kun: [],
+    meaning: "Espacio / aire",
+    examples: [
+      {
+        segments: ruby("[宇宙|うちゅう]についての[番組|ばんぐみ]を[見|み]ました。"),
+        translation: "Vi un programa sobre el espacio.",
+      },
+      {
+        segments: ruby("[風船|ふうせん]が[宙|ちゅう]にうかんでいます。"),
+        translation: "El globo está flotando en el aire.",
+      },
+      {
+        segments: ruby("[宇宙船|うちゅうせん]の[写真|しゃしん]を[集|あつ]めています。"),
+        translation: "Estoy reuniendo fotos de naves espaciales.",
+      },
+      {
+        segments: ruby("[話|はなし]の[途中|とちゅう]で、[計画|けいかく]が宙にういてしまいました。"),
+        translation: "A mitad de la conversación, el plan quedó en el aire.",
+      },
+      {
+        segments: ruby("[宇宙|うちゅう]のように広いものを考えると、[自分|じぶん]のなやみも少し小さく見えることがあります。"),
+        translation: "Cuando piensas en algo tan amplio como el universo, a veces tus preocupaciones también se ven un poco más pequeñas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "忠",
+    level: 6,
+    strokeCount: 8,
+    on: ["チュウ"],
+    kun: [],
+    meaning: "Leal / fiel",
+    examples: [
+      {
+        segments: ruby("[忠実|ちゅうじつ]に[命令|めいれい]を[守|まも]りました。"),
+        translation: "Cumplió fielmente la orden.",
+      },
+      {
+        segments: ruby("[犬|いぬ]は[忠実|ちゅうじつ]な[動物|どうぶつ]だと言われます。"),
+        translation: "Se dice que los perros son animales fieles.",
+      },
+      {
+        segments: ruby("[原作|げんさく]に[忠実|ちゅうじつ]な[映画|えいが]でした。"),
+        translation: "Fue una película fiel a la obra original.",
+      },
+      {
+        segments: ruby("[忠告|ちゅうこく]を[聞|き]いて、考え直しました。"),
+        translation: "Escuché el consejo y lo reconsideré.",
+      },
+      {
+        segments: ruby("[何|なに]かに[忠実|ちゅうじつ]であるというのは、ただ従うだけでなく、最後まで責任をもつことにもつながります。"),
+        translation: "Ser fiel a algo no significa solo obedecer, sino también hacerse responsable hasta el final.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "著",
+    level: 6,
+    strokeCount: 11,
+    on: ["チョ"],
+    kun: ["いちじる.しい", "あらわ.す"],
+    meaning: "Notable / autor / publicar",
+    examples: [
+      {
+        segments: ruby("[著者|ちょしゃ]の[名前|なまえ]を[確認|かくにん]しました。"),
+        translation: "Revisé el nombre del autor.",
+      },
+      {
+        segments: ruby("[最近|さいきん]、[成長|せいちょう]が[著|いちじる]しいです。"),
+        translation: "Últimamente el progreso es notable.",
+      },
+      {
+        segments: ruby("[有名|ゆうめい]な[作家|さっか]が新しい本を[著|あらわ]しました。"),
+        translation: "Un escritor famoso publicó un libro nuevo.",
+      },
+      {
+        segments: ruby("[著作権|ちょさくけん]を[守|まも]ることは大切です。"),
+        translation: "Es importante respetar los derechos de autor.",
+      },
+      {
+        segments: ruby("[変化|へんか]が[著|いちじる]しいときほど、ただ見ているだけでなく、その理由も考えることが大切です。"),
+        translation: "Cuanto más notables son los cambios, más importante es no solo mirarlos, sino también pensar en sus razones.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "庁",
+    level: 6,
+    strokeCount: 5,
+    on: ["チョウ"],
+    kun: [],
+    meaning: "Oficina pública / agencia",
+    examples: [
+      {
+        segments: ruby("[市役所|しやくしょ]や[官庁|かんちょう]で[手続|てつづ]きをします。"),
+        translation: "Hago trámites en la municipalidad o en oficinas públicas.",
+      },
+      {
+        segments: ruby("[気象庁|きしょうちょう]の[発表|はっぴょう]を[見|み]ました。"),
+        translation: "Vi el anuncio de la Agencia Meteorológica.",
+      },
+      {
+        segments: ruby("[官庁街|かんちょうがい]には多くの建物があります。"),
+        translation: "En el barrio gubernamental hay muchos edificios.",
+      },
+      {
+        segments: ruby("[環境庁|かんきょうちょう]に[関|かん]する[記事|きじ]を[読|よ]みました。"),
+        translation: "Leí un artículo relacionado con la agencia ambiental.",
+      },
+      {
+        segments: ruby("[ニュース]では、[庁|ちょう]という[字|じ]がつく[名前|なまえ]の[機関|きかん]をよく見かけます。"),
+        translation: "En las noticias se ven a menudo instituciones cuyo nombre lleva el kanji 庁.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "頂",
+    level: 6,
+    strokeCount: 11,
+    on: ["チョウ"],
+    kun: ["いただ.く", "いただき"],
+    meaning: "Cima / recibir humildemente",
+    examples: [
+      {
+        segments: ruby("[山頂|さんちょう]まで[登|のぼ]りました。"),
+        translation: "Subimos hasta la cima de la montaña.",
+      },
+      {
+        segments: ruby("[先生|せんせい]から本を[頂|いただ]きました。"),
+        translation: "Recibí un libro del profesor.",
+      },
+      {
+        segments: ruby("[頂上|ちょうじょう]の[景色|けしき]はとてもきれいでした。"),
+        translation: "La vista desde la cumbre era muy bonita.",
+      },
+      {
+        segments: ruby("お[茶|ちゃ]を一杯[頂|いただ]いてもよろしいですか。"),
+        translation: "¿Puedo recibir una taza de té?",
+      },
+      {
+        segments: ruby("[頂|いただ]くは、[食|た]べる・[飲|の]む・もらうの丁寧な言い方としても大切な表現です。"),
+        translation: "いただく es una expresión importante también como forma cortés de comer, beber o recibir.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "腸",
+    level: 6,
+    strokeCount: 13,
+    on: ["チョウ"],
+    kun: [],
+    meaning: "Intestino",
+    examples: [
+      {
+        segments: ruby("[腸|ちょう]の[調子|ちょうし]がよくありません。"),
+        translation: "Mi intestino no anda bien.",
+      },
+      {
+        segments: ruby("[胃腸|いちょう]にやさしい[食事|しょくじ]をとっています。"),
+        translation: "Estoy comiendo una dieta suave para el estómago y el intestino.",
+      },
+      {
+        segments: ruby("[医者|いしゃ]に[腸|ちょう]の[検査|けんさ]について[聞|き]きました。"),
+        translation: "Le pregunté al médico sobre un examen intestinal.",
+      },
+      {
+        segments: ruby("[緊張|きんちょう]すると、おなかや[腸|ちょう]に[影響|えいきょう]が出ることもあります。"),
+        translation: "Cuando uno se pone nervioso, a veces también afecta al vientre y al intestino.",
+      },
+      {
+        segments: ruby("[体調|たいちょう]を整えるには、[胃|い]や[腸|ちょう]のような[内側|うちがわ]の[健康|けんこう]にも気をつけることが大切です。"),
+        translation: "Para mantener una buena condición física, también es importante cuidar la salud interior, como la del estómago y los intestinos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "潮",
+    level: 6,
+    strokeCount: 15,
+    on: ["チョウ"],
+    kun: ["しお"],
+    meaning: "Marea / agua salada",
+    examples: [
+      {
+        segments: ruby("[潮|しお]の[流|なが]れが早いです。"),
+        translation: "La corriente de la marea es rápida.",
+      },
+      {
+        segments: ruby("[満潮|まんちょう]の[時間|じかん]を[調|しら]べました。"),
+        translation: "Revisé la hora de la marea alta.",
+      },
+      {
+        segments: ruby("[海辺|うみべ]で[潮風|しおかぜ]を[感|かん]じました。"),
+        translation: "Sentí la brisa marina en la costa.",
+      },
+      {
+        segments: ruby("[潮|しお]がひいて、岩が見えてきました。"),
+        translation: "La marea bajó y empezaron a verse las rocas.",
+      },
+      {
+        segments: ruby("[海|うみ]では、[潮|しお]の[満|み]ち[引|ひ]きを知っておくことが安全にもつながります。"),
+        translation: "En el mar, conocer la subida y bajada de la marea también contribuye a la seguridad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "賃",
+    level: 6,
+    strokeCount: 13,
+    on: ["チン"],
+    kun: [],
+    meaning: "Pago / salario / renta",
+    examples: [
+      {
+        segments: ruby("[家賃|やちん]が少し高いです。"),
+        translation: "El arriendo está un poco caro.",
+      },
+      {
+        segments: ruby("[運賃|うんちん]を[払|はら]ってください。"),
+        translation: "Por favor, pague la tarifa.",
+      },
+      {
+        segments: ruby("[賃金|ちんぎん]について[話|はな]し合いました。"),
+        translation: "Conversamos sobre los salarios.",
+      },
+      {
+        segments: ruby("[部屋|へや]を[借|か]りる前に[家賃|やちん]をよく確認します。"),
+        translation: "Antes de arrendar una habitación, reviso bien el arriendo.",
+      },
+      {
+        segments: ruby("[家賃|やちん]・[光熱費|こうねつひ]・[食費|しょくひ]のように毎月かかるお金を知ることは、生活を整えるうえで大切です。"),
+        translation: "Conocer gastos mensuales como arriendo, servicios y comida es importante para organizar la vida.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "痛",
+    level: 6,
+    strokeCount: 12,
+    on: ["ツウ"],
+    kun: ["いた.い", "いた.む", "いた.める"],
+    meaning: "Dolor / doler",
+    examples: [
+      {
+        segments: ruby("[頭|あたま]が[痛|いた]いです。"),
+        translation: "Me duele la cabeza.",
+      },
+      {
+        segments: ruby("[足|あし]を[痛|いた]めました。"),
+        translation: "Me lastimé la pierna.",
+      },
+      {
+        segments: ruby("[心|こころ]が[痛|いた]む[話|はなし]でした。"),
+        translation: "Fue una historia que dolía en el corazón.",
+      },
+      {
+        segments: ruby("おなかが[痛|いた]くて、学校を休みました。"),
+        translation: "Como me dolía el estómago, falté a la escuela.",
+      },
+      {
+        segments: ruby("[体|からだ]の[痛|いた]みだけでなく、[言葉|ことば]で受ける痛みも大切に考える必要があります。"),
+        translation: "Es necesario tomar en cuenta no solo el dolor del cuerpo, sino también el dolor que pueden causar las palabras.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "敵",
+    level: 6,
+    strokeCount: 15,
+    on: ["テキ"],
+    kun: ["かたき"],
+    meaning: "Enemigo / rival",
+    examples: [
+      {
+        segments: ruby("[試合|しあい]では[強|つよ]い[敵|てき]とたたかいました。"),
+        translation: "En el partido nos enfrentamos a un rival fuerte.",
+      },
+      {
+        segments: ruby("[敵|てき]の[位置|いち]を[確認|かくにん]します。"),
+        translation: "Confirmamos la posición del enemigo.",
+      },
+      {
+        segments: ruby("[目標|もくひょう]をじゃまするものを自分の[敵|てき]だと感じることもあります。"),
+        translation: "A veces uno siente como enemigo aquello que obstaculiza su meta.",
+      },
+      {
+        segments: ruby("[素敵|すてき]な[景色|けしき]でした。"),
+        translation: "Era un paisaje maravilloso.",
+      },
+      {
+        segments: ruby("[敵|てき]という言葉は強い意味をもつので、日常では[相手|あいて]や[競争相手|きょうそうあいて]のように言いかえることも多いです。"),
+        translation: "La palabra “enemigo” tiene un sentido fuerte, por eso en la vida diaria muchas veces se reemplaza por expresiones como “oponente” o “rival”.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "展",
+    level: 6,
+    strokeCount: 10,
+    on: ["テン"],
+    kun: [],
+    meaning: "Desarrollar / exhibición",
+    examples: [
+      {
+        segments: ruby("[美術展|びじゅつてん]を[見|み]に[行|い]きました。"),
+        translation: "Fui a ver una exposición de arte.",
+      },
+      {
+        segments: ruby("[話|はなし]が思わぬ方向に[展開|てんかい]しました。"),
+        translation: "La conversación se desarrolló en una dirección inesperada.",
+      },
+      {
+        segments: ruby("[店|みせ]では新しい商品を[展示|てんじ]しています。"),
+        translation: "En la tienda están exhibiendo productos nuevos.",
+      },
+      {
+        segments: ruby("[研究|けんきゅう]をさらに[発展|はってん]させたいです。"),
+        translation: "Quiero desarrollar aún más la investigación.",
+      },
+      {
+        segments: ruby("[物事|ものごと]がどう[展開|てんかい]するかを考えるときは、[今|いま]ある[情報|じょうほう]をよく整理することが大切です。"),
+        translation: "Al pensar cómo se desarrollarán las cosas, es importante ordenar bien la información que ya se tiene.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "討",
+    level: 6,
+    strokeCount: 10,
+    on: ["トウ"],
+    kun: ["う.つ"],
+    meaning: "Debatir / atacar / tratar",
+    examples: [
+      {
+        segments: ruby("[会議|かいぎ]でその[問題|もんだい]を[検討|けんとう]しました。"),
+        translation: "Examinamos ese problema en la reunión.",
+      },
+      {
+        segments: ruby("みんなで[討論|とうろん]する[時間|じかん]がありました。"),
+        translation: "Hubo un tiempo para debatir entre todos.",
+      },
+      {
+        segments: ruby("よく[検討|けんとう]してから[返事|へんじ]します。"),
+        translation: "Responderé después de considerarlo bien.",
+      },
+      {
+        segments: ruby("[昔|むかし]の物語では、[敵|てき]を[討|う]つという表現が出てきます。"),
+        translation: "En las historias antiguas aparece la expresión de derrotar al enemigo.",
+      },
+      {
+        segments: ruby("[意見|いけん]をすぐに決めるのではなく、一度[検討|けんとう]する[時間|じかん]をもつと、よりよい[判断|はんだん]につながります。"),
+        translation: "Si en vez de decidir de inmediato te das un tiempo para considerarlo, puedes llegar a una mejor decisión.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "党",
+    level: 6,
+    strokeCount: 10,
+    on: ["トウ"],
+    kun: [],
+    meaning: "Partido / grupo político",
+    examples: [
+      {
+        segments: ruby("[政党|せいとう]について[社会|しゃかい]で[学|まな]びました。"),
+        translation: "Aprendimos sobre los partidos políticos en estudios sociales.",
+      },
+      {
+        segments: ruby("[野党|やとう]の[意見|いけん]も[聞|き]く必要があります。"),
+        translation: "También es necesario escuchar la opinión de la oposición.",
+      },
+      {
+        segments: ruby("[与党|よとう]と[野党|やとう]のちがいを[勉強|べんきょう]しました。"),
+        translation: "Estudiamos la diferencia entre partido de gobierno y oposición.",
+      },
+      {
+        segments: ruby("[党首|とうしゅ]の[発言|はつげん]がニュースになりました。"),
+        translation: "Las declaraciones del líder del partido salieron en las noticias.",
+      },
+      {
+        segments: ruby("[政治|せいじ]の[言葉|ことば]はむずかしく見えても、[党|とう]や[選挙|せんきょ]のような基本の語を知ると、ニュースが少し読みやすくなります。"),
+        translation: "Aunque el vocabulario político parezca difícil, conocer palabras básicas como partido o elección hace que las noticias se entiendan un poco mejor.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "糖",
+    level: 6,
+    strokeCount: 16,
+    on: ["トウ"],
+    kun: [],
+    meaning: "Azúcar / glucosa",
+    examples: [
+      {
+        segments: ruby("[砂糖|さとう]を少し入れます。"),
+        translation: "Pongo un poco de azúcar.",
+      },
+      {
+        segments: ruby("[甘|あま]いお菓子には[糖分|とうぶん]が多いです。"),
+        translation: "Los dulces tienen mucha azúcar.",
+      },
+      {
+        segments: ruby("[血糖値|けっとうち]を[測|はか]る[検査|けんさ]を受けました。"),
+        translation: "Me hice un examen para medir el nivel de azúcar en sangre.",
+      },
+      {
+        segments: ruby("[糖質|とうしつ]をとりすぎないように気をつけています。"),
+        translation: "Tengo cuidado de no consumir demasiados carbohidratos o azúcar.",
+      },
+      {
+        segments: ruby("[健康|けんこう]を考えるなら、[糖分|とうぶん]の多い食べ物をとる量にも少し気をつけることが大切です。"),
+        translation: "Si piensas en la salud, también es importante cuidar un poco la cantidad de alimentos con mucha azúcar que consumes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "届",
+    level: 6,
+    strokeCount: 8,
+    on: [],
+    kun: ["とど.く", "とど.ける"],
+    meaning: "Llegar / entregar / presentar",
+    examples: [
+      {
+        segments: ruby("[荷物|にもつ]が昨日[届|とど]きました。"),
+        translation: "El paquete llegó ayer.",
+      },
+      {
+        segments: ruby("[市役所|しやくしょ]に[届|とど]けを出します。"),
+        translation: "Presentaré una notificación en la municipalidad.",
+      },
+      {
+        segments: ruby("[この手紙を明日までに[届|とど]けてください。"),
+        translation: "Por favor, entregue esta carta antes de mañana.",
+      },
+      {
+        segments: ruby("[思|おも]いが相手に[届|とど]くように、ていねいに話しました。"),
+        translation: "Hablé con cuidado para que mis sentimientos llegaran a la otra persona.",
+      },
+      {
+        segments: ruby("[物|もの]が[届|とど]くという意味だけでなく、[言葉|ことば]や気持ちが相手に伝わるという意味でもよく使われます。"),
+        translation: "No solo se usa con el sentido de que llegue una cosa, sino también para decir que unas palabras o sentimientos alcanzan a la otra persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "難",
+    level: 6,
+    strokeCount: 18,
+    on: ["ナン"],
+    kun: ["むずか.しい"],
+    meaning: "Difícil / problema / desastre",
+    examples: [
+      {
+        segments: ruby("[この問題は[難|むずか]しいです。"),
+        translation: "Este problema es difícil.",
+      },
+      {
+        segments: ruby("[日本語|にほんご]の[発音|はつおん]は少し[難|むずか]しいです。"),
+        translation: "La pronunciación del japonés es un poco difícil.",
+      },
+      {
+        segments: ruby("[困難|こんなん]な[状況|じょうきょう]でも、あきらめませんでした。"),
+        translation: "No se rindió incluso en una situación difícil.",
+      },
+      {
+        segments: ruby("[地震|じしん]のあと、[避難|ひなん][場所|ばしょ]を確認しました。"),
+        translation: "Después del terremoto, confirmé el lugar de evacuación.",
+      },
+      {
+        segments: ruby("[難|むずか]しいと感じることでも、少しずつ分けて考えると前より取り組みやすくなることがあります。"),
+        translation: "Incluso lo que parece difícil puede volverse más abordable si lo piensas poco a poco por partes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "乳",
+    level: 6,
+    strokeCount: 8,
+    on: ["ニュウ"],
+    kun: ["ちち", "ち"],
+    meaning: "Leche / pecho",
+    examples: [
+      {
+        segments: ruby("[朝|あさ]は[牛乳|ぎゅうにゅう]を飲みます。"),
+        translation: "Por la mañana tomo leche.",
+      },
+      {
+        segments: ruby("[豆乳|とうにゅう]も体にいいと言われています。"),
+        translation: "También se dice que la leche de soya es buena para el cuerpo.",
+      },
+      {
+        segments: ruby("[子|こ]どもの[乳歯|にゅうし]がぬけました。"),
+        translation: "Se le cayó un diente de leche al niño.",
+      },
+      {
+        segments: ruby("[乳製品|にゅうせいひん]を毎日少し食べています。"),
+        translation: "Todos los días como un poco de productos lácteos.",
+      },
+      {
+        segments: ruby("[乳|にゅう]という字を知ると、[牛乳|ぎゅうにゅう]・[豆乳|とうにゅう]・[乳歯|にゅうし]のような言葉も覚えやすくなります。"),
+        translation: "Cuando conoces el kanji 乳, también se vuelven más fáciles de recordar palabras como leche, leche de soya o diente de leche.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "認",
+    level: 6,
+    strokeCount: 14,
+    on: ["ニン"],
+    kun: ["みと.める"],
+    meaning: "Reconocer / aprobar / confirmar",
+    examples: [
+      {
+        segments: ruby("[申請|しんせい]が[認|みと]められました。"),
+        translation: "La solicitud fue aprobada.",
+      },
+      {
+        segments: ruby("[出席|しゅっせき]を[確認|かくにん]してください。"),
+        translation: "Por favor, confirme la asistencia.",
+      },
+      {
+        segments: ruby("[まちがいを[認|みと]めて、あやまりました。"),
+        translation: "Reconocí el error y me disculpé.",
+      },
+      {
+        segments: ruby("[本人|ほんにん][確認|かくにん]のため、カードを見せてください。"),
+        translation: "Por favor, muestre su tarjeta para confirmar su identidad.",
+      },
+      {
+        segments: ruby("[自分|じぶん]のよい点も悪い点も[認|みと]めることが、成長の第一歩になることがあります。"),
+        translation: "Reconocer tanto los propios puntos buenos como los malos puede ser el primer paso para crecer.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "納",
+    level: 6,
+    strokeCount: 10,
+    on: ["ノウ"],
+    kun: ["おさ.める", "おさ.まる"],
+    meaning: "Guardar / pagar / aceptar",
+    examples: [
+      {
+        segments: ruby("[税金|ぜいきん]を[納|おさ]めます。"),
+        translation: "Pago los impuestos.",
+      },
+      {
+        segments: ruby("[書類|しょるい]をこの箱に[納|おさ]めてください。"),
+        translation: "Por favor, guarde los documentos en esta caja.",
+      },
+      {
+        segments: ruby("[説明|せつめい]を聞いて、やっと[納得|なっとく]できました。"),
+        translation: "Después de escuchar la explicación, por fin pude quedar convencido.",
+      },
+      {
+        segments: ruby("[朝|あさ]ごはんに[納豆|なっとう]を食べることがあります。"),
+        translation: "A veces desayuno nattō.",
+      },
+      {
+        segments: ruby("[納得|なっとく]できないときは、だまって終わらせずに、もう一度たずねてみることも大切です。"),
+        translation: "Cuando algo no te convence, también es importante no dejarlo pasar en silencio y preguntar una vez más.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "脳",
+    level: 6,
+    strokeCount: 11,
+    on: ["ノウ"],
+    kun: [],
+    meaning: "Cerebro",
+    examples: [
+      {
+        segments: ruby("[脳|のう]を休めるために、今日は早く寝ます。"),
+        translation: "Hoy dormiré temprano para darle descanso al cerebro.",
+      },
+      {
+        segments: ruby("[脳科学|のうかがく]に興味があります。"),
+        translation: "Me interesa la neurociencia.",
+      },
+      {
+        segments: ruby("[頭脳|ずのう]を使う仕事です。"),
+        translation: "Es un trabajo que exige usar la mente.",
+      },
+      {
+        segments: ruby("[脳|のう]の働きについて本で読みました。"),
+        translation: "Leí en un libro sobre el funcionamiento del cerebro.",
+      },
+      {
+        segments: ruby("[体|からだ]だけでなく[脳|のう]もつかれるので、集中したあとは休む時間をとることが大切です。"),
+        translation: "No solo se cansa el cuerpo, también el cerebro, así que después de concentrarte es importante tomarte un tiempo de descanso.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "派",
+    level: 6,
+    strokeCount: 9,
+    on: ["ハ"],
+    kun: [],
+    meaning: "Grupo / estilo / facción",
+    examples: [
+      {
+        segments: ruby("[私|わたし]は[猫派|ねこは]です。"),
+        translation: "Yo soy del grupo de los gatos.",
+      },
+      {
+        segments: ruby("[兄|あに]は[犬派|いぬは]ですが、私は猫派です。"),
+        translation: "Mi hermano es del grupo de los perros, pero yo soy del de los gatos.",
+      },
+      {
+        segments: ruby("[その[服装|ふくそう]は少し[派手|はで]ですね。"),
+        translation: "Esa ropa es un poco llamativa, ¿no?",
+      },
+      {
+        segments: ruby("[会議|かいぎ]ではいくつかの[派|は]に意見が分かれました。"),
+        translation: "En la reunión, las opiniones se dividieron en varios grupos.",
+      },
+      {
+        segments: ruby("[派|は]という字を知ると、[猫派|ねこは]・[犬派|いぬは]のように好みを表す言い方もわかりやすくなります。"),
+        translation: "Cuando conoces el kanji 派, se vuelven más fáciles de entender expresiones para mostrar preferencias, como ser del grupo de los gatos o de los perros.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "拝",
+    level: 6,
+    strokeCount: 8,
+    on: ["ハイ"],
+    kun: ["おが.む"],
+    meaning: "Ver con humildad / adorar / reverenciar",
+    examples: [
+      {
+        segments: ruby("[資料|しりょう]を[拝見|はいけん]しました。"),
+        translation: "He revisado el material.",
+      },
+      {
+        segments: ruby("[神社|じんじゃ]で手を合わせて[拝|おが]みました。"),
+        translation: "Junté las manos y recé en el santuario.",
+      },
+      {
+        segments: ruby("[お借りした本を大切に[拝読|はいどく]しました。"),
+        translation: "Leí con respeto el libro que me prestaron.",
+      },
+      {
+        segments: ruby("[先生|せんせい]のお話をありがたく[拝聴|はいちょう]しました。"),
+        translation: "Escuché con respeto las palabras del profesor.",
+      },
+      {
+        segments: ruby("[拝見|はいけん]・[拝読|はいどく]・[拝聴|はいちょう]のように、[拝|はい]はへりくだった丁寧な表現でよく使われます。"),
+        translation: "En expresiones como ver, leer o escuchar con humildad, 拝 se usa con frecuencia como una forma respetuosa y modesta.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "背",
+    level: 6,
+    strokeCount: 9,
+    on: ["ハイ"],
+    kun: ["せ", "せい", "そむ.く", "そむ.ける"],
+    meaning: "Espalda / altura / dar la espalda",
+    examples: [
+      {
+        segments: ruby("[彼|かれ]は[背|せ]が高いです。"),
+        translation: "Él es alto.",
+      },
+      {
+        segments: ruby("[背中|せなか]が少し痛いです。"),
+        translation: "Me duele un poco la espalda.",
+      },
+      {
+        segments: ruby("[背番号|せばんごう]十番の選手です。"),
+        translation: "Es el jugador con el número diez en la espalda.",
+      },
+      {
+        segments: ruby("[約束|やくそく]に[背|そむ]くことはしたくありません。"),
+        translation: "No quiero ir en contra de una promesa.",
+      },
+      {
+        segments: ruby("[背|せ]という読みを知ると、[背中|せなか]・[背番号|せばんごう]・[背|せ]が高いのような表現も覚えやすくなります。"),
+        translation: "Cuando conoces la lectura せ, se vuelven más fáciles de recordar expresiones como espalda, número en la espalda o ser alto.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "肺",
+    level: 6,
+    strokeCount: 9,
+    on: ["ハイ"],
+    kun: [],
+    meaning: "Pulmón",
+    examples: [
+      {
+        segments: ruby("[肺|はい]の検査を受けました。"),
+        translation: "Me hice un examen de los pulmones.",
+      },
+      {
+        segments: ruby("[深|ふか]く息を吸うと、[肺|はい]が大きく動きます。"),
+        translation: "Cuando inhalas profundamente, los pulmones se mueven mucho.",
+      },
+      {
+        segments: ruby("[肺炎|はいえん]に気をつけてください。"),
+        translation: "Por favor, tenga cuidado con la neumonía.",
+      },
+      {
+        segments: ruby("[運動|うんどう]をすると、[肺活量|はいかつりょう]も大切だと感じます。"),
+        translation: "Cuando haces ejercicio, sientes que la capacidad pulmonar también es importante.",
+      },
+      {
+        segments: ruby("[健康|けんこう]を考えるときは、[心臓|しんぞう]だけでなく[肺|はい]のような呼吸に関係する部分も大切です。"),
+        translation: "Cuando piensas en la salud, son importantes no solo el corazón, sino también partes relacionadas con la respiración, como los pulmones.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "俳",
+    level: 6,
+    strokeCount: 10,
+    on: ["ハイ"],
+    kun: [],
+    meaning: "Haiku / actor",
+    examples: [
+      {
+        segments: ruby("[俳句|はいく]を一つ作ってみました。"),
+        translation: "Intenté componer un haiku.",
+      },
+      {
+        segments: ruby("[有名|ゆうめい]な[俳優|はいゆう]がその映画に出ています。"),
+        translation: "Un actor famoso aparece en esa película.",
+      },
+      {
+        segments: ruby("[俳人|はいじん]の作品を読みました。"),
+        translation: "Leí obras de un poeta de haiku.",
+      },
+      {
+        segments: ruby("[俳句|はいく]は短いですが、深い意味を感じることがあります。"),
+        translation: "El haiku es breve, pero a veces se siente un significado profundo.",
+      },
+      {
+        segments: ruby("[俳|はい]という字を知ると、[俳句|はいく]・[俳優|はいゆう]・[俳人|はいじん]のような言葉のつながりも見えてきます。"),
+        translation: "Cuando conoces el kanji 俳, también empiezas a ver la relación entre palabras como haiku, actor o poeta de haiku.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "班",
+    level: 6,
+    strokeCount: 10,
+    on: ["ハン"],
+    kun: [],
+    meaning: "Grupo / equipo",
+    examples: [
+      {
+        segments: ruby("[クラス]を四つの[班|はん]に分けました。"),
+        translation: "Dividimos la clase en cuatro grupos.",
+      },
+      {
+        segments: ruby("[班長|はんちょう]が前に出て説明しました。"),
+        translation: "El jefe del grupo salió al frente y explicó.",
+      },
+      {
+        segments: ruby("[同|おな]じ[班|はん]の友達と話し合いました。"),
+        translation: "Conversé con los compañeros de mi mismo grupo.",
+      },
+      {
+        segments: ruby("[作業|さぎょう]は[班|はん]ごとに進めます。"),
+        translation: "El trabajo se hará por grupos.",
+      },
+      {
+        segments: ruby("[学校|がっこう]では、[班|はん]で協力して活動することで、一人では気づかない考え方にも出会えます。"),
+        translation: "En la escuela, al trabajar en grupo se pueden descubrir formas de pensar que uno solo no notaría.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "晩",
+    level: 6,
+    strokeCount: 12,
+    on: ["バン"],
+    kun: [],
+    meaning: "Noche / tarde",
+    examples: [
+      {
+        segments: ruby("[今晩|こんばん]は何を食べますか。"),
+        translation: "¿Qué vas a comer esta noche?",
+      },
+      {
+        segments: ruby("[昨晩|さくばん]は早く寝ました。"),
+        translation: "Anoche me acosté temprano.",
+      },
+      {
+        segments: ruby("[晩|ばん]ごはんのあとで勉強します。"),
+        translation: "Estudiaré después de la cena.",
+      },
+      {
+        segments: ruby("[晩年|ばんねん]の作品について調べました。"),
+        translation: "Investigué sobre las obras de sus últimos años.",
+      },
+      {
+        segments: ruby("[今晩|こんばん]・[昨晩|さくばん]・[晩|ばん]ごはんのように、[晩|ばん]は夜に関係する言葉でよく使われます。"),
+        translation: "En palabras como esta noche, anoche o cena, 晩 se usa mucho en expresiones relacionadas con la noche.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "否",
+    level: 6,
+    strokeCount: 7,
+    on: ["ヒ"],
+    kun: ["いな"],
+    meaning: "Negar / no / rechazo",
+    examples: [
+      {
+        segments: ruby("[その意見に[賛否|さんぴ]があります。"),
+        translation: "Hay opiniones a favor y en contra de esa idea.",
+      },
+      {
+        segments: ruby("[事実|じじつ]を[否定|ひてい]してはいけません。"),
+        translation: "No se deben negar los hechos.",
+      },
+      {
+        segments: ruby("[参加|さんか]の[可否|かひ]は明日決まります。"),
+        translation: "Mañana se decidirá si se puede participar o no.",
+      },
+      {
+        segments: ruby("[彼|かれ]は質問に対して、はっきり[否|いな]とは言いませんでした。"),
+        translation: "Él no dijo un no rotundo ante la pregunta.",
+      },
+      {
+        segments: ruby("[否定|ひてい]するだけではなく、どうすればよいかをいっしょに考えることも大切です。"),
+        translation: "No basta solo con negar algo; también es importante pensar juntos cómo se podría hacer mejor.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "批",
+    level: 6,
+    strokeCount: 7,
+    on: ["ヒ"],
+    kun: [],
+    meaning: "Crítica / evaluar",
+    examples: [
+      {
+        segments: ruby("[ただ[批判|ひはん]するだけでは、問題はよくなりません。"),
+        translation: "Solo criticar no mejora el problema.",
+      },
+      {
+        segments: ruby("[映画|えいが]の[批評|ひひょう]を読みました。"),
+        translation: "Leí una crítica de cine.",
+      },
+      {
+        segments: ruby("[批評家|ひひょうか]の意見も参考になります。"),
+        translation: "La opinión de los críticos también sirve como referencia.",
+      },
+      {
+        segments: ruby("[他人|たにん]を強く[批判|ひはん]しすぎないように気をつけています。"),
+        translation: "Tengo cuidado de no criticar demasiado duramente a los demás.",
+      },
+      {
+        segments: ruby("[批判|ひはん]が必要なときでも、相手を傷つける言い方ではなく、改善につながる話し方を選ぶことが大切です。"),
+        translation: "Incluso cuando la crítica es necesaria, es importante elegir una forma de hablar que lleve a mejorar y no a herir a la otra persona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "秘",
+    level: 6,
+    strokeCount: 10,
+    on: ["ヒ"],
+    kun: ["ひ.める"],
+    meaning: "Secreto / oculto",
+    examples: [
+      {
+        segments: ruby("[これは二人だけの[秘密|ひみつ]です。"),
+        translation: "Esto es un secreto solo entre nosotros dos.",
+      },
+      {
+        segments: ruby("[彼女|かのじょ]は大きな力を[秘|ひ]めています。"),
+        translation: "Ella guarda una gran fuerza en su interior.",
+      },
+      {
+        segments: ruby("[秘書|ひしょ]に資料を渡しました。"),
+        translation: "Le entregué el material al secretario o secretaria.",
+      },
+      {
+        segments: ruby("[その場所には[神秘的|しんぴてき]な雰囲気がありました。"),
+        translation: "Ese lugar tenía una atmósfera misteriosa.",
+      },
+      {
+        segments: ruby("[秘密|ひみつ]を守ることは、信頼を守ることにもつながる大切な行動です。"),
+        translation: "Guardar un secreto es una acción importante que también se relaciona con proteger la confianza.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "俵",
+    level: 6,
+    strokeCount: 10,
+    on: ["ヒョウ"],
+    kun: ["たわら"],
+    meaning: "Fardo de arroz",
+    examples: [
+      {
+        segments: ruby("[昔|むかし]は米を[俵|たわら]に入れて運びました。"),
+        translation: "Antiguamente el arroz se transportaba en fardos.",
+      },
+      {
+        segments: ruby("[米俵|こめだわら]を絵で見たことがあります。"),
+        translation: "He visto en imágenes un fardo de arroz.",
+      },
+      {
+        segments: ruby("[土俵|どひょう]の上で力士がたたかいます。"),
+        translation: "Los luchadores de sumo combaten sobre el dohyō.",
+      },
+      {
+        segments: ruby("[一俵|いっぴょう]の重さについて調べました。"),
+        translation: "Investigué cuánto pesa un fardo.",
+      },
+      {
+        segments: ruby("[俵|たわら]という字を知ると、昔の生活や[相撲|すもう]に関係する言葉も少しわかりやすくなります。"),
+        translation: "Cuando conoces el kanji 俵, se vuelven un poco más fáciles de entender palabras relacionadas con la vida antigua y con el sumo.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "腹",
+    level: 6,
+    strokeCount: 13,
+    on: ["フク"],
+    kun: ["はら"],
+    meaning: "Vientre / abdomen / interior",
+    examples: [
+      {
+        segments: ruby("[お腹|おなか]がすきました。"),
+        translation: "Tengo hambre.",
+      },
+      {
+        segments: ruby("[腹|はら]が痛いので、少し休みます。"),
+        translation: "Me duele el vientre, así que descansaré un poco.",
+      },
+      {
+        segments: ruby("[空腹|くうふく]のまま勉強すると集中しにくいです。"),
+        translation: "Estudiar con el estómago vacío hace más difícil concentrarse.",
+      },
+      {
+        segments: ruby("[腹式呼吸|ふくしきこきゅう]をすると、声が出しやすくなります。"),
+        translation: "Si respiras con el abdomen, la voz sale con más facilidad.",
+      },
+      {
+        segments: ruby("[体調|たいちょう]を整えるには、[腹|はら]がへりすぎる前に食事の時間を考えることも大切です。"),
+        translation: "Para mantener una buena condición física, también es importante pensar en los horarios de comida antes de que el estómago se vacíe demasiado.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "奮",
+    level: 6,
+    strokeCount: 16,
+    on: ["フン"],
+    kun: ["ふる.う"],
+    meaning: "Esforzarse con energía / entusiasmarse",
+    examples: [
+      {
+        segments: ruby("[試合|しあい]を見て、みんなが[興奮|こうふん]していました。"),
+        translation: "Al ver el partido, todos estaban entusiasmados.",
+      },
+      {
+        segments: ruby("[彼|かれ]は最後まで[奮闘|ふんとう]しました。"),
+        translation: "Él luchó con esfuerzo hasta el final.",
+      },
+      {
+        segments: ruby("[少し高かったですが、自分にごほうびとして[奮発|ふんぱつ]しました。"),
+        translation: "Era un poco caro, pero hice el esfuerzo y me di un gusto como recompensa.",
+      },
+      {
+        segments: ruby("[気持|きも]ちを[奮|ふる]い立たせて、もう一度挑戦しました。"),
+        translation: "Me armé de ánimo y lo intenté una vez más.",
+      },
+      {
+        segments: ruby("[苦しいときに自分を[奮|ふる]い立たせる力は、少しずつでも毎日の経験の中で育っていきます。"),
+        translation: "La fuerza para darse ánimo en momentos difíciles también se va formando, aunque sea poco a poco, dentro de la experiencia diaria.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "並",
+    level: 6,
+    strokeCount: 8,
+    on: ["ヘイ", "ホウ"],
+    kun: ["なみ", "なら.べる", "なら.ぶ", "なら.びに"],
+    meaning: "Alinear / fila / común",
+    examples: [
+      {
+        segments: ruby("[一列|いちれつ]に[並|なら]んでください。"),
+        translation: "Por favor, pónganse en una fila.",
+      },
+      {
+        segments: ruby("[本|ほん]を[棚|たな]にきれいに[並|なら]べました。"),
+        translation: "Ordené los libros cuidadosamente en el estante.",
+      },
+      {
+        segments: ruby("[この店|みせ]にはおいしいパンが[並|なら]んでいます。"),
+        translation: "En esta tienda hay panes ricos alineados en exhibición.",
+      },
+      {
+        segments: ruby("[人並|ひとな]みにできるように、毎日[練習|れんしゅう]しています。"),
+        translation: "Practico todos los días para poder hacerlo al nivel de los demás.",
+      },
+      {
+        segments: ruby("[言葉|ことば]を[並|なら]べる[順番|じゅんばん]が変わると、文の[印象|いんしょう]も少し変わります。"),
+        translation: "Si cambia el orden en que pones las palabras, también cambia un poco la impresión de la oración.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "陛",
+    level: 6,
+    strokeCount: 10,
+    on: ["ヘイ"],
+    kun: [],
+    meaning: "Majestad imperial",
+    examples: [
+      {
+        segments: ruby("[陛下|へいか]という[言葉|ことば]は、[天皇|てんのう]などに対して使います。"),
+        translation: "La palabra 'Heika' se usa para referirse con respeto al emperador y similares.",
+      },
+      {
+        segments: ruby("[歴史|れきし]の[本|ほん]で[陛下|へいか]という表現を読みました。"),
+        translation: "Leí la expresión 'Heika' en un libro de historia.",
+      },
+      {
+        segments: ruby("[日常会話|にちじょうかいわ]では[陛|へい]という字を使う機会は多くありません。"),
+        translation: "En la conversación diaria no hay muchas oportunidades de usar el kanji 陛.",
+      },
+      {
+        segments: ruby("[陛下|へいか]に関する[記事|きじ]を読んで、[言葉|ことば]づかいの[特別|とくべつ]さを感じました。"),
+        translation: "Leí un artículo sobre Su Majestad y sentí lo especial del lenguaje usado.",
+      },
+      {
+        segments: ruby("[陛下|へいか]のような表現を知っていると、[歴史|れきし]や公式な[文章|ぶんしょう]を読むときに役立ちます。"),
+        translation: "Conocer expresiones como 'Heika' ayuda al leer historia o textos formales.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "閉",
+    level: 6,
+    strokeCount: 11,
+    on: ["ヘイ"],
+    kun: ["と.じる", "と.ざす", "し.める", "し.まる"],
+    meaning: "Cerrar",
+    examples: [
+      {
+        segments: ruby("[窓|まど]を[閉|し]めてください。"),
+        translation: "Por favor, cierre la ventana.",
+      },
+      {
+        segments: ruby("[本|ほん]を[閉|と]じて、先生の話を聞きました。"),
+        translation: "Cerré el libro y escuché al profesor.",
+      },
+      {
+        segments: ruby("[店|みせ]は八時に[閉|し]まります。"),
+        translation: "La tienda cierra a las ocho.",
+      },
+      {
+        segments: ruby("[閉会|へいかい]のあいさつが終わりました。"),
+        translation: "Terminó el discurso de clausura.",
+      },
+      {
+        segments: ruby("[心|こころ]を[閉|と]ざしてしまう前に、だれかに気持ちを話してみることも大切です。"),
+        translation: "Antes de cerrarte por completo, también es importante intentar hablar con alguien sobre lo que sientes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "片",
+    level: 6,
+    strokeCount: 4,
+    on: ["ヘン"],
+    kun: ["かた"],
+    meaning: "Una parte / fragmento / un lado",
+    examples: [
+      {
+        segments: ruby("[片方|かたほう]のくつが見つかりません。"),
+        translation: "No encuentro uno de los zapatos.",
+      },
+      {
+        segments: ruby("[片道|かたみち]切符を買いました。"),
+        translation: "Compré un boleto de solo ida.",
+      },
+      {
+        segments: ruby("[机|つくえ]の[片隅|かたすみ]にメモを置きました。"),
+        translation: "Dejé una nota en una esquina del escritorio.",
+      },
+      {
+        segments: ruby("[割|わ]れたコップの[片|かけら]を集めました。"),
+        translation: "Junté los pedazos del vaso roto.",
+      },
+      {
+        segments: ruby("[片方|かたほう]だけを見るのではなく、両方を見て考えることが大切な場面もあります。"),
+        translation: "Hay situaciones en que es importante no mirar solo un lado, sino considerar ambos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "補",
+    level: 6,
+    strokeCount: 12,
+    on: ["ホ"],
+    kun: ["おぎな.う"],
+    meaning: "Complementar / suplir",
+    examples: [
+      {
+        segments: ruby("[足|た]りない[部分|ぶぶん]を[補|おぎな]います。"),
+        translation: "Compenso la parte que falta.",
+      },
+      {
+        segments: ruby("[補習|ほしゅう]を受けて、内容をもう一度学びました。"),
+        translation: "Tomé una clase de refuerzo y estudié otra vez el contenido.",
+      },
+      {
+        segments: ruby("[候補|こうほ]の中から一つ選びます。"),
+        translation: "Elijo una de las opciones candidatas.",
+      },
+      {
+        segments: ruby("[説明|せつめい]が足りなかったので、あとで[補足|ほそく]しました。"),
+        translation: "Como la explicación fue insuficiente, después agregué una aclaración.",
+      },
+      {
+        segments: ruby("[一人|ひとり]で足りないところは、他の人と協力して[補|おぎな]うと、よりよい結果につながります。"),
+        translation: "Cuando uno solo no alcanza, compensarse cooperando con otros puede llevar a mejores resultados.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "暮",
+    level: 6,
+    strokeCount: 14,
+    on: ["ボ"],
+    kun: ["く.れる", "く.らす"],
+    meaning: "Vivir / anochecer",
+    examples: [
+      {
+        segments: ruby("[日本|にほん]で[暮|く]らしています。"),
+        translation: "Vivo en Japón.",
+      },
+      {
+        segments: ruby("[日|ひ]が[暮|く]れてきました。"),
+        translation: "Está anocheciendo.",
+      },
+      {
+        segments: ruby("[一人|ひとり]で[暮|く]らすのは自由ですが、大変なこともあります。"),
+        translation: "Vivir solo es libre, pero también tiene dificultades.",
+      },
+      {
+        segments: ruby("[年暮|としく]れになると、町がにぎやかになります。"),
+        translation: "Cuando llega fin de año, la ciudad se vuelve animada.",
+      },
+      {
+        segments: ruby("[どこで[暮|く]らすかだけでなく、どんな気持ちで毎日を[暮|く]らすかも同じくらい大切です。"),
+        translation: "No solo importa dónde vivir, sino también con qué actitud vivir cada día.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "宝",
+    level: 6,
+    strokeCount: 8,
+    on: ["ホウ"],
+    kun: ["たから"],
+    meaning: "Tesoro",
+    examples: [
+      {
+        segments: ruby("[この写真は私の[宝物|たからもの]です。"),
+        translation: "Esta foto es mi tesoro.",
+      },
+      {
+        segments: ruby("[宝石|ほうせき]のようにきれいな海でした。"),
+        translation: "Era un mar hermoso como una joya.",
+      },
+      {
+        segments: ruby("[子|こ]どもは家族にとって大切な[宝|たから]です。"),
+        translation: "Los niños son un tesoro importante para la familia.",
+      },
+      {
+        segments: ruby("[神社|じんじゃ]で[宝物殿|ほうもつでん]を見学しました。"),
+        translation: "Visité la sala del tesoro en el santuario.",
+      },
+      {
+        segments: ruby("[本当|ほんとう]の[宝|たから]は高いものだけではなく、[思|おも]い出や[経験|けいけん]のように目に見えないこともあります。"),
+        translation: "Los verdaderos tesoros no son solo cosas caras; también pueden ser recuerdos y experiencias que no se ven.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "訪",
+    level: 6,
+    strokeCount: 11,
+    on: ["ホウ"],
+    kun: ["おとず.れる", "たず.ねる"],
+    meaning: "Visitar",
+    examples: [
+      {
+        segments: ruby("[京都|きょうと]を[訪|おとず]れました。"),
+        translation: "Visité Kioto.",
+      },
+      {
+        segments: ruby("[先生|せんせい]を[訪問|ほうもん]する前に、時間を確認しました。"),
+        translation: "Antes de visitar al profesor, confirmé la hora.",
+      },
+      {
+        segments: ruby("[春|はる]が[訪|おとず]れると、花が咲き始めます。"),
+        translation: "Cuando llega la primavera, las flores comienzan a abrirse.",
+      },
+      {
+        segments: ruby("[友達|ともだち]の家を[訪|たず]ねて、いっしょに昼ごはんを食べました。"),
+        translation: "Visité la casa de un amigo y almorzamos juntos.",
+      },
+      {
+        segments: ruby("[新しい[季節|きせつ]や[変化|へんか]が[訪|おとず]れるとき、人の気持ちも少しずつ変わっていくことがあります。"),
+        translation: "Cuando llega una nueva estación o un cambio, a veces también los sentimientos de las personas van cambiando poco a poco.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "亡",
+    level: 6,
+    strokeCount: 3,
+    on: ["ボウ", "モウ"],
+    kun: ["ほろ.びる"],
+    meaning: "Morir / perecer / perderse",
+    examples: [
+      {
+        segments: ruby("[祖父|そふ]は去年[亡|な]くなりました。"),
+        translation: "Mi abuelo falleció el año pasado.",
+      },
+      {
+        segments: ruby("[戦争|せんそう]で多くの命が[失|うしな]われ、国が[亡|ほろ]びそうになった歴史もあります。"),
+        translation: "También hay momentos en la historia en que, tras perderse muchas vidas en la guerra, un país estuvo a punto de perecer.",
+      },
+      {
+        segments: ruby("[死亡|しぼう]した人の数についてニュースで聞きました。"),
+        translation: "Escuché en las noticias sobre la cantidad de personas fallecidas.",
+      },
+      {
+        segments: ruby("[亡|な]くなった人を思い出して、静かに手を合わせました。"),
+        translation: "Recordé a la persona fallecida y junté las manos en silencio.",
+      },
+      {
+        segments: ruby("[亡|な]くなるという表現は、[死|し]ぬよりもやわらかく丁寧に人の死を伝えるときによく使われます。"),
+        translation: "La expresión “fallecer” se usa mucho para hablar de la muerte de una persona de forma más suave y respetuosa que “morir”.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "忘",
+    level: 6,
+    strokeCount: 7,
+    on: ["ボウ"],
+    kun: ["わす.れる"],
+    meaning: "Olvidar",
+    examples: [
+      {
+        segments: ruby("[宿題|しゅくだい]を[忘|わす]れました。"),
+        translation: "Olvidé la tarea.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な約束を[忘|わす]れないように、メモします。"),
+        translation: "Anoto para no olvidar una promesa importante.",
+      },
+      {
+        segments: ruby("[忘年会|ぼうねんかい]に参加しました。"),
+        translation: "Participé en la fiesta de fin de año.",
+      },
+      {
+        segments: ruby("[かばん]を電車の中に[忘|わす]れてしまいました。"),
+        translation: "Se me olvidó el bolso dentro del tren.",
+      },
+      {
+        segments: ruby("[忘|わす]れたくないことは、頭だけにたよらず、メモや予定表を使っておくと安心です。"),
+        translation: "Para no olvidar algo importante, da tranquilidad no depender solo de la memoria y usar notas o una agenda.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "棒",
+    level: 6,
+    strokeCount: 12,
+    on: ["ボウ"],
+    kun: [],
+    meaning: "Barra / palo",
+    examples: [
+      {
+        segments: ruby("[木|き]の[棒|ぼう]を使って遊びました。"),
+        translation: "Jugué usando un palo de madera.",
+      },
+      {
+        segments: ruby("[鉄棒|てつぼう]の練習をしています。"),
+        translation: "Estoy practicando en la barra fija.",
+      },
+      {
+        segments: ruby("[この[棒|ぼう]は長すぎるので、少し切ります。"),
+        translation: "Este palo es demasiado largo, así que lo cortaré un poco.",
+      },
+      {
+        segments: ruby("[棒読|ぼうよ]みにならないように、気持ちをこめて読みました。"),
+        translation: "Leí poniendo sentimiento para no sonar monótono.",
+      },
+      {
+        segments: ruby("[棒|ぼう]という字を知ると、[鉄棒|てつぼう]や[棒読|ぼうよ]みのように形や感じを表す言葉も覚えやすくなります。"),
+        translation: "Cuando conoces el kanji 棒, también se vuelven más fáciles de recordar palabras que expresan forma o manera, como barra fija o lectura monótona.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "枚",
+    level: 6,
+    strokeCount: 8,
+    on: ["マイ"],
+    kun: [],
+    meaning: "Contador de objetos planos",
+    examples: [
+      {
+        segments: ruby("[紙|かみ]を三[枚|まい]ください。"),
+        translation: "Por favor, deme tres hojas de papel.",
+      },
+      {
+        segments: ruby("[切手|きって]を一[枚|まい]買いました。"),
+        translation: "Compré una estampilla.",
+      },
+      {
+        segments: ruby("[写真|しゃしん]を何[枚|まい]も撮りました。"),
+        translation: "Tomé muchas fotos.",
+      },
+      {
+        segments: ruby("[皿|さら]を五[枚|まい]並べました。"),
+        translation: "Puse cinco platos en fila.",
+      },
+      {
+        segments: ruby("[紙|かみ]・[写真|しゃしん]・[皿|さら]のように、うすくて平らな物を数えるときは[枚|まい]を使います。"),
+        translation: "Para contar objetos delgados y planos como papel, fotos o platos se usa 枚.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "幕",
+    level: 6,
+    strokeCount: 13,
+    on: ["マク", "バク"],
+    kun: ["とばり"],
+    meaning: "Cortina / acto / apertura o cierre",
+    examples: [
+      {
+        segments: ruby("[映画祭|えいがさい]が[開幕|かいまく]しました。"),
+        translation: "Comenzó el festival de cine.",
+      },
+      {
+        segments: ruby("[幕|まく]が上がって、劇が始まりました。"),
+        translation: "Se levantó el telón y comenzó la obra.",
+      },
+      {
+        segments: ruby("[大会|たいかい]は今日で[閉幕|へいまく]します。"),
+        translation: "El torneo termina hoy.",
+      },
+      {
+        segments: ruby("[テント]の[幕|まく]をしっかり閉じてください。"),
+        translation: "Por favor, cierre bien la lona de la carpa.",
+      },
+      {
+        segments: ruby("[開幕|かいまく]・[閉幕|へいまく]のような言葉を知ると、行事や大会の流れを説明する表現もわかりやすくなります。"),
+        translation: "Cuando conoces palabras como apertura y clausura, se vuelven más fáciles de entender las expresiones que explican el desarrollo de eventos o torneos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "密",
+    level: 6,
+    strokeCount: 11,
+    on: ["ミツ"],
+    kun: ["ひそ.か"],
+    meaning: "Secreto / denso / cercano",
+    examples: [
+      {
+        segments: ruby("[秘密|ひみつ]の話があります。"),
+        translation: "Hay un asunto secreto.",
+      },
+      {
+        segments: ruby("[この[森|もり]は木が[密|みつ]に生えています。"),
+        translation: "En este bosque los árboles crecen muy juntos.",
+      },
+      {
+        segments: ruby("[親密|しんみつ]な関係になるまでには時間がかかります。"),
+        translation: "Se necesita tiempo para llegar a una relación cercana.",
+      },
+      {
+        segments: ruby("[密|ひそ]かに練習を続けていました。"),
+        translation: "Había seguido practicando en secreto.",
+      },
+      {
+        segments: ruby("[人|ひと]との[距離|きょり]が近すぎても遠すぎてもむずかしいので、ちょうどよい[親密|しんみつ]さを考えることも大切です。"),
+        translation: "Como es difícil cuando la distancia con los demás es demasiado cercana o demasiado lejana, también es importante pensar en un grado adecuado de cercanía.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "盟",
+    level: 6,
+    strokeCount: 13,
+    on: ["メイ"],
+    kun: [],
+    meaning: "Alianza / pacto",
+    examples: [
+      {
+        segments: ruby("[二つの国が[同盟|どうめい]を結びました。"),
+        translation: "Dos países formaron una alianza.",
+      },
+      {
+        segments: ruby("[加盟|かめい]するには、いくつかの条件があります。"),
+        translation: "Para unirse hay varias condiciones.",
+      },
+      {
+        segments: ruby("[同盟|どうめい]の歴史について学びました。"),
+        translation: "Aprendimos sobre la historia de las alianzas.",
+      },
+      {
+        segments: ruby("[世界|せかい]の動きを知るには、国どうしの[同盟|どうめい]関係も大切です。"),
+        translation: "Para entender el movimiento del mundo, también son importantes las relaciones de alianza entre países.",
+      },
+      {
+        segments: ruby("[盟|めい]という字は日常で多くは見ませんが、[同盟|どうめい]・[加盟|かめい]のような言葉で覚えるとわかりやすいです。"),
+        translation: "El kanji 盟 no se ve mucho en la vida diaria, pero resulta más fácil si lo aprendes en palabras como alianza o afiliación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "模",
+    level: 6,
+    strokeCount: 14,
+    on: ["モ", "ボ"],
+    kun: [],
+    meaning: "Modelo / patrón / imitación",
+    examples: [
+      {
+        segments: ruby("[模型|もけい]をつくるのが好きです。"),
+        translation: "Me gusta construir maquetas.",
+      },
+      {
+        segments: ruby("[模様|もよう]がきれいな布ですね。"),
+        translation: "Es una tela con un diseño bonito, ¿verdad?",
+      },
+      {
+        segments: ruby("[模試|もし]を受けて、自分の力を確かめました。"),
+        translation: "Hice un ensayo de examen para comprobar mi nivel.",
+      },
+      {
+        segments: ruby("[その[人|ひと]をまねるだけでなく、[模範|もはん]として学ぶことが大切です。"),
+        translation: "Más que solo imitar a esa persona, es importante aprender de ella como modelo.",
+      },
+      {
+        segments: ruby("[大きな[模型|もけい]や小さな[模様|もよう]のように、[模|も]は形や見本に関係する言葉でよく使われます。"),
+        translation: "En palabras como maqueta grande o diseño pequeño, 模 se usa mucho en términos relacionados con formas y modelos.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "訳",
+    level: 6,
+    strokeCount: 11,
+    on: ["ヤク"],
+    kun: ["わけ"],
+    meaning: "Traducción / razón / explicación",
+    examples: [
+      {
+        segments: ruby("[この文をスペイン語に[訳|やく]してください。"),
+        translation: "Por favor, traduzca esta oración al español.",
+      },
+      {
+        segments: ruby("[そんな[訳|わけ]ではありません。"),
+        translation: "No es esa la razón.",
+      },
+      {
+        segments: ruby("[翻訳|ほんやく]の仕事に興味があります。"),
+        translation: "Me interesa el trabajo de traducción.",
+      },
+      {
+        segments: ruby("[理由|りゆう]がわからないので、[訳|わけ]を聞きました。"),
+        translation: "Como no entendía la razón, pregunté la explicación.",
+      },
+      {
+        segments: ruby("[言葉|ことば]を[訳|やく]すときは、字の意味だけでなく、その場の気持ちや流れも考えることが大切です。"),
+        translation: "Al traducir palabras, es importante pensar no solo en el significado literal, sino también en el sentimiento y el contexto del momento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "郵",
+    level: 6,
+    strokeCount: 11,
+    on: ["ユウ"],
+    kun: [],
+    meaning: "Correo / postal",
+    examples: [
+      {
+        segments: ruby("[郵便局|ゆうびんきょく]へ行って手紙を出しました。"),
+        translation: "Fui al correo y envié una carta.",
+      },
+      {
+        segments: ruby("[郵送|ゆうそう]で書類を送ります。"),
+        translation: "Enviaré los documentos por correo.",
+      },
+      {
+        segments: ruby("[住所|じゅうしょ]と[郵便番号|ゆうびんばんごう]を書いてください。"),
+        translation: "Por favor, escriba la dirección y el código postal.",
+      },
+      {
+        segments: ruby("[郵便受|ゆうびんう]けに手紙が入っていました。"),
+        translation: "Había una carta en el buzón.",
+      },
+      {
+        segments: ruby("[郵便|ゆうびん]に関係する言葉を知っていると、住所の記入や荷物を送るときにとても役立ちます。"),
+        translation: "Conocer palabras relacionadas con el correo ayuda mucho al escribir direcciones o enviar paquetes.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "優",
+    level: 6,
+    strokeCount: 17,
+    on: ["ユウ"],
+    kun: ["やさ.しい", "すぐ.れる"],
+    meaning: "Amable / excelente",
+    examples: [
+      {
+        segments: ruby("[優|やさ]しい先生です。"),
+        translation: "Es un profesor amable.",
+      },
+      {
+        segments: ruby("[彼女|かのじょ]は成績が[優|すぐ]れています。"),
+        translation: "Ella destaca en sus notas.",
+      },
+      {
+        segments: ruby("[大会|たいかい]で[優勝|ゆうしょう]しました。"),
+        translation: "Ganó el campeonato.",
+      },
+      {
+        segments: ruby("[困|こま]っている人に[優|やさ]しく声をかけました。"),
+        translation: "Le hablé amablemente a una persona que estaba en problemas.",
+      },
+      {
+        segments: ruby("[優|やさ]しさと[優|すぐ]れていることはちがいますが、どちらも人との関係や成長に大切な力です。"),
+        translation: "La amabilidad y la excelencia son cosas distintas, pero ambas son fuerzas importantes para las relaciones y el crecimiento.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "預",
+    level: 6,
+    strokeCount: 13,
+    on: ["ヨ"],
+    kun: ["あず.ける", "あず.かる"],
+    meaning: "Encargar / depositar / dejar al cuidado",
+    examples: [
+      {
+        segments: ruby("[荷物|にもつ]を[駅|えき]に[預|あず]けました。"),
+        translation: "Dejé el equipaje en la estación.",
+      },
+      {
+        segments: ruby("[子|こ]どもを[親|おや]に[預|あず]けて出かけました。"),
+        translation: "Dejé al niño al cuidado de mis padres y salí.",
+      },
+      {
+        segments: ruby("[銀行|ぎんこう]にお金を[預|あず]けています。"),
+        translation: "Tengo dinero depositado en el banco.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な書類を[預|あず]かりました。"),
+        translation: "Recibí al cuidado documentos importantes.",
+      },
+      {
+        segments: ruby("[だれかに何かを[預|あず]けるときは、その人を信頼しているからこそなので、受け取る側にも責任があります。"),
+        translation: "Cuando dejas algo al cuidado de alguien es porque confías en esa persona, por eso quien lo recibe también tiene una responsabilidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "幼",
+    level: 6,
+    strokeCount: 5,
+    on: ["ヨウ"],
+    kun: ["おさな.い"],
+    meaning: "Pequeño / infantil / niñez",
+    examples: [
+      {
+        segments: ruby("[幼|おさな]いころ、この[公園|こうえん]でよく[遊|あそ]びました。"),
+        translation: "Cuando era pequeño, jugaba mucho en este parque.",
+      },
+      {
+        segments: ruby("[弟|おとうと]はまだ[幼|おさな]くて、一人では出かけられません。"),
+        translation: "Mi hermano menor todavía es pequeño y no puede salir solo.",
+      },
+      {
+        segments: ruby("[幼稚園|ようちえん]の[先生|せんせい]はとてもやさしかったです。"),
+        translation: "La profesora del jardín infantil era muy amable.",
+      },
+      {
+        segments: ruby("[幼年期|ようねんき]の[記憶|きおく]は、今でも少しのこっています。"),
+        translation: "Los recuerdos de la primera infancia todavía permanecen un poco.",
+      },
+      {
+        segments: ruby("[幼|おさな]いときの[経験|けいけん]が、その後の[性格|せいかく]や[考|かんが]え方に大きく[影響|えいきょう]することもあります。"),
+        translation: "Las experiencias de la infancia a veces influyen mucho en la personalidad y en la forma de pensar posterior.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "欲",
+    level: 6,
+    strokeCount: 11,
+    on: ["ヨク"],
+    kun: ["ほ.しい", "ほっ.する"],
+    meaning: "Querer / deseo",
+    examples: [
+      {
+        segments: ruby("[新|あたら]しい[辞書|じしょ]が[欲|ほ]しいです。"),
+        translation: "Quiero un diccionario nuevo.",
+      },
+      {
+        segments: ruby("[食欲|しょくよく]があまりありません。"),
+        translation: "No tengo mucho apetito.",
+      },
+      {
+        segments: ruby("[知識|ちしき]だけでなく、[学|まな]びたいという[欲|よく]も大切です。"),
+        translation: "No solo el conocimiento es importante, también lo es el deseo de aprender.",
+      },
+      {
+        segments: ruby("[必要|ひつよう]なものだけ[欲|ほ]しいと思っています。"),
+        translation: "Pienso que quiero solo lo que realmente necesito.",
+      },
+      {
+        segments: ruby("[欲|よく]が強すぎると大切なことが見えにくくなるので、何が本当に必要かを考えることが大切です。"),
+        translation: "Si el deseo se vuelve demasiado fuerte, cuesta ver lo importante, por eso es fundamental pensar qué es lo realmente necesario.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "翌",
+    level: 6,
+    strokeCount: 11,
+    on: ["ヨク"],
+    kun: [],
+    meaning: "Siguiente (día / año / etc.)",
+    examples: [
+      {
+        segments: ruby("[翌日|よくじつ]、もう一度その場所へ行きました。"),
+        translation: "Al día siguiente, fui otra vez a ese lugar.",
+      },
+      {
+        segments: ruby("[会議|かいぎ]の[翌朝|よくあさ]、内容をもう一度確認しました。"),
+        translation: "A la mañana siguiente de la reunión, confirmé otra vez el contenido.",
+      },
+      {
+        segments: ruby("[翌年|よくねん]には、新しい学校へ通い始めました。"),
+        translation: "Al año siguiente empecé a ir a una escuela nueva.",
+      },
+      {
+        segments: ruby("[試験|しけん]の[翌日|よくじつ]は、少しゆっくり休みました。"),
+        translation: "Al día siguiente del examen, descansé con calma.",
+      },
+      {
+        segments: ruby("[翌日|よくじつ]という言葉を覚えると、出来事の流れを時間順に説明しやすくなります。"),
+        translation: "Cuando aprendes la palabra “al día siguiente”, se vuelve más fácil explicar los hechos en orden temporal.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "乱",
+    level: 6,
+    strokeCount: 7,
+    on: ["ラン"],
+    kun: ["みだ.れる", "みだ.す"],
+    meaning: "Desorden / alterar / confusión",
+    examples: [
+      {
+        segments: ruby("[部屋|へや]が[乱|みだ]れているので、先に片づけます。"),
+        translation: "Como la habitación está desordenada, primero la voy a ordenar.",
+      },
+      {
+        segments: ruby("[気持|きも]ちを[乱|みだ]さずに、落ち着いて話してください。"),
+        translation: "Por favor, hable con calma sin alterarse.",
+      },
+      {
+        segments: ruby("[交通|こうつう]が[混乱|こんらん]して、電車が遅れました。"),
+        translation: "El tránsito entró en confusión y el tren se atrasó.",
+      },
+      {
+        segments: ruby("[風|かぜ]で[髪|かみ]が[乱|みだ]れました。"),
+        translation: "Con el viento se me desordenó el cabello.",
+      },
+      {
+        segments: ruby("[順番|じゅんばん]が[乱|みだ]れると全体の流れも悪くなるので、小さなことでも整えておくことが大切です。"),
+        translation: "Si el orden se altera, también empeora el flujo general, por eso es importante mantener ordenadas incluso las cosas pequeñas.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "卵",
+    level: 6,
+    strokeCount: 7,
+    on: ["ラン"],
+    kun: ["たまご"],
+    meaning: "Huevo",
+    examples: [
+      {
+        segments: ruby("[朝|あさ]ごはんに[卵|たまご]を食べました。"),
+        translation: "Comí huevo en el desayuno.",
+      },
+      {
+        segments: ruby("[卵焼|たまごや]きを作るのが好きです。"),
+        translation: "Me gusta preparar tortilla japonesa.",
+      },
+      {
+        segments: ruby("[冷蔵庫|れいぞうこ]に[卵|たまご]が三つあります。"),
+        translation: "Hay tres huevos en el refrigerador.",
+      },
+      {
+        segments: ruby("[生卵|なまたまご]はこの料理には使いません。"),
+        translation: "No usamos huevo crudo en esta preparación.",
+      },
+      {
+        segments: ruby("[卵|たまご]は身近な食べ物ですが、[料理|りょうり]によって使い方が大きく変わるので面白いです。"),
+        translation: "El huevo es un alimento cotidiano, pero resulta interesante porque su uso cambia mucho según el plato.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "覧",
+    level: 6,
+    strokeCount: 17,
+    on: ["ラン"],
+    kun: [],
+    meaning: "Ver / revisar (formal)",
+    examples: [
+      {
+        segments: ruby("[案内|あんない]は下の表を[覧|らん]ください。"),
+        translation: "Por favor, vea la tabla de abajo para la información.",
+      },
+      {
+        segments: ruby("[一覧|いちらん]を見れば、必要な項目がすぐわかります。"),
+        translation: "Si ves la lista general, enseguida se entienden los puntos necesarios.",
+      },
+      {
+        segments: ruby("[観覧車|かんらんしゃ]から町を見ました。"),
+        translation: "Vi la ciudad desde la rueda de observación.",
+      },
+      {
+        segments: ruby("[展示|てんじ][会|かい]のご[案内|あんない]を[覧|らん]になりましたか。"),
+        translation: "¿Ha visto la información de la exposición?",
+      },
+      {
+        segments: ruby("[覧|らん]は日常会話では少し硬いですが、[一覧|いちらん]・[観覧車|かんらんしゃ]のような言葉ではよく見かけます。"),
+        translation: "覧 es un poco rígido para la conversación diaria, pero aparece con frecuencia en palabras como lista general o rueda de observación.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "裏",
+    level: 6,
+    strokeCount: 13,
+    on: ["リ"],
+    kun: ["うら"],
+    meaning: "Parte de atrás / reverso / detrás",
+    examples: [
+      {
+        segments: ruby("[紙|かみ]の[裏|うら]に名前を書いてください。"),
+        translation: "Por favor, escriba su nombre al reverso del papel.",
+      },
+      {
+        segments: ruby("[家|いえ]の[裏|うら]に小さな庭があります。"),
+        translation: "Detrás de la casa hay un jardín pequeño.",
+      },
+      {
+        segments: ruby("[表|おもて]と[裏|うら]のちがいを確認しました。"),
+        translation: "Confirmé la diferencia entre el frente y el reverso.",
+      },
+      {
+        segments: ruby("[駅|えき]の[裏通|うらどお]りは静かです。"),
+        translation: "La calle trasera de la estación es tranquila.",
+      },
+      {
+        segments: ruby("[表|おもて]だけでなく[裏|うら]も見るようにすると、ものごとをもっとていねいに理解できます。"),
+        translation: "Si procuras mirar no solo el frente sino también el reverso, puedes comprender las cosas con más profundidad.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "律",
+    level: 6,
+    strokeCount: 9,
+    on: ["リツ", "リチ"],
+    kun: [],
+    meaning: "Regla / ley / ritmo",
+    examples: [
+      {
+        segments: ruby("[法律|ほうりつ]を守ることは大切です。"),
+        translation: "Es importante respetar la ley.",
+      },
+      {
+        segments: ruby("[規律|きりつ]のある生活を心がけています。"),
+        translation: "Procuro llevar una vida disciplinada.",
+      },
+      {
+        segments: ruby("[自律|じりつ]して行動できる人になりたいです。"),
+        translation: "Quiero convertirme en una persona capaz de actuar con autonomía y disciplina.",
+      },
+      {
+        segments: ruby("[旋律|せんりつ]が美しい曲ですね。"),
+        translation: "Es una melodía hermosa, ¿verdad?",
+      },
+      {
+        segments: ruby("[律|りつ]という字を知ると、[法律|ほうりつ]・[規律|きりつ]・[自律|じりつ]のような大切な言葉のつながりも見えてきます。"),
+        translation: "Cuando conoces el kanji 律, también empiezas a ver la relación entre palabras importantes como ley, disciplina y autonomía.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "臨",
+    level: 6,
+    strokeCount: 18,
+    on: ["リン"],
+    kun: ["のぞ.む"],
+    meaning: "Enfrentar / asistir /临时",
+    examples: [
+      {
+        segments: ruby("[試験|しけん]に[臨|のぞ]む前に、深く息をすいました。"),
+        translation: "Antes de enfrentar el examen, respiré profundamente.",
+      },
+      {
+        segments: ruby("[臨時|りんじ]の会議が開かれました。"),
+        translation: "Se realizó una reunión extraordinaria.",
+      },
+      {
+        segments: ruby("[本番|ほんばん]に[臨|のぞ]む気持ちで練習しました。"),
+        translation: "Practiqué con la actitud de enfrentar la presentación real.",
+      },
+      {
+        segments: ruby("[駅前|えきまえ]に[臨時|りんじ]の案内所ができました。"),
+        translation: "Se instaló una oficina de información temporal frente a la estación.",
+      },
+      {
+        segments: ruby("[大切|たいせつ]な場面に[臨|のぞ]むときは、結果だけでなく、そこまでの準備にも自信をもつことが大切です。"),
+        translation: "Cuando enfrentas un momento importante, es fundamental confiar no solo en el resultado, sino también en la preparación que te llevó hasta allí.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "朗",
+    level: 6,
+    strokeCount: 10,
+    on: ["ロウ"],
+    kun: ["ほが.らか"],
+    meaning: "Claro / alegre / leer en voz alta",
+    examples: [
+      {
+        segments: ruby("[朗読|ろうどく]の練習をしました。"),
+        translation: "Practiqué lectura en voz alta.",
+      },
+      {
+        segments: ruby("[彼|かれ]は[朗|ほが]らかな人です。"),
+        translation: "Él es una persona alegre y abierta.",
+      },
+      {
+        segments: ruby("[明朗|めいろう]な声であいさつしました。"),
+        translation: "Saludó con una voz clara y animada.",
+      },
+      {
+        segments: ruby("[文章|ぶんしょう]を[朗読|ろうどく]すると、意味がわかりやすくなることがあります。"),
+        translation: "Cuando lees un texto en voz alta, a veces el significado se vuelve más fácil de entender.",
+      },
+      {
+        segments: ruby("[朗|ほが]らかな気持ちでいると、まわりの人とも自然によい関係をつくりやすくなります。"),
+        translation: "Cuando mantienes un ánimo alegre y abierto, se vuelve más fácil construir de manera natural buenas relaciones con quienes te rodean.",
+      },
+    ],
+    hasSvg: false,
+  },
+  {
+    char: "論",
+    level: 6,
+    strokeCount: 15,
+    on: ["ロン"],
+    kun: [],
+    meaning: "Teoría / discusión / argumento",
+    examples: [
+      {
+        segments: ruby("[授業|じゅぎょう]で環境について[議論|ぎろん]しました。"),
+        translation: "En clase discutimos sobre el medio ambiente.",
+      },
+      {
+        segments: ruby("[結論|けつろん]を出す前に、みんなの意見を聞きました。"),
+        translation: "Antes de sacar una conclusión, escuché la opinión de todos.",
+      },
+      {
+        segments: ruby("[理論|りろん]だけでなく、実際に試すことも大切です。"),
+        translation: "No solo la teoría es importante, también lo es probar en la práctica.",
+      },
+      {
+        segments: ruby("[小論文|しょうろんぶん]を書く練習をしています。"),
+        translation: "Estoy practicando escribir una redacción corta argumentativa.",
+      },
+      {
+        segments: ruby("[論|ろん]に関係する言葉を知ると、考えを整理して説明するときの表現も増えていきます。"),
+        translation: "Cuando conoces palabras relacionadas con 論, también aumentan las expresiones para ordenar y explicar tus ideas.",
+      },
+    ],
+    hasSvg: false,
+  },
+]
+
 
 const LEVEL2_STROKES: Record<string, number> = {
   "引":4,"羽":6,"雲":12,"園":13,"遠":13,"何":7,"科":9,"夏":10,"家":10,"歌":14,
@@ -3252,17 +29551,6 @@ const LEVEL2_STROKES: Record<string, number> = {
   "歩":8,"母":5,"方":4,"北":5,"毎":6,"妹":8,"万":3,"明":8,"鳴":14,"毛":4,
   "門":8,"夜":8,"野":11,"友":4,"用":5,"曜":18,"来":7,"里":7,"理":11,"話":13,
 };
-
-const LEVEL2: KanjiEntry[] = Object.keys(LEVEL2_STROKES).map(char => ({
-  char,
-  level: 2,
-  strokeCount: LEVEL2_STROKES[char],
-  on: [],
-  kun: [],
-  meaning: "",
-  example: "",
-  hasSvg: true,
-}));
 
 // ─── Levels 3–8 — chars only ─────────────────────────────────────────────────
 
