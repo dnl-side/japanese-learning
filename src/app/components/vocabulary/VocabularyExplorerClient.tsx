@@ -1,3 +1,1 @@
-"use client";
-
-// fix applied
+REPLACED
