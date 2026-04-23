@@ -117,6 +117,7 @@ export const VERB_LIST: VerbEntry[] = [
   { dictionary: "吹く", kanji: "吹", furigana: "ふ", morpheme: "く", group: "godan", meaning: "soplar", level: "N5" },
   { dictionary: "降る", kanji: "降", furigana: "ふ", morpheme: "る", group: "godan", meaning: "caer (lluvia/nieve)", level: "N5" },
   { dictionary: "なる", kanji: "", furigana: "な", morpheme: "る", group: "godan", meaning: "volverse/llegar a ser", level: "N5" },
+  { dictionary: "飲む", kanji: "飲", furigana: "の", morpheme: "む", group: "godan", meaning: "beber", level: "N5" },
 
   { dictionary: "上がる",   kanji: "上",     furigana: "あ",       morpheme: "がる",   group: "godan",   meaning: "subir/elevarse", level: "N4" },
   { dictionary: "集まる",   kanji: "集",     furigana: "あつ",     morpheme: "まる",   group: "godan",   meaning: "reunirse/juntarse", level: "N4" },

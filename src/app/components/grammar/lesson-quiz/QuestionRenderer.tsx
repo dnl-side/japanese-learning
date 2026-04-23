@@ -5,6 +5,7 @@ import { RubyText } from "@/app/components/ui/Ruby";
 import type {
   FillBlankQuizQuestion,
   LessonDisplayConfig,
+  LessonOrderToken,
   LessonPrompt,
   LessonQuizQuestion,
   OrderSentenceQuizQuestion,
@@ -151,6 +152,36 @@ function SingleChoiceView({
   );
 }
 
+function shuffleArray<T>(array: readonly T[]): T[] {
+  const copy = [...array];
+
+  for (let i = copy.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+
+  return copy;
+}
+
+function shuffleUntilDifferent<T>(
+  array: readonly T[],
+  isSameOrder: (a: readonly T[], b: readonly T[]) => boolean,
+  maxTries = 6,
+): T[] {
+  let next = [...array];
+
+  for (let i = 0; i < maxTries; i += 1) {
+    next = shuffleArray(array);
+    if (!isSameOrder(next, array)) return next;
+  }
+
+  return next;
+}
+
+function sameTokenOrder(a: readonly LessonOrderToken[], b: readonly LessonOrderToken[]) {
+  return a.length === b.length && a.every((token, idx) => token.value === b[idx]?.value);
+}
+
 function OrderSentenceView({
   question,
   display,
@@ -165,9 +196,13 @@ function OrderSentenceView({
   onSubmit: (answer: LessonQuizAnswer) => void;
 }) {
   const [selectedIndices, setSelectedIndices] = useState<number[]>([]);
+  const [availableTokens, setAvailableTokens] = useState<LessonOrderToken[]>([]);
 
   useEffect(() => {
     setSelectedIndices([]);
+    setAvailableTokens(
+      shuffleUntilDifferent(question.tokens, sameTokenOrder)
+    );
   }, [question.id]);
 
   const answerArray =
@@ -177,20 +212,20 @@ function OrderSentenceView({
 
   const currentAnswerValues = locked
     ? answerArray
-    : selectedIndices.map((idx) => question.tokens[idx].value);
+    : selectedIndices.map((idx) => availableTokens[idx].value);
 
   const currentAnswerTokens = locked
     ? currentAnswerValues
         .map((value) => question.tokens.find((token) => token.value === value))
         .filter((token): token is typeof question.tokens[number] => Boolean(token))
-    : selectedIndices.map((idx) => question.tokens[idx]);
+    : selectedIndices.map((idx) => availableTokens[idx]);
 
   const availableIndices = useMemo(
     () =>
-      question.tokens
+      availableTokens
         .map((_, index) => index)
         .filter((index) => !selectedIndices.includes(index)),
-    [question.tokens, selectedIndices],
+    [availableTokens, selectedIndices],
   );
 
   const canSubmit = currentAnswerValues.length === question.tokens.length;
@@ -267,7 +302,7 @@ function OrderSentenceView({
 
             <div className="flex flex-wrap gap-2">
               {availableIndices.map((index) => {
-                const token = question.tokens[index];
+                const token = availableTokens[index];
 
                 return (
                   <button

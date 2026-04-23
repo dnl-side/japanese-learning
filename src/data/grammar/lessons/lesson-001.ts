@@ -1,3 +1,5 @@
+//src/data/grammar/lessons/lesson-001.ts
+
 import { ruby } from "@/app/components/ui/Ruby";
 import type { GrammarLesson } from "./index";
 

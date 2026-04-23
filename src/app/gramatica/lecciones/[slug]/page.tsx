@@ -292,7 +292,9 @@ function ExampleCard({
       {example.notes && example.notes.length > 0 && (
         <ul className="mt-3 space-y-1.5 pl-5 text-sm" style={{ color: "var(--ink-soft)", opacity: 0.78 }}>
           {example.notes.map((note, idx) => (
-            <li key={`${example.id}-note-${idx}`}>{note}</li>
+            <li key={`${example.id}-note-${idx}`}>
+              <BulletItemContent item={note} display={display} />
+            </li>
           ))}
         </ul>
       )}
@@ -472,18 +474,22 @@ function BlockRenderer({
 
             {item.structure && item.structure.length > 0 && (
               <div className="mt-4 grid gap-2 sm:grid-cols-2">
-                {item.structure.map((part) => (
+                {item.structure.map((part, idx) => (
                   <div
-                    key={`${item.id}-${part.slot}`}
+                    key={`${item.id}-slot-${idx}`}
                     className="rounded-2xl border px-3 py-3"
                     style={{
                       background: `${ACCENT_SOFT}0.04)`,
                       border: `1px solid ${ACCENT_SOFT}0.12)`,
                     }}
                   >
-                    <p className="text-xs font-bold uppercase tracking-[0.14em]" style={{ color: ACCENT }}>
-                      {part.slot}
-                    </p>
+                    <div className="text-xs font-bold uppercase tracking-[0.14em]" style={{ color: ACCENT }}>
+                      {typeof part.slot === "string" ? (
+                        part.slot
+                      ) : (
+                        <BulletItemContent item={part.slot} display={display} />
+                      )}
+                    </div>
                     <p className="mt-1 text-sm font-semibold" style={{ color: "var(--ink)" }}>
                       {part.value}
                     </p>
@@ -533,9 +539,14 @@ function BlockRenderer({
             )}
 
             {item.notes && item.notes.length > 0 && (
-              <ul className="mt-4 space-y-1.5 pl-5 text-sm" style={{ color: "var(--ink-soft)", opacity: 0.8 }}>
+              <ul
+                className="mt-4 space-y-1.5 pl-5 text-sm"
+                style={{ color: "var(--ink-soft)", opacity: 0.8 }}
+              >
                 {item.notes.map((note, idx) => (
-                  <li key={`${item.id}-note-${idx}`}>{note}</li>
+                  <li key={`${item.id}-note-${idx}`}>
+                    <BulletItemContent item={note} display={display} />
+                  </li>
                 ))}
               </ul>
             )}

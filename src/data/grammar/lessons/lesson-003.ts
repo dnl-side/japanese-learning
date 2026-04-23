@@ -1,3 +1,5 @@
+//src/data/grammar/lessons/lesson-003.ts
+
 import { ruby } from "@/app/components/ui/Ruby";
 import type { GrammarLesson } from "./index";
 
@@ -38,7 +40,7 @@ export const lesson003: GrammarLesson = {
   objectives: [
     "Formar preguntas simples con か.",
     "Responder afirmativamente con はい y そうです.",
-    "Responder negativamente con いいえ, 違います, ではありません y じゃありません.",
+    "Responder negativamente con いいえ, ちがいます, ではありません y じゃありません.",
     "Distinguir entre una respuesta completa y una respuesta más compacta y natural.",
   ],
   display: {
@@ -230,28 +232,33 @@ export const lesson003: GrammarLesson = {
                 "La respuesta negativa puede ser completa o más compacta según el contexto.",
               structure: [
                 {
-                  slot: "いいえ",
+                  slot: {
+                    jp: ruby("[いいえ]"),
+                  },
                   value: "no",
                   note: "Respuesta negativa básica.",
                 },
                 {
-                  slot: "ではありません",
+                  slot: {
+                    jp: ruby("ではありません"),
+                  },
                   value: "negación más rígida",
                   note: "Suena más formal o más escrita.",
                 },
                 {
-                  slot: "じゃありません",
+                  slot: {
+                    jp: ruby("じゃありません"),
+                  },
                   value: "negación conversacional educada",
                   note: "Muy común en japonés hablado.",
                 },
                 {
-                  slot: "違います",
+                  slot: {
+                    jp: ruby("[違|ちが]います"),
+                  },
                   value: "eso no es / está equivocado",
                   note: "Muy natural cuando niegas la afirmación anterior sin repetirla completa.",
                 },
-              ],
-              notes: [
-                "違います no repite la categoría; niega la idea anterior como bloque.",
               ],
             },
           ],
@@ -369,7 +376,10 @@ export const lesson003: GrammarLesson = {
               jp: ruby("[田中|たなか]さんは[医者|いしゃ]ですか。 [いいえ]、[違|ちが]います。 [先生|せんせい]です。"),
               es: "¿Tanaka es médico? No, no es así. Es profesor.",
               notes: [
-                "違います niega la afirmación anterior como bloque.",
+                {
+                  es: "Niega la afirmación anterior como bloque.",
+                  jp: ruby("[違|ちが]います。"),
+                },
               ],
             },
             {
@@ -579,7 +589,8 @@ export const lesson003: GrammarLesson = {
         id: "q3",
         type: "single-choice",
         prompt: {
-          es: "Elige la mejor respuesta para: 田中さんは学生ですか。",
+          es: "Elige la mejor respuesta para esta pregunta:",
+          jp: ruby("[田中|たなか]さんは[学生|がくせい]ですか。"),
         },
         choices: [
           { id: "a", label: { jp: ruby("[はい]、そうです。") } },
@@ -596,7 +607,8 @@ export const lesson003: GrammarLesson = {
         id: "q4",
         type: "single-choice",
         prompt: {
-          es: "Elige la mejor respuesta negativa para: マリアさんは先生ですか。",
+          es: "Elige la mejor respuesta negativa para esta pregunta:",
+          jp: ruby("[マリア|まりあ]さんは[先生|せんせい]ですか。"),
         },
         choices: [
           { id: "a", label: { jp: ruby("[いいえ]、[先生|せんせい]です。") } },
@@ -623,7 +635,7 @@ export const lesson003: GrammarLesson = {
         ],
         correctChoiceId: "b",
         explanation:
-          "違います niega la idea anterior como bloque y suena muy natural en este contexto.",
+          "ちがいます niega la idea anterior como bloque y suena muy natural en este contexto.",
         relatedSectionIds: ["lesson-003-concept", "lesson-003-structure"],
       },
       {

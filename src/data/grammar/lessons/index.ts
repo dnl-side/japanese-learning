@@ -1,7 +1,15 @@
+//src/data/grammar/lessons/index.ts
+
 import type { RubySegment } from "@/app/components/ui/Ruby";
 import lesson001 from "./lesson-001";
 import lesson002 from "./lesson-002";
 import lesson003 from "./lesson-003";
+import lesson004a from "./lesson-004a";
+import lesson004b from "./lesson-004b";
+import lesson004c from "./lesson-004c";
+import lesson005a from "./lesson-005a";
+import lesson005b from "./lesson-005b";
+import lesson006 from "./lesson-006";
 
 
 export type JLPTLevel = "N5" | "N4" | "N3" | "N2" | "N1";
@@ -45,7 +53,7 @@ export interface LessonBreakdownItem {
 }
 
 export interface LessonStructureSlot {
-  slot: string;
+  slot: string | LessonPrompt;
   value: string;
   note?: string | LessonPrompt;
 }
@@ -57,7 +65,7 @@ export interface LessonPatternCard {
   meaning: string;
   translation?: string;
   structure?: LessonStructureSlot[];
-  notes?: string[];
+  notes?: LessonBulletItem[];
 }
 
 export interface LessonVocabularyItem {
@@ -75,7 +83,7 @@ export interface LessonExample {
   es: string;
   literal?: string;
   breakdown?: LessonBreakdownItem[];
-  notes?: string[];
+  notes?: LessonBulletItem[];
 }
 
 export interface LessonContrastItem {
@@ -209,7 +217,17 @@ export interface LessonOrderToken {
   value: string;
 }
 
-const RAW_GRAMMAR_LESSONS: GrammarLesson[] = [lesson001, lesson002, lesson003];
+const RAW_GRAMMAR_LESSONS: GrammarLesson[] = [
+  lesson001,
+  lesson002,
+  lesson003,
+  lesson004a,
+  lesson004b,
+  lesson004c,
+  lesson005a,
+  lesson005b,
+  lesson006,
+];
 
 function compareLessons(a: GrammarLesson, b: GrammarLesson) {
   if (a.order !== b.order) return a.order - b.order;
