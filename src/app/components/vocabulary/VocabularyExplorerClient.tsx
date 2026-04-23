@@ -315,15 +315,23 @@ export function VocabularyExplorerClient({ catalog }: VocabularyExplorerClientPr
         </p>
         <div className="mt-3 space-y-2">
           {[
-            [onlyCore, setOnlyCore, "Solo core"],
-            [onlyWithExamples, setOnlyWithExamples, "Solo con ejemplos"],
-            [onlyStarred, setOnlyStarred, "Solo favoritas"],
-            [showArchived, setShowArchived, "Mostrar archivadas"],
-          ].map(([value, setter, label]) => (
+            { value: onlyCore, label: "Solo core", onClick: () => setOnlyCore((current) => !current) },
+            {
+              value: onlyWithExamples,
+              label: "Solo con ejemplos",
+              onClick: () => setOnlyWithExamples((current) => !current),
+            },
+            { value: onlyStarred, label: "Solo favoritas", onClick: () => setOnlyStarred((current) => !current) },
+            {
+              value: showArchived,
+              label: "Mostrar archivadas",
+              onClick: () => setShowArchived((current) => !current),
+            },
+          ].map(({ value, label, onClick }) => (
             <button
               key={label}
               type="button"
-              onClick={() => (setter as (value: boolean) => void)(!value)}
+              onClick={onClick}
               className="flex w-full items-center justify-between rounded-2xl border px-3 py-3 text-sm font-bold"
               style={{
                 color: value ? VOCAB_ACCENT_DEEP : "var(--ink)",
