@@ -1,0 +1,208 @@
+import { ruby } from "@/app/components/ui/Ruby";
+import type { JlptItemTypeGuide, JlptQuestion } from "../types";
+
+export const n5ListeningGuides: JlptItemTypeGuide[] = [
+  {
+    id: "n5-listening-task-guide",
+    level: "N5",
+    section: "listening",
+    itemType: "task-based-listening",
+    title: "Listening con tarea",
+    jpTitle: "課題理解",
+    shortDescription: "Escuchar una situación y elegir qué debe hacer la persona.",
+    whatItTests: [
+      "Detectar la tarea principal de una conversación breve.",
+      "Distinguir información secundaria de la acción final.",
+      "Reconocer palabras de tiempo, lugar y objeto.",
+    ],
+    solvingSteps: [
+      "Antes de escuchar, mira las opciones y predice qué tipo de acción buscarás.",
+      "Durante el audio, escucha quién debe hacer qué.",
+      "Presta atención a correcciones como でも, じゃあ o いいえ.",
+      "Elige la acción final, no la primera idea mencionada.",
+    ],
+    commonTraps: [
+      "Responder por la primera palabra conocida que escuchas.",
+      "No notar que una opción fue rechazada en la conversación.",
+      "Confundir lugar de encuentro con objeto que se debe llevar.",
+    ],
+    starterQuestionId: "n5-listening-task-001",
+  },
+  {
+    id: "n5-listening-quick-guide",
+    level: "N5",
+    section: "listening",
+    itemType: "quick-response",
+    title: "Respuesta rápida",
+    jpTitle: "即時応答",
+    shortDescription: "Elegir una respuesta natural para una frase breve.",
+    whatItTests: [
+      "Reconocer función comunicativa: saludo, pregunta, invitación o confirmación.",
+      "Responder al tipo de frase, no a una palabra aislada.",
+      "Detectar si la respuesta debe ser sí/no, información o reacción social.",
+    ],
+    solvingSteps: [
+      "Identifica si la frase es pregunta, invitación o comentario.",
+      "Busca una respuesta que encaje socialmente.",
+      "Descarta respuestas gramaticales pero no naturales para la situación.",
+      "No traduzcas palabra por palabra; responde a la intención.",
+    ],
+    commonTraps: [
+      "Responder con una frase demasiado literal.",
+      "Elegir una respuesta afirmativa cuando la pregunta pide información.",
+      "Confundir はじめまして con un saludo diario.",
+    ],
+    starterQuestionId: "n5-listening-quick-001",
+  },
+];
+
+export const n5ListeningQuestions: JlptQuestion[] = [
+  {
+    id: "n5-listening-task-001",
+    level: "N5",
+    section: "listening",
+    itemType: "task-based-listening",
+    questionKind: "single-choice",
+    instruction: { es: "Escucha el diálogo. Por ahora usa el script; el audio queda preparado como pendiente." },
+    audio: {
+      status: "pending",
+      script: ruby("A：[明日|あした]、[学校|がっこう]に[本|ほん]を[持|も]ってきてください。\nB：[日本語|にほんご]の[本|ほん]ですか。\nA：はい、[日本語|にほんご]の[本|ほん]です。"),
+      note: "Audio pendiente. Este script está listo para generar voz sintética más adelante.",
+    },
+    prompt: { es: "¿Qué debe llevar B mañana?" },
+    choices: [
+      { id: "a", label: { es: "Un libro de japonés." } },
+      { id: "b", label: { es: "Una mochila." } },
+      { id: "c", label: { es: "Un reloj." } },
+      { id: "d", label: { es: "Agua." } },
+    ],
+    correctChoiceId: "a",
+    explanation: {
+      hint: "Escucha qué objeto aparece con 持ってきてください.",
+      strategy: [
+        "La acción pedida es 持ってきてください: traer algo.",
+        "B confirma 日本語の本ですか.",
+        "A responde はい, así que ese es el objeto correcto.",
+      ],
+      whyCorrect: "B debe llevar 日本語の本, un libro de japonés.",
+      whyWrong: {
+        b: "Mochila no aparece en el diálogo.",
+        c: "Reloj no aparece en el diálogo.",
+        d: "Agua no aparece en el diálogo.",
+      },
+    },
+    tags: ["listening", "script", "task"],
+    source: "original",
+  },
+  {
+    id: "n5-listening-task-002",
+    level: "N5",
+    section: "listening",
+    itemType: "task-based-listening",
+    questionKind: "single-choice",
+    instruction: { es: "Escucha el diálogo. Por ahora usa el script; el audio queda preparado como pendiente." },
+    audio: {
+      status: "pending",
+      script: ruby("A：[駅|えき]の[前|まえ]で[会|あ]いましょう。\nB：[駅|えき]の[中|なか]ですか。\nA：いいえ、[駅|えき]の[前|まえ]です。"),
+      note: "Audio pendiente.",
+    },
+    prompt: { es: "¿Dónde se van a reunir?" },
+    choices: [
+      { id: "a", label: { es: "Dentro de la estación." } },
+      { id: "b", label: { es: "Frente a la estación." } },
+      { id: "c", label: { es: "En la escuela." } },
+      { id: "d", label: { es: "En casa." } },
+    ],
+    correctChoiceId: "b",
+    explanation: {
+      hint: "B propone 中, pero A corrige con いいえ.",
+      strategy: [
+        "La primera frase ya dice 駅の前.",
+        "B pregunta si es 駅の中.",
+        "A niega y repite 駅の前.",
+      ],
+      whyCorrect: "Se reunirán 駅の前, frente a la estación.",
+      whyWrong: {
+        a: "駅の中 fue rechazado con いいえ.",
+        c: "学校 no aparece.",
+        d: "家 no aparece.",
+      },
+    },
+    tags: ["listening", "location"],
+    source: "original",
+  },
+  {
+    id: "n5-listening-quick-001",
+    level: "N5",
+    section: "listening",
+    itemType: "quick-response",
+    questionKind: "single-choice",
+    instruction: { es: "Elige la respuesta más natural." },
+    audio: {
+      status: "pending",
+      script: ruby("これは[何|なん]ですか。"),
+      note: "Audio pendiente.",
+    },
+    prompt: { es: "Respuesta natural:" },
+    choices: [
+      { id: "a", label: { jp: ruby("はい、そうです。") } },
+      { id: "b", label: { jp: ruby("それは[本|ほん]です。") } },
+      { id: "c", label: { jp: ruby("いいえ、[違|ちが]います。") } },
+      { id: "d", label: { jp: ruby("よろしくお[願|ねが]いします。") } },
+    ],
+    correctChoiceId: "b",
+    explanation: {
+      hint: "La pregunta pide información: ¿qué es esto?",
+      strategy: [
+        "これは何ですか no es una pregunta sí/no.",
+        "La respuesta debe identificar el objeto.",
+        "それは本です responde desde la perspectiva del interlocutor.",
+      ],
+      whyCorrect: "それは本です responde naturalmente a これは何ですか.",
+      whyWrong: {
+        a: "はい、そうです sirve para confirmar, no para decir qué es algo.",
+        c: "いいえ、違います niega una identificación previa, pero aquí falta identificar.",
+        d: "よろしくお願いします es cierre de presentación, no respuesta a 何ですか.",
+      },
+    },
+    tags: ["quick response", "何"],
+    source: "original",
+  },
+  {
+    id: "n5-listening-quick-002",
+    level: "N5",
+    section: "listening",
+    itemType: "quick-response",
+    questionKind: "single-choice",
+    instruction: { es: "Elige la respuesta más natural." },
+    audio: {
+      status: "pending",
+      script: ruby("[日本語|にほんご]がわかりますか。"),
+      note: "Audio pendiente.",
+    },
+    prompt: { es: "Respuesta natural:" },
+    choices: [
+      { id: "a", label: { jp: ruby("はい、[少|すこ]しわかります。") } },
+      { id: "b", label: { jp: ruby("[本|ほん]は[机|つくえ]の[上|うえ]です。") } },
+      { id: "c", label: { jp: ruby("[七時|しちじ]です。") } },
+      { id: "d", label: { jp: ruby("[日本人|にほんじん]です。") } },
+    ],
+    correctChoiceId: "a",
+    explanation: {
+      hint: "La pregunta es de comprensión/capacidad con わかりますか.",
+      strategy: [
+        "日本語がわかりますか pregunta si entiendes japonés.",
+        "はい、少しわかります responde sí, entiendo un poco.",
+        "Las otras opciones responden ubicación, hora o nacionalidad.",
+      ],
+      whyCorrect: "はい、少しわかります es una respuesta natural a esa pregunta.",
+      whyWrong: {
+        b: "Responde ubicación de un libro.",
+        c: "Responde hora.",
+        d: "Responde nacionalidad.",
+      },
+    },
+    tags: ["quick response", "わかります"],
+    source: "original",
+  },
+];

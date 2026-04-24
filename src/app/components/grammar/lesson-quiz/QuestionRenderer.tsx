@@ -1,13 +1,15 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { CSSProperties, useEffect, useMemo, useState } from "react";
 import { RubyText } from "@/app/components/ui/Ruby";
 import type {
   FillBlankQuizQuestion,
   LessonDisplayConfig,
+  LessonInlineTone,
   LessonOrderToken,
   LessonPrompt,
   LessonQuizQuestion,
+  LessonTextContent,
   OrderSentenceQuizQuestion,
   SingleChoiceQuizQuestion,
 } from "@/data/grammar/lessons";
@@ -27,6 +29,83 @@ interface QuestionRendererProps {
   locked: boolean;
   submittedAnswer?: LessonQuizAnswer;
   onSubmit: (answer: LessonQuizAnswer) => void;
+}
+
+function inlineToneStyle(tone: LessonInlineTone = "default"): CSSProperties {
+  switch (tone) {
+    case "accent":
+      return { color: ACCENT, fontWeight: 700 };
+    case "success":
+      return { color: "#15803D", fontWeight: 700 };
+    case "warning":
+      return { color: "#B45309", fontWeight: 700 };
+    case "danger":
+      return { color: "#B91C1C", fontWeight: 700 };
+    case "muted":
+      return { color: "var(--ink-soft)", opacity: 0.72 };
+    case "default":
+    default:
+      return {};
+  }
+}
+
+function TextContentView({
+  content,
+  display,
+}: {
+  content: LessonTextContent;
+  display: LessonDisplayConfig;
+}) {
+  if (typeof content === "string") {
+    return <>{content}</>;
+  }
+
+  return (
+    <>
+      {content.map((part, index) => {
+        if (part.type === "text") {
+          return <span key={index}>{part.text}</span>;
+        }
+
+        if (part.type === "jp") {
+          return (
+            <RubyText
+              key={index}
+              segments={resolveQuizSegments(part.segments, display.rubyMode)}
+              className="char-display font-semibold"
+              style={{ color: "var(--ink)" }}
+              rtStyle={getQuizRtStyle(display)}
+            />
+          );
+        }
+
+        if (part.type === "mark") {
+          return (
+            <span key={index} style={inlineToneStyle(part.tone)}>
+              {part.text}
+            </span>
+          );
+        }
+
+        if (part.type === "link") {
+          return (
+            <a
+              key={index}
+              href={part.href}
+              target={part.external ? "_blank" : undefined}
+              rel={part.external ? "noreferrer" : undefined}
+              className="font-semibold underline underline-offset-2"
+              style={inlineToneStyle(part.tone ?? "accent")}
+            >
+              {part.label}
+            </a>
+          );
+        }
+
+        return null;
+      })}
+    </>
+  );
 }
 
 function PromptView({
@@ -52,13 +131,13 @@ function PromptView({
           className={`leading-7 ${lessonTextSizeClass(display.bodyTextSize)}`}
           style={{ color: "var(--ink-soft)", opacity: 0.86 }}
         >
-          {prompt.es}
+          <TextContentView content={prompt.es} display={display} />
         </p>
       )}
 
       {prompt.note && (
         <p className="text-sm" style={{ color: "var(--ink-soft)", opacity: 0.68 }}>
-          {prompt.note}
+          <TextContentView content={prompt.note} display={display} />
         </p>
       )}
     </div>
@@ -85,7 +164,7 @@ function ChoiceLabel({
 
       {prompt.es && (
         <p className="text-sm sm:text-base" style={{ color: "var(--ink-soft)", opacity: 0.82 }}>
-          {prompt.es}
+          <TextContentView content={prompt.es} display={display} />
         </p>
       )}
     </div>
