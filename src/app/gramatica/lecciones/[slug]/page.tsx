@@ -7,13 +7,19 @@ import {
   getAdjacentGrammarLessons,
   getAllGrammarLessons,
   getGrammarLessonBySlug,
-  LessonBulletItem,
   type GrammarLesson,
+  type LessonBulletItem,
   type LessonCalloutTone,
   type LessonContentBlock,
   type LessonDisplayConfig,
   type LessonExample,
+  type LessonInlineTone,
+  type LessonLinkItem,
   type LessonPrompt,
+  type LessonRichText,
+  type LessonTableCell,
+  type LessonTableRow,
+  type LessonTextContent,
   type LessonTextSize,
 } from "@/data/grammar/lessons";
 import { RubyText, type RubySegment } from "@/app/components/ui/Ruby";
@@ -99,6 +105,113 @@ function rubyRtStyle(display: LessonDisplayConfig) {
   };
 }
 
+function inlineToneStyles(tone: LessonInlineTone = "default") {
+  switch (tone) {
+    case "muted":
+      return { color: "var(--ink-soft)", opacity: 0.82 };
+    case "accent":
+      return { color: ACCENT, fontWeight: 700 };
+    case "success":
+      return { color: "#15803D", fontWeight: 700 };
+    case "warning":
+      return { color: "#B45309", fontWeight: 700 };
+    case "danger":
+      return { color: "#B91C1C", fontWeight: 700 };
+    case "default":
+    default:
+      return { color: "inherit" };
+  }
+}
+
+function renderRichText(
+  content: LessonRichText,
+  display: LessonDisplayConfig,
+) {
+  return content.map((part, idx) => {
+    if (part.type === "text") {
+      return <span key={idx}>{part.text}</span>;
+    }
+
+    if (part.type === "jp") {
+      return (
+        <LessonJapaneseText
+          key={idx}
+          segments={part.segments}
+          display={display}
+          className="char-display inline font-semibold leading-relaxed"
+          style={{ color: "inherit" }}
+          rtStyle={rubyRtStyle(display)}
+        />
+      );
+    }
+
+    if (part.type === "mark") {
+      return (
+        <span key={idx} style={inlineToneStyles(part.tone)}>
+          {part.text}
+        </span>
+      );
+    }
+
+    if (part.type === "link") {
+      const commonClass =
+        "underline decoration-dotted underline-offset-[0.18em] transition-opacity hover:opacity-75";
+
+      if (part.external) {
+        return (
+          <a
+            key={idx}
+            href={part.href}
+            target="_blank"
+            rel="noreferrer"
+            className={commonClass}
+            style={inlineToneStyles(part.tone)}
+          >
+            {part.label}
+          </a>
+        );
+      }
+
+      return (
+        <Link
+          key={idx}
+          href={part.href}
+          className={commonClass}
+          style={inlineToneStyles(part.tone)}
+        >
+          {part.label}
+        </Link>
+      );
+    }
+
+    return null;
+  });
+}
+
+function renderTextContent(
+  content: LessonTextContent | undefined,
+  display: LessonDisplayConfig,
+) {
+  if (!content) return null;
+  if (typeof content === "string") return content;
+  return renderRichText(content, display);
+}
+
+function renderTableCell(
+  cell: LessonTableCell,
+  display: LessonDisplayConfig,
+) {
+  if (typeof cell === "string") {
+    return cell;
+  }
+
+  if (Array.isArray(cell)) {
+    return renderRichText(cell, display);
+  }
+
+  return <PromptLine prompt={cell} display={display} jpClassName="char-display text-base font-semibold leading-relaxed" />;
+}
+
 function BulletItemContent({
   item,
   display,
@@ -114,7 +227,7 @@ function BulletItemContent({
     <div className="space-y-1">
       {item.es && (
         <p style={{ color: "var(--ink-soft)", opacity: 0.88 }}>
-          {item.es}
+          {renderTextContent(item.es, display)}
         </p>
       )}
 
@@ -133,7 +246,7 @@ function BulletItemContent({
           className="text-xs sm:text-sm"
           style={{ color: "var(--ink-soft)", opacity: 0.72 }}
         >
-          {item.note}
+          {renderTextContent(item.note, display)}
         </p>
       )}
     </div>
@@ -165,13 +278,13 @@ function PromptLine({
 
       {prompt.es && (
         <p className="text-sm sm:text-base" style={{ color: "var(--ink-soft)", opacity: 0.82 }}>
-          {prompt.es}
+          {renderTextContent(prompt.es, display)}
         </p>
       )}
 
       {prompt.note && (
         <p className="text-xs sm:text-sm" style={{ color: "var(--ink-soft)", opacity: 0.68 }}>
-          {prompt.note}
+          {renderTextContent(prompt.note, display)}
         </p>
       )}
     </div>
@@ -242,12 +355,12 @@ function ExampleCard({
       />
 
       <p className="mt-3 text-sm sm:text-base" style={{ color: "var(--ink-soft)", opacity: 0.82 }}>
-        {example.es}
+        {renderTextContent(example.es, display)}
       </p>
 
       {example.literal && (
         <p className="mt-1 text-xs sm:text-sm" style={{ color: "var(--ink-soft)", opacity: 0.64 }}>
-          Literal: {example.literal}
+          Literal: {renderTextContent(example.literal, display)}
         </p>
       )}
 
@@ -281,7 +394,7 @@ function ExampleCard({
 
               {item.es && (
                 <p className="mt-1 text-xs sm:text-sm" style={{ color: "var(--ink-soft)", opacity: 0.8 }}>
-                  {item.es}
+                  {renderTextContent(item.es, display)}
                 </p>
               )}
             </div>
@@ -349,7 +462,7 @@ function BlockRenderer({
         className={`leading-8 ${textSizeClass(display.bodyTextSize)}`}
         style={{ color: "var(--ink-soft)", opacity: 0.88 }}
       >
-        {block.content}
+        {renderTextContent(block.content, display)}
       </p>
     );
   }
@@ -407,7 +520,7 @@ function BlockRenderer({
         </h3>
 
         <p className="mt-2 text-sm leading-7 sm:text-base" style={{ color: tone.body, opacity: 0.92 }}>
-          {block.content}
+          {renderTextContent(block.content, display)}
         </p>
 
         {block.bullets && block.bullets.length > 0 && (
@@ -468,7 +581,7 @@ function BlockRenderer({
 
             {item.translation && (
               <p className="mt-1 text-sm" style={{ color: "var(--ink-soft)", opacity: 0.74 }}>
-                {item.translation}
+                {renderTextContent(item.translation, display)}
               </p>
             )}
 
@@ -494,45 +607,23 @@ function BlockRenderer({
                       {part.value}
                     </p>
                     {part.note && (
-                        typeof part.note === "string" ? (
-                            <p
-                            className="mt-1 text-xs sm:text-sm"
-                            style={{ color: "var(--ink-soft)", opacity: 0.72 }}
-                            >
-                            {part.note}
-                            </p>
-                        ) : (
-                            <div className="mt-1 space-y-1">
-                            {part.note.es && (
-                                <p
-                                className="text-xs sm:text-sm"
-                                style={{ color: "var(--ink-soft)", opacity: 0.78 }}
-                                >
-                                {part.note.es}
-                                </p>
-                            )}
-
-                            {part.note.jp && part.note.jp.length > 0 && (
-                                <LessonJapaneseText
-                                segments={part.note.jp}
-                                display={display}
-                                className="char-display text-sm font-semibold leading-relaxed"
-                                style={{ color: "var(--ink)" }}
-                                rtStyle={rubyRtStyle(display)}
-                                />
-                            )}
-
-                            {part.note.note && (
-                                <p
-                                className="text-[0.72rem] sm:text-xs"
-                                style={{ color: "var(--ink-soft)", opacity: 0.68 }}
-                                >
-                                {part.note.note}
-                                </p>
-                            )}
-                            </div>
-                          )
-                        )}
+                      typeof part.note === "string" ? (
+                        <p
+                          className="mt-1 text-xs sm:text-sm"
+                          style={{ color: "var(--ink-soft)", opacity: 0.72 }}
+                        >
+                          {part.note}
+                        </p>
+                      ) : (
+                        <div className="mt-1">
+                          <PromptLine
+                            prompt={part.note}
+                            display={display}
+                            jpClassName="char-display text-sm font-semibold leading-relaxed"
+                          />
+                        </div>
+                      )
+                    )}
                   </div>
                 ))}
               </div>
@@ -593,7 +684,9 @@ function BlockRenderer({
                 style={{ color: "var(--ink-soft)", opacity: 0.72 }}
                 >
                 {item.notes.map((note, idx) => (
-                    <li key={`${item.id}-note-${idx}`}>{note}</li>
+                  <li key={`${item.id}-note-${idx}`}>
+                    {renderTextContent(note, display)}
+                  </li>
                 ))}
                 </ul>
             )}
@@ -665,7 +758,7 @@ function BlockRenderer({
             </div>
 
             <p className="mt-4 text-sm leading-7 sm:text-base" style={{ color: "var(--ink-soft)", opacity: 0.84 }}>
-              {item.explanation}
+              {renderTextContent(item.explanation, display)}
             </p>
           </div>
         ))}

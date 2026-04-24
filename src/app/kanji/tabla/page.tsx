@@ -77,6 +77,7 @@ function LevelSection({
   const entries = getKanjiByLevel(level);
   const meta = LEVEL_META[level];
   const gradient = getLevelGradient(level);
+  const hasWriting = entries.some((entry) => entry.hasSvg);
 
   return (
     <section className="rounded-[28px] border"
@@ -97,7 +98,7 @@ function LevelSection({
               {meta.label}
             </h2>
             <p className="text-xs" style={{ color: "var(--ink-soft)", opacity: 0.65 }}>
-              {entries.length} kanji{!meta.available ? " · Sin SVG" : " · Con práctica de escritura"}
+              {entries.length} kanji{hasWriting ? " · Con práctica de escritura" : " · Solo lectura, vocabulario y quiz"}
             </p>
           </div>
         </div>
@@ -156,7 +157,7 @@ function DetailPanel({ selected, onClose }: { selected: KanjiEntry | null; onClo
           <p className="text-xs font-bold uppercase tracking-[0.2em]" style={{ color: ACCENT }}>Panel de detalle</p>
           <h3 className="mt-2 text-lg font-semibold" style={{ color: "var(--ink)" }}>Selecciona un kanji</h3>
           <p className="mt-2 text-sm leading-6" style={{ color: "var(--ink-soft)", opacity: 0.8 }}>
-            Aquí verás las lecturas on/kun, el significado, trazos y acceso rápido a la práctica.
+            Aquí verás las lecturas on/kun, significado, trazos, ejemplos y acceso a práctica cuando haya SVG disponible.
           </p>
         </div>
         <div className="space-y-3 text-sm" style={{ color: "var(--ink-soft)" }}>

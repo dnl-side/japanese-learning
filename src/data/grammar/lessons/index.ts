@@ -10,6 +10,13 @@ import lesson004c from "./lesson-004c";
 import lesson005a from "./lesson-005a";
 import lesson005b from "./lesson-005b";
 import lesson006 from "./lesson-006";
+import lesson007 from "./lesson-007";
+import lesson008 from "./lesson-008";
+import lesson009 from "./lesson-009";
+import lesson010 from "./lesson-010";
+import lesson011 from "./lesson-011";
+import lesson012 from "./lesson-012";
+import lesson013 from "./lesson-013";
 
 
 export type JLPTLevel = "N5" | "N4" | "N3" | "N2" | "N1";
@@ -31,6 +38,39 @@ export type LessonSectionKind =
 
 export type LessonCalloutTone = "info" | "success" | "warning" | "danger";
 
+export type LessonInlineTone =
+  | "default"
+  | "muted"
+  | "accent"
+  | "success"
+  | "warning"
+  | "danger";
+
+export type LessonInlinePart =
+  | {
+      type: "text";
+      text: string;
+    }
+  | {
+      type: "jp";
+      segments: RubySegment[];
+    }
+  | {
+      type: "mark";
+      text: string;
+      tone: LessonInlineTone;
+    }
+  | {
+      type: "link";
+      label: string;
+      href: string;
+      external?: boolean;
+      tone?: LessonInlineTone;
+    };
+
+export type LessonRichText = LessonInlinePart[];
+export type LessonTextContent = string | LessonRichText;
+
 export interface LessonDisplayConfig {
   rubyMode: LessonRubyMode;
   bodyTextSize: LessonTextSize;
@@ -42,14 +82,14 @@ export interface LessonDisplayConfig {
 
 export interface LessonPrompt {
   jp?: RubySegment[];
-  es?: string;
-  note?: string;
+  es?: LessonTextContent;
+  note?: LessonTextContent;
 }
 
 export interface LessonBreakdownItem {
   label: string;
   jp?: RubySegment[];
-  es?: string;
+  es?: LessonTextContent;
 }
 
 export interface LessonStructureSlot {
@@ -63,7 +103,7 @@ export interface LessonPatternCard {
   label: string;
   pattern: RubySegment[];
   meaning: string;
-  translation?: string;
+  translation?: LessonTextContent;
   structure?: LessonStructureSlot[];
   notes?: LessonBulletItem[];
 }
@@ -73,15 +113,15 @@ export interface LessonVocabularyItem {
   jp: RubySegment[];
   meaning: string;
   reading?: string;
-  notes?: string[];
+  notes?: LessonTextContent[];
   tags?: string[];
 }
 
 export interface LessonExample {
   id: string;
   jp: RubySegment[];
-  es: string;
-  literal?: string;
+  es: LessonTextContent;
+  literal?: LessonTextContent;
   breakdown?: LessonBreakdownItem[];
   notes?: LessonBulletItem[];
 }
@@ -91,15 +131,45 @@ export interface LessonContrastItem {
   label: string;
   correct: LessonPrompt;
   incorrect?: LessonPrompt;
-  explanation: string;
+  explanation: LessonTextContent;
 }
 
 export type LessonBulletItem = string | LessonPrompt;
 
+export interface LessonLinkItem {
+  id?: string;
+  label: string;
+  href: string;
+  jp?: RubySegment[];
+  description?: LessonTextContent;
+  external?: boolean;
+  tone?: LessonInlineTone;
+}
+
+export type LessonTableAlign = "left" | "center" | "right";
+
+export interface LessonTableColumn {
+  key: string;
+  label: string | LessonPrompt;
+  align?: LessonTableAlign;
+  width?: string;
+}
+
+export type LessonTableCell =
+  | string
+  | LessonPrompt
+  | LessonRichText;
+
+  export interface LessonTableRow {
+  id?: string;
+  cells: Record<string, LessonTableCell>;
+}
+
+
 export type LessonContentBlock =
   | {
       type: "paragraph";
-      content: string;
+      content: LessonTextContent;
     }
   | {
       type: "bullet-list";
@@ -122,17 +192,33 @@ export type LessonContentBlock =
       type: "contrast-list";
       items: LessonContrastItem[];
     }
-  | {
+ | {
       type: "callout";
       tone: LessonCalloutTone;
       title: string;
-      content: string;
+      content: LessonTextContent;
       bullets?: LessonBulletItem[];
     }
   | {
       type: "checklist";
       items: LessonBulletItem[];
+    }
+  | {
+      type: "resource-links";
+      title?: string;
+      description?: LessonTextContent;
+      items: LessonLinkItem[];
+    }
+  | {
+      type: "table";
+      title?: string;
+      description?: LessonTextContent;
+      columns: LessonTableColumn[];
+      rows: LessonTableRow[];
+      compact?: boolean;
+      zebra?: boolean;
     };
+    
 
 
 export interface LessonSection {
@@ -227,6 +313,13 @@ const RAW_GRAMMAR_LESSONS: GrammarLesson[] = [
   lesson005a,
   lesson005b,
   lesson006,
+  lesson007,
+  lesson008,
+  lesson009,
+  lesson010,
+  lesson011,
+  lesson012,
+  lesson013,
 ];
 
 function compareLessons(a: GrammarLesson, b: GrammarLesson) {

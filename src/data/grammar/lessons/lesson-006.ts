@@ -1,3 +1,5 @@
+//src/data/grammar/lessons/lesson-006.ts
+
 import { ruby } from "@/app/components/ui/Ruby";
 import type { GrammarLesson } from "./index";
 
@@ -351,6 +353,27 @@ export const lesson006: GrammarLesson = {
               tags: ["profesion", "nuevo"],
             },
             {
+              id: "vocab-006-nurse",
+              jp: ruby("[看護師|かんごし]"),
+              reading: "かんごし",
+              meaning: "enfermero / enfermera",
+              tags: ["profesion", "nuevo", "quiz"],
+            },
+            {
+              id: "vocab-006-researcher",
+              jp: ruby("[研究者|けんきゅうしゃ]"),
+              reading: "けんきゅうしゃ",
+              meaning: "investigador / investigadora",
+              tags: ["profesion", "nuevo", "distractor"],
+            },
+            {
+              id: "vocab-006-shopstaff",
+              jp: ruby("[店員|てんいん]"),
+              reading: "てんいん",
+              meaning: "dependiente / empleado de tienda",
+              tags: ["profesion", "nuevo", "distractor"],
+            },
+            {
               id: "vocab-006-argentina",
               jp: ruby("アルゼンチン"),
               reading: "あるぜんちん",
@@ -379,6 +402,41 @@ export const lesson006: GrammarLesson = {
               tags: ["pais", "nuevo", "core"],
             },
             {
+              id: "vocab-006-germany",
+              jp: ruby("ドイツ"),
+              reading: "どいつ",
+              meaning: "Alemania",
+              tags: ["pais", "nuevo", "quiz"],
+            },
+            {
+              id: "vocab-006-australia",
+              jp: ruby("オーストラリア"),
+              reading: "おーすとらりあ",
+              meaning: "Australia",
+              tags: ["pais", "nuevo", "quiz"],
+            },
+            {
+              id: "vocab-006-mexico",
+              jp: ruby("メキシコ"),
+              reading: "めきしこ",
+              meaning: "México",
+              tags: ["pais", "nuevo", "quiz"],
+            },
+            {
+              id: "vocab-006-spain",
+              jp: ruby("[スペイン|すぺいん]"),
+              reading: "すぺいん",
+              meaning: "España",
+              tags: ["pais", "nuevo", "distractor"],
+            },
+            {
+              id: "vocab-006-usa",
+              jp: ruby("アメリカ"),
+              reading: "あめりか",
+              meaning: "Estados Unidos",
+              tags: ["pais", "nuevo", "distractor"],
+            },
+            {
               id: "vocab-006-italian",
               jp: ruby("[イタリア語|いたりあご]"),
               reading: "いたりあご",
@@ -391,6 +449,20 @@ export const lesson006: GrammarLesson = {
               reading: "ぽるとがるご",
               meaning: "portugués",
               tags: ["idioma", "nuevo", "core"],
+            },
+            {
+              id: "vocab-006-german",
+              jp: ruby("[ドイツ語|どいつご]"),
+              reading: "どいつご",
+              meaning: "alemán",
+              tags: ["idioma", "nuevo", "quiz"],
+            },
+            {
+              id: "vocab-006-spanish",
+              jp: ruby("[スペイン語|すぺいんご]"),
+              reading: "すぺいんご",
+              meaning: "español",
+              tags: ["idioma", "repaso", "core"],
             },
           ],
         },
@@ -626,70 +698,72 @@ export const lesson006: GrammarLesson = {
         id: "q1",
         type: "single-choice",
         prompt: {
-          es: "¿Qué busca hacer esta lección principalmente?",
+          jp: ruby("[マリア|まりあ]さんはアルゼンチン[人|じん]です。どれがいちばん[自然|しぜん]ですか。"),
+          es: "María es de argentina. ¿Cuál opción suena más natural?",
         },
         choices: [
-          { id: "a", label: { es: "Presentar una nueva conjugación verbal compleja." } },
-          { id: "b", label: { es: "Integrar en textos compactos lo ya visto hasta ahora." } },
-          { id: "c", label: { es: "Enseñar katakana sin ruby." } },
-          { id: "d", label: { es: "Explicar partículas avanzadas en profundidad." } },
+          { id: "a", label: { jp: ruby("アルゼンチン[語|ご]ができます。") } },
+          { id: "b", label: { jp: ruby("[スペイン語|すぺいんご]ができます。") } },
+          { id: "c", label: { jp: ruby("アルゼンチンができます。") } },
+          { id: "d", label: { jp: ruby("[英語|えいご]です。") } },
         ],
         correctChoiceId: "b",
         explanation:
-          "Esta lección funciona como まとめ: integra presentación, origen, nacionalidad, idioma, edad y números dentro de textos compactos.",
-        relatedSectionIds: ["lesson-006-intro", "lesson-006-concept"],
+          "アルゼンチン es el país, pero el idioma esperado aquí es スペイン語. Esta unidad también busca fijar bien la diferencia entre país, nacionalidad e idioma.",
+        relatedSectionIds: ["lesson-006-vocabulary", "lesson-006-practice"],
       },
       {
         id: "q2",
         type: "single-choice",
         prompt: {
-          es: "En esta unidad, ¿cuál de estas series distingue correctamente país, nacionalidad e idioma?",
+          jp: ruby("[彼女|かのじょ]はイギリス[人|じん]です。〇〇ができます。"),
+          es: "Ella es de inglaterra. Puede hablar 〇〇.",
         },
         choices: [
-          { id: "a", label: { jp: ruby("[イタリア語|いたりあご] / [イタリア|いたりあ] / [イタリア人|いたりあじん]") } },
-          { id: "b", label: { jp: ruby("[イタリア|いたりあ] / [イタリア人|いたりあじん] / [イタリア語|いたりあご]") } },
-          { id: "c", label: { jp: ruby("[イタリア人|いたりあじん] / [イタリア語|いたりあご] / [イタリア|いたりあ]") } },
-          { id: "d", label: { jp: ruby("[イタリア人|いたりあじん] / [イタリア|いたりあ] / [イタリア語|いたりあご]") } },
+          { id: "a", label: { jp: ruby("イギリス[語|ご]") } },
+          { id: "b", label: { jp: ruby("[英語|えいご]") } },
+          { id: "c", label: { jp: ruby("イギリス[人|じん]") } },
+          { id: "d", label: { jp: ruby("[二十歳|はたち]") } },
         ],
         correctChoiceId: "b",
         explanation:
-          "イタリア es país, イタリア人 es nacionalidad e イタリア語 es idioma.",
-        relatedSectionIds: ["lesson-006-concept", "lesson-006-contrast"],
+          "イギリス人 expresa nacionalidad. El idioma correspondiente aquí es 英語, no イギリス語.",
+        relatedSectionIds: ["lesson-006-vocabulary", "lesson-006-practice"],
       },
       {
         id: "q3",
         type: "single-choice",
         prompt: {
           es: "Lee esto y elige la respuesta correcta:",
-          jp: ruby("[彼女|かのじょ]は[マリア|まりあ]さんです。[アルゼンチン人|あるぜんちんじん]です。[24歳|にじゅうよんさい]です。シェフです。"),
+          jp: ruby("[彼女|かのじょ]は[マリア|まりあ]さんです。[アルゼンチン人|あるぜんちんじん]です。[24歳|にじゅうよんさい]です。[シェフ|しぇふ]です。"),
           note: "¿Qué profesión tiene?",
         },
         choices: [
-          { id: "a", label: { jp: ruby("[学生|がくせい]です。"), es: "Estudiante." } },
-          { id: "b", label: { jp: ruby("[医者|いしゃ]です。"), es: "Médica." } },
-          { id: "c", label: { jp: ruby("シェフです。"), es: "Chef." } },
-          { id: "d", label: { jp: ruby("デザイナーです。"), es: "Diseñadora." } },
+          { id: "a", label: { jp: ruby("[学生|がくせい]です。") } },
+          { id: "b", label: { jp: ruby("[医者|いしゃ]です。") } },
+          { id: "c", label: { jp: ruby("[シェフ|しぇふ]です。") } },
+          { id: "d", label: { jp: ruby("[デザイナー|でざいなー]です。") } },
         ],
         correctChoiceId: "c",
         explanation:
-          "En el texto se dice directamente que María es chef.",
+          "En el texto se dice directamente que María es シェフ.",
         relatedSectionIds: ["lesson-006-examples"],
       },
       {
         id: "q4",
         type: "single-choice",
         prompt: {
-          es: "Una persona es de Argentina. En esta unidad, ¿qué idioma es el que fijamos como respuesta esperable?",
+          es: "Una persona es de México. ¿Qué idioma habla?",
         },
         choices: [
-          { id: "a", label: { jp: ruby("[アルゼンチン語|あるぜんちんご]") } },
+          { id: "a", label: { jp: ruby("[メキシコ語|めきしこご]") } },
           { id: "b", label: { jp: ruby("[スペイン語|すぺいんご]") } },
-          { id: "c", label: { jp: ruby("[イギリス語|いぎりすご]") } },
-          { id: "d", label: { jp: ruby("[ブラジル語|ぶらじるご]") } },
+          { id: "c", label: { jp: ruby("[英語|えいご]") } },
+          { id: "d", label: { jp: ruby("[ポルトガル語|ぽるとがるご]") } },
         ],
         correctChoiceId: "b",
         explanation:
-          "Aquí trabajamos la asociación Argentina → español, y evitamos la trampa de inventar アルゼンチン語.",
+          "Aquí trabajamos la asociación メキシコ → スペイン語, y evitamos la trampa de inventar メキシコ語.",
         relatedSectionIds: ["lesson-006-concept", "lesson-006-contrast"],
       },
       {
@@ -733,35 +807,37 @@ export const lesson006: GrammarLesson = {
         type: "single-choice",
         prompt: {
           es: "Lee esto:",
-          jp: ruby("[ルカ|るか]さんは[イタリア人|いたりあじん]です。ローマ[出身|しゅっしん]です。[19歳|じゅうきゅうさい]です。"),
+          jp: ruby("[ルカ|るか]さんは[イタリア人|いたりあじん]です。ローマ[出身|しゅっしん]です。19歳です。"),
           note: "¿Cuál es la edad de Luca?",
         },
         choices: [
-          { id: "a", label: { jp: ruby("[18歳|じゅうはっさい]です。") } },
-          { id: "b", label: { jp: ruby("[19歳|じゅうきゅうさい]です。") } },
-          { id: "c", label: { jp: ruby("[20歳|はたち]です。") } },
-          { id: "d", label: { jp: ruby("[21歳|にじゅういっさい]です。") } },
+          { id: "a", label: { jp: ruby("じゅうはちさい") } },
+          { id: "b", label: { jp: ruby("じゅうきゅうさい") } },
+          { id: "c", label: { jp: ruby("にじゅうきゅうさい") } },
+          { id: "d", label: { jp: ruby("きゅうじゅうさい") } },
         ],
         correctChoiceId: "b",
         explanation:
-          "El texto dice directamente que Luca tiene 19 años.",
+          "19歳 se lee じゅうきゅうさい.",
         relatedSectionIds: ["lesson-006-examples"],
       },
       {
         id: "q8",
         type: "single-choice",
         prompt: {
-          es: "Elige la frase más natural para decir que Paula también es italiana.",
+          es: "Lee esto y elige la continuación más natural:",
+          jp: ruby("[ルカ|るか]さんは[イタリア人|いたりあじん]です。"),
+          note: "Ahora quieres decir: Paula también es italiana.",
         },
         choices: [
           { id: "a", label: { jp: ruby("[パウラ|ぱうら]さんは[イタリア人|いたりあじん]です。") } },
           { id: "b", label: { jp: ruby("[パウラ|ぱうら]さんも[イタリア人|いたりあじん]です。") } },
-          { id: "c", label: { jp: ruby("[パウラ|ぱうら]さんが[イタリア人|いたりあじん]です。") } },
-          { id: "d", label: { jp: ruby("[パウラ|ぱうら]さんを[イタリア人|いたりあじん]です。") } },
+          { id: "c", label: { jp: ruby("[パウラ|ぱうら]さんは[イタリア|いたりあ]です。") } },
+          { id: "d", label: { jp: ruby("[パウラ|ぱうら]さんも[イタリア|いたりあ]です。") } },
         ],
         correctChoiceId: "b",
         explanation:
-          "Si la nacionalidad coincide con la oración anterior, も es la partícula natural.",
+          "Como la segunda oración añade la misma información, も es la opción más natural. Además, aquí hablamos de nacionalidad, por eso corresponde イタリア人 y no イタリア.",
         relatedSectionIds: ["lesson-006-structure", "lesson-006-examples"],
       },
       {
@@ -774,7 +850,7 @@ export const lesson006: GrammarLesson = {
           { id: "a", label: { jp: ruby("ご[出身|しゅっしん]はどちらですか。") } },
           { id: "b", label: { jp: ruby("[何語|なにご]ができますか。") } },
           { id: "c", label: { jp: ruby("おいくつですか。") } },
-          { id: "d", label: { jp: ruby("[何人|なんにん]ですか。") } },
+          { id: "d", label: { jp: ruby("どこから[来|き]ましたか。") } },
         ],
         correctChoiceId: "c",
         explanation:
@@ -826,14 +902,14 @@ export const lesson006: GrammarLesson = {
           es: "Ordena los bloques para formar una presentación simple y natural.",
         },
         tokens: [
-          { id: "tok12-1", value: "私はルカです", label: { jp: ruby("[私|わたし]は[ルカ|るか]です。") } },
+          { id: "tok12-1", value: "私はソフィアです", label: { jp: ruby("[私|わたし]は[ソフィア|そふぃあ]です。") } },
           { id: "tok12-2", value: "イタリア人です", label: { jp: ruby("[イタリア人|いたりあじん]です。") } },
-          { id: "tok12-3", value: "19歳です", label: { jp: ruby("[19歳|じゅうきゅうさい]です。") } },
+          { id: "tok12-3", value: "32歳です", label: { jp: ruby("[32歳|じゅうきゅうさい]です。") } },
         ],
-        correctOrder: ["私はルカです", "イタリア人です", "19歳です"],
+        correctOrder: ["私はソフィアです", "イタリア人です", "19歳です"],
         answerLabel: {
-          jp: ruby("[私|わたし]は[ルカ|るか]です。[イタリア人|いたりあじん]です。[19歳|じゅうきゅうさい]です。"),
-          es: "Soy Luca. Soy italiano. Tengo 19 años.",
+          jp: ruby("[私|わたし]は[ソフィア|そふぃあ]です。[イタリア人|いたりあじん]です。[32歳|じゅうきゅうさい]です。"),
+          es: "Soy Sofía. Soy italiana. Tengo 32 años.",
         },
         explanation:
           "El orden sigue una presentación natural: nombre, luego categoría básica y después edad.",
@@ -889,12 +965,12 @@ export const lesson006: GrammarLesson = {
         type: "fill-blank",
         prompt: {
           es: "Completa el idioma correcto en esta unidad:",
-          jp: ruby("[アルゼンチン人|あるぜんちんじん]です。___ができます。"),
+          jp: ruby("[オーストラリア人|おーすとらりあじん]です。___ができます。"),
         },
-        acceptedAnswers: ["スペイン語", "すぺいんご"],
+        acceptedAnswers: ["英語", "えいご"],
         placeholder: "Escribe el idioma",
         explanation:
-          "Aquí la asociación de trabajo es Argentina → español.",
+          "Aquí la asociación de trabajo es Australia → inglés.",
         relatedSectionIds: ["lesson-006-contrast", "lesson-006-vocabulary"],
       },
       {
@@ -902,13 +978,12 @@ export const lesson006: GrammarLesson = {
         type: "fill-blank",
         prompt: {
           es: "Completa con la profesión correcta según el perfil:",
-          jp: ruby("[彼女|かのじょ]は[マリア|まりあ]さんです。[24歳|にじゅうよんさい]です。___です。"),
-          note: "En el texto principal, María es chef.",
+          jp: ruby("[彼女|かのじょ]は[アンナ|あんな]さんです。[ドイツ人|どいつじん]です。[27歳|にじゅうななさい]です。___です。"),
         },
-        acceptedAnswers: ["シェフ", "しぇふ"],
+        acceptedAnswers: ["看護師", "かんごし"],
         placeholder: "Escribe la profesión",
         explanation:
-          "En el segundo texto de lectura, María aparece como chef.",
+          "La profesión correcta aquí es 看護師.",
         relatedSectionIds: ["lesson-006-examples", "lesson-006-vocabulary"],
       },
       {
@@ -917,6 +992,7 @@ export const lesson006: GrammarLesson = {
         prompt: {
           es: "Completa la corrección natural:",
           jp: ruby("[テレサ|てれさ]さんは[18歳|じゅうはっさい]ですか。[いいえ]、[違|ちが]います。___です。"),
+          note: "Teresa tiene 19 años.",
         },
         acceptedAnswers: ["19歳", "じゅうきゅうさい", "19歳です", "じゅうきゅうさいです"],
         placeholder: "Escribe la edad correcta",
@@ -928,27 +1004,30 @@ export const lesson006: GrammarLesson = {
         id: "q19",
         type: "fill-blank",
         prompt: {
-          es: "Escribe en hiragana la lectura de はたち que fijamos en esta ruta.",
+          es: "Lee esto y escribe en hiragana la edad:",
+          jp: ruby("[マルコ|まるこ]さんは20歳です。"),
+          note: "Escribe solo la lectura de la edad.",
         },
         acceptedAnswers: ["はたち"],
         placeholder: "Escribe la lectura",
         explanation:
-          "Para 20歳, la lectura principal de trabajo que fijamos fue はたち.",
+          "20歳 se trabaja aquí principalmente como はたち.",
         relatedSectionIds: ["lesson-005b-vocabulary", "lesson-006-summary"],
       },
       {
-        id: "q20",
-        type: "fill-blank",
-        prompt: {
-          es: "Completa el país correcto:",
-          jp: ruby("[ルカ|るか]さんは[イタリア人|いたりあじん]です。ローマ___です。"),
-        },
-        acceptedAnswers: ["出身", "しゅっしん", "出身です", "しゅっしんです"],
-        placeholder: "Escribe la pieza que falta",
-        explanation:
-          "Aquí la idea correcta es ローマ出身です, es decir, 'es de Roma'.",
-        relatedSectionIds: ["lesson-004a-structure", "lesson-006-examples"],
+      id: "q20",
+      type: "fill-blank",
+      prompt: {
+        es: "Completa la pieza que falta para expresar origen:",
+        jp: ruby("[エマ|えま]さんは[オーストラリア人|おーすとらりあじん]です。シドニー___です。"),
+        note: "Queremos decir: Emma es de Sídney.",
       },
+      acceptedAnswers: ["出身", "しゅっしん", "出身です", "しゅっしんです"],
+      placeholder: "Escribe la pieza que falta",
+      explanation:
+        "Para expresar origen, aquí usamos 出身. La frase completa es シドニー出身です.",
+      relatedSectionIds: ["lesson-004a-structure", "lesson-006-examples"],
+    },
     ],
   },
 };

@@ -59,7 +59,7 @@ export function getKanjiEntry(char: string): KanjiEntry | undefined {
   return KANJI_LIST.find(k => k.char === char);
 }
 
-export const AVAILABLE_LEVELS = [1, 2] as const;
+export const AVAILABLE_LEVELS = [1, 2, 3, 4, 5, 6, 7] as const;
 export const ALL_LEVELS = [1, 2, 3, 4, 5, 6, 7, 8] as const;
 
 function getKanjiFolder(level: number): string {
@@ -1029,7 +1029,7 @@ export const LEVEL1: KanjiEntry[] = [
         translation: "Enséñame cómo se escribe tu nombre.",
       },
       {
-        segments: ruby("[字|あざ]が[見|み]えません。"),
+        segments: ruby("[字|じ]が[見|み]えません。"),
         translation: "No puedo ver las letras.",
       },
     ],
@@ -1614,7 +1614,7 @@ export const LEVEL1: KanjiEntry[] = [
         translation: "Hago mil grullas.",
       },
       {
-        segments: ruby("[千|ち][年|とし]の[木|き]です。"),
+        segments: ruby("[千年|せんねん]の[木|き]です。"),
         translation: "Es un árbol de mil años.",
       },
       {
@@ -1765,7 +1765,7 @@ export const LEVEL1: KanjiEntry[] = [
         translation: "Me duele el pie.",
       },
       {
-        segments: ruby("[足|あし]りないです。"),
+        segments: ruby("[足|た]りないです。"),
         translation: "No es suficiente.",
       },
       {
@@ -2300,7 +2300,7 @@ export const LEVEL1: KanjiEntry[] = [
         translation: "Saqué cien puntos.",
       },
       {
-        segments: ruby("[百|ひゃく][本|ほん]の[花|はな]です。"),
+        segments: ruby("[百本|ひゃっぽん]の[花|はな]です。"),
         translation: "Son cien flores.",
       },
     ],
@@ -9051,7 +9051,7 @@ export const LEVEL3: KanjiEntry[]  = [
         translation: "Estoy esperando junto al poste eléctrico.",
       },
       {
-        segments: ruby("[この[柱|はしら]は[建物|たてもの]をささえる[大切|たいせつ]な[部分|ぶぶん]です。"),
+        segments: ruby("この[柱|はしら]は[建物|たてもの]をささえる[大切|たいせつ]な[部分|ぶぶん]です。"),
         translation: "Este pilar es una parte importante que sostiene el edificio.",
       },
     ],
@@ -10182,7 +10182,7 @@ export const LEVEL3: KanjiEntry[]  = [
     meaning: "Segundo",
     examples: [
       {
-        segments: ruby("[一|いち][分|ふん]は六十[秒|びょう]です。"),
+        segments: ruby("[一|いっ][分|ぷん]は六十[秒|びょう]です。"),
         translation: "Un minuto son sesenta segundos.",
       },
       {
@@ -11302,11 +11302,11 @@ export const LEVEL3: KanjiEntry[]  = [
         translation: "Hablé con un amigo en el camino de regreso.",
       },
       {
-        segments: ruby("[道|どう][路]がこみあっています。"),
+        segments: ruby("[道路|どうろ]がこみあっています。"),
         translation: "La ruta está congestionada.",
       },
       {
-        segments: ruby("[進|しん][路]について[先|せん][生|せい]に[相|そう][談|だん]します。"),
+        segments: ruby("[進路|しんろ]について[先生|せんせい]に[相談|そうだん]します。"),
         translation: "Consulto al profesor sobre mi camino futuro.",
       },
       {
@@ -20573,7 +20573,7 @@ export const LEVEL5: KanjiEntry[] = [
     meaning: "Reparar / estudiar / completar",
     examples: [
       {
-        segments: ruby("[パソコン]を[修理|しゅうり]に[出|だ]しました。"),
+        segments: ruby("パソコンを[修理|しゅうり]に[出|だ]しました。"),
         translation: "Llevé el computador a reparar.",
       },
       {
@@ -21999,7 +21999,7 @@ export const LEVEL5: KanjiEntry[] = [
     meaning: "Presentar / proponer / entregar",
     examples: [
       {
-        segments: ruby("[レポート]を[明日|あした][提出|ていしゅつ]します。"),
+        segments: ruby("レポートを[明日|あした][提出|ていしゅつ]します。"),
         translation: "Entregaré el informe mañana.",
       },
       {
@@ -23971,7 +23971,7 @@ export const LEVEL6: KanjiEntry[] = [
         translation: "Quiero ampliar más mi forma de pensar.",
       },
       {
-        segments: ruby("[スマホ]の[画面|がめん]を[拡大|かくだい]すると、[小|ちい]さい[字|じ]も[読|よ]みやすくなります。"),
+        segments: ruby("スマホの[画面|がめん]を[拡大|かくだい]すると、[小|ちい]さい[字|じ]も[読|よ]みやすくなります。"),
         translation: "Si amplías la pantalla del celular, también se vuelve más fácil leer las letras pequeñas.",
       },
     ],
@@ -38278,6 +38278,7 @@ export const LEVEL7: KanjiEntry[] = [
   },    
 ]
 
+
 const LEVEL2_STROKES: Record<string, number> = {
   "引":4,"羽":6,"雲":12,"園":13,"遠":13,"何":7,"科":9,"夏":10,"家":10,"歌":14,
   "画":8,"回":6,"会":6,"海":9,"絵":12,"外":5,"角":7,"楽":13,"活":9,"間":12,
@@ -38308,34 +38309,54 @@ const LEVELS_3_8: Array<{ level: number; chars: string[] }> = [
   { level: 8, chars: ['哀','慰','詠','悦','閲','炎','宴','欧','殴','乙','卸','穏','佳','架','華','嫁','餓','怪','悔','塊','慨','該','概','郭','隔','穫','岳','掛','滑','肝','冠','勘','貫','喚','換','敢','緩','企','忌','軌','既','棋','棄','騎','欺','犠','菊','吉','喫','虐'] },
 ];
 
-const LEVELS_3_8_ENTRIES: KanjiEntry[] = LEVELS_3_8.flatMap(({ level, chars }) =>
-  chars.map(char => ({
-    char,
-    level,
-    strokeCount: 0,
-    on: [],
-    kun: [],
-    meaning: "",
-    example: "",
-    hasSvg: false,
-  }))
-);
+const LEVEL8_PLACEHOLDER_ENTRIES: KanjiEntry[] = LEVELS_3_8
+  .filter(({ level }) => level === 8)
+  .flatMap(({ level, chars }) =>
+    chars.map(char => ({
+      char,
+      level,
+      strokeCount: 0,
+      on: [],
+      kun: [],
+      meaning: "",
+      example: "",
+      hasSvg: false,
+    }))
+  );
 
 // ─── Full list ────────────────────────────────────────────────────────────────
 
-export const KANJI_LIST: KanjiEntry[] = [...LEVEL1, ...LEVEL2, ...LEVELS_3_8_ENTRIES];
+export const KANJI_LIST: KanjiEntry[] = [
+  ...LEVEL1,
+  ...LEVEL2,
+  ...LEVEL3,
+  ...LEVEL4,
+  ...LEVEL5,
+  ...LEVEL6,
+  ...LEVEL7,
+  ...LEVEL8_PLACEHOLDER_ENTRIES,
+];
 
 // ─── Level metadata ───────────────────────────────────────────────────────────
 
-export const LEVEL_META: Record<number, { label: string; color: string; accent: string; available: boolean }> = {
-  1: { label: "Nivel 1",  color: "#A5D6A7", accent: "#2E7D32", available: true },
-  2: { label: "Nivel 2",  color: "#C8E6C9", accent: "#388E3C", available: true },
-  3: { label: "Nivel 3",  color: "#DCEDC8", accent: "#558B2F", available: false },
-  4: { label: "Nivel 4",  color: "#F0F4C3", accent: "#827717", available: false },
-  5: { label: "Nivel 5",  color: "#FFF9C4", accent: "#F57F17", available: false },
-  6: { label: "Nivel 6",  color: "#FFE0B2", accent: "#E65100", available: false },
-  7: { label: "Nivel 7",  color: "#FFCCBC", accent: "#BF360C", available: false },
-  8: { label: "Nivel 8",  color: "#D7CCC8", accent: "#4E342E", available: false },
+export const LEVEL_META: Record<
+  number,
+  {
+    label: string;
+    color: string;
+    accent: string;
+    available: boolean;
+    hasWriting: boolean;
+  }
+> = {
+  1: { label: "Nivel 1", color: "#A5D6A7", accent: "#2E7D32", available: true, hasWriting: true },
+  2: { label: "Nivel 2", color: "#C8E6C9", accent: "#388E3C", available: true, hasWriting: true },
+  3: { label: "Nivel 3", color: "#DCEDC8", accent: "#558B2F", available: true, hasWriting: false },
+  4: { label: "Nivel 4", color: "#F0F4C3", accent: "#827717", available: true, hasWriting: false },
+  5: { label: "Nivel 5", color: "#FFF9C4", accent: "#F57F17", available: true, hasWriting: false },
+  6: { label: "Nivel 6", color: "#FFE0B2", accent: "#E65100", available: true, hasWriting: false },
+  7: { label: "Nivel 7", color: "#FFCCBC", accent: "#BF360C", available: true, hasWriting: false },
+  8: { label: "Nivel 8", color: "#D7CCC8", accent: "#4E342E", available: false, hasWriting: false },
 };
 
 // ---Kanji SVG FILTER ---

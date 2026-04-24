@@ -4,7 +4,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { KANJI_LIST, LEVEL_META, getKanjiByLevel } from "@/data/kanji";
+import { AVAILABLE_LEVELS, KANJI_LIST, LEVEL_META, getKanjiByLevel } from "@/data/kanji";
 import SakuraAnimation from "../components/layout/SakuraAnimation";
 
 const ACCENT = "#2E7D32";
@@ -56,8 +56,12 @@ const fadeUp = {
 };
 
 export default function KanjiPage() {
-  const level1Count = getKanjiByLevel(1).length;
-  const level2Count = getKanjiByLevel(2).length;
+  const availableCount = AVAILABLE_LEVELS.reduce(
+    (total, level) => total + getKanjiByLevel(level).filter(k => k.meaning !== "").length,
+    0
+  );
+
+  const writingCount = KANJI_LIST.filter(k => k.hasSvg).length;
 
   return (
     <main className="relative min-h-screen" style={{ background: "var(--paper)" }}>
@@ -132,9 +136,9 @@ export default function KanjiPage() {
             {/* Stats pills */}
             <div className="mt-5 flex flex-wrap justify-center gap-3">
               {[
-                { label: "Nivel 1 disponible", value: `${level1Count}` },
-                { label: "Nivel 2 disponible", value: `${level2Count}` },
-                { label: "Total en lista",     value: `${KANJI_LIST.length}` },
+                { label: "Niveles con contenido", value: "1–7" },
+                { label: "Kanji con vocabulario", value: `${availableCount}` },
+                { label: "Con práctica de escritura", value: `${writingCount}` },
               ].map(stat => (
                 <div key={stat.label} className="rounded-full px-4 py-1.5 text-sm font-medium"
                   style={{ background: "rgba(165,214,167,0.18)", border: "1px solid rgba(165,214,167,0.45)", color: ACCENT }}>

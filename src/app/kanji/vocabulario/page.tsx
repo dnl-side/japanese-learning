@@ -1,35 +1,39 @@
 // src/app/kanji/vocabulario/page.tsx
 
 import { Suspense } from "react";
-import { getKanjiByLevel, getKanjiExamples, kanjiExampleToText } from "@/data/kanji";
+import { AVAILABLE_LEVELS, getKanjiByLevel, getKanjiExamples, kanjiExampleToText } from "@/data/kanji";
 import type { Lesson } from "@/types/japanese";
 import VocabularyPage from "@/app/components/vocabulary/VocabularyPage";
 
 // Build lessons from kanji data — groups of 5, matching Flutter's kanjiLessons structure
 function buildKanjiLessons(): Lesson[] {
-  const level1 = getKanjiByLevel(1).filter(k => k.meaning !== "");
   const lessons: Lesson[] = [];
   const chunkSize = 5;
 
-  for (let i = 0; i < level1.length; i += chunkSize) {
-    const chunk = level1.slice(i, i + chunkSize);
-    const lessonNum = Math.floor(i / chunkSize) + 1;
-    lessons.push({
-      id: `kanji-${lessonNum}`,
-      lesson: `Lección ${lessonNum} — ${chunk.map(k => k.char).join("・")}`,
-      characters: chunk.map(k => k.char),
-      vocabulary: chunk.map((k) => {
-        const examples = getKanjiExamples(k);
+  for (const level of AVAILABLE_LEVELS) {
+    const entries = getKanjiByLevel(level).filter(k => k.meaning !== "");
 
-        return {
-          word: k.char,
-          romaji: k.on.length > 0 ? k.on[0] : k.kun[0] ?? "",
-          meaning: k.meaning,
-          example: examples[0] ? kanjiExampleToText(examples[0]) : `${k.char}。`,
-          examples,
-        };
-      })
-    });
+    for (let i = 0; i < entries.length; i += chunkSize) {
+      const chunk = entries.slice(i, i + chunkSize);
+      const lessonNum = Math.floor(i / chunkSize) + 1;
+
+      lessons.push({
+        id: `kanji-l${level}-${lessonNum}`,
+        lesson: `Nivel ${level} · Lección ${lessonNum} — ${chunk.map(k => k.char).join("・")}`,
+        characters: chunk.map(k => k.char),
+        vocabulary: chunk.map((k) => {
+          const examples = getKanjiExamples(k);
+
+          return {
+            word: k.char,
+            romaji: k.on.length > 0 ? k.on[0] : k.kun[0] ?? "",
+            meaning: k.meaning,
+            example: examples[0] ? kanjiExampleToText(examples[0]) : `${k.char}。`,
+            examples,
+          };
+        }),
+      });
+    }
   }
 
   return lessons;
