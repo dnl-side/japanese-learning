@@ -826,10 +826,10 @@ export const lesson026: GrammarLesson = {
           es: "Completa con 'de vez en cuando':",
           jp: ruby("[私|わたし]は___ゲームをします。"),
         },
-        acceptedAnswers: ["たまに"],
+        acceptedAnswers: ["たまに", "ときどき"],
         placeholder: "Escribe la palabra",
         explanation:
-          "Aquí la frecuencia es 'de vez en cuando', por eso entra たまに.",
+          "Aquí la frecuencia es 'de vez en cuando', por eso entra たまに o ときどき.",
         relatedSectionIds: ["lesson-026-structure", "lesson-026-summary"],
       },
       {
