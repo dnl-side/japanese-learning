@@ -38,6 +38,7 @@ import lesson027 from "./lesson-027";
 import lesson028 from "./lesson-028";
 import lesson029 from "./lesson-029";
 import lesson030 from "./lesson-030";
+import lesson031 from "./lesson-031";
 
 
 
@@ -363,6 +364,7 @@ const RAW_GRAMMAR_LESSONS: GrammarLesson[] = [
   lesson028,
   lesson029,
   lesson030,
+  lesson031,
 ];
 
 function compareLessons(a: GrammarLesson, b: GrammarLesson) {
