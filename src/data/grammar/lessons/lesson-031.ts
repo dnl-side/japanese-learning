@@ -555,30 +555,36 @@ export const lesson031: GrammarLesson = {
     questions: [
       {
         id: "q1",
-        type: "fill-blank",
+        type: "single-choice",
         prompt: {
-          es: "Completa con un adverbio de tiempo:",
-          jp: ruby("___、[私|わたし]は[図書館|としょかん]で[勉強|べんきょう]します。"),
-          note: "La idea es: hoy.",
+          es: "¿Qué oración usa un adverbio de tiempo?",
         },
-        acceptedAnswers: ["きょう"],
-        placeholder: "Escribe la palabra",
+        choices: [
+          { id: "a", label: { jp: ruby("きょう、[私|わたし]は[図書館|としょかん]で[勉強|べんきょう]します。") } },
+          { id: "b", label: { jp: ruby("[私|わたし]はいつも[朝|あさ]ご[飯|はん]を[食|た]べます。") } },
+          { id: "c", label: { jp: ruby("[田中|たなか]さんはときどき[映画|えいが]を[見|み]ます。") } },
+          { id: "d", label: { jp: ruby("[私|わたし]はあまりコーヒーを[飲|の]みません。") } },
+        ],
+        correctChoiceId: "a",
         explanation:
-          "Aquí la idea es 'hoy', así que el adverbio de tiempo correcto es きょう.",
+          "Aquí きょう ubica la acción en el tiempo. Las otras opciones trabajan frecuencia.",
         relatedSectionIds: ["lesson-031-concept", "lesson-031-contrast"],
       },
       {
         id: "q2",
-        type: "fill-blank",
+        type: "single-choice",
         prompt: {
-          es: "Completa con un adverbio de frecuencia:",
-          jp: ruby("[私|わたし]は___[朝|あさ]ご[飯|はん]を[食|た]べます。"),
-          note: "La idea es: siempre.",
+          es: "¿Qué oración usa un adverbio de frecuencia?",
         },
-        acceptedAnswers: ["いつも"],
-        placeholder: "Escribe la palabra",
+        choices: [
+          { id: "a", label: { jp: ruby("あした、[学校|がっこう]へ[行|い]きます。") } },
+          { id: "b", label: { jp: ruby("[私|わたし]はいつも[朝|あさ]ご[飯|はん]を[食|た]べます。") } },
+          { id: "c", label: { jp: ruby("[来月|らいげつ]は[旅行|りょこう]に[行|い]きたいです。") } },
+          { id: "d", label: { jp: ruby("きのう、[家|いえ]で[勉強|べんきょう]しました。") } },
+        ],
+        correctChoiceId: "b",
         explanation:
-          "Aquí el adverbio modifica la frecuencia de la acción, por eso entra いつも.",
+          "Aquí いつも modifica la frecuencia de la acción. Las otras opciones ubican la acción en el tiempo.",
         relatedSectionIds: ["lesson-031-concept", "lesson-031-contrast"],
       },
       {

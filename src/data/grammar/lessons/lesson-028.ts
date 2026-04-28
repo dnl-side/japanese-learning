@@ -364,7 +364,7 @@ export const lesson028: GrammarLesson = {
         {
           type: "callout",
           tone: "warning",
-          title: "No pongas な delante de です ni trates 好き como adjetivo い",
+          title: "No pongas な delante de です ni trates 好き ni 嫌い como adjetivo い",
           content:
             "Los errores más típicos aquí son dos. Uno: poner な cuando el adjetivo ya no está modificando un sustantivo. Dos: pensar que palabras como 好き o きれい pertenecen a la familia い solo porque terminan visualmente de forma parecida.",
           bullets: [
