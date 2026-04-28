@@ -3,7 +3,7 @@
 import { ruby } from "@/app/components/ui/Ruby";
 import type { GrammarLesson } from "./index";
 
-export const lesson014: GrammarLesson = {
+export const lesson014a: GrammarLesson = {
   id: "lesson-014",
   slug: "contadores-basicos-tsu-ko-mai-hon-satsu-nin",
   order: 17,
@@ -1247,4 +1247,4 @@ export const lesson014: GrammarLesson = {
   },
 };
 
-export default lesson014;
+export default lesson014a;
