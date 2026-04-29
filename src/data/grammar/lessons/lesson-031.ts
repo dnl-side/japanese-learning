@@ -623,7 +623,7 @@ export const lesson031: GrammarLesson = {
           jp: ruby("[店|みせ]は[便利|べんり]___。"),
           note: "La idea es: no es conveniente.",
         },
-        acceptedAnswers: ["ではありません", "じゃありません"],
+        acceptedAnswers: ["ではありません", "じゃありません", "じゃないです", "ではないです"],
         placeholder: "Escribe la forma",
         explanation:
           "Aquí el adjetivo な funciona como predicado y la negación recae en el bloque final.",

@@ -258,7 +258,7 @@ function shuffleUntilDifferent<T>(
 }
 
 function sameTokenOrder(a: readonly LessonOrderToken[], b: readonly LessonOrderToken[]) {
-  return a.length === b.length && a.every((token, idx) => token.value === b[idx]?.value);
+  return a.length === b.length && a.every((token, idx) => token.id === b[idx]?.id);
 }
 
 function OrderSentenceView({
@@ -289,13 +289,13 @@ function OrderSentenceView({
       ? submittedAnswer.filter((item): item is string => typeof item === "string")
       : [];
 
-  const currentAnswerValues = locked
+  const currentAnswerIds = locked
     ? answerArray
-    : selectedIndices.map((idx) => availableTokens[idx].value);
+    : selectedIndices.map((idx) => availableTokens[idx].id);
 
   const currentAnswerTokens = locked
-    ? currentAnswerValues
-        .map((value) => question.tokens.find((token) => token.value === value))
+    ? currentAnswerIds
+        .map((id) => question.tokens.find((token) => token.id === id))
         .filter((token): token is typeof question.tokens[number] => Boolean(token))
     : selectedIndices.map((idx) => availableTokens[idx]);
 
@@ -307,7 +307,7 @@ function OrderSentenceView({
     [availableTokens, selectedIndices],
   );
 
-  const canSubmit = currentAnswerValues.length === question.tokens.length;
+  const canSubmit = currentAnswerIds.length === question.tokens.length;
 
   return (
     <div className="space-y-4">
@@ -414,7 +414,7 @@ function OrderSentenceView({
           <button
             type="button"
             disabled={!canSubmit}
-            onClick={() => onSubmit(currentAnswerValues)}
+            onClick={() => onSubmit(currentAnswerIds)}
             className="w-full rounded-2xl py-3 text-sm font-bold text-white disabled:cursor-not-allowed disabled:opacity-45"
             style={{
               background: "linear-gradient(135deg, #90CAF9 0%, #1565C0 100%)",
