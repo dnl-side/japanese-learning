@@ -449,6 +449,123 @@ function calloutToneStyles(tone: LessonCalloutTone) {
   }
 }
 
+function LessonTableView({
+  block,
+  display,
+}: {
+  block: Extract<LessonContentBlock, { type: "table" }>;
+  display: LessonDisplayConfig;
+}) {
+  return (
+    <div
+      className="overflow-hidden rounded-[24px] border"
+      style={{
+        background: "rgba(255,255,255,0.92)",
+        border: "1px solid var(--border)",
+        boxShadow: "var(--shadow-soft)",
+      }}
+    >
+      {(block.title || block.description) && (
+        <div
+          className="border-b px-4 py-4 sm:px-5"
+          style={{ borderColor: "var(--border)" }}
+        >
+          {block.title && (
+            <h3 className="text-base font-bold sm:text-lg" style={{ color: ACCENT }}>
+              {block.title}
+            </h3>
+          )}
+
+          {block.description && (
+            <p
+              className="mt-1 text-sm leading-7 sm:text-base"
+              style={{ color: "var(--ink-soft)", opacity: 0.78 }}
+            >
+              {renderTextContent(block.description, display)}
+            </p>
+          )}
+        </div>
+      )}
+
+      <div className="overflow-x-auto">
+        <table className="min-w-full border-collapse text-left">
+          <thead>
+            <tr
+              style={{
+                background: `${ACCENT_SOFT}0.08)`,
+                borderBottom: `1px solid ${ACCENT_SOFT}0.14)`,
+              }}
+            >
+              {block.columns.map((column) => (
+                <th
+                  key={column.key}
+                  className="px-4 py-3 text-xs font-bold uppercase tracking-[0.14em] sm:px-5"
+                  style={{
+                    width: column.width,
+                    color: ACCENT,
+                    textAlign: column.align ?? "left",
+                    whiteSpace: "nowrap",
+                  }}
+                >
+                  {typeof column.label === "string" ? (
+                    column.label
+                  ) : (
+                    <PromptLine
+                      prompt={column.label}
+                      display={display}
+                      jpClassName="char-display text-sm font-bold leading-relaxed"
+                    />
+                  )}
+                </th>
+              ))}
+            </tr>
+          </thead>
+
+          <tbody>
+            {block.rows.map((row, rowIndex) => (
+              <tr
+                key={row.id ?? `table-row-${rowIndex}`}
+                style={{
+                  background:
+                    block.zebra && rowIndex % 2 === 1
+                      ? `${ACCENT_SOFT}0.035)`
+                      : "rgba(255,255,255,0.72)",
+                  borderBottom:
+                    rowIndex < block.rows.length - 1
+                      ? "1px solid rgba(148,163,184,0.16)"
+                      : "none",
+                }}
+              >
+                {block.columns.map((column) => {
+                  const cell = row.cells[column.key];
+
+                  return (
+                    <td
+                      key={`${row.id ?? rowIndex}-${column.key}`}
+                      className={
+                        block.compact
+                          ? "px-4 py-2.5 text-sm sm:px-5"
+                          : "px-4 py-3.5 text-sm sm:px-5 sm:text-base"
+                      }
+                      style={{
+                        color: "var(--ink)",
+                        textAlign: column.align ?? "left",
+                        verticalAlign: "top",
+                      }}
+                    >
+                      {cell === undefined ? null : renderTableCell(cell, display)}
+                    </td>
+                  );
+                })}
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  );
+}
+
 function BlockRenderer({
   block,
   display,
@@ -694,6 +811,10 @@ function BlockRenderer({
         ))}
         </div>
     );
+  }
+
+  if (block.type === "table") {
+    return <LessonTableView block={block} display={display} />;
   }
 
   if (block.type === "example-group") {
